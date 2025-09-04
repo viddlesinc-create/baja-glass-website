@@ -22,11 +22,11 @@ const GlassCompanyLasVegas = () => {
       image: heroImage
     },
     {
-      title: "Custom Mirrors",
-      description: "From vanity mirrors to wall‑to‑wall and gym installations, we cut and finish mirrors to size, with polished edges and secure mounting.",
+      title: "Office Glass Enclosures",
+      description: "From conference room partitions to private office walls and reception areas, we cut and finish glass to size, with polished edges and secure mounting.",
       bullets: [
-        "Vanity, full‑height, and multi‑panel layouts",
-        "Edge options and cutouts for outlets/sconces",
+        "Conference rooms, private offices, and reception areas",
+        "Frosted, clear, and etched glass options",
         "Safety backing and professional mounting"
       ],
       href: "/resources",
@@ -64,11 +64,11 @@ const GlassCompanyLasVegas = () => {
   const materials = [
     {
       title: "Glass Types",
-      description: "Clear and low‑iron; frosted, rain, and specialty patterns for showers and mirrors"
+      description: "Clear and low‑iron; frosted, rain, and specialty patterns for showers and office enclosures"
     },
     {
       title: "Thickness & Edges", 
-      description: "3/8\" and 1/2\" for showers; polished edges and cutouts for mirrors"
+      description: "3/8\" and 1/2\" for showers; polished edges and clean cuts for office enclosures"
     },
     {
       title: "Hardware & Finishes",
@@ -92,10 +92,10 @@ const GlassCompanyLasVegas = () => {
       alt: "Frameless shower enclosure Las Vegas — low‑iron glass, matte black hardware by Baja Glass"
     },
     {
-      title: "Vanity Mirror Wall — Henderson", 
-      description: "Wall‑to‑wall mirror with sconce cutouts and polished edges.",
+      title: "Office Glass Partition — Henderson", 
+      description: "Floor-to-ceiling glass partition with frosted panels and professional mounting.",
       image: hardwareFinishes,
-      alt: "Wall‑to‑wall bathroom mirror with sconce cutouts — Baja Glass Henderson"
+      alt: "Floor-to-ceiling office glass partition with frosted panels — Baja Glass Henderson"
     }
   ];
 
@@ -105,7 +105,7 @@ const GlassCompanyLasVegas = () => {
       author: "Jenna R., Summerlin"
     },
     {
-      text: "Beautiful mirror wall and a spotless jobsite.",
+      text: "Professional office partition installation and excellent service.",
       author: "David P., Henderson"
     },
     {
@@ -140,11 +140,11 @@ const GlassCompanyLasVegas = () => {
   const faqs = [
     {
       question: "What residential glass services do you offer?",
-      answer: "We specialize in shower doors, enclosures, custom mirrors, and glass repairs. Our services include frameless, sliding, hinged, and steam-ready installations."
+      answer: "We specialize in shower doors, enclosures, office glass partitions, and glass repairs. Our services include frameless, sliding, hinged, and steam-ready installations."
     },
     {
-      question: "Can you cut mirrors and glass to custom sizes and shapes?",
-      answer: "Yes, we fabricate all glass and mirrors to your exact specifications, including custom shapes, cutouts for outlets/sconces, and polished edges."
+      question: "Can you cut glass and office partitions to custom sizes and shapes?",
+      answer: "Yes, we fabricate all glass and office enclosures to your exact specifications, including custom shapes, frosted panels, and polished edges."
     },
     {
       question: "Do you provide low‑iron glass and specialty finishes?",
@@ -156,7 +156,7 @@ const GlassCompanyLasVegas = () => {
     },
     {
       question: "Do you handle repairs and replacements?",
-      answer: "Yes, we repair broken panels, fix leaks, replace rollers/hinges, and handle all types of shower glass and mirror repairs."
+      answer: "Yes, we repair broken panels, fix leaks, replace rollers/hinges, and handle all types of shower glass and office glass repairs."
     },
     {
       question: "What areas do you serve?",
@@ -191,7 +191,7 @@ const GlassCompanyLasVegas = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 Las Vegas Glass Company — 
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
-                  Custom Glass, Mirrors, and Shower Enclosures
+                  Custom Glass, Office Enclosures, and Shower Doors
                 </span>
               </h1>
             </div>
@@ -248,7 +248,7 @@ const GlassCompanyLasVegas = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
-              Baja Glass is a residential glass company serving the Las Vegas Valley. We design, measure, fabricate, and install shower doors and enclosures, and custom mirrors—delivering precise fit, clean finishes, and dependable performance.
+              Baja Glass is a residential and commercial glass company serving the Las Vegas Valley. We design, measure, fabricate, and install shower doors and enclosures, and office glass partitions—delivering precise fit, clean finishes, and dependable performance.
             </p>
 
             {/* Quick Links */}
@@ -257,8 +257,8 @@ const GlassCompanyLasVegas = () => {
                 Shower Doors & Enclosures
               </Link>
               <span className="text-muted-foreground">•</span>
-              <Link to="#mirrors" className="text-accent hover:text-accent/80 font-medium">
-                Mirrors
+              <Link to="#office-enclosures" className="text-accent hover:text-accent/80 font-medium">
+                Office Enclosures
               </Link>
               <span className="text-muted-foreground">•</span>
               <Link to="/gallery" className="text-accent hover:text-accent/80 font-medium">
@@ -282,7 +282,7 @@ const GlassCompanyLasVegas = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {services.map((service, index) => (
-              <div key={service.title} id={service.title === "Shower Doors & Enclosures" ? "shower-doors" : "mirrors"}>
+              <div key={service.title} id={service.title === "Shower Doors & Enclosures" ? "shower-doors" : "office-enclosures"}>
                 <Card className="h-full border-0 shadow-lg hover:shadow-2xl transition-all duration-500">
                   <div className="aspect-video overflow-hidden rounded-t-lg">
                     <img 
@@ -309,7 +309,7 @@ const GlassCompanyLasVegas = () => {
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Button variant="outline" asChild className="flex-1">
                         <Link to={service.href}>
-                          Learn More → {service.title === "Shower Doors & Enclosures" ? "Shower Doors Las Vegas" : "Mirrors"}
+                          Learn More → {service.title === "Shower Doors & Enclosures" ? "Shower Doors Las Vegas" : "Office Enclosures"}
                         </Link>
                       </Button>
                       <Button variant="cta" asChild className="flex-1">
