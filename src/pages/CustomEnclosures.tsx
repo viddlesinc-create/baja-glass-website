@@ -29,8 +29,18 @@ const CustomEnclosures = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-charcoal to-primary text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative text-white py-20">
+        {/* Hero Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png" 
+            alt="Custom frameless shower enclosure with sliding doors and stone tile walls - professional installation by Baja Glass Las Vegas"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/60 via-primary/40 to-charcoal/60"></div>
+        </div>
+        
+        <div className="relative container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Custom Shower Enclosures in Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">Inline, corner, neo‑angle, alcove, and steam—made to measure for a perfect fit.</p>
