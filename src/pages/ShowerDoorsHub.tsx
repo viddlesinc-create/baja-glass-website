@@ -191,7 +191,7 @@ const ShowerDoorsHub = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-charcoal/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 {service.popular && (
-                  <Badge className="absolute -top-2 left-4 bg-gradient-to-r from-accent to-charcoal text-white border-0 shadow-lg animate-glow">
+                  <Badge className="absolute -top-1 left-4 bg-gradient-to-r from-accent to-charcoal text-white border-0 shadow-lg animate-glow">
                     Most Popular
                   </Badge>
                 )}
