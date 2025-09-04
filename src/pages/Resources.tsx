@@ -133,7 +133,12 @@ const Resources = () => {
                         </ul>
                       </div>
                       <Button variant="outline" size="sm" asChild>
-                        <Link to={blogUrls[index]}>Read Full Guide</Link>
+                        <Link 
+                          to={blogUrls[index]}
+                          onClick={() => window.scrollTo(0, 0)}
+                        >
+                          Read Full Guide
+                        </Link>
                       </Button>
                     </div>
                   </CardContent>

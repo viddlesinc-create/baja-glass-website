@@ -11,6 +11,13 @@ const Footer = () => {
     { name: "Contact", href: "/contact" },
   ];
 
+  const blogLinks = [
+    { name: "Glass Care Guide", href: "/blog/glass-care-guide" },
+    { name: "Choosing the Right Door", href: "/blog/choosing-right-door" },
+    { name: "Installation Process", href: "/blog/installation-process" },
+    { name: "Warranty Information", href: "/blog/warranty-information" },
+  ];
+
   const socialLinks = [
     { icon: Star, href: "#", label: "Yelp" },
     { icon: Instagram, href: "#", label: "Instagram" },
@@ -20,7 +27,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -40,19 +47,35 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <div className="flex flex-wrap gap-2">
-              {quickLinks.map((link, index) => (
-                <span key={link.name}>
+            <div className="space-y-2">
+              {quickLinks.map((link) => (
+                <div key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block"
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     {link.name}
                   </Link>
-                  {index < quickLinks.length - 1 && (
-                    <span className="text-primary-foreground/60 mx-2">•</span>
-                  )}
-                </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Blog & Resources */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Blog & Resources</h4>
+            <div className="space-y-2">
+              {blogLinks.map((link) => (
+                <div key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    {link.name}
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
