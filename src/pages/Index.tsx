@@ -103,22 +103,6 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-primary/70 to-charcoal/90"></div>
         </div>
 
-        {/* Floating Elements */}
-        <div className="absolute top-24 left-8 animate-float">
-          <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center shadow-2xl">
-            <Star className="h-10 w-10 text-white" />
-          </div>
-        </div>
-        <div className="absolute bottom-40 right-12 animate-float" style={{ animationDelay: '1.5s' }}>
-          <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center shadow-2xl">
-            <Phone className="h-8 w-8 text-white" />
-          </div>
-        </div>
-        <div className="absolute top-1/2 left-12 animate-float" style={{ animationDelay: '2.5s' }}>
-          <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center shadow-2xl">
-            <Shield className="h-6 w-6 text-white" />
-          </div>
-        </div>
 
         <div className="relative container mx-auto px-4 py-20 text-center">
           <div className="max-w-6xl mx-auto">
