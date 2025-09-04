@@ -7,9 +7,11 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ShowerDoorsHub from "./pages/ShowerDoorsHub";
 import FramelessShowerDoors from "./pages/FramelessShowerDoors";
+import SemiFramelessShowerDoors from "./pages/SemiFramelessShowerDoors";
 import SlidingShowerDoors from "./pages/SlidingShowerDoors";
 import HingedShowerDoors from "./pages/HingedShowerDoors";
 import CustomEnclosures from "./pages/CustomEnclosures";
+import SteamShowerEnclosures from "./pages/SteamShowerEnclosures";
 import ShowerGlassRepair from "./pages/ShowerGlassRepair";
 import Gallery from "./pages/Gallery";
 import AreasServed from "./pages/AreasServed";
@@ -34,9 +36,11 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/shower-doors-las-vegas" element={<ShowerDoorsHub />} />
               <Route path="/shower-doors-las-vegas/frameless" element={<FramelessShowerDoors />} />
+              <Route path="/shower-doors-las-vegas/semi-frameless-framed" element={<SemiFramelessShowerDoors />} />
               <Route path="/shower-doors-las-vegas/sliding" element={<SlidingShowerDoors />} />
               <Route path="/shower-doors-las-vegas/hinged" element={<HingedShowerDoors />} />
               <Route path="/shower-doors-las-vegas/custom-enclosures" element={<CustomEnclosures />} />
+              <Route path="/shower-doors-las-vegas/steam-enclosures" element={<SteamShowerEnclosures />} />
               <Route path="/shower-doors-las-vegas/repair" element={<ShowerGlassRepair />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/areas-served" element={<AreasServed />} />

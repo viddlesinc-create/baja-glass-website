@@ -14,6 +14,11 @@ const ShowerDoorsHub = () => {
       popular: true
     },
     {
+      title: "Semi-Frameless & Framed Doors",
+      description: "Balanced style and support with strategic metal accents (semi‑frameless) or classic full framing. A durable, polished look that suits a wide range of bathrooms.",
+      href: "/shower-doors-las-vegas/semi-frameless-framed"
+    },
+    {
       title: "Sliding Shower Doors",
       description: "Space-saving performance with smooth, reliable rollers and sturdy tracks. Ideal for tight bathrooms or where a swinging door isn't practical.",
       href: "/shower-doors-las-vegas/sliding"
@@ -25,8 +30,13 @@ const ShowerDoorsHub = () => {
     },
     {
       title: "Custom Shower Enclosures",
-      description: "Inline, neo-angle, alcove, and steam configurations tailored to your space. We handle out-of-plumb walls, kneewalls, and unique layouts with accuracy.",
+      description: "Inline, neo-angle, alcove configurations tailored to your space. We handle out-of-plumb walls, kneewalls, and unique layouts with accuracy.",
       href: "/shower-doors-las-vegas/custom-enclosures"
+    },
+    {
+      title: "Steam Shower Enclosures",
+      description: "Sealed, steam‑ready enclosures with transoms and precise gasketing. Create a spa-like experience with premium glass and carefully fitted hardware.",
+      href: "/shower-doors-las-vegas/steam-enclosures"
     },
     {
       title: "Shower Glass Repair & Replacement",
