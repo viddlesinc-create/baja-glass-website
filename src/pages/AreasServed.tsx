@@ -181,7 +181,7 @@ const areas = [
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button variant="hero" size="xl" asChild className="shadow-2xl">
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="xl" asChild className="shadow-2xl">
                 <a href="tel:+17023830779" className="flex items-center gap-3">
