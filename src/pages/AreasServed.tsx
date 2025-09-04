@@ -11,10 +11,10 @@ const AreasServed = () => {
 const areas = [
     {
       name: "Spanish Hills",
-      description: "We design and install custom shower enclosures that match Spanish Hills' upscale finishes—low‑iron glass, clean hardware lines, and precise sealing for a spa‑level feel. Our team measures meticulously around unique tilework to ensure even reveals and a crisp close.",
+      description: "Specializing in bespoke shower enclosures for Spanish Hills' luxury homes—we create one‑of‑a‑kind designs with premium low‑iron glass, architectural hardware finishes, and precision craftsmanship. Every enclosure is tailored to complement your unique tile work and bathroom architecture.",
       image: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",
-      alt: "Frameless shower door Spanish Hills — low‑iron glass, matte black hardware by Baja Glass",
-      services: ["Frameless", "Sliding", "Hinged/Pivot", "Custom Enclosures", "Repair"]
+      alt: "Custom glass shower enclosure Spanish Hills — premium low‑iron glass, architectural hardware by Baja Glass",
+      services: ["Custom Enclosures", "Frameless", "Steam", "Luxury Hardware", "Architectural Glass"]
     },
     {
       name: "Spanish Trail", 
@@ -129,7 +129,9 @@ const areas = [
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-2xl font-serif">Shower Doors in {area.name}</CardTitle>
+                  <CardTitle className="text-2xl font-serif">
+                    {area.name === "Spanish Hills" ? `Custom Enclosures in ${area.name}` : `Shower Doors in ${area.name}`}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="leading-relaxed mb-6 text-base">
