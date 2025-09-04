@@ -25,40 +25,42 @@ import Footer from "./components/Footer";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
-              <Route path="/shower-doors-las-vegas" element={<ShowerDoorsHub />} />
-              <Route path="/shower-doors-las-vegas/frameless" element={<FramelessShowerDoors />} />
-              <Route path="/shower-doors-las-vegas/semi-frameless-framed" element={<SemiFramelessShowerDoors />} />
-              <Route path="/shower-doors-las-vegas/sliding" element={<SlidingShowerDoors />} />
-              <Route path="/shower-doors-las-vegas/hinged" element={<HingedShowerDoors />} />
-              <Route path="/shower-doors-las-vegas/custom-enclosures" element={<CustomEnclosures />} />
-              <Route path="/shower-doors-las-vegas/steam-enclosures" element={<SteamShowerEnclosures />} />
-              <Route path="/shower-doors-las-vegas/repair" element={<ShowerGlassRepair />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/areas-served" element={<AreasServed />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/resources" element={<Resources />} />
-              <Route path="/contact" element={<Contact />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-1">
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
+                <Route path="/shower-doors-las-vegas" element={<ShowerDoorsHub />} />
+                <Route path="/shower-doors-las-vegas/frameless" element={<FramelessShowerDoors />} />
+                <Route path="/shower-doors-las-vegas/semi-frameless-framed" element={<SemiFramelessShowerDoors />} />
+                <Route path="/shower-doors-las-vegas/sliding" element={<SlidingShowerDoors />} />
+                <Route path="/shower-doors-las-vegas/hinged" element={<HingedShowerDoors />} />
+                <Route path="/shower-doors-las-vegas/custom-enclosures" element={<CustomEnclosures />} />
+                <Route path="/shower-doors-las-vegas/steam-enclosures" element={<SteamShowerEnclosures />} />
+                <Route path="/shower-doors-las-vegas/repair" element={<ShowerGlassRepair />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/areas-served" element={<AreasServed />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/resources" element={<Resources />} />
+                <Route path="/contact" element={<Contact />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
 
 export default App;
