@@ -35,7 +35,16 @@ const FramelessShowerDoors = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-charcoal to-primary text-white py-20">
-        <div className="container mx-auto px-4">
+        {/* Hero Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" 
+            alt="Modern luxury bathroom with frameless glass shower door and freestanding tub - professional glass installation Las Vegas"
+            className="w-full h-full object-cover opacity-75"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Frameless Shower Doors in Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">Minimal metal, maximum openness—custom glass measured precisely and installed by experts.</p>
