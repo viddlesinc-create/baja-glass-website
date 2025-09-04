@@ -23,7 +23,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Baja Glass</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
+                alt="Baja Glass — Shower Doors & Glass in Las Vegas"
+                className="h-10 w-auto"
+              />
+            </div>
             <div className="space-y-2 text-primary-foreground/80">
               <p>4280 W Reno Ave</p>
               <p>Las Vegas, NV 89118</p>

@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 0 0% 15%;
+    --accent: 0 84% 45%; /* Red accent from logo */
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,23 +36,28 @@ All colors MUST be HSL.
     --input: 0 0% 90%;
     --ring: 0 0% 5%;
 
-    /* Baja Glass Brand Colors */
-    --charcoal: 0 0% 20%;
-    --charcoal-light: 0 0% 35%;
-    --gray-dark: 0 0% 45%;
-    --gray-medium: 0 0% 65%;
-    --gray-light: 0 0% 85%;
+    /* Baja Glass Brand Colors - Updated to match logo */
+    --charcoal: 0 0% 15%;
+    --charcoal-light: 0 0% 25%;
+    --chrome: 0 0% 75%; /* Metallic chrome from logo */
+    --chrome-light: 0 0% 85%;
+    --chrome-dark: 0 0% 65%;
+    --red-accent: 0 84% 45%; /* Matching the logo red */
+    --red-accent-light: 0 84% 55%;
 
-    /* Gradients */
+    /* Gradients - Updated for chrome/metallic look */
     --gradient-hero: linear-gradient(135deg, hsl(var(--charcoal)), hsl(var(--primary)));
-    --gradient-section: linear-gradient(180deg, hsl(var(--background)), hsl(var(--gray-light)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--charcoal)));
+    --gradient-chrome: linear-gradient(135deg, hsl(var(--chrome-light)), hsl(var(--chrome)), hsl(var(--chrome-dark)));
+    --gradient-section: linear-gradient(180deg, hsl(var(--background)), hsl(var(--chrome-light) / 0.1));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--red-accent)), hsl(var(--charcoal)));
+    --gradient-metallic: linear-gradient(45deg, hsl(var(--chrome-dark)), hsl(var(--chrome-light)), hsl(var(--chrome)), hsl(var(--chrome-light)));
 
-    /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--charcoal) / 0.3);
-    --shadow-glass: 0 8px 32px hsl(var(--charcoal) / 0.1);
-    --shadow-glow: 0 0 50px hsl(var(--primary) / 0.15);
-    --shadow-hero: 0 25px 60px -12px hsl(var(--charcoal) / 0.4);
+    /* Shadows - Enhanced for metallic effect */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--charcoal) / 0.4);
+    --shadow-glass: 0 8px 32px hsl(var(--charcoal) / 0.15);
+    --shadow-glow: 0 0 50px hsl(var(--red-accent) / 0.2);
+    --shadow-hero: 0 25px 60px -12px hsl(var(--charcoal) / 0.5);
+    --shadow-metallic: 0 4px 20px hsl(var(--charcoal) / 0.3), inset 0 1px 0 hsl(var(--chrome-light) / 0.5);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -61,19 +66,12 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 

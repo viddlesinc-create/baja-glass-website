@@ -100,7 +100,7 @@ const ShowerDoorsHub = () => {
             <div className="animate-fade-in-up">
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight">
                 Shower Doors in 
-                <span className="block bg-gradient-to-r from-white via-gray-light to-white bg-clip-text text-transparent animate-glow">
+                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow">
                   Las Vegas
                 </span>
               </h1>
@@ -181,7 +181,7 @@ const ShowerDoorsHub = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Our Shower Door Services</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-accent to-charcoal mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-red-accent to-charcoal mx-auto rounded-full"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -229,11 +229,11 @@ const ShowerDoorsHub = () => {
             ].map((step, index) => (
               <div key={step.title} className="text-center animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-charcoal text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto shadow-lg animate-glow">
+                  <div className="w-16 h-16 bg-gradient-to-br from-red-accent to-charcoal text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto shadow-lg animate-glow">
                     {index + 1}
                   </div>
                   {index < 4 && (
-                    <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-accent/50 to-transparent"></div>
+                    <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-red-accent/50 to-transparent"></div>
                   )}
                 </div>
                 <h3 className="font-semibold mb-3 text-lg">{step.title}</h3>

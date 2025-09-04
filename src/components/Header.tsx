@@ -44,10 +44,12 @@ const Header = () => {
         {/* Main header */}
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-foreground">
-              Baja Glass
-            </span>
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
+              alt="Baja Glass — Shower Doors & Glass in Las Vegas"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -88,8 +90,12 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-6 mt-6">
-                  <Link to="/" className="text-2xl font-bold" onClick={() => setIsOpen(false)}>
-                    Baja Glass
+                  <Link to="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
+                    <img 
+                      src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
+                      alt="Baja Glass — Shower Doors & Glass in Las Vegas"
+                      className="h-10 w-auto"
+                    />
                   </Link>
                   
                   <nav className="flex flex-col gap-4">

@@ -56,10 +56,14 @@ export default {
 					DEFAULT: 'hsl(var(--charcoal))',
 					light: 'hsl(var(--charcoal-light))'
 				},
-				gray: {
-					dark: 'hsl(var(--gray-dark))',
-					medium: 'hsl(var(--gray-medium))',
-					light: 'hsl(var(--gray-light))'
+				chrome: {
+					DEFAULT: 'hsl(var(--chrome))',
+					light: 'hsl(var(--chrome-light))',
+					dark: 'hsl(var(--chrome-dark))'
+				},
+				'red-accent': {
+					DEFAULT: 'hsl(var(--red-accent))',
+					light: 'hsl(var(--red-accent-light))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

@@ -126,7 +126,7 @@ const Index = () => {
             <div className="animate-fade-in-up">
               <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold text-white mb-8 leading-none">
                 Custom 
-                <span className="block bg-gradient-to-r from-white via-gray-light to-white bg-clip-text text-transparent animate-glow">
+                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow">
                   Frameless
                 </span>
                 <span className="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
@@ -201,7 +201,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Shower Glass Services We Offer</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-accent to-charcoal mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-red-accent to-charcoal mx-auto rounded-full"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
