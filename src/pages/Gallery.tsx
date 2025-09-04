@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Slider } from "@/components/ui/slider";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { X } from "lucide-react";
 
 const Gallery = () => {
   const [sliderValues, setSliderValues] = useState([50, 50, 50, 50]);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   
   const beforeAfterProjects = [
     {
@@ -177,53 +180,110 @@ const Gallery = () => {
       {/* Gallery Grid */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">Our Recent Work</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Click any image to view it in full size
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png")}
+            >
               <img 
-                src="/lovable-uploads/c383f5e7-68b2-4ea4-8019-4e046a450028.png" 
-                alt="Herringbone tile shower with frameless glass doors"
+                src="/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png" 
+                alt="Frameless glass shower doors with chrome hardware"
                 className="w-full aspect-video object-cover"
               />
             </div>
-            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png")}
+            >
               <img 
-                src="/lovable-uploads/bedc8bb9-3b67-4709-87b4-556203cfd79f.png" 
-                alt="Curved corner shower enclosure with gold hardware"
+                src="/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png" 
+                alt="Elegant bathroom with custom glass shower enclosure"
                 className="w-full aspect-video object-cover"
               />
             </div>
-            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png")}
+            >
               <img 
-                src="/lovable-uploads/f2364d5d-64d5-4b55-a8b3-e8732436cd87.png" 
-                alt="Sliding glass shower door installation"
+                src="/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png" 
+                alt="Under-stair shower installation with custom glass door"
                 className="w-full aspect-video object-cover"
               />
             </div>
-            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/eb713b05-a28a-4385-b0c4-cdcb90a610ee.png")}
+            >
               <img 
-                src="/lovable-uploads/b23c9420-2184-4048-b39c-d5d90544053a.png" 
-                alt="Large frameless shower with mosaic floor"
+                src="/lovable-uploads/eb713b05-a28a-4385-b0c4-cdcb90a610ee.png" 
+                alt="Modern bathroom mirror with brass fixtures"
                 className="w-full aspect-video object-cover"
               />
             </div>
-            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png")}
+            >
               <img 
-                src="/lovable-uploads/50831b45-a61f-49d8-9b76-6f5a63a1daff.png" 
-                alt="Custom shower enclosure under construction"
+                src="/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png" 
+                alt="Textured glass shower doors with black hardware"
                 className="w-full aspect-video object-cover"
               />
             </div>
-            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/ab324ca0-1c7d-49d5-ba4f-dd8865a3b916.png")}
+            >
               <img 
-                src="/lovable-uploads/e6377c34-4f89-4979-9352-916061f129b9.png" 
-                alt="Custom glass table installation"
+                src="/lovable-uploads/ab324ca0-1c7d-49d5-ba4f-dd8865a3b916.png" 
+                alt="Frosted glass shower panel with black frame"
                 className="w-full aspect-video object-cover"
               />
             </div>
-            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png")}
+            >
               <img 
-                src="/lovable-uploads/662db84f-6194-44ba-9e31-276bae0c4098.png" 
-                alt="Large walk-in shower with frameless glass"
+                src="/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png" 
+                alt="Tiled shower with black framed glass doors"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png")}
+            >
+              <img 
+                src="/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png" 
+                alt="Large walk-in shower with frameless glass panels"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png")}
+            >
+              <img 
+                src="/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png" 
+                alt="Corner shower with black hardware and built-in seating"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png")}
+            >
+              <img 
+                src="/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png" 
+                alt="Tub-to-shower conversion with frameless glass doors"
                 className="w-full aspect-video object-cover"
               />
             </div>
@@ -287,6 +347,27 @@ const Gallery = () => {
           </div>
         </div>
       </section>
+
+      {/* Lightbox Modal */}
+      <Dialog open={!!lightboxImage} onOpenChange={() => setLightboxImage(null)}>
+        <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none">
+          <div className="relative">
+            <button
+              onClick={() => setLightboxImage(null)}
+              className="absolute -top-12 right-0 z-50 text-white hover:text-gray-300 transition-colors"
+            >
+              <X size={32} />
+            </button>
+            {lightboxImage && (
+              <img
+                src={lightboxImage}
+                alt="Gallery image"
+                className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
