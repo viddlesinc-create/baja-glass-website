@@ -1,0 +1,198 @@
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Phone } from "lucide-react";
+
+const SlidingShowerDoors = () => {
+  const faqs = [
+    {
+      question: "What's the difference between single sliding and bypass?",
+      answer: "Single sliding has one moving panel that slides along a fixed panel. Bypass systems have two panels that slide past each other, providing wider access options."
+    },
+    {
+      question: "Can sliding doors work on tubs and showers?",
+      answer: "Yes! We install sliding systems on both shower-only and tub/shower combinations, with proper sealing and hardware for each application."
+    },
+    {
+      question: "Do sliding doors seal as well as hinged doors?",
+      answer: "When properly installed with quality rollers, tracks, and seals, sliding doors provide excellent water containment and smooth operation."
+    },
+    {
+      question: "Are soft-close systems available?",
+      answer: "Yes, we offer soft-close roller systems that prevent slamming and provide smooth, controlled door movement for a premium feel."
+    },
+    {
+      question: "Can I choose different handle styles?",
+      answer: "Absolutely! We offer various handle styles including ladder pulls, compact handles, and integrated towel bars in multiple finishes."
+    }
+  ];
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-charcoal to-primary text-white py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl font-bold mb-6">Sliding Shower Doors in Las Vegas</h1>
+            <p className="text-xl mb-8 text-white/90">Smooth‑glide systems that save space and elevate your bath.</p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="glass" size="lg" asChild>
+                <Link to="/contact">Get a Fast Quote</Link>
+              </Button>
+              <Button variant="ghost" size="lg" asChild>
+                <a href="tel:+17023830779" className="flex items-center gap-2">
+                  <Phone className="h-5 w-5" />
+                  Call Now: (702) 383-0779
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center">
+              Sliding shower doors deliver space‑saving performance with sleek style. We install high‑quality roller and track systems, align panels for smooth operation, and seal edges for dependable splash control.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* System Options */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Sliding Configurations & Finishes</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div>
+              <h3 className="text-xl font-semibold mb-4">System Types</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Single sliding door systems</li>
+                <li>• Bypass (two-panel) configurations</li>
+                <li>• Soft‑close roller systems available</li>
+                <li>• Heavy-duty tracks for large panels</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Hardware Finishes</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Matte black for modern appeal</li>
+                <li>• Polished chrome for classic look</li>
+                <li>• Brushed nickel for warm tones</li>
+                <li>• Brass accents available</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Glass Compatibility</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Clear and low‑iron options</li>
+                <li>• Select patterned and frosted glass</li>
+                <li>• 3/8" and 1/2" thickness options</li>
+                <li>• Custom sizing for any opening</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Handle Options</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Ladder pulls in various lengths</li>
+                <li>• Compact handles for tight spaces</li>
+                <li>• Integrated towel bar handles</li>
+                <li>• Custom placement options</li>
+              </ul>
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <Button variant="cta" size="lg" asChild>
+              <Link to="/contact">Schedule My Measurement</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Performance */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Glide Performance You Can Feel</h2>
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg text-muted-foreground mb-8">
+              We align tracks and rollers precisely so doors slide smoothly and close cleanly. Careful tolerance, seal placement, and track leveling help reduce splashing and sticking.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <h3 className="font-semibold mb-2">True Alignment</h3>
+                <p className="text-sm text-muted-foreground">Even reveals and consistent gaps</p>
+              </div>
+              <div className="text-center">
+                <h3 className="font-semibold mb-2">Quality Rollers</h3>
+                <p className="text-sm text-muted-foreground">High-grade bearings and brackets</p>
+              </div>
+              <div className="text-center">
+                <h3 className="font-semibold mb-2">Seal Placement</h3>
+                <p className="text-sm text-muted-foreground">Accurate seals and sweeps for water control</p>
+              </div>
+            </div>
+            <div className="mt-8">
+              <Button variant="cta" asChild>
+                <Link to="/contact">Get a Fast Quote</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Local Service */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-8">Installed by Local Experts</h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+            Baja Glass serves the entire Las Vegas Valley, including Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City. Expect clean, careful work and clear communication.
+          </p>
+          <div className="bg-background p-6 rounded-lg inline-block">
+            <p className="font-semibold">Baja Glass</p>
+            <p className="text-muted-foreground">4280 W Reno Ave, Las Vegas, NV 89118</p>
+            <p className="text-muted-foreground">(702) 383-0779</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Sliding Shower Door FAQs</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {faqs.map((faq) => (
+                <div key={faq.question} className="bg-secondary/50 p-6 rounded-lg">
+                  <h3 className="font-semibold mb-3">{faq.question}</h3>
+                  <p className="text-muted-foreground">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Upgrade to Smooth‑Glide Sliding Doors</h2>
+          <p className="text-xl mb-8 text-primary-foreground/80">Experience the convenience and style of professionally installed sliding shower doors.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="glass" size="lg" asChild>
+              <Link to="/contact">Get a Fast Quote</Link>
+            </Button>
+            <Button variant="ghost" size="lg" asChild>
+              <a href="tel:+17023830779" className="flex items-center gap-2">
+                <Phone className="h-5 w-5" />
+                Call Now: (702) 383-0779
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default SlidingShowerDoors;
