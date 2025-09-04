@@ -34,10 +34,14 @@ const SemiFramelessShowerDoors = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1)_0%,transparent_70%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.1)_0%,transparent_70%)]"></div>
+        {/* Hero Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/432cd1dc-d89c-47a1-a43e-f3bdd4224115.png" 
+            alt="Modern semi-frameless glass shower door with black fixtures and geometric tile - professional installation Las Vegas"
+            className="w-full h-full object-cover opacity-75"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
         
         <div className="relative container mx-auto px-4 py-20">
