@@ -178,22 +178,69 @@ const Gallery = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <div className="aspect-video bg-gradient-to-br from-gray-light to-secondary flex items-center justify-center">
-                  <span className="text-muted-foreground">Project Image</span>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Badge variant="secondary">{project.category}</Badge>
-                    <Badge variant="outline">{project.location}</Badge>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-accent font-medium mb-3">{project.subtitle}</p>
-                  <p className="text-muted-foreground">{project.description}</p>
-                </div>
-              </div>
-            ))}
+            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img 
+                src="/lovable-uploads/53bdced6-52b0-4006-8e18-3a10e2bfda89.png" 
+                alt="Professional shower door installation in progress"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img 
+                src="/lovable-uploads/c383f5e7-68b2-4ea4-8019-4e046a450028.png" 
+                alt="Herringbone tile shower with frameless glass doors"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img 
+                src="/lovable-uploads/bedc8bb9-3b67-4709-87b4-556203cfd79f.png" 
+                alt="Curved corner shower enclosure with gold hardware"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img 
+                src="/lovable-uploads/f2364d5d-64d5-4b55-a8b3-e8732436cd87.png" 
+                alt="Sliding glass shower door installation"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img 
+                src="/lovable-uploads/b23c9420-2184-4048-b39c-d5d90544053a.png" 
+                alt="Large frameless shower with mosaic floor"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img 
+                src="/lovable-uploads/50831b45-a61f-49d8-9b76-6f5a63a1daff.png" 
+                alt="Custom shower enclosure under construction"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img 
+                src="/lovable-uploads/c1e0f087-5429-41c1-849f-0865526f4310.png" 
+                alt="Baja Glass company vehicles and equipment"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img 
+                src="/lovable-uploads/e6377c34-4f89-4979-9352-916061f129b9.png" 
+                alt="Custom glass table installation"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img 
+                src="/lovable-uploads/662db84f-6194-44ba-9e31-276bae0c4098.png" 
+                alt="Large walk-in shower with frameless glass"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
