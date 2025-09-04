@@ -55,8 +55,18 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png" 
+            alt="Professional shower door installation Las Vegas"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 to-primary/80"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl font-bold mb-6">Get Your Free Quote</h1>
           <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
             Ready to transform your shower? Get expert advice, clear timelines, and a flawless installation.
