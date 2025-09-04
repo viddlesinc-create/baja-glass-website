@@ -287,6 +287,86 @@ const Gallery = () => {
                 className="w-full aspect-video object-cover"
               />
             </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png")}
+            >
+              <img 
+                src="/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png" 
+                alt="Elegant shower with pebble accent strip and frameless glass"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/7281360e-8ce3-43c7-890e-3f4b5f73e8a4.png")}
+            >
+              <img 
+                src="/lovable-uploads/7281360e-8ce3-43c7-890e-3f4b5f73e8a4.png" 
+                alt="Tub enclosure with black hardware and accent tile"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/04d04176-aad8-47c9-9880-5c8eed82308f.png")}
+            >
+              <img 
+                src="/lovable-uploads/04d04176-aad8-47c9-9880-5c8eed82308f.png" 
+                alt="Compact shower with frameless glass door"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png")}
+            >
+              <img 
+                src="/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png" 
+                alt="Corner shower enclosure with black hardware"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/9cb21233-99c8-47f9-a756-a38f36471524.png")}
+            >
+              <img 
+                src="/lovable-uploads/9cb21233-99c8-47f9-a756-a38f36471524.png" 
+                alt="Custom glass dining table with modern base"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/a038cf4c-a8a3-4089-b29d-40d9ca793fff.png")}
+            >
+              <img 
+                src="/lovable-uploads/a038cf4c-a8a3-4089-b29d-40d9ca793fff.png" 
+                alt="Walk-in shower with black hardware and subway tile"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/ec6a560e-8579-44ed-9f2a-ff3fa3889f09.png")}
+            >
+              <img 
+                src="/lovable-uploads/ec6a560e-8579-44ed-9f2a-ff3fa3889f09.png" 
+                alt="Large shower with partial glass panel and black fixtures"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/91755c9c-0083-4cb9-bb28-670bdbf4a700.png")}
+            >
+              <img 
+                src="/lovable-uploads/91755c9c-0083-4cb9-bb28-670bdbf4a700.png" 
+                alt="Narrow shower with herringbone accent tile and black hardware"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
