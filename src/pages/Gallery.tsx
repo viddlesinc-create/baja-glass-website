@@ -18,8 +18,8 @@ const Gallery = () => {
     {
       title: "Sliding Door Transformation",
       location: "Henderson", 
-      beforeImage: "/lovable-uploads/80bee4d9-c735-44e2-a119-af93a8fb3b42.png",
-      afterImage: "/lovable-uploads/2e898825-142f-4567-9fc4-5a925964be11.png",
+      beforeImage: "/lovable-uploads/2145af91-ce61-458d-a311-72b26193aeb2.png",
+      afterImage: "/lovable-uploads/cd86f335-efa7-4203-92ce-e32d77e9b26b.png",
       description: "Replaced frosted sliding shower doors with crystal clear glass and modern chrome hardware for an open, spacious feel."
     },
     {
