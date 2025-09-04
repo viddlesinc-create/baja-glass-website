@@ -215,13 +215,6 @@ const Gallery = () => {
             </div>
             <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <img 
-                src="/lovable-uploads/c1e0f087-5429-41c1-849f-0865526f4310.png" 
-                alt="Baja Glass company vehicles and equipment"
-                className="w-full aspect-video object-cover"
-              />
-            </div>
-            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <img 
                 src="/lovable-uploads/e6377c34-4f89-4979-9352-916061f129b9.png" 
                 alt="Custom glass table installation"
                 className="w-full aspect-video object-cover"
