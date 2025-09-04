@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Gallery = () => {
-  const [sliderValues, setSliderValues] = useState([50, 50, 50, 50]);
+  const [sliderValues, setSliderValues] = useState([50, 50, 50, 50, 50]);
   
   const beforeAfterProjects = [
     {
@@ -35,6 +35,13 @@ const Gallery = () => {
       beforeImage: "/lovable-uploads/ceb5a23b-36d2-41de-b907-83d095a64655.png",
       afterImage: "/lovable-uploads/a50691ba-4b24-4d5c-a2be-06218e1dc667.png", 
       description: "Upgraded textured glass shower doors to create a more open and modern bathroom space."
+    },
+    {
+      title: "Frosted to Clear Glass Upgrade",
+      location: "Las Vegas",
+      beforeImage: "/lovable-uploads/5691175d-8fb2-4e96-9445-987ca41039fb.png",
+      afterImage: "/lovable-uploads/fa10a8e6-c837-4e10-b9f0-c8bbd5506ea4.png",
+      description: "Transformed frosted glass shower door to crystal clear glass with modern chrome hardware."
     }
   ];
   
