@@ -91,8 +91,9 @@ const Gallery = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-20 relative bg-cover bg-center text-white" style={{ backgroundImage: "url('/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png')" }}>
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl font-bold mb-6">Our Recent Shower Door Projects</h1>
           <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
             Explore our portfolio of custom shower doors and enclosures installed throughout the Las Vegas Valley.
