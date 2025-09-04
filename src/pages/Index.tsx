@@ -96,11 +96,11 @@ const Index = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src={heroImage} 
-            alt="Frameless shower door installation in Las Vegas bathroom with matte black hardware by Baja Glass"
-            className="w-full h-full object-cover opacity-25"
+            src="/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png" 
+            alt="Luxury steam shower enclosure installation Las Vegas - ultra-clear glass with matte black hardware and marble walls by Baja Glass"
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-primary/70 to-charcoal/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-primary/65 to-charcoal/85"></div>
         </div>
 
 
@@ -129,7 +129,7 @@ const Index = () => {
             {/* Subheading */}
             <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
               <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-10 max-w-4xl mx-auto leading-relaxed font-light">
-                Design, fabrication, installation, and repair—done right and on time.
+                Precision-measured, expertly fabricated, and professionally installed—creating beautiful, leak-resistant shower enclosures that last.
               </p>
             </div>
 

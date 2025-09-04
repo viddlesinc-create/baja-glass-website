@@ -85,24 +85,13 @@ const ShowerDoorsHub = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src={heroImage} 
-            alt="Custom frameless shower door installation in Las Vegas by Baja Glass"
-            className="w-full h-full object-cover opacity-30"
+            src="/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" 
+            alt="Large sliding shower door installation with black hardware and marble tile - professional Las Vegas shower glass by Baja Glass"
+            className="w-full h-full object-cover opacity-35"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-primary/60 to-charcoal/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-primary/55 to-charcoal/75"></div>
         </div>
 
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 animate-float">
-          <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-            <Star className="h-8 w-8 text-white" />
-          </div>
-        </div>
-        <div className="absolute bottom-32 right-16 animate-float" style={{ animationDelay: '1s' }}>
-          <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-            <Phone className="h-6 w-6 text-white" />
-          </div>
-        </div>
 
         <div className="relative container mx-auto px-4 py-20 text-center">
           <div className="max-w-5xl mx-auto">
@@ -119,7 +108,7 @@ const ShowerDoorsHub = () => {
             {/* Subheading */}
             <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
-                Custom Glass & Professional Installation — Frameless, sliding, hinged, and fully custom enclosures measured precisely, fabricated locally, and installed by experts.
+                Expertly crafted shower doors featuring premium glass, precision hardware, and professional installation—delivering the perfect balance of beauty and functionality.
               </p>
             </div>
 

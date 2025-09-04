@@ -177,11 +177,11 @@ const GlassCompanyLasVegas = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src={heroImage} 
-            alt="Custom glass and shower enclosure installation in Las Vegas by Baja Glass"
-            className="w-full h-full object-cover opacity-25"
+            src="/lovable-uploads/2705e428-6ba5-4a64-91cc-bff916c3b8a6.png" 
+            alt="Modern frameless shower door with black fixtures and marble walls - professional glass installation Las Vegas by Baja Glass"
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-primary/70 to-charcoal/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-primary/65 to-charcoal/85"></div>
         </div>
 
         <div className="relative container mx-auto px-4 py-20 text-center">
