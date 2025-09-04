@@ -18,15 +18,15 @@ const Gallery = () => {
     {
       title: "Sliding Door Transformation",
       location: "Henderson", 
-      beforeImage: "/lovable-uploads/80bee4d9-c735-44e2-a119-af93a8fb3b42.png",
-      afterImage: "/lovable-uploads/2e898825-142f-4567-9fc4-5a925964be11.png",
+      beforeImage: "/lovable-uploads/2e898825-142f-4567-9fc4-5a925964be11.png",
+      afterImage: "/lovable-uploads/80bee4d9-c735-44e2-a119-af93a8fb3b42.png",
       description: "Replaced frosted sliding shower doors with crystal clear glass and modern chrome hardware for an open, spacious feel."
     },
     {
       title: "Framed to Frameless Upgrade",
       location: "Summerlin",
-      beforeImage: "/lovable-uploads/d11634ec-aaaf-4b5a-8965-c55508271ba6.png", 
-      afterImage: "/lovable-uploads/2ba2e0bd-d607-42f6-a362-4d8b14a39093.png",
+      beforeImage: "/lovable-uploads/2ba2e0bd-d607-42f6-a362-4d8b14a39093.png", 
+      afterImage: "/lovable-uploads/d11634ec-aaaf-4b5a-8965-c55508271ba6.png",
       description: "Transformed traditional framed frosted doors to sleek frameless clear glass with black accent hardware."
     },
     {
