@@ -27,7 +27,7 @@ const Gallery = () => {
       location: "Summerlin",
       beforeImage: "/lovable-uploads/b924d7a0-9e63-4616-9595-c35e3546e89a.png", 
       afterImage: "/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png",
-      description: "Transformed traditional framed frosted doors to sleek frameless clear glass with black accent hardware."
+      description: "Upgraded from traditional framed shower doors to modern frameless design with premium glass and sleek hardware."
     },
     {
       title: "Custom Enclosure Modernization",
