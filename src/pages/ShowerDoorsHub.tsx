@@ -65,55 +65,111 @@ const ShowerDoorsHub = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-charcoal to-primary text-white">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1)_0%,transparent_70%)]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.1)_0%,transparent_70%)]"></div>
+        </div>
+        
+        {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
             alt="Custom frameless shower door installation in Las Vegas by Baja Glass"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-30"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-primary/60 to-charcoal/80"></div>
         </div>
-        <div className="relative container mx-auto px-4 py-20">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Shower Doors in Las Vegas — Custom Glass & Professional Installation</h1>
-            <p className="text-xl mb-8 text-white/90">Frameless, sliding, hinged, and fully custom enclosures—measured precisely, fabricated locally, and installed by experts.</p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-6">
-              <Button variant="glass" size="lg" asChild>
+
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-10 animate-float">
+          <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
+            <Star className="h-8 w-8 text-white" />
+          </div>
+        </div>
+        <div className="absolute bottom-32 right-16 animate-float" style={{ animationDelay: '1s' }}>
+          <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
+            <Phone className="h-6 w-6 text-white" />
+          </div>
+        </div>
+
+        <div className="relative container mx-auto px-4 py-20 text-center">
+          <div className="max-w-5xl mx-auto">
+            {/* Main Heading */}
+            <div className="animate-fade-in-up">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight">
+                Shower Doors in 
+                <span className="block bg-gradient-to-r from-white via-gray-light to-white bg-clip-text text-transparent animate-glow">
+                  Las Vegas
+                </span>
+              </h1>
+            </div>
+            
+            {/* Subheading */}
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
+                Custom Glass & Professional Installation — Frameless, sliding, hinged, and fully custom enclosures measured precisely, fabricated locally, and installed by experts.
+              </p>
+            </div>
+
+            {/* Trust Signals */}
+            <div className="animate-fade-in-up mb-12" style={{ animationDelay: '0.4s' }}>
+              <div className="flex items-center justify-center gap-2 mb-6">
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <span className="text-white/90 ml-3 text-lg">Trusted by homeowners across the Las Vegas Valley</span>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="animate-fade-in-up flex flex-col sm:flex-row gap-6 justify-center mb-12" style={{ animationDelay: '0.6s' }}>
+              <Button variant="hero" size="xl" asChild className="animate-scale-in">
                 <Link to="/contact">Get a Fast Quote</Link>
               </Button>
-              <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
+              <Button variant="glass" size="xl" asChild className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
+                <a href="tel:+17023830779" className="flex items-center gap-3">
+                  <Phone className="h-6 w-6" />
                   Call Now: (702) 383-0779
                 </a>
               </Button>
             </div>
-            <div className="flex items-center gap-4 text-sm">
-              <div className="flex items-center gap-1">
-                <Star className="h-4 w-4 fill-current" />
-                <Star className="h-4 w-4 fill-current" />
-                <Star className="h-4 w-4 fill-current" />
-                <Star className="h-4 w-4 fill-current" />
-                <Star className="h-4 w-4 fill-current" />
-                <span className="ml-2">Trusted by homeowners across the Las Vegas Valley</span>
-              </div>
+
+            {/* Badges */}
+            <div className="animate-fade-in-up flex flex-wrap justify-center gap-3" style={{ animationDelay: '0.8s' }}>
+              {['Licensed', 'Bonded', 'Insured', 'Local Team', 'Strong Warranty'].map((badge) => (
+                <Badge 
+                  key={badge} 
+                  className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-sm px-4 py-2 hover:bg-white/20 transition-all duration-300"
+                >
+                  {badge}
+                </Badge>
+              ))}
             </div>
-            <div className="flex flex-wrap gap-2 mt-4">
-              <Badge variant="outline" className="bg-white/10 text-white border-white/20">Licensed</Badge>
-              <Badge variant="outline" className="bg-white/10 text-white border-white/20">Bonded</Badge>
-              <Badge variant="outline" className="bg-white/10 text-white border-white/20">Insured</Badge>
-              <Badge variant="outline" className="bg-white/10 text-white border-white/20">Local Team</Badge>
-              <Badge variant="outline" className="bg-white/10 text-white border-white/20">Strong Warranty</Badge>
-            </div>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-8 h-12 border-2 border-white/30 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </section>
 
       {/* Intro */}
-      <section className="py-16 bg-background">
+      <section className="py-24 bg-gradient-to-b from-background to-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg text-muted-foreground">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
+            <div className="inline-block p-4 rounded-full bg-accent/10 mb-6">
+              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                <Star className="h-6 w-6 text-accent" />
+              </div>
+            </div>
+            <p className="text-xl text-muted-foreground leading-relaxed">
               At Baja Glass, we design, fabricate, and install shower doors that fit your space and style. From minimalist frameless designs to space‑saving sliders and custom neo-angle enclosures, every detail is measured and installed for a tight, leak‑resistant fit.
             </p>
           </div>
@@ -121,21 +177,31 @@ const ShowerDoorsHub = () => {
       </section>
 
       {/* Services */}
-      <section className="py-20 bg-secondary/50">
+      <section className="py-24 bg-gradient-to-br from-secondary/20 via-background to-secondary/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Shower Door Services</h2>
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Our Shower Door Services</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-accent to-charcoal mx-auto rounded-full"></div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <Card key={service.title} className="relative hover:shadow-lg transition-shadow">
+            {services.map((service, index) => (
+              <Card 
+                key={service.title} 
+                className="relative hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-gradient-to-br from-background to-secondary/20 border-0 shadow-lg animate-scale-in group overflow-hidden"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-charcoal/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 {service.popular && (
-                  <Badge className="absolute -top-2 left-4 bg-accent text-accent-foreground">Most Popular</Badge>
+                  <Badge className="absolute -top-2 left-4 bg-gradient-to-r from-accent to-charcoal text-white border-0 shadow-lg animate-glow">
+                    Most Popular
+                  </Badge>
                 )}
-                <CardHeader>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                <CardHeader className="relative">
+                  <CardTitle className="text-xl font-serif group-hover:text-accent transition-colors duration-300">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="mb-4">{service.description}</CardDescription>
-                  <Button variant="outline" asChild>
+                <CardContent className="relative">
+                  <CardDescription className="mb-6 text-base leading-relaxed">{service.description}</CardDescription>
+                  <Button variant="outline" asChild className="w-full group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all duration-300">
                     <Link to={service.href}>Learn More →</Link>
                   </Button>
                 </CardContent>
@@ -146,9 +212,13 @@ const ShowerDoorsHub = () => {
       </section>
 
       {/* Process */}
-      <section className="py-20 bg-background">
+      <section className="py-24 bg-gradient-to-br from-background via-secondary/20 to-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Process</h2>
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Our Process</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-accent to-charcoal mx-auto rounded-full mb-4"></div>
+            <p className="text-muted-foreground max-w-2xl mx-auto">From consultation to installation, we ensure every step is perfectly executed</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {[
               { title: "Consultation & Measurement", description: "We visit your home, confirm opening specs, and review styles and finishes." },
@@ -157,17 +227,22 @@ const ShowerDoorsHub = () => {
               { title: "Professional Installation", description: "Clean, careful, code‑compliant. Most installs completed in a single day." },
               { title: "Final Walkthrough & Warranty", description: "Care tips and a strong guarantee for peace of mind." }
             ].map((step, index) => (
-              <div key={step.title} className="text-center">
-                <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
-                  {index + 1}
+              <div key={step.title} className="text-center animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="relative mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-charcoal text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto shadow-lg animate-glow">
+                    {index + 1}
+                  </div>
+                  {index < 4 && (
+                    <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-accent/50 to-transparent"></div>
+                  )}
                 </div>
-                <h3 className="font-semibold mb-2">{step.title}</h3>
-                <p className="text-sm text-muted-foreground">{step.description}</p>
+                <h3 className="font-semibold mb-3 text-lg">{step.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-12">
-            <Button variant="cta" size="lg" asChild>
+          <div className="text-center mt-16 animate-fade-in">
+            <Button variant="cta" size="xl" asChild>
               <Link to="/contact">Schedule My Measurement</Link>
             </Button>
           </div>

@@ -51,9 +51,12 @@ All colors MUST be HSL.
     /* Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(var(--charcoal) / 0.3);
     --shadow-glass: 0 8px 32px hsl(var(--charcoal) / 0.1);
+    --shadow-glow: 0 0 50px hsl(var(--primary) / 0.15);
+    --shadow-hero: 0 25px 60px -12px hsl(var(--charcoal) / 0.4);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 
