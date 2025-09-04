@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Gallery = () => {
-  const [sliderValues, setSliderValues] = useState([50]);
+  const [sliderValues, setSliderValues] = useState([50, 50, 50, 50]);
   
   const beforeAfterProjects = [
     {
@@ -14,6 +14,27 @@ const Gallery = () => {
       beforeImage: "/lovable-uploads/fa10a8e6-c837-4e10-b9f0-c8bbd5506ea4.png",
       afterImage: "/lovable-uploads/5691175d-8fb2-4e96-9445-987ca41039fb.png",
       description: "Upgraded standard contractor grade framed frosted glass door to modern frameless design with premium hardware."
+    },
+    {
+      title: "Sliding Door Transformation",
+      location: "Henderson", 
+      beforeImage: "/lovable-uploads/80bee4d9-c735-44e2-a119-af93a8fb3b42.png",
+      afterImage: "/lovable-uploads/2e898825-142f-4567-9fc4-5a925964be11.png",
+      description: "Replaced frosted sliding shower doors with crystal clear glass and modern chrome hardware for an open, spacious feel."
+    },
+    {
+      title: "Framed to Frameless Upgrade",
+      location: "Summerlin",
+      beforeImage: "/lovable-uploads/d11634ec-aaaf-4b5a-8965-c55508271ba6.png", 
+      afterImage: "/lovable-uploads/2ba2e0bd-d607-42f6-a362-4d8b14a39093.png",
+      description: "Transformed traditional framed frosted doors to sleek frameless clear glass with black accent hardware."
+    },
+    {
+      title: "Custom Enclosure Modernization",
+      location: "Spring Valley",
+      beforeImage: "/lovable-uploads/63a30f9e-c80e-421e-9968-d4ed286876f4.png",
+      afterImage: "/lovable-uploads/70012b37-e3d6-4261-b567-0a42b8632737.png",
+      description: "Updated shower enclosure with enhanced clear glass and precision-fit frameless design for maximum elegance."
     }
   ];
   
