@@ -13,7 +13,7 @@ const Gallery = () => {
       location: "Las Vegas",
       beforeImage: "/lovable-uploads/fa10a8e6-c837-4e10-b9f0-c8bbd5506ea4.png",
       afterImage: "/lovable-uploads/5691175d-8fb2-4e96-9445-987ca41039fb.png",
-      description: "Upgraded standard contractor grade framed door to modern frameless design with premium hardware and crystal clear glass."
+      description: "Upgraded standard contractor grade framed frosted glass door to modern frameless design with premium hardware."
     }
   ];
   
