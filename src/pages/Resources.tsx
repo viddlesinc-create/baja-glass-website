@@ -103,30 +103,43 @@ const Resources = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Helpful Guides</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {resources.map((resource) => (
-              <Card key={resource.title} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <resource.icon className="h-8 w-8 text-accent" />
-                    <CardTitle>{resource.title}</CardTitle>
-                  </div>
-                  <CardDescription>{resource.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    <p className="text-sm font-medium">Topics covered:</p>
-                    <ul className="space-y-1">
-                      {resource.topics.map((topic) => (
-                        <li key={topic} className="text-sm text-muted-foreground flex items-center gap-2">
-                          <span className="w-1 h-1 bg-accent rounded-full"></span>
-                          {topic}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            {resources.map((resource, index) => {
+              const blogUrls = [
+                "/blog/glass-care-guide",
+                "/blog/choosing-right-door", 
+                "/blog/installation-process",
+                "/blog/warranty-information"
+              ];
+              return (
+                <Card key={resource.title} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <resource.icon className="h-8 w-8 text-accent" />
+                      <CardTitle>{resource.title}</CardTitle>
+                    </div>
+                    <CardDescription>{resource.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="space-y-2">
+                        <p className="text-sm font-medium">Topics covered:</p>
+                        <ul className="space-y-1">
+                          {resource.topics.map((topic) => (
+                            <li key={topic} className="text-sm text-muted-foreground flex items-center gap-2">
+                              <span className="w-1 h-1 bg-accent rounded-full"></span>
+                              {topic}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <Button variant="outline" size="sm" asChild>
+                        <Link to={blogUrls[index]}>Read Full Guide</Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
