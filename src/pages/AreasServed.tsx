@@ -18,16 +18,16 @@ const areas = [
     },
     {
       name: "Spanish Trail", 
-      description: "From refreshed primary baths to guest suites, we deliver shower doors that elevate Spanish Trail homes. Expect tight, clean silicone lines and carefully placed seals to help reduce splashing without distracting from your tile.",
-      image: "/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png",
-      alt: "Hinged shower door Spanish Trail — brushed nickel hinges and handle",
+      description: "From refreshed primary baths to guest suites, we deliver premium glass doors that elevate Spanish Trail homes. Expect tight, clean silicone lines and carefully placed seals to help reduce splashing without distracting from your tile.",
+      image: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
+      alt: "Premium glass shower door Spanish Trail — elegant pebble accent and frameless design",
       services: ["Frameless", "Hinged/Pivot", "Repair"]
     },
     {
       name: "The Ridges (Summerlin South)",
       description: "For modern layouts in The Ridges, our frameless and steam‑ready enclosures pair ultra‑clear glass with minimalist hardware. We account for niches, benches, and custom angles to maintain a refined, architectural look.",
-      image: "/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png",
-      alt: "Steam shower enclosure The Ridges — operable transom, low‑iron glass",
+      image: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
+      alt: "Frameless corner shower enclosure The Ridges — black hardware, architectural design",
       services: ["Frameless", "Custom Enclosures", "Steam", "Gallery"]
     },
     {
@@ -130,7 +130,14 @@ const areas = [
                 </div>
                 <CardHeader>
                   <CardTitle className="text-2xl font-serif">
-                    {area.name === "Spanish Hills" ? `Custom Enclosures in ${area.name}` : `Shower Doors in ${area.name}`}
+                    {area.name === "Spanish Hills" && "Custom Enclosures in Spanish Hills"}
+                    {area.name === "Spanish Trail" && "Premium Glass Doors in Spanish Trail"}
+                    {area.name === "The Ridges (Summerlin South)" && "Frameless Showers for The Ridges"}
+                    {area.name === "Rhodes Ranch" && "Sliding Door Solutions in Rhodes Ranch"}
+                    {area.name === "Southern Highlands" && "Luxury Shower Doors — Southern Highlands"}
+                    {area.name === "Mountains Edge" && "Glass Enclosures in Mountains Edge"}
+                    {area.name === "Coronado Ranch" && "Neo-Angle & Custom Doors — Coronado Ranch"}
+                    {area.name === "Anthem" && "Steam-Ready Enclosures in Anthem"}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
