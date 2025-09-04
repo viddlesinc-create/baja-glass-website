@@ -86,10 +86,10 @@ const GlassCompanyLasVegas = () => {
 
   const galleryProjects = [
     {
-      title: "Shower Enclosure — Summerlin",
-      description: "Low‑iron glass, matte black hardware, clean silicone lines.",
-      image: "/lovable-uploads/5821e9a1-0daa-41ab-93ff-9dfe666d83ac.png",
-      alt: "Frameless shower enclosure Las Vegas — low‑iron glass, matte black hardware by Baja Glass"
+      title: "Frosted Custom Table",
+      description: "Custom frosted glass table with precision-cut edges and modern chrome base for contemporary office spaces.",
+      image: "/lovable-uploads/3c35382d-7bd5-49a9-a187-938bb11dddbc.png",
+      alt: "Custom frosted glass table with chrome base — Baja Glass Las Vegas office furniture"
     },
     {
       title: "Office Glass Partition — Henderson", 
