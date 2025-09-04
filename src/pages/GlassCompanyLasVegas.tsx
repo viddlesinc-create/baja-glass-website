@@ -177,8 +177,8 @@ const GlassCompanyLasVegas = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/2705e428-6ba5-4a64-91cc-bff916c3b8a6.png" 
-            alt="Modern frameless shower door with black fixtures and marble walls - professional glass installation Las Vegas by Baja Glass"
+            src="/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png" 
+            alt="Modern commercial glass partition installation - professional office glass work in Las Vegas by Baja Glass"
             className="w-full h-full object-cover opacity-75"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
