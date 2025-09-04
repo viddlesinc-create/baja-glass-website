@@ -367,6 +367,106 @@ const Gallery = () => {
                 className="w-full aspect-video object-cover"
               />
             </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/60879279-461a-40ca-b2cd-78b1d7fa95b3.png")}
+            >
+              <img 
+                src="/lovable-uploads/60879279-461a-40ca-b2cd-78b1d7fa95b3.png" 
+                alt="Large custom shower enclosure with glass niches and built-in seating"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/722b5530-b688-42ad-8731-3cc0be1756ed.png")}
+            >
+              <img 
+                src="/lovable-uploads/722b5530-b688-42ad-8731-3cc0be1756ed.png" 
+                alt="Tub-to-shower conversion with sliding glass doors"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/60045135-144e-49b1-b017-133adce3a58d.png")}
+            >
+              <img 
+                src="/lovable-uploads/60045135-144e-49b1-b017-133adce3a58d.png" 
+                alt="Walk-in shower installation in progress with black hardware"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/4f6832d0-9951-4037-bfc2-c9153c280a12.png")}
+            >
+              <img 
+                src="/lovable-uploads/4f6832d0-9951-4037-bfc2-c9153c280a12.png" 
+                alt="Single panel shower door with chrome hardware"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png")}
+            >
+              <img 
+                src="/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png" 
+                alt="Marble shower with black hardware and built-in bench"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/482d4c2b-fc42-4a15-b833-a141e61e4d91.png")}
+            >
+              <img 
+                src="/lovable-uploads/482d4c2b-fc42-4a15-b833-a141e61e4d91.png" 
+                alt="L-shaped shower enclosure with marble tile and chrome hardware"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/182850ed-180a-4525-aee1-917367fff2bb.png")}
+            >
+              <img 
+                src="/lovable-uploads/182850ed-180a-4525-aee1-917367fff2bb.png" 
+                alt="Corner shower with subway tile and black fixtures"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/30ead577-c1b4-4057-a808-f7d0d612125f.png")}
+            >
+              <img 
+                src="/lovable-uploads/30ead577-c1b4-4057-a808-f7d0d612125f.png" 
+                alt="Luxury steam shower with dark tinted glass"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/32eaf66a-2f41-4fc8-92f4-2faf7cf74d56.png")}
+            >
+              <img 
+                src="/lovable-uploads/32eaf66a-2f41-4fc8-92f4-2faf7cf74d56.png" 
+                alt="Modern walk-in shower with penny tile accent and multiple shower heads"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
+            <div 
+              className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              onClick={() => setLightboxImage("/lovable-uploads/4940799d-2ddf-41b7-bd8c-22aa0ab12cdb.png")}
+            >
+              <img 
+                src="/lovable-uploads/4940799d-2ddf-41b7-bd8c-22aa0ab12cdb.png" 
+                alt="Rain glass shower doors with black hardware"
+                className="w-full aspect-video object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
