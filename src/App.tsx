@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import GlassCompanyLasVegas from "./pages/GlassCompanyLasVegas";
 import ShowerDoorsHub from "./pages/ShowerDoorsHub";
 import FramelessShowerDoors from "./pages/FramelessShowerDoors";
 import SemiFramelessShowerDoors from "./pages/SemiFramelessShowerDoors";
@@ -34,6 +35,7 @@ const App = () => (
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
               <Route path="/shower-doors-las-vegas" element={<ShowerDoorsHub />} />
               <Route path="/shower-doors-las-vegas/frameless" element={<FramelessShowerDoors />} />
               <Route path="/shower-doors-las-vegas/semi-frameless-framed" element={<SemiFramelessShowerDoors />} />

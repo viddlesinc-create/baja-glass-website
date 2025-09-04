@@ -1,19 +1,36 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Phone, Star, Instagram, Facebook } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu, Phone, Star, Instagram, Facebook, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: "Shower Doors", href: "/shower-doors-las-vegas" },
+    { name: "Glass Company", href: "/glass-company-las-vegas" },
     { name: "Gallery", href: "/gallery" },
     { name: "Areas Served", href: "/areas-served" },
     { name: "About", href: "/about" },
     { name: "Resources", href: "/resources" },
     { name: "Contact", href: "/contact" },
+  ];
+
+  const showerDoorsPages = [
+    { name: "Shower Doors Hub", href: "/shower-doors-las-vegas" },
+    { name: "Frameless Doors", href: "/shower-doors-las-vegas/frameless" },
+    { name: "Semi-Frameless & Framed", href: "/shower-doors-las-vegas/semi-frameless-framed" },
+    { name: "Sliding Doors", href: "/shower-doors-las-vegas/sliding" },
+    { name: "Hinged Doors", href: "/shower-doors-las-vegas/hinged" },
+    { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
+    { name: "Steam Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
+    { name: "Glass Repair", href: "/shower-doors-las-vegas/repair" },
   ];
 
   const socialLinks = [
@@ -54,11 +71,34 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
+            {/* Shower Doors Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium">
+                Shower Doors
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-56">
+                {showerDoorsPages.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link
+                      to={item.href}
+                      className="text-foreground hover:text-accent transition-colors w-full"
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
+            {/* Regular Navigation Items */}
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
                 className="text-foreground hover:text-accent transition-colors font-medium"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 {item.name}
               </Link>
@@ -99,12 +139,34 @@ const Header = () => {
                   </Link>
                   
                   <nav className="flex flex-col gap-4">
+                    {/* Shower Doors Section */}
+                    <div>
+                      <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Shower Doors</h3>
+                      {showerDoorsPages.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className="text-foreground hover:text-accent transition-colors font-medium py-1 pl-4 block"
+                          onClick={() => {
+                            setIsOpen(false);
+                            window.scrollTo(0, 0);
+                          }}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                    
+                    {/* Regular Navigation */}
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
                         to={item.href}
                         className="text-foreground hover:text-accent transition-colors font-medium py-2"
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => {
+                          setIsOpen(false);
+                          window.scrollTo(0, 0);
+                        }}
                       >
                         {item.name}
                       </Link>
