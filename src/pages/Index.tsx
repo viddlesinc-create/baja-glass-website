@@ -104,66 +104,66 @@ const Index = () => {
         </div>
 
 
-        <div className="relative container mx-auto px-4 py-20 text-center">
+        <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-6xl mx-auto">
             {/* Main Heading */}
-            <div className="animate-fade-in-up">
-              <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold text-white mb-8 leading-none drop-shadow-2xl">
+            <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 Custom 
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Frameless
                 </span>
-                <span className="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl drop-shadow-2xl">
+                <span className="block text-3xl md:text-4xl lg:text-5xl drop-shadow-2xl">
                   Shower Doors
                 </span>
               </h1>
             </div>
             
             {/* Location Badge */}
-            <div className="animate-fade-in-up mb-8" style={{ animationDelay: '0.2s' }}>
-              <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30 text-lg px-6 py-2 font-medium">
+            <div className="animate-fade-in-up mb-6 text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.2s' }}>
+              <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30 text-sm px-4 py-1 font-medium">
                 Las Vegas, Nevada
               </Badge>
             </div>
 
             {/* Subheading */}
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-              <p className="text-xl md:text-2xl lg:text-3xl text-white/95 mb-10 max-w-4xl mx-auto leading-relaxed font-light drop-shadow-lg">
+            <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.3s' }}>
+              <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl leading-relaxed font-light drop-shadow-lg">
                 Precision-measured, expertly fabricated, and professionally installed—creating beautiful, leak-resistant shower enclosures that last.
               </p>
             </div>
 
             {/* Trust Signals */}
-            <div className="animate-fade-in-up mb-12" style={{ animationDelay: '0.5s' }}>
-              <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="animate-fade-in-up mb-8 text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.5s' }}>
+              <div className="flex items-center gap-2 mb-4">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-white/90 ml-3 text-xl font-medium">Trusted by Las Vegas homeowners</span>
+                <span className="text-white/90 ml-2 text-lg font-medium">Trusted by Las Vegas homeowners</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="animate-fade-in-up flex flex-col sm:flex-row gap-6 justify-center mb-12" style={{ animationDelay: '0.7s' }}>
-              <Button variant="hero" size="xl" asChild className="animate-scale-in shadow-2xl">
+            <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16 mb-8" style={{ animationDelay: '0.7s' }}>
+              <Button variant="hero" size="lg" asChild className="animate-scale-in shadow-xl">
                 <Link to="/contact">Get a Fast Quote</Link>
               </Button>
-              <Button variant="glass" size="xl" asChild className="animate-scale-in shadow-2xl" style={{ animationDelay: '0.1s' }}>
-                <a href="tel:+17023830779" className="flex items-center gap-3">
-                  <Phone className="h-6 w-6" />
+              <Button variant="glass" size="lg" asChild className="animate-scale-in shadow-xl" style={{ animationDelay: '0.1s' }}>
+                <a href="tel:+17023830779" className="flex items-center gap-2">
+                  <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779
                 </a>
               </Button>
             </div>
 
             {/* Badges */}
-            <div className="animate-fade-in-up flex flex-wrap justify-center gap-4" style={{ animationDelay: '0.9s' }}>
+            <div className="animate-fade-in-up flex flex-wrap gap-3 text-left md:justify-center lg:justify-start lg:ml-16" style={{ animationDelay: '0.9s' }}>
               {['Licensed', 'Bonded', 'Insured', 'Years of trusted service in Las Vegas'].map((badge) => (
                 <Badge 
                   key={badge} 
-                  className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-sm px-4 py-2 hover:bg-white/20 transition-all duration-300 shadow-lg"
+                  className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-xs px-3 py-1 hover:bg-white/20 transition-all duration-300 shadow-lg"
                 >
                   {badge}
                 </Badge>
