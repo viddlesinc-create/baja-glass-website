@@ -184,11 +184,11 @@ const GlassCompanyLasVegas = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
 
-        <div className="relative container mx-auto px-4 py-20 text-center">
+        <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-6xl mx-auto">
             {/* Main Heading */}
-            <div className="animate-fade-in-up">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-2xl">
+            <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 Las Vegas Glass Company — 
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
                   Custom Glass, Mirrors, and Shower Enclosures
@@ -197,43 +197,43 @@ const GlassCompanyLasVegas = () => {
             </div>
             
             {/* Subheading */}
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <p className="text-xl md:text-2xl text-white/95 mb-10 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
+            <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.2s' }}>
+              <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl leading-relaxed drop-shadow-lg">
                 Residential glass measured precisely, fabricated locally, and installed by experts—clean, safe, and built to last.
               </p>
             </div>
 
             {/* Trust Signals */}
-            <div className="animate-fade-in-up mb-12" style={{ animationDelay: '0.3s' }}>
-              <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="animate-fade-in-up mb-8 text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.3s' }}>
+              <div className="flex items-center gap-2 mb-4">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-white/90 ml-3 text-xl font-medium">Trusted by homeowners across the Las Vegas Valley</span>
+                <span className="text-white/90 ml-2 text-lg font-medium">Trusted by homeowners across the Las Vegas Valley</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="animate-fade-in-up flex flex-col sm:flex-row gap-6 justify-center mb-12" style={{ animationDelay: '0.4s' }}>
-              <Button variant="hero" size="xl" asChild className="shadow-2xl">
+            <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16 mb-8" style={{ animationDelay: '0.4s' }}>
+              <Button variant="hero" size="lg" asChild className="shadow-xl">
                 <Link to="/contact">Get a Fast Quote</Link>
               </Button>
-              <Button variant="glass" size="xl" asChild className="shadow-2xl">
-                <a href="tel:+17023830779" className="flex items-center gap-3">
-                  <Phone className="h-6 w-6" />
+              <Button variant="glass" size="lg" asChild className="shadow-xl">
+                <a href="tel:+17023830779" className="flex items-center gap-2">
+                  <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779
                 </a>
               </Button>
             </div>
 
             {/* Badges */}
-            <div className="animate-fade-in-up flex flex-wrap justify-center gap-4" style={{ animationDelay: '0.5s' }}>
+            <div className="animate-fade-in-up flex flex-wrap gap-3 text-left md:justify-center lg:justify-start lg:ml-16" style={{ animationDelay: '0.5s' }}>
               {['Licensed', 'Bonded', 'Insured', 'Local Team', 'Strong Warranty'].map((badge) => (
                 <Badge 
                   key={badge} 
-                  className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-sm px-4 py-2"
+                  className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-xs px-3 py-1"
                 >
                   {badge}
                 </Badge>

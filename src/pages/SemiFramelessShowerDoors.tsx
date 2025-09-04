@@ -40,28 +40,28 @@ const SemiFramelessShowerDoors = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.1)_0%,transparent_70%)]"></div>
         </div>
         
-        <div className="relative container mx-auto px-4 py-20 text-center">
+        <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto">
-            <div className="animate-fade-in-up">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-8 leading-tight">
+            <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 Semi‑Frameless & 
-                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow">
+                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Framed Doors
                 </span>
               </h1>
             </div>
             
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
+            <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.2s' }}>
+              <p className="text-lg md:text-xl text-white/95 mb-6 max-w-2xl leading-relaxed font-light drop-shadow-lg">
                 Balanced style and support—clean lines with added structure for dependable performance.
               </p>
             </div>
 
-            <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 justify-center" style={{ animationDelay: '0.4s' }}>
-              <Button variant="hero" size="xl" asChild>
+            <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16" style={{ animationDelay: '0.4s' }}>
+              <Button variant="hero" size="lg" asChild>
                 <Link to="/contact">Get a Fast Quote</Link>
               </Button>
-              <Button variant="glass" size="xl" asChild>
+              <Button variant="glass" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779

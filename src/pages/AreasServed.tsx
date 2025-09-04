@@ -75,25 +75,29 @@ const AreasServed = () => {
           <img 
             src={heroImage} 
             alt="Custom shower enclosure installation in Las Vegas Valley by Baja Glass"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-75"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-primary/60 to-charcoal/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
 
-        <div className="relative container mx-auto px-4 py-20 text-center">
+        <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight">
-              Shower Doors — Areas We Serve in the{" "}
-              <span className="bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent">
-                Las Vegas Valley
-              </span>
-            </h1>
+            <div className="text-left md:text-center lg:text-left lg:ml-16">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+                Shower Doors — Areas We Serve in the{" "}
+                <span className="bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
+                  Las Vegas Valley
+                </span>
+              </h1>
+            </div>
             
-            <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Precision‑measured, professionally installed shower doors and enclosures—serving your neighborhood with clean, careful workmanship.
-            </p>
+            <div className="text-left md:text-center lg:text-left lg:ml-16">
+              <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl leading-relaxed drop-shadow-lg">
+                Precision‑measured, professionally installed shower doors and enclosures—serving your neighborhood with clean, careful workmanship.
+              </p>
+            </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16">
               <Button variant="hero" size="lg" asChild>
                 <Link to="/contact">Get a Fast Quote</Link>
               </Button>
