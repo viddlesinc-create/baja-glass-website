@@ -88,7 +88,7 @@ const GlassCompanyLasVegas = () => {
     {
       title: "Shower Enclosure — Summerlin",
       description: "Low‑iron glass, matte black hardware, clean silicone lines.",
-      image: slidingDoors,
+      image: "/lovable-uploads/5821e9a1-0daa-41ab-93ff-9dfe666d83ac.png",
       alt: "Frameless shower enclosure Las Vegas — low‑iron glass, matte black hardware by Baja Glass"
     },
     {
