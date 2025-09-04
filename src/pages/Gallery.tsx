@@ -173,18 +173,6 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Filter Categories */}
-      <section className="py-12 bg-background border-b border-border">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category) => (
-              <Badge key={category} variant="outline" className="cursor-pointer hover:bg-accent hover:text-accent-foreground">
-                {category}
-              </Badge>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Gallery Grid */}
       <section className="py-20 bg-background">
