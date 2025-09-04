@@ -98,9 +98,9 @@ const Index = () => {
           <img 
             src="/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png" 
             alt="Luxury steam shower enclosure installation Las Vegas - ultra-clear glass with matte black hardware and marble walls by Baja Glass"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-75"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-primary/65 to-charcoal/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
 
 
@@ -108,12 +108,12 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             {/* Main Heading */}
             <div className="animate-fade-in-up">
-              <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold text-white mb-8 leading-none">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold text-white mb-8 leading-none drop-shadow-2xl">
                 Custom 
-                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow">
+                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Frameless
                 </span>
-                <span className="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+                <span className="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl drop-shadow-2xl">
                   Shower Doors
                 </span>
               </h1>
@@ -128,7 +128,7 @@ const Index = () => {
 
             {/* Subheading */}
             <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-              <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-10 max-w-4xl mx-auto leading-relaxed font-light">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/95 mb-10 max-w-4xl mx-auto leading-relaxed font-light drop-shadow-lg">
                 Precision-measured, expertly fabricated, and professionally installed—creating beautiful, leak-resistant shower enclosures that last.
               </p>
             </div>
