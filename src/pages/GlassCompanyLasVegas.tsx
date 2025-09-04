@@ -19,7 +19,7 @@ const GlassCompanyLasVegas = () => {
         "Repairs: panels, rollers, hinges, seals, leaks"
       ],
       href: "/shower-doors-las-vegas",
-      image: heroImage
+      image: "/lovable-uploads/e0470406-f3bb-4471-83cf-84adb149756b.png"
     },
     {
       title: "Office Glass Enclosures",
@@ -30,7 +30,7 @@ const GlassCompanyLasVegas = () => {
         "Safety backing and professional mounting"
       ],
       href: "/resources",
-      image: "/lovable-uploads/e0470406-f3bb-4471-83cf-84adb149756b.png"
+      image: customEnclosure
     }
   ];
 
