@@ -92,10 +92,10 @@ const GlassCompanyLasVegas = () => {
       alt: "Custom frosted glass table with chrome base — Baja Glass Las Vegas office furniture"
     },
     {
-      title: "Office Glass Partition — Henderson", 
-      description: "Floor-to-ceiling glass partition with frosted panels and professional mounting.",
-      image: hardwareFinishes,
-      alt: "Floor-to-ceiling office glass partition with frosted panels — Baja Glass Henderson"
+      title: "Custom Mirror", 
+      description: "Custom-cut mirror with polished edges and professional mounting for elegant bathroom and vanity installations.",
+      image: "/lovable-uploads/bf541daa-269d-4a2f-88a1-ade3c731b28b.png",
+      alt: "Custom bathroom mirror with polished edges — Baja Glass Las Vegas mirror installation"
     }
   ];
 
