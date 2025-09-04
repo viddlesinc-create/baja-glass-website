@@ -23,7 +23,6 @@ const Header = () => {
   ];
 
   const showerDoorsPages = [
-    { name: "Shower Doors Hub", href: "/shower-doors-las-vegas" },
     { name: "Frameless Doors", href: "/shower-doors-las-vegas/frameless" },
     { name: "Semi-Frameless & Framed", href: "/shower-doors-las-vegas/semi-frameless-framed" },
     { name: "Sliding Doors", href: "/shower-doors-las-vegas/sliding" },
@@ -73,9 +72,15 @@ const Header = () => {
           <nav className="hidden lg:flex items-center gap-8">
             {/* Shower Doors Dropdown */}
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium">
-                Shower Doors
-                <ChevronDown className="h-4 w-4" />
+              <DropdownMenuTrigger asChild>
+                <Link 
+                  to="/shower-doors-las-vegas"
+                  className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Shower Doors
+                  <ChevronDown className="h-4 w-4" />
+                </Link>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-56">
                 {showerDoorsPages.map((item) => (
@@ -141,7 +146,17 @@ const Header = () => {
                   <nav className="flex flex-col gap-4">
                     {/* Shower Doors Section */}
                     <div>
-                      <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Shower Doors</h3>
+                      <Link
+                        to="/shower-doors-las-vegas"
+                        className="text-foreground hover:text-accent transition-colors font-medium py-2 block"
+                        onClick={() => {
+                          setIsOpen(false);
+                          window.scrollTo(0, 0);
+                        }}
+                      >
+                        Shower Doors
+                      </Link>
+                      <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Types & Services</h3>
                       {showerDoorsPages.map((item) => (
                         <Link
                           key={item.name}
