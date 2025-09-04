@@ -5,42 +5,14 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Gallery = () => {
-  const [sliderValues, setSliderValues] = useState([50, 50, 50, 50, 50]);
+  const [sliderValues, setSliderValues] = useState([50]);
   
   const beforeAfterProjects = [
     {
-      title: "Semi-Frameless to Frameless Upgrade",
-      location: "Henderson",
-      beforeImage: "/lovable-uploads/8b110d20-9c4f-40fb-8d11-388824282d61.png",
-      afterImage: "/lovable-uploads/e506c19b-db1e-4646-b5ad-edf8294038e6.png",
-      description: "Replaced dated framed shower door with sleek frameless design featuring clear glass and modern hardware."
-    },
-    {
-      title: "Frosted Glass Door Modernization", 
-      location: "Spring Valley",
-      beforeImage: "/lovable-uploads/a5f3fdbc-6d58-4837-bc6c-f6cfb74db70c.png",
-      afterImage: "/lovable-uploads/f3d472be-78bd-4bda-80dc-4b997227085f.png",
-      description: "Updated old frosted glass shower door with contemporary frameless clear glass enclosure."
-    },
-    {
-      title: "Complete Shower Door Transformation",
-      location: "Las Vegas",
-      beforeImage: "/lovable-uploads/d74c80f3-d99b-40aa-9452-1bdddc2f6d90.png", 
-      afterImage: "/lovable-uploads/f19ca6d2-815b-4ab6-a382-98fd01aa5aa8.png",
-      description: "Completely transformed outdated shower enclosure with premium frameless glass and chrome hardware."
-    },
-    {
-      title: "Textured Glass Door Renovation",
-      location: "Summerlin",
-      beforeImage: "/lovable-uploads/ceb5a23b-36d2-41de-b907-83d095a64655.png",
-      afterImage: "/lovable-uploads/a50691ba-4b24-4d5c-a2be-06218e1dc667.png", 
-      description: "Upgraded textured glass shower doors to create a more open and modern bathroom space."
-    },
-    {
       title: "Frosted to Clear Glass Upgrade",
       location: "Las Vegas",
-      beforeImage: "/lovable-uploads/5691175d-8fb2-4e96-9445-987ca41039fb.png",
-      afterImage: "/lovable-uploads/fa10a8e6-c837-4e10-b9f0-c8bbd5506ea4.png",
+      beforeImage: "/lovable-uploads/fa10a8e6-c837-4e10-b9f0-c8bbd5506ea4.png",
+      afterImage: "/lovable-uploads/5691175d-8fb2-4e96-9445-987ca41039fb.png",
       description: "Transformed frosted glass shower door to crystal clear glass with modern chrome hardware."
     }
   ];
