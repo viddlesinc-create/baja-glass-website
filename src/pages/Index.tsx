@@ -96,8 +96,8 @@ const Index = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png" 
-            alt="Luxury steam shower enclosure installation Las Vegas - ultra-clear glass with matte black hardware and marble walls by Baja Glass"
+            src="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png" 
+            alt="Modern frameless sliding shower doors with black hardware and pebble tile flooring by Baja Glass Las Vegas"
             className="w-full h-full object-cover opacity-75"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
