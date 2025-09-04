@@ -179,18 +179,18 @@ const GlassCompanyLasVegas = () => {
           <img 
             src="/lovable-uploads/2705e428-6ba5-4a64-91cc-bff916c3b8a6.png" 
             alt="Modern frameless shower door with black fixtures and marble walls - professional glass installation Las Vegas by Baja Glass"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-75"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-primary/65 to-charcoal/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
 
         <div className="relative container mx-auto px-4 py-20 text-center">
           <div className="max-w-6xl mx-auto">
             {/* Main Heading */}
             <div className="animate-fade-in-up">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-8 leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-2xl">
                 Las Vegas Glass Company — 
-                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
                   Custom Glass, Mirrors, and Shower Enclosures
                 </span>
               </h1>
@@ -198,7 +198,7 @@ const GlassCompanyLasVegas = () => {
             
             {/* Subheading */}
             <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/95 mb-10 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
                 Residential glass measured precisely, fabricated locally, and installed by experts—clean, safe, and built to last.
               </p>
             </div>

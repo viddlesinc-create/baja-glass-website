@@ -87,9 +87,9 @@ const ShowerDoorsHub = () => {
           <img 
             src="/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" 
             alt="Large sliding shower door installation with black hardware and marble tile - professional Las Vegas shower glass by Baja Glass"
-            className="w-full h-full object-cover opacity-35"
+            className="w-full h-full object-cover opacity-75"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-primary/55 to-charcoal/75"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
 
 
@@ -97,9 +97,9 @@ const ShowerDoorsHub = () => {
           <div className="max-w-5xl mx-auto">
             {/* Main Heading */}
             <div className="animate-fade-in-up">
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-2xl">
                 Shower Doors in 
-                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow">
+                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Las Vegas
                 </span>
               </h1>
@@ -107,7 +107,7 @@ const ShowerDoorsHub = () => {
             
             {/* Subheading */}
             <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
+              <p className="text-xl md:text-2xl text-white/95 mb-8 max-w-3xl mx-auto leading-relaxed font-light drop-shadow-lg">
                 Expertly crafted shower doors featuring premium glass, precision hardware, and professional installation—delivering the perfect balance of beauty and functionality.
               </p>
             </div>
