@@ -180,13 +180,6 @@ const Gallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <img 
-                src="/lovable-uploads/53bdced6-52b0-4006-8e18-3a10e2bfda89.png" 
-                alt="Professional shower door installation in progress"
-                className="w-full aspect-video object-cover"
-              />
-            </div>
-            <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <img 
                 src="/lovable-uploads/c383f5e7-68b2-4ea4-8019-4e046a450028.png" 
                 alt="Herringbone tile shower with frameless glass doors"
                 className="w-full aspect-video object-cover"
