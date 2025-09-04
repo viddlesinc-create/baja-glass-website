@@ -37,8 +37,8 @@ const SemiFramelessShowerDoors = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/432cd1dc-d89c-47a1-a43e-f3bdd4224115.png" 
-            alt="Modern semi-frameless glass shower door with black fixtures and geometric tile - professional installation Las Vegas"
+            src="/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png" 
+            alt="Semi-frameless glass shower doors on bathtub with marble tile and black hardware - professional installation Las Vegas"
             className="w-full h-full object-cover opacity-75"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
