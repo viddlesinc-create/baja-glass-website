@@ -1,8 +1,43 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Slider } from "@/components/ui/slider";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Gallery = () => {
+  const [sliderValues, setSliderValues] = useState([50, 50, 50, 50]);
+  
+  const beforeAfterProjects = [
+    {
+      title: "Semi-Frameless to Frameless Upgrade",
+      location: "Henderson",
+      beforeImage: "/lovable-uploads/a5f3fdbc-6d58-4837-bc6c-f6cfb74db70c.png",
+      afterImage: "/lovable-uploads/f3d472be-78bd-4bda-80dc-4b997227085f.png",
+      description: "Replaced dated framed shower door with sleek frameless design featuring clear glass and modern hardware."
+    },
+    {
+      title: "Frosted Glass Door Modernization", 
+      location: "Spring Valley",
+      beforeImage: "/lovable-uploads/d74c80f3-d99b-40aa-9452-1bdddc2f6d90.png",
+      afterImage: "/lovable-uploads/f19ca6d2-815b-4ab6-a382-98fd01aa5aa8.png",
+      description: "Updated old frosted glass shower door with contemporary frameless clear glass enclosure."
+    },
+    {
+      title: "Complete Shower Door Transformation",
+      location: "Las Vegas",
+      beforeImage: "/lovable-uploads/ceb5a23b-36d2-41de-b907-83d095a64655.png", 
+      afterImage: "/lovable-uploads/a50691ba-4b24-4d5c-a2be-06218e1dc667.png",
+      description: "Completely transformed outdated shower enclosure with premium frameless glass and chrome hardware."
+    },
+    {
+      title: "Textured Glass Door Renovation",
+      location: "Summerlin",
+      beforeImage: "/lovable-uploads/8b110d20-9c4f-40fb-8d11-388824282d61.png",
+      afterImage: "/lovable-uploads/e506c19b-db1e-4646-b5ad-edf8294038e6.png", 
+      description: "Upgraded textured glass shower doors to create a more open and modern bathroom space."
+    }
+  ];
+  
   const projects = [
     {
       title: "Frameless Inline Shower — Summerlin",
@@ -62,6 +97,79 @@ const Gallery = () => {
           <Button variant="glass" size="lg" asChild>
             <Link to="/contact">Start Your Project</Link>
           </Button>
+        </div>
+      </section>
+
+      {/* Before & After Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">Before & After Transformations</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              See the dramatic difference our custom shower doors make. Use the sliders to compare before and after photos of real installations.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {beforeAfterProjects.map((project, index) => (
+              <div key={index} className="bg-card rounded-lg overflow-hidden shadow-lg">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  {/* Before Image */}
+                  <img 
+                    src={project.beforeImage} 
+                    alt={`Before ${project.title}`}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  {/* After Image with clip-path based on slider value */}
+                  <img 
+                    src={project.afterImage} 
+                    alt={`After ${project.title}`}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    style={{ 
+                      clipPath: `inset(0 ${100 - sliderValues[index]}% 0 0)` 
+                    }}
+                  />
+                  
+                  {/* Slider Control */}
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="bg-black/50 backdrop-blur-sm rounded-lg p-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-white text-sm font-medium">Before</span>
+                        <span className="text-white text-sm font-medium">After</span>
+                      </div>
+                      <Slider
+                        value={[sliderValues[index]]}
+                        onValueChange={(value) => {
+                          const newValues = [...sliderValues];
+                          newValues[index] = value[0];
+                          setSliderValues(newValues);
+                        }}
+                        max={100}
+                        min={0}
+                        step={1}
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Divider Line */}
+                  <div 
+                    className="absolute top-0 bottom-0 w-0.5 bg-white shadow-lg pointer-events-none"
+                    style={{ left: `${sliderValues[index]}%` }}
+                  />
+                </div>
+                
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Badge variant="secondary">Transformation</Badge>
+                    <Badge variant="outline">{project.location}</Badge>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+                  <p className="text-muted-foreground">{project.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
