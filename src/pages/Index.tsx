@@ -160,7 +160,7 @@ const Index = () => {
 
             {/* Badges */}
             <div className="animate-fade-in-up flex flex-wrap gap-3 text-left md:justify-center lg:justify-start lg:ml-16" style={{ animationDelay: '0.9s' }}>
-              {['Licensed', 'Bonded', 'Insured', 'Years of trusted service in Las Vegas'].map((badge) => (
+              {['Licensed', 'Bonded', 'Insured', '20+ years of trusted service in Las Vegas'].map((badge) => (
                 <Badge 
                   key={badge} 
                   className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-xs px-3 py-1 hover:bg-white/20 transition-all duration-300 shadow-lg"
