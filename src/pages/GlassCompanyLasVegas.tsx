@@ -30,7 +30,7 @@ const GlassCompanyLasVegas = () => {
         "Safety backing and professional mounting"
       ],
       href: "/resources",
-      image: customEnclosure
+      image: "/lovable-uploads/e0470406-f3bb-4471-83cf-84adb149756b.png"
     }
   ];
 
