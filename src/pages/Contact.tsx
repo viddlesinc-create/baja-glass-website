@@ -63,7 +63,7 @@ const Contact = () => {
             alt="Custom frameless shower enclosure with sliding doors and stone tile walls - professional installation by Baja Glass Las Vegas"
             className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 to-primary/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/50 to-primary/50"></div>
         </div>
         
         <div className="container mx-auto px-4 text-center relative z-10">
