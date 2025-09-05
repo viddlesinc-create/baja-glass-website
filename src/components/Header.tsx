@@ -64,7 +64,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
               alt="Baja Glass — Shower Doors & Glass in Las Vegas"
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
