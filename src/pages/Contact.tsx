@@ -59,8 +59,8 @@ const Contact = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png" 
-            alt="Professional shower door installation Las Vegas"
+            src="/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png" 
+            alt="Custom frameless shower enclosure with sliding doors and stone tile walls - professional installation by Baja Glass Las Vegas"
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 to-primary/80"></div>
