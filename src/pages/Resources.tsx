@@ -3,6 +3,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { BookOpen, HelpCircle, Wrench, Shield } from "lucide-react";
+import clearGlass from "@/assets/clear-glass.jpg";
+import lowIronGlass from "@/assets/low-iron-glass.jpg";
+import frostedGlass from "@/assets/frosted-glass.jpg";
+import rainGlass from "@/assets/rain-glass.jpg";
 
 const Resources = () => {
   const resources = [
@@ -63,22 +67,26 @@ const Resources = () => {
     {
       name: "Clear Glass",
       description: "Standard tempered safety glass with slight green tint on edges",
-      bestFor: "Budget-conscious projects, traditional installations"
+      bestFor: "Budget-conscious projects, traditional installations",
+      image: clearGlass
     },
     {
       name: "Low-Iron Glass",
       description: "Ultra-clear glass with minimal tint for premium appearance",
-      bestFor: "Luxury installations, maximum clarity preference"
+      bestFor: "Luxury installations, maximum clarity preference",
+      image: lowIronGlass
     },
     {
       name: "Frosted Glass",
       description: "Etched surface provides privacy while maintaining light transmission",
-      bestFor: "Privacy needs, decorative applications"
+      bestFor: "Privacy needs, decorative applications",
+      image: frostedGlass
     },
     {
       name: "Rain Glass",
       description: "Textured surface creates water-like pattern for visual interest",
-      bestFor: "Decorative accent, partial privacy"
+      bestFor: "Decorative accent, partial privacy",
+      image: rainGlass
     }
   ];
 
@@ -155,7 +163,14 @@ const Resources = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Glass Types Explained</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {glassTypes.map((glass) => (
-              <div key={glass.name} className="bg-background p-6 rounded-lg">
+              <div key={glass.name} className="bg-background p-6 rounded-lg hover:shadow-lg transition-shadow">
+                <div className="mb-4 overflow-hidden rounded-lg">
+                  <img 
+                    src={glass.image} 
+                    alt={`${glass.name} shower door panel`}
+                    className="w-full h-48 object-cover"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold mb-3">{glass.name}</h3>
                 <p className="text-muted-foreground mb-4">{glass.description}</p>
                 <div className="flex items-center gap-2">
