@@ -93,8 +93,15 @@ const Resources = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative py-20 bg-gradient-to-r from-charcoal to-primary text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png')`
+          }}
+        ></div>
+        <div className="relative container mx-auto px-4 text-center">
           <BookOpen className="h-16 w-16 mx-auto mb-6 text-white/80" />
           <h1 className="text-5xl font-bold mb-6">Resources & Guides</h1>
           <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
