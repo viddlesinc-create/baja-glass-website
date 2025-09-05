@@ -29,8 +29,8 @@ const SlidingShowerDoors = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-charcoal to-primary text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">
+        <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Sliding Shower Doors in Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">Smooth‑glide systems that save space and elevate your bath.</p>

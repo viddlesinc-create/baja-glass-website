@@ -29,7 +29,7 @@ const HingedShowerDoors = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-charcoal to-primary text-white py-20">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
@@ -39,7 +39,7 @@ const HingedShowerDoors = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Hinged & Pivot Shower Doors in Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">Classic swing doors with precise alignment and crisp closure.</p>

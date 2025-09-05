@@ -29,7 +29,7 @@ const CustomEnclosures = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative text-white py-20">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
@@ -40,7 +40,7 @@ const CustomEnclosures = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-primary/50 to-charcoal/70"></div>
         </div>
         
-        <div className="relative container mx-auto px-4">
+        <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Custom Shower Enclosures in Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">Inline, corner, neo‑angle, alcove, and steam—made to measure for a perfect fit.</p>

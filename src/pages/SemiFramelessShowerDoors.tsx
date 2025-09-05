@@ -33,7 +33,7 @@ const SemiFramelessShowerDoors = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-charcoal via-primary to-charcoal text-white py-20">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal text-white">
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
