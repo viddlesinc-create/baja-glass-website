@@ -98,7 +98,7 @@ const Resources = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png')`
+            backgroundImage: `url('/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png')`
           }}
         ></div>
         <div className="relative container mx-auto px-4 text-center">
