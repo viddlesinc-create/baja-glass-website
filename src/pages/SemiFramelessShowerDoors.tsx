@@ -33,7 +33,7 @@ const SemiFramelessShowerDoors = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
+      <section className="relative bg-gradient-to-br from-charcoal via-primary to-charcoal text-white py-20">
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
@@ -44,7 +44,7 @@ const SemiFramelessShowerDoors = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
         
-        <div className="relative container mx-auto px-4 py-20">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
