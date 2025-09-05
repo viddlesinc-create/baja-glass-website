@@ -94,7 +94,7 @@ const Resources = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-charcoal to-primary text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
