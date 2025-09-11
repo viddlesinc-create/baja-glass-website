@@ -56,7 +56,7 @@ const ResidentialGlassRepair = () => {
 
   const processSteps = [
     {
-      title: "Priority",
+      title: "Priority Response",
       description: "Quick response for urgent repairs with temporary security solutions if needed."
     },
     {
