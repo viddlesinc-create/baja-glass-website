@@ -44,11 +44,13 @@ const Contact = () => {
 
   const projectTypes = [
     "Frameless Shower Door",
-    "Sliding Shower Door",
+    "Sliding Shower Door", 
     "Hinged/Pivot Door",
     "Custom Enclosure",
     "Repair/Replacement",
     "Steam Shower",
+    "Residential Glass Repair",
+    "Office Glass Enclosures",
     "Not Sure - Need Consultation"
   ];
 

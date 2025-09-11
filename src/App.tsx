@@ -25,6 +25,8 @@ import GlassCareGuide from "./pages/blog/GlassCareGuide";
 import ChoosingRightDoor from "./pages/blog/ChoosingRightDoor";
 import InstallationProcess from "./pages/blog/InstallationProcess";
 import WarrantyInformation from "./pages/blog/WarrantyInformation";
+import ResidentialGlassRepair from "./pages/ResidentialGlassRepair";
+import OfficeEnclosures from "./pages/OfficeEnclosures";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -44,6 +46,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
+                <Route path="/glass-company-las-vegas/residential-glass-repair" element={<ResidentialGlassRepair />} />
+                <Route path="/glass-company-las-vegas/office-enclosures" element={<OfficeEnclosures />} />
                 <Route path="/shower-doors-las-vegas" element={<ShowerDoorsHub />} />
                 <Route path="/shower-doors-las-vegas/frameless" element={<FramelessShowerDoors />} />
                 <Route path="/shower-doors-las-vegas/semi-frameless-framed" element={<SemiFramelessShowerDoors />} />

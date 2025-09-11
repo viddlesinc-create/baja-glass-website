@@ -284,6 +284,58 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Additional Services Section */}
+      <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Beyond Shower Doors</h2>
+            <p className="text-lg text-muted-foreground">Professional glass solutions for your home and business</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  Residential Glass Repair
+                  <Badge variant="secondary">24/7 Emergency</Badge>
+                </CardTitle>
+                <CardDescription>
+                  Emergency glass repair for windows, mirrors, patio doors, and more. Same-day service available for urgent repairs.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button asChild className="w-full">
+                  <Link to="/glass-company-las-vegas/residential-glass-repair">Emergency Glass Repair</Link>
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  Office Glass Enclosures
+                  <Badge variant="secondary">Commercial</Badge>
+                </CardTitle>
+                <CardDescription>
+                  Transform your workspace with professional glass partitions, conference room enclosures, and storefront systems.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button asChild className="w-full">
+                  <Link to="/glass-company-las-vegas/office-enclosures">Commercial Glass Solutions</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button variant="outline" asChild>
+              <Link to="/glass-company-las-vegas">View All Glass Services</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-24 bg-gradient-to-br from-primary via-charcoal to-primary text-primary-foreground relative overflow-hidden">
         {/* Background Pattern */}

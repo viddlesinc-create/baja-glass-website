@@ -274,6 +274,60 @@ const Resources = () => {
         </div>
       </section>
 
+      {/* Additional Services Section */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Other Glass Services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="h-full">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Wrench className="h-5 w-5" />
+                  Residential Glass Repair
+                </CardTitle>
+                <CardDescription>
+                  Emergency glass repair for your home including windows, mirrors, and patio doors.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• 24/7 emergency response</li>
+                  <li>• Window glass replacement</li>
+                  <li>• Custom mirrors & table tops</li>
+                  <li>• Insurance claim assistance</li>
+                </ul>
+                <Button asChild className="w-full">
+                  <Link to="/glass-company-las-vegas/residential-glass-repair">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="h-full">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <BookOpen className="h-5 w-5" />
+                  Office Glass Enclosures
+                </CardTitle>
+                <CardDescription>
+                  Professional glass solutions for modern workspaces and commercial environments.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Conference room partitions</li>
+                  <li>• Private office walls</li>
+                  <li>• Reception area glass</li>
+                  <li>• Commercial storefront systems</li>
+                </ul>
+                <Button asChild className="w-full">
+                  <Link to="/glass-company-las-vegas/office-enclosures">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
