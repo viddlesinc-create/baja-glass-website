@@ -125,7 +125,7 @@ const ResidentialGlassRepair = () => {
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Residential Glass Repair & Replacement in Las Vegas</h1>
-            <p className="text-xl mb-8 text-white/90">Emergency glass repair, window replacement, mirrors, and custom glass solutions for your home.</p>
+            <p className="text-xl mb-8 text-white/90">Glass repair, window replacement, mirrors, and custom glass solutions for your home.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
                 <Link to="/contact">Get Emergency Repair</Link>
