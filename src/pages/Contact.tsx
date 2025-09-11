@@ -78,7 +78,7 @@ const Contact = () => {
               "telephone": "(702) 750-1526",
               "email": "info@bajaglass.com",
               "url": "https://bajaglass.com",
-              "openingHours": "Mo-Sa 08:00-16:00",
+              "openingHours": "Mo-Fr 08:00-16:00",
               "contactPoint": [
                 {
                   "@type": "ContactPoint",
@@ -283,12 +283,12 @@ const Contact = () => {
                 <CardContent>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span>Monday - Saturday</span>
+                      <span>Monday - Friday</span>
                       <span>8am - 4pm</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Sunday</span>
-                      <span>Closed</span>
+                      <span>Saturday - Sunday</span>
+                      <span>Off</span>
                     </div>
                     <p className="text-sm text-muted-foreground mt-4">
                       Emergency repairs and urgent consultations available by appointment
