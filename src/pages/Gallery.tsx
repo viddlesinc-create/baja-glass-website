@@ -99,7 +99,7 @@ const Gallery = () => {
             Explore our portfolio of custom shower doors and enclosures installed throughout the Las Vegas Valley.
           </p>
           <Button variant="glass" size="lg" asChild>
-            <Link to="/contact">Start Your Project</Link>
+            <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Start Your Project</Link>
           </Button>
         </div>
       </section>
@@ -520,10 +520,10 @@ const Gallery = () => {
           <p className="text-xl mb-8 text-primary-foreground/80">Let's design and install a custom shower door that transforms your bathroom.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="glass" size="lg" asChild>
-              <Link to="/contact">Get Your Free Quote</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Your Free Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <Link to="/shower-doors-las-vegas">Explore Our Services</Link>
+              <Link to="/shower-doors-las-vegas" onClick={() => window.scrollTo(0, 0)}>Explore Our Services</Link>
             </Button>
           </div>
         </div>

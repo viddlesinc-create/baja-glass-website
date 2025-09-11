@@ -229,7 +229,7 @@ const GlassCompanyLasVegas = () => {
             {/* CTA Buttons */}
             <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16 mb-8" style={{ animationDelay: '0.4s' }}>
               <Button variant="hero" size="lg" asChild className="shadow-xl">
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="shadow-xl">
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -264,23 +264,23 @@ const GlassCompanyLasVegas = () => {
 
             {/* Quick Links */}
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="#shower-doors" className="text-accent hover:text-accent/80 font-medium">
+              <Link to="#shower-doors" className="text-accent hover:text-accent/80 font-medium" onClick={() => window.scrollTo(0, 0)}>
                 Shower Doors & Enclosures
               </Link>
               <span className="text-muted-foreground">•</span>
-              <Link to="#office-enclosures" className="text-accent hover:text-accent/80 font-medium">
+              <Link to="#office-enclosures" className="text-accent hover:text-accent/80 font-medium" onClick={() => window.scrollTo(0, 0)}>
                 Office Enclosures
               </Link>
               <span className="text-muted-foreground">•</span>
-              <Link to="/gallery" className="text-accent hover:text-accent/80 font-medium">
+              <Link to="/gallery" className="text-accent hover:text-accent/80 font-medium" onClick={() => window.scrollTo(0, 0)}>
                 Gallery
               </Link>
               <span className="text-muted-foreground">•</span>
-              <Link to="/areas-served" className="text-accent hover:text-accent/80 font-medium">
+              <Link to="/areas-served" className="text-accent hover:text-accent/80 font-medium" onClick={() => window.scrollTo(0, 0)}>
                 Areas Served
               </Link>
               <span className="text-muted-foreground">•</span>
-              <Link to="#faqs" className="text-accent hover:text-accent/80 font-medium">
+              <Link to="#faqs" className="text-accent hover:text-accent/80 font-medium" onClick={() => window.scrollTo(0, 0)}>
                 FAQs
               </Link>
             </div>
@@ -319,12 +319,12 @@ const GlassCompanyLasVegas = () => {
                     </ul>
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Button variant="outline" asChild className="flex-1">
-                        <Link to={service.href}>
+                        <Link to={service.href} onClick={() => window.scrollTo(0, 0)}>
                           Learn More → {service.title === "Shower Doors & Enclosures" ? "Shower Doors Las Vegas" : "Office Enclosures"}
                         </Link>
                       </Button>
                       <Button variant="cta" asChild className="flex-1">
-                        <Link to="/contact">
+                        <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
                           {service.title === "Shower Doors & Enclosures" ? "Get a Fast Quote" : "Schedule My Measurement"}
                         </Link>
                       </Button>
@@ -385,7 +385,7 @@ const GlassCompanyLasVegas = () => {
           
           <div className="text-center">
             <Button variant="outline" size="lg" asChild>
-              <Link to="/gallery">See What's Possible in Our Gallery →</Link>
+              <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>See What's Possible in Our Gallery →</Link>
             </Button>
           </div>
         </div>
@@ -400,7 +400,7 @@ const GlassCompanyLasVegas = () => {
               We work across Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City—bringing professional measurement, fabrication, and installation to every project.
             </p>
             <div className="flex justify-center gap-4 text-sm">
-              <Link to="/areas-served" className="text-accent hover:text-accent/80 font-medium">Areas Served</Link>
+              <Link to="/areas-served" className="text-accent hover:text-accent/80 font-medium" onClick={() => window.scrollTo(0, 0)}>Areas Served</Link>
             </div>
           </div>
           
@@ -443,7 +443,7 @@ const GlassCompanyLasVegas = () => {
           
           <div className="text-center">
             <Button variant="cta" size="lg" asChild>
-              <Link to="/gallery">View Full Gallery</Link>
+              <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>View Full Gallery</Link>
             </Button>
           </div>
         </div>
@@ -514,7 +514,7 @@ const GlassCompanyLasVegas = () => {
           
           <div className="text-center">
             <Button variant="cta" size="xl" asChild>
-              <Link to="/contact">Schedule My Measurement</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule My Measurement</Link>
             </Button>
           </div>
         </div>
@@ -554,7 +554,7 @@ const GlassCompanyLasVegas = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button variant="hero" size="xl" asChild className="shadow-2xl">
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="xl" asChild className="shadow-2xl">
                 <a href="tel:+17023830779" className="flex items-center gap-3">

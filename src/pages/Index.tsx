@@ -148,7 +148,7 @@ const Index = () => {
             {/* CTA Buttons */}
             <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16 mb-8" style={{ animationDelay: '0.7s' }}>
               <Button variant="hero" size="lg" asChild className="animate-scale-in shadow-xl">
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="animate-scale-in shadow-xl" style={{ animationDelay: '0.1s' }}>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -201,7 +201,7 @@ const Index = () => {
                 <CardContent className="relative">
                   <CardDescription className="mb-6 text-base leading-relaxed">{service.description}</CardDescription>
                   <Button variant="outline" asChild className="w-full group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all duration-300">
-                    <Link to={service.href}>Learn more →</Link>
+                    <Link to={service.href} onClick={() => window.scrollTo(0, 0)}>Learn more →</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -263,7 +263,7 @@ const Index = () => {
           </div>
           <div className="text-center mt-16 animate-fade-in">
             <Button variant="cta" size="xl" asChild>
-              <Link to="/contact">Schedule My Measurement</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule My Measurement</Link>
             </Button>
           </div>
         </div>
@@ -305,7 +305,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/residential-glass-repair">Emergency Glass Repair</Link>
+                  <Link to="/glass-company-las-vegas/residential-glass-repair" onClick={() => window.scrollTo(0, 0)}>Emergency Glass Repair</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -322,7 +322,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/office-enclosures">Commercial Glass Solutions</Link>
+                  <Link to="/glass-company-las-vegas/office-enclosures" onClick={() => window.scrollTo(0, 0)}>Commercial Glass Solutions</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -330,7 +330,7 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <Button variant="outline" asChild>
-              <Link to="/glass-company-las-vegas">View All Glass Services</Link>
+              <Link to="/glass-company-las-vegas" onClick={() => window.scrollTo(0, 0)}>View All Glass Services</Link>
             </Button>
           </div>
         </div>
@@ -352,7 +352,7 @@ const Index = () => {
           
           <div className="animate-fade-in-up flex flex-col sm:flex-row gap-6 justify-center mb-12" style={{ animationDelay: '0.2s' }}>
             <Button variant="hero" size="xl" asChild className="shadow-2xl">
-              <Link to="/contact">Get a Fast Quote</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="glass" size="xl" asChild className="shadow-2xl">
               <a href="tel:+17023830779" className="flex items-center gap-3">

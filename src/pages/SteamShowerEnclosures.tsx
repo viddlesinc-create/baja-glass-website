@@ -96,7 +96,7 @@ const SteamShowerEnclosures = () => {
 
             <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16" style={{ animationDelay: '0.4s' }}>
               <Button variant="hero" size="lg" asChild className="shadow-xl">
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="shadow-xl">
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -146,7 +146,7 @@ const SteamShowerEnclosures = () => {
           </div>
           <div className="text-center mt-16 animate-fade-in">
             <Button variant="cta" size="xl" asChild>
-              <Link to="/contact">Schedule My Measurement</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule My Measurement</Link>
             </Button>
           </div>
         </div>
@@ -305,7 +305,7 @@ const SteamShowerEnclosures = () => {
           <p className="text-xl mb-8 text-primary-foreground/80">Transform your bathroom into a luxury spa experience with a custom steam shower enclosure.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="xl" asChild>
-              <Link to="/contact">Get a Fast Quote</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="glass" size="xl" asChild>
               <a href="tel:+17023830779" className="flex items-center gap-2">

@@ -356,10 +356,10 @@ const InstallationProcess = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact">Schedule Consultation</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule Consultation</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <Link to="/gallery">View Completed Projects</Link>
+                <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>View Completed Projects</Link>
               </Button>
             </div>
           </div>

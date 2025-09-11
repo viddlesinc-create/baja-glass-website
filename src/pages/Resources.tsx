@@ -108,7 +108,7 @@ const Resources = () => {
             Everything you need to know about shower doors, glass options, and maintaining your investment.
           </p>
           <Button variant="glass" size="lg" asChild>
-            <Link to="/contact">Get Expert Advice</Link>
+            <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Expert Advice</Link>
           </Button>
         </div>
       </section>
@@ -297,7 +297,7 @@ const Resources = () => {
                   <li>• Insurance claim assistance</li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/residential-glass-repair">Learn More</Link>
+                  <Link to="/glass-company-las-vegas/residential-glass-repair" onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -320,7 +320,7 @@ const Resources = () => {
                   <li>• Commercial storefront systems</li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/office-enclosures">Learn More</Link>
+                  <Link to="/glass-company-las-vegas/office-enclosures" onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -337,10 +337,10 @@ const Resources = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="glass" size="lg" asChild>
-              <Link to="/contact">Get Expert Consultation</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Expert Consultation</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <Link to="/shower-doors-las-vegas">Explore Our Services</Link>
+              <Link to="/shower-doors-las-vegas" onClick={() => window.scrollTo(0, 0)}>Explore Our Services</Link>
             </Button>
           </div>
         </div>

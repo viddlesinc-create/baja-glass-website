@@ -338,10 +338,10 @@ const WarrantyInformation = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact">Contact Warranty Service</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact Warranty Service</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <Link to="/resources">View Care Instructions</Link>
+                <Link to="/resources" onClick={() => window.scrollTo(0, 0)}>View Care Instructions</Link>
               </Button>
             </div>
           </div>

@@ -46,7 +46,7 @@ const CustomEnclosures = () => {
             <p className="text-xl mb-8 text-white/90">Inline, corner, neo‑angle, alcove, and steam—made to measure for a perfect fit.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -114,7 +114,7 @@ const CustomEnclosures = () => {
           </div>
           <div className="text-center mt-12">
             <Button variant="cta" size="lg" asChild>
-              <Link to="/contact">Schedule My Measurement</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule My Measurement</Link>
             </Button>
           </div>
         </div>
@@ -144,7 +144,7 @@ const CustomEnclosures = () => {
             </div>
             <div className="mt-8">
               <Button variant="cta" asChild>
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
             </div>
           </div>
@@ -177,7 +177,7 @@ const CustomEnclosures = () => {
           </div>
           <div className="text-center mt-12">
             <Button variant="outline" asChild>
-              <Link to="/gallery">See What's Possible in Our Gallery →</Link>
+              <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>See What's Possible in Our Gallery →</Link>
             </Button>
           </div>
         </div>
@@ -222,7 +222,7 @@ const CustomEnclosures = () => {
           <p className="text-xl mb-8 text-primary-foreground/80">Transform your unique space with a custom-built shower enclosure that fits perfectly.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="glass" size="lg" asChild>
-              <Link to="/contact">Get a Fast Quote</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
               <a href="tel:+17023830779" className="flex items-center gap-2">

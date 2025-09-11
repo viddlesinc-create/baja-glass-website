@@ -219,10 +219,10 @@ const GlassCareGuide = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact">Schedule Glass Care Service</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule Glass Care Service</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <Link to="/shower-doors-las-vegas">View Our Services</Link>
+                <Link to="/shower-doors-las-vegas" onClick={() => window.scrollTo(0, 0)}>View Our Services</Link>
               </Button>
             </div>
           </div>

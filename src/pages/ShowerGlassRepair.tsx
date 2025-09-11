@@ -67,7 +67,7 @@ const ShowerGlassRepair = () => {
             <p className="text-xl mb-8 text-white/90">Broken panels, leaks, off‑track sliders, and hardware issues—fixed safely and efficiently.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact">Request a Service Visit</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Request a Service Visit</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -105,7 +105,7 @@ const ShowerGlassRepair = () => {
           </div>
           <div className="text-center mt-12">
             <Button variant="cta" size="lg" asChild>
-              <Link to="/contact">Request a Service Visit</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Request a Service Visit</Link>
             </Button>
           </div>
         </div>
@@ -207,7 +207,7 @@ const ShowerGlassRepair = () => {
           <p className="text-xl mb-8 text-primary-foreground/80">Get fast, professional service to restore your shower door's function and safety.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="glass" size="lg" asChild>
-              <Link to="/contact">Request a Service Visit</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Request a Service Visit</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
               <a href="tel:+17023830779" className="flex items-center gap-2">

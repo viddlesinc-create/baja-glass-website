@@ -326,10 +326,10 @@ const ChoosingRightDoor = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact">Get Free Consultation</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Free Consultation</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <Link to="/gallery">View Our Gallery</Link>
+                <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>View Our Gallery</Link>
               </Button>
             </div>
           </div>

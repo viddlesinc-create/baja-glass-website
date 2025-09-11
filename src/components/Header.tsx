@@ -64,7 +64,7 @@ const Header = () => {
         {/* Main header */}
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3" onClick={() => window.scrollTo(0, 0)}>
             <img 
               src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
               alt="Baja Glass — Shower Doors & Glass in Las Vegas"
@@ -153,7 +153,7 @@ const Header = () => {
             </a>
             
             <Button variant="cta" size="default" asChild>
-              <Link to="/contact">Get a Fast Quote</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
 
             {/* Mobile menu trigger */}
@@ -166,7 +166,7 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-6 mt-6">
-                  <Link to="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
+                  <Link to="/" className="flex items-center gap-3" onClick={() => { setIsOpen(false); window.scrollTo(0, 0); }}>
                     <img 
                       src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
                       alt="Baja Glass — Shower Doors & Glass in Las Vegas"

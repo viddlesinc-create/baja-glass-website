@@ -128,7 +128,7 @@ const ResidentialGlassRepair = () => {
             <p className="text-xl mb-8 text-white/90">Glass repair, window replacement, mirrors, and custom glass solutions for your home.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact">Get Glass Repair</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Glass Repair</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -267,7 +267,7 @@ const ResidentialGlassRepair = () => {
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link to="/contact">Schedule Repair Online</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule Repair Online</Link>
             </Button>
           </div>
         </div>

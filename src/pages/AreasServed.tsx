@@ -99,7 +99,7 @@ const areas = [
 
             <div className="flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16">
               <Button variant="hero" size="lg" asChild>
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -157,10 +157,10 @@ const areas = [
                   
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button variant="cta" size="sm" asChild className="flex-1">
-                      <Link to="/contact">Get a Fast Quote</Link>
+                      <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
                     </Button>
                     <Button variant="outline" size="sm" asChild className="flex-1">
-                      <Link to="/gallery">View Gallery</Link>
+                      <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>View Gallery</Link>
                     </Button>
                   </div>
                 </CardContent>

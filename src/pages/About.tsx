@@ -46,7 +46,7 @@ const About = () => {
               Your trusted partner for custom shower doors and glass solutions throughout the Las Vegas Valley.
             </p>
             <Button variant="glass" size="lg" asChild>
-              <Link to="/contact">Work With Us</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Work With Us</Link>
             </Button>
           </div>
         </div>
@@ -179,10 +179,10 @@ const About = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="glass" size="lg" asChild>
-              <Link to="/contact">Get Your Free Quote</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Your Free Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <Link to="/gallery">View Our Work</Link>
+              <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>View Our Work</Link>
             </Button>
           </div>
         </div>

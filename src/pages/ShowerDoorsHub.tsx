@@ -127,7 +127,7 @@ const ShowerDoorsHub = () => {
             {/* CTA Buttons */}
             <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16 mb-8" style={{ animationDelay: '0.6s' }}>
               <Button variant="hero" size="lg" asChild className="animate-scale-in">
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -201,7 +201,7 @@ const ShowerDoorsHub = () => {
                 <CardContent className="relative">
                   <CardDescription className="mb-6 text-base leading-relaxed">{service.description}</CardDescription>
                   <Button variant="outline" asChild className="w-full group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all duration-300">
-                    <Link to={service.href}>Learn More →</Link>
+                    <Link to={service.href} onClick={() => window.scrollTo(0, 0)}>Learn More →</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -242,7 +242,7 @@ const ShowerDoorsHub = () => {
           </div>
           <div className="text-center mt-16 animate-fade-in">
             <Button variant="cta" size="xl" asChild>
-              <Link to="/contact">Schedule My Measurement</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule My Measurement</Link>
             </Button>
           </div>
         </div>
@@ -272,7 +272,7 @@ const ShowerDoorsHub = () => {
           <p className="text-xl mb-8 text-primary-foreground/80">Start with a professional measurement and tailored recommendations from the Baja Glass team.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="glass" size="lg" asChild>
-              <Link to="/contact">Get a Fast Quote</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
               <a href="tel:+17023830779" className="flex items-center gap-2">

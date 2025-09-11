@@ -36,7 +36,7 @@ const SlidingShowerDoors = () => {
             <p className="text-xl mb-8 text-white/90">Smooth‑glide systems that save space and elevate your bath.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -104,7 +104,7 @@ const SlidingShowerDoors = () => {
           </div>
           <div className="text-center mt-12">
             <Button variant="cta" size="lg" asChild>
-              <Link to="/contact">Schedule My Measurement</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule My Measurement</Link>
             </Button>
           </div>
         </div>
@@ -134,7 +134,7 @@ const SlidingShowerDoors = () => {
             </div>
             <div className="mt-8">
               <Button variant="cta" asChild>
-                <Link to="/contact">Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
             </div>
           </div>
@@ -180,7 +180,7 @@ const SlidingShowerDoors = () => {
           <p className="text-xl mb-8 text-primary-foreground/80">Experience the convenience and style of professionally installed sliding shower doors.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="glass" size="lg" asChild>
-              <Link to="/contact">Get a Fast Quote</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
               <a href="tel:+17023830779" className="flex items-center gap-2">
