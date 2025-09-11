@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Clock, Mail, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -56,6 +57,51 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Contact Baja Glass | Free Quote & Consultation Las Vegas</title>
+        <meta name="description" content="Get your free quote from Baja Glass. Professional shower door installation and glass services in Las Vegas. Licensed, bonded, and insured with strong warranty." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "Baja Glass",
+              "address": {
+                "@type": "PostalAddress", 
+                "streetAddress": "4280 Reno Ave, Ste A",
+                "addressLocality": "Las Vegas",
+                "addressRegion": "NV",
+                "postalCode": "89118",
+                "addressCountry": "US"
+              },
+              "telephone": "(702) 750-1526",
+              "email": "info@bajaglass.com",
+              "url": "https://bajaglass.com",
+              "openingHours": "Mo-Sa 08:00-16:00",
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "(702) 750-1526",
+                  "contactType": "Customer Service",
+                  "availableLanguage": "English",
+                  "areaServed": "Las Vegas Valley"
+                },
+                {
+                  "@type": "ContactPoint", 
+                  "contactType": "Sales",
+                  "availableLanguage": "English",
+                  "serviceType": "Free Consultation"
+                }
+              ],
+              "priceRange": "$$",
+              "paymentAccepted": "Cash, Credit Card, Check",
+              "currenciesAccepted": "USD"
+            }
+          })}
+        </script>
+      </Helmet>
+      
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white relative overflow-hidden">
         {/* Background Image */}

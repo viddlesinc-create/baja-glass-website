@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Shield, Users, Award, Clock } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const values = [
@@ -37,6 +38,55 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>About Baja Glass | Licensed Glass Contractor Las Vegas</title>
+        <meta name="description" content="Learn about Baja Glass, a family-owned glass company serving Las Vegas since 2010. Licensed, bonded, and insured for quality shower door installation and glass services." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "Baja Glass", 
+              "description": "Family owned and operated glass company specializing in shower doors, mirrors, and interior glass installation.",
+              "foundingDate": "2010",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4280 Reno Ave, Ste A",
+                "addressLocality": "Las Vegas",
+                "addressRegion": "NV", 
+                "postalCode": "89118",
+                "addressCountry": "US"
+              },
+              "telephone": "(702) 750-1526",
+              "url": "https://bajaglass.com",
+              "openingHours": "Mo-Sa 08:00-16:00",
+              "areaServed": {
+                "@type": "Place",
+                "name": "Las Vegas Valley"
+              },
+              "hasCredential": [
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "credentialCategory": "License",
+                  "name": "Licensed Glass Contractor"
+                },
+                {
+                  "@type": "EducationalOccupationalCredential", 
+                  "credentialCategory": "Insurance",
+                  "name": "Bonded & Insured"
+                },
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "credentialCategory": "Certification", 
+                  "name": "Safety Glass Certified"
+                }
+              ]
+            }
+          })}
+        </script>
+      </Helmet>
+      
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white">
         <div className="container mx-auto px-4">
