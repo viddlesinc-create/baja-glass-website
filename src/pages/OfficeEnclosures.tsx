@@ -330,7 +330,7 @@ const OfficeEnclosures = () => {
                 Call (702) 383-0779
               </a>
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="destructive" size="lg" asChild>
               <Link to="/contact">Request Commercial Quote</Link>
             </Button>
           </div>
