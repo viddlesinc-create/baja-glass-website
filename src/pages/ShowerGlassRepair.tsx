@@ -154,7 +154,7 @@ const ShowerGlassRepair = () => {
           </p>
           <div className="bg-background p-6 rounded-lg inline-block mx-auto">
             <p className="font-semibold text-center">Baja Glass</p>
-            <p className="text-muted-foreground text-center">4280 W Reno Ave, Las Vegas, NV 89118</p>
+            <p className="text-muted-foreground text-center">4280 Reno Ave, Ste A, Las Vegas, NV 89118</p>
             <p className="text-muted-foreground text-center">(702) 383-0779</p>
           </div>
         </div>

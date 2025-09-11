@@ -220,7 +220,8 @@ const Contact = () => {
                 <CardContent>
                   <div className="space-y-2">
                     <p className="font-semibold">Baja Glass</p>
-                    <p className="text-muted-foreground">4280 W Reno Ave</p>
+                    <p className="text-muted-foreground">4280 Reno Ave</p>
+                    <p className="text-muted-foreground">Ste A</p>
                     <p className="text-muted-foreground">Las Vegas, NV 89118</p>
                   </div>
                 </CardContent>

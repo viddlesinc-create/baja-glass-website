@@ -38,7 +38,8 @@ const Footer = () => {
               />
             </div>
             <div className="space-y-2 text-primary-foreground/80">
-              <p>4280 W Reno Ave</p>
+              <p>4280 Reno Ave</p>
+              <p>Ste A</p>
               <p>Las Vegas, NV 89118</p>
               <p>(702) 383-0779</p>
             </div>

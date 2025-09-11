@@ -159,7 +159,7 @@ const HingedShowerDoors = () => {
           </p>
           <div className="bg-background p-6 rounded-lg inline-block">
             <p className="font-semibold">Baja Glass</p>
-            <p className="text-muted-foreground">4280 W Reno Ave, Las Vegas, NV 89118</p>
+            <p className="text-muted-foreground">4280 Reno Ave, Ste A, Las Vegas, NV 89118</p>
             <p className="text-muted-foreground">(702) 383-0779</p>
           </div>
         </div>
