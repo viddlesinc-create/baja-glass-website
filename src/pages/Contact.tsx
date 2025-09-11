@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Clock, Mail, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,24 +20,57 @@ const Contact = () => {
     projectType: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Quote Request Submitted",
-      description: "We'll contact you within 24-48 hours with your free quote and consultation details.",
-    });
-    // Reset form
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      city: "",
-      projectType: "",
-      message: ""
-    });
+    
+    if (!formData.name || !formData.phone || !formData.city || !formData.projectType) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill in all required fields (Name, Phone, City, Project Type).",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: "Quote Request Submitted!",
+        description: "We'll contact you within 24-48 hours with your free quote and consultation details.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        city: "",
+        projectType: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error Submitting Request",
+        description: "Please try again or call us directly at (702) 383-0779.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -150,8 +184,8 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <form onSubmit={handleSubmit} className="space-y-6" id="quote-form">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Name *</Label>
                       <Input
@@ -173,7 +207,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="email">Email</Label>
                       <Input
@@ -220,8 +254,8 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" variant="cta" size="lg" className="w-full">
-                    Start My Quote
+                  <Button type="submit" variant="cta" size="lg" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? "Submitting..." : "Start My Quote"}
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
