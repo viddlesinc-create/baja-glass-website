@@ -145,7 +145,7 @@ const OfficeEnclosures = () => {
             <p className="text-xl mb-8 text-white/90">Professional glass solutions for modern workspaces - conference rooms, private offices, and commercial storefronts.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact">Get Commercial Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Commercial Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -258,7 +258,7 @@ const OfficeEnclosures = () => {
                   </li>
                 </ul>
                 <Button asChild>
-                  <Link to="/gallery">View More Projects</Link>
+                  <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>View More Projects</Link>
                 </Button>
               </div>
               <div>
@@ -331,7 +331,7 @@ const OfficeEnclosures = () => {
               </a>
             </Button>
             <Button variant="destructive" size="lg" asChild>
-              <Link to="/contact">Request Commercial Quote</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Request Commercial Quote</Link>
             </Button>
           </div>
         </div>
