@@ -74,33 +74,6 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            {/* Glass Company Dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Link 
-                  to="/glass-company-las-vegas"
-                  className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  Glass Company
-                  <ChevronDown className="h-4 w-4" />
-                </Link>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-56">
-                {glassCompanyPages.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    <Link
-                      to={item.href}
-                      className="text-foreground hover:text-accent transition-colors w-full"
-                      onClick={() => window.scrollTo(0, 0)}
-                    >
-                      {item.name}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-
             {/* Shower Doors Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -115,6 +88,33 @@ const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-56">
                 {showerDoorsPages.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link
+                      to={item.href}
+                      className="text-foreground hover:text-accent transition-colors w-full"
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Glass Company Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Link 
+                  to="/glass-company-las-vegas"
+                  className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Glass Company
+                  <ChevronDown className="h-4 w-4" />
+                </Link>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-56">
+                {glassCompanyPages.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
                     <Link
                       to={item.href}
@@ -175,34 +175,6 @@ const Header = () => {
                   </Link>
                   
                   <nav className="flex flex-col gap-4">
-                    {/* Glass Company Section */}
-                    <div>
-                      <Link
-                        to="/glass-company-las-vegas"
-                        className="text-foreground hover:text-accent transition-colors font-medium py-2 block"
-                        onClick={() => {
-                          setIsOpen(false);
-                          window.scrollTo(0, 0);
-                        }}
-                      >
-                        Glass Company
-                      </Link>
-                      <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Services</h3>
-                      {glassCompanyPages.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className="text-foreground hover:text-accent transition-colors font-medium py-1 pl-4 block"
-                          onClick={() => {
-                            setIsOpen(false);
-                            window.scrollTo(0, 0);
-                          }}
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-
                     {/* Shower Doors Section */}
                     <div>
                       <Link
@@ -217,6 +189,34 @@ const Header = () => {
                       </Link>
                       <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Types & Services</h3>
                       {showerDoorsPages.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className="text-foreground hover:text-accent transition-colors font-medium py-1 pl-4 block"
+                          onClick={() => {
+                            setIsOpen(false);
+                            window.scrollTo(0, 0);
+                          }}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+
+                    {/* Glass Company Section */}
+                    <div>
+                      <Link
+                        to="/glass-company-las-vegas"
+                        className="text-foreground hover:text-accent transition-colors font-medium py-2 block"
+                        onClick={() => {
+                          setIsOpen(false);
+                          window.scrollTo(0, 0);
+                        }}
+                      >
+                        Glass Company
+                      </Link>
+                      <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Services</h3>
+                      {glassCompanyPages.map((item) => (
                         <Link
                           key={item.name}
                           to={item.href}
