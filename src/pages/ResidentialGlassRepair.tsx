@@ -141,15 +141,6 @@ const ResidentialGlassRepair = () => {
         </div>
       </section>
 
-      {/* Emergency Banner */}
-      <section className="py-6 bg-destructive text-destructive-foreground">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center">
-            <Clock className="h-6 w-6" />
-            <p className="font-semibold">24/7 Emergency Glass Repair Available - Same Day Service - Insurance Accepted</p>
-          </div>
-        </div>
-      </section>
 
       {/* Services Grid */}
       <section className="py-20 bg-background">
