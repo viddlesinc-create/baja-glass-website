@@ -133,7 +133,7 @@ const ResidentialGlassRepair = () => {
               <Button variant="ghost" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
-                  24/7 Emergency: (702) 383-0779
+                  Call Now: 702.383.0779
                 </a>
               </Button>
             </div>
