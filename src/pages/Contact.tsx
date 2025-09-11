@@ -303,7 +303,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {["Las Vegas", "Henderson", "Summerlin", "North Las Vegas", "Paradise", "Spring Valley", "Enterprise", "Boulder City"].map((city) => (
+                    {["Las Vegas", "Henderson", "Summerlin", "Paradise", "Spring Valley", "Enterprise"].map((city) => (
                       <Badge key={city} variant="outline">{city}</Badge>
                     ))}
                   </div>
