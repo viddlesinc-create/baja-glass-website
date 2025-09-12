@@ -116,7 +116,7 @@ const ResidentialGlassRepair = () => {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         <div className="absolute inset-0">
           <img 
-            src="/src/assets/damaged-shower-glass.jpg" 
+            src="/lovable-uploads/23d0067f-0c21-4a67-b331-fd93980f55fc.png" 
             alt="Broken residential window glass requiring professional repair services in Las Vegas"
             className="w-full h-full object-cover"
           />
