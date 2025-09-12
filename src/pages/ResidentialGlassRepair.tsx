@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Phone, Home, Shield, Clock, CheckCircle, Star, Wrench } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import brokenWindowLasVegas from "@/assets/broken-window-las-vegas.jpg";
 
 const ResidentialGlassRepair = () => {
   const services = [
@@ -116,7 +117,7 @@ const ResidentialGlassRepair = () => {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/23d0067f-0c21-4a67-b331-fd93980f55fc.png" 
+            src={brokenWindowLasVegas} 
             alt="Broken residential window glass requiring professional repair services in Las Vegas"
             className="w-full h-full object-cover"
           />
