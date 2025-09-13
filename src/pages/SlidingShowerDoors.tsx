@@ -29,8 +29,13 @@ const SlidingShowerDoors = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">
-        <div className="relative container mx-auto px-4 py-20">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-black/40 z-10"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png')" }}
+        ></div>
+        <div className="relative container mx-auto px-4 py-20 z-20 text-white">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Sliding Shower Doors in Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">Smooth‑glide systems that save space and elevate your bath.</p>
