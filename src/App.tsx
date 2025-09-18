@@ -27,6 +27,7 @@ import InstallationProcess from "./pages/blog/InstallationProcess";
 import WarrantyInformation from "./pages/blog/WarrantyInformation";
 import ResidentialGlassRepair from "./pages/ResidentialGlassRepair";
 import OfficeEnclosures from "./pages/OfficeEnclosures";
+import Sitemap from "./pages/Sitemap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -65,6 +66,7 @@ function App() {
                 <Route path="/blog/choosing-right-door" element={<ChoosingRightDoor />} />
                 <Route path="/blog/installation-process" element={<InstallationProcess />} />
                 <Route path="/blog/warranty-information" element={<WarrantyInformation />} />
+                <Route path="/sitemap" element={<Sitemap />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
