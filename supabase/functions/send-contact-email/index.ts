@@ -32,7 +32,6 @@ const handler = async (req: Request): Promise<Response> => {
     const businessEmailResponse = await resend.emails.send({
       from: "Baja Glass <noreply@bajaglass.com>",
       to: ["info@bajaglass.com"],
-      cc: ["dberglv@gmail.com"], // Temporary CC for testing
       reply_to: formData.email ? [formData.email] : undefined,
       subject: `New Quote Request from ${formData.name} - ${formData.projectType}`,
       html: `
