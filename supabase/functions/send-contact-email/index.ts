@@ -31,7 +31,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to business
     const businessEmailResponse = await resend.emails.send({
       from: "Baja Glass Website <noreply@bajaglass.com>",
-      to: ["info@bajaglass.com"],
+      to: ["dberglv@gmail.com"],
       subject: `New Quote Request from ${formData.name} - ${formData.projectType}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
