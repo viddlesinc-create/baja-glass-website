@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Slider } from "@/components/ui/slider";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { X } from "lucide-react";
@@ -531,7 +531,11 @@ const Gallery = () => {
 
       {/* Lightbox Modal */}
       <Dialog open={!!lightboxImage} onOpenChange={() => setLightboxImage(null)}>
-        <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none">
+        <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none" aria-describedby="lightbox-description">
+          <DialogTitle className="sr-only">Gallery Image Lightbox</DialogTitle>
+          <DialogDescription id="lightbox-description" className="sr-only">
+            Enlarged view of gallery image for detailed viewing
+          </DialogDescription>
           <div className="relative">
             <button
               onClick={() => setLightboxImage(null)}

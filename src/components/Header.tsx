@@ -43,7 +43,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <>
+      {/* Skip to main content for screen readers */}
+      <a href="#main-content" className="skip-to-main">
+        Skip to main content
+      </a>
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4">
         {/* Top utility bar with social icons - hidden on mobile */}
         <div className="hidden md:flex items-center justify-end py-2 border-b border-border/50">
@@ -276,7 +281,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
+      </header>
+    </>
   );
 };
 
