@@ -101,13 +101,14 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center space-y-4">
           <div>
-            <Link
-              to="/sitemap"
+            <a
+              href="/sitemap.xml"
               className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm underline"
-              onClick={() => window.scrollTo(0, 0)}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Sitemap
-            </Link>
+            </a>
           </div>
           <p className="text-primary-foreground/80">
             Copyright © {new Date().getFullYear()} Baja Glass. All rights reserved.
