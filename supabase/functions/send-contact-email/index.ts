@@ -30,7 +30,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to business
     const businessEmailResponse = await resend.emails.send({
-      from: "Baja Glass Website <noreply@bajaglass.com>",
+      from: "Baja Glass <onboarding@resend.dev>",
       to: ["info@bajaglass.com"],
       subject: `New Quote Request from ${formData.name} - ${formData.projectType}`,
       html: `
