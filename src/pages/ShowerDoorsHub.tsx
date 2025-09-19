@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-shower-door.jpg";
+import { Helmet } from "react-helmet-async";
 
 const ShowerDoorsHub = () => {
   const services = [
@@ -74,6 +75,10 @@ const ShowerDoorsHub = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Shower Doors Las Vegas | Custom Glass Installation & Repair | Baja Glass</title>
+        <meta name="description" content="Professional shower door installation in Las Vegas. Frameless, sliding, hinged, custom enclosures & repairs. Licensed with warranty. Get your free quote!" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
         {/* Background Pattern */}

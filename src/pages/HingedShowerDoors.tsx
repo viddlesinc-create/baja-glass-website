@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const HingedShowerDoors = () => {
   const faqs = [
@@ -28,6 +29,10 @@ const HingedShowerDoors = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Hinged & Pivot Shower Doors Las Vegas | Professional Installation | Baja Glass</title>
+        <meta name="description" content="Expert hinged and pivot shower door installation in Las Vegas. Classic swing doors with precise alignment and reliable sealing. Get your free quote today!" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">
         {/* Hero Image */}

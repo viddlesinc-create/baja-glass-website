@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const CustomEnclosures = () => {
   const faqs = [
@@ -28,6 +29,10 @@ const CustomEnclosures = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Custom Shower Enclosures Las Vegas | Neo-Angle & Steam Showers | Baja Glass</title>
+        <meta name="description" content="Custom shower enclosures in Las Vegas. Inline, corner, neo-angle, alcove, and steam designs made to measure for perfect fit. Expert installation!" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         {/* Hero Image */}

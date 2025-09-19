@@ -7,6 +7,7 @@ import heroImage from "/lovable-uploads/1097be0e-6f50-458e-9cc0-56a340dec89f.png
 import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
 import hardwareFinishes from "@/assets/hardware-finishes.jpg";
+import { Helmet } from "react-helmet-async";
 
 const GlassCompanyLasVegas = () => {
   const services = [
@@ -177,6 +178,10 @@ const GlassCompanyLasVegas = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Glass Company Las Vegas | Shower Doors, Mirrors & Commercial Glass | Baja Glass</title>
+        <meta name="description" content="Professional glass company in Las Vegas specializing in shower doors, mirrors, office partitions & residential glass repair. Licensed, insured, warranty-backed work!" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
         {/* Background Pattern */}

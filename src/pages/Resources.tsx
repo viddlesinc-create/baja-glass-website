@@ -7,6 +7,7 @@ import clearGlass from "@/assets/clear-glass.jpg";
 import lowIronGlass from "@/assets/low-iron-glass.jpg";
 import frostedGlass from "@/assets/frosted-glass.jpg";
 import rainGlass from "@/assets/rain-glass.jpg";
+import { Helmet } from "react-helmet-async";
 
 const Resources = () => {
   const resources = [
@@ -92,6 +93,10 @@ const Resources = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Resources & Guides | Shower Door Care & Installation Info | Baja Glass Las Vegas</title>
+        <meta name="description" content="Helpful resources for shower door care, installation process, warranty information and choosing the right door. Expert guides from Baja Glass." />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-charcoal to-primary text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/60"></div>

@@ -6,6 +6,7 @@ import { Star, Phone, CheckCircle, Instagram, Facebook } from "lucide-react";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
+import { Helmet } from "react-helmet-async";
 
 const AreasServed = () => {
 const areas = [
@@ -69,6 +70,10 @@ const areas = [
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Areas Served | Las Vegas Valley Shower Door Installation | Baja Glass</title>
+        <meta name="description" content="Baja Glass serves Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise & surrounding areas with professional shower door installation." />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
         <div className="absolute inset-0">

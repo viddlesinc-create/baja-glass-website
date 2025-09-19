@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const ShowerGlassRepair = () => {
   const commonProblems = [
@@ -51,6 +52,10 @@ const ShowerGlassRepair = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Shower Glass Repair Las Vegas | Door Replacement & Hardware Fix | Baja Glass</title>
+        <meta name="description" content="Professional shower glass repair in Las Vegas. Broken panels, sliding door repair, hardware replacement & leak fixes. Fast, safe, reliable service!" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         <div className="absolute inset-0">

@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/compone
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { X } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Gallery = () => {
   const [sliderValues, setSliderValues] = useState([50, 50, 50, 50]);
@@ -90,6 +91,10 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Gallery | Shower Door Projects & Installations | Baja Glass Las Vegas</title>
+        <meta name="description" content="View our portfolio of custom shower doors and enclosures installed throughout Las Vegas Valley. Before & after transformations and recent projects." />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-20 relative bg-cover bg-center text-white" style={{ backgroundImage: "url('/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png')" }}>
         <div className="absolute inset-0 bg-black/50"></div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const SemiFramelessShowerDoors = () => {
   const faqs = [
@@ -32,6 +33,10 @@ const SemiFramelessShowerDoors = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Semi-Frameless & Framed Shower Doors Las Vegas | Balanced Style & Support | Baja Glass</title>
+        <meta name="description" content="Semi-frameless and framed shower doors in Las Vegas. Balanced style with strategic support for dependable performance. Expert installation with warranty!" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal text-white">
         {/* Hero Image */}

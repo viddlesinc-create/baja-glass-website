@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const SlidingShowerDoors = () => {
   const faqs = [
@@ -28,6 +29,10 @@ const SlidingShowerDoors = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Sliding Shower Doors Las Vegas | Space-Saving Glass Doors | Baja Glass</title>
+        <meta name="description" content="Professional sliding shower door installation in Las Vegas. Smooth-glide systems that save space and elevate your bathroom. Free quotes available!" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10"></div>

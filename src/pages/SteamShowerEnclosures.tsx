@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone, Droplets } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const SteamShowerEnclosures = () => {
   const faqs = [
@@ -59,6 +60,10 @@ const SteamShowerEnclosures = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Steam Shower Enclosures Las Vegas | Sealed Glass Systems | Baja Glass</title>
+        <meta name="description" content="Professional steam shower enclosures in Las Vegas. Sealed systems with transoms and precise gasketing for spa-like experience. Expert installation!" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

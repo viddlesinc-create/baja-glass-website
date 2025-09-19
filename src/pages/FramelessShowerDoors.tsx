@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const FramelessShowerDoors = () => {
   const faqs = [
@@ -33,6 +34,10 @@ const FramelessShowerDoors = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Frameless Shower Doors Las Vegas | Modern Glass Installation | Baja Glass</title>
+        <meta name="description" content="Premium frameless shower doors in Las Vegas. Minimal metal, maximum openness with custom glass measured precisely. Licensed installers with strong warranty!" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">
         {/* Hero Image */}
