@@ -69,7 +69,7 @@ const ShowerGlassRepair = () => {
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Shower Glass Repair & Replacement - Las Vegas Valley</h1>
+            <h1 className="text-5xl font-bold mb-6">Shower Door Repair & Replacement - Las Vegas Valley</h1>
             <p className="text-xl mb-8 text-white/90">Broken panels, leaks, off‑track sliders, and hardware issues—fixed safely and efficiently.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
