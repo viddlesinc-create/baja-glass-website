@@ -78,7 +78,147 @@ const ShowerDoorsHub = () => {
       <Helmet>
         <title>Shower Doors Las Vegas | Custom Glass Installation & Repair | Baja Glass</title>
         <meta name="description" content="Professional shower door installation in Las Vegas. Frameless, sliding, hinged, custom enclosures & repairs. Licensed with warranty. Get your free quote!" />
+        <meta name="keywords" content="shower doors Las Vegas, frameless shower doors, sliding shower doors, hinged shower doors, custom shower enclosures, shower glass repair, Las Vegas glass installation" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Shower Doors Las Vegas | Custom Glass Installation & Repair | Baja Glass" />
+        <meta property="og:description" content="Professional shower door installation in Las Vegas. Frameless, sliding, hinged, custom enclosures & repairs. Licensed with warranty." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/shower-doors-las-vegas/" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shower Doors Las Vegas | Custom Glass Installation & Repair | Baja Glass" />
+        <meta name="twitter:description" content="Professional shower door installation in Las Vegas. Frameless, sliding, hinged, custom enclosures & repairs." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Shower Doors Las Vegas",
+            "description": "Professional shower door installation and repair services in Las Vegas. Custom frameless, sliding, hinged doors and enclosures.",
+            "url": "https://bajaglass.com/shower-doors-las-vegas/",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "Baja Glass",
+              "image": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4280 Reno Ave, Ste A",
+                "addressLocality": "Las Vegas",
+                "addressRegion": "NV",
+                "postalCode": "89118",
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "36.1215",
+                "longitude": "-115.2269"
+              },
+              "telephone": "(702) 383-0779",
+              "url": "https://bajaglass.com",
+              "priceRange": "$$",
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Shower Door Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Frameless Shower Doors",
+                      "description": "Custom frameless shower door installation with premium tempered glass",
+                      "provider": {
+                        "@type": "LocalBusiness",
+                        "name": "Baja Glass"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Sliding Shower Doors",
+                      "description": "Space-saving sliding shower door installation and repair",
+                      "provider": {
+                        "@type": "LocalBusiness",
+                        "name": "Baja Glass"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Hinged Shower Doors",
+                      "description": "Classic hinged and pivot shower door installation",
+                      "provider": {
+                        "@type": "LocalBusiness",
+                        "name": "Baja Glass"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Custom Shower Enclosures",
+                      "description": "Made-to-measure shower enclosures for unique spaces",
+                      "provider": {
+                        "@type": "LocalBusiness",
+                        "name": "Baja Glass"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Shower Glass Repair",
+                      "description": "Professional shower glass repair and replacement services",
+                      "provider": {
+                        "@type": "LocalBusiness",
+                        "name": "Baja Glass"
+                      }
+                    }
+                  }
+                ]
+              },
+              "areaServed": {
+                "@type": "Place",
+                "name": "Las Vegas Valley",
+                "containsPlace": [
+                  { "@type": "Place", "name": "Las Vegas, NV" },
+                  { "@type": "Place", "name": "Henderson, NV" },
+                  { "@type": "Place", "name": "Summerlin, NV" },
+                  { "@type": "Place", "name": "Paradise, NV" },
+                  { "@type": "Place", "name": "Spring Valley, NV" },
+                  { "@type": "Place", "name": "Enterprise, NV" }
+                ]
+              }
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://bajaglass.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Shower Doors Las Vegas",
+                  "item": "https://bajaglass.com/shower-doors-las-vegas/"
+                }
+              ]
+            }
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
