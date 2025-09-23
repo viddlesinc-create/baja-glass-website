@@ -61,8 +61,8 @@ const SteamShowerEnclosures = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Steam Shower Enclosures Las Vegas | Sealed Glass Systems | Baja Glass</title>
-        <meta name="description" content="Professional steam shower enclosures in Las Vegas. Sealed systems with transoms and precise gasketing for spa-like experience. Expert installation!" />
+        <title>Steam Shower Enclosures Boulder City & Paradise | Sealed Glass Systems | Baja Glass</title>
+        <meta name="description" content="Professional steam shower enclosures in Boulder City, Paradise & Las Vegas Valley. Sealed systems with transoms and precise gasketing for spa-like experience!" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/steam-enclosures/" />
       </Helmet>
       {/* Hero Section */}
@@ -87,9 +87,9 @@ const SteamShowerEnclosures = () => {
           <div className="max-w-5xl mx-auto">
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Steam Shower 
+                Boulder City & Paradise
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
-                  Enclosures
+                  Steam Enclosures
                 </span>
               </h1>
             </div>
@@ -263,7 +263,7 @@ const SteamShowerEnclosures = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Installed Across the Las Vegas Valley</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            We serve Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City with careful measurement, planning, and installation for steam applications.
+            Serving Boulder City, Paradise, and the entire Las Vegas Valley with careful measurement, planning, and installation for luxury steam shower applications.
           </p>
           <div className="bg-secondary/50 p-6 rounded-lg inline-block shadow-lg">
             <div className="flex items-center gap-3 justify-center mb-4">

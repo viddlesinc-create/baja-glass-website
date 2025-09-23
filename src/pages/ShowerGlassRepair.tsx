@@ -53,8 +53,8 @@ const ShowerGlassRepair = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Shower Glass Repair Las Vegas | Door Replacement & Hardware Fix | Baja Glass</title>
-        <meta name="description" content="Professional shower glass repair in Las Vegas. Broken panels, sliding door repair, hardware replacement & leak fixes. Fast, safe, reliable service!" />
+        <title>Shower Glass Repair & Replacement Las Vegas Valley | Emergency Service | Baja Glass</title>
+        <meta name="description" content="Emergency shower glass repair throughout Las Vegas Valley. Broken panels, sliding door repair, hardware replacement & leak fixes. Fast, safe, reliable service!" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/repair/" />
       </Helmet>
       {/* Hero Section */}
@@ -69,7 +69,7 @@ const ShowerGlassRepair = () => {
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Shower Glass Repair & Replacement in Las Vegas</h1>
+            <h1 className="text-5xl font-bold mb-6">Shower Glass Repair & Replacement - Las Vegas Valley</h1>
             <p className="text-xl mb-8 text-white/90">Broken panels, leaks, off‑track sliders, and hardware issues—fixed safely and efficiently.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>

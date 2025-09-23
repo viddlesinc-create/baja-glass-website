@@ -34,8 +34,8 @@ const SemiFramelessShowerDoors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Semi-Frameless & Framed Shower Doors Las Vegas | Balanced Style & Support | Baja Glass</title>
-        <meta name="description" content="Semi-frameless and framed shower doors in Las Vegas. Balanced style with strategic support for dependable performance. Expert installation with warranty!" />
+        <title>Semi-Frameless & Framed Shower Doors North Las Vegas | Balanced Style | Baja Glass</title>
+        <meta name="description" content="Semi-frameless and framed shower doors in North Las Vegas & Las Vegas Valley. Balanced style with strategic support for dependable performance. Expert installation!" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/semi-frameless/" />
       </Helmet>
       {/* Hero Section */}
@@ -54,7 +54,7 @@ const SemiFramelessShowerDoors = () => {
           <div className="max-w-4xl mx-auto">
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Semi‑Frameless & 
+                North Las Vegas Semi‑Frameless & 
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Framed Doors
                 </span>
@@ -189,7 +189,7 @@ const SemiFramelessShowerDoors = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Installed by Local Experts</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Baja Glass serves the entire Las Vegas Valley, including Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City. Expect clean, careful work and clear communication.
+            Proudly serving North Las Vegas and the entire Las Vegas Valley with semi-frameless and framed shower door installation. Expect clean, careful work and clear communication from our experienced team.
           </p>
           <div className="bg-background p-6 rounded-lg inline-block shadow-lg">
             <div className="flex items-center gap-3 justify-center mb-4">

@@ -30,8 +30,8 @@ const SlidingShowerDoors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Sliding Shower Doors Las Vegas | Space-Saving Glass Doors | Baja Glass</title>
-        <meta name="description" content="Professional sliding shower door installation in Las Vegas. Smooth-glide systems that save space and elevate your bathroom. Free quotes available!" />
+        <title>Sliding Shower Doors Henderson | Space-Saving Glass Doors | Baja Glass</title>
+        <meta name="description" content="Professional sliding shower door installation in Henderson & Las Vegas Valley. Smooth-glide systems that save space and elevate your bathroom. Free quotes!" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/sliding/" />
       </Helmet>
       {/* Hero Section */}
@@ -43,7 +43,7 @@ const SlidingShowerDoors = () => {
         ></div>
         <div className="relative container mx-auto px-4 py-20 z-20 text-white">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Sliding Shower Doors in Las Vegas</h1>
+            <h1 className="text-5xl font-bold mb-6">Sliding Shower Doors in Henderson</h1>
             <p className="text-xl mb-8 text-white/90">Smooth‑glide systems that save space and elevate your bath.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
@@ -157,7 +157,7 @@ const SlidingShowerDoors = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Installed by Local Experts</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Baja Glass serves the entire Las Vegas Valley, including Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City. Expect clean, careful work and clear communication.
+            Proudly serving Henderson and the entire Las Vegas Valley with expert sliding shower door installation. Expect clean, careful work and clear communication from our experienced team.
           </p>
           <div className="bg-background p-6 rounded-lg inline-block">
             <p className="font-semibold">Baja Glass</p>

@@ -30,8 +30,8 @@ const HingedShowerDoors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Hinged & Pivot Shower Doors Las Vegas | Professional Installation | Baja Glass</title>
-        <meta name="description" content="Expert hinged and pivot shower door installation in Las Vegas. Classic swing doors with precise alignment and reliable sealing. Get your free quote today!" />
+        <title>Hinged & Pivot Shower Doors Summerlin | Professional Installation | Baja Glass</title>
+        <meta name="description" content="Expert hinged and pivot shower door installation in Summerlin & Las Vegas Valley. Classic swing doors with precise alignment and reliable sealing. Free quotes!" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/hinged/" />
       </Helmet>
       {/* Hero Section */}
@@ -47,7 +47,7 @@ const HingedShowerDoors = () => {
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Hinged & Pivot Shower Doors in Las Vegas</h1>
+            <h1 className="text-5xl font-bold mb-6">Hinged & Pivot Shower Doors in Summerlin</h1>
             <p className="text-xl mb-8 text-white/90">Classic swing doors with precise alignment and crisp closure.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
@@ -161,7 +161,7 @@ const HingedShowerDoors = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Installed by Local Experts</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Baja Glass serves the entire Las Vegas Valley, including Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City. Expect clean, careful work and clear communication.
+            Serving Summerlin and the entire Las Vegas Valley with expert hinged and pivot shower door installation. Expect clean, careful work and clear communication from our local professionals.
           </p>
           <div className="bg-background p-6 rounded-lg inline-block">
             <p className="font-semibold">Baja Glass</p>

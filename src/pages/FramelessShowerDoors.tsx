@@ -35,8 +35,8 @@ const FramelessShowerDoors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Frameless Shower Doors Las Vegas | Modern Glass Installation | Baja Glass</title>
-        <meta name="description" content="Premium frameless shower doors in Las Vegas. Minimal metal, maximum openness with custom glass measured precisely. Licensed installers with strong warranty!" />
+        <title>Frameless Shower Doors Henderson & Summerlin | Modern Glass | Baja Glass</title>
+        <meta name="description" content="Premium frameless shower doors in Henderson, Summerlin & Las Vegas Valley. Minimal metal, maximum openness with custom glass measured precisely. Licensed installers!" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/frameless/" />
       </Helmet>
       {/* Hero Section */}
@@ -52,7 +52,7 @@ const FramelessShowerDoors = () => {
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Frameless Shower Doors in Las Vegas</h1>
+            <h1 className="text-5xl font-bold mb-6">Frameless Shower Doors in Henderson & Summerlin</h1>
             <p className="text-xl mb-8 text-white/90">Minimal metal, maximum openness—custom glass measured precisely and installed by experts.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
@@ -162,7 +162,7 @@ const FramelessShowerDoors = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Installed by Local Experts</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Baja Glass serves the entire Las Vegas Valley, including Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City. Expect clean, careful work and clear communication.
+            Serving Henderson, Summerlin, and the entire Las Vegas Valley with precision frameless shower door installation. Expect clean, careful work and clear communication from our local team.
           </p>
           <div className="bg-background p-6 rounded-lg inline-block">
             <p className="font-semibold">Baja Glass</p>

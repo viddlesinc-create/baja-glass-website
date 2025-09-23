@@ -30,8 +30,8 @@ const CustomEnclosures = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Custom Shower Enclosures Las Vegas | Neo-Angle & Steam Showers | Baja Glass</title>
-        <meta name="description" content="Custom shower enclosures in Las Vegas. Inline, corner, neo-angle, alcove, and steam designs made to measure for perfect fit. Expert installation!" />
+        <title>Custom Shower Enclosures Enterprise & Spring Valley | Neo-Angle Designs | Baja Glass</title>
+        <meta name="description" content="Custom shower enclosures in Enterprise, Spring Valley & Las Vegas Valley. Inline, corner, neo-angle, alcove, and steam designs made to measure. Expert installation!" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/custom-enclosures/" />
       </Helmet>
       {/* Hero Section */}
@@ -48,7 +48,7 @@ const CustomEnclosures = () => {
         
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Custom Shower Enclosures in Las Vegas</h1>
+            <h1 className="text-5xl font-bold mb-6">Custom Shower Enclosures in Enterprise & Spring Valley</h1>
             <p className="text-xl mb-8 text-white/90">Inline, corner, neo‑angle, alcove, and steam—made to measure for a perfect fit.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
@@ -194,7 +194,7 @@ const CustomEnclosures = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Installed Across the Las Vegas Valley</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            We serve Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City with careful measurement, planning, and installation for custom applications.
+            Serving Enterprise, Spring Valley, and the entire Las Vegas Valley with precise custom shower enclosure measurement, planning, and installation for unique applications.
           </p>
           <div className="bg-secondary/50 p-6 rounded-lg inline-block">
             <p className="font-semibold">Baja Glass</p>

@@ -86,8 +86,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Baja Glass | Custom Shower Doors & Glass Installation Las Vegas</title>
-        <meta name="description" content="Baja Glass is a small family owned and operated company in Las Vegas. We design and install interior glass, shower doors, mirrors, and provide glass repair services." />
+        <title>Baja Glass | Las Vegas Glass Company | Shower Doors, Mirrors & Glass Installation</title>
+        <meta name="description" content="Las Vegas glass company specializing in custom shower doors, mirrors, office glass & residential glass services. Family-owned with 20+ years experience. Licensed & insured." />
         <link rel="canonical" href="https://bajaglass.com/" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -235,12 +235,12 @@ const Index = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Custom 
+                Las Vegas 
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
-                  Frameless
+                  Glass Company
                 </span>
                 <span className="block text-3xl md:text-4xl lg:text-5xl drop-shadow-2xl">
-                  Shower Doors
+                  Custom Glass Solutions
                 </span>
               </h1>
             </div>
@@ -255,7 +255,7 @@ const Index = () => {
             {/* Subheading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.3s' }}>
               <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl leading-relaxed font-light drop-shadow-lg">
-                Precision-measured, expertly fabricated, and professionally installed—creating beautiful, leak-resistant shower enclosures that last.
+                Professional glass installation services including shower doors, mirrors, office glass, and residential glass repair—delivered with precision and care.
               </p>
             </div>
 
