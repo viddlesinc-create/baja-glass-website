@@ -28,7 +28,7 @@ const Header = () => {
     { name: "Hinged Doors", href: "/shower-doors-las-vegas/hinged" },
     { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
     { name: "Steam Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
-    { name: "Glass Repair", href: "/shower-doors-las-vegas/repair" },
+    { name: "Door & Glass Repair", href: "/shower-doors-las-vegas/repair" },
   ];
 
   const glassCompanyPages = [
