@@ -94,6 +94,7 @@ const Gallery = () => {
       <Helmet>
         <title>Gallery | Shower Door Projects & Installations | Baja Glass Las Vegas</title>
         <meta name="description" content="View our portfolio of custom shower doors and enclosures installed throughout Las Vegas Valley. Before & after transformations and recent projects." />
+        <link rel="canonical" href="https://bajaglass.com/gallery/" />
       </Helmet>
       {/* Hero Section */}
       <section className="py-20 relative bg-cover bg-center text-white" style={{ backgroundImage: "url('/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png')" }}>

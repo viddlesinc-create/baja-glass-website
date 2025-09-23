@@ -32,6 +32,7 @@ const HingedShowerDoors = () => {
       <Helmet>
         <title>Hinged & Pivot Shower Doors Las Vegas | Professional Installation | Baja Glass</title>
         <meta name="description" content="Expert hinged and pivot shower door installation in Las Vegas. Classic swing doors with precise alignment and reliable sealing. Get your free quote today!" />
+        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/hinged/" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">

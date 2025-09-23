@@ -32,6 +32,7 @@ const SlidingShowerDoors = () => {
       <Helmet>
         <title>Sliding Shower Doors Las Vegas | Space-Saving Glass Doors | Baja Glass</title>
         <meta name="description" content="Professional sliding shower door installation in Las Vegas. Smooth-glide systems that save space and elevate your bathroom. Free quotes available!" />
+        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/sliding/" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">

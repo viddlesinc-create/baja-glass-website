@@ -111,6 +111,7 @@ const ResidentialGlassRepair = () => {
         <title>Residential Glass Repair Las Vegas | Home Window & Mirror Repair | Baja Glass</title>
         <meta name="description" content="Expert residential glass repair in Las Vegas. Emergency window repair, mirror replacement, glass table tops, and patio door glass. 24/7 service available." />
         <meta name="keywords" content="residential glass repair Las Vegas, window glass replacement, mirror repair, emergency glass repair, home glass repair" />
+        <link rel="canonical" href="https://bajaglass.com/residential-glass-repair/" />
       </Helmet>
 
       {/* Hero Section */}

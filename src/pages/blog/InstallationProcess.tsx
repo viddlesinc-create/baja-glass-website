@@ -15,7 +15,7 @@ const InstallationProcess = () => {
           content="Complete guide to shower door installation process. Learn preparation steps, timeline, safety procedures, and what to expect during installation." 
         />
         <meta name="keywords" content="shower door installation, installation process, Las Vegas glass installation, shower door timeline, professional installation" />
-        <link rel="canonical" href="/blog/installation-process" />
+        <link rel="canonical" href="https://bajaglass.com/blog/installation-process/" />
       </Helmet>
       
       <article className="min-h-screen">

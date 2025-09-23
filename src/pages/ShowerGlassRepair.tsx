@@ -55,6 +55,7 @@ const ShowerGlassRepair = () => {
       <Helmet>
         <title>Shower Glass Repair Las Vegas | Door Replacement & Hardware Fix | Baja Glass</title>
         <meta name="description" content="Professional shower glass repair in Las Vegas. Broken panels, sliding door repair, hardware replacement & leak fixes. Fast, safe, reliable service!" />
+        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/repair/" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">

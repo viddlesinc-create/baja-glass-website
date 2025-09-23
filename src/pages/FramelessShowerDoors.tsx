@@ -37,6 +37,7 @@ const FramelessShowerDoors = () => {
       <Helmet>
         <title>Frameless Shower Doors Las Vegas | Modern Glass Installation | Baja Glass</title>
         <meta name="description" content="Premium frameless shower doors in Las Vegas. Minimal metal, maximum openness with custom glass measured precisely. Licensed installers with strong warranty!" />
+        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/frameless/" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">

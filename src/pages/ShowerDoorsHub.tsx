@@ -78,6 +78,7 @@ const ShowerDoorsHub = () => {
       <Helmet>
         <title>Shower Doors Las Vegas | Custom Glass Installation & Repair | Baja Glass</title>
         <meta name="description" content="Professional shower door installation in Las Vegas. Frameless, sliding, hinged, custom enclosures & repairs. Licensed with warranty. Get your free quote!" />
+        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">

@@ -63,6 +63,7 @@ const SteamShowerEnclosures = () => {
       <Helmet>
         <title>Steam Shower Enclosures Las Vegas | Sealed Glass Systems | Baja Glass</title>
         <meta name="description" content="Professional steam shower enclosures in Las Vegas. Sealed systems with transoms and precise gasketing for spa-like experience. Expert installation!" />
+        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/steam-enclosures/" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">

@@ -96,6 +96,7 @@ const Resources = () => {
       <Helmet>
         <title>Resources & Guides | Shower Door Care & Installation Info | Baja Glass Las Vegas</title>
         <meta name="description" content="Helpful resources for shower door care, installation process, warranty information and choosing the right door. Expert guides from Baja Glass." />
+        <link rel="canonical" href="https://bajaglass.com/resources/" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-charcoal to-primary text-white overflow-hidden">

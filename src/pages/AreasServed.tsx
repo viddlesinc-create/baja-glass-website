@@ -73,6 +73,7 @@ const areas = [
       <Helmet>
         <title>Areas Served | Las Vegas Valley Shower Door Installation | Baja Glass</title>
         <meta name="description" content="Baja Glass serves Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise & surrounding areas with professional shower door installation." />
+        <link rel="canonical" href="https://bajaglass.com/areas-served/" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">

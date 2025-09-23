@@ -41,6 +41,7 @@ const About = () => {
       <Helmet>
         <title>About Baja Glass | Licensed Glass Contractor Las Vegas</title>
         <meta name="description" content="Learn about Baja Glass, a family-owned glass company serving Las Vegas since 2010. Licensed, bonded, and insured for quality shower door installation and glass services." />
+        <link rel="canonical" href="https://bajaglass.com/about/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

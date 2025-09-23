@@ -88,6 +88,7 @@ const Index = () => {
       <Helmet>
         <title>Baja Glass | Custom Shower Doors & Glass Installation Las Vegas</title>
         <meta name="description" content="Baja Glass is a small family owned and operated company in Las Vegas. We design and install interior glass, shower doors, mirrors, and provide glass repair services." />
+        <link rel="canonical" href="https://bajaglass.com/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

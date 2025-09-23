@@ -15,7 +15,7 @@ const GlassCareGuide = () => {
           content="Learn professional shower glass cleaning tips and maintenance techniques. Keep your glass doors crystal clear with our expert care guide." 
         />
         <meta name="keywords" content="shower glass cleaning, glass care, shower door maintenance, water spot prevention, Las Vegas glass care" />
-        <link rel="canonical" href="/blog/glass-care-guide" />
+        <link rel="canonical" href="https://bajaglass.com/blog/glass-care-guide/" />
       </Helmet>
       
       <article className="min-h-screen">
