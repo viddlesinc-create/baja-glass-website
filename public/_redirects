@@ -1,0 +1,31 @@
+# HTTP to HTTPS redirects
+http://bajaglass.com/* https://bajaglass.com/:splat 301!
+http://www.bajaglass.com/* https://bajaglass.com/:splat 301!
+
+# WWW to non-WWW redirects  
+https://www.bajaglass.com/* https://bajaglass.com/:splat 301!
+
+# Legacy WordPress page redirects
+/?page_id=32 /about 301
+/?page_id=85 /contact 301
+
+# Legacy service pages
+/services/* /shower-doors-las-vegas 301
+/services /shower-doors-las-vegas 301
+/contact-us/* /contact 301
+/contact-us /contact 301
+
+# Clean up query parameters
+/?kuid=* / 301
+/?yandex-source=* / 301
+/?ga_action=* / 301
+/?s=* / 301
+
+# Ensure trailing slashes redirect to non-trailing slash
+/about/ /about 301
+/contact/ /contact 301
+/gallery/ /gallery 301
+/resources/ /resources 301
+/areas-served/ /areas-served 301
+/shower-doors-las-vegas/ /shower-doors-las-vegas 301
+/glass-company-las-vegas/ /glass-company-las-vegas 301

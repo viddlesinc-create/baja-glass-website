@@ -27,6 +27,8 @@ import InstallationProcess from "./pages/blog/InstallationProcess";
 import WarrantyInformation from "./pages/blog/WarrantyInformation";
 import ResidentialGlassRepair from "./pages/ResidentialGlassRepair";
 import OfficeEnclosures from "./pages/OfficeEnclosures";
+import RedirectComponent from "./components/RedirectComponent";
+import QueryParameterRedirects from "./components/QueryParameterRedirects";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -42,6 +44,7 @@ function App() {
           <Toaster />
           <Sonner />
            <BrowserRouter>
+           <QueryParameterRedirects />
            <ScrollToTop />
            <div className="min-h-screen flex flex-col">
             <Header />
@@ -68,6 +71,15 @@ function App() {
                 <Route path="/blog/choosing-right-door" element={<ChoosingRightDoor />} />
                 <Route path="/blog/installation-process" element={<InstallationProcess />} />
                 <Route path="/blog/warranty-information" element={<WarrantyInformation />} />
+                
+                {/* Legacy WordPress redirects */}
+                <Route path="/services" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
+                <Route path="/services/*" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
+                <Route path="/contact-us" element={<RedirectComponent to="/contact" />} />
+                <Route path="/contact-us/*" element={<RedirectComponent to="/contact" />} />
+                
+                {/* Semi-frameless URL variations */}
+                <Route path="/shower-doors-las-vegas/semi-frameless" element={<RedirectComponent to="/shower-doors-las-vegas/semi-frameless-framed" />} />
                 
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
