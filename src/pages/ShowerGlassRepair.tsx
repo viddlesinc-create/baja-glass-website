@@ -2,56 +2,40 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-
 const ShowerGlassRepair = () => {
-  const commonProblems = [
-    {
-      title: "Broken or Shattered Glass",
-      description: "Safe removal and replacement of cracked or shattered tempered glass panels with precise measurements."
-    },
-    {
-      title: "Off‑Track Sliding Doors",
-      description: "Repair or replacement of worn rollers, tracks, and alignment issues that cause grinding or sticking."
-    },
-    {
-      title: "Loose Hinges & Hardware",
-      description: "Tightening, realignment, or replacement of hinges, handles, and mounting hardware for secure operation."
-    },
-    {
-      title: "Leaks & Water Issues",
-      description: "Seal and sweep replacement, pitch adjustment, and silicone repair to eliminate unwanted water escape."
-    },
-    {
-      title: "Wobbly Panels",
-      description: "Structural assessment and repair of loose panels, clips, and mounting systems for stability."
-    }
-  ];
-
-  const faqs = [
-    {
-      question: "Can you replace just the glass panel?",
-      answer: "Yes! We can often replace individual glass panels while keeping existing hardware, depending on the condition and compatibility of your current system."
-    },
-    {
-      question: "My sliding door is hard to move—can you fix the rollers and track?",
-      answer: "Absolutely. We repair or replace worn rollers, clean and align tracks, and adjust the system for smooth, reliable operation."
-    },
-    {
-      question: "The door leaks—can you replace the seals and adjust the fit?",
-      answer: "Yes, we can replace worn seals and sweeps, adjust door alignment, and improve water containment with proper pitch and silicone work."
-    },
-    {
-      question: "Is it better to repair or replace an older framed unit?",
-      answer: "We'll assess your system's condition and provide honest recommendations. Sometimes repair is cost-effective; other times replacement offers better long-term value."
-    },
-    {
-      question: "Can you match my existing hardware finish?",
-      answer: "We'll do our best to match existing finishes, or we can recommend coordinating options that work well with your current bathroom fixtures."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const commonProblems = [{
+    title: "Broken or Shattered Glass",
+    description: "Safe removal and replacement of cracked or shattered tempered glass panels with precise measurements."
+  }, {
+    title: "Off‑Track Sliding Doors",
+    description: "Repair or replacement of worn rollers, tracks, and alignment issues that cause grinding or sticking."
+  }, {
+    title: "Loose Hinges & Hardware",
+    description: "Tightening, realignment, or replacement of hinges, handles, and mounting hardware for secure operation."
+  }, {
+    title: "Leaks & Water Issues",
+    description: "Seal and sweep replacement, pitch adjustment, and silicone repair to eliminate unwanted water escape."
+  }, {
+    title: "Wobbly Panels",
+    description: "Structural assessment and repair of loose panels, clips, and mounting systems for stability."
+  }];
+  const faqs = [{
+    question: "Can you replace just the glass panel?",
+    answer: "Yes! We can often replace individual glass panels while keeping existing hardware, depending on the condition and compatibility of your current system."
+  }, {
+    question: "My sliding door is hard to move—can you fix the rollers and track?",
+    answer: "Absolutely. We repair or replace worn rollers, clean and align tracks, and adjust the system for smooth, reliable operation."
+  }, {
+    question: "The door leaks—can you replace the seals and adjust the fit?",
+    answer: "Yes, we can replace worn seals and sweeps, adjust door alignment, and improve water containment with proper pitch and silicone work."
+  }, {
+    question: "Is it better to repair or replace an older framed unit?",
+    answer: "We'll assess your system's condition and provide honest recommendations. Sometimes repair is cost-effective; other times replacement offers better long-term value."
+  }, {
+    question: "Can you match my existing hardware finish?",
+    answer: "We'll do our best to match existing finishes, or we can recommend coordinating options that work well with your current bathroom fixtures."
+  }];
+  return <div className="min-h-screen">
       <Helmet>
         <title>Shower Glass Repair & Replacement Las Vegas Valley | Emergency Service | Baja Glass</title>
         <meta name="description" content="Emergency shower glass repair throughout Las Vegas Valley. Broken panels, sliding door repair, hardware replacement & leak fixes. Fast, safe, reliable service!" />
@@ -60,16 +44,12 @@ const ShowerGlassRepair = () => {
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         <div className="absolute inset-0">
-          <img 
-            src="/src/assets/damaged-shower-glass.jpg" 
-            alt="Damaged shower glass door needing repair"
-            className="w-full h-full object-cover"
-          />
+          <img src="/src/assets/damaged-shower-glass.jpg" alt="Damaged shower glass door needing repair" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/60 to-primary/80"></div>
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Shower Door Repair & Replacement - Las Vegas Valley</h1>
+            <h1 className="text-5xl font-bold mb-6">Shower Door Repair & Glass Replacement - Las Vegas Valley</h1>
             <p className="text-xl mb-8 text-white/90">Broken panels, leaks, off‑track sliders, and hardware issues—fixed safely and efficiently.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
@@ -102,12 +82,10 @@ const ShowerGlassRepair = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">We Repair These Issues (and more)</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {commonProblems.map((problem) => (
-              <div key={problem.title} className="bg-background p-6 rounded-lg">
+            {commonProblems.map(problem => <div key={problem.title} className="bg-background p-6 rounded-lg">
                 <h3 className="font-semibold mb-3">{problem.title}</h3>
                 <p className="text-muted-foreground">{problem.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
           <div className="text-center mt-12">
             <Button variant="cta" size="lg" asChild>
@@ -171,20 +149,25 @@ const ShowerGlassRepair = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Repair Process</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            {[
-              { title: "Assessment", description: "We evaluate the issue and recommend the safest, most cost-effective solution." },
-              { title: "Quote", description: "Clear pricing for repair or replacement options with no hidden fees." },
-              { title: "Repair/Replace", description: "Professional work with quality materials and proper safety procedures." },
-              { title: "Testing", description: "Final inspection and testing to ensure smooth operation and proper sealing." }
-            ].map((step, index) => (
-              <div key={step.title} className="text-center">
+            {[{
+            title: "Assessment",
+            description: "We evaluate the issue and recommend the safest, most cost-effective solution."
+          }, {
+            title: "Quote",
+            description: "Clear pricing for repair or replacement options with no hidden fees."
+          }, {
+            title: "Repair/Replace",
+            description: "Professional work with quality materials and proper safety procedures."
+          }, {
+            title: "Testing",
+            description: "Final inspection and testing to ensure smooth operation and proper sealing."
+          }].map((step, index) => <div key={step.title} className="text-center">
                 <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                   {index + 1}
                 </div>
                 <h3 className="font-semibold mb-2">{step.title}</h3>
                 <p className="text-sm text-muted-foreground">{step.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -195,12 +178,10 @@ const ShowerGlassRepair = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Repair FAQs</h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {faqs.map((faq) => (
-                <div key={faq.question} className="bg-background p-6 rounded-lg">
+              {faqs.map(faq => <div key={faq.question} className="bg-background p-6 rounded-lg">
                   <h3 className="font-semibold mb-3">{faq.question}</h3>
                   <p className="text-muted-foreground">{faq.answer}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -224,8 +205,6 @@ const ShowerGlassRepair = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default ShowerGlassRepair;
