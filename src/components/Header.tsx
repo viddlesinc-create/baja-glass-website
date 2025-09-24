@@ -81,16 +81,20 @@ const Header = () => {
           <nav className="hidden lg:flex items-center gap-8">
             {/* Shower Doors Dropdown */}
             <DropdownMenu>
-              <DropdownMenuTrigger asChild>
+              <div className="flex items-center">
                 <a 
                   href="https://bajaglass.com/shower-doors-las-vegas/"
-                  className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium"
+                  className="text-foreground hover:text-accent transition-colors font-medium"
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   Shower Doors
-                  <ChevronDown className="h-4 w-4" />
                 </a>
-              </DropdownMenuTrigger>
+                <DropdownMenuTrigger asChild>
+                  <button className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium ml-1">
+                    <ChevronDown className="h-4 w-4" />
+                  </button>
+                </DropdownMenuTrigger>
+              </div>
               <DropdownMenuContent align="start" className="w-56">
                 {showerDoorsPages.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
