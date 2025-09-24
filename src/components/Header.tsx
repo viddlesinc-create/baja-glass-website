@@ -82,14 +82,14 @@ const Header = () => {
             {/* Shower Doors Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Link 
-                  to="/shower-doors-las-vegas"
+                <a 
+                  href="https://bajaglass.com/shower-doors-las-vegas/"
                   className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium"
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   Shower Doors
                   <ChevronDown className="h-4 w-4" />
-                </Link>
+                </a>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-56">
                 {showerDoorsPages.map((item) => (
@@ -182,8 +182,8 @@ const Header = () => {
                   <nav className="flex flex-col gap-4">
                     {/* Shower Doors Section */}
                     <div>
-                      <Link
-                        to="/shower-doors-las-vegas"
+                      <a
+                        href="https://bajaglass.com/shower-doors-las-vegas/"
                         className="text-foreground hover:text-accent transition-colors font-medium py-2 block"
                         onClick={() => {
                           setIsOpen(false);
@@ -191,7 +191,7 @@ const Header = () => {
                         }}
                       >
                         Shower Doors
-                      </Link>
+                      </a>
                       <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Types & Services</h3>
                       {showerDoorsPages.map((item) => (
                         <Link
