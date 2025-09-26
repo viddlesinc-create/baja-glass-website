@@ -5,21 +5,35 @@ http://www.bajaglass.com/* https://bajaglass.com/:splat 301!
 # WWW to non-WWW redirects  
 https://www.bajaglass.com/* https://bajaglass.com/:splat 301!
 
-# Legacy WordPress page redirects
+# Legacy WordPress page redirects (specific query params)
 /?page_id=32 /about 301
 /?page_id=85 /contact 301
+/*?page_id=32 /about 301
+/*?page_id=85 /contact 301
 
-# Legacy service pages
+# Legacy service pages (all variations)
 /services/* /shower-doors-las-vegas 301
+/services/ /shower-doors-las-vegas 301  
 /services /shower-doors-las-vegas 301
 /contact-us/* /contact 301
+/contact-us/ /contact 301
 /contact-us /contact 301
 
-# Clean up query parameters
+# Clean up query parameters (comprehensive)
 /?kuid=* / 301
+/*?kuid=* / 301
 /?yandex-source=* / 301
+/*?yandex-source=* / 301
 /?ga_action=* / 301
+/*?ga_action=* / 301
 /?s=* / 301
+/*?s=* / 301
+/?kref=* / 301
+/*?kref=* / 301
+
+# Search query parameter cleanup
+/?s=%7Bsearch_term_string%7D / 301
+/*?s=%7Bsearch_term_string%7D / 301
 
 # Ensure trailing slashes redirect to non-trailing slash
 /about/ /about 301
