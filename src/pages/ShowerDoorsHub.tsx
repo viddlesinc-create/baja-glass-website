@@ -79,7 +79,7 @@ const ShowerDoorsHub = () => {
         <title>Shower Doors Las Vegas | Custom Glass Installation & Repair | Baja Glass</title>
         <meta name="description" content="Professional shower door installation in Las Vegas. Frameless, sliding, hinged, custom enclosures & repairs. Licensed with warranty. Get your free quote!" />
         <meta name="keywords" content="shower doors Las Vegas, frameless shower doors, sliding shower doors, hinged shower doors, custom shower enclosures, shower glass repair, Las Vegas glass installation" />
-        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/" />
+        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Shower Doors Las Vegas | Custom Glass Installation & Repair | Baja Glass" />

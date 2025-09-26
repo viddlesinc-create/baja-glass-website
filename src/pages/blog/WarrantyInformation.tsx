@@ -15,7 +15,7 @@ const WarrantyInformation = () => {
           content="Complete guide to shower door warranty coverage, terms, maintenance requirements, and service requests. Protect your glass investment." 
         />
         <meta name="keywords" content="shower door warranty, glass warranty, installation warranty, Las Vegas glass service, warranty coverage" />
-        <link rel="canonical" href="https://bajaglass.com/blog/warranty-information/" />
+        <link rel="canonical" href="https://bajaglass.com/blog/warranty-information" />
       </Helmet>
       
       <article className="min-h-screen">

@@ -181,7 +181,7 @@ const GlassCompanyLasVegas = () => {
       <Helmet>
         <title>Glass Company Las Vegas | Shower Doors, Mirrors & Commercial Glass | Baja Glass</title>
         <meta name="description" content="Professional glass company in Las Vegas specializing in shower doors, mirrors, office partitions & residential glass repair. Licensed, insured, warranty-backed work!" />
-        <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas/" />
+        <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">

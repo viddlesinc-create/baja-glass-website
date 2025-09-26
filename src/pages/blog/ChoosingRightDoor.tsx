@@ -15,7 +15,7 @@ const ChoosingRightDoor = () => {
           content="Expert guide to selecting the perfect shower door. Learn about frameless vs framed, glass options, hardware finishes, and space considerations." 
         />
         <meta name="keywords" content="shower door selection, frameless vs framed, glass thickness, shower door guide, Las Vegas shower doors" />
-        <link rel="canonical" href="https://bajaglass.com/blog/choosing-right-door/" />
+        <link rel="canonical" href="https://bajaglass.com/blog/choosing-right-door" />
       </Helmet>
       
       <article className="min-h-screen">

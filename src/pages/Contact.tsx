@@ -94,7 +94,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact Baja Glass | Free Quote & Consultation Las Vegas</title>
         <meta name="description" content="Get your free quote from Baja Glass. Professional shower door installation and glass services in Las Vegas. Licensed, bonded, and insured with strong warranty." />
-        <link rel="canonical" href="https://bajaglass.com/contact/" />
+        <link rel="canonical" href="https://bajaglass.com/contact" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
