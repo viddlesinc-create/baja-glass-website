@@ -9,7 +9,6 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Clock, Mail, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
-import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,12 +38,16 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: formData
+      const response = await fetch('https://formspree.io/f/xqaydjpg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
       });
 
-      if (error) {
-        throw error;
+      if (!response.ok) {
+        throw new Error('Form submission failed');
       }
 
       toast({
