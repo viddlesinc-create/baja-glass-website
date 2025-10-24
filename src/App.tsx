@@ -1,10 +1,5 @@
 import * as React from "react";
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
+import { Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import GlassCompanyLasVegas from "./pages/GlassCompanyLasVegas";
@@ -35,23 +30,16 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import { BreadcrumbNav } from "./components/BreadcrumbNav";
 
-const queryClient = new QueryClient();
-
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <HelmetProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-           <BrowserRouter>
-           <QueryParameterRedirects />
-           <ScrollToTop />
-           <div className="min-h-screen flex flex-col">
-            <Header />
-            <BreadcrumbNav />
-            <main id="main-content" className="flex-1">
-              <Routes>
+    <>
+      <QueryParameterRedirects />
+      <ScrollToTop />
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <BreadcrumbNav />
+        <main id="main-content" className="flex-1">
+          <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
                 <Route path="/glass-company-las-vegas/residential-glass-repair" element={<ResidentialGlassRepair />} />
@@ -83,16 +71,13 @@ function App() {
                 {/* Semi-frameless URL variations */}
                 <Route path="/shower-doors-las-vegas/semi-frameless" element={<RedirectComponent to="/shower-doors-las-vegas/semi-frameless-framed" />} />
                 
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </main>
-            <Footer />
-          </div>
-          </BrowserRouter>
-        </TooltipProvider>
-      </HelmetProvider>
-    </QueryClientProvider>
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
 
