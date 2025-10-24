@@ -35,8 +35,22 @@ const SemiFramelessShowerDoors = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Semi-Frameless & Framed Shower Doors North Las Vegas | Balanced Style | Baja Glass</title>
-        <meta name="description" content="Semi-frameless and framed shower doors in North Las Vegas & Las Vegas Valley. Balanced style with strategic support for dependable performance. Expert installation!" />
+        <meta name="description" content="Professional semi-frameless and framed shower doors in North Las Vegas & Las Vegas Valley. Balanced style with strategic support for dependable performance. Custom installations with quality hardware and sealing." />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/semi-frameless-framed" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Semi-Frameless & Framed Shower Doors North Las Vegas | Balanced Style | Baja Glass" />
+        <meta property="og:description" content="Professional semi-frameless and framed shower doors in North Las Vegas & Las Vegas Valley. Balanced style with strategic support for dependable performance." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/shower-doors-las-vegas/semi-frameless-framed" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Semi-Frameless & Framed Shower Doors North Las Vegas | Balanced Style | Baja Glass" />
+        <meta name="twitter:description" content="Professional semi-frameless and framed shower doors in North Las Vegas & Las Vegas Valley. Balanced style with strategic support." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal text-white">

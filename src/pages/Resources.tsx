@@ -95,8 +95,22 @@ const Resources = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Resources & Guides | Shower Door Care & Installation Info | Baja Glass Las Vegas</title>
-        <meta name="description" content="Helpful resources for shower door care, installation process, warranty information and choosing the right door. Expert guides from Baja Glass." />
+        <meta name="description" content="Comprehensive resources for shower door care, installation process, warranty information, and choosing the right door. Expert guides on glass types, hardware finishes, and maintenance from Baja Glass professionals." />
         <link rel="canonical" href="https://bajaglass.com/resources" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Resources & Guides | Shower Door Care & Installation Info | Baja Glass Las Vegas" />
+        <meta property="og:description" content="Comprehensive resources for shower door care, installation process, warranty information, and choosing the right door. Expert guides from Baja Glass." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/resources" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Resources & Guides | Shower Door Care & Installation Info | Baja Glass Las Vegas" />
+        <meta name="twitter:description" content="Comprehensive resources for shower door care, installation process, warranty information, and choosing the right door. Expert guides from Baja Glass." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-charcoal to-primary text-white overflow-hidden">

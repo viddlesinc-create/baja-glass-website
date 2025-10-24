@@ -62,8 +62,22 @@ const SteamShowerEnclosures = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Steam Shower Enclosures Boulder City & Paradise | Sealed Glass Systems | Baja Glass</title>
-        <meta name="description" content="Professional steam shower enclosures in Boulder City, Paradise & Las Vegas Valley. Sealed systems with transoms and precise gasketing for spa-like experience!" />
+        <meta name="description" content="Professional steam shower enclosures in Boulder City, Paradise & Las Vegas Valley. Sealed systems with operable transoms, precise gasketing, and premium tempered glass for luxury spa-like experience at home." />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/steam-enclosures" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Steam Shower Enclosures Boulder City & Paradise | Sealed Glass Systems | Baja Glass" />
+        <meta property="og:description" content="Professional steam shower enclosures in Boulder City, Paradise & Las Vegas Valley. Sealed systems with operable transoms and precise gasketing for spa-like experience." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/shower-doors-las-vegas/steam-enclosures" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Steam Shower Enclosures Boulder City & Paradise | Sealed Glass Systems | Baja Glass" />
+        <meta name="twitter:description" content="Professional steam shower enclosures in Boulder City, Paradise & Las Vegas Valley. Sealed systems with operable transoms for spa-like experience." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">

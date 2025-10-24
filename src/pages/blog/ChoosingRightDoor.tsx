@@ -12,10 +12,24 @@ const ChoosingRightDoor = () => {
         <title>How to Choose the Right Shower Door - Complete Guide | Baja Glass Las Vegas</title>
         <meta 
           name="description" 
-          content="Expert guide to selecting the perfect shower door. Learn about frameless vs framed, glass options, hardware finishes, and space considerations." 
+          content="Expert guide to selecting the perfect shower door for your bathroom. Learn about frameless vs framed designs, glass thickness options, hardware finishes, space considerations, and design factors. Professional advice from Baja Glass." 
         />
         <meta name="keywords" content="shower door selection, frameless vs framed, glass thickness, shower door guide, Las Vegas shower doors" />
         <link rel="canonical" href="https://bajaglass.com/blog/choosing-right-door" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="How to Choose the Right Shower Door - Complete Guide | Baja Glass Las Vegas" />
+        <meta property="og:description" content="Expert guide to selecting the perfect shower door. Learn about frameless vs framed, glass options, hardware finishes, and space considerations." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://bajaglass.com/blog/choosing-right-door" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="How to Choose the Right Shower Door - Complete Guide | Baja Glass Las Vegas" />
+        <meta name="twitter:description" content="Expert guide to selecting the perfect shower door. Learn about frameless vs framed, glass options, and hardware finishes." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
       </Helmet>
       
       <article className="min-h-screen">

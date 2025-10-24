@@ -12,10 +12,24 @@ const GlassCareGuide = () => {
         <title>Glass Care Guide - How to Clean Shower Doors | Baja Glass Las Vegas</title>
         <meta 
           name="description" 
-          content="Learn professional shower glass cleaning tips and maintenance techniques. Keep your glass doors crystal clear with our expert care guide." 
+          content="Learn professional shower glass cleaning tips, maintenance techniques, and water spot prevention methods. Keep your glass doors crystal clear with daily care routines, weekly cleaning schedules, and protective coating options. Expert care guide from Baja Glass." 
         />
         <meta name="keywords" content="shower glass cleaning, glass care, shower door maintenance, water spot prevention, Las Vegas glass care" />
         <link rel="canonical" href="https://bajaglass.com/blog/glass-care-guide" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Glass Care Guide - How to Clean Shower Doors | Baja Glass Las Vegas" />
+        <meta property="og:description" content="Learn professional shower glass cleaning tips, maintenance techniques, and water spot prevention methods. Expert care guide from Baja Glass." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://bajaglass.com/blog/glass-care-guide" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Glass Care Guide - How to Clean Shower Doors | Baja Glass Las Vegas" />
+        <meta name="twitter:description" content="Learn professional shower glass cleaning tips, maintenance techniques, and water spot prevention methods." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
       </Helmet>
       
       <article className="min-h-screen">

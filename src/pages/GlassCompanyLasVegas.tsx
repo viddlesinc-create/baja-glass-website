@@ -180,8 +180,22 @@ const GlassCompanyLasVegas = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Glass Company Las Vegas | Shower Doors, Mirrors & Commercial Glass | Baja Glass</title>
-        <meta name="description" content="Professional glass company in Las Vegas specializing in shower doors, mirrors, office partitions & residential glass repair. Licensed, insured, warranty-backed work!" />
+        <meta name="description" content="Professional glass company in Las Vegas specializing in custom shower doors, frameless enclosures, mirrors, office partitions & residential glass repair. Licensed, insured with warranty-backed installation across the Las Vegas Valley." />
         <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Glass Company Las Vegas | Shower Doors, Mirrors & Commercial Glass | Baja Glass" />
+        <meta property="og:description" content="Professional glass company in Las Vegas specializing in custom shower doors, frameless enclosures, mirrors, office partitions & residential glass repair. Licensed, insured with warranty-backed installation." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/glass-company-las-vegas" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Glass Company Las Vegas | Shower Doors, Mirrors & Commercial Glass | Baja Glass" />
+        <meta name="twitter:description" content="Professional glass company in Las Vegas specializing in custom shower doors, frameless enclosures, mirrors, office partitions & residential glass repair." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">

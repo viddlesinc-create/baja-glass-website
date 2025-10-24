@@ -96,8 +96,23 @@ const Contact = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Contact Baja Glass | Free Quote & Consultation Las Vegas</title>
-        <meta name="description" content="Get your free quote from Baja Glass. Professional shower door installation and glass services in Las Vegas. Licensed, bonded, and insured with strong warranty." />
+        <meta name="description" content="Get your free quote from Baja Glass for custom shower doors and glass services in Las Vegas. Professional installation with licensed, bonded, and insured team. Strong warranty and excellent customer service guaranteed." />
         <link rel="canonical" href="https://bajaglass.com/contact" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Contact Baja Glass | Free Quote & Consultation Las Vegas" />
+        <meta property="og:description" content="Get your free quote from Baja Glass for custom shower doors and glass services in Las Vegas. Professional installation with licensed, bonded team." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/contact" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Baja Glass | Free Quote & Consultation Las Vegas" />
+        <meta name="twitter:description" content="Get your free quote from Baja Glass for custom shower doors and glass services in Las Vegas. Professional installation with licensed, bonded team." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

@@ -109,9 +109,23 @@ const ResidentialGlassRepair = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Residential Glass Repair Las Vegas | Home Window & Mirror Repair | Baja Glass</title>
-        <meta name="description" content="Expert residential glass repair in Las Vegas. Emergency window repair, mirror replacement, glass table tops, and patio door glass. 24/7 service available." />
+        <meta name="description" content="Expert residential glass repair in Las Vegas. Emergency window repair, custom mirrors, glass table tops, and patio door glass replacement. 24/7 emergency service available with insurance claim assistance and professional installation." />
         <meta name="keywords" content="residential glass repair Las Vegas, window glass replacement, mirror repair, emergency glass repair, home glass repair" />
         <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas/residential-glass-repair" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Residential Glass Repair Las Vegas | Home Window & Mirror Repair | Baja Glass" />
+        <meta property="og:description" content="Expert residential glass repair in Las Vegas. Emergency window repair, custom mirrors, glass table tops, and patio door glass replacement. 24/7 emergency service available." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/glass-company-las-vegas/residential-glass-repair" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/bf541daa-269d-4a2f-88a1-ade3c731b28b.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Residential Glass Repair Las Vegas | Home Window & Mirror Repair | Baja Glass" />
+        <meta name="twitter:description" content="Expert residential glass repair in Las Vegas. Emergency window repair, custom mirrors, glass table tops, and patio door glass replacement." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/bf541daa-269d-4a2f-88a1-ade3c731b28b.png" />
       </Helmet>
 
       {/* Hero Section */}

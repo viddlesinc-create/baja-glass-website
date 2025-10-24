@@ -12,10 +12,24 @@ const WarrantyInformation = () => {
         <title>Shower Door Warranty Information - Coverage & Terms | Baja Glass Las Vegas</title>
         <meta 
           name="description" 
-          content="Complete guide to shower door warranty coverage, terms, maintenance requirements, and service requests. Protect your glass investment." 
+          content="Complete guide to shower door warranty coverage including materials, installation, terms and conditions. Learn about maintenance requirements, exclusions, and how to request warranty service. Protect your glass investment with Baja Glass warranty." 
         />
         <meta name="keywords" content="shower door warranty, glass warranty, installation warranty, Las Vegas glass service, warranty coverage" />
         <link rel="canonical" href="https://bajaglass.com/blog/warranty-information" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Shower Door Warranty Information - Coverage & Terms | Baja Glass Las Vegas" />
+        <meta property="og:description" content="Complete guide to shower door warranty coverage, terms, maintenance requirements, and service requests. Protect your glass investment." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://bajaglass.com/blog/warranty-information" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shower Door Warranty Information - Coverage & Terms | Baja Glass Las Vegas" />
+        <meta name="twitter:description" content="Complete guide to shower door warranty coverage, terms, maintenance requirements, and service requests. Protect your glass investment." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
       </Helmet>
       
       <article className="min-h-screen">

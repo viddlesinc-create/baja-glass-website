@@ -40,8 +40,23 @@ const About = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>About Baja Glass | Licensed Glass Contractor Las Vegas</title>
-        <meta name="description" content="Learn about Baja Glass, a family-owned glass company serving Las Vegas since 2010. Licensed, bonded, and insured for quality shower door installation and glass services." />
+        <meta name="description" content="Learn about Baja Glass, a family-owned glass company serving Las Vegas since 2010. Licensed, bonded, and insured for quality shower door installation and comprehensive glass services. Experienced team with commitment to excellence." />
         <link rel="canonical" href="https://bajaglass.com/about" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="About Baja Glass | Licensed Glass Contractor Las Vegas" />
+        <meta property="og:description" content="Learn about Baja Glass, a family-owned glass company serving Las Vegas since 2010. Licensed, bonded, and insured for quality shower door installation and glass services." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/about" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Baja Glass | Licensed Glass Contractor Las Vegas" />
+        <meta name="twitter:description" content="Learn about Baja Glass, a family-owned glass company serving Las Vegas since 2010. Licensed, bonded, and insured for quality installation." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

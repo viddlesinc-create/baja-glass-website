@@ -61,8 +61,23 @@ const Index = () => {
   return <div className="min-h-screen">
       <Helmet>
         <title>Baja Glass | Las Vegas Glass Company | Shower Doors, Mirrors & Glass Installation</title>
-        <meta name="description" content="Las Vegas glass company specializing in custom shower doors, mirrors, office glass & residential glass services. Family-owned with 20+ years experience. Licensed & insured." />
+        <meta name="description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential glass services. Family-owned with 20+ years experience. Licensed, insured with warranty-backed installation throughout the Las Vegas Valley." />
         <link rel="canonical" href="https://bajaglass.com/" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Baja Glass | Las Vegas Glass Company | Shower Doors, Mirrors & Glass Installation" />
+        <meta property="og:description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential glass services. Licensed, insured with 20+ years experience." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Baja Glass | Las Vegas Glass Company | Shower Doors, Mirrors & Glass Installation" />
+        <meta name="twitter:description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential glass services." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        
         <script type="application/ld+json">
           {JSON.stringify({
           "@context": "https://schema.org",

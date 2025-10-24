@@ -125,9 +125,23 @@ const OfficeEnclosures = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Office Glass Enclosures Las Vegas | Conference Room Partitions | Commercial Glass | Baja Glass</title>
-        <meta name="description" content="Professional office glass enclosures in Las Vegas. Conference room partitions, private office walls, reception glass, and storefront systems. Custom commercial glass solutions." />
+        <meta name="description" content="Professional office glass enclosures in Las Vegas. Conference room partitions, private office walls, reception glass, and storefront systems. Custom commercial glass solutions with acoustic options and smart glass technology." />
         <meta name="keywords" content="office glass partitions Las Vegas, conference room glass, commercial glass enclosures, office partitions, storefront glass" />
         <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas/office-enclosures" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Office Glass Enclosures Las Vegas | Conference Room Partitions | Commercial Glass | Baja Glass" />
+        <meta property="og:description" content="Professional office glass enclosures in Las Vegas. Conference room partitions, private office walls, reception glass, and storefront systems. Custom commercial glass solutions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/glass-company-las-vegas/office-enclosures" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/beffc522-39a0-4b73-954d-5be7a6c03e82.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Office Glass Enclosures Las Vegas | Conference Room Partitions | Commercial Glass | Baja Glass" />
+        <meta name="twitter:description" content="Professional office glass enclosures in Las Vegas. Conference room partitions, private office walls, reception glass, and storefront systems." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/beffc522-39a0-4b73-954d-5be7a6c03e82.png" />
       </Helmet>
 
       {/* Hero Section */}

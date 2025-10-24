@@ -31,8 +31,22 @@ const HingedShowerDoors = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Hinged & Pivot Shower Doors Summerlin | Professional Installation | Baja Glass</title>
-        <meta name="description" content="Expert hinged and pivot shower door installation in Summerlin & Las Vegas Valley. Classic swing doors with precise alignment and reliable sealing. Free quotes!" />
+        <meta name="description" content="Expert hinged and pivot shower door installation in Summerlin & Las Vegas Valley. Classic swing doors with precise alignment, reliable sealing, and quality hardware. Frameless and semi-frameless options available with professional installation." />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/hinged" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Hinged & Pivot Shower Doors Summerlin | Professional Installation | Baja Glass" />
+        <meta property="og:description" content="Expert hinged and pivot shower door installation in Summerlin & Las Vegas Valley. Classic swing doors with precise alignment and reliable sealing." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bajaglass.com/shower-doors-las-vegas/hinged" />
+        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png" />
+        <meta property="og:site_name" content="Baja Glass" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Hinged & Pivot Shower Doors Summerlin | Professional Installation | Baja Glass" />
+        <meta name="twitter:description" content="Expert hinged and pivot shower door installation in Summerlin & Las Vegas Valley. Classic swing doors with precise alignment." />
+        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">
