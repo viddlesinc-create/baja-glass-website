@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     target: 'esnext',
-    minify: 'terser',
+    minify: 'esbuild',
     cssMinify: true,
     rollupOptions: {
       output: {

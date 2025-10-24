@@ -33,6 +33,7 @@ import QueryParameterRedirects from "./components/QueryParameterRedirects";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { BreadcrumbNav } from "./components/BreadcrumbNav";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ function App() {
            <ScrollToTop />
            <div className="min-h-screen flex flex-col">
             <Header />
+            <BreadcrumbNav />
             <main id="main-content" className="flex-1">
               <Routes>
                 <Route path="/" element={<Index />} />

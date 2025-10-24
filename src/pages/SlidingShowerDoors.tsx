@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -177,6 +178,54 @@ const SlidingShowerDoors = () => {
             <p className="font-semibold">Baja Glass</p>
             <p className="text-muted-foreground">4280 Reno Ave, Ste A, Las Vegas, NV 89118</p>
             <p className="text-muted-foreground">(702) 383-0779</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Other Shower Door Styles</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">Frameless Doors</CardTitle>
+                <CardDescription>Modern, minimal metal design for open feel</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/shower-doors-las-vegas/frameless" onClick={() => window.scrollTo(0, 0)}>
+                    Explore Frameless
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">Hinged Doors</CardTitle>
+                <CardDescription>Classic swing doors with wide opening</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/shower-doors-las-vegas/hinged" onClick={() => window.scrollTo(0, 0)}>
+                    Explore Hinged
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">Semi-Frameless</CardTitle>
+                <CardDescription>Balanced design with strategic support</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/shower-doors-las-vegas/semi-frameless-framed" onClick={() => window.scrollTo(0, 0)}>
+                    Explore Semi-Frameless
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
