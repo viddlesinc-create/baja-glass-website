@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Home, Droplet, Building2, Image, MapPin, Info, BookOpen, Mail } from "lucide-react";
+import { Home, Droplet, Building2, MapPin, BookOpen, Mail, Star } from "lucide-react";
 
 const Sitemap = () => {
   const sections = [
@@ -12,6 +12,7 @@ const Sitemap = () => {
         { name: "About Us", href: "/about" },
         { name: "Contact", href: "/contact" },
         { name: "Gallery", href: "/gallery" },
+        { name: "Customer Reviews", href: "/reviews" },
         { name: "Areas Served", href: "/areas-served" },
         { name: "Resources", href: "/resources" },
       ]
@@ -40,6 +41,18 @@ const Sitemap = () => {
       ]
     },
     {
+      title: "Service Locations",
+      icon: MapPin,
+      links: [
+        { name: "Henderson Shower Doors", href: "/shower-doors-henderson-nv" },
+        { name: "Summerlin Shower Doors", href: "/shower-doors-summerlin-nv" },
+        { name: "Paradise Shower Doors", href: "/shower-doors-paradise-nv" },
+        { name: "Spring Valley Shower Doors", href: "/shower-doors-spring-valley-nv" },
+        { name: "Enterprise Shower Doors", href: "/shower-doors-enterprise-nv" },
+        { name: "Green Valley Shower Doors", href: "/shower-doors-green-valley-nv" },
+      ]
+    },
+    {
       title: "Blog & Resources",
       icon: BookOpen,
       links: [
@@ -47,6 +60,9 @@ const Sitemap = () => {
         { name: "Choosing the Right Door", href: "/blog/choosing-right-door" },
         { name: "Installation Process", href: "/blog/installation-process" },
         { name: "Warranty Information", href: "/blog/warranty-information" },
+        { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
+        { name: "Frameless vs Semi-Frameless", href: "/blog/frameless-vs-semi-frameless-shower-doors" },
+        { name: "Hard Water Solutions", href: "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" },
       ]
     }
   ];
