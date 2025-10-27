@@ -96,6 +96,7 @@ const Resources = () => {
       <Helmet>
         <title>Resources & Guides | Shower Door Care & Installation Info | Baja Glass Las Vegas</title>
         <meta name="description" content="Comprehensive resources for shower door care, installation process, warranty information, and choosing the right door. Expert guides on glass types, hardware finishes, and maintenance from Baja Glass professionals." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/resources" />
         
         {/* Open Graph */}

@@ -36,6 +36,7 @@ const SemiFramelessShowerDoors = () => {
       <Helmet>
         <title>Semi-Frameless & Framed Shower Doors North Las Vegas | Balanced Style | Baja Glass</title>
         <meta name="description" content="Professional semi-frameless and framed shower doors in North Las Vegas & Las Vegas Valley. Balanced style with strategic support for dependable performance. Custom installations with quality hardware and sealing." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/semi-frameless-framed" />
         
         {/* Open Graph */}

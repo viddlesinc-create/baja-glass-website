@@ -94,6 +94,7 @@ const Gallery = () => {
       <Helmet>
         <title>Gallery | Shower Door Projects & Installations | Baja Glass Las Vegas</title>
         <meta name="description" content="View our portfolio of custom shower doors and enclosures installed throughout Las Vegas Valley. Explore before & after transformations, frameless doors, sliding systems, and steam enclosures from real client projects." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/gallery" />
         
         {/* Open Graph */}

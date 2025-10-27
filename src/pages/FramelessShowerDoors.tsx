@@ -38,6 +38,7 @@ const FramelessShowerDoors = () => {
       <Helmet>
         <title>Frameless Shower Doors Henderson & Summerlin | Modern Glass | Baja Glass</title>
         <meta name="description" content="Premium frameless shower doors in Henderson, Summerlin & Las Vegas Valley. Minimal metal, maximum openness with custom tempered glass measured precisely. Low-iron glass options, quality hardware finishes, and licensed professional installers." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/frameless" />
         
         {/* Open Graph */}

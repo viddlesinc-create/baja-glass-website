@@ -110,6 +110,7 @@ const ResidentialGlassRepair = () => {
       <Helmet>
         <title>Residential Glass Repair Las Vegas | Home Window & Mirror Repair | Baja Glass</title>
         <meta name="description" content="Expert residential glass repair in Las Vegas. Emergency window repair, custom mirrors, glass table tops, and patio door glass replacement. 24/7 emergency service available with insurance claim assistance and professional installation." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="keywords" content="residential glass repair Las Vegas, window glass replacement, mirror repair, emergency glass repair, home glass repair" />
         <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas/residential-glass-repair" />
         

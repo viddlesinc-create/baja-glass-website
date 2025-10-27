@@ -78,6 +78,7 @@ const ShowerDoorsHub = () => {
       <Helmet>
         <title>Shower Doors Las Vegas | Custom Glass Installation & Repair | Baja Glass</title>
         <meta name="description" content="Professional shower door installation in Las Vegas. Frameless, sliding, hinged, custom enclosures & repairs. Licensed with warranty. Get your free quote!" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="keywords" content="shower doors Las Vegas, frameless shower doors, sliding shower doors, hinged shower doors, custom shower enclosures, shower glass repair, Las Vegas glass installation" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas" />
         

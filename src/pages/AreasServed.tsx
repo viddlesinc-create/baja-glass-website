@@ -73,6 +73,7 @@ const areas = [
       <Helmet>
         <title>Areas Served | Las Vegas Valley Shower Door Installation | Baja Glass</title>
         <meta name="description" content="Baja Glass serves Spanish Hills, Spanish Trail, The Ridges, Rhodes Ranch, Southern Highlands, Mountains Edge, Coronado Ranch, Anthem, Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise & surrounding areas with professional shower door installation." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/areas-served" />
         
         {/* Open Graph */}

@@ -39,6 +39,7 @@ const ShowerGlassRepair = () => {
       <Helmet>
         <title>Shower Glass Repair & Replacement Las Vegas Valley | Emergency Service | Baja Glass</title>
         <meta name="description" content="Emergency shower glass repair throughout Las Vegas Valley. Broken panels, sliding door repair, off-track rollers, hardware replacement & leak fixes. Fast, safe, reliable service with quality components and professional sealing." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/repair" />
         
         {/* Open Graph */}

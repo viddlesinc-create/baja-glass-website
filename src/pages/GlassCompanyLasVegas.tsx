@@ -181,6 +181,7 @@ const GlassCompanyLasVegas = () => {
       <Helmet>
         <title>Glass Company Las Vegas | Shower Doors, Mirrors & Commercial Glass | Baja Glass</title>
         <meta name="description" content="Professional glass company in Las Vegas specializing in custom shower doors, frameless enclosures, mirrors, office partitions & residential glass repair. Licensed, insured with warranty-backed installation across the Las Vegas Valley." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas" />
         
         {/* Open Graph */}

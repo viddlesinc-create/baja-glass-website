@@ -33,6 +33,7 @@ const CustomEnclosures = () => {
       <Helmet>
         <title>Custom Shower Enclosures Enterprise & Spring Valley | Neo-Angle Designs | Baja Glass</title>
         <meta name="description" content="Custom shower enclosures in Enterprise, Spring Valley & Las Vegas Valley. Inline, corner, neo-angle, alcove, and steam designs made to precise measurements. Expert installation with quality hardware and professional sealing for complex layouts." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/custom-enclosures" />
         
         {/* Open Graph */}

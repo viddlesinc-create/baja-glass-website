@@ -126,6 +126,7 @@ const OfficeEnclosures = () => {
       <Helmet>
         <title>Office Glass Enclosures Las Vegas | Conference Room Partitions | Commercial Glass | Baja Glass</title>
         <meta name="description" content="Professional office glass enclosures in Las Vegas. Conference room partitions, private office walls, reception glass, and storefront systems. Custom commercial glass solutions with acoustic options and smart glass technology." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="keywords" content="office glass partitions Las Vegas, conference room glass, commercial glass enclosures, office partitions, storefront glass" />
         <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas/office-enclosures" />
         
