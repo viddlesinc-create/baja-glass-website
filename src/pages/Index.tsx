@@ -106,7 +106,10 @@ const Index = () => {
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
-            "reviewCount": "250"
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "47",
+            "reviewCount": "47"
           },
           "hasOfferCatalog": {
             "@type": "OfferCatalog",

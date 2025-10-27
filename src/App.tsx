@@ -23,6 +23,14 @@ import InstallationProcess from "./pages/blog/InstallationProcess";
 import WarrantyInformation from "./pages/blog/WarrantyInformation";
 import ResidentialGlassRepair from "./pages/ResidentialGlassRepair";
 import OfficeEnclosures from "./pages/OfficeEnclosures";
+import Reviews from "./pages/Reviews";
+import ShowerDoorsHenderson from "./pages/locations/ShowerDoorsHenderson";
+import ShowerDoorsSummerlin from "./pages/locations/ShowerDoorsSummerlin";
+import ShowerDoorsParadise from "./pages/locations/ShowerDoorsParadise";
+import ShowerDoorsSpringValley from "./pages/locations/ShowerDoorsSpringValley";
+import ShowerDoorsEnterprise from "./pages/locations/ShowerDoorsEnterprise";
+import ShowerDoorsGreenValley from "./pages/locations/ShowerDoorsGreenValley";
+import ShowerDoorCostGuide from "./pages/blog/ShowerDoorCostGuide";
 import RedirectComponent from "./components/RedirectComponent";
 import QueryParameterRedirects from "./components/QueryParameterRedirects";
 
@@ -59,10 +67,18 @@ function App() {
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/sitemap" element={<Sitemap />} />
+                <Route path="/reviews" element={<Reviews />} />
+                <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />
+                <Route path="/shower-doors-summerlin-nv" element={<ShowerDoorsSummerlin />} />
+                <Route path="/shower-doors-paradise-nv" element={<ShowerDoorsParadise />} />
+                <Route path="/shower-doors-spring-valley-nv" element={<ShowerDoorsSpringValley />} />
+                <Route path="/shower-doors-enterprise-nv" element={<ShowerDoorsEnterprise />} />
+                <Route path="/shower-doors-green-valley-nv" element={<ShowerDoorsGreenValley />} />
                 <Route path="/blog/glass-care-guide" element={<GlassCareGuide />} />
                 <Route path="/blog/choosing-right-door" element={<ChoosingRightDoor />} />
                 <Route path="/blog/installation-process" element={<InstallationProcess />} />
                 <Route path="/blog/warranty-information" element={<WarrantyInformation />} />
+                <Route path="/blog/shower-door-installation-cost-las-vegas" element={<ShowerDoorCostGuide />} />
                 
                 {/* Legacy WordPress redirects */}
                 <Route path="/services" element={<RedirectComponent to="/shower-doors-las-vegas" />} />

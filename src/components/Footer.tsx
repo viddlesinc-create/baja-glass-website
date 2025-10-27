@@ -6,10 +6,20 @@ const Footer = () => {
   const quickLinks = [
     { name: "Shower Doors", href: "/shower-doors-las-vegas" },
     { name: "Gallery", href: "/gallery" },
+    { name: "Reviews", href: "/reviews" },
     { name: "Areas Served", href: "/areas-served" },
     { name: "About", href: "/about" },
     { name: "Resources", href: "/resources" },
     { name: "Contact", href: "/contact" },
+  ];
+
+  const locationLinks = [
+    { name: "Henderson", href: "/shower-doors-henderson-nv" },
+    { name: "Summerlin", href: "/shower-doors-summerlin-nv" },
+    { name: "Paradise", href: "/shower-doors-paradise-nv" },
+    { name: "Spring Valley", href: "/shower-doors-spring-valley-nv" },
+    { name: "Enterprise", href: "/shower-doors-enterprise-nv" },
+    { name: "Green Valley", href: "/shower-doors-green-valley-nv" },
   ];
 
   const blogLinks = [
@@ -86,6 +96,24 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <div className="space-y-2">
               {quickLinks.map((link) => (
+                <div key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    {link.name}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Local Services */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Local Services</h4>
+            <div className="space-y-2">
+              {locationLinks.map((link) => (
                 <div key={link.name}>
                   <Link
                     to={link.href}

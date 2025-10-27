@@ -18,10 +18,18 @@ export const routes = [
   "/resources",
   "/contact",
   "/sitemap",
+  "/reviews",
+  "/shower-doors-henderson-nv",
+  "/shower-doors-summerlin-nv",
+  "/shower-doors-paradise-nv",
+  "/shower-doors-spring-valley-nv",
+  "/shower-doors-enterprise-nv",
+  "/shower-doors-green-valley-nv",
   "/blog/glass-care-guide",
   "/blog/choosing-right-door",
   "/blog/installation-process",
-  "/blog/warranty-information"
+  "/blog/warranty-information",
+  "/blog/shower-door-installation-cost-las-vegas"
 ];
 
 export const domain = 'https://bajaglass.com';
