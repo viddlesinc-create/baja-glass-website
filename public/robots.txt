@@ -1,17 +1,32 @@
+# Google crawlers - no delay
 User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
 Allow: /
+Crawl-delay: 0
 
+# Bing crawlers - no delay
 User-agent: Bingbot
+User-agent: BingPreview
 Allow: /
+Crawl-delay: 0
 
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+# Social media crawlers
 User-agent: Twitterbot
-Allow: /
-
 User-agent: facebookexternalhit
+User-agent: LinkedInBot
+User-agent: WhatsApp
 Allow: /
 
+# All other bots
 User-agent: *
 Allow: /
 Crawl-delay: 1
 
+# Sitemap
 Sitemap: https://bajaglass.com/sitemap.xml

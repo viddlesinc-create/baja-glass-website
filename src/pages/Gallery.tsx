@@ -110,6 +110,31 @@ const Gallery = () => {
         <meta name="twitter:title" content="Gallery | Shower Door Projects & Installations | Baja Glass Las Vegas" />
         <meta name="twitter:description" content="View our portfolio of custom shower doors and enclosures installed throughout Las Vegas Valley. Before & after transformations and recent projects." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png" />
+        
+        {/* Structured Data - Image Gallery */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageGallery",
+            "name": "Baja Glass Shower Door Installation Gallery",
+            "description": "Professional shower door and glass enclosure installations throughout Las Vegas Valley",
+            "image": beforeAfterProjects.map(project => ({
+              "@type": "ImageObject",
+              "name": project.title,
+              "caption": project.description,
+              "contentUrl": `https://bajaglass.com${project.afterImage}`,
+              "contentLocation": {
+                "@type": "Place",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": project.location,
+                  "addressRegion": "NV",
+                  "addressCountry": "US"
+                }
+              }
+            }))
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="py-20 relative bg-cover bg-center text-white" style={{ backgroundImage: "url('/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png')" }}>

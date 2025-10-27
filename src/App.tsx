@@ -16,6 +16,7 @@ import AreasServed from "./pages/AreasServed";
 import About from "./pages/About";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
+import Sitemap from "./pages/Sitemap";
 import GlassCareGuide from "./pages/blog/GlassCareGuide";
 import ChoosingRightDoor from "./pages/blog/ChoosingRightDoor";
 import InstallationProcess from "./pages/blog/InstallationProcess";
@@ -57,6 +58,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/sitemap" element={<Sitemap />} />
                 <Route path="/blog/glass-care-guide" element={<GlassCareGuide />} />
                 <Route path="/blog/choosing-right-door" element={<ChoosingRightDoor />} />
                 <Route path="/blog/installation-process" element={<InstallationProcess />} />

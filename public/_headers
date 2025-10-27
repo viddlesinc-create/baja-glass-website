@@ -21,5 +21,9 @@
 /*.jpg
   Cache-Control: public, max-age=86400
 
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  Last-Modified: {{now}}
+
 /
   Cache-Control: public, max-age=0, must-revalidate

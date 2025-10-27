@@ -17,6 +17,7 @@ export const routes = [
   "/about",
   "/resources",
   "/contact",
+  "/sitemap",
   "/blog/glass-care-guide",
   "/blog/choosing-right-door",
   "/blog/installation-process",

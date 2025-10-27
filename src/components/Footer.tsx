@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Star, Instagram, Facebook } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Footer = () => {
   const quickLinks = [
@@ -25,7 +26,42 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Baja Glass",
+            "url": "https://bajaglass.com",
+            "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
+            "description": "Premier shower door and glass company in Las Vegas, NV. Custom frameless shower doors, glass repair, and commercial glass services.",
+            "telephone": "+17023830779",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "4280 Reno Ave Ste A",
+              "addressLocality": "Las Vegas",
+              "addressRegion": "NV",
+              "postalCode": "89118",
+              "addressCountry": "US"
+            },
+            "areaServed": [
+              "Las Vegas",
+              "Henderson",
+              "Summerlin",
+              "North Las Vegas",
+              "Paradise",
+              "Spring Valley",
+              "Enterprise"
+            ],
+            "sameAs": [
+              "https://www.instagram.com/bajaglass",
+              "https://www.facebook.com/bajaglass"
+            ]
+          })}
+        </script>
+      </Helmet>
+      <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -100,14 +136,22 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center space-y-4">
-          <div>
+          <div className="flex justify-center gap-4 text-sm">
+            <Link
+              to="/sitemap"
+              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors underline"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Site Map
+            </Link>
+            <span className="text-primary-foreground/40">|</span>
             <a
               href="/sitemap.xml"
-              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm underline"
+              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Sitemap
+              XML Sitemap
             </a>
           </div>
           <p className="text-primary-foreground/80">
@@ -116,6 +160,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
