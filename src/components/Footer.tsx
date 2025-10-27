@@ -96,15 +96,15 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <div className="space-y-2">
               {quickLinks.map((link) => (
-                <div key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                    {link.name}
-                  </Link>
-                </div>
+              <div key={link.name}>
+                <Link
+                  to={link.href}
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  {link.name}
+                </Link>
+              </div>
               ))}
             </div>
           </div>

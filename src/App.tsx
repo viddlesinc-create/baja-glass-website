@@ -31,6 +31,8 @@ import ShowerDoorsSpringValley from "./pages/locations/ShowerDoorsSpringValley";
 import ShowerDoorsEnterprise from "./pages/locations/ShowerDoorsEnterprise";
 import ShowerDoorsGreenValley from "./pages/locations/ShowerDoorsGreenValley";
 import ShowerDoorCostGuide from "./pages/blog/ShowerDoorCostGuide";
+import FramelessVsSemiFrameless from "./pages/blog/FramelessVsSemiFrameless";
+import HardWaterSolutions from "./pages/blog/HardWaterSolutions";
 import RedirectComponent from "./components/RedirectComponent";
 import QueryParameterRedirects from "./components/QueryParameterRedirects";
 
@@ -79,6 +81,8 @@ function App() {
                 <Route path="/blog/installation-process" element={<InstallationProcess />} />
                 <Route path="/blog/warranty-information" element={<WarrantyInformation />} />
                 <Route path="/blog/shower-door-installation-cost-las-vegas" element={<ShowerDoorCostGuide />} />
+                <Route path="/blog/frameless-vs-semi-frameless-shower-doors" element={<FramelessVsSemiFrameless />} />
+                <Route path="/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" element={<HardWaterSolutions />} />
                 
                 {/* Legacy WordPress redirects */}
                 <Route path="/services" element={<RedirectComponent to="/shower-doors-las-vegas" />} />

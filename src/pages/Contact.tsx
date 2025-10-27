@@ -361,6 +361,9 @@ const Contact = () => {
                       <Badge key={city} variant="outline">{city}</Badge>
                     ))}
                   </div>
+                  <p className="text-sm text-muted-foreground mt-4">
+                    Click location names above to see detailed service information for your area
+                  </p>
                 </CardContent>
               </Card>
             </div>

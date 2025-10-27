@@ -137,6 +137,49 @@ const Resources = () => {
       {/* Resource Categories */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4">Latest Articles</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Expert guides and helpful tips for shower door selection, installation, and maintenance
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                title: "Shower Door Cost Guide 2025",
+                description: "Complete pricing breakdown for frameless, semi-frameless, and custom shower doors in Las Vegas. Get accurate estimates for your project.",
+                href: "/blog/shower-door-installation-cost-las-vegas",
+                category: "Pricing"
+              },
+              {
+                title: "Frameless vs Semi-Frameless Comparison",
+                description: "Detailed comparison of all shower door types with pros, cons, and recommendations for Las Vegas homes.",
+                href: "/blog/frameless-vs-semi-frameless-shower-doors",
+                category: "Comparison"
+              },
+              {
+                title: "Hard Water Solutions for Las Vegas",
+                description: "Protect your shower glass from hard water damage. Prevention strategies and cleaning solutions specific to Las Vegas water quality.",
+                href: "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions",
+                category: "Maintenance"
+              }
+            ].map((article) => (
+              <Card key={article.title} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <Badge variant="secondary" className="w-fit mb-2">{article.category}</Badge>
+                  <CardTitle className="text-xl">{article.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="mb-4">{article.description}</CardDescription>
+                  <Button variant="outline" size="sm" asChild>
+                    <Link to={article.href} onClick={() => window.scrollTo(0, 0)}>
+                      Read Article →
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
           <h2 className="text-3xl font-bold text-center mb-12">Helpful Guides</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {resources.map((resource, index) => {

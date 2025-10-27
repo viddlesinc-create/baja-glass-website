@@ -136,6 +136,30 @@ const areas = [
       {/* Service Area Cards */}
       <section className="py-24 bg-secondary/50">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Explore Services by Location</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              View detailed information about our shower door services in your specific neighborhood
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16 max-w-5xl mx-auto">
+            {[
+              { name: "Henderson", href: "/shower-doors-henderson-nv" },
+              { name: "Summerlin", href: "/shower-doors-summerlin-nv" },
+              { name: "Paradise", href: "/shower-doors-paradise-nv" },
+              { name: "Spring Valley", href: "/shower-doors-spring-valley-nv" },
+              { name: "Enterprise", href: "/shower-doors-enterprise-nv" },
+              { name: "Green Valley", href: "/shower-doors-green-valley-nv" }
+            ].map((location) => (
+              <Button key={location.name} variant="outline" size="lg" asChild className="h-auto py-4">
+                <Link to={location.href} onClick={() => window.scrollTo(0, 0)}>
+                  {location.name} →
+                </Link>
+              </Button>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {areas.map((area, index) => (
               <Card 

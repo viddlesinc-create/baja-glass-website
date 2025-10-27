@@ -329,6 +329,70 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Customer Reviews Section */}
+      <section className="py-20 bg-gradient-to-br from-background via-secondary/20 to-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">What Our Customers Say</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-accent to-charcoal mx-auto rounded-full mb-6"></div>
+            <div className="flex items-center justify-center gap-2 mb-2">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
+              ))}
+              <span className="ml-2 text-2xl font-bold">4.9</span>
+            </div>
+            <p className="text-muted-foreground">Based on 47+ reviews from Las Vegas homeowners</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+            {[
+              {
+                name: "Jennifer Martinez",
+                location: "Henderson, NV",
+                text: "Baja Glass installed a beautiful frameless shower door in our Henderson home. The installers were professional, on time, and the quality is outstanding. Highly recommend!",
+                service: "Frameless Shower Door"
+              },
+              {
+                name: "Robert Chen",
+                location: "Summerlin, NV",
+                text: "We hired Baja Glass for our Summerlin bathroom remodel. The custom enclosure they designed fits perfectly and looks amazing. Great communication throughout the process.",
+                service: "Custom Shower Enclosure"
+              },
+              {
+                name: "Sarah Thompson",
+                location: "Paradise, NV",
+                text: "Professional service from start to finish. The team at Baja Glass helped us choose the perfect sliding door for our space. Installation was quick and clean. Worth every penny!",
+                service: "Sliding Shower Door"
+              }
+            ].map((review, index) => (
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 bg-background/80 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="flex items-center gap-1 mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <CardTitle className="text-lg">{review.name}</CardTitle>
+                  <p className="text-sm text-muted-foreground">{review.location}</p>
+                </CardHeader>
+                <CardContent>
+                  <Badge variant="outline" className="mb-3 text-xs">{review.service}</Badge>
+                  <p className="text-muted-foreground leading-relaxed">{review.text}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/reviews" onClick={() => window.scrollTo(0, 0)}>
+                Read All 47+ Reviews →
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works */}
       <section className="py-24 bg-gradient-to-br from-background via-secondary/20 to-background">
         <div className="container mx-auto px-4">
