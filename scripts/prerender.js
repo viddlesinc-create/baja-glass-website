@@ -47,6 +47,15 @@ async function prerender() {
         if (helmet.link) finalHtml = finalHtml.replace('</head>', `${helmet.link.toString()}</head>`);
         if (helmet.script) finalHtml = finalHtml.replace('</head>', `${helmet.script.toString()}</head>`);
       }
+      
+      // Check if this is a 404 page
+      const is404 = html.includes('404') || html.includes('Page not found') || html.includes('Page Not Found');
+      if (is404) {
+        finalHtml = finalHtml.replace(
+          '</head>',
+          '<meta name="prerender-status-code" content="404"></head>'
+        );
+      }
 
       const routePath = route === '/' ? '/index' : route;
       const filePath = path.join(distDir, `${routePath}.html`);

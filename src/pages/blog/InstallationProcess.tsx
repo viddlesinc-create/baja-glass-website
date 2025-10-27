@@ -14,6 +14,7 @@ const InstallationProcess = () => {
           name="description" 
           content="Complete guide to shower door installation process from consultation to final inspection. Learn preparation steps, installation timeline, safety procedures, and what to expect during professional installation. Expert process guide from Baja Glass Las Vegas." 
         />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="keywords" content="shower door installation, installation process, Las Vegas glass installation, shower door timeline, professional installation" />
         <link rel="canonical" href="https://bajaglass.com/blog/installation-process" />
         

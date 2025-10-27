@@ -14,6 +14,7 @@ const WarrantyInformation = () => {
           name="description" 
           content="Complete guide to shower door warranty coverage including materials, installation, terms and conditions. Learn about maintenance requirements, exclusions, and how to request warranty service. Protect your glass investment with Baja Glass warranty." 
         />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="keywords" content="shower door warranty, glass warranty, installation warranty, Las Vegas glass service, warranty coverage" />
         <link rel="canonical" href="https://bajaglass.com/blog/warranty-information" />
         

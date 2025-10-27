@@ -14,6 +14,7 @@ const GlassCareGuide = () => {
           name="description" 
           content="Learn professional shower glass cleaning tips, maintenance techniques, and water spot prevention methods. Keep your glass doors crystal clear with daily care routines, weekly cleaning schedules, and protective coating options. Expert care guide from Baja Glass." 
         />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="keywords" content="shower glass cleaning, glass care, shower door maintenance, water spot prevention, Las Vegas glass care" />
         <link rel="canonical" href="https://bajaglass.com/blog/glass-care-guide" />
         

@@ -14,6 +14,7 @@ const ChoosingRightDoor = () => {
           name="description" 
           content="Expert guide to selecting the perfect shower door for your bathroom. Learn about frameless vs framed designs, glass thickness options, hardware finishes, space considerations, and design factors. Professional advice from Baja Glass." 
         />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="keywords" content="shower door selection, frameless vs framed, glass thickness, shower door guide, Las Vegas shower doors" />
         <link rel="canonical" href="https://bajaglass.com/blog/choosing-right-door" />
         

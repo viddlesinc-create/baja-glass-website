@@ -50,6 +50,12 @@ try {
   console.log('\n🎨 Pre-rendering pages...');
   execSync('node scripts/prerender.js', { cwd: root, stdio: 'inherit' });
 
+  // Step 6: Create dedicated 404.html
+  console.log('\n📄 Creating dedicated 404.html...');
+  const notFoundHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf-8');
+  fs.writeFileSync(path.join(distDir, '404.html'), notFoundHtml);
+  console.log('✅ 404.html created');
+
   console.log('\n✨ SSG build complete!');
   console.log('📦 Deploy the dist/ folder to Netlify');
   console.log('🔍 All 21 routes are now crawlable with full SEO metadata\n');
