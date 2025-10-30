@@ -63,8 +63,8 @@ const HardWaterSolutions = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Las Vegas Hard Water & Shower Glass: Solutions & Prevention Guide</title>
-        <meta name="description" content="Complete guide to protecting your Las Vegas shower glass from hard water damage. Learn about water softeners, protective coatings, cleaning solutions, and daily maintenance tips specific to Las Vegas water quality." />
+        <title>Las Vegas Hard Water & Shower Glass | Solutions Guide</title>
+        <meta name="description" content="Protect your Las Vegas shower glass from hard water damage. Learn about water softeners, protective coatings, cleaning solutions, and maintenance tips." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" />
         
@@ -381,6 +381,47 @@ const HardWaterSolutions = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section className="py-12 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold mb-6">Related Articles</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">Shower Door Cost Guide</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Button variant="link" asChild className="p-0">
+                    <Link to="/blog/shower-door-installation-cost-las-vegas">Read More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">Frameless vs Semi-Frameless</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Button variant="link" asChild className="p-0">
+                    <Link to="/blog/frameless-vs-semi-frameless-shower-doors">Read More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">Glass Care Guide</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Button variant="link" asChild className="p-0">
+                    <Link to="/blog/glass-care-guide">Read More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

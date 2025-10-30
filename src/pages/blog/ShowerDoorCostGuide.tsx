@@ -54,8 +54,8 @@ const ShowerDoorCostGuide = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Shower Door Installation Cost Las Vegas 2025 - Complete Pricing Guide</title>
-        <meta name="description" content="Complete 2025 pricing guide for shower door installation in Las Vegas. Compare frameless, semi-frameless, and framed costs. Learn about glass thickness, hardware finishes, and factors affecting price. Get accurate estimates for your project." />
+        <title>Shower Door Cost Las Vegas 2025 | Complete Price Guide</title>
+        <meta name="description" content="2025 shower door installation pricing guide for Las Vegas. Compare frameless, semi-frameless, framed costs, glass thickness, and hardware finishes." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/blog/shower-door-installation-cost-las-vegas" />
         
@@ -330,11 +330,21 @@ const ShowerDoorCostGuide = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-base">Choosing the Right Door</CardTitle>
+                  <CardTitle className="text-base">Frameless vs Semi-Frameless</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <Button variant="link" asChild className="p-0">
-                    <Link to="/blog/choosing-right-door">Read More →</Link>
+                    <Link to="/blog/frameless-vs-semi-frameless-shower-doors">Read More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">Hard Water Solutions</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Button variant="link" asChild className="p-0">
+                    <Link to="/blog/las-vegas-water-quality-shower-glass-hard-water-solutions">Read More →</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -345,16 +355,6 @@ const ShowerDoorCostGuide = () => {
                 <CardContent>
                   <Button variant="link" asChild className="p-0">
                     <Link to="/blog/installation-process">Read More →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-base">Glass Care Guide</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Button variant="link" asChild className="p-0">
-                    <Link to="/blog/glass-care-guide">Read More →</Link>
                   </Button>
                 </CardContent>
               </Card>

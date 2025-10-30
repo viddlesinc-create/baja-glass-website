@@ -61,7 +61,7 @@ const ShowerDoorsGreenValley = () => {
         homeStyles: "Green Valley's master-planned community features well-maintained homes with diverse architectural styles from Southwest contemporary to traditional designs. Our installations complement the established character of these quality neighborhoods.",
         hardWater: "Green Valley benefits from Henderson's water treatment but hard water minerals remain present. We recommend protective coatings and provide detailed maintenance guidance to keep your shower glass looking pristine."
       }}
-      metaDescription="Professional shower door installation in Green Valley, Henderson NV. Serving Green Valley Ranch and surrounding neighborhoods. Expert installation with quality materials. Free quotes."
+      metaDescription="Professional shower door installation in Green Valley, Henderson NV. Serving Green Valley Ranch. Expert installation with quality materials. Free quotes."
     />
   );
 };

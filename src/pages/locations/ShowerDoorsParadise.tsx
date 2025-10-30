@@ -61,7 +61,7 @@ const ShowerDoorsParadise = () => {
         homeStyles: "Paradise features a mix of mid-century modern homes, contemporary apartments, and newer residential developments. We offer versatile shower door solutions from space-saving sliding doors for compact bathrooms to elegant frameless doors for master suites.",
         hardWater: "Paradise shares Las Vegas Valley's hard water challenges. Regular squeegee use and protective glass coatings help maintain clarity. We provide detailed maintenance instructions with every installation."
       }}
-      metaDescription="Professional shower door installation in Paradise, NV. Serving Paradise Valley, Winchester, and surrounding areas. Fast service, quality materials, licensed & insured. Free quotes."
+      metaDescription="Professional shower door installation in Paradise, NV. Serving Paradise Valley, Winchester. Fast service, quality materials, licensed & insured. Free quotes."
     />
   );
 };

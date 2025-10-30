@@ -65,7 +65,7 @@ const LocationPageTemplate = ({
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Shower Doors {city} NV | Frameless & Custom Installation | Baja Glass</title>
+        <title>Shower Doors {city} NV | Frameless & Custom | Baja Glass</title>
         <meta name="description" content={metaDescription} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href={`https://bajaglass.com/shower-doors-${city.toLowerCase().replace(/\s/g, '-')}-nv`} />
@@ -106,7 +106,14 @@ const LocationPageTemplate = ({
             },
             "telephone": "(702) 383-0779",
             "url": `https://bajaglass.com/shower-doors-${city.toLowerCase().replace(/\s/g, '-')}-nv`,
-            "priceRange": "$$"
+            "priceRange": "$$",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "bestRating": "5",
+              "worstRating": "1",
+              "ratingCount": "47"
+            }
           })}
         </script>
       </Helmet>

@@ -101,8 +101,11 @@ const SemiFramelessShowerDoors = () => {
       <section className="py-20 bg-gradient-to-b from-background to-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Semi‑frameless and framed shower doors offer a polished, sturdy look with strategic metal support. At Baja Glass, we measure, fabricate, and install units built for everyday reliability—clean edges, true alignment, and well‑sealed closures for a refined finish.
+            </p>
+            <p className="text-center text-muted-foreground">
+              Explore <Link to="/blog/frameless-vs-semi-frameless-shower-doors" className="text-primary underline hover:text-primary/80">comparing frameless and semi-frameless options</Link> or check our <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80">complete pricing guide</Link>.
             </p>
           </div>
         </div>

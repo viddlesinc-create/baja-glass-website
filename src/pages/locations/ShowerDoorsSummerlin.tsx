@@ -61,7 +61,7 @@ const ShowerDoorsSummerlin = () => {
         homeStyles: "Summerlin's luxury homes showcase Mediterranean, Spanish Revival, and contemporary modern architecture. Our custom shower doors complement high-end finishes with low-iron glass options and premium hardware finishes including brass and matte black.",
         hardWater: "Summerlin's master-planned community features treated water, but hard water minerals are still present. We recommend hydrophobic coatings for easier maintenance and offer specialized care guidance for luxury glass installations."
       }}
-      metaDescription="Luxury shower door installation in Summerlin, NV. Serving The Ridges, Red Rock Country Club, and all Summerlin neighborhoods. Premium frameless doors with low-iron glass. Free quotes."
+      metaDescription="Luxury shower door installation in Summerlin, NV. Serving The Ridges, Red Rock Country Club. Premium frameless doors with low-iron glass. Free quotes."
     />
   );
 };

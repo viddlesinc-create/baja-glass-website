@@ -61,7 +61,7 @@ const ShowerDoorsEnterprise = () => {
         homeStyles: "Enterprise encompasses diverse housing from affordable family homes to upscale properties near Southern Highlands. We offer solutions for every budget and style, ensuring quality regardless of project scope.",
         hardWater: "Enterprise water quality varies by neighborhood. We provide care instructions specific to your water conditions and offer protective coatings that make maintenance easier while preserving glass clarity."
       }}
-      metaDescription="Professional shower door installation in Enterprise, NV. Serving all Enterprise and Southwest Las Vegas neighborhoods. Quality installations at fair prices. Licensed, insured. Free quotes."
+      metaDescription="Professional shower door installation in Enterprise, NV. Serving Southwest Las Vegas. Quality installations at fair prices. Licensed, insured. Free quotes."
     />
   );
 };

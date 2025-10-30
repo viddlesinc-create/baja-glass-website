@@ -184,7 +184,7 @@ const Reviews = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Customer Reviews & Testimonials | Baja Glass Las Vegas</title>
-        <meta name="description" content="Read 47+ verified customer reviews of Baja Glass shower door installations in Las Vegas, Henderson, and Summerlin. 4.9-star rated family-owned glass company with 20+ years experience." />
+        <meta name="description" content="Read 47+ verified reviews of Baja Glass shower door installations in Las Vegas. 4.9-star rated family-owned company with 20+ years experience." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/reviews" />
         

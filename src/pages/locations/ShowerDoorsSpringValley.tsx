@@ -61,7 +61,7 @@ const ShowerDoorsSpringValley = () => {
         homeStyles: "Spring Valley's established neighborhoods feature ranch-style homes, two-story family residences, and newer developments. We install shower doors that match your home's character, from traditional framed doors to modern frameless designs.",
         hardWater: "Spring Valley water contains minerals common to the Las Vegas area. Daily squeegee use significantly reduces water spots. We offer protective coating options for easier long-term maintenance."
       }}
-      metaDescription="Professional shower door installation in Spring Valley, NV. Serving all Spring Valley neighborhoods with quality materials and expert installation. Licensed, insured. Free quotes."
+      metaDescription="Professional shower door installation in Spring Valley, NV. Quality materials and expert installation. Licensed, insured, 20+ years experience. Free quotes."
     />
   );
 };

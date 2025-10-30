@@ -85,8 +85,11 @@ const ShowerGlassRepair = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground text-center">
+            <p className="text-lg text-muted-foreground text-center mb-4">
               When a shower door fails—cracked glass, sticking rollers, loose hinges, or leaks—you need fast, reliable service. Baja Glass diagnoses the issue and repairs or replaces components with safety, alignment, and sealing in mind.
+            </p>
+            <p className="text-center text-muted-foreground">
+              Prevent future issues with our <Link to="/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" className="text-primary underline hover:text-primary/80">hard water protection guide</Link> and learn about <Link to="/blog/glass-care-guide" className="text-primary underline hover:text-primary/80">proper glass maintenance</Link>.
             </p>
           </div>
         </div>

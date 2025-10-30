@@ -89,8 +89,11 @@ const FramelessShowerDoors = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground text-center">
+            <p className="text-lg text-muted-foreground text-center mb-4">
               Frameless shower doors offer a clean, modern look that makes bathrooms feel bigger and brighter. At Baja Glass, we measure, fabricate, and install frameless systems with thick tempered glass, premium hardware, and tight, clean finishes for a leak-resistant fit.
+            </p>
+            <p className="text-center text-muted-foreground">
+              Learn more about <Link to="/blog/frameless-vs-semi-frameless-shower-doors" className="text-primary underline hover:text-primary/80">comparing frameless and semi-frameless options</Link> or explore our <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80">complete pricing guide</Link>.
             </p>
           </div>
         </div>

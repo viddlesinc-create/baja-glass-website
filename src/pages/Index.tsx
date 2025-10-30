@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Link } from "react-router-dom";
-import { Star, Phone, Shield, Clock, Users, Award } from "lucide-react";
+import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import installationProcess from "@/assets/installation-process.jpg";
@@ -389,6 +389,44 @@ const Index = () => {
                 Read All 47+ Reviews →
               </Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-4">
+            Serving the Greater Las Vegas Valley
+          </h2>
+          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Professional shower door installation throughout Henderson, Summerlin, Paradise, and surrounding areas.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { city: "Henderson", url: "/shower-doors-henderson-nv" },
+              { city: "Summerlin", url: "/shower-doors-summerlin-nv" },
+              { city: "Paradise", url: "/shower-doors-paradise-nv" },
+              { city: "Spring Valley", url: "/shower-doors-spring-valley-nv" },
+              { city: "Enterprise", url: "/shower-doors-enterprise-nv" },
+              { city: "Green Valley", url: "/shower-doors-green-valley-nv" }
+            ].map((area) => (
+              <Card key={area.city} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    {area.city}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild variant="link" className="p-0">
+                    <Link to={area.url}>
+                      View {area.city} Services →
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
