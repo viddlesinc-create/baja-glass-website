@@ -32,7 +32,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Star, href: "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas", label: "Yelp" },
     { icon: Instagram, href: "https://www.instagram.com/baja_glass_lv/", label: "Instagram" },
-    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Facebook, href: "https://www.facebook.com/people/Baja-Glass-and-Mirror/", label: "Facebook" },
   ];
 
   return (
