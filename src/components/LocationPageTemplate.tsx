@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone, MapPin, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { trackPhoneClick, trackHendersonConversion } from "@/lib/analytics";
 
 interface LocationPageProps {
   city: string;
@@ -158,7 +159,16 @@ const LocationPageTemplate = ({
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Free Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
+                <a 
+                  href="tel:+17023830779" 
+                  className="flex items-center gap-2"
+                  onClick={() => {
+                    trackPhoneClick(city);
+                    if (city === "Henderson") {
+                      trackHendersonConversion('phone_click');
+                    }
+                  }}
+                >
                   <Phone className="h-5 w-5" />
                   Call: (702) 383-0779
                 </a>
@@ -427,7 +437,16 @@ const LocationPageTemplate = ({
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Free Quote</Link>
               </Button>
               <Button variant="glass" size="xl" asChild className="shadow-2xl">
-                <a href="tel:+17023830779" className="flex items-center gap-3">
+                <a 
+                  href="tel:+17023830779" 
+                  className="flex items-center gap-3"
+                  onClick={() => {
+                    trackPhoneClick(city);
+                    if (city === "Henderson") {
+                      trackHendersonConversion('phone_click');
+                    }
+                  }}
+                >
                   <Phone className="h-6 w-6" />
                   Call: (702) 383-0779
                 </a>

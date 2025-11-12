@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Clock, Mail, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
+import { trackFormSubmission, trackHendersonConversion, trackPhoneClick } from "@/lib/analytics";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -48,6 +49,18 @@ const Contact = () => {
 
       if (!response.ok) {
         throw new Error('Form submission failed');
+      }
+
+      // Track form submission
+      trackFormSubmission({
+        city: formData.city,
+        projectType: formData.projectType,
+        source: 'contact_page'
+      });
+
+      // Track Henderson-specific conversions
+      if (formData.city.toLowerCase().includes('henderson')) {
+        trackHendersonConversion('form_submit');
       }
 
       toast({
@@ -300,6 +313,7 @@ const Contact = () => {
                       <a
                         href="tel:+17023830779"
                         className="text-2xl font-bold text-accent hover:text-accent/80 transition-colors"
+                        onClick={() => trackPhoneClick('contact_page')}
                       >
                         (702) 383-0779
                       </a>
