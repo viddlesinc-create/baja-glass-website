@@ -46,7 +46,7 @@ const ShowerDoorsHenderson = () => {
           longitude: "-114.9817"
         }}
         heroImage="/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png"
-        description="Baja Glass is Henderson's trusted local expert for professional shower door and glass services. We specialize in designing and installing beautiful, high-quality custom glass shower doors in Henderson, from sleek frameless designs to elegant sliding systems. Whether you need a complete new installation or a simple glass shower door replacement in Henderson, our team ensures a flawless fit and finish for your bathroom."
+        description="Henderson's trusted expert for custom shower doors. Frameless, sliding, and semi-frameless installations. Professional service with perfect results."
         additionalContent={
           <>
             <h2 className="text-3xl font-bold mb-6">Our Henderson Shower Services</h2>
