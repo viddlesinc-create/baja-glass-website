@@ -344,8 +344,15 @@ const HardWaterSolutions = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Henderson draws from the same Lake Mead source as Las Vegas. Some neighborhoods have slightly different 
-                    treatment facilities, but hardness levels remain very high (270-290 ppm). All prevention strategies apply equally.
+                    <Link to="/shower-doors-henderson-nv" className="text-primary font-semibold hover:underline">
+                      Henderson
+                    </Link>{" "}
+                    draws from the same Lake Mead source as Las Vegas. Some neighborhoods have slightly different 
+                    treatment facilities, but hardness levels remain very high (270-290 ppm). Our{" "}
+                    <Link to="/shower-doors-las-vegas/repair" className="text-primary font-semibold hover:underline">
+                      shower seal Henderson
+                    </Link>{" "}
+                    replacement service helps address hard water damage quickly. All prevention strategies apply equally.
                   </p>
                 </CardContent>
               </Card>

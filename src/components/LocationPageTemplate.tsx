@@ -30,6 +30,11 @@ interface LocationPageProps {
     hardWater: string;
   };
   metaDescription: string;
+  additionalContent?: React.ReactNode;
+  citySpecificFaqs?: Array<{
+    question: string;
+    answer: string;
+  }>;
 }
 
 const LocationPageTemplate = ({
@@ -41,7 +46,9 @@ const LocationPageTemplate = ({
   testimonials,
   projectImages,
   localInfo,
-  metaDescription
+  metaDescription,
+  additionalContent,
+  citySpecificFaqs
 }: LocationPageProps) => {
   const services = [
     { name: "Frameless Shower Doors", href: "/shower-doors-las-vegas/frameless" },
@@ -135,8 +142,8 @@ const LocationPageTemplate = ({
               <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30 mb-4">
                 Serving {city}, Nevada
               </Badge>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Shower Doors in {city}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+              {city === "Henderson" ? "Henderson Shower Door & Glass Installation & Repair" : `Shower Doors in ${city}`}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
                   Professional Installation
                 </span>
@@ -160,6 +167,17 @@ const LocationPageTemplate = ({
           </div>
         </div>
       </section>
+
+      {/* Additional Content (City-Specific) */}
+      {additionalContent && (
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              {additionalContent}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Why Choose Us for City */}
       <section className="py-20 bg-secondary/50">
@@ -313,6 +331,58 @@ const LocationPageTemplate = ({
           </div>
         </div>
       </section>
+
+      {/* Nearby Service Areas */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">We Also Serve Nearby Areas</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { name: "Henderson", url: "/shower-doors-henderson-nv" },
+                { name: "Summerlin", url: "/shower-doors-summerlin-nv" },
+                { name: "Paradise", url: "/shower-doors-paradise-nv" },
+                { name: "Spring Valley", url: "/shower-doors-spring-valley-nv" },
+                { name: "Enterprise", url: "/shower-doors-enterprise-nv" },
+                { name: "Green Valley", url: "/shower-doors-green-valley-nv" }
+              ]
+              .filter(area => area.name !== city)
+              .map((area) => (
+                <Button 
+                  key={area.name}
+                  variant="outline" 
+                  asChild 
+                  className="justify-start"
+                >
+                  <Link to={area.url} onClick={() => window.scrollTo(0, 0)}>
+                    <MapPin className="h-4 w-4 mr-2" />
+                    {area.name}
+                  </Link>
+                </Button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* City-Specific FAQs */}
+      {citySpecificFaqs && citySpecificFaqs.length > 0 && (
+        <section className="py-20 bg-secondary/50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">{city} Shower Door FAQs</h2>
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {citySpecificFaqs.map((faq, index) => (
+                  <div key={index} className="bg-background p-6 rounded-lg">
+                    <h3 className="font-semibold mb-3">{faq.question}</h3>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Local Information */}
       <section className="py-20 bg-background">

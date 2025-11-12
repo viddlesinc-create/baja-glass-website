@@ -109,6 +109,58 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Popular Services */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Popular Services</h4>
+            <div className="space-y-2">
+              <div>
+                <Link
+                  to="/shower-doors-henderson-nv"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Henderson Shower Doors
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="/shower-doors-summerlin-nv"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Summerlin Shower Doors
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="/shower-doors-las-vegas/frameless"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Frameless Shower Doors
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="/shower-doors-las-vegas/custom-enclosures"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Custom Enclosures
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="/shower-doors-las-vegas/repair"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Shower Glass Repair
+                </Link>
+              </div>
+            </div>
+          </div>
+
           {/* Local Services */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Local Services</h4>

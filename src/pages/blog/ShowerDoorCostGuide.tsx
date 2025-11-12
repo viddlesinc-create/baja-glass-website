@@ -322,6 +322,38 @@ const ShowerDoorCostGuide = () => {
         </div>
       </section>
 
+      {/* Ready for Accurate Quote - Location & Service Links */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl font-bold mb-4">Ready for an Accurate Quote?</h3>
+            <p className="text-muted-foreground mb-6">
+              Pricing varies by location, glass type, and configuration. Get a precise estimate for your project in{" "}
+              <Link to="/shower-doors-henderson-nv" className="text-primary font-semibold hover:underline">
+                Henderson
+              </Link>
+              ,{" "}
+              <Link to="/shower-doors-summerlin-nv" className="text-primary font-semibold hover:underline">
+                Summerlin
+              </Link>
+              , or another Las Vegas Valley location.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild>
+                <Link to="/shower-doors-las-vegas/frameless" onClick={() => window.scrollTo(0, 0)}>
+                  Frameless Door Options
+                </Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/shower-doors-las-vegas/custom-enclosures" onClick={() => window.scrollTo(0, 0)}>
+                  Custom Enclosure Quote
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Articles */}
       <section className="py-12 bg-secondary/30">
         <div className="container mx-auto px-4">

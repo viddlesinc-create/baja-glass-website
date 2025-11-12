@@ -191,6 +191,30 @@ const FramelessShowerDoors = () => {
         </div>
       </section>
 
+      {/* Popular in Las Vegas Valley */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl font-bold mb-4">Popular in Las Vegas Valley</h3>
+            <p className="text-muted-foreground mb-6">
+              Frameless shower doors are especially popular in{" "}
+              <Link to="/shower-doors-henderson-nv" className="text-primary font-semibold hover:underline">
+                Henderson
+              </Link>
+              ,{" "}
+              <Link to="/shower-doors-summerlin-nv" className="text-primary font-semibold hover:underline">
+                Summerlin
+              </Link>
+              , and{" "}
+              <Link to="/shower-doors-paradise-nv" className="text-primary font-semibold hover:underline">
+                Paradise
+              </Link>
+              {" "}homes. Our team has completed hundreds of installations across these neighborhoods.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Related Services */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">

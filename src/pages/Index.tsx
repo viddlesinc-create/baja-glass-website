@@ -404,12 +404,36 @@ const Index = () => {
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { city: "Henderson", url: "/shower-doors-henderson-nv" },
-              { city: "Summerlin", url: "/shower-doors-summerlin-nv" },
-              { city: "Paradise", url: "/shower-doors-paradise-nv" },
-              { city: "Spring Valley", url: "/shower-doors-spring-valley-nv" },
-              { city: "Enterprise", url: "/shower-doors-enterprise-nv" },
-              { city: "Green Valley", url: "/shower-doors-green-valley-nv" }
+              {
+                city: "Henderson",
+                url: "/shower-doors-henderson-nv",
+                description: "Your local experts for Henderson shower door installation, frameless enclosures, and glass repair."
+              },
+              {
+                city: "Summerlin",
+                url: "/shower-doors-summerlin-nv",
+                description: "Premium shower door solutions for Summerlin's luxury homes and master bathrooms."
+              },
+              {
+                city: "Paradise",
+                url: "/shower-doors-paradise-nv",
+                description: "Professional shower glass installation and custom enclosures throughout Paradise, NV."
+              },
+              {
+                city: "Spring Valley",
+                url: "/shower-doors-spring-valley-nv",
+                description: "Complete shower door services from repair to custom installations in Spring Valley."
+              },
+              {
+                city: "Enterprise",
+                url: "/shower-doors-enterprise-nv",
+                description: "Frameless, hinged, and sliding shower doors expertly installed in Enterprise."
+              },
+              {
+                city: "Green Valley",
+                url: "/shower-doors-green-valley-nv",
+                description: "Quality shower enclosures and glass solutions for Green Valley residences."
+              }
             ].map((area) => (
               <Card key={area.city} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
@@ -417,10 +441,13 @@ const Index = () => {
                     <MapPin className="h-5 w-5 text-primary" />
                     {area.city}
                   </CardTitle>
+                  <CardDescription className="mt-2">
+                    {area.description}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Button asChild variant="link" className="p-0">
-                    <Link to={area.url}>
+                    <Link to={area.url} onClick={() => window.scrollTo(0, 0)}>
                       View {area.city} Services →
                     </Link>
                   </Button>

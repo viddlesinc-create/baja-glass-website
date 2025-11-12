@@ -49,6 +49,62 @@ const CustomEnclosures = () => {
         <meta name="twitter:title" content="Custom Shower Enclosures Enterprise & Spring Valley | Neo-Angle Designs | Baja Glass" />
         <meta name="twitter:description" content="Custom shower enclosures in Enterprise, Spring Valley & Las Vegas Valley. Inline, corner, neo-angle, alcove, and steam designs made to precise measurements." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png" />
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Custom Shower Enclosure Installation",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Baja Glass",
+              "areaServed": {
+                "@type": "State",
+                "name": "Nevada"
+              }
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Las Vegas",
+                "containedIn": "Clark County, NV"
+              },
+              {
+                "@type": "City",
+                "name": "Henderson",
+                "containedIn": "Clark County, NV"
+              }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Custom Shower Enclosures",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Neo-Angle Shower Enclosures"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Steam Shower Enclosures"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Inline Shower Enclosures"
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
@@ -87,6 +143,17 @@ const CustomEnclosures = () => {
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground text-center">
               From complex angles to steam‑ready designs, custom enclosures demand precision. We measure, fabricate, and install to your layout for a polished fit and clean finishes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Clark County Geographic Qualifier */}
+      <section className="py-16 bg-background border-t">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center leading-relaxed">
+              Serving the entire Las Vegas valley, Baja Glass is the premier specialist for <strong className="text-foreground">custom shower enclosures in Clark County, NV</strong>. We take pride in delivering bespoke solutions that perfectly match your vision and space. Our process is designed to provide homeowners throughout the region with the highest quality <strong className="text-foreground">custom glass shower enclosures in Clark County, NV</strong>, from initial design consultation to professional installation and final walkthrough.
             </p>
           </div>
         </div>
