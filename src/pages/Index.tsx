@@ -60,8 +60,8 @@ const Index = () => {
   }];
   return <div className="min-h-screen">
       <Helmet>
-        <title>Baja Glass | Las Vegas Glass Company | Shower Doors, Mirrors & Glass Installation</title>
-        <meta name="description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential glass services. Family-owned with 20+ years experience. Licensed, insured with warranty-backed installation throughout the Las Vegas Valley." />
+        <title>Baja Glass | Las Vegas Shower Doors & Glass Installation</title>
+        <meta name="description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential services. Licensed, insured, 20+ years experience." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/" />
         

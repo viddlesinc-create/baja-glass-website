@@ -31,8 +31,8 @@ const HingedShowerDoors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Hinged & Pivot Shower Doors Summerlin | Professional Installation | Baja Glass</title>
-        <meta name="description" content="Expert hinged and pivot shower door installation in Summerlin & Las Vegas Valley. Classic swing doors with precise alignment, reliable sealing, and quality hardware. Frameless and semi-frameless options available with professional installation." />
+        <title>Hinged Shower Doors Las Vegas | Baja Glass</title>
+        <meta name="description" content="Expert hinged & pivot shower door installation in Las Vegas. Classic swing doors with precise alignment & quality hardware. Frameless & semi-frameless options." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/hinged" />
         

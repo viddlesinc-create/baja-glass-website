@@ -73,7 +73,7 @@ const LocationPageTemplate = ({
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Shower Doors {city} NV | Frameless & Custom | Baja Glass</title>
+        <title>Shower Doors {city} NV | Baja Glass</title>
         <meta name="description" content={metaDescription} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href={`https://bajaglass.com/shower-doors-${city.toLowerCase().replace(/\s/g, '-')}-nv`} />
@@ -144,7 +144,7 @@ const LocationPageTemplate = ({
                 Serving {city}, Nevada
               </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-              {city === "Henderson" ? "Henderson Shower Door & Glass Installation & Repair" : `Shower Doors in ${city}`}
+              Shower Doors {city} NV
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
                   Professional Installation
                 </span>

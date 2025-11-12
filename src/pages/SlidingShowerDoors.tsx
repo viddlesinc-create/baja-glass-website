@@ -31,8 +31,8 @@ const SlidingShowerDoors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Sliding Shower Doors Henderson | Space-Saving Glass Doors | Baja Glass</title>
-        <meta name="description" content="Professional sliding shower door installation in Henderson & Las Vegas Valley. Smooth-glide systems with premium rollers that save space and elevate your bathroom. Single and bypass configurations with soft-close options available." />
+        <title>Sliding Shower Doors Las Vegas | Baja Glass</title>
+        <meta name="description" content="Expert sliding shower door installation in Las Vegas. Smooth-glide systems with premium rollers. Single & bypass options with soft-close. Licensed, insured." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/sliding" />
         
