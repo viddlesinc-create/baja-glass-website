@@ -15,8 +15,16 @@ ${routes.map(route => {
   if (route === '/') {
     priority = '1.0';
     changefreq = 'daily';
+  } else if (route === '/shower-doors-henderson-nv') {
+    // Henderson is HIGH PRIORITY SEO landing page
+    priority = '0.95';
+    changefreq = 'weekly';
   } else if (route === '/shower-doors-las-vegas') {
     priority = '0.9';
+    changefreq = 'weekly';
+  } else if (route.startsWith('/shower-doors-') && route.endsWith('-nv')) {
+    // All location pages are strategic SEO pages
+    priority = '0.85';
     changefreq = 'weekly';
   } else if (route.startsWith('/shower-doors-las-vegas/')) {
     priority = '0.8';
@@ -35,6 +43,9 @@ ${routes.map(route => {
     changefreq = 'monthly';
   } else if (['/contact', '/about'].includes(route)) {
     priority = '0.7';
+    changefreq = 'monthly';
+  } else if (route === '/reviews') {
+    priority = '0.75';
     changefreq = 'monthly';
   } else if (['/areas-served', '/resources', '/sitemap'].includes(route)) {
     priority = '0.5';
