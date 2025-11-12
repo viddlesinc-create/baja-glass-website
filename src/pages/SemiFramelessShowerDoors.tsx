@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -239,6 +240,54 @@ const SemiFramelessShowerDoors = () => {
               </Link>
               , and throughout North Las Vegas. Quality installations for all budgets.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Explore More Door Options</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">Frameless Doors</CardTitle>
+                <CardDescription>Minimalist elegance with thick tempered glass</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/shower-doors-las-vegas/frameless" onClick={() => window.scrollTo(0, 0)}>
+                    View Frameless
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">Hinged Doors</CardTitle>
+                <CardDescription>Classic swing doors with precise alignment</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/shower-doors-las-vegas/hinged" onClick={() => window.scrollTo(0, 0)}>
+                    View Hinged
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">Steam Enclosures</CardTitle>
+                <CardDescription>Sealed systems for spa-like experience</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/shower-doors-las-vegas/steam-enclosures" onClick={() => window.scrollTo(0, 0)}>
+                    View Steam
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

@@ -26,7 +26,9 @@ const Footer = () => {
     { name: "Glass Care Guide", href: "/blog/glass-care-guide" },
     { name: "Choosing the Right Door", href: "/blog/choosing-right-door" },
     { name: "Installation Process", href: "/blog/installation-process" },
-    { name: "Warranty Information", href: "/blog/warranty-information" },
+    { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
+    { name: "Frameless vs Semi-Frameless", href: "/blog/frameless-vs-semi-frameless-shower-doors" },
+    { name: "Hard Water Solutions", href: "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" },
   ];
 
   const socialLinks = [
@@ -156,6 +158,42 @@ const Footer = () => {
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   Shower Glass Repair
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="/shower-doors-las-vegas/sliding"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Sliding Shower Doors
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="/shower-doors-las-vegas/hinged"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Hinged Shower Doors
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="/shower-doors-las-vegas/semi-frameless-framed"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Semi-Frameless Doors
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="/shower-doors-las-vegas/steam-enclosures"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Steam Shower Enclosures
                 </Link>
               </div>
             </div>

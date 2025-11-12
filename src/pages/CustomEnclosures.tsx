@@ -307,6 +307,19 @@ const CustomEnclosures = () => {
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
+                <CardTitle className="text-lg">Semi-Frameless Doors</CardTitle>
+                <CardDescription>Balanced style with strategic support</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/shower-doors-las-vegas/semi-frameless-framed" onClick={() => window.scrollTo(0, 0)}>
+                    Learn More
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
                 <CardTitle className="text-lg">Hinged Doors</CardTitle>
                 <CardDescription>Classic swing doors with precise alignment</CardDescription>
               </CardHeader>
@@ -321,11 +334,37 @@ const CustomEnclosures = () => {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-lg">Steam Enclosures</CardTitle>
-                <CardDescription>Sealed systems for luxury spa experience</CardDescription>
+                <CardDescription>Sealed systems for spa-like experience</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" asChild className="w-full">
                   <Link to="/shower-doors-las-vegas/steam-enclosures" onClick={() => window.scrollTo(0, 0)}>
+                    Learn More
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">Sliding Doors</CardTitle>
+                <CardDescription>Space-saving bypass systems</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/shower-doors-las-vegas/sliding" onClick={() => window.scrollTo(0, 0)}>
+                    Learn More
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">Shower Glass Repair</CardTitle>
+                <CardDescription>Professional repair and replacement</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/shower-doors-las-vegas/repair" onClick={() => window.scrollTo(0, 0)}>
                     Learn More
                   </Link>
                 </Button>
