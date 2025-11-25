@@ -179,8 +179,8 @@ const GlassCompanyLasVegas = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Glass Company Las Vegas | Shower Doors, Mirrors & Commercial Glass | Baja Glass</title>
-        <meta name="description" content="Professional glass company in Las Vegas specializing in custom shower doors, frameless enclosures, mirrors, office partitions & residential glass repair. Licensed, insured with warranty-backed installation across the Las Vegas Valley." />
+        <title>Glass Company Las Vegas | Shower Doors & Glass | Baja</title>
+        <meta name="description" content="Pro glass company in Las Vegas for custom shower doors, frameless enclosures, office partitions & glass repair. Licensed, insured with warranty." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas" />
         

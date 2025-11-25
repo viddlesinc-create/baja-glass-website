@@ -49,6 +49,31 @@ const HingedShowerDoors = () => {
         <meta name="twitter:title" content="Hinged & Pivot Shower Doors Summerlin | Professional Installation | Baja Glass" />
         <meta name="twitter:description" content="Expert hinged and pivot shower door installation in Summerlin & Las Vegas Valley. Classic swing doors with precise alignment." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png" />
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Hinged Shower Door Installation",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Baja Glass"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Las Vegas",
+                "containedIn": "Clark County, NV"
+              },
+              {
+                "@type": "City",
+                "name": "Henderson",
+                "containedIn": "Clark County, NV"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">
@@ -63,7 +88,7 @@ const HingedShowerDoors = () => {
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Hinged & Pivot Shower Doors in Summerlin</h1>
+            <h1 className="text-5xl font-bold mb-6">Hinged Shower Doors Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">Classic swing doors with precise alignment and crisp closure.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>

@@ -37,8 +37,8 @@ const ShowerGlassRepair = () => {
   }];
   return <div className="min-h-screen">
       <Helmet>
-        <title>Shower Glass Repair & Replacement Las Vegas Valley | Emergency Service | Baja Glass</title>
-        <meta name="description" content="Emergency shower glass repair throughout Las Vegas Valley. Broken panels, sliding door repair, off-track rollers, hardware replacement & leak fixes. Fast, safe, reliable service with quality components and professional sealing." />
+        <title>Shower Glass Repair Las Vegas | Emergency Service | Baja</title>
+        <meta name="description" content="Emergency shower glass repair in Las Vegas. Broken panels, sliding door repair, hardware replacement & leak fixes. Fast, reliable service." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/repair" />
         
@@ -55,6 +55,23 @@ const ShowerGlassRepair = () => {
         <meta name="twitter:title" content="Shower Glass Repair & Replacement Las Vegas Valley | Emergency Service | Baja Glass" />
         <meta name="twitter:description" content="Emergency shower glass repair throughout Las Vegas Valley. Broken panels, sliding door repair, hardware replacement & leak fixes." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Shower Glass Repair",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Baja Glass"
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "Nevada"
+            }
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">

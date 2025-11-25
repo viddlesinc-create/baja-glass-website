@@ -80,6 +80,31 @@ const SteamShowerEnclosures = () => {
         <meta name="twitter:title" content="Steam Shower Enclosures Boulder City & Paradise | Sealed Glass Systems | Baja Glass" />
         <meta name="twitter:description" content="Professional steam shower enclosures in Boulder City, Paradise & Las Vegas Valley. Sealed systems with operable transoms for spa-like experience." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Steam Shower Enclosure Installation",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Baja Glass"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Las Vegas",
+                "containedIn": "Clark County, NV"
+              },
+              {
+                "@type": "City",
+                "name": "Boulder City",
+                "containedIn": "Clark County, NV"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
