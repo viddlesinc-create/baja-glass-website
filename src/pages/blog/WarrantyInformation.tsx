@@ -31,6 +31,33 @@ const WarrantyInformation = () => {
         <meta name="twitter:title" content="Shower Door Warranty Information - Coverage & Terms | Baja Glass Las Vegas" />
         <meta name="twitter:description" content="Complete guide to shower door warranty coverage, terms, maintenance requirements, and service requests. Protect your glass investment." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        
+        {/* Article Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Understanding Your Shower Door Warranty Coverage",
+            "author": {
+              "@type": "Organization",
+              "name": "Baja Glass"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Baja Glass",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png"
+              }
+            },
+            "datePublished": "2025-01-15",
+            "dateModified": "2025-01-15",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://bajaglass.com/blog/warranty-information"
+            }
+          })}
+        </script>
       </Helmet>
       
       <article className="min-h-screen">

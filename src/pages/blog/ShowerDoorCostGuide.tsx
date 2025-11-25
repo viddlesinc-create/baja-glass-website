@@ -79,7 +79,11 @@ const ShowerDoorCostGuide = () => {
               }
             },
             "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "dateModified": "2025-01-15",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://bajaglass.com/blog/shower-door-installation-cost-las-vegas"
+            }
           })}
         </script>
         

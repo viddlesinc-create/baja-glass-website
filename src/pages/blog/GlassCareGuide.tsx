@@ -31,6 +31,33 @@ const GlassCareGuide = () => {
         <meta name="twitter:title" content="Glass Care Guide - How to Clean Shower Doors | Baja Glass Las Vegas" />
         <meta name="twitter:description" content="Learn professional shower glass cleaning tips, maintenance techniques, and water spot prevention methods." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
+        
+        {/* Article Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Complete Glass Care Guide for Shower Doors",
+            "author": {
+              "@type": "Organization",
+              "name": "Baja Glass"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Baja Glass",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png"
+              }
+            },
+            "datePublished": "2025-01-15",
+            "dateModified": "2025-01-15",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://bajaglass.com/blog/glass-care-guide"
+            }
+          })}
+        </script>
       </Helmet>
       
       <article className="min-h-screen">

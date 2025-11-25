@@ -49,6 +49,31 @@ const SlidingShowerDoors = () => {
         <meta name="twitter:title" content="Sliding Shower Doors Henderson | Space-Saving Glass Doors | Baja Glass" />
         <meta name="twitter:description" content="Professional sliding shower door installation in Henderson & Las Vegas Valley. Smooth-glide systems that save space and elevate your bathroom." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png" />
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Sliding Shower Door Installation",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Baja Glass"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Las Vegas",
+                "containedIn": "Clark County, NV"
+              },
+              {
+                "@type": "City",
+                "name": "Henderson",
+                "containedIn": "Clark County, NV"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
@@ -59,7 +84,7 @@ const SlidingShowerDoors = () => {
         ></div>
         <div className="relative container mx-auto px-4 py-20 z-20 text-white">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Sliding Shower Doors in Henderson</h1>
+            <h1 className="text-5xl font-bold mb-6">Sliding Shower Doors Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">Smooth‑glide systems that save space and elevate your bath.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>

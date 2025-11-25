@@ -112,6 +112,22 @@ const Resources = () => {
         <meta name="twitter:title" content="Resources & Guides | Shower Door Care & Installation Info | Baja Glass Las Vegas" />
         <meta name="twitter:description" content="Comprehensive resources for shower door care, installation process, warranty information, and choosing the right door. Expert guides from Baja Glass." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png" />
+        
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-charcoal to-primary text-white overflow-hidden">

@@ -54,6 +54,31 @@ const FramelessShowerDoors = () => {
         <meta name="twitter:title" content="Frameless Shower Doors Henderson & Summerlin | Modern Glass | Baja Glass" />
         <meta name="twitter:description" content="Premium frameless shower doors in Henderson, Summerlin & Las Vegas Valley. Minimal metal, maximum openness with custom tempered glass." />
         <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" />
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Frameless Shower Door Installation",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Baja Glass"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Las Vegas",
+                "containedIn": "Clark County, NV"
+              },
+              {
+                "@type": "City",
+                "name": "Henderson",
+                "containedIn": "Clark County, NV"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-charcoal to-primary text-white">
@@ -68,7 +93,7 @@ const FramelessShowerDoors = () => {
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Frameless Shower Doors in Henderson & Summerlin</h1>
+            <h1 className="text-5xl font-bold mb-6">Frameless Shower Doors Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">Minimal metal, maximum openness—custom glass measured precisely and installed by experts.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>

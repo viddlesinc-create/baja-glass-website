@@ -97,7 +97,12 @@ const FramelessVsSemiFrameless = () => {
                 "url": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png"
               }
             },
-            "datePublished": "2025-01-15"
+            "datePublished": "2025-01-15",
+            "dateModified": "2025-01-15",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://bajaglass.com/blog/frameless-vs-semi-frameless-shower-doors"
+            }
           })}
         </script>
         
