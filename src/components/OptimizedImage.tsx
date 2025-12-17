@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface OptimizedImageProps {
   src: string;
   alt: string;
@@ -7,6 +9,7 @@ interface OptimizedImageProps {
   sizes?: string;
   priority?: boolean;
 }
+
 
 /**
  * Check if we're running on Netlify (production)
@@ -53,9 +56,10 @@ const OptimizedImage = ({
 }: OptimizedImageProps) => {
   const widths = [400, 800, 1200, 1920];
   const useNetlify = isNetlify();
-  
-  // In development, just use the original image
-  if (!useNetlify) {
+  const [fallbackToOriginal, setFallbackToOriginal] = useState(false);
+
+  // In development (or if the Image CDN endpoint fails), just use the original image
+  if (!useNetlify || fallbackToOriginal) {
     return (
       <img
         src={src}
@@ -69,12 +73,12 @@ const OptimizedImage = ({
       />
     );
   }
-  
+
   // Generate srcset for WebP format (Netlify production)
   const webpSrcSet = widths
     .map(w => `${getNetlifyImageUrl(src, w, 'webp')} ${w}w`)
     .join(', ');
-  
+
   // Generate srcset for original format (fallback)
   const fallbackSrcSet = widths
     .map(w => `${getNetlifyImageUrl(src, w)} ${w}w`)
@@ -83,18 +87,11 @@ const OptimizedImage = ({
   return (
     <picture>
       {/* WebP format - primary for modern browsers */}
-      <source
-        type="image/webp"
-        srcSet={webpSrcSet}
-        sizes={sizes}
-      />
+      <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
       {/* Original format fallback */}
-      <source
-        srcSet={fallbackSrcSet}
-        sizes={sizes}
-      />
+      <source srcSet={fallbackSrcSet} sizes={sizes} />
       <img
-        src={src}
+        src={getNetlifyImageUrl(src, 1200)}
         alt={alt}
         className={className}
         width={width}
@@ -102,9 +99,11 @@ const OptimizedImage = ({
         fetchPriority={priority ? 'high' : 'auto'}
         loading={priority ? 'eager' : 'lazy'}
         decoding={priority ? 'sync' : 'async'}
+        onError={() => setFallbackToOriginal(true)}
       />
     </picture>
   );
 };
+
 
 export default OptimizedImage;
