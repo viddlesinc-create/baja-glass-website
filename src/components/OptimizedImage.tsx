@@ -9,11 +9,21 @@ interface OptimizedImageProps {
 }
 
 /**
+ * Check if we're running on Netlify (production)
+ */
+const isNetlify = () => {
+  if (typeof window === 'undefined') return false;
+  const hostname = window.location.hostname;
+  return hostname.includes('netlify.app') || 
+         hostname.includes('bajaglass.com') ||
+         hostname.includes('shopglass.com');
+};
+
+/**
  * Generates Netlify Image CDN URL for optimized image delivery
  * Automatically serves WebP to supported browsers
  */
 const getNetlifyImageUrl = (src: string, width: number, format?: 'webp' | 'avif') => {
-  // For local images, use Netlify's Image CDN
   const params = new URLSearchParams({
     url: src,
     w: width.toString(),
@@ -29,7 +39,8 @@ const getNetlifyImageUrl = (src: string, width: number, format?: 'webp' | 'avif'
 
 /**
  * OptimizedImage component with responsive srcset and WebP support
- * Uses Netlify Image CDN for automatic optimization
+ * Uses Netlify Image CDN for automatic optimization in production
+ * Falls back to original image in development
  */
 const OptimizedImage = ({
   src,
@@ -41,8 +52,25 @@ const OptimizedImage = ({
   priority = false,
 }: OptimizedImageProps) => {
   const widths = [400, 800, 1200, 1920];
+  const useNetlify = isNetlify();
   
-  // Generate srcset for WebP format
+  // In development, just use the original image
+  if (!useNetlify) {
+    return (
+      <img
+        src={src}
+        alt={alt}
+        className={className}
+        width={width}
+        height={height}
+        fetchPriority={priority ? 'high' : 'auto'}
+        loading={priority ? 'eager' : 'lazy'}
+        decoding={priority ? 'sync' : 'async'}
+      />
+    );
+  }
+  
+  // Generate srcset for WebP format (Netlify production)
   const webpSrcSet = widths
     .map(w => `${getNetlifyImageUrl(src, w, 'webp')} ${w}w`)
     .join(', ');
