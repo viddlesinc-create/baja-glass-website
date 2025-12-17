@@ -6,6 +6,13 @@
   NODE_VERSION = "18"
 
 [[redirects]]
+  # Allow Netlify internal endpoints (e.g. Image CDN) to bypass SPA/404 rewrites
+  from = "/.netlify/*"
+  to = "/.netlify/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
@@ -15,7 +22,7 @@
   to = "/index.html"
   status = 200
   force = false
-  
+
 [[headers]]
   for = "/*"
   [headers.values]
