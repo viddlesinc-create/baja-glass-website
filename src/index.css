@@ -65,7 +65,7 @@ All colors MUST be HSL.
     --secondary-foreground: 0 0% 5%;
 
     --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted-foreground: 0 0% 35%; /* Improved contrast ratio for WCAG AA (was 45%) */
 
     --accent: 0 84% 45%; /* Red accent from logo */
     --accent-foreground: 0 0% 98%;
@@ -133,7 +133,7 @@ All colors MUST be HSL.
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted-foreground: 215 20.2% 70.1%; /* Improved contrast ratio for WCAG AA (was 65.1%) */
 
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
