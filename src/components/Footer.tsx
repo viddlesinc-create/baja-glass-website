@@ -73,7 +73,7 @@ const Footer = () => {
           })}
         </script>
       </Helmet>
-      <footer className="bg-primary text-primary-foreground">
+      <footer className="bg-primary text-primary-foreground" role="contentinfo">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -83,6 +83,10 @@ const Footer = () => {
                 src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
                 alt="Baja Glass — Shower Doors & Glass in Las Vegas"
                 className="h-14 w-auto"
+                width="140"
+                height="56"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="space-y-2 text-primary-foreground/80">

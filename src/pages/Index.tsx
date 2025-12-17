@@ -58,7 +58,7 @@ const Index = () => {
     question: "What areas do you serve?",
     answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City—and nearby communities."
   }];
-  return <div className="min-h-screen">
+  return <article className="min-h-screen">
       <Helmet>
         <title>Baja Glass | Las Vegas Shower Doors & Glass Installation</title>
         <meta name="description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential services. Licensed, insured, 20+ years experience." />
@@ -198,9 +198,18 @@ const Index = () => {
           <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_30%,rgba(255,255,255,0.05)_50%,transparent_70%)]"></div>
         </div>
         
-        {/* Hero Image */}
+        {/* Hero Image - LCP Optimized */}
         <div className="absolute inset-0">
-          <img src="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png" alt="Modern frameless sliding shower doors with black hardware and pebble tile flooring by Baja Glass Las Vegas" className="w-full h-full object-cover opacity-75" />
+          <img 
+            src="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png" 
+            alt="Modern frameless sliding shower doors with black hardware and pebble tile flooring by Baja Glass Las Vegas" 
+            className="w-full h-full object-cover opacity-75"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
 
@@ -241,8 +250,8 @@ const Index = () => {
             animationDelay: '0.5s'
           }}>
               <div className="flex items-center gap-2 mb-4">
-                <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />)}
+                <div className="flex items-center gap-1" aria-label="5 out of 5 stars rating">
+                  {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />)}
                 </div>
                 <span className="text-white/90 ml-2 text-lg font-medium">Trusted by Las Vegas homeowners</span>
               </div>
@@ -258,8 +267,8 @@ const Index = () => {
               <Button variant="glass" size="lg" asChild className="animate-scale-in shadow-xl" style={{
               animationDelay: '0.1s'
             }}>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
+                <a href="tel:+17023830779" className="flex items-center gap-2" aria-label="Call Baja Glass at (702) 383-0779">
+                  <Phone className="h-5 w-5" aria-hidden="true" />
                   Call Now: (702) 383-0779
                 </a>
               </Button>
@@ -603,6 +612,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>;
+    </article>;
 };
 export default Index;

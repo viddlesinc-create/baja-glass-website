@@ -50,7 +50,7 @@ const Header = () => {
       <a href="#main-content" className="skip-to-main">
         Skip to main content
       </a>
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border" role="banner">
       <div className="container mx-auto px-4">
         {/* Top utility bar with social icons - hidden on mobile */}
         <div className="hidden md:flex items-center justify-end py-2 border-b border-border/50">
@@ -76,11 +76,15 @@ const Header = () => {
               src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
               alt="Baja Glass — Shower Doors & Glass in Las Vegas"
               className="h-16 w-auto"
+              width="160"
+              height="64"
+              loading="eager"
+              decoding="async"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8" role="navigation" aria-label="Main navigation">
             {/* Shower Doors Dropdown */}
             <DropdownMenu>
               <div className="flex items-center">
@@ -92,8 +96,11 @@ const Header = () => {
                   Shower Doors
                 </a>
                 <DropdownMenuTrigger asChild>
-                  <button className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium ml-1">
-                    <ChevronDown className="h-4 w-4" />
+                  <button 
+                    className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium ml-1"
+                    aria-label="Expand shower doors menu"
+                  >
+                    <ChevronDown className="h-4 w-4" aria-hidden="true" />
                   </button>
                 </DropdownMenuTrigger>
               </div>
@@ -119,9 +126,10 @@ const Header = () => {
                   to="/glass-company-las-vegas"
                   className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium"
                   onClick={() => window.scrollTo(0, 0)}
+                  aria-label="Glass Company services menu"
                 >
                   Glass Company
-                  <ChevronDown className="h-4 w-4" />
+                  <ChevronDown className="h-4 w-4" aria-hidden="true" />
                 </Link>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-56">
@@ -183,6 +191,10 @@ const Header = () => {
                       src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
                       alt="Baja Glass — Shower Doors & Glass in Las Vegas"
                       className="h-10 w-auto"
+                      width="100"
+                      height="40"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </Link>
                   
