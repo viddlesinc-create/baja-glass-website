@@ -137,10 +137,20 @@ const Gallery = () => {
         </script>
       </Helmet>
       {/* Hero Section */}
-      <section className="py-20 relative bg-cover bg-center text-white" style={{ backgroundImage: "url('/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png')" }}>
+      <section className="py-20 relative text-white overflow-hidden" aria-labelledby="gallery-hero-heading">
+        <img 
+          src="/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png"
+          alt="Professional shower door installation gallery showcase"
+          className="absolute inset-0 w-full h-full object-cover"
+          width="1920"
+          height="600"
+          fetchPriority="high"
+          loading="eager"
+          decoding="sync"
+        />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl font-bold mb-6">Our Recent Shower Door Projects</h1>
+          <h1 id="gallery-hero-heading" className="text-5xl font-bold mb-6">Our Recent Shower Door Projects</h1>
           <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
             Explore our portfolio of custom shower doors and enclosures installed throughout the Las Vegas Valley.
           </p>
@@ -169,14 +179,20 @@ const Gallery = () => {
                     src={project.beforeImage} 
                     alt={`Before ${project.title}`}
                     className="absolute inset-0 w-full h-full object-cover"
+                    width="600"
+                    height="450"
                     loading="lazy"
+                    decoding="async"
                   />
                   {/* After Image with clip-path based on slider value */}
                   <img 
                     src={project.afterImage} 
                     alt={`After ${project.title}`}
                     className="absolute inset-0 w-full h-full object-cover"
+                    width="600"
+                    height="450"
                     loading="lazy"
+                    decoding="async"
                     style={{ 
                       clipPath: `inset(0 ${100 - sliderValues[index]}% 0 0)` 
                     }}
@@ -244,7 +260,10 @@ const Gallery = () => {
                 src="/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png" 
                 alt="Frameless glass shower doors with chrome hardware"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -255,7 +274,10 @@ const Gallery = () => {
                 src="/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png" 
                 alt="Elegant bathroom with custom glass shower enclosure"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
