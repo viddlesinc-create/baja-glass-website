@@ -58,7 +58,7 @@ const Index = () => {
     question: "What areas do you serve?",
     answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City—and nearby communities."
   }];
-  return <article className="min-h-screen">
+  return <div className="min-h-screen">
       <Helmet>
         <title>Baja Glass | Las Vegas Shower Doors & Glass Installation</title>
         <meta name="description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential services. Licensed, insured, 20+ years experience." />
@@ -163,6 +163,20 @@ const Index = () => {
             "availableLanguage": "English"
           },
           "sameAs": ["https://bajaglass.com"]
+        })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.answer
+            }
+          }))
         })}
         </script>
         <script type="application/ld+json">
@@ -344,9 +358,9 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">What Our Customers Say</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-accent to-charcoal mx-auto rounded-full mb-6"></div>
-            <div className="flex items-center justify-center gap-2 mb-2">
+            <div className="flex items-center justify-center gap-2 mb-2" role="img" aria-label="4.9 out of 5 stars rating">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
+                <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" aria-hidden="true" />
               ))}
               <span className="ml-2 text-2xl font-bold">4.9</span>
             </div>
@@ -376,9 +390,9 @@ const Index = () => {
             ].map((review, index) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 bg-background/80 backdrop-blur-sm">
                 <CardHeader>
-                  <div className="flex items-center gap-1 mb-2">
+                  <div className="flex items-center gap-1 mb-2" role="img" aria-label="5 out of 5 stars">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
                     ))}
                   </div>
                   <CardTitle className="text-lg">{review.name}</CardTitle>
@@ -598,8 +612,8 @@ const Index = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="glass" size="xl" asChild className="shadow-2xl">
-              <a href="tel:+17023830779" className="flex items-center gap-3">
-                <Phone className="h-6 w-6" />
+              <a href="tel:+17023830779" className="flex items-center gap-3" aria-label="Call Baja Glass at (702) 383-0779">
+                <Phone className="h-6 w-6" aria-hidden="true" />
                 Call Now: (702) 383-0779
               </a>
             </Button>
@@ -612,6 +626,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </article>;
+    </div>;
 };
 export default Index;

@@ -177,6 +177,11 @@ const Contact = () => {
             src="/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png" 
             alt="Custom frameless shower enclosure with sliding doors and stone tile walls - professional installation by Baja Glass Las Vegas"
             className="w-full h-full object-cover opacity-30"
+            width="1920"
+            height="600"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/50 to-primary/50"></div>
         </div>
@@ -187,12 +192,12 @@ const Contact = () => {
             Ready to transform your shower? Get expert advice, clear timelines, and a flawless installation.
           </p>
           <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="flex items-center gap-1">
-              <Star className="h-4 w-4 fill-current" />
-              <Star className="h-4 w-4 fill-current" />
-              <Star className="h-4 w-4 fill-current" />
-              <Star className="h-4 w-4 fill-current" />
-              <Star className="h-4 w-4 fill-current" />
+            <div className="flex items-center gap-1" role="img" aria-label="5 out of 5 stars rating">
+              <Star className="h-4 w-4 fill-current" aria-hidden="true" />
+              <Star className="h-4 w-4 fill-current" aria-hidden="true" />
+              <Star className="h-4 w-4 fill-current" aria-hidden="true" />
+              <Star className="h-4 w-4 fill-current" aria-hidden="true" />
+              <Star className="h-4 w-4 fill-current" aria-hidden="true" />
               <span className="ml-2">Trusted by Las Vegas homeowners</span>
             </div>
           </div>
