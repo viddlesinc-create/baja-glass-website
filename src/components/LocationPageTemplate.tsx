@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Star, Phone, MapPin, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { trackPhoneClick, trackHendersonConversion } from "@/lib/analytics";
+import OptimizedImage from "@/components/OptimizedImage";
 
 interface LocationPageProps {
   city: string;
@@ -129,15 +130,14 @@ const LocationPageTemplate = ({
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
         <div className="absolute inset-0">
-          <img 
-            src={heroImage} 
+          <OptimizedImage
+            src={heroImage}
             alt={`Professional shower door installation in ${city}, Nevada by Baja Glass`}
             className="w-full h-full object-cover opacity-75"
-            width="1920"
-            height="1080"
-            fetchPriority="high"
-            loading="eager"
-            decoding="sync"
+            width={1920}
+            height={1080}
+            sizes="100vw"
+            priority={true}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
