@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Link } from "react-router-dom";
 import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from "@/components/OptimizedImage";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import installationProcess from "@/assets/installation-process.jpg";
 import slidingDoors from "@/assets/sliding-doors.jpg";
@@ -212,19 +213,16 @@ const Index = () => {
           <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_30%,rgba(255,255,255,0.05)_50%,transparent_70%)]"></div>
         </div>
         
-        {/* Hero Image - LCP Optimized with srcset */}
+        {/* Hero Image - LCP Optimized with WebP + responsive srcset */}
         <div className="absolute inset-0">
-          <img 
-            src="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png" 
-            srcSet="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png 1920w"
-            sizes="100vw"
-            alt="Modern frameless sliding shower doors with black hardware and pebble tile flooring by Baja Glass Las Vegas" 
+          <OptimizedImage
+            src="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png"
+            alt="Modern frameless sliding shower doors with black hardware and pebble tile flooring by Baja Glass Las Vegas"
             className="w-full h-full object-cover opacity-75"
-            width="1920"
-            height="1080"
-            fetchPriority="high"
-            loading="eager"
-            decoding="sync"
+            width={1920}
+            height={1080}
+            sizes="100vw"
+            priority={true}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
