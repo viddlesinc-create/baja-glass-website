@@ -121,17 +121,23 @@ const Header = () => {
 
             {/* Glass Company Dropdown */}
             <DropdownMenu>
-              <DropdownMenuTrigger asChild>
+              <div className="flex items-center">
                 <Link 
                   to="/glass-company-las-vegas"
-                  className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium"
+                  className="text-foreground hover:text-accent transition-colors font-medium"
                   onClick={() => window.scrollTo(0, 0)}
-                  aria-label="Glass Company services menu"
                 >
                   Glass Company
-                  <ChevronDown className="h-4 w-4" aria-hidden="true" />
                 </Link>
-              </DropdownMenuTrigger>
+                <DropdownMenuTrigger asChild>
+                  <button 
+                    className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium ml-1"
+                    aria-label="Expand glass company menu"
+                  >
+                    <ChevronDown className="h-4 w-4" aria-hidden="true" />
+                  </button>
+                </DropdownMenuTrigger>
+              </div>
               <DropdownMenuContent align="start" className="w-56">
                 {glassCompanyPages.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
@@ -211,7 +217,7 @@ const Header = () => {
                       >
                         Shower Doors
                       </a>
-                      <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Types & Services</h3>
+                      <span className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide block">Types & Services</span>
                       {showerDoorsPages.map((item) => (
                         <Link
                           key={item.name}
@@ -239,7 +245,7 @@ const Header = () => {
                       >
                         Glass Company
                       </Link>
-                      <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide">Services</h3>
+                      <span className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide block">Services</span>
                       {glassCompanyPages.map((item) => (
                         <Link
                           key={item.name}
