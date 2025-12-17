@@ -116,7 +116,7 @@ const InstallationProcess = () => {
                 <h3 className="text-xl font-semibold mb-6">What Happens During Your Consultation</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-semibold mb-3">On-Site Assessment</h4>
+                    <h3 className="text-base font-semibold mb-3">On-Site Assessment</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• Measure shower opening dimensions</li>
                       <li>• Check wall plumb and square conditions</li>
@@ -126,7 +126,7 @@ const InstallationProcess = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3">Design & Options Review</h4>
+                    <h3 className="text-base font-semibold mb-3">Design & Options Review</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• Discuss style preferences and requirements</li>
                       <li>• Review glass types and thickness options</li>
@@ -227,7 +227,7 @@ const InstallationProcess = () => {
                 <h3 className="text-xl font-semibold mb-6">Hour-by-Hour Installation Timeline</h3>
                 <div className="space-y-6">
                   <div className="border-l-2 border-accent pl-4">
-                    <h4 className="font-semibold">8:00 AM - Setup & Preparation</h4>
+                    <h3 className="text-base font-semibold">8:00 AM - Setup & Preparation</h3>
                     <ul className="text-sm text-muted-foreground mt-2 space-y-1">
                       <li>• Protect surrounding areas with drop cloths</li>
                       <li>• Set up tools and safety equipment</li>
@@ -237,7 +237,7 @@ const InstallationProcess = () => {
                   </div>
                   
                   <div className="border-l-2 border-accent pl-4">
-                    <h4 className="font-semibold">9:00 AM - Wall Preparation</h4>
+                    <h3 className="text-base font-semibold">9:00 AM - Wall Preparation</h3>
                     <ul className="text-sm text-muted-foreground mt-2 space-y-1">
                       <li>• Check wall plumb and make adjustments</li>
                       <li>• Mark mounting locations precisely</li>
@@ -247,7 +247,7 @@ const InstallationProcess = () => {
                   </div>
                   
                   <div className="border-l-2 border-accent pl-4">
-                    <h4 className="font-semibold">10:30 AM - Glass Installation</h4>
+                    <h3 className="text-base font-semibold">10:30 AM - Glass Installation</h3>
                     <ul className="text-sm text-muted-foreground mt-2 space-y-1">
                       <li>• Carefully position and align glass panels</li>
                       <li>• Install hinges and support hardware</li>
@@ -257,7 +257,7 @@ const InstallationProcess = () => {
                   </div>
                   
                   <div className="border-l-2 border-accent pl-4">
-                    <h4 className="font-semibold">12:00 PM - Adjustment & Testing</h4>
+                    <h3 className="text-base font-semibold">12:00 PM - Adjustment & Testing</h3>
                     <ul className="text-sm text-muted-foreground mt-2 space-y-1">
                       <li>• Fine-tune door alignment and operation</li>
                       <li>• Test all moving parts and hardware</li>

@@ -62,9 +62,9 @@ const LocationPageTemplate = ({
 
   const renderStars = (rating: number) => {
     return (
-      <div className="flex gap-1">
+      <div className="flex gap-1" role="img" aria-label={`${rating} out of 5 stars`}>
         {[...Array(rating)].map((_, i) => (
-          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
         ))}
       </div>
     );
@@ -133,6 +133,11 @@ const LocationPageTemplate = ({
             src={heroImage} 
             alt={`Professional shower door installation in ${city}, Nevada by Baja Glass`}
             className="w-full h-full object-cover opacity-75"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>

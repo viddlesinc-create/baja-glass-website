@@ -266,7 +266,7 @@ const Index = () => {
             animationDelay: '0.5s'
           }}>
               <div className="flex items-center gap-2 mb-4">
-                <div className="flex items-center gap-1" aria-label="5 out of 5 stars rating">
+                <div className="flex items-center gap-1" role="img" aria-label="5 out of 5 stars rating">
                   {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />)}
                 </div>
                 <span className="text-white/90 ml-2 text-lg font-medium">Trusted by Las Vegas homeowners</span>
