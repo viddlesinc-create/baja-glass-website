@@ -3,6 +3,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import ProductGallery from "@/components/ProductGallery";
+
+const slidingGalleryImages = [
+  { src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png", alt: "Sliding glass shower door installation", caption: "Smooth-Glide System" },
+  { src: "/lovable-uploads/2145af91-ce61-458d-a311-72b26193aeb2.png", alt: "Bypass sliding shower doors completed project", caption: "Bypass Configuration" },
+  { src: "/lovable-uploads/cd86f335-efa7-4203-92ce-e32d77e9b26b.png", alt: "Sliding shower door before installation", caption: "Before Upgrade" },
+  { src: "/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png", alt: "Sliding doors on bathtub enclosure", caption: "Tub Enclosure" },
+  { src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png", alt: "Bypass sliding glass doors", caption: "Space-Saving Design" },
+  { src: "/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png", alt: "Modern sliding shower system", caption: "Modern Aesthetics" },
+];
 
 const SlidingShowerDoors = () => {
   const faqs = [
@@ -192,6 +202,13 @@ const SlidingShowerDoors = () => {
           </div>
         </div>
       </section>
+
+      {/* Sliding Shower Door Gallery */}
+      <ProductGallery
+        title="Sliding Shower Door Gallery"
+        description="See our sliding door installations featuring smooth-glide systems, bypass configurations, and space-saving designs throughout the Las Vegas Valley."
+        images={slidingGalleryImages}
+      />
 
       {/* Local Service */}
       <section className="py-20 bg-secondary/50">

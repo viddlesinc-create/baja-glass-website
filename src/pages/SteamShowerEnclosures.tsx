@@ -3,6 +3,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "react-router-dom";
 import { Phone, Droplets } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import ProductGallery from "@/components/ProductGallery";
+
+const steamGalleryImages = [
+  { src: "/lovable-uploads/63a30f9e-c80e-421e-9968-d4ed286876f4.png", alt: "Steam shower before installation", caption: "Before Upgrade" },
+  { src: "/lovable-uploads/70012b37-e3d6-4261-b567-0a42b8632737.png", alt: "Completed steam shower enclosure", caption: "After Installation" },
+  { src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png", alt: "Large walk-in steam enclosure", caption: "Walk-In Design" },
+  { src: "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png", alt: "Corner steam shower configuration", caption: "Corner Configuration" },
+  { src: "/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png", alt: "Custom steam shower enclosure", caption: "Custom Enclosure" },
+  { src: "/lovable-uploads/30ead577-c1b4-4057-a808-f7d0d612125f.png", alt: "Steam enclosure with transom", caption: "Transom Design" },
+];
 
 const SteamShowerEnclosures = () => {
   const faqs = [
@@ -298,6 +308,13 @@ const SteamShowerEnclosures = () => {
           </div>
         </div>
       </section>
+
+      {/* Steam Enclosure Gallery */}
+      <ProductGallery
+        title="Steam Shower Enclosure Gallery"
+        description="Browse our steam shower installations featuring sealed systems, operable transoms, and precision gasketing for spa-like luxury at home."
+        images={steamGalleryImages}
+      />
 
       {/* Local Service */}
       <section className="py-20 bg-background">

@@ -3,6 +3,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import ProductGallery from "@/components/ProductGallery";
+
+const hingedGalleryImages = [
+  { src: "/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png", alt: "Hinged glass shower door with black fixtures", caption: "Modern Hinged Design" },
+  { src: "/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png", alt: "Custom hinged door under staircase", caption: "Custom Installation" },
+  { src: "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png", alt: "Corner hinged shower enclosure", caption: "Corner Configuration" },
+  { src: "/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png", alt: "Hinged door with decorative tile", caption: "Tile Integration" },
+  { src: "/lovable-uploads/eb713b05-a28a-4385-b0c4-cdcb90a610ee.png", alt: "Hinged door with brass hardware", caption: "Brass Finish" },
+  { src: "/lovable-uploads/b23c9420-2184-4048-b39c-d5d90544053a.png", alt: "Complete hinged shower enclosure", caption: "Full Enclosure" },
+];
 
 const HingedShowerDoors = () => {
   const faqs = [
@@ -196,6 +206,13 @@ const HingedShowerDoors = () => {
           </div>
         </div>
       </section>
+
+      {/* Hinged Shower Door Gallery */}
+      <ProductGallery
+        title="Hinged & Pivot Door Gallery"
+        description="Explore our hinged and pivot door installations featuring classic swing designs, corner configurations, and premium hardware finishes."
+        images={hingedGalleryImages}
+      />
 
       {/* Local Service */}
       <section className="py-20 bg-secondary/50">

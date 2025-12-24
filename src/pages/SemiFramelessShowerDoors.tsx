@@ -3,6 +3,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import ProductGallery from "@/components/ProductGallery";
+
+const semiFramelessGalleryImages = [
+  { src: "/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png", alt: "Semi-frameless shower doors on bathtub", caption: "Semi-Frameless Design" },
+  { src: "/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png", alt: "Textured semi-frameless glass", caption: "Textured Glass Option" },
+  { src: "/lovable-uploads/ab324ca0-1c7d-49d5-ba4f-dd8865a3b916.png", alt: "Frosted semi-frameless door", caption: "Frosted Privacy Glass" },
+  { src: "/lovable-uploads/fa10a8e6-c837-4e10-b9f0-c8bbd5506ea4.png", alt: "Framed shower before upgrade", caption: "Before Upgrade" },
+  { src: "/lovable-uploads/b924d7a0-9e63-4616-9595-c35e3546e89a.png", alt: "Traditional framed shower enclosure", caption: "Traditional Frame" },
+  { src: "/lovable-uploads/70012b37-e3d6-4261-b567-0a42b8632737.png", alt: "Upgraded semi-frameless installation", caption: "Complete Transformation" },
+];
 
 const SemiFramelessShowerDoors = () => {
   const faqs = [
@@ -202,6 +212,13 @@ const SemiFramelessShowerDoors = () => {
           </div>
         </div>
       </section>
+
+      {/* Semi-Frameless Gallery */}
+      <ProductGallery
+        title="Semi-Frameless & Framed Door Gallery"
+        description="View our semi-frameless and framed door installations showcasing balanced design, strategic support, and quality craftsmanship."
+        images={semiFramelessGalleryImages}
+      />
 
       {/* Local Service */}
       <section className="py-20 bg-secondary/50">
