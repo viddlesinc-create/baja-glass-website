@@ -35,7 +35,7 @@ const ProductGallery = ({ title, description, images }: ProductGalleryProps) => 
   };
 
   return (
-    <section className="py-20 bg-secondary/50">
+    <section id="gallery" className="py-20 bg-secondary/50 scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">{title}</h2>

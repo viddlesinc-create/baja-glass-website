@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
-import { Phone } from "lucide-react";
+import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 
@@ -113,6 +113,12 @@ const FramelessShowerDoors = () => {
                 <a href="tel:+17023830779" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779
+                </a>
+              </Button>
+              <Button variant="ghost" size="lg" asChild>
+                <a href="#gallery" className="flex items-center gap-2">
+                  <Images className="h-5 w-5" />
+                  View Gallery
                 </a>
               </Button>
             </div>
