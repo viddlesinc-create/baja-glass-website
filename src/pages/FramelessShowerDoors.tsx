@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
+import PhoneLink from "@/components/PhoneLink";
 
 const framelessGalleryImages = [
   { src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png", alt: "Luxury frameless glass shower door with freestanding tub", caption: "Modern Frameless Design" },
@@ -110,10 +111,9 @@ const FramelessShowerDoors = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
+                <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
                   Call Now: (702) 383-0779
-                </a>
+                </PhoneLink>
               </Button>
               <Button variant="ghost" size="lg" asChild>
                 <a href="#gallery" className="flex items-center gap-2">
@@ -336,10 +336,9 @@ const FramelessShowerDoors = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
+              <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
                 Call Now: (702) 383-0779
-              </a>
+              </PhoneLink>
             </Button>
           </div>
         </div>
