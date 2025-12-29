@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Check, X, Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import PhoneLink from "@/components/PhoneLink";
 
 const FramelessVsSemiFrameless = () => {
   const comparison = [

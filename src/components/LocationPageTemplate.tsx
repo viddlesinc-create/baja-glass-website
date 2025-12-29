@@ -4,9 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone, MapPin, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { trackHendersonConversion } from "@/lib/analytics";
+import { trackPhoneClick, trackHendersonConversion } from "@/lib/analytics";
 import OptimizedImage from "@/components/OptimizedImage";
-import PhoneLink from "@/components/PhoneLink";
 
 interface LocationPageProps {
   city: string;

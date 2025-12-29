@@ -8,7 +8,6 @@ import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
 import hardwareFinishes from "@/assets/hardware-finishes.jpg";
 import { Helmet } from "react-helmet-async";
-import PhoneLink from "@/components/PhoneLink";
 
 const GlassCompanyLasVegas = () => {
   const services = [
@@ -254,9 +253,10 @@ const GlassCompanyLasVegas = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="shadow-xl">
-                <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
+                <a href="tel:+17023830779" className="flex items-center gap-2">
+                  <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779
-                </PhoneLink>
+                </a>
               </Button>
             </div>
 
@@ -428,9 +428,9 @@ const GlassCompanyLasVegas = () => {
           <div className="text-center">
             <p className="text-lg font-medium text-foreground">
               Baja Glass • 4280 Reno Ave, Ste A, Las Vegas, NV 89118 • 
-              <PhoneLink className="text-accent hover:text-accent/80 ml-2">
+              <a href="tel:+17023830779" className="text-accent hover:text-accent/80 ml-2">
                 (702) 383‑0779
-              </PhoneLink>
+              </a>
             </p>
           </div>
         </div>
@@ -578,9 +578,10 @@ const GlassCompanyLasVegas = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="xl" asChild className="shadow-2xl">
-                <PhoneLink className="flex items-center gap-3" showIcon iconClassName="h-6 w-6">
+                <a href="tel:+17023830779" className="flex items-center gap-3">
+                  <Phone className="h-6 w-6" />
                   Call Now: (702) 383-0779
-                </PhoneLink>
+                </a>
               </Button>
             </div>
           </div>

@@ -8,13 +8,11 @@ import { Link } from "react-router-dom";
 import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import OptimizedImage from "@/components/OptimizedImage";
-import PhoneLink from "@/components/PhoneLink";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import installationProcess from "@/assets/installation-process.jpg";
 import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
 import hardwareFinishes from "@/assets/hardware-finishes.jpg";
-
 const Index = () => {
   const services = [{
     title: "Frameless Shower Doors",
@@ -283,9 +281,10 @@ const Index = () => {
               <Button variant="glass" size="lg" asChild className="animate-scale-in shadow-xl" style={{
               animationDelay: '0.1s'
             }}>
-                <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
+                <a href="tel:+17023830779" className="flex items-center gap-2" aria-label="Call Baja Glass at (702) 383-0779">
+                  <Phone className="h-5 w-5" aria-hidden="true" />
                   Call Now: (702) 383-0779
-                </PhoneLink>
+                </a>
               </Button>
             </div>
 
@@ -613,9 +612,10 @@ const Index = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="glass" size="xl" asChild className="shadow-2xl">
-              <PhoneLink className="flex items-center gap-3" showIcon iconClassName="h-6 w-6">
+              <a href="tel:+17023830779" className="flex items-center gap-3" aria-label="Call Baja Glass at (702) 383-0779">
+                <Phone className="h-6 w-6" aria-hidden="true" />
                 Call Now: (702) 383-0779
-              </PhoneLink>
+              </a>
             </Button>
           </div>
           
