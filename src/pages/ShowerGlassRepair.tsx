@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import PhoneLink from "@/components/PhoneLink";
 const ShowerGlassRepair = () => {
   const commonProblems = [{
     title: "Broken or Shattered Glass",

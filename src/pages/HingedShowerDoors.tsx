@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
+import PhoneLink from "@/components/PhoneLink";
 
 const hingedGalleryImages = [
   { src: "/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png", alt: "Hinged glass shower door with black fixtures", caption: "Modern Hinged Design" },
@@ -105,10 +106,9 @@ const HingedShowerDoors = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
+                <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
                   Call Now: (702) 383-0779
-                </a>
+                </PhoneLink>
               </Button>
               <Button variant="ghost" size="lg" asChild>
                 <a href="#gallery" className="flex items-center gap-2">
@@ -310,10 +310,9 @@ const HingedShowerDoors = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
+              <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
                 Call Now: (702) 383-0779
-              </a>
+              </PhoneLink>
             </Button>
           </div>
         </div>

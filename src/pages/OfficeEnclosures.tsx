@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Phone, Building, Users, Eye, CheckCircle, Star, Briefcase } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import PhoneLink from "@/components/PhoneLink";
 
 const OfficeEnclosures = () => {
   const services = [
@@ -164,10 +165,9 @@ const OfficeEnclosures = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Commercial Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
+                <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
                   Call: (702) 383-0779
-                </a>
+                </PhoneLink>
               </Button>
             </div>
           </div>
@@ -341,10 +341,9 @@ const OfficeEnclosures = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="secondary" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
+              <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
                 Call (702) 383-0779
-              </a>
+              </PhoneLink>
             </Button>
             <Button variant="destructive" size="lg" asChild>
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Request Commercial Quote</Link>

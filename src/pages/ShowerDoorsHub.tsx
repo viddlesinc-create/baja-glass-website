@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Star, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import { Helmet } from "react-helmet-async";
+import PhoneLink from "@/components/PhoneLink";
 
 const ShowerDoorsHub = () => {
   const services = [
@@ -277,10 +278,9 @@ const ShowerDoorsHub = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
+                <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
                   Call Now: (702) 383-0779
-                </a>
+                </PhoneLink>
               </Button>
             </div>
 
@@ -422,10 +422,9 @@ const ShowerDoorsHub = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
+              <PhoneLink className="flex items-center gap-2" showIcon iconClassName="h-5 w-5">
                 Call Now: (702) 383-0779
-              </a>
+              </PhoneLink>
             </Button>
           </div>
         </div>
