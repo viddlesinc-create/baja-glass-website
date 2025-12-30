@@ -62,5 +62,7 @@ export const defaultSEO: SEOMeta = {
 };
 
 export function getSEOConfig(path: string): SEOMeta {
-  return seoConfig[path] || defaultSEO;
+  const normalized =
+    path.endsWith('/') && path !== '/' ? path.slice(0, -1) : path;
+  return seoConfig[normalized] || defaultSEO;
 }
