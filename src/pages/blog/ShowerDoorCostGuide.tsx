@@ -54,11 +54,6 @@ const ShowerDoorCostGuide = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Shower Door Cost Las Vegas 2025 | Complete Price Guide</title>
-        <meta name="description" content="2025 shower door installation pricing guide for Las Vegas. Compare frameless, semi-frameless, framed costs, glass thickness, and hardware finishes." />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/blog/shower-door-installation-cost-las-vegas" />
-        
         {/* Article Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
