@@ -105,7 +105,7 @@ const Resources = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/resources" />
         <meta property="og:image" content="https://bajaglass.com/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png" />
-        <meta property="og:site_name" content="Baja Glass" />
+        <meta property="og:site_name" content="Baja Glass & Mirror LLC" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />

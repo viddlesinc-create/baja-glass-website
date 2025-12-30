@@ -114,7 +114,7 @@ const Contact = () => {
             "@type": "ContactPage",
             "mainEntity": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass",
+              "name": "Baja Glass & Mirror LLC",
               "address": {
                 "@type": "PostalAddress", 
                 "streetAddress": "4280 Reno Ave, Ste A",

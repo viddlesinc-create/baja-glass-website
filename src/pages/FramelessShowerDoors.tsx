@@ -211,7 +211,7 @@ const FramelessShowerDoors = () => {
             Serving Henderson, Summerlin, and the entire Las Vegas Valley with precision frameless shower door installation. Expect clean, careful work and clear communication from our local team.
           </p>
           <div className="bg-background p-6 rounded-lg inline-block">
-            <p className="font-semibold">Baja Glass</p>
+            <p className="font-semibold">Baja Glass & Mirror LLC</p>
             <p className="text-muted-foreground">4280 Reno Ave, Ste A, Las Vegas, NV 89118</p>
             <p className="text-muted-foreground">(702) 383-0779</p>
           </div>

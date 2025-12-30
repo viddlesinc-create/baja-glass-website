@@ -113,7 +113,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Frameless Shower Doors",
                       "description": "Custom frameless shower door installation with premium tempered glass",
-                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass & Mirror LLC" }
                     }
                   },
                   {
@@ -122,7 +122,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Sliding Shower Doors",
                       "description": "Space-saving sliding shower door installation and repair",
-                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass & Mirror LLC" }
                     }
                   },
                   {
@@ -131,7 +131,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Hinged Shower Doors",
                       "description": "Classic hinged and pivot shower door installation",
-                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass & Mirror LLC" }
                     }
                   },
                   {
@@ -140,7 +140,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Custom Shower Enclosures",
                       "description": "Made-to-measure shower enclosures for unique spaces",
-                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass & Mirror LLC" }
                     }
                   },
                   {
@@ -149,7 +149,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Shower Glass Repair",
                       "description": "Professional shower glass repair and replacement services",
-                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass & Mirror LLC" }
                     }
                   }
                 ]

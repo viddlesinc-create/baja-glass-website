@@ -44,7 +44,7 @@ const Footer = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Baja Glass",
+            "name": "Baja Glass & Mirror LLC",
             "url": "https://bajaglass.com",
             "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
             "description": "Premier shower door and glass company in Las Vegas, NV. Custom frameless shower doors, glass repair, and commercial glass services.",

@@ -45,7 +45,7 @@ const About = () => {
             "@type": "AboutPage",
             "mainEntity": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass", 
+              "name": "Baja Glass & Mirror LLC", 
               "description": "Family owned and operated glass company specializing in shower doors, mirrors, and interior glass installation.",
               "foundingDate": "2010",
               "address": {
@@ -199,7 +199,7 @@ const About = () => {
             ))}
           </div>
           <div className="bg-background p-6 rounded-lg inline-block">
-            <h3 className="font-semibold mb-2">Baja Glass</h3>
+            <h3 className="font-semibold mb-2">Baja Glass & Mirror LLC</h3>
             <p className="text-muted-foreground">4280 Reno Ave, Ste A, Las Vegas, NV 89118</p>
             <p className="text-muted-foreground">(702) 383-0779</p>
           </div>

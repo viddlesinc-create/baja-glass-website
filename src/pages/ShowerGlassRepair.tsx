@@ -153,7 +153,7 @@ const ShowerGlassRepair = () => {
             We aim to schedule quickly across Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City. For emergency glass issues, we prioritize safety and fast response.
           </p>
           <div className="bg-background p-6 rounded-lg inline-block mx-auto">
-            <p className="font-semibold text-center">Baja Glass</p>
+            <p className="font-semibold text-center">Baja Glass & Mirror LLC</p>
             <p className="text-muted-foreground text-center">4280 Reno Ave, Ste A, Las Vegas, NV 89118</p>
             <p className="text-muted-foreground text-center">(702) 383-0779</p>
           </div>

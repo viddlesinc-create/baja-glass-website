@@ -187,7 +187,7 @@ const Reviews = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Baja Glass",
+            "name": "Baja Glass & Mirror LLC",
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.9",
