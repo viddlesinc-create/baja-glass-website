@@ -7,7 +7,6 @@ import heroImage from "@/assets/hero-shower-door.jpg";
 import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
 import { Helmet } from "react-helmet-async";
-import { SEOHead } from "@/seo";
 
 const AreasServed = () => {
 const areas = [
@@ -71,9 +70,6 @@ const areas = [
 
   return (
     <div className="min-h-screen">
-      <SEOHead>
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-      </SEOHead>
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
         <div className="absolute inset-0">

@@ -7,7 +7,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Link } from "react-router-dom";
 import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { SEOHead } from "@/seo";
 import OptimizedImage from "@/components/OptimizedImage";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import installationProcess from "@/assets/installation-process.jpg";
@@ -61,8 +60,7 @@ const Index = () => {
     answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City—and nearby communities."
   }];
   return <div className="min-h-screen">
-      <SEOHead>
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
           "@context": "https://schema.org",
@@ -185,7 +183,7 @@ const Index = () => {
           "knowsAbout": ["Glass Installation", "Shower Door Installation", "Mirror Installation", "Glass Repair", "Custom Glass Work"]
         })}
         </script>
-      </SEOHead>
+      </Helmet>
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">

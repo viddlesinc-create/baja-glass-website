@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { Star, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import { Helmet } from "react-helmet-async";
-import { SEOHead } from "@/seo";
 
 const ShowerDoorsHub = () => {
   const services = [
@@ -76,9 +75,7 @@ const ShowerDoorsHub = () => {
 
   return (
     <div className="min-h-screen">
-      <SEOHead>
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="keywords" content="shower doors Las Vegas, frameless shower doors, sliding shower doors, hinged shower doors, custom shower enclosures, shower glass repair, Las Vegas glass installation" />
+      <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -116,10 +113,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Frameless Shower Doors",
                       "description": "Custom frameless shower door installation with premium tempered glass",
-                      "provider": {
-                        "@type": "LocalBusiness",
-                        "name": "Baja Glass"
-                      }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
                     }
                   },
                   {
@@ -128,10 +122,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Sliding Shower Doors",
                       "description": "Space-saving sliding shower door installation and repair",
-                      "provider": {
-                        "@type": "LocalBusiness",
-                        "name": "Baja Glass"
-                      }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
                     }
                   },
                   {
@@ -140,10 +131,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Hinged Shower Doors",
                       "description": "Classic hinged and pivot shower door installation",
-                      "provider": {
-                        "@type": "LocalBusiness",
-                        "name": "Baja Glass"
-                      }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
                     }
                   },
                   {
@@ -152,10 +140,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Custom Shower Enclosures",
                       "description": "Made-to-measure shower enclosures for unique spaces",
-                      "provider": {
-                        "@type": "LocalBusiness",
-                        "name": "Baja Glass"
-                      }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
                     }
                   },
                   {
@@ -164,10 +149,7 @@ const ShowerDoorsHub = () => {
                       "@type": "Service",
                       "name": "Shower Glass Repair",
                       "description": "Professional shower glass repair and replacement services",
-                      "provider": {
-                        "@type": "LocalBusiness",
-                        "name": "Baja Glass"
-                      }
+                      "provider": { "@type": "LocalBusiness", "name": "Baja Glass" }
                     }
                   }
                 ]
@@ -188,23 +170,13 @@ const ShowerDoorsHub = () => {
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://bajaglass.com/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Shower Doors Las Vegas",
-                  "item": "https://bajaglass.com/shower-doors-las-vegas/"
-                }
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bajaglass.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Shower Doors Las Vegas", "item": "https://bajaglass.com/shower-doors-las-vegas/" }
               ]
             }
           })}
         </script>
-      </SEOHead>
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
         {/* Background Pattern */}

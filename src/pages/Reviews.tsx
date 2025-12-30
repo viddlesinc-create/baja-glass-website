@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { SEOHead } from "@/seo";
 
 const Reviews = () => {
   const reviews = [
@@ -183,9 +182,7 @@ const Reviews = () => {
 
   return (
     <div className="min-h-screen">
-      <SEOHead>
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        {/* Review Schema */}
+      <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -200,21 +197,14 @@ const Reviews = () => {
             },
             "review": reviews.slice(0, 10).map(review => ({
               "@type": "Review",
-              "author": {
-                "@type": "Person",
-                "name": review.name
-              },
+              "author": { "@type": "Person", "name": review.name },
               "datePublished": new Date(review.date).toISOString().split('T')[0],
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": review.rating,
-                "bestRating": "5"
-              },
+              "reviewRating": { "@type": "Rating", "ratingValue": review.rating, "bestRating": "5" },
               "reviewBody": review.text
             }))
           })}
         </script>
-      </SEOHead>
+      </Helmet>
 
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-charcoal via-primary to-charcoal text-white overflow-hidden">
