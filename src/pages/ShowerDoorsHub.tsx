@@ -85,7 +85,7 @@ const ShowerDoorsHub = () => {
             "url": "https://bajaglass.com/shower-doors-las-vegas/",
             "mainEntity": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass",
+              "name": "Baja Glass & Mirror LLC",
               "image": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
               "address": {
                 "@type": "PostalAddress",
