@@ -8,6 +8,7 @@ import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
 import hardwareFinishes from "@/assets/hardware-finishes.jpg";
 import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/seo";
 
 const GlassCompanyLasVegas = () => {
   const services = [
@@ -178,26 +179,9 @@ const GlassCompanyLasVegas = () => {
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Glass Company Las Vegas | Shower Doors & Glass | Baja</title>
-        <meta name="description" content="Pro glass company in Las Vegas for custom shower doors, frameless enclosures, office partitions & glass repair. Licensed, insured with warranty." />
+      <SEOHead>
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/glass-company-las-vegas" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Glass Company Las Vegas | Shower Doors, Mirrors & Commercial Glass | Baja Glass" />
-        <meta property="og:description" content="Professional glass company in Las Vegas specializing in custom shower doors, frameless enclosures, mirrors, office partitions & residential glass repair. Licensed, insured with warranty-backed installation." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/glass-company-las-vegas" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Glass Company Las Vegas | Shower Doors, Mirrors & Commercial Glass | Baja Glass" />
-        <meta name="twitter:description" content="Professional glass company in Las Vegas specializing in custom shower doors, frameless enclosures, mirrors, office partitions & residential glass repair." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png" />
-      </Helmet>
+      </SEOHead>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
         {/* Background Pattern */}

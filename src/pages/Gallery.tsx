@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { X } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/seo";
 
 const Gallery = () => {
   const [sliderValues, setSliderValues] = useState([50, 50, 50, 50]);
@@ -91,26 +92,8 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Gallery | Shower Door Projects & Installations | Baja Glass Las Vegas</title>
-        <meta name="description" content="View our portfolio of custom shower doors and enclosures installed throughout Las Vegas Valley. Explore before & after transformations, frameless doors, sliding systems, and steam enclosures from real client projects." />
+      <SEOHead>
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/gallery" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Gallery | Shower Door Projects & Installations | Baja Glass Las Vegas" />
-        <meta property="og:description" content="View our portfolio of custom shower doors and enclosures installed throughout Las Vegas Valley. Before & after transformations and recent projects." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/gallery" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Gallery | Shower Door Projects & Installations | Baja Glass Las Vegas" />
-        <meta name="twitter:description" content="View our portfolio of custom shower doors and enclosures installed throughout Las Vegas Valley. Before & after transformations and recent projects." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png" />
-        
         {/* Structured Data - Image Gallery */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -135,7 +118,7 @@ const Gallery = () => {
             }))
           })}
         </script>
-      </Helmet>
+      </SEOHead>
       {/* Hero Section */}
       <section className="py-20 relative text-white overflow-hidden" aria-labelledby="gallery-hero-heading">
         <img 

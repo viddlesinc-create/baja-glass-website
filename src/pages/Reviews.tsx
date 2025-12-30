@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/seo";
 
 const Reviews = () => {
   const reviews = [
@@ -182,19 +183,8 @@ const Reviews = () => {
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Customer Reviews & Testimonials | Baja Glass Las Vegas</title>
-        <meta name="description" content="Read 47+ verified reviews of Baja Glass shower door installations in Las Vegas. 4.9-star rated family-owned company with 20+ years experience." />
+      <SEOHead>
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/reviews" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Customer Reviews & Testimonials | Baja Glass Las Vegas" />
-        <meta property="og:description" content="Read 47+ verified customer reviews of Baja Glass shower door installations. 4.9-star rated with 20+ years experience." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/reviews" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
-        
         {/* Review Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -224,7 +214,7 @@ const Reviews = () => {
             }))
           })}
         </script>
-      </Helmet>
+      </SEOHead>
 
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-charcoal via-primary to-charcoal text-white overflow-hidden">

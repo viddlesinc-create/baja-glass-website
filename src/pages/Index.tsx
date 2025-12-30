@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Link } from "react-router-dom";
 import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/seo";
 import OptimizedImage from "@/components/OptimizedImage";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import installationProcess from "@/assets/installation-process.jpg";
@@ -60,26 +61,8 @@ const Index = () => {
     answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City—and nearby communities."
   }];
   return <div className="min-h-screen">
-      <Helmet>
-        <title>Baja Glass | Las Vegas Shower Doors & Glass Installation</title>
-        <meta name="description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential services. Licensed, insured, 20+ years experience." />
+      <SEOHead>
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Baja Glass | Las Vegas Glass Company | Shower Doors, Mirrors & Glass Installation" />
-        <meta property="og:description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential glass services. Licensed, insured with 20+ years experience." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Baja Glass | Las Vegas Glass Company | Shower Doors, Mirrors & Glass Installation" />
-        <meta name="twitter:description" content="Professional Las Vegas glass company specializing in custom frameless shower doors, mirrors, office glass & residential glass services." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
-        
         <script type="application/ld+json">
           {JSON.stringify({
           "@context": "https://schema.org",
@@ -202,7 +185,7 @@ const Index = () => {
           "knowsAbout": ["Glass Installation", "Shower Door Installation", "Mirror Installation", "Glass Repair", "Custom Glass Work"]
         })}
         </script>
-      </Helmet>
+      </SEOHead>
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">

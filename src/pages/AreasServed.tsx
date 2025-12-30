@@ -7,6 +7,7 @@ import heroImage from "@/assets/hero-shower-door.jpg";
 import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
 import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/seo";
 
 const AreasServed = () => {
 const areas = [
@@ -70,26 +71,9 @@ const areas = [
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Areas Served | Las Vegas Valley Shower Door Installation | Baja Glass</title>
-        <meta name="description" content="Baja Glass serves Spanish Hills, Spanish Trail, The Ridges, Rhodes Ranch, Southern Highlands, Mountains Edge, Coronado Ranch, Anthem, Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise & surrounding areas with professional shower door installation." />
+      <SEOHead>
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/areas-served" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Areas Served | Las Vegas Valley Shower Door Installation | Baja Glass" />
-        <meta property="og:description" content="Baja Glass serves Spanish Hills, Spanish Trail, The Ridges, Southern Highlands and the entire Las Vegas Valley with professional shower door installation." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/areas-served" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Areas Served | Las Vegas Valley Shower Door Installation | Baja Glass" />
-        <meta name="twitter:description" content="Baja Glass serves Spanish Hills, Spanish Trail, The Ridges, Southern Highlands and the entire Las Vegas Valley with professional installation." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png" />
-      </Helmet>
+      </SEOHead>
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal">
         <div className="absolute inset-0">
