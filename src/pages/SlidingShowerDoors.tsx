@@ -41,25 +41,6 @@ const SlidingShowerDoors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Sliding Shower Doors Las Vegas | Baja Glass</title>
-        <meta name="description" content="Expert sliding shower door installation in Las Vegas. Smooth-glide systems with premium rollers. Single & bypass options with soft-close. Licensed, insured." />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/sliding" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Sliding Shower Doors Henderson | Space-Saving Glass Doors | Baja Glass" />
-        <meta property="og:description" content="Professional sliding shower door installation in Henderson & Las Vegas Valley. Smooth-glide systems with premium rollers that save space and elevate your bathroom." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/shower-doors-las-vegas/sliding" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sliding Shower Doors Henderson | Space-Saving Glass Doors | Baja Glass" />
-        <meta name="twitter:description" content="Professional sliding shower door installation in Henderson & Las Vegas Valley. Smooth-glide systems that save space and elevate your bathroom." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png" />
-        
         {/* Service Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

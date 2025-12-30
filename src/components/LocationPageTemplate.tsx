@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Star, Phone, MapPin, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { trackPhoneClick, trackHendersonConversion } from "@/lib/analytics";
 import OptimizedImage from "@/components/OptimizedImage";
+import { getSEOConfig } from "@/seo/metaConfig";
 
 interface LocationPageProps {
   city: string;
@@ -52,6 +53,8 @@ const LocationPageTemplate = ({
   additionalContent,
   citySpecificFaqs
 }: LocationPageProps) => {
+  const location = useLocation();
+  const seoConfig = getSEOConfig(location.pathname);
   const services = [
     { name: "Frameless Shower Doors", href: "/shower-doors-las-vegas/frameless" },
     { name: "Sliding Shower Doors", href: "/shower-doors-las-vegas/sliding" },
@@ -74,19 +77,7 @@ const LocationPageTemplate = ({
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Shower Doors {city} NV | Baja Glass</title>
-        <meta name="description" content={metaDescription} />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href={`https://bajaglass.com/shower-doors-${city.toLowerCase().replace(/\s/g, '-')}-nv`} />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={`Shower Doors ${city} NV | Frameless & Custom Installation | Baja Glass`} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://bajaglass.com/shower-doors-${city.toLowerCase().replace(/\s/g, '-')}-nv`} />
-        <meta property="og:image" content={heroImage} />
-        
-        {/* LocalBusiness Schema */}
+        {/* LocalBusiness Schema - basic SEO handled by SEOHead via metaConfig */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -114,7 +105,7 @@ const LocationPageTemplate = ({
               "addressCountry": "US"
             },
             "telephone": "(702) 383-0779",
-            "url": `https://bajaglass.com/shower-doors-${city.toLowerCase().replace(/\s/g, '-')}-nv`,
+            "url": seoConfig.canonical,
             "priceRange": "$$",
             "aggregateRating": {
               "@type": "AggregateRating",

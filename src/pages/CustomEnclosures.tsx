@@ -31,25 +31,6 @@ const CustomEnclosures = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Custom Shower Enclosures Enterprise & Spring Valley | Neo-Angle Designs | Baja Glass</title>
-        <meta name="description" content="Custom shower enclosures in Enterprise, Spring Valley & Las Vegas Valley. Inline, corner, neo-angle, alcove, and steam designs made to precise measurements. Expert installation with quality hardware and professional sealing for complex layouts." />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/custom-enclosures" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Custom Shower Enclosures Enterprise & Spring Valley | Neo-Angle Designs | Baja Glass" />
-        <meta property="og:description" content="Custom shower enclosures in Enterprise, Spring Valley & Las Vegas Valley. Inline, corner, neo-angle, alcove, and steam designs made to precise measurements." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/shower-doors-las-vegas/custom-enclosures" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Custom Shower Enclosures Enterprise & Spring Valley | Neo-Angle Designs | Baja Glass" />
-        <meta name="twitter:description" content="Custom shower enclosures in Enterprise, Spring Valley & Las Vegas Valley. Inline, corner, neo-angle, alcove, and steam designs made to precise measurements." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png" />
-        
         {/* Service Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

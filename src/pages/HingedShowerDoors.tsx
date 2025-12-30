@@ -41,25 +41,6 @@ const HingedShowerDoors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Hinged Shower Doors Las Vegas | Baja Glass</title>
-        <meta name="description" content="Expert hinged & pivot shower door installation in Las Vegas. Classic swing doors with precise alignment & quality hardware. Frameless & semi-frameless options." />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/hinged" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Hinged & Pivot Shower Doors Summerlin | Professional Installation | Baja Glass" />
-        <meta property="og:description" content="Expert hinged and pivot shower door installation in Summerlin & Las Vegas Valley. Classic swing doors with precise alignment and reliable sealing." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/shower-doors-las-vegas/hinged" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Hinged & Pivot Shower Doors Summerlin | Professional Installation | Baja Glass" />
-        <meta name="twitter:description" content="Expert hinged and pivot shower door installation in Summerlin & Las Vegas Valley. Classic swing doors with precise alignment." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png" />
-        
         {/* Service Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
