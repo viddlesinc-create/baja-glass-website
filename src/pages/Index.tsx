@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Link } from "react-router-dom";
 import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import OptimizedImage from "@/components/OptimizedImage";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import installationProcess from "@/assets/installation-process.jpg";
@@ -60,93 +61,8 @@ const Index = () => {
     answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City—and nearby communities."
   }];
   return <div className="min-h-screen">
+      <LocalBusinessSchema />
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Baja Glass",
-          "image": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-          "description": "Baja Glass is a small family owned and operated company that has worked with a variety of customers. We design and install interior glass.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "4280 Reno Ave, Ste A",
-            "addressLocality": "Las Vegas",
-            "addressRegion": "NV",
-            "postalCode": "89118",
-            "addressCountry": "US"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "36.1215",
-            "longitude": "-115.2269"
-          },
-          "telephone": "(702) 750-1526",
-          "url": "https://bajaglass.com",
-          "openingHours": "Mo-Sa 08:00-16:00",
-          "priceRange": "$$",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "bestRating": "5",
-            "worstRating": "1",
-            "ratingCount": "47",
-            "reviewCount": "47"
-          },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Glass Services",
-            "itemListElement": [{
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Frameless Shower Doors",
-                "description": "Custom frameless shower door installation and repair"
-              }
-            }, {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Sliding Shower Doors",
-                "description": "Space-saving sliding shower door installation"
-              }
-            }, {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Custom Shower Enclosures",
-                "description": "Made-to-measure shower enclosures for any space"
-              }
-            }, {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Glass Repair",
-                "description": "Shower glass repair and replacement services"
-              }
-            }, {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Mirror Installation",
-                "description": "Bathroom mirrors, gym mirrors installation and removal"
-              }
-            }]
-          },
-          "areaServed": {
-            "@type": "Place",
-            "name": "Las Vegas Valley"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "(702) 750-1526",
-            "contactType": "Customer Service",
-            "areaServed": "US",
-            "availableLanguage": "English"
-          },
-          "sameAs": ["https://bajaglass.com"]
-        })}
-        </script>
         <script type="application/ld+json">
           {JSON.stringify({
           "@context": "https://schema.org",
@@ -165,19 +81,19 @@ const Index = () => {
           {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Baja Glass",
+          "name": "Baja Glass & Mirror LLC",
           "url": "https://bajaglass.com",
           "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
           "description": "Family owned glass company specializing in shower doors, mirrors, and interior glass installation in Las Vegas.",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "4280 Reno Ave, Ste A",
+            "streetAddress": "4280 W Reno Ave Ste A",
             "addressLocality": "Las Vegas",
             "addressRegion": "NV",
             "postalCode": "89118",
             "addressCountry": "US"
           },
-          "telephone": "(702) 750-1526",
+          "telephone": "(702) 383-0779",
           "foundingDate": "2010",
           "numberOfEmployees": "5-10",
           "knowsAbout": ["Glass Installation", "Shower Door Installation", "Mirror Installation", "Glass Repair", "Custom Glass Work"]
