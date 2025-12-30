@@ -75,11 +75,6 @@ const FramelessVsSemiFrameless = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Frameless vs Semi-Frameless Shower Doors | Las Vegas</title>
-        <meta name="description" content="Compare frameless, semi-frameless, and framed shower doors for Las Vegas homes. Learn costs, maintenance, durability, and which type fits your bathroom." />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/blog/frameless-vs-semi-frameless-shower-doors" />
-        
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

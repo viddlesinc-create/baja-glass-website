@@ -63,11 +63,6 @@ const HardWaterSolutions = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Las Vegas Hard Water & Shower Glass | Solutions Guide</title>
-        <meta name="description" content="Protect your Las Vegas shower glass from hard water damage. Learn about water softeners, protective coatings, cleaning solutions, and maintenance tips." />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" />
-        
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

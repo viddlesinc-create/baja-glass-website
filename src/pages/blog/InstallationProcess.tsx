@@ -8,30 +8,7 @@ import installationProcess from "@/assets/installation-process.jpg";
 const InstallationProcess = () => {
   return (
     <>
-      <Helmet>
-        <title>Shower Door Installation Process - What to Expect | Baja Glass Las Vegas</title>
-        <meta 
-          name="description" 
-          content="Complete guide to shower door installation process from consultation to final inspection. Learn preparation steps, installation timeline, safety procedures, and what to expect during professional installation. Expert process guide from Baja Glass Las Vegas." 
-        />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="keywords" content="shower door installation, installation process, Las Vegas glass installation, shower door timeline, professional installation" />
-        <link rel="canonical" href="https://bajaglass.com/blog/installation-process" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Shower Door Installation Process - What to Expect | Baja Glass Las Vegas" />
-        <meta property="og:description" content="Complete guide to shower door installation process. Learn preparation steps, timeline, safety procedures, and what to expect during installation." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://bajaglass.com/blog/installation-process" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Shower Door Installation Process - What to Expect | Baja Glass Las Vegas" />
-        <meta name="twitter:description" content="Complete guide to shower door installation process. Learn preparation steps, timeline, safety procedures, and what to expect." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
-        
+        <Helmet>
         {/* Article Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
