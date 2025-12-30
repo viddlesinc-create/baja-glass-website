@@ -37,25 +37,6 @@ const ShowerGlassRepair = () => {
   }];
   return <div className="min-h-screen">
       <Helmet>
-        <title>Shower Glass Repair Las Vegas | Emergency Service | Baja</title>
-        <meta name="description" content="Emergency shower glass repair in Las Vegas. Broken panels, sliding door repair, hardware replacement & leak fixes. Fast, reliable service." />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/repair" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Shower Glass Repair & Replacement Las Vegas Valley | Emergency Service | Baja Glass" />
-        <meta property="og:description" content="Emergency shower glass repair throughout Las Vegas Valley. Broken panels, sliding door repair, hardware replacement & leak fixes. Fast, safe, reliable service." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/shower-doors-las-vegas/repair" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Shower Glass Repair & Replacement Las Vegas Valley | Emergency Service | Baja Glass" />
-        <meta name="twitter:description" content="Emergency shower glass repair throughout Las Vegas Valley. Broken panels, sliding door repair, hardware replacement & leak fixes." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" />
-        
         {/* Service Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

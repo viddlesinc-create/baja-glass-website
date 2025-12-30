@@ -46,25 +46,6 @@ const FramelessShowerDoors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Frameless Shower Doors Las Vegas | Baja Glass</title>
-        <meta name="description" content="Premium frameless shower doors in Las Vegas. Minimal metal, maximum openness with custom tempered glass. Low-iron glass & quality hardware. Licensed installers." />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/frameless" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Frameless Shower Doors Henderson & Summerlin | Modern Glass | Baja Glass" />
-        <meta property="og:description" content="Premium frameless shower doors in Henderson, Summerlin & Las Vegas Valley. Minimal metal, maximum openness with custom tempered glass measured precisely." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bajaglass.com/shower-doors-las-vegas/frameless" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" />
-        <meta property="og:site_name" content="Baja Glass" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Frameless Shower Doors Henderson & Summerlin | Modern Glass | Baja Glass" />
-        <meta name="twitter:description" content="Premium frameless shower doors in Henderson, Summerlin & Las Vegas Valley. Minimal metal, maximum openness with custom tempered glass." />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" />
-        
         {/* Service Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
