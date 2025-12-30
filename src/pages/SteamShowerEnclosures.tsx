@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Phone, Droplets, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
+import customEnclosureImage from "@/assets/custom-enclosure.jpg";
 
 const steamGalleryImages = [
   { src: "/lovable-uploads/63a30f9e-c80e-421e-9968-d4ed286876f4.png", alt: "Steam shower before installation", caption: "Before Upgrade" },
@@ -120,7 +121,7 @@ const SteamShowerEnclosures = () => {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/src/assets/custom-enclosure.jpg" 
+            src={customEnclosureImage} 
             alt="Custom steam shower enclosure"
             className="w-full h-full object-cover"
           />
