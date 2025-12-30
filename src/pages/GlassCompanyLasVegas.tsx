@@ -407,7 +407,7 @@ const GlassCompanyLasVegas = () => {
           
           <div className="text-center">
             <p className="text-lg font-medium text-foreground">
-              Baja Glass • 4280 Reno Ave, Ste A, Las Vegas, NV 89118 • 
+              Baja Glass & Mirror LLC • 4280 Reno Ave, Ste A, Las Vegas, NV 89118 • 
               <a href="tel:+17023830779" className="text-accent hover:text-accent/80 ml-2">
                 (702) 383‑0779
               </a>

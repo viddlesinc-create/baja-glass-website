@@ -39,7 +39,7 @@ const CustomEnclosures = () => {
             "serviceType": "Custom Shower Enclosure Installation",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass",
+              "name": "Baja Glass & Mirror LLC",
               "areaServed": {
                 "@type": "State",
                 "name": "Nevada"
@@ -261,7 +261,7 @@ const CustomEnclosures = () => {
             Serving Enterprise, Spring Valley, and the entire Las Vegas Valley with precise custom shower enclosure measurement, planning, and installation for unique applications.
           </p>
           <div className="bg-secondary/50 p-6 rounded-lg inline-block">
-            <p className="font-semibold">Baja Glass</p>
+            <p className="font-semibold">Baja Glass & Mirror LLC</p>
             <p className="text-muted-foreground">4280 Reno Ave, Ste A, Las Vegas, NV 89118</p>
             <p className="text-muted-foreground">(702) 383-0779</p>
           </div>

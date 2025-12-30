@@ -17,11 +17,11 @@ const GlassCareGuide = () => {
             "headline": "Complete Glass Care Guide for Shower Doors",
             "author": {
               "@type": "Organization",
-              "name": "Baja Glass"
+              "name": "Baja Glass & Mirror LLC"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Baja Glass",
+              "name": "Baja Glass & Mirror LLC",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png"

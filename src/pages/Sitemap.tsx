@@ -80,7 +80,7 @@ const Sitemap = () => {
         <meta property="og:description" content="Complete sitemap of Baja Glass website. Find all pages including shower doors, glass services, gallery, blog, and contact information." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/sitemap" />
-        <meta property="og:site_name" content="Baja Glass" />
+        <meta property="og:site_name" content="Baja Glass & Mirror LLC" />
       </Helmet>
 
       {/* Hero Section */}
