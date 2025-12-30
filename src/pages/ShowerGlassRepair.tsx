@@ -45,7 +45,7 @@ const ShowerGlassRepair = () => {
             "serviceType": "Shower Glass Repair",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass"
+              "name": "Baja Glass & Mirror LLC"
             },
             "areaServed": {
               "@type": "State",

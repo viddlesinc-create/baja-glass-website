@@ -49,7 +49,7 @@ const HingedShowerDoors = () => {
             "serviceType": "Hinged Shower Door Installation",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass"
+              "name": "Baja Glass & Mirror LLC"
             },
             "areaServed": [
               {
