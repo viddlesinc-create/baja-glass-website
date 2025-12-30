@@ -9,7 +9,6 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Clock, Mail, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
-import { SEOHead } from "@/seo";
 import { trackFormSubmission, trackHendersonConversion, trackPhoneClick } from "@/lib/analytics";
 
 const Contact = () => {
@@ -108,8 +107,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
-      <SEOHead>
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -130,19 +128,8 @@ const Contact = () => {
               "url": "https://bajaglass.com",
               "openingHours": "Mo-Fr 08:00-16:00",
               "contactPoint": [
-                {
-                  "@type": "ContactPoint",
-                  "telephone": "(702) 750-1526",
-                  "contactType": "Customer Service",
-                  "availableLanguage": "English",
-                  "areaServed": "Las Vegas Valley"
-                },
-                {
-                  "@type": "ContactPoint", 
-                  "contactType": "Sales",
-                  "availableLanguage": "English",
-                  "serviceType": "Free Consultation"
-                }
+                { "@type": "ContactPoint", "telephone": "(702) 750-1526", "contactType": "Customer Service", "availableLanguage": "English", "areaServed": "Las Vegas Valley" },
+                { "@type": "ContactPoint", "contactType": "Sales", "availableLanguage": "English", "serviceType": "Free Consultation" }
               ],
               "priceRange": "$$",
               "paymentAccepted": "Cash, Credit Card, Check",
@@ -150,7 +137,7 @@ const Contact = () => {
             }
           })}
         </script>
-      </SEOHead>
+      </Helmet>
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white relative overflow-hidden">

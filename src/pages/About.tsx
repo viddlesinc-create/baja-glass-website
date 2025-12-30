@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Shield, Users, Award, Clock } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { SEOHead } from "@/seo";
 
 const About = () => {
   const values = [
@@ -39,8 +38,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
-      <SEOHead>
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -61,31 +59,16 @@ const About = () => {
               "telephone": "(702) 750-1526",
               "url": "https://bajaglass.com",
               "openingHours": "Mo-Sa 08:00-16:00",
-              "areaServed": {
-                "@type": "Place",
-                "name": "Las Vegas Valley"
-              },
+              "areaServed": { "@type": "Place", "name": "Las Vegas Valley" },
               "hasCredential": [
-                {
-                  "@type": "EducationalOccupationalCredential",
-                  "credentialCategory": "License",
-                  "name": "Licensed Glass Contractor"
-                },
-                {
-                  "@type": "EducationalOccupationalCredential", 
-                  "credentialCategory": "Insurance",
-                  "name": "Bonded & Insured"
-                },
-                {
-                  "@type": "EducationalOccupationalCredential",
-                  "credentialCategory": "Certification", 
-                  "name": "Safety Glass Certified"
-                }
+                { "@type": "EducationalOccupationalCredential", "credentialCategory": "License", "name": "Licensed Glass Contractor" },
+                { "@type": "EducationalOccupationalCredential", "credentialCategory": "Insurance", "name": "Bonded & Insured" },
+                { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certification", "name": "Safety Glass Certified" }
               ]
             }
           })}
         </script>
-      </SEOHead>
+      </Helmet>
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white">
