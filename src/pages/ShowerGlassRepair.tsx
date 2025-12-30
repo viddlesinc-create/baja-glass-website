@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import damagedShowerGlass from "@/assets/damaged-shower-glass.jpg";
 const ShowerGlassRepair = () => {
   const commonProblems = [{
     title: "Broken or Shattered Glass",
@@ -72,7 +73,7 @@ const ShowerGlassRepair = () => {
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         <div className="absolute inset-0">
-          <img src="/src/assets/damaged-shower-glass.jpg" alt="Damaged shower glass door needing repair" className="w-full h-full object-cover" />
+          <img src={damagedShowerGlass} alt="Damaged shower glass door needing repair" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/60 to-primary/80"></div>
         </div>
         <div className="relative container mx-auto px-4 py-20">
