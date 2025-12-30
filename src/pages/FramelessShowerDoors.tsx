@@ -54,7 +54,7 @@ const FramelessShowerDoors = () => {
             "serviceType": "Frameless Shower Door Installation",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass"
+              "name": "Baja Glass & Mirror LLC"
             },
             "areaServed": [
               {
