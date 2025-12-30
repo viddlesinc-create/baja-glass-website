@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import { BreadcrumbNav } from "./components/BreadcrumbNav";
 import RedirectComponent from "./components/RedirectComponent";
 import QueryParameterRedirects from "./components/QueryParameterRedirects";
+import { SEOHead } from "./seo";
 
 // Eagerly load critical pages
 import Index from "./pages/Index";
@@ -53,6 +54,7 @@ const HardWaterSolutions = lazy(() => import("./pages/blog/HardWaterSolutions"))
 function App() {
   return (
     <>
+      <SEOHead />
       <QueryParameterRedirects />
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
