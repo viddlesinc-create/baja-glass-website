@@ -93,7 +93,13 @@ const Footer = () => {
               <p>4280 Reno Ave</p>
               <p>Ste A</p>
               <p>Las Vegas, NV 89118</p>
-              <p>(702) 383-0779</p>
+              <a 
+                href="tel:+17023830779" 
+                className="block hover:text-primary-foreground transition-colors"
+                aria-label="Call Baja Glass at (702) 383-0779"
+              >
+                (702) 383-0779
+              </a>
             </div>
           </div>
 
