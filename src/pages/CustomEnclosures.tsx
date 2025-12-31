@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import PhoneNumber from "@/components/PhoneNumber";
 
 const CustomEnclosures = () => {
   const faqs = [
@@ -128,10 +129,11 @@ const CustomEnclosures = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
-                  Call Now: (702) 383-0779
-                </a>
+                <PhoneNumber 
+                  location="custom_enclosures_hero"
+                  showIcon={true}
+                  showPrefix={true}
+                />
               </Button>
             </div>
           </div>

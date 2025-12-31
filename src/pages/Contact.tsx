@@ -9,7 +9,8 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Clock, Mail, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
-import { trackFormSubmission, trackHendersonConversion, trackPhoneClick } from "@/lib/analytics";
+import { trackFormSubmission, trackHendersonConversion } from "@/lib/analytics";
+import PhoneNumber from "@/components/PhoneNumber";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -285,13 +286,10 @@ const Contact = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <div>
-                      <a
-                        href="tel:+17023830779"
+                      <PhoneNumber 
+                        location="contact_page"
                         className="text-2xl font-bold text-accent hover:text-accent/80 transition-colors"
-                        onClick={() => trackPhoneClick('contact_page')}
-                      >
-                        (702) 383-0779
-                      </a>
+                      />
                       <p className="text-muted-foreground">Call for immediate assistance or text photos for faster quotes</p>
                     </div>
                     <Badge variant="outline">Click to call</Badge>
@@ -403,10 +401,11 @@ const Contact = () => {
               <a href="#quote-form">Get a Fast Quote</a>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                Call Now: (702) 383-0779
-              </a>
+              <PhoneNumber 
+                location="contact_page_cta"
+                showIcon={true}
+                showPrefix={true}
+              />
             </Button>
           </div>
         </div>

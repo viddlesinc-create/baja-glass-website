@@ -12,6 +12,19 @@
     <!-- End Google Tag Manager -->
     
     <!-- Google tag (gtag.js) - Deferred for performance -->
+    <!-- 
+      GOOGLE ADS WEBSITE CALL CONVERSION TRACKING
+      ============================================
+      Conversion ID: AW-10903899436
+      Conversion Label: Vm7mCLrPp6EbEKyasc8o
+      
+      This configuration enables dynamic phone number replacement:
+      - Visitors from Google Ads will see a Google forwarding number
+      - All other visitors see the real business number: (702) 383-0779
+      
+      The phone_conversion_callback function targets all elements with 
+      the data-phone-number attribute and replaces their content/href.
+    -->
     <script>
       // Defer analytics until browser is idle
       if ('requestIdleCallback' in window) {
@@ -27,8 +40,39 @@
             window.gtag = gtag;
             gtag('js', new Date());
             gtag('config', 'AW-10903899436');
+            
+            // Website Call Conversion Tracking with dynamic phone number replacement
+            // Google will replace (702) 383-0779 with a forwarding number for ad visitors
             gtag('config', 'AW-10903899436/Vm7mCLrPp6EbEKyasc8o', {
-              'phone_conversion_number': '(702) 383-0779'
+              'phone_conversion_number': '(702) 383-0779',
+              'phone_conversion_callback': function(formatted_number, mobile_number) {
+                // Replace phone numbers in ALL elements with data-phone-number attribute
+                var phoneElements = document.querySelectorAll('[data-phone-number]');
+                phoneElements.forEach(function(el) {
+                  // Update href for tel: links
+                  if (el.tagName === 'A' && el.href && el.href.indexOf('tel:') === 0) {
+                    el.href = 'tel:' + mobile_number;
+                  }
+                  // Update visible text content
+                  // Find nested span with data-phone-number or update directly
+                  var textEl = el.querySelector('[data-phone-number]') || el;
+                  if (textEl.childNodes.length > 0) {
+                    // If element has children, find the text node or span to update
+                    for (var i = 0; i < textEl.childNodes.length; i++) {
+                      var child = textEl.childNodes[i];
+                      if (child.nodeType === Node.TEXT_NODE && child.textContent.trim()) {
+                        child.textContent = child.textContent.replace('(702) 383-0779', formatted_number);
+                      } else if (child.nodeType === Node.ELEMENT_NODE && child.hasAttribute('data-phone-number')) {
+                        child.textContent = formatted_number;
+                      }
+                    }
+                  }
+                  // Direct text replacement for simple elements
+                  if (el.textContent.indexOf('(702) 383-0779') !== -1) {
+                    el.textContent = el.textContent.replace('(702) 383-0779', formatted_number);
+                  }
+                });
+              }
             });
           };
         });
@@ -47,8 +91,32 @@
               window.gtag = gtag;
               gtag('js', new Date());
               gtag('config', 'AW-10903899436');
+              
+              // Website Call Conversion Tracking with dynamic phone number replacement
               gtag('config', 'AW-10903899436/Vm7mCLrPp6EbEKyasc8o', {
-                'phone_conversion_number': '(702) 383-0779'
+                'phone_conversion_number': '(702) 383-0779',
+                'phone_conversion_callback': function(formatted_number, mobile_number) {
+                  var phoneElements = document.querySelectorAll('[data-phone-number]');
+                  phoneElements.forEach(function(el) {
+                    if (el.tagName === 'A' && el.href && el.href.indexOf('tel:') === 0) {
+                      el.href = 'tel:' + mobile_number;
+                    }
+                    var textEl = el.querySelector('[data-phone-number]') || el;
+                    if (textEl.childNodes.length > 0) {
+                      for (var i = 0; i < textEl.childNodes.length; i++) {
+                        var child = textEl.childNodes[i];
+                        if (child.nodeType === Node.TEXT_NODE && child.textContent.trim()) {
+                          child.textContent = child.textContent.replace('(702) 383-0779', formatted_number);
+                        } else if (child.nodeType === Node.ELEMENT_NODE && child.hasAttribute('data-phone-number')) {
+                          child.textContent = formatted_number;
+                        }
+                      }
+                    }
+                    if (el.textContent.indexOf('(702) 383-0779') !== -1) {
+                      el.textContent = el.textContent.replace('(702) 383-0779', formatted_number);
+                    }
+                  });
+                }
               });
             };
           }, 0);

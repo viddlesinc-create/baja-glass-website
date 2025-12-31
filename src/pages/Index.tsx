@@ -9,6 +9,7 @@ import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import OptimizedImage from "@/components/OptimizedImage";
+import PhoneNumber from "@/components/PhoneNumber";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import installationProcess from "@/assets/installation-process.jpg";
 import slidingDoors from "@/assets/sliding-doors.jpg";
@@ -178,10 +179,11 @@ const Index = () => {
               <Button variant="glass" size="lg" asChild className="animate-scale-in shadow-xl" style={{
               animationDelay: '0.1s'
             }}>
-                <a href="tel:+17023830779" className="flex items-center gap-2" aria-label="Call Baja Glass at (702) 383-0779">
-                  <Phone className="h-5 w-5" aria-hidden="true" />
-                  Call Now: (702) 383-0779
-                </a>
+                <PhoneNumber 
+                  location="homepage_hero"
+                  showIcon={true}
+                  showPrefix={true}
+                />
               </Button>
             </div>
 
