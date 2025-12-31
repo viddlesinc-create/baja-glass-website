@@ -83,11 +83,19 @@ const SlidingShowerDoors = () => {
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png"
+            alt="Sliding glass shower door installation with smooth-glide system - professional Las Vegas installation"
+            className="w-full h-full object-cover"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
+          />
+        </div>
         <div className="absolute inset-0 bg-black/40 z-10"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png')" }}
-        ></div>
         <div className="relative container mx-auto px-4 py-20 z-20 text-white">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Sliding Shower Doors Las Vegas</h1>

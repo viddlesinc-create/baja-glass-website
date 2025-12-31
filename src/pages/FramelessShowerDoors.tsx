@@ -94,6 +94,11 @@ const FramelessShowerDoors = () => {
             src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" 
             alt="Modern luxury bathroom with frameless glass shower door and freestanding tub - professional glass installation Las Vegas"
             className="w-full h-full object-cover opacity-75"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
