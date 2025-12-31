@@ -30,7 +30,7 @@ export const trackPhoneClick = (location?: string) => {
     
     // Also fire as a conversion event for Google Ads
     window.gtag('event', 'conversion', {
-      send_to: 'AW-CONVERSION_ID/CONVERSION_LABEL', // Replace with actual IDs when available
+      send_to: 'AW-10903899436/phone_click', // Google Ads conversion tracking
       event_callback: () => {
         console.log('GA4 Conversion: phone_click', { location });
       }
