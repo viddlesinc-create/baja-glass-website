@@ -69,6 +69,11 @@ const SemiFramelessShowerDoors = () => {
             src="/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png" 
             alt="Semi-frameless glass shower doors on bathtub with marble tile and black hardware - professional installation Las Vegas"
             className="w-full h-full object-cover opacity-75"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>

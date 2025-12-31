@@ -110,6 +110,11 @@ const CustomEnclosures = () => {
             src="/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png" 
             alt="Custom frameless shower enclosure with sliding doors and stone tile walls - professional installation by Baja Glass Las Vegas"
             className="w-full h-full object-cover"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-primary/50 to-charcoal/70"></div>
         </div>

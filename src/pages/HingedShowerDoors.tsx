@@ -89,6 +89,11 @@ const HingedShowerDoors = () => {
             src="/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png" 
             alt="Modern hinged glass shower door with black fixtures and geometric tile design - professional installation Las Vegas"
             className="w-full h-full object-cover opacity-75"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>

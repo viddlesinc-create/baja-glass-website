@@ -268,7 +268,10 @@ const Gallery = () => {
                 src="/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png" 
                 alt="Under-stair shower installation with custom glass door"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -279,7 +282,10 @@ const Gallery = () => {
                 src="/lovable-uploads/eb713b05-a28a-4385-b0c4-cdcb90a610ee.png" 
                 alt="Modern bathroom mirror with brass fixtures"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -290,7 +296,10 @@ const Gallery = () => {
                 src="/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png" 
                 alt="Textured glass shower doors with black hardware"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -301,7 +310,10 @@ const Gallery = () => {
                 src="/lovable-uploads/ab324ca0-1c7d-49d5-ba4f-dd8865a3b916.png" 
                 alt="Frosted glass shower panel with black frame"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -312,7 +324,10 @@ const Gallery = () => {
                 src="/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png" 
                 alt="Tiled shower with black framed glass doors"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -323,7 +338,10 @@ const Gallery = () => {
                 src="/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png" 
                 alt="Large walk-in shower with frameless glass panels"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -334,7 +352,10 @@ const Gallery = () => {
                 src="/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png" 
                 alt="Corner shower with black hardware and built-in seating"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -345,7 +366,10 @@ const Gallery = () => {
                 src="/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png" 
                 alt="Tub-to-shower conversion with frameless glass doors"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -356,7 +380,10 @@ const Gallery = () => {
                 src="/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png" 
                 alt="Elegant shower with pebble accent strip and frameless glass"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -367,7 +394,10 @@ const Gallery = () => {
                 src="/lovable-uploads/7281360e-8ce3-43c7-890e-3f4b5f73e8a4.png" 
                 alt="Tub enclosure with black hardware and accent tile"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -378,7 +408,10 @@ const Gallery = () => {
                 src="/lovable-uploads/04d04176-aad8-47c9-9880-5c8eed82308f.png" 
                 alt="Compact shower with frameless glass door"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -389,7 +422,10 @@ const Gallery = () => {
                 src="/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png" 
                 alt="Corner shower enclosure with black hardware"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -400,7 +436,10 @@ const Gallery = () => {
                 src="/lovable-uploads/9cb21233-99c8-47f9-a756-a38f36471524.png" 
                 alt="Custom glass dining table with modern base"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -411,7 +450,10 @@ const Gallery = () => {
                 src="/lovable-uploads/a038cf4c-a8a3-4089-b29d-40d9ca793fff.png" 
                 alt="Walk-in shower with black hardware and subway tile"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -422,7 +464,10 @@ const Gallery = () => {
                 src="/lovable-uploads/ec6a560e-8579-44ed-9f2a-ff3fa3889f09.png" 
                 alt="Large shower with partial glass panel and black fixtures"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -433,7 +478,10 @@ const Gallery = () => {
                 src="/lovable-uploads/91755c9c-0083-4cb9-bb28-670bdbf4a700.png" 
                 alt="Narrow shower with herringbone accent tile and black hardware"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -444,7 +492,10 @@ const Gallery = () => {
                 src="/lovable-uploads/60879279-461a-40ca-b2cd-78b1d7fa95b3.png" 
                 alt="Large custom shower enclosure with glass niches and built-in seating"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -455,7 +506,10 @@ const Gallery = () => {
                 src="/lovable-uploads/722b5530-b688-42ad-8731-3cc0be1756ed.png" 
                 alt="Tub-to-shower conversion with sliding glass doors"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -466,7 +520,10 @@ const Gallery = () => {
                 src="/lovable-uploads/60045135-144e-49b1-b017-133adce3a58d.png" 
                 alt="Walk-in shower installation in progress with black hardware"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -477,7 +534,10 @@ const Gallery = () => {
                 src="/lovable-uploads/4f6832d0-9951-4037-bfc2-c9153c280a12.png" 
                 alt="Single panel shower door with chrome hardware"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -488,7 +548,10 @@ const Gallery = () => {
                 src="/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png" 
                 alt="Marble shower with black hardware and built-in bench"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -499,7 +562,10 @@ const Gallery = () => {
                 src="/lovable-uploads/482d4c2b-fc42-4a15-b833-a141e61e4d91.png" 
                 alt="L-shaped shower enclosure with marble tile and chrome hardware"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -510,7 +576,10 @@ const Gallery = () => {
                 src="/lovable-uploads/182850ed-180a-4525-aee1-917367fff2bb.png" 
                 alt="Corner shower with subway tile and black fixtures"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -521,7 +590,10 @@ const Gallery = () => {
                 src="/lovable-uploads/30ead577-c1b4-4057-a808-f7d0d612125f.png" 
                 alt="Luxury steam shower with dark tinted glass"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -532,7 +604,10 @@ const Gallery = () => {
                 src="/lovable-uploads/32eaf66a-2f41-4fc8-92f4-2faf7cf74d56.png" 
                 alt="Modern walk-in shower with penny tile accent and multiple shower heads"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div 
@@ -543,7 +618,10 @@ const Gallery = () => {
                 src="/lovable-uploads/4940799d-2ddf-41b7-bd8c-22aa0ab12cdb.png" 
                 alt="Rain glass shower doors with black hardware"
                 className="w-full aspect-video object-cover"
+                width="800"
+                height="450"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

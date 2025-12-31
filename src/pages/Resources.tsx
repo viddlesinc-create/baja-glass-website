@@ -256,6 +256,10 @@ const Resources = () => {
                     src={glass.image} 
                     alt={`${glass.name} shower door panel`}
                     className="w-full h-48 object-cover"
+                    width="400"
+                    height="192"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{glass.name}</h3>
