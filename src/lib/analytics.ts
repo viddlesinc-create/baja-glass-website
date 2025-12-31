@@ -11,18 +11,35 @@ declare global {
 }
 
 /**
- * Track phone click events
+ * Track phone click events for Google Ads call tracking
+ * Follows GA4 recommended event parameters
  */
 export const trackPhoneClick = (location?: string) => {
   if (typeof window.gtag === 'function') {
+    // Standard GA4 event for phone clicks
     window.gtag('event', 'phone_click', {
-      event_category: 'engagement',
+      event_category: 'contact',
       event_label: location || 'general',
       value: 1,
-      page_location: location || 'unknown'
+      link_url: 'tel:+17023830779',
+      link_text: '(702) 383-0779',
+      page_location: window.location.href,
+      page_title: document.title,
+      click_location: location || 'unknown'
     });
     
-    console.log('GA4 Event: phone_click', { location });
+    // Also fire as a conversion event for Google Ads
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-CONVERSION_ID/CONVERSION_LABEL', // Replace with actual IDs when available
+      event_callback: () => {
+        console.log('GA4 Conversion: phone_click', { location });
+      }
+    });
+    
+    console.log('GA4 Event: phone_click', { 
+      location, 
+      page: window.location.pathname 
+    });
   }
 };
 
