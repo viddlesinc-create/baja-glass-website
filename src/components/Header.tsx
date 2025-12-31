@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Menu, Phone, Star, Instagram, Facebook, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
-import { trackPhoneClick } from "@/lib/analytics";
+import PhoneNumber from "@/components/PhoneNumber";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -168,15 +168,11 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
-            <a
-              href="tel:+17023830779"
+            <PhoneNumber 
+              location="header"
+              showIcon={true}
               className="hidden sm:flex items-center gap-2 text-sm font-medium text-foreground hover:text-accent transition-colors"
-              aria-label="Call Baja Glass at (702) 383-0779"
-              onClick={() => trackPhoneClick('header')}
-            >
-              <Phone className="h-4 w-4" />
-              (702) 383-0779
-            </a>
+            />
             
             <Button variant="cta" size="default" asChild>
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
@@ -278,15 +274,11 @@ const Header = () => {
                   </nav>
 
                   <div className="pt-4 border-t border-border">
-                    <a
-                      href="tel:+17023830779"
+                    <PhoneNumber 
+                      location="mobile_menu"
+                      showIcon={true}
                       className="flex items-center gap-2 text-lg font-medium text-foreground hover:text-accent transition-colors mb-4"
-                      aria-label="Call Baja Glass at (702) 383-0779"
-                      onClick={() => trackPhoneClick('mobile_menu')}
-                    >
-                      <Phone className="h-5 w-5" />
-                      (702) 383-0779
-                    </a>
+                    />
                     
                     <div className="flex items-center gap-4">
                       {socialLinks.map((social) => (

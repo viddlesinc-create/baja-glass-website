@@ -7,6 +7,7 @@ import heroImage from "@/assets/hero-shower-door.jpg";
 import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
 import { Helmet } from "react-helmet-async";
+import PhoneNumber from "@/components/PhoneNumber";
 
 const AreasServed = () => {
 const areas = [
@@ -103,10 +104,11 @@ const areas = [
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
-                  Call Now: (702) 383-0779
-                </a>
+                <PhoneNumber 
+                  location="areas_served_hero"
+                  showIcon={true}
+                  showPrefix={true}
+                />
               </Button>
             </div>
           </div>
@@ -209,10 +211,11 @@ const areas = [
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="xl" asChild className="shadow-2xl">
-                <a href="tel:+17023830779" className="flex items-center gap-3">
-                  <Phone className="h-6 w-6" />
-                  Call Now: (702) 383-0779
-                </a>
+                <PhoneNumber 
+                  location="areas_served_cta"
+                  showIcon={true}
+                  showPrefix={true}
+                />
               </Button>
             </div>
           </div>

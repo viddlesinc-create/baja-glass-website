@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import damagedShowerGlass from "@/assets/damaged-shower-glass.jpg";
+import PhoneNumber from "@/components/PhoneNumber";
 const ShowerGlassRepair = () => {
   const commonProblems = [{
     title: "Broken or Shattered Glass",
@@ -85,10 +86,11 @@ const ShowerGlassRepair = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Request a Service Visit</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
-                  Call Now: (702) 383-0779
-                </a>
+                <PhoneNumber 
+                  location="repair_hero"
+                  showIcon={true}
+                  showPrefix={true}
+                />
               </Button>
             </div>
           </div>
@@ -151,10 +153,11 @@ const ShowerGlassRepair = () => {
             </div>
             <div className="mt-8">
               <Button variant="phone" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
-                  Call Now: (702) 383-0779
-                </a>
+                <PhoneNumber 
+                  location="repair_mid_cta"
+                  showIcon={true}
+                  showPrefix={true}
+                />
               </Button>
             </div>
           </div>
@@ -229,10 +232,11 @@ const ShowerGlassRepair = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Request a Service Visit</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                Call Now: (702) 383-0779
-              </a>
+              <PhoneNumber 
+                location="repair_footer_cta"
+                showIcon={true}
+                showPrefix={true}
+              />
             </Button>
           </div>
         </div>

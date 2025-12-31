@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Star, Instagram, Facebook } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { trackPhoneClick } from "@/lib/analytics";
+import PhoneNumber from "@/components/PhoneNumber";
 
 const Footer = () => {
   const quickLinks = [
@@ -94,14 +94,10 @@ const Footer = () => {
               <p>4280 Reno Ave</p>
               <p>Ste A</p>
               <p>Las Vegas, NV 89118</p>
-              <a 
-                href="tel:+17023830779" 
+              <PhoneNumber 
+                location="footer"
                 className="block hover:text-primary-foreground transition-colors"
-                aria-label="Call Baja Glass at (702) 383-0779"
-                onClick={() => trackPhoneClick('footer')}
-              >
-                (702) 383-0779
-              </a>
+              />
             </div>
           </div>
 

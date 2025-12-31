@@ -61,6 +61,19 @@ const Resources = () => {
     {
       question: "What warranty do you provide?",
       answer: "We provide comprehensive warranty coverage on both materials and workmanship. Specific terms vary by product and will be clearly explained before installation."
+    },
+    // Call Tracking FAQ Section
+    {
+      question: "Why do I sometimes see a different phone number after clicking a Google ad?",
+      answer: "Google may display a temporary tracking number that forwards directly to our main business line at (702) 383-0779. This helps us measure which ads lead to calls so we can better serve customers. It does not change how your call is handled or what you pay."
+    },
+    {
+      question: "Is my call still going to Baja Glass if I see a different number?",
+      answer: "Yes — all tracking numbers forward directly to the same Baja Glass team. The number is only different for measurement purposes and your call experience is identical. You'll reach the same friendly staff who will help with your shower door needs."
+    },
+    {
+      question: "Will my phone number ever be sold or used for spam?",
+      answer: "Never. Call tracking is used purely for analytics to understand our marketing performance. Baja Glass does not sell phone numbers or use them for spam or unsolicited contact. Your privacy is important to us."
     }
   ];
 
