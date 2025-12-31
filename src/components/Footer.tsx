@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Star, Instagram, Facebook } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { trackPhoneClick } from "@/lib/analytics";
 
 const Footer = () => {
   const quickLinks = [
@@ -97,6 +98,7 @@ const Footer = () => {
                 href="tel:+17023830779" 
                 className="block hover:text-primary-foreground transition-colors"
                 aria-label="Call Baja Glass at (702) 383-0779"
+                onClick={() => trackPhoneClick('footer')}
               >
                 (702) 383-0779
               </a>
