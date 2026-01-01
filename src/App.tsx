@@ -9,6 +9,7 @@ import { BreadcrumbNav } from "./components/BreadcrumbNav";
 import RedirectComponent from "./components/RedirectComponent";
 import QueryParameterRedirects from "./components/QueryParameterRedirects";
 import { SEOHead } from "./seo";
+import { usePageTracking } from "./hooks/usePageTracking";
 
 // Eagerly load critical pages
 import Index from "./pages/Index";
@@ -52,6 +53,8 @@ const FramelessVsSemiFrameless = lazy(() => import("./pages/blog/FramelessVsSemi
 const HardWaterSolutions = lazy(() => import("./pages/blog/HardWaterSolutions"));
 
 function App() {
+  usePageTracking();
+  
   return (
     <>
       <SEOHead />
