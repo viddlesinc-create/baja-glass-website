@@ -28,13 +28,13 @@ export const trackPhoneClick = (location?: string) => {
       click_location: location || 'unknown'
     });
     
-    // Also fire as a conversion event for Google Ads - Click to Call
+    // Also fire as a conversion event for Google Ads - Call From Website
     window.gtag('event', 'conversion', {
-      send_to: 'AW-10903899436/IMSECOOV4tobEKyasc8o',
+      send_to: 'AW-10903899436/nDu2CPzJ8tobEKyasc8o',
       value: 1.0,
       currency: 'USD',
       event_callback: () => {
-        console.log('GA4 Conversion: click_to_call', { location });
+        console.log('GA4 Conversion: call_from_website', { location });
       }
     });
     
