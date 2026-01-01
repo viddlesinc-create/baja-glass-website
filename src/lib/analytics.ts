@@ -2,11 +2,6 @@
 
 declare global {
   interface Window {
-    gtag?: (
-      command: string,
-      targetId: string,
-      config?: Record<string, any>
-    ) => void;
     dataLayer?: Record<string, any>[];
   }
 }
@@ -38,15 +33,10 @@ export const trackPhoneClick = (location?: string) => {
     click_location: location || 'unknown'
   };
 
-  // Push to dataLayer for GTM
+  // Push to dataLayer for GTM (single source of truth)
   pushToDataLayer('phone_click', eventData);
 
-  // Also fire gtag event if available (GTM can provide this)
-  if (typeof window.gtag === 'function') {
-    window.gtag('event', 'phone_click', eventData);
-  }
-
-  console.log('DataLayer Event: phone_click', { 
+  console.log('DataLayer Event: phone_click', {
     location, 
     page: window.location.pathname 
   });
@@ -70,13 +60,8 @@ export const trackFormSubmission = (formData: {
     source: formData.source || 'contact_form'
   };
 
-  // Push to dataLayer for GTM
+  // Push to dataLayer for GTM (single source of truth)
   pushToDataLayer('generate_lead', eventData);
-
-  // Also fire gtag event if available
-  if (typeof window.gtag === 'function') {
-    window.gtag('event', 'generate_lead', eventData);
-  }
 
   console.log('DataLayer Event: generate_lead', formData);
 };
@@ -92,12 +77,8 @@ export const trackHendersonConversion = (action: 'phone_click' | 'form_submit') 
     location: 'Henderson'
   };
 
-  // Push to dataLayer for GTM
+  // Push to dataLayer for GTM (single source of truth)
   pushToDataLayer('henderson_conversion', eventData);
-
-  if (typeof window.gtag === 'function') {
-    window.gtag('event', 'henderson_conversion', eventData);
-  }
 
   console.log('DataLayer Event: henderson_conversion', { action });
 };
@@ -112,12 +93,8 @@ export const trackCTAClick = (ctaType: string, location?: string) => {
     page_location: location || 'unknown'
   };
 
-  // Push to dataLayer for GTM
+  // Push to dataLayer for GTM (single source of truth)
   pushToDataLayer('cta_click', eventData);
-
-  if (typeof window.gtag === 'function') {
-    window.gtag('event', 'cta_click', eventData);
-  }
 
   console.log('DataLayer Event: cta_click', { ctaType, location });
 };
