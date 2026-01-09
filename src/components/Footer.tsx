@@ -35,7 +35,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Star, href: "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas", label: "Yelp" },
     { icon: Instagram, href: "https://www.instagram.com/baja_glass_lv/", label: "Instagram" },
-    { icon: Facebook, href: "https://www.facebook.com/people/Baja-Glass-and-Mirror/", label: "Facebook" },
+    { icon: Facebook, href: "https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/", label: "Facebook" },
   ];
 
   return (
@@ -48,11 +48,11 @@ const Footer = () => {
             "name": "Baja Glass & Mirror LLC",
             "url": "https://bajaglass.com",
             "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-            "description": "Premier shower door and glass company in Las Vegas, NV. Custom frameless shower doors, glass repair, and commercial glass services.",
+            "description": "Family-owned shower door and glass company in Las Vegas, NV. Custom frameless shower doors, glass repair, and interior glass services. First Responder Owned.",
             "telephone": "+17023830779",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "4280 Reno Ave Ste A",
+              "streetAddress": "4280 W Reno Ave Ste A",
               "addressLocality": "Las Vegas",
               "addressRegion": "NV",
               "postalCode": "89118",
@@ -68,8 +68,11 @@ const Footer = () => {
               "Enterprise"
             ],
             "sameAs": [
-              "https://www.instagram.com/bajaglass",
-              "https://www.facebook.com/bajaglass"
+              "https://www.instagram.com/baja_glass_lv/",
+              "https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/",
+              "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas",
+              "https://www.homeadvisor.com/rated.BajaGlassandMirror.33547383.html",
+              "https://www.bbb.org/us/nv/las-vegas/profile/window-glass/baja-glass-and-mirror-llc-1086-90011741"
             ]
           })}
         </script>
@@ -91,7 +94,7 @@ const Footer = () => {
               />
             </div>
             <div className="space-y-2 text-primary-foreground/80">
-              <p>4280 Reno Ave</p>
+              <p>4280 W Reno Ave</p>
               <p>Ste A</p>
               <p>Las Vegas, NV 89118</p>
               <PhoneNumber 

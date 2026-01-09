@@ -99,7 +99,7 @@ const LocationPageTemplate = ({
             },
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "4280 Reno Ave, Ste A",
+              "streetAddress": "4280 W Reno Ave Ste A",
               "addressLocality": "Las Vegas",
               "addressRegion": "NV",
               "postalCode": "89118",
@@ -110,10 +110,10 @@ const LocationPageTemplate = ({
             "priceRange": "$$",
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "4.9",
+              "ratingValue": "4.6",
               "bestRating": "5",
               "worstRating": "1",
-              "ratingCount": "47"
+              "ratingCount": "27"
             }
           })}
         </script>

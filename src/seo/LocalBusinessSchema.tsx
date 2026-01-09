@@ -6,7 +6,7 @@ const localBusinessData = {
   "@id": "https://bajaglass.com/#localbusiness",
   "name": "Baja Glass & Mirror LLC",
   "image": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-  "description": "Baja Glass & Mirror is a family-owned glass company specializing in custom shower doors, mirrors, and interior glass installation in Las Vegas.",
+  "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation in Las Vegas, Henderson, and Summerlin.",
   "url": "https://bajaglass.com",
   "telephone": "(702) 383-0779",
   "address": {
@@ -19,13 +19,13 @@ const localBusinessData = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 36.1215,
+    "latitude": 36.0856,
     "longitude": -115.2269
   },
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "opens": "08:00",
       "closes": "16:00"
     }
@@ -84,10 +84,14 @@ const localBusinessData = {
       }
     ]
   },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Las Vegas Valley"
-  },
+  "areaServed": [
+    { "@type": "City", "name": "Las Vegas" },
+    { "@type": "City", "name": "Henderson" },
+    { "@type": "City", "name": "Summerlin" },
+    { "@type": "City", "name": "Paradise" },
+    { "@type": "City", "name": "Spring Valley" },
+    { "@type": "City", "name": "Enterprise" }
+  ],
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "(702) 383-0779",
@@ -95,7 +99,31 @@ const localBusinessData = {
     "areaServed": "US",
     "availableLanguage": "English"
   },
-  "sameAs": ["https://bajaglass.com"]
+  "sameAs": [
+    "https://www.instagram.com/baja_glass_lv/",
+    "https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/",
+    "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas",
+    "https://www.homeadvisor.com/rated.BajaGlassandMirror.33547383.html",
+    "https://www.bbb.org/us/nv/las-vegas/profile/window-glass/baja-glass-and-mirror-llc-1086-90011741"
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Business Attribute",
+      "value": "First Responder Owned"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "License",
+      "name": "C8 Glass And Glazing License",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Nevada State Contractors Board"
+      }
+    }
+  ]
 };
 
 const LocalBusinessSchema = () => {

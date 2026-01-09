@@ -118,18 +118,18 @@ const Contact = () => {
               "name": "Baja Glass & Mirror LLC",
               "address": {
                 "@type": "PostalAddress", 
-                "streetAddress": "4280 Reno Ave, Ste A",
+                "streetAddress": "4280 W Reno Ave Ste A",
                 "addressLocality": "Las Vegas",
                 "addressRegion": "NV",
                 "postalCode": "89118",
                 "addressCountry": "US"
               },
-              "telephone": "(702) 750-1526",
+              "telephone": "(702) 383-0779",
               "email": "info@bajaglass.com",
               "url": "https://bajaglass.com",
               "openingHours": "Mo-Fr 08:00-16:00",
               "contactPoint": [
-                { "@type": "ContactPoint", "telephone": "(702) 750-1526", "contactType": "Customer Service", "availableLanguage": "English", "areaServed": "Las Vegas Valley" },
+                { "@type": "ContactPoint", "telephone": "(702) 383-0779", "contactType": "Customer Service", "availableLanguage": "English", "areaServed": "Las Vegas Valley" },
                 { "@type": "ContactPoint", "contactType": "Sales", "availableLanguage": "English", "serviceType": "Free Consultation" }
               ],
               "priceRange": "$$",
@@ -307,7 +307,7 @@ const Contact = () => {
                 <CardContent>
                   <div className="space-y-2">
                     <p className="font-semibold">Baja Glass</p>
-                    <p className="text-muted-foreground">4280 Reno Ave</p>
+                    <p className="text-muted-foreground">4280 W Reno Ave</p>
                     <p className="text-muted-foreground">Ste A</p>
                     <p className="text-muted-foreground">Las Vegas, NV 89118</p>
                   </div>
