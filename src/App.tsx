@@ -25,6 +25,7 @@ const HingedShowerDoors = lazy(() => import("./pages/HingedShowerDoors"));
 const CustomEnclosures = lazy(() => import("./pages/CustomEnclosures"));
 const SteamShowerEnclosures = lazy(() => import("./pages/SteamShowerEnclosures"));
 const ShowerGlassRepair = lazy(() => import("./pages/ShowerGlassRepair"));
+const ShowerEnclosuresLasVegas = lazy(() => import("./pages/ShowerEnclosuresLasVegas"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const AreasServed = lazy(() => import("./pages/AreasServed"));
 const About = lazy(() => import("./pages/About"));
@@ -78,6 +79,7 @@ function App() {
               <Route path="/shower-doors-las-vegas/custom-enclosures" element={<CustomEnclosures />} />
               <Route path="/shower-doors-las-vegas/steam-enclosures" element={<SteamShowerEnclosures />} />
               <Route path="/shower-doors-las-vegas/repair" element={<ShowerGlassRepair />} />
+              <Route path="/shower-enclosures-las-vegas" element={<ShowerEnclosuresLasVegas />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/areas-served" element={<AreasServed />} />
               <Route path="/about" element={<About />} />
