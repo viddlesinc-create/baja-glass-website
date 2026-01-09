@@ -32,6 +32,7 @@ const routeLabels: Record<string, string> = {
   "/shower-doors-las-vegas/custom-enclosures": "Custom Enclosures",
   "/shower-doors-las-vegas/steam-enclosures": "Steam Shower Enclosures",
   "/shower-doors-las-vegas/repair": "Shower Glass Repair",
+  "/shower-enclosures-las-vegas": "Shower Enclosures Las Vegas",
   // Location pages
   "/shower-doors-henderson-nv": "Henderson Shower Doors",
   "/shower-doors-summerlin-nv": "Summerlin Shower Doors",
