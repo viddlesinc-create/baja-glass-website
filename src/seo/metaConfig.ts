@@ -92,9 +92,15 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-las-vegas/repair': {
-    title: 'Shower Glass Repair Las Vegas | Emergency Service - Baja Glass & Mirror',
-    description: 'Emergency shower glass repair in Las Vegas. Broken panels, sliding door repair, hardware replacement, and leak fixes. Fast, reliable service.',
+    title: 'Shower Door Repair Near Me | Las Vegas Emergency Service - Baja Glass',
+    description: 'Same-day shower door repair in Las Vegas & Henderson. Broken glass, sliding door repair, seal replacement, hardware fixes. Call (702) 383-0779 for emergency service.',
     canonical: `${BASE_URL}/shower-doors-las-vegas/repair`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/shower-enclosures-las-vegas': {
+    title: 'Shower Enclosures Las Vegas | Custom Glass Enclosures - Baja Glass',
+    description: 'Custom glass shower enclosures in Las Vegas, NV. Inline, corner, neo-angle, and steam designs. Professional installation in Henderson, Summerlin. Free quotes.',
+    canonical: `${BASE_URL}/shower-enclosures-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/glass-company-las-vegas/residential-glass-repair': {
@@ -112,8 +118,8 @@ export const seoConfig: Record<string, SEOMeta> = {
 
   // ===== Location Pages =====
   '/shower-doors-henderson-nv': {
-    title: 'Shower Doors Henderson NV | Frameless & Custom Installation - Baja Glass & Mirror',
-    description: 'Expert shower doors in Henderson, NV. Frameless, custom enclosures, and repair. Serving Green Valley, Anthem, Seven Hills. Licensed, insured. Free quotes.',
+    title: 'Shower Doors Henderson NV | Installation & Repair - Baja Glass & Mirror',
+    description: 'Shower door installation & repair in Henderson, NV. Frameless shower doors, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes.',
     canonical: `${BASE_URL}/shower-doors-henderson-nv`,
     ogImage: `${BASE_URL}/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png`,
   },

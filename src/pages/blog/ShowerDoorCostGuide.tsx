@@ -105,10 +105,10 @@ const ShowerDoorCostGuide = () => {
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-white/20 text-white">Complete Pricing Guide 2025</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Shower Door Installation Cost in Las Vegas
+              How Much Does Shower Door Installation Cost? | Las Vegas 2025 Guide
             </h1>
             <p className="text-xl text-white/90">
-              Transparent pricing, accurate estimates, and what you need to know before your installation
+              Complete breakdown of shower door costs in Las Vegas including frameless, semi-frameless, and custom enclosure pricing
             </p>
           </div>
         </div>
@@ -132,7 +132,8 @@ const ShowerDoorCostGuide = () => {
       <section className="py-12 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Average Costs by Door Type</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center">Cost to Install Shower Door - Complete Breakdown</h2>
+            <p className="text-center text-muted-foreground mb-8">Average <strong>shower door installation cost</strong> in Las Vegas by type:</p>
             <div className="space-y-4">
               {costBreakdown.map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
@@ -161,7 +162,8 @@ const ShowerDoorCostGuide = () => {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8">Factors That Affect Shower Door Cost</h2>
+            <h2 className="text-3xl font-bold mb-4">What Affects Frameless Shower Door Cost?</h2>
+            <p className="text-muted-foreground mb-8">Understanding what impacts your <strong>frameless shower door cost</strong> helps you budget accurately:</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {costFactors.map((item, index) => (
                 <Card key={index}>

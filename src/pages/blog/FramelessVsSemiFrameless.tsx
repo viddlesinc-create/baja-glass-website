@@ -123,10 +123,10 @@ const FramelessVsSemiFrameless = () => {
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-white/20 text-white">Comparison Guide</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Frameless vs Semi-Frameless vs Framed Shower Doors
+              Semi Frameless vs Frameless Shower Door: Which is Best?
             </h1>
             <p className="text-xl text-white/90">
-              Which type is best for your Las Vegas home? Complete comparison of styles, costs, and maintenance.
+              Complete comparison of frameless, semi-frameless, and framed shower doors. Learn the differences in style, cost, and maintenance for Las Vegas homes.
             </p>
           </div>
         </div>
@@ -136,7 +136,8 @@ const FramelessVsSemiFrameless = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Side-by-Side Comparison</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center">Semi Frameless vs Frameless Shower Door Comparison</h2>
+            <p className="text-center text-muted-foreground mb-8">What is the difference between frameless and semi frameless shower doors? Here's a complete breakdown:</p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
