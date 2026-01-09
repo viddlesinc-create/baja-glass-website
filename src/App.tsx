@@ -35,6 +35,7 @@ const Sitemap = lazy(() => import("./pages/Sitemap"));
 const Reviews = lazy(() => import("./pages/Reviews"));
 const ResidentialGlassRepair = lazy(() => import("./pages/ResidentialGlassRepair"));
 const OfficeEnclosures = lazy(() => import("./pages/OfficeEnclosures"));
+const FAQ = lazy(() => import("./pages/FAQ"));
 
 // Location pages
 const ShowerDoorsHenderson = lazy(() => import("./pages/locations/ShowerDoorsHenderson"));
@@ -87,6 +88,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/sitemap" element={<Sitemap />} />
               <Route path="/reviews" element={<Reviews />} />
+              <Route path="/faq" element={<FAQ />} />
               <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />
               <Route path="/shower-doors-summerlin-nv" element={<ShowerDoorsSummerlin />} />
               <Route path="/shower-doors-paradise-nv" element={<ShowerDoorsParadise />} />

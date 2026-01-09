@@ -19,6 +19,7 @@ const routeLabels: Record<string, string> = {
   "/resources": "Resources",
   "/areas-served": "Areas Served",
   "/sitemap": "Site Map",
+  "/faq": "FAQ",
   // Glass Company pages
   "/glass-company-las-vegas": "Glass Company Las Vegas",
   "/glass-company-las-vegas/residential-glass-repair": "Residential Glass Repair",
