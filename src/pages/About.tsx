@@ -46,24 +46,27 @@ const About = () => {
             "mainEntity": {
               "@type": "LocalBusiness",
               "name": "Baja Glass & Mirror LLC", 
-              "description": "Family owned and operated glass company specializing in shower doors, mirrors, and interior glass installation.",
+              "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation. First Responder Owned.",
               "foundingDate": "2010",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "4280 Reno Ave, Ste A",
+                "streetAddress": "4280 W Reno Ave Ste A",
                 "addressLocality": "Las Vegas",
                 "addressRegion": "NV", 
                 "postalCode": "89118",
                 "addressCountry": "US"
               },
-              "telephone": "(702) 750-1526",
+              "telephone": "(702) 383-0779",
               "url": "https://bajaglass.com",
-              "openingHours": "Mo-Sa 08:00-16:00",
+              "openingHours": "Mo-Fr 08:00-16:00",
               "areaServed": { "@type": "Place", "name": "Las Vegas Valley" },
               "hasCredential": [
-                { "@type": "EducationalOccupationalCredential", "credentialCategory": "License", "name": "Licensed Glass Contractor" },
+                { "@type": "EducationalOccupationalCredential", "credentialCategory": "License", "name": "C8 Glass And Glazing License" },
                 { "@type": "EducationalOccupationalCredential", "credentialCategory": "Insurance", "name": "Bonded & Insured" },
                 { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certification", "name": "Safety Glass Certified" }
+              ],
+              "additionalProperty": [
+                { "@type": "PropertyValue", "name": "Business Attribute", "value": "First Responder Owned" }
               ]
             }
           })}
@@ -200,7 +203,7 @@ const About = () => {
           </div>
           <div className="bg-background p-6 rounded-lg inline-block">
             <h3 className="font-semibold mb-2">Baja Glass & Mirror LLC</h3>
-            <p className="text-muted-foreground">4280 Reno Ave, Ste A, Las Vegas, NV 89118</p>
+            <p className="text-muted-foreground">4280 W Reno Ave Ste A, Las Vegas, NV 89118</p>
             <p className="text-muted-foreground">(702) 383-0779</p>
           </div>
         </div>
