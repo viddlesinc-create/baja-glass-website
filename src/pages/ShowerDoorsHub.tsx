@@ -286,8 +286,12 @@ const ShowerDoorsHub = () => {
                 <Star className="h-6 w-6 text-accent" />
               </div>
             </div>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              At Baja Glass, we design, fabricate, and install shower doors that fit your space and style. From minimalist frameless designs to space‑saving sliders and custom neo-angle enclosures, every detail is measured and installed for a tight, leak‑resistant fit.
+            <h2 className="text-3xl font-bold mb-6">Professional Shower Door Installation in Las Vegas</h2>
+            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+              At Baja Glass, we design, fabricate, and install shower doors that fit your space and style. From minimalist frameless designs to space‑saving sliders and <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>custom shower enclosures</Link>, every detail is measured and installed for a tight, leak‑resistant fit.
+            </p>
+            <p className="text-muted-foreground">
+              Need <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door repair</Link>? We also fix broken glass, off-track sliders, and hardware issues with same-day scheduling available.
             </p>
           </div>
         </div>
@@ -378,6 +382,32 @@ const ShowerDoorsHub = () => {
                   <p className="text-muted-foreground">{faq.answer}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted Shower Door Installers Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-8">Trusted Shower Door Installers in Las Vegas</h2>
+            <p className="text-lg text-muted-foreground text-center mb-8">
+              Looking for reliable <strong>shower door installers in Las Vegas</strong>? Our licensed, insured team has installed thousands of shower doors across the valley. We serve homeowners in <Link to="/shower-doors-henderson-nv" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Henderson</Link>, <Link to="/shower-doors-summerlin-nv" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Summerlin</Link>, <Link to="/shower-doors-paradise-nv" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Paradise</Link>, and throughout Clark County.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <Link to="/shower-enclosures-las-vegas" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
+                <span className="font-medium">Shower Enclosures</span>
+              </Link>
+              <Link to="/shower-doors-las-vegas/repair" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
+                <span className="font-medium">Repair Services</span>
+              </Link>
+              <Link to="/shower-doors-las-vegas/frameless" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
+                <span className="font-medium">Frameless Doors</span>
+              </Link>
+              <Link to="/shower-doors-las-vegas/custom-enclosures" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
+                <span className="font-medium">Custom Designs</span>
+              </Link>
             </div>
           </div>
         </div>

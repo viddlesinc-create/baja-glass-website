@@ -12,6 +12,7 @@ export const routes = [
   "/shower-doors-las-vegas/custom-enclosures",
   "/shower-doors-las-vegas/steam-enclosures",
   "/shower-doors-las-vegas/repair",
+  "/shower-enclosures-las-vegas",
   "/gallery",
   "/areas-served",
   "/about",

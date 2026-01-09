@@ -47,6 +47,11 @@ const getRouteConfig = (route) => {
     return { priority: '0.8', changefreq: 'weekly' };
   }
   
+  // Shower enclosures hub - high-value SEO page
+  if (route === '/shower-enclosures-las-vegas') {
+    return { priority: '0.85', changefreq: 'weekly' };
+  }
+  
   // Service pages under glass-company hub
   if (route.startsWith('/glass-company-las-vegas/')) {
     return { priority: '0.8', changefreq: 'weekly' };
