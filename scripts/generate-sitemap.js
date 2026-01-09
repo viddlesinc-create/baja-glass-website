@@ -89,6 +89,11 @@ const getRouteConfig = (route) => {
     return { priority: '0.5', changefreq: 'yearly' };
   }
   
+  // FAQ page - important for SEO rich results
+  if (route === '/faq') {
+    return { priority: '0.8', changefreq: 'monthly' };
+  }
+  
   // Default fallback
   return { priority: '0.5', changefreq: 'monthly' };
 };
