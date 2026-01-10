@@ -54,16 +54,20 @@ const ShowerDoorCostGuide = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        {/* Article Schema */}
+        {/* BlogPosting Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Shower Door Installation Cost in Las Vegas 2025 - Complete Pricing Guide",
+            "@type": "BlogPosting",
+            "headline": "Shower Door Installation Cost in Las Vegas 2026 - Complete Pricing Guide",
             "description": "Comprehensive guide to shower door installation costs in Las Vegas including frameless, semi-frameless, and custom enclosure pricing.",
             "author": {
-              "@type": "Organization",
-              "name": "Baja Glass & Mirror LLC"
+              "@type": "Person",
+              "name": "Baja Glass Team",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Baja Glass & Mirror LLC"
+              }
             },
             "publisher": {
               "@type": "Organization",
@@ -74,7 +78,8 @@ const ShowerDoorCostGuide = () => {
               }
             },
             "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15",
+            "dateModified": "2026-01-10",
+            "image": "https://bajaglass.com/og-image.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://bajaglass.com/blog/shower-door-installation-cost-las-vegas"

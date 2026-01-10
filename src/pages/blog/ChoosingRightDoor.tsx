@@ -13,11 +13,16 @@ const ChoosingRightDoor = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Article",
+            "@type": "BlogPosting",
             "headline": "How to Choose the Right Shower Door - Complete Guide",
+            "description": "A comprehensive guide to selecting the ideal shower door style, glass type, and hardware that matches your space and budget.",
             "author": {
-              "@type": "Organization",
-              "name": "Baja Glass & Mirror LLC"
+              "@type": "Person",
+              "name": "Baja Glass Team",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Baja Glass & Mirror LLC"
+              }
             },
             "publisher": {
               "@type": "Organization",
@@ -28,7 +33,8 @@ const ChoosingRightDoor = () => {
               }
             },
             "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15",
+            "dateModified": "2026-01-10",
+            "image": "https://bajaglass.com/assets/custom-enclosure.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://bajaglass.com/blog/choosing-right-door"

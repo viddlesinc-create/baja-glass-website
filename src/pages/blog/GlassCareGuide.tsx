@@ -13,11 +13,16 @@ const GlassCareGuide = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Article",
+            "@type": "BlogPosting",
             "headline": "Complete Glass Care Guide for Shower Doors",
+            "description": "Professional tips and techniques to maintain crystal-clear shower glass and extend the life of your investment.",
             "author": {
-              "@type": "Organization",
-              "name": "Baja Glass & Mirror LLC"
+              "@type": "Person",
+              "name": "Baja Glass Team",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Baja Glass & Mirror LLC"
+              }
             },
             "publisher": {
               "@type": "Organization",
@@ -28,7 +33,8 @@ const GlassCareGuide = () => {
               }
             },
             "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15",
+            "dateModified": "2026-01-10",
+            "image": "https://bajaglass.com/assets/hero-shower-door.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://bajaglass.com/blog/glass-care-guide"

@@ -56,6 +56,8 @@ const Sitemap = () => {
       title: "Blog & Resources",
       icon: BookOpen,
       links: [
+        { name: "Blog Home", href: "/blog" },
+        { name: "Resources", href: "/resources" },
         { name: "Glass Care Guide", href: "/blog/glass-care-guide" },
         { name: "Choosing the Right Door", href: "/blog/choosing-right-door" },
         { name: "Installation Process", href: "/blog/installation-process" },
