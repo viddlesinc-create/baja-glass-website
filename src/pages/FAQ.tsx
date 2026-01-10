@@ -228,6 +228,54 @@ const FAQ = () => {
       ]
     },
     {
+      category: "Shower Door Installation",
+      href: "/shower-door-installation-las-vegas",
+      faqs: [
+        {
+          question: "Where can I find frameless shower door installers near me?",
+          answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated with over 20 years of experience. Call (702) 383-0779 for a free quote."
+        },
+        {
+          question: "What is the cost of shower door installation in Las Vegas?",
+          answer: "Shower door installation costs in Las Vegas range from $600-$3,000+ depending on door type, glass thickness, and configuration. Frameless doors typically cost more than semi-frameless or framed options. We provide free in-home quotes with exact pricing."
+        },
+        {
+          question: "Do you offer same-day shower door installation near me?",
+          answer: "For urgent needs, we offer expedited scheduling when possible. Most standard installations are scheduled within 1-2 weeks from measurement to completion. Call us to discuss your timeline."
+        },
+        {
+          question: "How do I find glass shower enclosure installation near me?",
+          answer: "Baja Glass serves the entire Las Vegas Valley with professional glass shower enclosure installation. We provide free in-home consultations and measurements. Contact us at (702) 383-0779."
+        },
+        {
+          question: "Are your shower door installers licensed and insured?",
+          answer: "Yes! Baja Glass is fully licensed, bonded, and insured in Nevada. Our installers are trained professionals with years of experience in shower door and glass enclosure installation."
+        }
+      ]
+    },
+    {
+      category: "Custom Shower Doors",
+      href: "/custom-shower-doors-las-vegas",
+      faqs: [
+        {
+          question: "How do I find custom shower doors near me in Las Vegas?",
+          answer: "Baja Glass provides custom shower door design and installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We offer free in-home consultations where we measure your space and discuss design options. Call (702) 383-0779 to schedule."
+        },
+        {
+          question: "What makes a shower door 'custom' vs. standard?",
+          answer: "Custom shower doors are made-to-measure for your specific space, unlike pre-fabricated standard sizes. This includes unique dimensions, angled cuts, notches for fixtures, and specialized hardware placement to fit your bathroom perfectly."
+        },
+        {
+          question: "Can you create custom shower doors for unusual bathroom layouts?",
+          answer: "Absolutely! We specialize in custom solutions for non-standard spaces including angled walls, kneewalls, benches, sloped ceilings, and unique architectural features throughout Las Vegas homes."
+        },
+        {
+          question: "What's the cost of custom shower doors in Las Vegas?",
+          answer: "Custom shower doors in Las Vegas range from $1,200-$4,500+ depending on size, glass type, and hardware. Frameless custom doors with low-iron glass and premium hardware are at the higher end. We provide free detailed quotes."
+        }
+      ]
+    },
+    {
       category: "Pricing & Installation",
       href: "/blog/shower-door-installation-cost-las-vegas",
       faqs: [
