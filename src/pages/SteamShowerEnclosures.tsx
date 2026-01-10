@@ -91,7 +91,7 @@ const SteamShowerEnclosures = () => {
               },
               {
                 "@type": "City",
-                "name": "Boulder City",
+                "name": "Lake Las Vegas",
                 "containedIn": "Clark County, NV"
               }
             ]
@@ -135,7 +135,7 @@ const SteamShowerEnclosures = () => {
           <div className="max-w-5xl mx-auto">
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Boulder City & Paradise
+                Lake Las Vegas & Paradise
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Steam Enclosures
                 </span>
@@ -324,7 +324,7 @@ const SteamShowerEnclosures = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Installed Across the Las Vegas Valley</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Serving Boulder City, Paradise, and the entire Las Vegas Valley with careful measurement, planning, and installation for luxury steam shower applications.
+            Serving Lake Las Vegas, Paradise, and the entire Las Vegas Valley with careful measurement, planning, and installation for luxury steam shower applications.
           </p>
           <div className="bg-secondary/50 p-6 rounded-lg inline-block shadow-lg">
             <div className="flex items-center gap-3 justify-center mb-4">
