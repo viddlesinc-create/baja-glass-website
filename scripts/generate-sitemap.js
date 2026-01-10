@@ -94,6 +94,11 @@ const getRouteConfig = (route) => {
     return { priority: '0.8', changefreq: 'monthly' };
   }
   
+  // New SEO-optimized pages
+  if (route === '/shower-door-installation-las-vegas' || route === '/custom-shower-doors-las-vegas') {
+    return { priority: '0.85', changefreq: 'weekly' };
+  }
+  
   // Default fallback
   return { priority: '0.5', changefreq: 'monthly' };
 };

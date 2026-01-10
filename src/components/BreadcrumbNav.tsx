@@ -20,6 +20,8 @@ const routeLabels: Record<string, string> = {
   "/areas-served": "Areas Served",
   "/sitemap": "Site Map",
   "/faq": "FAQ",
+  "/custom-shower-doors-las-vegas": "Custom Shower Doors Las Vegas",
+  "/shower-door-installation-las-vegas": "Shower Door Installation Las Vegas",
   // Glass Company pages
   "/glass-company-las-vegas": "Glass Company Las Vegas",
   "/glass-company-las-vegas/residential-glass-repair": "Residential Glass Repair",
