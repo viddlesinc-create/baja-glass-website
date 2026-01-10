@@ -9,6 +9,8 @@ interface SEOHeadProps extends Partial<SEOMeta> {
 }
 
 const BASE_URL = 'https://bajaglass.com';
+const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
+const SITE_NAME = 'Baja Glass & Mirror';
 
 export default function SEOHead({
   title: titleOverride,
@@ -23,8 +25,10 @@ export default function SEOHead({
 
   const title = titleOverride || config.title;
   const description = descriptionOverride || config.description;
-  const canonical = canonicalOverride || config.canonical || `${BASE_URL}${pathname}`;
-  const ogImage = ogImageOverride || config.ogImage;
+  // Ensure homepage canonical has no trailing slash
+  const canonical = canonicalOverride || config.canonical || 
+    (pathname === '/' ? BASE_URL : `${BASE_URL}${pathname}`);
+  const ogImage = ogImageOverride || config.ogImage || DEFAULT_OG_IMAGE;
 
   return (
     <Helmet>
@@ -38,13 +42,18 @@ export default function SEOHead({
       <meta property="og:title" content={title} />
       {description && <meta property="og:description" content={description} />}
       {canonical && <meta property="og:url" content={canonical} />}
-      {ogImage && <meta property="og:image" content={ogImage} />}
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content={SITE_NAME} />
+      <meta property="og:locale" content="en_US" />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       {description && <meta name="twitter:description" content={description} />}
-      {ogImage && <meta name="twitter:image" content={ogImage} />}
+      <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:site" content="@baja_glass_lv" />
 
       {/* Robots */}
       {noIndex && <meta name="robots" content="noindex, nofollow" />}

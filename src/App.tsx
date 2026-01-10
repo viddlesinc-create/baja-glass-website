@@ -48,6 +48,7 @@ const ShowerDoorsEnterprise = lazy(() => import("./pages/locations/ShowerDoorsEn
 const ShowerDoorsGreenValley = lazy(() => import("./pages/locations/ShowerDoorsGreenValley"));
 
 // Blog pages
+const Blog = lazy(() => import("./pages/Blog"));
 const GlassCareGuide = lazy(() => import("./pages/blog/GlassCareGuide"));
 const ChoosingRightDoor = lazy(() => import("./pages/blog/ChoosingRightDoor"));
 const InstallationProcess = lazy(() => import("./pages/blog/InstallationProcess"));
@@ -99,6 +100,7 @@ function App() {
               <Route path="/shower-doors-spring-valley-nv" element={<ShowerDoorsSpringValley />} />
               <Route path="/shower-doors-enterprise-nv" element={<ShowerDoorsEnterprise />} />
               <Route path="/shower-doors-green-valley-nv" element={<ShowerDoorsGreenValley />} />
+              <Route path="/blog" element={<Blog />} />
               <Route path="/blog/glass-care-guide" element={<GlassCareGuide />} />
               <Route path="/blog/choosing-right-door" element={<ChoosingRightDoor />} />
               <Route path="/blog/installation-process" element={<InstallationProcess />} />
