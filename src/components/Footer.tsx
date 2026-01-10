@@ -8,9 +8,9 @@ const Footer = () => {
     { name: "Shower Doors", href: "/shower-doors-las-vegas" },
     { name: "Gallery", href: "/gallery" },
     { name: "Reviews", href: "/reviews" },
+    { name: "Blog", href: "/blog" },
     { name: "Areas Served", href: "/areas-served" },
     { name: "About", href: "/about" },
-    { name: "Resources", href: "/resources" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -24,6 +24,7 @@ const Footer = () => {
   ];
 
   const blogLinks = [
+    { name: "View All Blog Posts", href: "/blog" },
     { name: "Glass Care Guide", href: "/blog/glass-care-guide" },
     { name: "Choosing the Right Door", href: "/blog/choosing-right-door" },
     { name: "Installation Process", href: "/blog/installation-process" },

@@ -66,11 +66,16 @@ const HardWaterSolutions = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Article",
+            "@type": "BlogPosting",
             "headline": "Las Vegas Water Quality & Your Shower Glass: Hard Water Solutions",
+            "description": "Solutions and prevention strategies for Las Vegas's extremely hard water affecting shower glass.",
             "author": {
-              "@type": "Organization",
-              "name": "Baja Glass & Mirror LLC"
+              "@type": "Person",
+              "name": "Baja Glass Team",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Baja Glass & Mirror LLC"
+              }
             },
             "publisher": {
               "@type": "Organization",
@@ -81,7 +86,8 @@ const HardWaterSolutions = () => {
               }
             },
             "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15",
+            "dateModified": "2026-01-10",
+            "image": "https://bajaglass.com/og-image.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://bajaglass.com/blog/las-vegas-water-quality-shower-glass-hard-water-solutions"
