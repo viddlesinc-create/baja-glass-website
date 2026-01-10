@@ -8,14 +8,16 @@ import { Link } from "react-router-dom";
 import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
+import { WebSiteSchema } from "@/components/StructuredData";
 import OptimizedImage from "@/components/OptimizedImage";
 import PhoneNumber from "@/components/PhoneNumber";
+import IntroSection from "@/components/IntroSection";
+import SiteLinks from "@/components/SiteLinks";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import installationProcess from "@/assets/installation-process.jpg";
 import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
 import hardwareFinishes from "@/assets/hardware-finishes.jpg";
-const Index = () => {
   const services = [{
     title: "Frameless Shower Doors",
     description: "Sleek, modern, built with 3/8\" or 1/2\" tempered glass for strength and clarity.",
@@ -61,8 +63,10 @@ const Index = () => {
     question: "What areas do you serve?",
     answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City—and nearby communities."
   }];
+const Index = () => {
   return <div className="min-h-screen">
       <LocalBusinessSchema />
+      <WebSiteSchema />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -205,6 +209,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Intro Section - Keyword Rich */}
+      <IntroSection />
 
       {/* Services Overview */}
       <section className="py-24 bg-gradient-to-br from-secondary/20 via-background to-secondary/30">
@@ -489,6 +496,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Site Links - Internal Linking */}
+      <SiteLinks />
 
       {/* Final CTA */}
       <section className="py-24 bg-gradient-to-br from-primary via-charcoal to-primary text-primary-foreground relative overflow-hidden">

@@ -98,3 +98,34 @@ export const trackCTAClick = (ctaType: string, location?: string) => {
 
   console.log('DataLayer Event: cta_click', { ctaType, location });
 };
+
+/**
+ * Track quote request events
+ */
+export const trackQuoteRequest = (source: string) => {
+  const eventData = {
+    event_category: 'conversion',
+    event_label: source,
+    value: 1,
+    conversion_type: 'quote_request'
+  };
+
+  // Push to dataLayer for GTM (single source of truth)
+  pushToDataLayer('quote_request', eventData);
+
+  console.log('DataLayer Event: quote_request', { source });
+};
+
+/**
+ * Track page views for SPA navigation
+ */
+export const trackPageView = (path: string, title?: string) => {
+  const eventData = {
+    event: 'page_view',
+    page_path: path,
+    page_title: title || document.title,
+    page_location: window.location.href
+  };
+
+  pushToDataLayer('page_view', eventData);
+};
