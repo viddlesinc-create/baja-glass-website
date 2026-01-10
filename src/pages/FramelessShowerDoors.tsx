@@ -40,6 +40,14 @@ const FramelessShowerDoors = () => {
     {
       question: "Do you handle custom angles and notches?",
       answer: "Absolutely. We can create custom cutouts, notches, and angled cuts for towel bars, fixtures, benches, and unique architectural features."
+    },
+    {
+      question: "What is the cost of frameless shower door installation in Las Vegas?",
+      answer: "Frameless shower door installation in Las Vegas typically ranges from $1,200-$3,000+ depending on size, glass thickness, and hardware. We provide free in-home quotes with exact pricing."
+    },
+    {
+      question: "Do you offer frameless shower door replacement in Las Vegas?",
+      answer: "Yes! We replace old, damaged, or outdated shower doors with new frameless designs. Replacement includes removing the old door, preparing the opening, and installing your new frameless door with quality hardware."
     }
   ];
 
@@ -104,7 +112,7 @@ const FramelessShowerDoors = () => {
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Frameless Shower Doors Las Vegas</h1>
+            <h1 className="text-5xl font-bold mb-6">Frameless Shower Doors Las Vegas NV</h1>
             <p className="text-xl mb-8 text-white/90">Minimal metal, maximum openness—custom glass measured precisely and installed by experts.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
@@ -131,8 +139,12 @@ const FramelessShowerDoors = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-6">Professional Frameless Shower Door Installation</h2>
             <p className="text-lg text-muted-foreground text-center mb-4">
               Frameless shower doors offer a clean, modern look that makes bathrooms feel bigger and brighter. At Baja Glass, we measure, fabricate, and install frameless systems with thick tempered glass, premium hardware, and tight, clean finishes for a leak-resistant fit.
+            </p>
+            <p className="text-center text-muted-foreground mb-6">
+              Looking for professional <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80">shower door installation in Las Vegas</Link>? Our expert team handles everything from measurement to final walkthrough.
             </p>
             <p className="text-center text-muted-foreground">
               Learn more about <Link to="/blog/frameless-vs-semi-frameless-shower-doors" className="text-primary underline hover:text-primary/80">comparing frameless and semi-frameless options</Link> or explore our <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80">complete pricing guide</Link>.
@@ -141,10 +153,41 @@ const FramelessShowerDoors = () => {
         </div>
       </section>
 
+      {/* Frameless Shower Door Replacement Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-6">Frameless Shower Door Replacement Las Vegas</h2>
+            <p className="text-lg text-muted-foreground text-center mb-6">
+              Is your existing shower door outdated, damaged, or no longer functioning properly? Our <strong>frameless shower door replacement</strong> service transforms your bathroom with modern, high-quality glass. We remove your old door, prepare the opening, and install a new frameless system with precision hardware.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-background p-4 rounded-lg text-center">
+                <h3 className="font-semibold mb-2">When to Replace</h3>
+                <p className="text-sm text-muted-foreground">Cracked glass, worn seals, outdated style, or persistent leaking</p>
+              </div>
+              <div className="bg-background p-4 rounded-lg text-center">
+                <h3 className="font-semibold mb-2">Upgrade Benefits</h3>
+                <p className="text-sm text-muted-foreground">Modern aesthetics, better sealing, increased home value</p>
+              </div>
+              <div className="bg-background p-4 rounded-lg text-center">
+                <h3 className="font-semibold mb-2">Fast Turnaround</h3>
+                <p className="text-sm text-muted-foreground">Most replacements completed in 2-3 weeks from measurement</p>
+              </div>
+            </div>
+            <div className="text-center">
+              <Button variant="cta" asChild>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Replacement Quote</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Design Options */}
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Frameless Design Options</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Frameless Shower Doors Las Vegas - Design Options</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div>
               <h3 className="text-xl font-semibold mb-4">Door Types</h3>

@@ -56,10 +56,22 @@ export const seoConfig: Record<string, SEOMeta> = {
 
   // ===== Product Pages =====
   '/shower-doors-las-vegas/frameless': {
-    title: 'Frameless Shower Doors Las Vegas | Custom Glass Installation - Baja Glass & Mirror',
-    description: 'Premium frameless shower doors in Las Vegas. Thick tempered glass with minimal hardware for a modern, open look. Low-iron glass and quality hardware available. Free quotes.',
+    title: 'Frameless Shower Doors Las Vegas NV | Installation & Replacement - Baja Glass',
+    description: 'Premium frameless shower doors in Las Vegas, NV. Expert installation and replacement. Low-iron glass, modern hardware. Free quotes from licensed installers.',
     canonical: `${BASE_URL}/shower-doors-las-vegas/frameless`,
     ogImage: `${BASE_URL}/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png`,
+  },
+  '/shower-door-installation-las-vegas': {
+    title: 'Shower Door Installation Las Vegas | Expert Glass Installers Near Me - Baja Glass',
+    description: 'Professional shower door installation in Las Vegas. Frameless, sliding, custom enclosures. Licensed installers serving Henderson, Summerlin. Free quotes: (702) 383-0779',
+    canonical: `${BASE_URL}/shower-door-installation-las-vegas`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/custom-shower-doors-las-vegas': {
+    title: 'Custom Shower Doors Las Vegas | Made-to-Measure Glass Solutions - Baja Glass',
+    description: 'Custom shower doors in Las Vegas. Made-to-measure glass doors for any space. Neo-angle, corner, inline configurations. Free design consultation: (702) 383-0779',
+    canonical: `${BASE_URL}/custom-shower-doors-las-vegas`,
+    ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-las-vegas/semi-frameless-framed': {
     title: 'Semi-Frameless & Framed Shower Doors Las Vegas | Baja Glass & Mirror',
