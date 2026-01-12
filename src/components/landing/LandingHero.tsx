@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Star, Shield, Clock, Award } from "lucide-react";
 import { trackPhoneClick, trackFormSubmission, trackCTAClick } from "@/lib/analytics";
+import { useToast } from "@/hooks/use-toast";
 
 interface LandingHeroProps {
   onFormSubmit?: (data: FormData) => void;
@@ -13,8 +16,24 @@ interface FormData {
   name: string;
   phone: string;
   email: string;
+  city: string;
+  projectType: string;
   message: string;
 }
+
+const COMPANY_PHONE = "+17023830779";
+
+const projectTypes = [
+  "Frameless Shower Door",
+  "Sliding Shower Door", 
+  "Hinged/Pivot Door",
+  "Custom Enclosure",
+  "Repair/Replacement",
+  "Steam Shower",
+  "Residential Glass Repair",
+  "Office Glass Enclosures",
+  "Not Sure - Need Consultation"
+];
 
 export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
   const [showForm, setShowForm] = useState(false);
@@ -22,22 +41,58 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
     name: "",
     phone: "",
     email: "",
+    city: "",
+    projectType: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const { toast } = useToast();
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!formData.name || !formData.phone || !formData.city || !formData.projectType) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill in all required fields (Name, Phone, City, Project Type).",
+        variant: "destructive"
+      });
+      return;
+    }
+
     setIsSubmitting(true);
-    trackFormSubmission({ projectType: "Frameless Shower Door", source: "landing_hero" });
+    trackFormSubmission({ projectType: formData.projectType, source: "landing_hero", city: formData.city });
     
-    // Simulate submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setSubmitted(true);
-    setIsSubmitting(false);
-    onFormSubmit?.(formData);
+    try {
+      const response = await fetch("https://formspree.io/f/xqaydjpg", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        setSubmitted(true);
+        onFormSubmit?.(formData);
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Error Submitting Request",
+        description: "Please try again or call us directly at (702) 383-0779.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handlePhoneClick = () => {
@@ -106,7 +161,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                 className="border-2 border-white bg-white/20 text-white hover:bg-white hover:text-charcoal text-lg px-8 py-6 rounded-lg backdrop-blur-sm"
               >
                 <a 
-                  href="tel:+17023830779" 
+                  href={`tel:${COMPANY_PHONE}`}
                   onClick={handlePhoneClick}
                   className="flex items-center gap-2"
                 >
@@ -124,9 +179,9 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
-                <p className="text-white/90 mb-4">We'll contact you within 24 hours with your free quote.</p>
+                <p className="text-white/90 mb-4">We'll contact you within 24-48 hours with your free quote.</p>
                 <a 
-                  href="tel:+17023830779" 
+                  href={`tel:${COMPANY_PHONE}`}
                   onClick={handlePhoneClick}
                   className="text-red-accent hover:text-red-accent-light font-semibold flex items-center justify-center gap-2"
                 >
@@ -136,49 +191,93 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
               </div>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-md mx-auto">
-              <h3 className="text-xl font-bold text-white mb-4">Get Your Free Quote</h3>
+            <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-lg mx-auto text-left">
+              <h3 className="text-xl font-bold text-white mb-4 text-center">Get Your Free Quote in 24–48 Hours</h3>
               <div className="space-y-4">
-                <Input
-                  placeholder="Your Name *"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="bg-white/90 border-0"
-                />
-                <Input
-                  type="tel"
-                  placeholder="Phone Number *"
-                  required
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="bg-white/90 border-0"
-                />
-                <Input
-                  type="email"
-                  placeholder="Email Address *"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="bg-white/90 border-0"
-                />
-                <Textarea
-                  placeholder="Tell us about your project (optional)"
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="bg-white/90 border-0 min-h-[80px]"
-                />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="hero-name" className="text-white">Name *</Label>
+                    <Input
+                      id="hero-name"
+                      required
+                      value={formData.name}
+                      onChange={(e) => handleInputChange("name", e.target.value)}
+                      className="bg-white/90 border-0"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="hero-phone" className="text-white">Phone *</Label>
+                    <Input
+                      id="hero-phone"
+                      type="tel"
+                      required
+                      value={formData.phone}
+                      onChange={(e) => handleInputChange("phone", e.target.value)}
+                      className="bg-white/90 border-0"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="hero-email" className="text-white">Email</Label>
+                    <Input
+                      id="hero-email"
+                      type="email"
+                      value={formData.email}
+                      onChange={(e) => handleInputChange("email", e.target.value)}
+                      className="bg-white/90 border-0"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="hero-city" className="text-white">City *</Label>
+                    <Input
+                      id="hero-city"
+                      required
+                      value={formData.city}
+                      onChange={(e) => handleInputChange("city", e.target.value)}
+                      placeholder="Las Vegas, Henderson, etc."
+                      className="bg-white/90 border-0"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <Label htmlFor="hero-projectType" className="text-white">Project Type *</Label>
+                  <Select onValueChange={(value) => handleInputChange("projectType", value)}>
+                    <SelectTrigger className="bg-white/90 border-0">
+                      <SelectValue placeholder="Select your shower door project" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {projectTypes.map((type) => (
+                        <SelectItem key={type} value={type}>{type}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div>
+                  <Label htmlFor="hero-message" className="text-white">Tell us about your project</Label>
+                  <Textarea
+                    id="hero-message"
+                    value={formData.message}
+                    onChange={(e) => handleInputChange("message", e.target.value)}
+                    placeholder="Describe your shower space, style preferences, or any questions..."
+                    className="bg-white/90 border-0 min-h-[80px]"
+                  />
+                </div>
+
                 <Button 
                   type="submit" 
                   disabled={isSubmitting}
                   className="w-full bg-red-accent hover:bg-red-accent-light text-white text-lg py-6"
                 >
-                  {isSubmitting ? "Sending..." : "Get Free Quote"}
+                  {isSubmitting ? "Submitting..." : "Start My Quote"}
                 </Button>
               </div>
               <p className="text-white/70 text-sm mt-4 flex items-center justify-center gap-2">
                 <Clock className="h-4 w-4" />
-                We respond within 24 hours
+                We respect your privacy. No spam, ever.
               </p>
             </form>
           )}
