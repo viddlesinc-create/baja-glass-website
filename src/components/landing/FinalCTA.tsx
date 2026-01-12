@@ -20,10 +20,23 @@ export const FinalCTA = () => {
     setIsSubmitting(true);
     trackFormSubmission({ projectType: "Frameless Shower Door", source: "landing_final_cta" });
     
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setSubmitted(true);
-    setIsSubmitting(false);
+    try {
+      const response = await fetch("https://formspree.io/f/xqaydjpg", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        setSubmitted(true);
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handlePhoneClick = () => {
