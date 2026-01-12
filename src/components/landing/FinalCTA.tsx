@@ -1,24 +1,56 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, MapPin, Star, Shield, Clock } from "lucide-react";
 import { trackPhoneClick, trackFormSubmission } from "@/lib/analytics";
+import { useToast } from "@/hooks/use-toast";
 
 export const FinalCTA = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
+    city: "",
+    projectType: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const { toast } = useToast();
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const projectTypes = [
+    "Frameless Shower Door",
+    "Sliding Shower Door", 
+    "Hinged/Pivot Door",
+    "Custom Enclosure",
+    "Repair/Replacement",
+    "Steam Shower",
+    "Residential Glass Repair",
+    "Office Glass Enclosures",
+    "Not Sure - Need Consultation"
+  ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!formData.name || !formData.phone || !formData.city || !formData.projectType) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill in all required fields (Name, Phone, City, Project Type).",
+        variant: "destructive"
+      });
+      return;
+    }
+
     setIsSubmitting(true);
-    trackFormSubmission({ projectType: "Frameless Shower Door", source: "landing_final_cta" });
+    trackFormSubmission({ projectType: formData.projectType, source: "landing_final_cta", city: formData.city });
     
     try {
       const response = await fetch("https://formspree.io/f/xqaydjpg", {
@@ -31,9 +63,16 @@ export const FinalCTA = () => {
       
       if (response.ok) {
         setSubmitted(true);
+      } else {
+        throw new Error('Form submission failed');
       }
     } catch (error) {
       console.error("Form submission error:", error);
+      toast({
+        title: "Error Submitting Request",
+        description: "Please try again or call us directly at (702) 383-0779.",
+        variant: "destructive"
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -85,7 +124,7 @@ export const FinalCTA = () => {
                 </div>
                 <div className="flex items-center gap-3 text-white/80">
                   <Clock className="h-6 w-6" />
-                  <span>Mon-Fri: 8am-5pm | Sat: By Appointment</span>
+                  <span>Mon-Fri: 8am-4pm</span>
                 </div>
               </div>
             </div>
@@ -95,48 +134,92 @@ export const FinalCTA = () => {
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="bg-white rounded-xl p-6 shadow-2xl">
                   <h3 className="text-xl font-bold text-charcoal mb-6 text-center">
-                    Get Your Free Quote
+                    Get Your Free Quote in 24–48 Hours
                   </h3>
                   <div className="space-y-4">
-                    <Input
-                      placeholder="Your Name *"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="border-border"
-                    />
-                    <Input
-                      type="tel"
-                      placeholder="Phone Number *"
-                      required
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="border-border"
-                    />
-                    <Input
-                      type="email"
-                      placeholder="Email Address *"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="border-border"
-                    />
-                    <Textarea
-                      placeholder="Tell us about your project (optional)"
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="border-border min-h-[100px]"
-                    />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <Label htmlFor="lp-name" className="text-charcoal">Name *</Label>
+                        <Input
+                          id="lp-name"
+                          value={formData.name}
+                          onChange={(e) => handleInputChange("name", e.target.value)}
+                          required
+                          className="border-border"
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="lp-phone" className="text-charcoal">Phone *</Label>
+                        <Input
+                          id="lp-phone"
+                          type="tel"
+                          value={formData.phone}
+                          onChange={(e) => handleInputChange("phone", e.target.value)}
+                          required
+                          className="border-border"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <Label htmlFor="lp-email" className="text-charcoal">Email</Label>
+                        <Input
+                          id="lp-email"
+                          type="email"
+                          value={formData.email}
+                          onChange={(e) => handleInputChange("email", e.target.value)}
+                          className="border-border"
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="lp-city" className="text-charcoal">City *</Label>
+                        <Input
+                          id="lp-city"
+                          value={formData.city}
+                          onChange={(e) => handleInputChange("city", e.target.value)}
+                          placeholder="Las Vegas, Henderson, etc."
+                          required
+                          className="border-border"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <Label htmlFor="lp-projectType" className="text-charcoal">Project Type *</Label>
+                      <Select onValueChange={(value) => handleInputChange("projectType", value)}>
+                        <SelectTrigger className="border-border">
+                          <SelectValue placeholder="Select your shower door project" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {projectTypes.map((type) => (
+                            <SelectItem key={type} value={type}>{type}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    <div>
+                      <Label htmlFor="lp-message" className="text-charcoal">Tell us about your project</Label>
+                      <Textarea
+                        id="lp-message"
+                        value={formData.message}
+                        onChange={(e) => handleInputChange("message", e.target.value)}
+                        placeholder="Describe your shower space, style preferences, or any questions..."
+                        className="border-border min-h-[80px]"
+                      />
+                    </div>
+
                     <Button 
                       type="submit" 
                       disabled={isSubmitting}
                       className="w-full bg-red-accent hover:bg-red-accent-light text-white text-lg py-6"
                     >
-                      {isSubmitting ? "Sending..." : "Get Free Quote"}
+                      {isSubmitting ? "Submitting..." : "Start My Quote"}
                     </Button>
                   </div>
                   <p className="text-muted-foreground text-sm mt-4 text-center">
-                    We respond within 24 hours • No obligation
+                    We respect your privacy. No spam, ever.
                   </p>
                 </form>
               ) : (
@@ -148,7 +231,7 @@ export const FinalCTA = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-charcoal mb-2">Thank You!</h3>
                   <p className="text-muted-foreground mb-6">
-                    We'll contact you within 24 hours with your free quote.
+                    We'll contact you within 24-48 hours with your free quote.
                   </p>
                   <a 
                     href="tel:+17023830779" 
