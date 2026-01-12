@@ -129,3 +129,22 @@ export const trackPageView = (path: string, title?: string) => {
 
   pushToDataLayer('page_view', eventData);
 };
+
+/**
+ * Track Google Maps interactions
+ */
+export const trackMapInteraction = (
+  action: 'view_map' | 'get_directions' | 'click_map_link',
+  location?: string
+) => {
+  const eventData = {
+    event_category: 'engagement',
+    event_action: action,
+    event_label: location || 'unknown',
+    page_location: window.location.href
+  };
+
+  pushToDataLayer('map_interaction', eventData);
+
+  console.log('DataLayer Event: map_interaction', { action, location });
+};
