@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageSquare } from "lucide-react";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
@@ -8,19 +7,6 @@ interface StickyMobileCTAProps {
 }
 
 export const StickyMobileCTA = ({ onQuoteClick }: StickyMobileCTAProps) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Show after scrolling past the hero section (roughly 100vh)
-      const scrollThreshold = window.innerHeight * 0.8;
-      setIsVisible(window.scrollY > scrollThreshold);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const handlePhoneClick = () => {
     trackPhoneClick("sticky_mobile_cta");
   };
@@ -29,8 +15,6 @@ export const StickyMobileCTA = ({ onQuoteClick }: StickyMobileCTAProps) => {
     trackCTAClick("get_quote", "sticky_mobile_cta");
     onQuoteClick();
   };
-
-  if (!isVisible) return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-charcoal border-t border-white/10 p-3 shadow-2xl animate-in slide-in-from-bottom duration-300">
