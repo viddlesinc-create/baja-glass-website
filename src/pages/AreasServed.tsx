@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
-import { Star, Phone, CheckCircle, Instagram, Facebook } from "lucide-react";
+import { Star, Phone, CheckCircle, Instagram, Facebook, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-shower-door.jpg";
 import slidingDoors from "@/assets/sliding-doors.jpg";
 import customEnclosure from "@/assets/custom-enclosure.jpg";
 import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
+import GoogleMap from "@/components/GoogleMap";
+import GetDirections from "@/components/GetDirections";
 
 const AreasServed = () => {
 const areas = [
@@ -110,6 +112,52 @@ const areas = [
                   showPrefix={true}
                 />
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Visit Our Location Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-4 flex items-center justify-center gap-2">
+                <MapPin className="h-8 w-8 text-accent" aria-hidden="true" />
+                Visit Our Location
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Serving the entire Las Vegas Valley from our central location. Stop by for a consultation or call us for a free in-home measurement.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-4">
+                <div className="bg-secondary/50 p-6 rounded-lg">
+                  <h3 className="font-semibold text-lg mb-2">Baja Glass & Mirror LLC</h3>
+                  <p className="text-muted-foreground">4280 W Reno Ave, Ste A</p>
+                  <p className="text-muted-foreground mb-4">Las Vegas, NV 89118</p>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <PhoneNumber 
+                      location="areas_served_map_section"
+                      showIcon={true}
+                      className="text-accent hover:text-accent/80 transition-colors font-medium"
+                    />
+                  </div>
+                </div>
+                <GetDirections 
+                  variant="button" 
+                  size="lg" 
+                  location="areas_served_map" 
+                  className="w-full"
+                />
+              </div>
+              
+              <GoogleMap 
+                height="350px" 
+                location="areas_served"
+                showDirectionsButton={false}
+              />
             </div>
           </div>
         </div>

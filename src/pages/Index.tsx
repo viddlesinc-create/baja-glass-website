@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
+import GoogleMap from "@/components/GoogleMap";
 import { WebSiteSchema } from "@/components/StructuredData";
 import OptimizedImage from "@/components/OptimizedImage";
 import PhoneNumber from "@/components/PhoneNumber";
@@ -383,6 +384,19 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          {/* Map Section */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold mb-2">Visit Our Location</h3>
+              <p className="text-muted-foreground">4280 W Reno Ave, Ste A, Las Vegas, NV 89118</p>
+            </div>
+            <GoogleMap 
+              height="350px" 
+              location="homepage_service_areas"
+              showDirectionsButton={true}
+            />
           </div>
         </div>
       </section>

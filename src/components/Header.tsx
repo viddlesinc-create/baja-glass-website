@@ -7,9 +7,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Menu, Phone, Star, Instagram, Facebook, ChevronDown } from "lucide-react";
+import { Menu, Phone, Star, Instagram, Facebook, ChevronDown, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import PhoneNumber from "@/components/PhoneNumber";
+import { GetDirections, GOOGLE_MAPS_URL } from "@/components/GetDirections";
+import { trackMapInteraction } from "@/lib/analytics";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -170,6 +172,18 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
+            <a
+              href={GOOGLE_MAPS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-1 text-sm font-medium text-foreground hover:text-accent transition-colors"
+              onClick={() => trackMapInteraction('click_map_link', 'header')}
+              aria-label="View our location on Google Maps"
+            >
+              <MapPin className="h-4 w-4" aria-hidden="true" />
+              <span className="hidden lg:inline">Visit Us</span>
+            </a>
+            
             <PhoneNumber 
               location="header"
               showIcon={true}

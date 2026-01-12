@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import { Star, Instagram, Facebook } from "lucide-react";
+import { Star, Instagram, Facebook, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
+import { GetDirections, GOOGLE_MAPS_URL } from "@/components/GetDirections";
+import { trackMapInteraction } from "@/lib/analytics";
 
 const Footer = () => {
   const quickLinks = [
@@ -69,6 +71,7 @@ const Footer = () => {
               "Enterprise"
             ],
             "sameAs": [
+              "https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z",
               "https://www.instagram.com/baja_glass_lv/",
               "https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/",
               "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas",
@@ -102,6 +105,16 @@ const Footer = () => {
                 location="footer"
                 className="block hover:text-primary-foreground transition-colors"
               />
+              <a
+                href={GOOGLE_MAPS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors mt-2"
+                onClick={() => trackMapInteraction('click_map_link', 'footer')}
+              >
+                <MapPin className="h-4 w-4" aria-hidden="true" />
+                View on Google Maps
+              </a>
             </div>
           </div>
 

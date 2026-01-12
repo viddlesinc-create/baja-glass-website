@@ -19,9 +19,10 @@ const localBusinessData = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 36.0856,
-    "longitude": -115.2269
+    "latitude": 36.097781,
+    "longitude": -115.197234
   },
+  "hasMap": "https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8c6877afaaaab:0x52192106a1cfa0fc!8m2!3d36.097781!4d-115.1972342!16s%2Fg%2F11c2pp70qm",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -100,6 +101,7 @@ const localBusinessData = {
     "availableLanguage": "English"
   },
   "sameAs": [
+    "https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z",
     "https://www.instagram.com/baja_glass_lv/",
     "https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/",
     "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas",

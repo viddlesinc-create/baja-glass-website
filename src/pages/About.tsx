@@ -3,6 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Shield, Users, Award, Clock } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import GoogleMap from "@/components/GoogleMap";
+import GetDirections from "@/components/GetDirections";
 
 const About = () => {
   const values = [
@@ -201,10 +203,15 @@ const About = () => {
               </Badge>
             ))}
           </div>
-          <div className="bg-background p-6 rounded-lg inline-block">
+          <div className="bg-background p-6 rounded-lg max-w-xl mx-auto">
             <h3 className="font-semibold mb-2">Baja Glass & Mirror LLC</h3>
-            <p className="text-muted-foreground">4280 W Reno Ave Ste A, Las Vegas, NV 89118</p>
-            <p className="text-muted-foreground">(702) 383-0779</p>
+            <p className="text-muted-foreground mb-1">4280 W Reno Ave Ste A, Las Vegas, NV 89118</p>
+            <p className="text-muted-foreground mb-4">(702) 383-0779</p>
+            <GoogleMap 
+              height="250px" 
+              location="about_page"
+              showDirectionsButton={true}
+            />
           </div>
         </div>
       </section>

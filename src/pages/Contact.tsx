@@ -11,6 +11,8 @@ import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
 import { trackFormSubmission, trackHendersonConversion } from "@/lib/analytics";
 import PhoneNumber from "@/components/PhoneNumber";
+import GoogleMap from "@/components/GoogleMap";
+import GetDirections from "@/components/GetDirections";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -305,12 +307,32 @@ const Contact = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2">
-                    <p className="font-semibold">Baja Glass</p>
+                  <div className="space-y-2 mb-4">
+                    <p className="font-semibold">Baja Glass & Mirror LLC</p>
                     <p className="text-muted-foreground">4280 W Reno Ave</p>
                     <p className="text-muted-foreground">Ste A</p>
                     <p className="text-muted-foreground">Las Vegas, NV 89118</p>
                   </div>
+                  <GetDirections 
+                    variant="button" 
+                    size="sm" 
+                    location="contact_page_card" 
+                    className="w-full"
+                  />
+                </CardContent>
+              </Card>
+
+              {/* Interactive Map */}
+              <Card className="lg:col-span-1">
+                <CardHeader>
+                  <CardTitle>Find Us</CardTitle>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <GoogleMap 
+                    height="300px" 
+                    location="contact_page"
+                    showDirectionsButton={false}
+                  />
                 </CardContent>
               </Card>
 
