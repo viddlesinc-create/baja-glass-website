@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import PageLoader from "./components/PageLoader";
 import Header from "./components/Header";
@@ -10,6 +10,9 @@ import RedirectComponent from "./components/RedirectComponent";
 import QueryParameterRedirects from "./components/QueryParameterRedirects";
 import { SEOHead } from "./seo";
 import { usePageTracking } from "./hooks/usePageTracking";
+
+// Landing pages (standalone, no header/footer)
+const FramelessShowerLanding = lazy(() => import("./pages/landing/FramelessShowerLanding"));
 
 // Eagerly load critical pages
 import Index from "./pages/Index";
@@ -59,6 +62,25 @@ const HardWaterSolutions = lazy(() => import("./pages/blog/HardWaterSolutions"))
 
 function App() {
   usePageTracking();
+  const location = useLocation();
+  
+  // Check if current route is a landing page (no header/footer)
+  const isLandingPage = location.pathname.startsWith('/lp/');
+
+  // Render landing pages without header/footer
+  if (isLandingPage) {
+    return (
+      <>
+        <SEOHead />
+        <ScrollToTop />
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/lp/frameless-shower-doors" element={<FramelessShowerLanding />} />
+          </Routes>
+        </Suspense>
+      </>
+    );
+  }
   
   return (
     <>

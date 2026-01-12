@@ -1,6 +1,7 @@
 // All routes from App.tsx - SINGLE SOURCE OF TRUTH
 export const routes = [
   "/",
+  "/lp/frameless-shower-doors",
   "/glass-company-las-vegas",
   "/glass-company-las-vegas/residential-glass-repair",
   "/glass-company-las-vegas/office-enclosures",
