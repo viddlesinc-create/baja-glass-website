@@ -103,7 +103,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                 asChild
                 size="lg" 
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-charcoal text-lg px-8 py-6 rounded-lg"
+                className="border-2 border-white bg-white/20 text-white hover:bg-white hover:text-charcoal text-lg px-8 py-6 rounded-lg backdrop-blur-sm"
               >
                 <a 
                   href="tel:+17023830779" 
