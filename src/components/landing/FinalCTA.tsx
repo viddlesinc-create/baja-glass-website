@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Phone, MapPin, Star, Shield, Clock } from "lucide-react";
 import { trackPhoneClick, trackFormSubmission } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
+import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
 export const FinalCTA = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +21,7 @@ export const FinalCTA = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const { toast } = useToast();
+  const { captcha, userAnswer, setUserAnswer, validateCaptcha, resetCaptcha } = useMathCaptcha();
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -46,6 +48,16 @@ export const FinalCTA = () => {
         description: "Please fill in all required fields (Name, Phone, City, Project Type).",
         variant: "destructive"
       });
+      return;
+    }
+
+    if (!validateCaptcha()) {
+      toast({
+        title: "Incorrect Answer",
+        description: "Please solve the math problem correctly.",
+        variant: "destructive"
+      });
+      resetCaptcha();
       return;
     }
 
@@ -207,6 +219,21 @@ export const FinalCTA = () => {
                         onChange={(e) => handleInputChange("message", e.target.value)}
                         placeholder="Describe your shower space, style preferences, or any questions..."
                         className="border-border min-h-[80px]"
+                      />
+                    </div>
+
+                    <div>
+                      <Label htmlFor="lp-captcha" className="text-charcoal">
+                        Spam Check: {captcha.question} *
+                      </Label>
+                      <Input
+                        id="lp-captcha"
+                        type="number"
+                        value={userAnswer}
+                        onChange={(e) => setUserAnswer(e.target.value)}
+                        placeholder="Enter your answer"
+                        required
+                        className="border-border"
                       />
                     </div>
 
