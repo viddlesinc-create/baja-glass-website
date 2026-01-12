@@ -13,7 +13,7 @@ import { trackFormSubmission, trackHendersonConversion } from "@/lib/analytics";
 import PhoneNumber from "@/components/PhoneNumber";
 import GoogleMap from "@/components/GoogleMap";
 import GetDirections from "@/components/GetDirections";
-
+import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -26,6 +26,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const { toast } = useToast();
+  const { captcha, userAnswer, setUserAnswer, validateCaptcha, resetCaptcha } = useMathCaptcha();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,6 +37,16 @@ const Contact = () => {
         description: "Please fill in all required fields (Name, Phone, City, Project Type).",
         variant: "destructive"
       });
+      return;
+    }
+
+    if (!validateCaptcha()) {
+      toast({
+        title: "Incorrect Answer",
+        description: "Please solve the math problem correctly.",
+        variant: "destructive"
+      });
+      resetCaptcha();
       return;
     }
 
@@ -262,6 +273,18 @@ const Contact = () => {
                       onChange={(e) => handleInputChange("message", e.target.value)}
                       placeholder="Describe your shower space, style preferences, or any questions..."
                       rows={4}
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="captcha">Spam Check: {captcha.question} *</Label>
+                    <Input
+                      id="captcha"
+                      type="number"
+                      value={userAnswer}
+                      onChange={(e) => setUserAnswer(e.target.value)}
+                      placeholder="Enter your answer"
+                      required
                     />
                   </div>
 

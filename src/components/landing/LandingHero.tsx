@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Phone, Star, Shield, Clock, Award } from "lucide-react";
 import { trackPhoneClick, trackFormSubmission, trackCTAClick } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
+import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
 interface LandingHeroProps {
   onFormSubmit?: (data: FormData) => void;
@@ -48,6 +49,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const { toast } = useToast();
+  const { captcha, userAnswer, setUserAnswer, validateCaptcha, resetCaptcha } = useMathCaptcha();
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -62,6 +64,16 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
         description: "Please fill in all required fields (Name, Phone, City, Project Type).",
         variant: "destructive"
       });
+      return;
+    }
+
+    if (!validateCaptcha()) {
+      toast({
+        title: "Incorrect Answer",
+        description: "Please solve the math problem correctly.",
+        variant: "destructive"
+      });
+      resetCaptcha();
       return;
     }
 
@@ -264,6 +276,21 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                     onChange={(e) => handleInputChange("message", e.target.value)}
                     placeholder="Describe your shower space, style preferences, or any questions..."
                     className="bg-white/90 border-0 min-h-[80px]"
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="hero-captcha" className="text-white">
+                    Spam Check: {captcha.question} *
+                  </Label>
+                  <Input
+                    id="hero-captcha"
+                    type="number"
+                    value={userAnswer}
+                    onChange={(e) => setUserAnswer(e.target.value)}
+                    placeholder="Enter your answer"
+                    required
+                    className="bg-white/90 border-0"
                   />
                 </div>
 
