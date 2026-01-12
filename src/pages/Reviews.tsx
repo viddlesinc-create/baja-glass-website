@@ -187,19 +187,41 @@ const Reviews = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
+            "@id": "https://bajaglass.com/#localbusiness",
             "name": "Baja Glass & Mirror LLC",
+            "url": "https://bajaglass.com",
+            "telephone": "(702) 383-0779",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "4280 W Reno Ave Ste A",
+              "addressLocality": "Las Vegas",
+              "addressRegion": "NV",
+              "postalCode": "89118",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 36.097781,
+              "longitude": -115.197234
+            },
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "4.9",
+              "ratingValue": "4.6",
               "bestRating": "5",
               "worstRating": "1",
-              "ratingCount": "47"
+              "reviewCount": "27",
+              "ratingCount": "27"
             },
             "review": reviews.slice(0, 10).map(review => ({
               "@type": "Review",
               "author": { "@type": "Person", "name": review.name },
               "datePublished": new Date(review.date).toISOString().split('T')[0],
-              "reviewRating": { "@type": "Rating", "ratingValue": review.rating, "bestRating": "5" },
+              "reviewRating": { 
+                "@type": "Rating", 
+                "ratingValue": review.rating, 
+                "bestRating": "5",
+                "worstRating": "1"
+              },
               "reviewBody": review.text
             }))
           })}
@@ -218,14 +240,14 @@ const Reviews = () => {
           {/* Aggregate Rating Display */}
           <div className="flex flex-col items-center gap-4 mb-8">
             <div className="flex items-center gap-3">
-              <span className="text-6xl font-bold">4.9</span>
+              <span className="text-6xl font-bold">4.6</span>
               <div>
                 <div className="flex gap-1 mb-2">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className={`h-6 w-6 ${i < 4 ? 'fill-yellow-400 text-yellow-400' : 'fill-yellow-400/60 text-yellow-400/60'}`} />
                   ))}
                 </div>
-                <p className="text-white/90">Based on 47+ reviews</p>
+                <p className="text-white/90">Based on 27 Google reviews</p>
               </div>
             </div>
           </div>

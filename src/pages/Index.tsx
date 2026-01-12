@@ -9,7 +9,7 @@ import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import GoogleMap from "@/components/GoogleMap";
-import { WebSiteSchema } from "@/components/StructuredData";
+import { WebSiteSchema, SpeakableSchema } from "@/components/StructuredData";
 import OptimizedImage from "@/components/OptimizedImage";
 import PhoneNumber from "@/components/PhoneNumber";
 import IntroSection from "@/components/IntroSection";
@@ -68,6 +68,12 @@ const Index = () => {
   return <div className="min-h-screen">
       <LocalBusinessSchema />
       <WebSiteSchema />
+      <SpeakableSchema 
+        name="Baja Glass & Mirror - Las Vegas Shower Door Installation"
+        description="Custom frameless shower doors, glass enclosures, and mirror installation in Las Vegas, Henderson, and Summerlin. Family owned, first responder owned. Free quotes: (702) 383-0779"
+        url="https://bajaglass.com"
+        speakableSelectors={['h1', '.intro-content', '.faq-answer']}
+      />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -81,28 +87,6 @@ const Index = () => {
               "text": faq.answer
             }
           }))
-        })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Baja Glass & Mirror LLC",
-          "url": "https://bajaglass.com",
-          "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-          "description": "Family owned glass company specializing in shower doors, mirrors, and interior glass installation in Las Vegas.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "4280 W Reno Ave Ste A",
-            "addressLocality": "Las Vegas",
-            "addressRegion": "NV",
-            "postalCode": "89118",
-            "addressCountry": "US"
-          },
-          "telephone": "(702) 383-0779",
-          "foundingDate": "2010",
-          "numberOfEmployees": "5-10",
-          "knowsAbout": ["Glass Installation", "Shower Door Installation", "Mirror Installation", "Glass Repair", "Custom Glass Work"]
         })}
         </script>
       </Helmet>
