@@ -214,7 +214,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                       required
                       value={formData.name}
                       onChange={(e) => handleInputChange("name", e.target.value)}
-                      className="bg-white/90 border-0"
+                      className="bg-white/90 border-0 text-charcoal"
                     />
                   </div>
                   <div>
@@ -225,7 +225,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                       required
                       value={formData.phone}
                       onChange={(e) => handleInputChange("phone", e.target.value)}
-                      className="bg-white/90 border-0"
+                      className="bg-white/90 border-0 text-charcoal"
                     />
                   </div>
                 </div>
@@ -238,7 +238,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                       type="email"
                       value={formData.email}
                       onChange={(e) => handleInputChange("email", e.target.value)}
-                      className="bg-white/90 border-0"
+                      className="bg-white/90 border-0 text-charcoal"
                     />
                   </div>
                   <div>
@@ -249,7 +249,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                       value={formData.city}
                       onChange={(e) => handleInputChange("city", e.target.value)}
                       placeholder="Las Vegas, Henderson, etc."
-                      className="bg-white/90 border-0"
+                      className="bg-white/90 border-0 text-charcoal"
                     />
                   </div>
                 </div>
@@ -257,7 +257,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                 <div>
                   <Label htmlFor="hero-projectType" className="text-white">Project Type *</Label>
                   <Select onValueChange={(value) => handleInputChange("projectType", value)}>
-                    <SelectTrigger className="bg-white/90 border-0">
+                    <SelectTrigger className="bg-white/90 border-0 text-charcoal">
                       <SelectValue placeholder="Select your shower door project" />
                     </SelectTrigger>
                     <SelectContent>
@@ -275,7 +275,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                     value={formData.message}
                     onChange={(e) => handleInputChange("message", e.target.value)}
                     placeholder="Describe your shower space, style preferences, or any questions..."
-                    className="bg-white/90 border-0 min-h-[80px]"
+                    className="bg-white/90 border-0 text-charcoal min-h-[80px]"
                   />
                 </div>
 
@@ -290,7 +290,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                     onChange={(e) => setUserAnswer(e.target.value)}
                     placeholder="Enter your answer"
                     required
-                    className="bg-white/90 border-0"
+                    className="bg-white/90 border-0 text-charcoal"
                   />
                 </div>
 
