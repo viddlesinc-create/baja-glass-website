@@ -54,7 +54,10 @@ const OptimizedImage = ({
   sizes = '100vw',
   priority = false,
 }: OptimizedImageProps) => {
-  const widths = [400, 800, 1200, 1920];
+  // Generate appropriate widths based on the target width
+  const widths = width <= 200 
+    ? [width, width * 2, width * 3].filter(w => w <= 600) // For small images like logos
+    : [400, 800, 1200, 1920].filter(w => w <= width * 2); // For larger images
   const useNetlify = isNetlify();
   const [fallbackToOriginal, setFallbackToOriginal] = useState(false);
 
