@@ -54,11 +54,14 @@ export const PhoneNumber = ({
   );
 
   if (asLink) {
+    const ariaLabel = showPrefix 
+      ? `Call Now: ${BUSINESS_PHONE}` 
+      : `${BUSINESS_PHONE} - Call Baja Glass`;
     return (
       <a
         href={`tel:${BUSINESS_PHONE_TEL}`}
         className={`flex items-center gap-2 ${className}`}
-        aria-label={`Call Baja Glass at ${BUSINESS_PHONE}`}
+        aria-label={ariaLabel}
         onClick={handleClick}
         data-phone-number="true"
       >
