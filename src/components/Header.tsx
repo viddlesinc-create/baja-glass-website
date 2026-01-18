@@ -179,7 +179,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="hidden md:flex items-center gap-1 text-sm font-medium text-foreground hover:text-accent transition-colors"
               onClick={() => trackMapInteraction('click_map_link', 'header')}
-              aria-label="View our location on Google Maps"
+              aria-label="Visit Us - View our location on Google Maps"
             >
               <MapPin className="h-4 w-4" aria-hidden="true" />
               <span className="hidden lg:inline">Visit Us</span>
