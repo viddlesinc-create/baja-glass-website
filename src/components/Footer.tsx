@@ -120,7 +120,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
               {quickLinks.map((link) => (
               <div key={link.name}>
@@ -138,7 +138,7 @@ const Footer = () => {
 
           {/* Popular Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Popular Services</h4>
+            <h3 className="text-lg font-semibold mb-4">Popular Services</h3>
             <div className="space-y-2">
               <div>
                 <Link
@@ -226,7 +226,7 @@ const Footer = () => {
 
           {/* Local Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Local Services</h4>
+            <h3 className="text-lg font-semibold mb-4">Local Services</h3>
             <div className="space-y-2">
               {locationLinks.map((link) => (
                 <div key={link.name}>
@@ -244,7 +244,7 @@ const Footer = () => {
 
           {/* Blog & Resources */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Blog & Resources</h4>
+            <h3 className="text-lg font-semibold mb-4">Blog & Resources</h3>
             <div className="space-y-2">
               {blogLinks.map((link) => (
                 <div key={link.name}>
@@ -262,7 +262,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
+            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
                 <a
