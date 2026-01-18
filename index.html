@@ -47,8 +47,9 @@
     <!-- Preload LCP Hero Image -->
     <link rel="preload" as="image" href="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png" fetchpriority="high">
     
-    <!-- Google Fonts - Use display=swap for better performance -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Non-render-blocking with preload -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap"></noscript>
     
     <!-- Default OG Tags (will be overridden by react-helmet) -->
     <meta property="og:title" content="Baja Glass & Mirror | Custom Shower Doors Las Vegas">
