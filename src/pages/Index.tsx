@@ -75,6 +75,13 @@ const Index = () => {
         speakableSelectors={['h1', '.intro-content', '.faq-answer']}
       />
       <Helmet>
+        {/* Preload LCP hero image for faster rendering */}
+        <link
+          rel="preload"
+          as="image"
+          href="/.netlify/images?url=%2Flovable-uploads%2F92357ff9-fc77-40cb-b708-fb8fe634aa42.png&w=1920&fit=cover&fm=webp"
+          type="image/webp"
+        />
         <script type="application/ld+json">
           {JSON.stringify({
           "@context": "https://schema.org",
