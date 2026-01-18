@@ -24,17 +24,19 @@
     
     <!-- Page-specific meta tags will be injected here by SSR -->
     
-    <!-- Resource Hints -->
+    <!-- Preconnect hints - must come before any resources from these origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- DNS Prefetch for additional origins -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     
     <!-- Preload LCP Hero Image -->
     <link rel="preload" as="image" href="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png" fetchpriority="high">
     
     <!-- Google Fonts - Use display=swap for better performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Default OG Tags (will be overridden by react-helmet) -->
