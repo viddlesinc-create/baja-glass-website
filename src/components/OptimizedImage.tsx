@@ -24,7 +24,7 @@ const isNetlify = () => {
 
 /**
  * Generates Netlify Image CDN URL for optimized image delivery
- * Automatically serves WebP to supported browsers
+ * Supports WebP and AVIF formats for modern browsers
  */
 const getNetlifyImageUrl = (src: string, width: number, format?: 'webp' | 'avif') => {
   const params = new URLSearchParams({
@@ -77,21 +77,28 @@ const OptimizedImage = ({
     );
   }
 
-  // Generate srcset for WebP format (Netlify production)
+  // Generate srcset for AVIF format (smallest file size, best for modern browsers)
+  const avifSrcSet = widths
+    .map(w => `${getNetlifyImageUrl(src, w, 'avif')} ${w}w`)
+    .join(', ');
+
+  // Generate srcset for WebP format (fallback for browsers without AVIF)
   const webpSrcSet = widths
     .map(w => `${getNetlifyImageUrl(src, w, 'webp')} ${w}w`)
     .join(', ');
 
-  // Generate srcset for original format (fallback)
+  // Generate srcset for original format (final fallback)
   const fallbackSrcSet = widths
     .map(w => `${getNetlifyImageUrl(src, w)} ${w}w`)
     .join(', ');
 
   return (
     <picture>
-      {/* WebP format - primary for modern browsers */}
+      {/* AVIF format - smallest file size, best for modern browsers */}
+      <source type="image/avif" srcSet={avifSrcSet} sizes={sizes} />
+      {/* WebP format - fallback for browsers without AVIF */}
       <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
-      {/* Original format fallback */}
+      {/* Original format - final fallback */}
       <source srcSet={fallbackSrcSet} sizes={sizes} />
       <img
         src={getNetlifyImageUrl(src, 1200)}
