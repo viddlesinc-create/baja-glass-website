@@ -148,10 +148,12 @@ export default {
 				},
 				'glow': {
 					'0%, 100%': { 
-						boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)' 
+						filter: 'drop-shadow(0 0 20px rgba(255, 255, 255, 0.1))',
+						opacity: '0.95'
 					},
 					'50%': { 
-						boxShadow: '0 0 30px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.1)' 
+						filter: 'drop-shadow(0 0 35px rgba(255, 255, 255, 0.2))',
+						opacity: '1'
 					}
 				}
 			},
