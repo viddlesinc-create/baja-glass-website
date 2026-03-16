@@ -39,7 +39,7 @@ const areas = [
       description: "Space‑smart solutions like sliding bypass doors and clean, durable framed options are popular in Rhodes Ranch. We align tracks and rollers for smooth glide and fit seals precisely to help prevent drips.",
       image: "/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png",
       alt: "Sliding shower doors Rhodes Ranch — brushed nickel rollers and handle",
-      services: ["Sliding", "Semi‑Frameless/Framed", "Repair"]
+      services: ["Sliding", "Semi‑Frameless/Framed", "Replacement"]
     },
     {
       name: "Southern Highlands",
