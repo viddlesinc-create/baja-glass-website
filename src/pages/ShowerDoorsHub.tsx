@@ -304,10 +304,13 @@ const ShowerDoorsHub = () => {
               At Baja Glass, we design, fabricate, and install shower doors that fit your space and style. From minimalist frameless designs to space‑saving sliders and <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>custom shower enclosures</Link>, every detail is measured and installed for a tight, leak‑resistant fit.
             </p>
             <p className="text-muted-foreground mb-6">
-              Looking for <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door installation in Las Vegas</Link>? Our expert <strong>frameless shower door installers</strong> handle everything from measurement to final walkthrough. We also specialize in <Link to="/custom-shower-doors-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>custom shower doors in Las Vegas</Link> for unique bathroom layouts.
+              Need professional <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door installation in Las Vegas</Link>? Our expert <strong>frameless shower door installers</strong> handle everything from measurement to final walkthrough. We also handle <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door repair</Link> for broken glass, off-track sliders, and hardware issues.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              <strong>Rated 4.9/5 by Las Vegas homeowners</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
             </p>
             <p className="text-muted-foreground">
-              Need <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door repair</Link>? We also fix broken glass, off-track sliders, and hardware issues with same-day scheduling available.
+              Wondering about pricing? See our full guide on <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door installation cost in Las Vegas</Link>.
             </p>
           </div>
         </div>
