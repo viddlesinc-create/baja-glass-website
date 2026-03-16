@@ -147,7 +147,7 @@ const ShowerDoorInstallationLasVegas = () => {
         <div className="absolute inset-0">
           <img 
             src="/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" 
-            alt="Professional shower door installation Las Vegas - expert glass installers by Baja Glass"
+            alt="Professional shower door installation in Las Vegas home"
             className="w-full h-full object-cover opacity-75"
             width="1920"
             height="1080"
