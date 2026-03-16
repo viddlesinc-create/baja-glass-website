@@ -142,8 +142,8 @@ const ShowerDoorsHub = () => {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Shower Glass Repair",
-                      "description": "Professional shower glass repair and replacement services",
+                      "name": "Shower Door Replacement",
+                      "description": "Professional shower door replacement and upgrade services",
                       "provider": { "@type": "LocalBusiness", "name": "Baja Glass & Mirror LLC" }
                     }
                   }
