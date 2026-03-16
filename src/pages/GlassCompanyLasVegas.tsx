@@ -167,8 +167,8 @@ const GlassCompanyLasVegas = () => {
       answer: "We use laser-accurate measurements, proper templating, and careful installation techniques with clean silicone work and precise sealing."
     },
     {
-      question: "Do you handle repairs and replacements?",
-      answer: "Yes, we repair broken panels, fix leaks, replace rollers/hinges, and handle all types of shower glass and office glass repairs."
+      question: "Do you handle replacements and upgrades?",
+      answer: "Yes, we replace broken panels, upgrade hardware, swap out rollers/hinges, and handle all types of shower glass and office glass replacements."
     },
     {
       question: "What areas do you serve?",
