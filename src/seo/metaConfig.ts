@@ -61,12 +61,6 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/shower-doors-las-vegas/frameless`,
     ogImage: `${BASE_URL}/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png`,
   },
-  '/shower-door-installation-las-vegas': {
-    title: 'Shower Door Installation Las Vegas | Expert Installers',
-    description: 'Professional shower door installation in Las Vegas. Frameless and semi-frameless glass doors, accurate measurements, leak-free installation. Get a free quote today.',
-    canonical: `${BASE_URL}/shower-door-installation-las-vegas`,
-    ogImage: DEFAULT_OG_IMAGE,
-  },
   '/shower-doors-las-vegas/semi-frameless-framed': {
     title: 'Semi-Frameless & Framed Shower Doors Las Vegas | Baja Glass & Mirror',
     description: 'Professional semi-frameless and framed shower door installation in Las Vegas. Balanced style with strategic support. Multiple glass and hardware finish options.',
