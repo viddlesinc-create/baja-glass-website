@@ -39,7 +39,7 @@ const Reviews = lazy(() => import("./pages/Reviews"));
 const ResidentialGlassRepair = lazy(() => import("./pages/ResidentialGlassRepair"));
 const OfficeEnclosures = lazy(() => import("./pages/OfficeEnclosures"));
 const FAQ = lazy(() => import("./pages/FAQ"));
-const ShowerDoorInstallationLasVegas = lazy(() => import("./pages/ShowerDoorInstallationLasVegas"));
+
 
 // Location pages
 const ShowerDoorsHenderson = lazy(() => import("./pages/locations/ShowerDoorsHenderson"));
