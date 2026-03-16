@@ -37,7 +37,7 @@ const Reviews = () => {
       location: "Las Vegas, NV",
       rating: 5,
       date: "September 30, 2024",
-      service: "Glass Repair",
+      service: "Glass Replacement",
       text: "Had a crack in our shower glass and Baja Glass came out quickly to assess and replace it. They matched the glass perfectly and the new panel looks great. Fair pricing and excellent customer service."
     },
     {
