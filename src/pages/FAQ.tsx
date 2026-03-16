@@ -207,7 +207,7 @@ const FAQ = () => {
     },
     {
       category: "Shower Glass Repair",
-      href: "/shower-doors-las-vegas/repair",
+      href: "/shower-doors-las-vegas",
       faqs: [
         {
           question: "Can you repair a cracked shower door?",
