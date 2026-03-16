@@ -152,7 +152,7 @@ const GlassCompanyLasVegas = () => {
   const faqs = [
     {
       question: "What residential glass services do you offer?",
-      answer: "We specialize in shower doors, enclosures, office glass partitions, and glass repairs. Our services include frameless, sliding, hinged, and steam-ready installations."
+      answer: "We specialize in shower doors, enclosures, office glass partitions, and glass replacements. Our services include frameless, sliding, hinged, and steam-ready installations."
     },
     {
       question: "Can you cut glass and office partitions to custom sizes and shapes?",
