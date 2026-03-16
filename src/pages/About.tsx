@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: Users,
       title: "Experienced Team",
-      description: "Skilled technicians with years of experience in glass installation and repair."
+      description: "Skilled technicians with years of experience in glass installation and replacement."
     },
     {
       icon: Award,
@@ -97,13 +97,13 @@ const About = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Our Story</h2>
             <div className="prose prose-lg mx-auto text-muted-foreground">
               <p className="text-lg leading-relaxed mb-6">
-                Baja Glass was founded with a simple mission: to provide Las Vegas homeowners with exceptional shower door installation and repair services. We believe that your bathroom should be both beautiful and functional, and we're committed to making that vision a reality.
+                Baja Glass was founded with a simple mission: to provide Las Vegas homeowners with exceptional shower door installation and replacement services. We believe that your bathroom should be both beautiful and functional, and we're committed to making that vision a reality.
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 Located in the heart of Las Vegas, we understand the unique needs of our community. From modern high-rise condos to classic suburban homes, we've helped thousands of homeowners transform their bathrooms with custom glass solutions.
               </p>
               <p className="text-lg leading-relaxed mb-4">
-                Our team combines years of experience with cutting-edge techniques and premium materials to deliver results that exceed expectations. Every project, from simple repairs to complex custom enclosures, receives the same attention to detail and commitment to excellence.
+                Our team combines years of experience with cutting-edge techniques and premium materials to deliver results that exceed expectations. Every project, from simple replacements to complex custom enclosures, receives the same attention to detail and commitment to excellence.
               </p>
               <p className="text-lg leading-relaxed">
                 Don't just take our word for it—<Link to="/reviews" className="text-primary underline hover:text-primary/80">read what our customers say</Link> about their experience with Baja Glass.

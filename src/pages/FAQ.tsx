@@ -206,24 +206,24 @@ const FAQ = () => {
       ]
     },
     {
-      category: "Shower Glass Repair",
+      category: "Shower Door Replacement",
       href: "/shower-doors-las-vegas",
       faqs: [
         {
-          question: "Can you repair a cracked shower door?",
-          answer: "Cracked tempered glass cannot be repaired—it must be replaced for safety. We provide fast replacement with matching glass and hardware to restore your shower quickly."
+          question: "Can you replace a cracked shower door?",
+          answer: "Yes! Cracked tempered glass must be replaced for safety. We provide fast replacement with matching or upgraded glass and hardware to restore your shower quickly."
         },
         {
           question: "How quickly can you replace broken shower glass?",
           answer: "For emergency situations, we offer same-day or next-day service. Standard replacements are typically scheduled within 2-3 business days."
         },
         {
-          question: "Do you repair shower door hardware?",
-          answer: "Yes! We repair and replace hinges, handles, rollers, tracks, and seals. Often hardware issues can be fixed without replacing the entire door."
+          question: "Can you upgrade my shower door hardware?",
+          answer: "Absolutely! We replace hinges, handles, rollers, tracks, and seals with premium options. Often a full door upgrade delivers a dramatically better result than patchwork fixes."
         },
         {
           question: "What causes shower doors to shatter?",
-          answer: "Tempered glass can shatter from edge damage, manufacturing defects, or extreme temperature changes. We inspect and identify the cause to prevent future issues."
+          answer: "Tempered glass can shatter from edge damage, manufacturing defects, or extreme temperature changes. We inspect the cause and recommend a quality replacement to prevent future issues."
         }
       ]
     },
@@ -306,7 +306,7 @@ const FAQ = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Shower Door FAQ | Baja Glass & Mirror Las Vegas</title>
-        <meta name="description" content="Find answers to common questions about shower doors, glass enclosures, installation, pricing, and repair services in Las Vegas. Expert advice from Baja Glass & Mirror." />
+        <meta name="description" content="Find answers to common questions about shower doors, glass enclosures, installation, pricing, and replacement services in Las Vegas. Expert advice from Baja Glass & Mirror." />
         <link rel="canonical" href="https://bajaglass.com/faq" />
         {/* FAQPage Schema with all FAQs */}
         <script type="application/ld+json">

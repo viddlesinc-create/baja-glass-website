@@ -11,7 +11,7 @@ const ResidentialGlassRepair = () => {
     {
       title: "Window Glass Replacement",
       description: "Replace broken or cracked residential windows with energy-efficient, properly sealed glass.",
-      features: ["Single & double pane windows", "Energy-efficient glass options", "Weather sealing & caulking", "Frame repair when needed"]
+      features: ["Single & double pane windows", "Energy-efficient glass options", "Weather sealing & caulking", "Frame assessment & upgrades"]
     },
     {
       title: "Mirror Services",
@@ -25,32 +25,32 @@ const ResidentialGlassRepair = () => {
     },
     {
       title: "Patio Door Glass",
-      description: "Sliding glass door repairs and replacements for patios and balconies.",
-      features: ["Sliding door glass panels", "Track cleaning & repair", "Weather stripping replacement", "Lock & handle servicing"]
+      description: "Sliding glass door replacements and upgrades for patios and balconies.",
+      features: ["Sliding door glass panels", "Track cleaning & replacement", "Weather stripping replacement", "Lock & handle upgrades"]
     }
   ];
 
   const emergencyServices = [
-    "24/7 emergency glass repair",
+    "24/7 emergency glass replacement",
     "Board-up services for security",
     "Same-day service available",
     "Insurance claim assistance"
   ];
 
-  const repairTypes = [
+  const replacementTypes = [
     {
-      title: "Cracked Glass Repair",
-      description: "Professional assessment and replacement of cracked residential glass.",
+      title: "Cracked Glass Replacement",
+      description: "Professional assessment and replacement of cracked residential glass with upgraded options.",
       icon: <Wrench className="h-6 w-6" />
     },
     {
-      title: "Foggy Window Repair", 
-      description: "Seal replacement for double-pane windows with failed seals.",
+      title: "Foggy Window Replacement", 
+      description: "Full window replacement for double-pane windows with failed seals—upgrade to energy-efficient glass.",
       icon: <Home className="h-6 w-6" />
     },
     {
-      title: "Glass Door Repair",
-      description: "Sliding glass doors, French doors, and entry door glass replacement.",
+      title: "Glass Door Replacement",
+      description: "Sliding glass doors, French doors, and entry door glass replacement with modern, efficient options.",
       icon: <Shield className="h-6 w-6" />
     }
   ];
@@ -58,11 +58,11 @@ const ResidentialGlassRepair = () => {
   const processSteps = [
     {
       title: "Priority Response",
-      description: "Quick response for urgent repairs with temporary security solutions if needed."
+      description: "Quick response for urgent replacements with temporary security solutions if needed."
     },
     {
       title: "Assessment & Measurement", 
-      description: "Detailed inspection of damage and precise measurements for replacement glass."
+      description: "Detailed inspection and precise measurements for replacement glass."
     },
     {
       title: "Glass Fabrication",
@@ -80,12 +80,12 @@ const ResidentialGlassRepair = () => {
 
   const faqs = [
     {
-      question: "Do you handle emergency glass repairs?",
-      answer: "Yes, we provide 24/7 emergency glass repair services with same-day response for urgent situations. We can board up broken windows for immediate security."
+      question: "Do you handle emergency glass replacements?",
+      answer: "Yes, we provide 24/7 emergency glass replacement services with same-day response for urgent situations. We can board up broken windows for immediate security while scheduling your new glass."
     },
     {
-      question: "What types of residential glass do you repair?",
-      answer: "We repair all types of residential glass including windows, mirrors, glass table tops, patio doors, entry doors, and decorative glass panels."
+      question: "What types of residential glass do you replace?",
+      answer: "We replace all types of residential glass including windows, mirrors, glass table tops, patio doors, entry doors, and decorative glass panels."
     },
     {
       question: "Can you match existing glass in my home?",
@@ -97,7 +97,7 @@ const ResidentialGlassRepair = () => {
     },
     {
       question: "How quickly can you replace broken residential glass?",
-      answer: "Most residential glass repairs can be completed within 24-48 hours. Emergency repairs and board-up services are available same-day."
+      answer: "Most residential glass replacements can be completed within 24-48 hours. Emergency board-up and replacement services are available same-day."
     },
     {
       question: "What safety standards do you follow?",
@@ -130,18 +130,18 @@ const ResidentialGlassRepair = () => {
         <div className="absolute inset-0">
           <img 
             src={brokenWindowLasVegas} 
-            alt="Broken residential window glass requiring professional repair services in Las Vegas"
+            alt="Professional residential glass replacement services in Las Vegas"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/60 to-primary/80"></div>
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Residential Glass Repair & Replacement in Las Vegas</h1>
-            <p className="text-xl mb-8 text-white/90">Glass repair, window replacement, mirrors, and custom glass solutions for your home.</p>
+            <h1 className="text-5xl font-bold mb-6">Professional Residential Glass Replacement & Upgrades in Las Vegas</h1>
+            <p className="text-xl mb-8 text-white/90">Don't just fix it—upgrade it. We specialize in full glass replacements, window upgrades, mirrors, and custom glass solutions for your home.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Glass Repair</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Replacement Estimate</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -186,9 +186,9 @@ const ResidentialGlassRepair = () => {
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8">Emergency Glass Repair Services</h2>
+            <h2 className="text-3xl font-bold mb-8">Emergency Glass Replacement Services</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              When glass breaks, security and safety are immediate concerns. Our emergency response team provides fast, professional solutions.
+              When glass breaks, security and safety are immediate concerns. Our emergency response team provides fast, professional replacement solutions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {emergencyServices.map((service, index) => (
@@ -202,12 +202,12 @@ const ResidentialGlassRepair = () => {
         </div>
       </section>
 
-      {/* Repair Types */}
+      {/* Replacement Types */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Common Residential Glass Repairs</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Common Residential Glass Replacements</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {repairTypes.map((type, index) => (
+            {replacementTypes.map((type, index) => (
               <Card key={index} className="text-center">
                 <CardHeader>
                   <div className="mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -225,7 +225,7 @@ const ResidentialGlassRepair = () => {
       {/* Process */}
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Repair Process</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Replacement Process</h2>
           <div className="max-w-4xl mx-auto">
             <div className="space-y-8">
               {processSteps.map((step, index) => (
@@ -268,9 +268,9 @@ const ResidentialGlassRepair = () => {
       {/* CTA */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Need Emergency Glass Repair?</h2>
+          <h2 className="text-3xl font-bold mb-6">Need Emergency Glass Replacement?</h2>
           <p className="text-xl mb-8 text-primary-foreground/90">
-            Don't wait - broken glass compromises security and safety. Call now for immediate assistance.
+            Don't wait—broken glass compromises security and safety. Call now for immediate assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="secondary" size="lg" asChild>
@@ -280,7 +280,7 @@ const ResidentialGlassRepair = () => {
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule Repair Online</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Schedule a Replacement</Link>
             </Button>
           </div>
         </div>

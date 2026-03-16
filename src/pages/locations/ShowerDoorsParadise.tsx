@@ -31,7 +31,7 @@ const ShowerDoorsParadise = () => {
           name: "Carlos Sanchez",
           text: "Our shower door rollers were worn out and the door was hard to slide. Baja Glass came out, replaced the rollers and tracks, and now it glides like new.",
           rating: 5,
-          service: "Sliding Door Repair"
+          service: "Sliding Door Upgrade"
         },
         {
           name: "Nicole Adams",

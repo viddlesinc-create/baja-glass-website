@@ -17,7 +17,7 @@ const GlassCompanyLasVegas = () => {
       bullets: [
         "Frameless, semi‑frameless, and framed options",
         "Inline, corner, neo‑angle, alcove, steam",
-        "Repairs: panels, rollers, hinges, seals, leaks"
+        "Replacements: panels, rollers, hinges, seals, upgrades"
       ],
       href: "/shower-doors-las-vegas",
       image: "/lovable-uploads/e0470406-f3bb-4471-83cf-84adb149756b.png"
@@ -34,10 +34,10 @@ const GlassCompanyLasVegas = () => {
       image: "/lovable-uploads/beffc522-39a0-4b73-954d-5be7a6c03e82.png"
     },
     {
-      title: "Residential Glass Repair",
-      description: "Emergency glass repair for homes including windows, mirrors, patio doors, and custom glass solutions with 24/7 service availability.",
+      title: "Residential Glass Replacement",
+      description: "Emergency glass replacement for homes including windows, mirrors, patio doors, and custom glass solutions with 24/7 service availability.",
       bullets: [
-        "Window glass replacement and repair",
+        "Window glass replacement and upgrades",
         "Mirror installation and replacement",
         "Patio door glass and emergency services"
       ],
@@ -152,7 +152,7 @@ const GlassCompanyLasVegas = () => {
   const faqs = [
     {
       question: "What residential glass services do you offer?",
-      answer: "We specialize in shower doors, enclosures, office glass partitions, and glass repairs. Our services include frameless, sliding, hinged, and steam-ready installations."
+      answer: "We specialize in shower doors, enclosures, office glass partitions, and glass replacements. Our services include frameless, sliding, hinged, and steam-ready installations."
     },
     {
       question: "Can you cut glass and office partitions to custom sizes and shapes?",
@@ -167,8 +167,8 @@ const GlassCompanyLasVegas = () => {
       answer: "We use laser-accurate measurements, proper templating, and careful installation techniques with clean silicone work and precise sealing."
     },
     {
-      question: "Do you handle repairs and replacements?",
-      answer: "Yes, we repair broken panels, fix leaks, replace rollers/hinges, and handle all types of shower glass and office glass repairs."
+      question: "Do you handle replacements and upgrades?",
+      answer: "Yes, we replace broken panels, upgrade hardware, swap out rollers/hinges, and handle all types of shower glass and office glass replacements."
     },
     {
       question: "What areas do you serve?",
@@ -292,7 +292,7 @@ const GlassCompanyLasVegas = () => {
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Residential window glass repair</span>
+                <span className="text-muted-foreground">Residential window glass replacement</span>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />

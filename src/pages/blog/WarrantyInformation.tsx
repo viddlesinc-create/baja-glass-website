@@ -324,7 +324,7 @@ const WarrantyInformation = () => {
                   <div className="border-l-2 border-accent pl-4">
                     <h4 className="font-semibold">Step 4: Resolution</h4>
                     <ul className="text-sm text-muted-foreground mt-2 space-y-1">
-                      <li>• Covered repairs at no charge to customer</li>
+                      <li>• Covered replacements at no charge to customer</li>
                       <li>• Replacement parts or complete replacement if necessary</li>
                       <li>• Follow-up to ensure satisfaction</li>
                       <li>• Updated warranty documentation if applicable</li>

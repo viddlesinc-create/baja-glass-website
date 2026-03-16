@@ -37,7 +37,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/areas-served': {
     title: 'Shower Door & Glass Services Near You | Las Vegas Area',
-    description: 'Baja Glass provides shower doors, glass repair and custom enclosures near you in Las Vegas, Henderson, Summerlin, Paradise and surrounding areas.',
+    description: 'Baja Glass provides shower doors, glass replacement and custom enclosures near you in Las Vegas, Henderson, Summerlin, Paradise and surrounding areas.',
     canonical: `${BASE_URL}/areas-served`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -98,8 +98,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/glass-company-las-vegas/residential-glass-repair': {
-    title: 'Residential Glass Repair Las Vegas | Window & Mirror Services - Baja Glass & Mirror',
-    description: 'Professional residential glass repair in Las Vegas. Window replacement, mirror services, glass table tops, and patio door repair. 24/7 emergency service available.',
+    title: 'Residential Glass Replacement Las Vegas | Window & Mirror Services - Baja Glass & Mirror',
+    description: 'Professional residential glass replacement in Las Vegas. Window upgrades, mirror services, glass table tops, and patio door replacement. 24/7 emergency service available.',
     canonical: `${BASE_URL}/glass-company-las-vegas/residential-glass-repair`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -112,8 +112,8 @@ export const seoConfig: Record<string, SEOMeta> = {
 
   // ===== Location Pages =====
   '/shower-doors-henderson-nv': {
-    title: 'Shower Doors Henderson NV | Installation & Repair - Baja Glass & Mirror',
-    description: 'Shower door installation & repair in Henderson, NV. Frameless shower doors, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes.',
+    title: 'Shower Doors Henderson NV | Installation & Replacement - Baja Glass & Mirror',
+    description: 'Shower door installation & replacement in Henderson, NV. Frameless shower doors, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes.',
     canonical: `${BASE_URL}/shower-doors-henderson-nv`,
     ogImage: `${BASE_URL}/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png`,
   },

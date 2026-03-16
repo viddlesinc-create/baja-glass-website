@@ -37,7 +37,7 @@ const Reviews = () => {
       location: "Las Vegas, NV",
       rating: 5,
       date: "September 30, 2024",
-      service: "Glass Repair",
+      service: "Glass Replacement",
       text: "Had a crack in our shower glass and Baja Glass came out quickly to assess and replace it. They matched the glass perfectly and the new panel looks great. Fair pricing and excellent customer service."
     },
     {
@@ -85,7 +85,7 @@ const Reviews = () => {
       location: "Paradise, NV",
       rating: 5,
       date: "June 20, 2024",
-      service: "Sliding Door Repair",
+      service: "Sliding Door Upgrade",
       text: "Our shower door rollers were worn out and the door was hard to slide. Baja Glass came out, replaced the rollers and tracks, and now it glides like new. Great service at a fair price."
     },
     {

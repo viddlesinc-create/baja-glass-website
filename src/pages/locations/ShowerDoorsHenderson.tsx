@@ -8,8 +8,8 @@ const ShowerDoorsHenderson = () => {
       answer: "Shower door installation in Henderson typically ranges from $800-$2,500 depending on type (frameless, semi-frameless, sliding), glass thickness, and hardware finish. We provide free in-home measurements and detailed quotes with no hidden fees."
     },
     {
-      question: "Do you offer shower door repair in Henderson?",
-      answer: "Yes! We provide comprehensive shower door repair in Henderson including broken glass replacement, roller and track repair, seal replacement, and hardware fixes. Same-day scheduling available for emergencies."
+      question: "Do you offer shower door replacement in Henderson?",
+      answer: "Yes! We provide comprehensive shower door replacement in Henderson including broken glass panel swaps, roller and track upgrades, seal replacement, and full hardware upgrades. Same-day scheduling available for emergencies."
     },
     {
       question: "What's the best type of frameless shower door for Henderson homes?",
@@ -17,7 +17,7 @@ const ShowerDoorsHenderson = () => {
     },
     {
       question: "Do you install glass shower doors in Green Valley and Anthem?",
-      answer: "Absolutely! We serve all Henderson neighborhoods including Green Valley, Anthem, Seven Hills, Inspirada, Cadence, Lake Las Vegas, and MacDonald Ranch with professional shower door installation and repair."
+      answer: "Absolutely! We serve all Henderson neighborhoods including Green Valley, Anthem, Seven Hills, Inspirada, Cadence, Lake Las Vegas, and MacDonald Ranch with professional shower door installation and replacement."
     },
     {
       question: "How long does shower door installation in Henderson take?",
@@ -50,7 +50,7 @@ const ShowerDoorsHenderson = () => {
           longitude: "-114.9817"
         }}
         heroImage="/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png"
-        description="Henderson's trusted expert for custom shower doors. Frameless, sliding, and semi-frameless installations and repairs. Professional service with perfect results."
+        description="Henderson's trusted expert for custom shower doors. Frameless, sliding, and semi-frameless installations and replacements. Professional service with perfect results."
         additionalContent={
           <>
             <h2 className="text-3xl font-bold mb-6">Shower Door Installation Henderson NV</h2>
@@ -63,20 +63,20 @@ const ShowerDoorsHenderson = () => {
               </p>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Shower Door Repair Henderson</h2>
+            <h2 className="text-3xl font-bold mb-6 mt-12">Shower Door Replacement & Upgrades in Henderson</h2>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                Need <strong>shower door repair in Henderson</strong>? We provide fast, reliable service for all types of shower door issues. Our comprehensive <strong>Henderson shower door repair</strong> services include:
+                Looking to <strong>replace your shower door in Henderson</strong>? We provide fast, reliable service for all types of shower door upgrades. Our comprehensive <strong>Henderson shower door replacement</strong> services include:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>Broken or cracked glass panel replacement</li>
-                <li>Sliding door roller and track repair</li>
+                <li>Sliding door roller and track upgrades</li>
                 <li>Shower seal and sweep replacement</li>
-                <li>Loose hinge and hardware fixes</li>
-                <li>Leak diagnosis and repair</li>
+                <li>Full hardware upgrades and modernization</li>
+                <li>Complete door replacement for persistent leaks</li>
               </ul>
               <p>
-                For emergency <strong>shower glass repair in Henderson</strong>, call us at (702) 383-0779 for same-day scheduling.
+                For emergency <strong>shower glass replacement in Henderson</strong>, call us at (702) 383-0779 for same-day scheduling.
               </p>
             </div>
 
@@ -143,7 +143,7 @@ const ShowerDoorsHenderson = () => {
           homeStyles: "Henderson homes feature diverse architectural styles from Mediterranean and Spanish Revival in Seven Hills to modern contemporary in Anthem and Inspirada. We customize shower doors to complement your home's unique design aesthetic.",
           hardWater: "Henderson's water quality benefits from Lake Las Vegas and local treatment. We recommend protective coatings to minimize mineral deposits and offer maintenance guidance specific to your water conditions."
         }}
-        metaDescription="Expert shower door installation & repair in Henderson, NV. Frameless, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes."
+        metaDescription="Expert shower door installation & replacement in Henderson, NV. Frameless, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes."
       />
     </>
   );

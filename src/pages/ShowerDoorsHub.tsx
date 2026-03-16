@@ -59,8 +59,8 @@ const ShowerDoorsHub = () => {
       answer: "Absolutely. We measure and fabricate for inline, neo-angle, alcove, and steam configurations, including unique cutouts and angled walls."
     },
     {
-      question: "Do you repair existing shower doors?",
-      answer: "Yes. We address broken panels, off-track sliders, worn seals and sweeps, hinge/handle issues, and leaks."
+      question: "Do you replace existing shower doors?",
+      answer: "Yes. We specialize in full shower door replacements and upgrades—swapping out old glass, hardware, and seals for a modern, leak-free result."
     },
     {
       question: "What areas do you serve?",
@@ -76,7 +76,7 @@ const ShowerDoorsHub = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Shower Doors Las Vegas",
-            "description": "Professional shower door installation and repair services in Las Vegas. Custom frameless, sliding, hinged doors and enclosures.",
+            "description": "Professional shower door installation and replacement services in Las Vegas. Custom frameless, sliding, hinged doors and enclosures.",
             "url": "https://bajaglass.com/shower-doors-las-vegas/",
             "mainEntity": {
               "@type": "LocalBusiness",
@@ -116,7 +116,7 @@ const ShowerDoorsHub = () => {
                     "itemOffered": {
                       "@type": "Service",
                       "name": "Sliding Shower Doors",
-                      "description": "Space-saving sliding shower door installation and repair",
+                      "description": "Space-saving sliding shower door installation and replacement",
                       "provider": { "@type": "LocalBusiness", "name": "Baja Glass & Mirror LLC" }
                     }
                   },
@@ -142,8 +142,8 @@ const ShowerDoorsHub = () => {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Shower Glass Repair",
-                      "description": "Professional shower glass repair and replacement services",
+                      "name": "Shower Door Replacement",
+                      "description": "Professional shower door replacement and upgrade services",
                       "provider": { "@type": "LocalBusiness", "name": "Baja Glass & Mirror LLC" }
                     }
                   }
@@ -226,7 +226,7 @@ const ShowerDoorsHub = () => {
               <ul className="text-white/90 text-lg space-y-1 mb-6 max-w-2xl">
                 <li>✓ Custom frameless shower doors</li>
                 <li>✓ Sliding glass shower doors</li>
-                <li>✓ Shower door replacement & repair</li>
+                <li>✓ Shower door replacement & upgrades</li>
                 <li>✓ Serving Las Vegas, Henderson, Summerlin & nearby areas</li>
               </ul>
             </div>

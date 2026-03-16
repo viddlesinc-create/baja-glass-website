@@ -380,10 +380,10 @@ const Resources = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Wrench className="h-5 w-5" />
-                  Residential Glass Repair
+                  Residential Glass Replacement
                 </CardTitle>
                 <CardDescription>
-                  Emergency glass repair for your home including windows, mirrors, and patio doors.
+                  Emergency glass replacement for your home including windows, mirrors, and patio doors.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">

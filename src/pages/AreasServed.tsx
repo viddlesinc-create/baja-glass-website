@@ -25,7 +25,7 @@ const areas = [
       description: "From refreshed primary baths to guest suites, we deliver premium glass doors that elevate Spanish Trail homes. Expect tight, clean silicone lines and carefully placed seals to help reduce splashing without distracting from your tile.",
       image: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
       alt: "Premium glass shower door Spanish Trail — elegant pebble accent and frameless design",
-      services: ["Frameless", "Hinged/Pivot", "Repair"]
+      services: ["Frameless", "Hinged/Pivot", "Replacement"]
     },
     {
       name: "The Ridges (Summerlin South)",
@@ -39,7 +39,7 @@ const areas = [
       description: "Space‑smart solutions like sliding bypass doors and clean, durable framed options are popular in Rhodes Ranch. We align tracks and rollers for smooth glide and fit seals precisely to help prevent drips.",
       image: "/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png",
       alt: "Sliding shower doors Rhodes Ranch — brushed nickel rollers and handle",
-      services: ["Sliding", "Semi‑Frameless/Framed", "Repair"]
+      services: ["Sliding", "Semi‑Frameless/Framed", "Replacement"]
     },
     {
       name: "Southern Highlands",
@@ -53,14 +53,14 @@ const areas = [
       description: "Whether updating a primary bath or secondary shower, we install sturdy, stylish doors with dependable sealing. Choose from clear or low‑iron glass and finishes that match your fixtures.",
       image: "/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png",
       alt: "Semi‑frameless shower door Mountains Edge — polished chrome frame",
-      services: ["Semi‑Frameless/Framed", "Sliding", "Repair"]
+      services: ["Semi‑Frameless/Framed", "Sliding", "Replacement"]
     },
     {
       name: "Coronado Ranch",
-      description: "From frameless inline doors to corner neo‑angle layouts, we tailor enclosures to Coronado Ranch homes with clean silicone work and reliable operation. Repairs for rollers, hinges, and seals available.",
+      description: "From frameless inline doors to corner neo‑angle layouts, we tailor enclosures to Coronado Ranch homes with clean silicone work and reliable operation. Roller, hinge, and seal replacements available.",
       image: "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png",
       alt: "Neo‑angle enclosure Coronado Ranch — precise miter and clean silicone lines",
-      services: ["Custom Enclosures", "Repair", "Frameless"]
+      services: ["Custom Enclosures", "Replacement", "Frameless"]
     },
     {
       name: "Anthem",

@@ -114,7 +114,7 @@ const Contact = () => {
     "Custom Enclosure",
     "Repair/Replacement",
     "Steam Shower",
-    "Residential Glass Repair",
+    "Residential Glass Replacement",
     "Office Glass Enclosures",
     "Not Sure - Need Consultation"
   ];
@@ -377,7 +377,7 @@ const Contact = () => {
                       <span>Off</span>
                     </div>
                     <p className="text-sm text-muted-foreground mt-4">
-                      Emergency repairs and urgent consultations available by appointment
+                      Emergency replacements and urgent consultations available by appointment
                     </p>
                   </div>
                 </CardContent>

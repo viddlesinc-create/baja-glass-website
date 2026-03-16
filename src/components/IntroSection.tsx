@@ -52,7 +52,7 @@ const IntroSection = () => {
               </p>
               <p className="text-lg leading-relaxed">
                 We use only <strong>tempered safety glass</strong>, <strong>premium hardware finishes</strong>, and 
-                <strong> professional-grade installation techniques</strong>. Our <strong>shower door repair</strong> services 
+                <strong> professional-grade installation techniques</strong>. Our <strong>shower door replacement</strong> services 
                 handle everything from broken glass to hardware replacement. Experience the difference of working with 
                 <strong> Las Vegas's premier glass company</strong>—where quality, integrity, and customer satisfaction 
                 aren't just promises, they're our foundation.

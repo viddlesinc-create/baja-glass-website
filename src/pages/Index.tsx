@@ -54,8 +54,8 @@ import hardwareFinishes from "@/assets/hardware-finishes.jpg";
     question: "Do you offer low-iron glass and protective coatings?",
     answer: "Yes. Low-iron reduces the green tint for a clearer edge. Hydrophobic coatings help reduce water spots and make cleaning easier."
   }, {
-    question: "Can you repair my existing shower door?",
-    answer: "Yes. We handle broken panels, leaks, hinge and handle issues, roller/track problems, and seals."
+    question: "Can you replace my existing shower door?",
+    answer: "Yes. We specialize in full shower door replacements and upgrades—swapping out old panels, hardware, and seals for a fresh, modern look."
   }, {
     question: "What areas do you serve?",
     answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City—and nearby communities."
@@ -145,7 +145,7 @@ const Index = () => {
             animationDelay: '0.3s'
           }}>
               <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl leading-relaxed font-light drop-shadow-lg">
-                Professional glass installation services including shower doors, mirrors, office glass, and residential glass repair—delivered with precision and care.
+                Professional glass installation services including shower doors, mirrors, office glass, and residential glass replacement—delivered with precision and care.
               </p>
             </div>
 
@@ -217,7 +217,7 @@ const Index = () => {
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Residential glass repair & window replacement</span>
+                <span className="text-muted-foreground">Residential glass replacement & window upgrades</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
@@ -354,7 +354,7 @@ const Index = () => {
               {
                 city: "Henderson",
                 url: "/shower-doors-henderson-nv",
-                description: "Your local experts for Henderson shower door installation, frameless enclosures, and glass repair."
+                description: "Your local experts for Henderson shower door installation, frameless enclosures, and glass replacement."
               },
               {
                 city: "Summerlin",
@@ -369,7 +369,7 @@ const Index = () => {
               {
                 city: "Spring Valley",
                 url: "/shower-doors-spring-valley-nv",
-                description: "Complete shower door services from repair to custom installations in Spring Valley."
+                description: "Complete shower door services from replacements to custom installations in Spring Valley."
               },
               {
                 city: "Enterprise",
@@ -488,16 +488,16 @@ const Index = () => {
             <Card className="group hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
-                  Residential Glass Repair
+                  Residential Glass Replacement
                   <Badge variant="secondary">24/7 Emergency</Badge>
                 </CardTitle>
                 <CardDescription>
-                  Emergency glass repair for windows, mirrors, patio doors, and more. Same-day service available for urgent repairs.
+                  Emergency glass replacement for windows, mirrors, patio doors, and more. Same-day service available for urgent needs.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/residential-glass-repair" onClick={() => window.scrollTo(0, 0)}>Emergency Glass Repair</Link>
+                  <Link to="/glass-company-las-vegas/residential-glass-repair" onClick={() => window.scrollTo(0, 0)}>Emergency Glass Replacement</Link>
                 </Button>
               </CardContent>
             </Card>
