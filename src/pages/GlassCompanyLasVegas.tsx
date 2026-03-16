@@ -17,7 +17,7 @@ const GlassCompanyLasVegas = () => {
       bullets: [
         "Frameless, semi‑frameless, and framed options",
         "Inline, corner, neo‑angle, alcove, steam",
-        "Repairs: panels, rollers, hinges, seals, leaks"
+        "Replacements: panels, rollers, hinges, seals, upgrades"
       ],
       href: "/shower-doors-las-vegas",
       image: "/lovable-uploads/e0470406-f3bb-4471-83cf-84adb149756b.png"
