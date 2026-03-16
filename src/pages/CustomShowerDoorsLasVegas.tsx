@@ -329,7 +329,7 @@ const CustomShowerDoorsLasVegas = () => {
               </CardHeader>
               <CardContent>
                 <Button variant="outline" asChild className="w-full">
-                  <Link to="/shower-door-installation-las-vegas" onClick={() => window.scrollTo(0, 0)}>
+                  <Link to="/shower-doors-las-vegas" onClick={() => window.scrollTo(0, 0)}>
                     Learn More
                   </Link>
                 </Button>
