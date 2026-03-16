@@ -488,16 +488,16 @@ const Index = () => {
             <Card className="group hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
-                  Residential Glass Repair
+                  Residential Glass Replacement
                   <Badge variant="secondary">24/7 Emergency</Badge>
                 </CardTitle>
                 <CardDescription>
-                  Emergency glass repair for windows, mirrors, patio doors, and more. Same-day service available for urgent repairs.
+                  Emergency glass replacement for windows, mirrors, patio doors, and more. Same-day service available for urgent needs.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/residential-glass-repair" onClick={() => window.scrollTo(0, 0)}>Emergency Glass Repair</Link>
+                  <Link to="/glass-company-las-vegas/residential-glass-repair" onClick={() => window.scrollTo(0, 0)}>Emergency Glass Replacement</Link>
                 </Button>
               </CardContent>
             </Card>

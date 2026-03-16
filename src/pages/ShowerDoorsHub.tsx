@@ -226,7 +226,7 @@ const ShowerDoorsHub = () => {
               <ul className="text-white/90 text-lg space-y-1 mb-6 max-w-2xl">
                 <li>✓ Custom frameless shower doors</li>
                 <li>✓ Sliding glass shower doors</li>
-                <li>✓ Shower door replacement & repair</li>
+                <li>✓ Shower door replacement & upgrades</li>
                 <li>✓ Serving Las Vegas, Henderson, Summerlin & nearby areas</li>
               </ul>
             </div>

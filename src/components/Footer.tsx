@@ -57,7 +57,7 @@ const Footer = () => {
             "name": "Baja Glass & Mirror LLC",
             "url": "https://bajaglass.com",
             "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-            "description": "Family-owned shower door and glass company in Las Vegas, NV. Custom frameless shower doors, glass repair, and interior glass services. First Responder Owned.",
+            "description": "Family-owned shower door and glass company in Las Vegas, NV. Custom frameless shower doors, glass replacement, and interior glass services. First Responder Owned.",
             "telephone": "+17023830779",
             "address": {
               "@type": "PostalAddress",

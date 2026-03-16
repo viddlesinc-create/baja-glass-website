@@ -292,7 +292,7 @@ const GlassCompanyLasVegas = () => {
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Residential window glass repair</span>
+                <span className="text-muted-foreground">Residential window glass replacement</span>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />

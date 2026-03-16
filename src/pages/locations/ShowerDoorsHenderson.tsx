@@ -143,7 +143,7 @@ const ShowerDoorsHenderson = () => {
           homeStyles: "Henderson homes feature diverse architectural styles from Mediterranean and Spanish Revival in Seven Hills to modern contemporary in Anthem and Inspirada. We customize shower doors to complement your home's unique design aesthetic.",
           hardWater: "Henderson's water quality benefits from Lake Las Vegas and local treatment. We recommend protective coatings to minimize mineral deposits and offer maintenance guidance specific to your water conditions."
         }}
-        metaDescription="Expert shower door installation & repair in Henderson, NV. Frameless, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes."
+        metaDescription="Expert shower door installation & replacement in Henderson, NV. Frameless, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes."
       />
     </>
   );

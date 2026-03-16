@@ -306,7 +306,7 @@ const FAQ = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Shower Door FAQ | Baja Glass & Mirror Las Vegas</title>
-        <meta name="description" content="Find answers to common questions about shower doors, glass enclosures, installation, pricing, and repair services in Las Vegas. Expert advice from Baja Glass & Mirror." />
+        <meta name="description" content="Find answers to common questions about shower doors, glass enclosures, installation, pricing, and replacement services in Las Vegas. Expert advice from Baja Glass & Mirror." />
         <link rel="canonical" href="https://bajaglass.com/faq" />
         {/* FAQPage Schema with all FAQs */}
         <script type="application/ld+json">
