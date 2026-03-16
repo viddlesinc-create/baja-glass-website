@@ -211,34 +211,8 @@ const Header = () => {
                       ))}
                     </div>
 
-                    {/* Glass Company Section */}
-                    <div>
-                      <Link
-                        to="/glass-company-las-vegas"
-                        className="text-foreground hover:text-accent transition-colors font-medium py-2 block"
-                        onClick={() => {
-                          setIsOpen(false);
-                          window.scrollTo(0, 0);
-                        }}
-                      >
-                        Glass Company
-                      </Link>
-                      <span className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide block">Services</span>
-                      {glassCompanyPages.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className="text-foreground hover:text-accent transition-colors font-medium py-1 pl-4 block"
-                          onClick={() => {
-                            setIsOpen(false);
-                            window.scrollTo(0, 0);
-                          }}
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                    
+
+
                     {/* Regular Navigation */}
                     {navigation.map((item) => (
                       <Link
