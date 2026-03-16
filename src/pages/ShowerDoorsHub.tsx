@@ -116,7 +116,7 @@ const ShowerDoorsHub = () => {
                     "itemOffered": {
                       "@type": "Service",
                       "name": "Sliding Shower Doors",
-                      "description": "Space-saving sliding shower door installation and repair",
+                      "description": "Space-saving sliding shower door installation and replacement",
                       "provider": { "@type": "LocalBusiness", "name": "Baja Glass & Mirror LLC" }
                     }
                   },
