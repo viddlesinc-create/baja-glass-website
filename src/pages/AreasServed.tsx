@@ -25,7 +25,7 @@ const areas = [
       description: "From refreshed primary baths to guest suites, we deliver premium glass doors that elevate Spanish Trail homes. Expect tight, clean silicone lines and carefully placed seals to help reduce splashing without distracting from your tile.",
       image: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
       alt: "Premium glass shower door Spanish Trail — elegant pebble accent and frameless design",
-      services: ["Frameless", "Hinged/Pivot", "Repair"]
+      services: ["Frameless", "Hinged/Pivot", "Replacement"]
     },
     {
       name: "The Ridges (Summerlin South)",
