@@ -354,7 +354,7 @@ const Index = () => {
               {
                 city: "Henderson",
                 url: "/shower-doors-henderson-nv",
-                description: "Your local experts for Henderson shower door installation, frameless enclosures, and glass repair."
+                description: "Your local experts for Henderson shower door installation, frameless enclosures, and glass replacement."
               },
               {
                 city: "Summerlin",
