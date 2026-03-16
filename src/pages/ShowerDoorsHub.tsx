@@ -39,11 +39,6 @@ const ShowerDoorsHub = () => {
       description: "Sealed, steam‑ready enclosures with transoms and precise gasketing. Create a spa-like experience with premium glass and carefully fitted hardware.",
       href: "/shower-doors-las-vegas/steam-enclosures"
     },
-    {
-      title: "Shower Glass Repair & Replacement",
-      description: "From broken panels and off-track sliders to leaks and worn seals, our technicians diagnose and repair shower door issues quickly and safely.",
-      href: "/shower-doors-las-vegas/repair"
-    }
   ];
 
   const faqs = [

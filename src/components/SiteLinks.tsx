@@ -13,9 +13,8 @@ const SiteLinks = () => {
         { name: "Semi-Frameless Doors", href: "/shower-doors-las-vegas/semi-frameless-framed" },
         { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
         { name: "Steam Shower Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
-        { name: "Shower Glass Repair", href: "/shower-doors-las-vegas/repair" },
-        { name: "Custom Shower Doors", href: "/custom-shower-doors-las-vegas" },
-        { name: "Installation Services", href: "/shower-door-installation-las-vegas" },
+
+
       ],
     },
     {

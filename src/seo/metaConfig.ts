@@ -91,12 +91,6 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/shower-doors-las-vegas/steam-enclosures`,
     ogImage: DEFAULT_OG_IMAGE,
   },
-  '/shower-doors-las-vegas/repair': {
-    title: 'Shower Door Repair Las Vegas | Fast Glass & Hardware Fixes',
-    description: 'Same-day shower door repair in Las Vegas & Henderson. Broken glass, sliding door repair, seal replacement, hardware fixes. Call (702) 383-0779 for emergency service.',
-    canonical: `${BASE_URL}/shower-doors-las-vegas/repair`,
-    ogImage: DEFAULT_OG_IMAGE,
-  },
   '/shower-enclosures-las-vegas': {
     title: 'Shower Enclosures Las Vegas | Custom Glass Enclosures - Baja Glass',
     description: 'Custom glass shower enclosures in Las Vegas, NV. Inline, corner, neo-angle, and steam designs. Professional installation in Henderson, Summerlin. Free quotes.',
