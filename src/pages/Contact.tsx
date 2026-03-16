@@ -377,7 +377,7 @@ const Contact = () => {
                       <span>Off</span>
                     </div>
                     <p className="text-sm text-muted-foreground mt-4">
-                      Emergency repairs and urgent consultations available by appointment
+                      Emergency replacements and urgent consultations available by appointment
                     </p>
                   </div>
                 </CardContent>

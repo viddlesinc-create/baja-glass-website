@@ -24,7 +24,7 @@ const routeLabels: Record<string, string> = {
   
   // Glass Company pages
   "/glass-company-las-vegas": "Glass Company Las Vegas",
-  "/glass-company-las-vegas/residential-glass-repair": "Residential Glass Repair",
+  "/glass-company-las-vegas/residential-glass-repair": "Residential Glass Replacement",
   "/glass-company-las-vegas/office-enclosures": "Office Enclosures",
   // Shower Doors hub and service pages
   "/shower-doors-las-vegas": "Shower Doors Las Vegas",

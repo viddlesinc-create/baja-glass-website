@@ -85,7 +85,7 @@ const Reviews = () => {
       location: "Paradise, NV",
       rating: 5,
       date: "June 20, 2024",
-      service: "Sliding Door Repair",
+      service: "Sliding Door Upgrade",
       text: "Our shower door rollers were worn out and the door was hard to slide. Baja Glass came out, replaced the rollers and tracks, and now it glides like new. Great service at a fair price."
     },
     {

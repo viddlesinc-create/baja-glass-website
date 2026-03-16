@@ -197,7 +197,7 @@ export const OrganizationSchema = ({ type = 'Organization' }: OrganizationProps)
       "Sliding Shower Doors",
       "Hinged Shower Doors",
       "Mirror Installation",
-      "Glass Repair",
+      "Glass Replacement",
       "Custom Glass Work",
       "Steam Shower Enclosures",
       "Custom Shower Enclosures",

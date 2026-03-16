@@ -36,7 +36,7 @@ const Sitemap = () => {
       icon: Building2,
       links: [
         { name: "Glass Company Las Vegas", href: "/glass-company-las-vegas" },
-        { name: "Residential Glass Repair", href: "/glass-company-las-vegas/residential-glass-repair" },
+        { name: "Residential Glass Replacement", href: "/glass-company-las-vegas/residential-glass-repair" },
         { name: "Office Enclosures", href: "/glass-company-las-vegas/office-enclosures" },
       ]
     },
