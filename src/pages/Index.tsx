@@ -54,8 +54,8 @@ import hardwareFinishes from "@/assets/hardware-finishes.jpg";
     question: "Do you offer low-iron glass and protective coatings?",
     answer: "Yes. Low-iron reduces the green tint for a clearer edge. Hydrophobic coatings help reduce water spots and make cleaning easier."
   }, {
-    question: "Can you repair my existing shower door?",
-    answer: "Yes. We handle broken panels, leaks, hinge and handle issues, roller/track problems, and seals."
+    question: "Can you replace my existing shower door?",
+    answer: "Yes. We specialize in full shower door replacements and upgrades—swapping out old panels, hardware, and seals for a fresh, modern look."
   }, {
     question: "What areas do you serve?",
     answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City—and nearby communities."
