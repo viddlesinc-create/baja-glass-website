@@ -122,40 +122,7 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Glass Company Dropdown */}
-            <DropdownMenu>
-              <div className="flex items-center">
-                <Link 
-                  to="/glass-company-las-vegas"
-                  className="text-foreground hover:text-accent transition-colors font-medium"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  Glass Company
-                </Link>
-                <DropdownMenuTrigger asChild>
-                  <button 
-                    className="flex items-center gap-1 text-foreground hover:text-accent transition-colors font-medium ml-1"
-                    aria-label="Expand glass company menu"
-                  >
-                    <ChevronDown className="h-4 w-4" aria-hidden="true" />
-                  </button>
-                </DropdownMenuTrigger>
-              </div>
-              <DropdownMenuContent align="start" className="w-56">
-                {glassCompanyPages.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    <Link
-                      to={item.href}
-                      className="text-foreground hover:text-accent transition-colors w-full"
-                      onClick={() => window.scrollTo(0, 0)}
-                    >
-                      {item.name}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-            
+
             {/* Regular Navigation Items */}
             {navigation.map((item) => (
               <Link
@@ -244,34 +211,8 @@ const Header = () => {
                       ))}
                     </div>
 
-                    {/* Glass Company Section */}
-                    <div>
-                      <Link
-                        to="/glass-company-las-vegas"
-                        className="text-foreground hover:text-accent transition-colors font-medium py-2 block"
-                        onClick={() => {
-                          setIsOpen(false);
-                          window.scrollTo(0, 0);
-                        }}
-                      >
-                        Glass Company
-                      </Link>
-                      <span className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wide block">Services</span>
-                      {glassCompanyPages.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className="text-foreground hover:text-accent transition-colors font-medium py-1 pl-4 block"
-                          onClick={() => {
-                            setIsOpen(false);
-                            window.scrollTo(0, 0);
-                          }}
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                    
+
+
                     {/* Regular Navigation */}
                     {navigation.map((item) => (
                       <Link
