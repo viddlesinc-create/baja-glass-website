@@ -17,8 +17,7 @@ const Footer = () => {
   ];
 
   const serviceLinks = [
-    { name: "Shower Door Installation", href: "/shower-door-installation-las-vegas" },
-    { name: "Shower Door Repair", href: "/shower-doors-las-vegas/repair" },
+    { name: "Shower Doors Las Vegas", href: "/shower-doors-las-vegas" },
     { name: "Glass Company Services", href: "/glass-company-las-vegas" },
     { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
   ];
@@ -201,15 +200,8 @@ const Footer = () => {
                   Custom Enclosures
                 </Link>
               </div>
-              <div>
-                <Link
-                  to="/shower-doors-las-vegas/repair"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  Shower Glass Repair
-                </Link>
-              </div>
+
+
               <div>
                 <Link
                   to="/shower-doors-las-vegas/sliding"

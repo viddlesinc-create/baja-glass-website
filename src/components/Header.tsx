@@ -34,10 +34,6 @@ const Header = () => {
     { name: "Hinged Doors", href: "/shower-doors-las-vegas/hinged" },
     { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
     { name: "Steam Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
-    // Services
-    { name: "Shower Door Installation", href: "/shower-door-installation-las-vegas" },
-    // Urgent
-    { name: "Shower Door Repair", href: "/shower-doors-las-vegas/repair" },
   ];
 
   const glassCompanyPages = [

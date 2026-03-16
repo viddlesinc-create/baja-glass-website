@@ -165,7 +165,7 @@ const CustomShowerDoorsLasVegas = () => {
               At Baja Glass, we specialize in <strong>custom shower doors in Las Vegas</strong> that are designed, fabricated, and installed to your exact specifications. Whether you need a door for an unusual opening, angled walls, or a unique bathroom layout, our team creates solutions that standard doors can't match.
             </p>
             <p className="text-muted-foreground">
-              Looking for professional installation? Learn about our <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80">shower door installation process</Link> or explore <Link to="/shower-doors-las-vegas/frameless" className="text-primary underline hover:text-primary/80">frameless shower door options</Link>.
+              Explore our <Link to="/shower-doors-las-vegas/frameless" className="text-primary underline hover:text-primary/80">frameless shower door options</Link> or browse our full range of <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower doors in Las Vegas</Link>.
             </p>
           </div>
         </div>
@@ -329,7 +329,7 @@ const CustomShowerDoorsLasVegas = () => {
               </CardHeader>
               <CardContent>
                 <Button variant="outline" asChild className="w-full">
-                  <Link to="/shower-door-installation-las-vegas" onClick={() => window.scrollTo(0, 0)}>
+                  <Link to="/shower-doors-las-vegas" onClick={() => window.scrollTo(0, 0)}>
                     Learn More
                   </Link>
                 </Button>

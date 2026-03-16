@@ -12,7 +12,7 @@ export const routes = [
   "/shower-doors-las-vegas/hinged",
   "/shower-doors-las-vegas/custom-enclosures",
   "/shower-doors-las-vegas/steam-enclosures",
-  "/shower-doors-las-vegas/repair",
+  
   "/shower-enclosures-las-vegas",
   "/gallery",
   "/areas-served",
@@ -22,7 +22,7 @@ export const routes = [
   "/sitemap",
   "/reviews",
   "/faq",
-  "/shower-door-installation-las-vegas",
+  
   "/faq",
   "/shower-doors-henderson-nv",
   "/shower-doors-summerlin-nv",

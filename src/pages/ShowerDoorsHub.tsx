@@ -39,11 +39,6 @@ const ShowerDoorsHub = () => {
       description: "Sealed, steam‑ready enclosures with transoms and precise gasketing. Create a spa-like experience with premium glass and carefully fitted hardware.",
       href: "/shower-doors-las-vegas/steam-enclosures"
     },
-    {
-      title: "Shower Glass Repair & Replacement",
-      description: "From broken panels and off-track sliders to leaks and worn seals, our technicians diagnose and repair shower door issues quickly and safely.",
-      href: "/shower-doors-las-vegas/repair"
-    }
   ];
 
   const faqs = [
@@ -304,7 +299,7 @@ const ShowerDoorsHub = () => {
               At Baja Glass, we design, fabricate, and install shower doors that fit your space and style. From minimalist frameless designs to space‑saving sliders and <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>custom shower enclosures</Link>, every detail is measured and installed for a tight, leak‑resistant fit.
             </p>
             <p className="text-muted-foreground mb-6">
-              Need professional <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door installation in Las Vegas</Link>? Our expert <strong>frameless shower door installers</strong> handle everything from measurement to final walkthrough. We also handle <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door repair</Link> for broken glass, off-track sliders, and hardware issues.
+              Our expert <strong>frameless shower door installers</strong> handle everything from measurement to final walkthrough—delivering precision fit, clean silicone work, and dependable performance.
             </p>
             <p className="text-muted-foreground mb-6">
               <strong>Rated 4.9/5 by Las Vegas homeowners</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
@@ -418,8 +413,8 @@ const ShowerDoorsHub = () => {
               <Link to="/shower-enclosures-las-vegas" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
                 <span className="font-medium">Shower Enclosures</span>
               </Link>
-              <Link to="/shower-doors-las-vegas/repair" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
-                <span className="font-medium">Repair Services</span>
+              <Link to="/gallery" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
+                <span className="font-medium">Gallery</span>
               </Link>
               <Link to="/shower-doors-las-vegas/frameless" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
                 <span className="font-medium">Frameless Doors</span>

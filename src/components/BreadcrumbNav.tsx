@@ -21,7 +21,7 @@ const routeLabels: Record<string, string> = {
   "/sitemap": "Site Map",
   "/faq": "FAQ",
   "/custom-shower-doors-las-vegas": "Custom Shower Doors Las Vegas",
-  "/shower-door-installation-las-vegas": "Shower Door Installation Las Vegas",
+  
   // Glass Company pages
   "/glass-company-las-vegas": "Glass Company Las Vegas",
   "/glass-company-las-vegas/residential-glass-repair": "Residential Glass Repair",
@@ -34,7 +34,7 @@ const routeLabels: Record<string, string> = {
   "/shower-doors-las-vegas/hinged": "Hinged & Pivot Doors",
   "/shower-doors-las-vegas/custom-enclosures": "Custom Enclosures",
   "/shower-doors-las-vegas/steam-enclosures": "Steam Shower Enclosures",
-  "/shower-doors-las-vegas/repair": "Shower Glass Repair",
+  
   "/shower-enclosures-las-vegas": "Shower Enclosures Las Vegas",
   // Location pages
   "/shower-doors-henderson-nv": "Henderson Shower Doors",

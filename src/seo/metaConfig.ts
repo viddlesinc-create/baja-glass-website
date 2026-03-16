@@ -61,12 +61,6 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/shower-doors-las-vegas/frameless`,
     ogImage: `${BASE_URL}/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png`,
   },
-  '/shower-door-installation-las-vegas': {
-    title: 'Shower Door Installation Las Vegas | Expert Installers',
-    description: 'Professional shower door installation in Las Vegas. Frameless and semi-frameless glass doors, accurate measurements, leak-free installation. Get a free quote today.',
-    canonical: `${BASE_URL}/shower-door-installation-las-vegas`,
-    ogImage: DEFAULT_OG_IMAGE,
-  },
   '/shower-doors-las-vegas/semi-frameless-framed': {
     title: 'Semi-Frameless & Framed Shower Doors Las Vegas | Baja Glass & Mirror',
     description: 'Professional semi-frameless and framed shower door installation in Las Vegas. Balanced style with strategic support. Multiple glass and hardware finish options.',
@@ -95,12 +89,6 @@ export const seoConfig: Record<string, SEOMeta> = {
     title: 'Steam Shower Enclosures Las Vegas | Spa-Like Glass Enclosures - Baja Glass & Mirror',
     description: 'Professional steam shower enclosure installation in Las Vegas. Sealed glass systems with operable transoms for temperature control. Transform your bathroom into a spa.',
     canonical: `${BASE_URL}/shower-doors-las-vegas/steam-enclosures`,
-    ogImage: DEFAULT_OG_IMAGE,
-  },
-  '/shower-doors-las-vegas/repair': {
-    title: 'Shower Door Repair Las Vegas | Fast Glass & Hardware Fixes',
-    description: 'Same-day shower door repair in Las Vegas & Henderson. Broken glass, sliding door repair, seal replacement, hardware fixes. Call (702) 383-0779 for emergency service.',
-    canonical: `${BASE_URL}/shower-doors-las-vegas/repair`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-enclosures-las-vegas': {

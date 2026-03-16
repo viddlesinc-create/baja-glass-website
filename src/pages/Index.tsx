@@ -32,10 +32,6 @@ import hardwareFinishes from "@/assets/hardware-finishes.jpg";
     description: "Inline, neo-angle, alcove, steam—made-to-measure for a perfect fit.",
     href: "/shower-doors-las-vegas/custom-enclosures"
   }, {
-    title: "Shower Glass Repair & Replacement",
-    description: "Broken panels, leaks, loose hinges, roller/track issues—fixed fast and safely.",
-    href: "/shower-doors-las-vegas/repair"
-  }, {
     title: "Hardware & Finishes",
     description: "Polished chrome, matte black, brushed nickel, brass—match your design.",
     href: "/resources"

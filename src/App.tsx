@@ -27,7 +27,7 @@ const SlidingShowerDoors = lazy(() => import("./pages/SlidingShowerDoors"));
 const HingedShowerDoors = lazy(() => import("./pages/HingedShowerDoors"));
 const CustomEnclosures = lazy(() => import("./pages/CustomEnclosures"));
 const SteamShowerEnclosures = lazy(() => import("./pages/SteamShowerEnclosures"));
-const ShowerGlassRepair = lazy(() => import("./pages/ShowerGlassRepair"));
+
 const ShowerEnclosuresLasVegas = lazy(() => import("./pages/ShowerEnclosuresLasVegas"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const AreasServed = lazy(() => import("./pages/AreasServed"));
@@ -39,7 +39,7 @@ const Reviews = lazy(() => import("./pages/Reviews"));
 const ResidentialGlassRepair = lazy(() => import("./pages/ResidentialGlassRepair"));
 const OfficeEnclosures = lazy(() => import("./pages/OfficeEnclosures"));
 const FAQ = lazy(() => import("./pages/FAQ"));
-const ShowerDoorInstallationLasVegas = lazy(() => import("./pages/ShowerDoorInstallationLasVegas"));
+
 
 // Location pages
 const ShowerDoorsHenderson = lazy(() => import("./pages/locations/ShowerDoorsHenderson"));
@@ -103,7 +103,7 @@ function App() {
               <Route path="/shower-doors-las-vegas/hinged" element={<HingedShowerDoors />} />
               <Route path="/shower-doors-las-vegas/custom-enclosures" element={<CustomEnclosures />} />
               <Route path="/shower-doors-las-vegas/steam-enclosures" element={<SteamShowerEnclosures />} />
-              <Route path="/shower-doors-las-vegas/repair" element={<ShowerGlassRepair />} />
+              <Route path="/shower-doors-las-vegas/repair" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
               <Route path="/shower-enclosures-las-vegas" element={<ShowerEnclosuresLasVegas />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/areas-served" element={<AreasServed />} />
@@ -114,7 +114,7 @@ function App() {
               <Route path="/reviews" element={<Reviews />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
-              <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
+              <Route path="/shower-door-installation-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
               <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />
               <Route path="/shower-doors-summerlin-nv" element={<ShowerDoorsSummerlin />} />
               <Route path="/shower-doors-paradise-nv" element={<ShowerDoorsParadise />} />

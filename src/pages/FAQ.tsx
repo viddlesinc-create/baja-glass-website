@@ -207,7 +207,7 @@ const FAQ = () => {
     },
     {
       category: "Shower Glass Repair",
-      href: "/shower-doors-las-vegas/repair",
+      href: "/shower-doors-las-vegas",
       faqs: [
         {
           question: "Can you repair a cracked shower door?",
@@ -229,7 +229,7 @@ const FAQ = () => {
     },
     {
       category: "Shower Door Installation",
-      href: "/shower-door-installation-las-vegas",
+      href: "/shower-doors-las-vegas",
       faqs: [
         {
           question: "Where can I find frameless shower door installers near me?",
