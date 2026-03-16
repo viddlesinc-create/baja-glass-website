@@ -37,7 +37,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/areas-served': {
     title: 'Shower Door & Glass Services Near You | Las Vegas Area',
-    description: 'Baja Glass provides shower doors, glass repair and custom enclosures near you in Las Vegas, Henderson, Summerlin, Paradise and surrounding areas.',
+    description: 'Baja Glass provides shower doors, glass replacement and custom enclosures near you in Las Vegas, Henderson, Summerlin, Paradise and surrounding areas.',
     canonical: `${BASE_URL}/areas-served`,
     ogImage: DEFAULT_OG_IMAGE,
   },
