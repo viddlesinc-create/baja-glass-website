@@ -34,10 +34,10 @@ const GlassCompanyLasVegas = () => {
       image: "/lovable-uploads/beffc522-39a0-4b73-954d-5be7a6c03e82.png"
     },
     {
-      title: "Residential Glass Repair",
-      description: "Emergency glass repair for homes including windows, mirrors, patio doors, and custom glass solutions with 24/7 service availability.",
+      title: "Residential Glass Replacement",
+      description: "Emergency glass replacement for homes including windows, mirrors, patio doors, and custom glass solutions with 24/7 service availability.",
       bullets: [
-        "Window glass replacement and repair",
+        "Window glass replacement and upgrades",
         "Mirror installation and replacement",
         "Patio door glass and emergency services"
       ],
