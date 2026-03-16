@@ -218,9 +218,9 @@ const GlassCompanyLasVegas = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Las Vegas Glass Company — 
+                Full-Service Glass Company in{" "}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
-                  Custom Glass, Office Enclosures, and Shower Doors
+                  Las Vegas
                 </span>
               </h1>
             </div>
