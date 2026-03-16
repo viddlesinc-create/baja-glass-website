@@ -17,7 +17,7 @@ const ShowerDoorsHenderson = () => {
     },
     {
       question: "Do you install glass shower doors in Green Valley and Anthem?",
-      answer: "Absolutely! We serve all Henderson neighborhoods including Green Valley, Anthem, Seven Hills, Inspirada, Cadence, Lake Las Vegas, and MacDonald Ranch with professional shower door installation and repair."
+      answer: "Absolutely! We serve all Henderson neighborhoods including Green Valley, Anthem, Seven Hills, Inspirada, Cadence, Lake Las Vegas, and MacDonald Ranch with professional shower door installation and replacement."
     },
     {
       question: "How long does shower door installation in Henderson take?",
