@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: Users,
       title: "Experienced Team",
-      description: "Skilled technicians with years of experience in glass installation and repair."
+      description: "Skilled technicians with years of experience in glass installation and replacement."
     },
     {
       icon: Award,
