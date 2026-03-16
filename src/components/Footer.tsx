@@ -16,6 +16,13 @@ const Footer = () => {
     { name: "Contact", href: "/contact" },
   ];
 
+  const serviceLinks = [
+    { name: "Shower Door Installation", href: "/shower-door-installation-las-vegas" },
+    { name: "Shower Door Repair", href: "/shower-doors-las-vegas/repair" },
+    { name: "Glass Company Services", href: "/glass-company-las-vegas" },
+    { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
+  ];
+
   const locationLinks = [
     { name: "Henderson", href: "/shower-doors-henderson-nv" },
     { name: "Summerlin", href: "/shower-doors-summerlin-nv" },

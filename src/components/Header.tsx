@@ -27,15 +27,17 @@ const Header = () => {
   ];
 
   const showerDoorsPages = [
+    // Design / Product
     { name: "Frameless Doors", href: "/shower-doors-las-vegas/frameless" },
     { name: "Semi-Frameless & Framed", href: "/shower-doors-las-vegas/semi-frameless-framed" },
     { name: "Sliding Doors", href: "/shower-doors-las-vegas/sliding" },
     { name: "Hinged Doors", href: "/shower-doors-las-vegas/hinged" },
-    { name: "Custom Shower Doors", href: "/custom-shower-doors-las-vegas" },
     { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
     { name: "Steam Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
-    { name: "Installation Services", href: "/shower-door-installation-las-vegas" },
-    { name: "Door & Glass Repair", href: "/shower-doors-las-vegas/repair" },
+    // Services
+    { name: "Shower Door Installation", href: "/shower-door-installation-las-vegas" },
+    // Urgent
+    { name: "Shower Door Repair", href: "/shower-doors-las-vegas/repair" },
   ];
 
   const glassCompanyPages = [
