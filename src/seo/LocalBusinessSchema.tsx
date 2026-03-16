@@ -129,8 +129,8 @@ const localBusinessData = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Shower Glass Repair",
-          "description": "Expert shower glass repair and replacement services"
+          "name": "Shower Door Replacement",
+          "description": "Expert shower door replacement and upgrade services"
         }
       },
       {
