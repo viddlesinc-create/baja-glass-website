@@ -164,10 +164,7 @@ const ShowerDoorInstallationLasVegas = () => {
               Licensed & Insured Installers
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Shower Door Installation Las Vegas
-              <span className="block text-2xl md:text-3xl font-normal mt-2 text-white/90">
-                Expert Glass Installers Near Me
-              </span>
+              Professional Shower Door Installation in Las Vegas
             </h1>
             <p className="text-xl mb-8 text-white/90 max-w-2xl">
               Professional shower door and glass enclosure installation throughout Las Vegas Valley. Frameless, sliding, and custom configurations by licensed experts.
