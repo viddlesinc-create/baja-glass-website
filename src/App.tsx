@@ -27,7 +27,7 @@ const SlidingShowerDoors = lazy(() => import("./pages/SlidingShowerDoors"));
 const HingedShowerDoors = lazy(() => import("./pages/HingedShowerDoors"));
 const CustomEnclosures = lazy(() => import("./pages/CustomEnclosures"));
 const SteamShowerEnclosures = lazy(() => import("./pages/SteamShowerEnclosures"));
-const ShowerGlassRepair = lazy(() => import("./pages/ShowerGlassRepair"));
+
 const ShowerEnclosuresLasVegas = lazy(() => import("./pages/ShowerEnclosuresLasVegas"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const AreasServed = lazy(() => import("./pages/AreasServed"));
