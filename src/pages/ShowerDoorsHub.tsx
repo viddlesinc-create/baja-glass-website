@@ -59,8 +59,8 @@ const ShowerDoorsHub = () => {
       answer: "Absolutely. We measure and fabricate for inline, neo-angle, alcove, and steam configurations, including unique cutouts and angled walls."
     },
     {
-      question: "Do you repair existing shower doors?",
-      answer: "Yes. We address broken panels, off-track sliders, worn seals and sweeps, hinge/handle issues, and leaks."
+      question: "Do you replace existing shower doors?",
+      answer: "Yes. We specialize in full shower door replacements and upgrades—swapping out old glass, hardware, and seals for a modern, leak-free result."
     },
     {
       question: "What areas do you serve?",
