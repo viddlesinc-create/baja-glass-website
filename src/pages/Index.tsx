@@ -369,7 +369,7 @@ const Index = () => {
               {
                 city: "Spring Valley",
                 url: "/shower-doors-spring-valley-nv",
-                description: "Complete shower door services from repair to custom installations in Spring Valley."
+                description: "Complete shower door services from replacements to custom installations in Spring Valley."
               },
               {
                 city: "Enterprise",
