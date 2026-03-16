@@ -203,7 +203,7 @@ const localBusinessData = {
     "Hinged Shower Doors",
     "Custom Shower Enclosures",
     "Steam Shower Enclosures",
-    "Glass Repair",
+    "Glass Replacement",
     "Mirror Installation",
     "Low-Iron Glass",
     "Tempered Safety Glass"

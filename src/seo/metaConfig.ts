@@ -112,8 +112,8 @@ export const seoConfig: Record<string, SEOMeta> = {
 
   // ===== Location Pages =====
   '/shower-doors-henderson-nv': {
-    title: 'Shower Doors Henderson NV | Installation & Repair - Baja Glass & Mirror',
-    description: 'Shower door installation & repair in Henderson, NV. Frameless shower doors, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes.',
+    title: 'Shower Doors Henderson NV | Installation & Replacement - Baja Glass & Mirror',
+    description: 'Shower door installation & replacement in Henderson, NV. Frameless shower doors, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes.',
     canonical: `${BASE_URL}/shower-doors-henderson-nv`,
     ogImage: `${BASE_URL}/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png`,
   },
