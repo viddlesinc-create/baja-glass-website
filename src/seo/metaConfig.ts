@@ -98,8 +98,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/glass-company-las-vegas/residential-glass-repair': {
-    title: 'Residential Glass Repair Las Vegas | Window & Mirror Services - Baja Glass & Mirror',
-    description: 'Professional residential glass repair in Las Vegas. Window replacement, mirror services, glass table tops, and patio door repair. 24/7 emergency service available.',
+    title: 'Residential Glass Replacement Las Vegas | Window & Mirror Services - Baja Glass & Mirror',
+    description: 'Professional residential glass replacement in Las Vegas. Window upgrades, mirror services, glass table tops, and patio door replacement. 24/7 emergency service available.',
     canonical: `${BASE_URL}/glass-company-las-vegas/residential-glass-repair`,
     ogImage: DEFAULT_OG_IMAGE,
   },
