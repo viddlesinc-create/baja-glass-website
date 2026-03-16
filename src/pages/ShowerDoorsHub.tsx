@@ -413,8 +413,8 @@ const ShowerDoorsHub = () => {
               <Link to="/shower-enclosures-las-vegas" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
                 <span className="font-medium">Shower Enclosures</span>
               </Link>
-              <Link to="/shower-doors-las-vegas/repair" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
-                <span className="font-medium">Repair Services</span>
+              <Link to="/gallery" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
+                <span className="font-medium">Gallery</span>
               </Link>
               <Link to="/shower-doors-las-vegas/frameless" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
                 <span className="font-medium">Frameless Doors</span>
