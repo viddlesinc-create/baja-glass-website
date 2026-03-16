@@ -163,6 +163,38 @@ const areas = [
         </div>
       </section>
 
+      {/* City-Specific Service Subsections */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto space-y-12">
+            <div>
+              <h2 className="text-2xl font-bold mb-3">Shower Door & Glass Services in Las Vegas, NV</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Baja Glass provides comprehensive shower door <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80">installation</Link>, custom glass enclosures, and <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80">shower door repair</Link> throughout Las Vegas. Whether you need a frameless shower door for your master bath or emergency glass repair, our licensed team delivers fast, professional service.
+              </p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold mb-3">Shower Doors in Henderson, NV</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Serving Green Valley, Anthem, Seven Hills, and all Henderson neighborhoods with expert shower door <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80">installation</Link> and <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80">repair</Link>. Custom glass enclosures, frameless doors, and sliding shower systems installed by local professionals. <Link to="/shower-doors-henderson-nv" className="text-primary underline hover:text-primary/80">View Henderson services →</Link>
+              </p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold mb-3">Shower Doors in Summerlin, NV</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Premium shower door <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80">installation</Link> for Summerlin's luxury homes including The Ridges, Red Rock Country Club, and surrounding communities. Frameless designs, custom enclosures, and <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80">repair services</Link>. <Link to="/shower-doors-summerlin-nv" className="text-primary underline hover:text-primary/80">View Summerlin services →</Link>
+              </p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold mb-3">Shower Doors in Paradise & Green Valley</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Professional shower door <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80">installation</Link>, custom glass work, and <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80">shower door repair</Link> in Paradise and Green Valley. Our team serves the entire Las Vegas Valley with quality craftsmanship and reliable scheduling. <Link to="/shower-doors-paradise-nv" className="text-primary underline hover:text-primary/80">View Paradise services →</Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Area Cards */}
       <section className="py-24 bg-secondary/50">
         <div className="container mx-auto px-4">
