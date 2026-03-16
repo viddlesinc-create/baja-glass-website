@@ -88,9 +88,9 @@ const areas = [
           <div className="max-w-4xl mx-auto">
             <div className="text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Shower Doors — Areas We Serve in the{" "}
+                Shower Door & Glass Services{" "}
                 <span className="bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
-                  Las Vegas Valley
+                  Near You
                 </span>
               </h1>
             </div>
