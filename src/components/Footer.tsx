@@ -143,6 +143,24 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Services */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <div className="space-y-2">
+              {serviceLinks.map((link) => (
+              <div key={link.name}>
+                <Link
+                  to={link.href}
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  {link.name}
+                </Link>
+              </div>
+              ))}
+            </div>
+          </div>
+
           {/* Popular Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Popular Services</h3>
