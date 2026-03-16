@@ -76,7 +76,7 @@ const ShowerDoorsHub = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Shower Doors Las Vegas",
-            "description": "Professional shower door installation and repair services in Las Vegas. Custom frameless, sliding, hinged doors and enclosures.",
+            "description": "Professional shower door installation and replacement services in Las Vegas. Custom frameless, sliding, hinged doors and enclosures.",
             "url": "https://bajaglass.com/shower-doors-las-vegas/",
             "mainEntity": {
               "@type": "LocalBusiness",
