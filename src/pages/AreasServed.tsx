@@ -53,7 +53,7 @@ const areas = [
       description: "Whether updating a primary bath or secondary shower, we install sturdy, stylish doors with dependable sealing. Choose from clear or low‑iron glass and finishes that match your fixtures.",
       image: "/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png",
       alt: "Semi‑frameless shower door Mountains Edge — polished chrome frame",
-      services: ["Semi‑Frameless/Framed", "Sliding", "Repair"]
+      services: ["Semi‑Frameless/Framed", "Sliding", "Replacement"]
     },
     {
       name: "Coronado Ranch",
