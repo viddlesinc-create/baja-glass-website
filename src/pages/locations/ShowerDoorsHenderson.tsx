@@ -8,8 +8,8 @@ const ShowerDoorsHenderson = () => {
       answer: "Shower door installation in Henderson typically ranges from $800-$2,500 depending on type (frameless, semi-frameless, sliding), glass thickness, and hardware finish. We provide free in-home measurements and detailed quotes with no hidden fees."
     },
     {
-      question: "Do you offer shower door repair in Henderson?",
-      answer: "Yes! We provide comprehensive shower door repair in Henderson including broken glass replacement, roller and track repair, seal replacement, and hardware fixes. Same-day scheduling available for emergencies."
+      question: "Do you offer shower door replacement in Henderson?",
+      answer: "Yes! We provide comprehensive shower door replacement in Henderson including broken glass panel swaps, roller and track upgrades, seal replacement, and full hardware upgrades. Same-day scheduling available for emergencies."
     },
     {
       question: "What's the best type of frameless shower door for Henderson homes?",
