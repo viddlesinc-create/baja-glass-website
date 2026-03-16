@@ -59,7 +59,7 @@ const ShowerDoorCostGuide = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": "Shower Door Installation Cost in Las Vegas 2026 - Complete Pricing Guide",
+            "headline": "2026 Guide: Shower Door Installation Cost in Las Vegas",
             "description": "Comprehensive guide to shower door installation costs in Las Vegas including frameless, semi-frameless, and custom enclosure pricing.",
             "author": {
               "@type": "Person",
