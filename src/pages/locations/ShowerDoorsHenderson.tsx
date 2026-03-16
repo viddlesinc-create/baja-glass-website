@@ -63,20 +63,20 @@ const ShowerDoorsHenderson = () => {
               </p>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Shower Door Repair Henderson</h2>
+            <h2 className="text-3xl font-bold mb-6 mt-12">Shower Door Replacement & Upgrades in Henderson</h2>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                Need <strong>shower door repair in Henderson</strong>? We provide fast, reliable service for all types of shower door issues. Our comprehensive <strong>Henderson shower door repair</strong> services include:
+                Looking to <strong>replace your shower door in Henderson</strong>? We provide fast, reliable service for all types of shower door upgrades. Our comprehensive <strong>Henderson shower door replacement</strong> services include:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>Broken or cracked glass panel replacement</li>
-                <li>Sliding door roller and track repair</li>
+                <li>Sliding door roller and track upgrades</li>
                 <li>Shower seal and sweep replacement</li>
-                <li>Loose hinge and hardware fixes</li>
-                <li>Leak diagnosis and repair</li>
+                <li>Full hardware upgrades and modernization</li>
+                <li>Complete door replacement for persistent leaks</li>
               </ul>
               <p>
-                For emergency <strong>shower glass repair in Henderson</strong>, call us at (702) 383-0779 for same-day scheduling.
+                For emergency <strong>shower glass replacement in Henderson</strong>, call us at (702) 383-0779 for same-day scheduling.
               </p>
             </div>
 
