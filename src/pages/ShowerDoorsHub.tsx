@@ -202,9 +202,9 @@ const ShowerDoorsHub = () => {
         
         {/* Hero Image */}
         <div className="absolute inset-0">
-          <img 
+           <img 
             src="/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" 
-            alt="Large sliding shower door installation with black hardware and marble tile - professional Las Vegas shower glass by Baja Glass"
+            alt="Custom frameless shower door installation in Las Vegas"
             className="w-full h-full object-cover opacity-75"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
