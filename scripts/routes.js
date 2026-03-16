@@ -22,7 +22,7 @@ export const routes = [
   "/sitemap",
   "/reviews",
   "/faq",
-  "/shower-door-installation-las-vegas",
+  
   "/faq",
   "/shower-doors-henderson-nv",
   "/shower-doors-summerlin-nv",

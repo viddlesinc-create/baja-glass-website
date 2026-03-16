@@ -271,7 +271,7 @@ const ShowerEnclosuresLasVegas = () => {
               Transform your bathroom with custom <strong>shower enclosures in Las Vegas</strong>. At Baja Glass, we design, fabricate, and install premium glass enclosures tailored to your space—from sleek inline configurations to elaborate steam shower systems.
             </p>
             <p className="text-muted-foreground mb-6">
-              Looking for professional <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80">shower door installation in Las Vegas</Link>? We also offer <Link to="/custom-shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">custom shower doors</Link> made-to-measure for unique spaces.
+              Looking for professional shower door services? Explore our full range of <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower doors in Las Vegas</Link>, including custom designs made-to-measure for unique spaces.
             </p>
             <p className="text-muted-foreground">
               Serving <strong>Henderson</strong>, <strong>Summerlin</strong>, <strong>Paradise</strong>, <strong>Spring Valley</strong>, and the entire Las Vegas Valley with expert measurement, precise fabrication, and professional installation.

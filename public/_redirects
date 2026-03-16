@@ -38,6 +38,10 @@ https://www.bajaglass.com/* https://bajaglass.com/:splat 301!
 # Cannibalization fix: consolidate custom shower doors into main hub
 /custom-shower-doors-las-vegas /shower-doors-las-vegas 301
 
+# Removed pages: redirect to shower doors hub
+/shower-door-installation-las-vegas /shower-doors-las-vegas 301
+/shower-doors-las-vegas/repair /shower-doors-las-vegas 301
+
 # Ensure trailing slashes redirect to non-trailing slash
 /about/ /about 301
 /contact/ /contact 301

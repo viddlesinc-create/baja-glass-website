@@ -200,15 +200,8 @@ const Footer = () => {
                   Custom Enclosures
                 </Link>
               </div>
-              <div>
-                <Link
-                  to="/shower-doors-las-vegas/repair"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  Shower Glass Repair
-                </Link>
-              </div>
+
+
               <div>
                 <Link
                   to="/shower-doors-las-vegas/sliding"
