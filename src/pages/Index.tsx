@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Link } from "react-router-dom";
-import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
+import { Star, Phone, Shield, Clock, Users, Award, MapPin, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import GoogleMap from "@/components/GoogleMap";
