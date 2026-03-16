@@ -17,8 +17,7 @@ const Footer = () => {
   ];
 
   const serviceLinks = [
-    { name: "Shower Door Installation", href: "/shower-door-installation-las-vegas" },
-    { name: "Shower Door Repair", href: "/shower-doors-las-vegas/repair" },
+    { name: "Shower Doors Las Vegas", href: "/shower-doors-las-vegas" },
     { name: "Glass Company Services", href: "/glass-company-las-vegas" },
     { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
   ];
