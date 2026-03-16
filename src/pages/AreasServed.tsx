@@ -57,7 +57,7 @@ const areas = [
     },
     {
       name: "Coronado Ranch",
-      description: "From frameless inline doors to corner neo‑angle layouts, we tailor enclosures to Coronado Ranch homes with clean silicone work and reliable operation. Repairs for rollers, hinges, and seals available.",
+      description: "From frameless inline doors to corner neo‑angle layouts, we tailor enclosures to Coronado Ranch homes with clean silicone work and reliable operation. Roller, hinge, and seal replacements available.",
       image: "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png",
       alt: "Neo‑angle enclosure Coronado Ranch — precise miter and clean silicone lines",
       services: ["Custom Enclosures", "Repair", "Frameless"]
