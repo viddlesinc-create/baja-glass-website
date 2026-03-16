@@ -258,7 +258,7 @@ const ShowerDoorsHub = () => {
             {/* CTA Buttons */}
             <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16 mb-8" style={{ animationDelay: '0.6s' }}>
               <Button variant="hero" size="lg" asChild className="animate-scale-in">
-                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get My Free Shower Door Estimate</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
