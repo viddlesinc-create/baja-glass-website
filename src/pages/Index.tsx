@@ -205,6 +205,36 @@ const Index = () => {
       {/* Intro Section - Keyword Rich */}
       <IntroSection />
 
+      {/* Service Overview Section */}
+      <section className="py-16 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-8">Our Glass Services in Las Vegas</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Frameless and semi-frameless shower doors</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Custom shower enclosures & steam showers</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Residential glass repair & window replacement</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Mirrors, office enclosures and commercial glass</span>
+              </div>
+            </div>
+            <p className="text-muted-foreground">
+              <strong>Rated 4.9/5 by homeowners in Las Vegas and Henderson</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Services Overview */}
       <section className="py-24 bg-gradient-to-br from-secondary/20 via-background to-secondary/30">
         <div className="container mx-auto px-4">
