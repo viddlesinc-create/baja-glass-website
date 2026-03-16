@@ -9,24 +9,24 @@ import PhoneNumber from "@/components/PhoneNumber";
 const ShowerDoorInstallationLasVegas = () => {
   const faqs = [
     {
-      question: "Where can I find frameless shower door installers near me?",
-      answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated with over 20 years of experience. Call (702) 383-0779 for a free quote."
-    },
-    {
-      question: "What is the cost of shower door installation in Las Vegas?",
-      answer: "Shower door installation costs in Las Vegas range from $600-$3,000+ depending on door type, glass thickness, and configuration. Frameless doors typically cost more than semi-frameless or framed options. We provide free in-home quotes with exact pricing."
-    },
-    {
-      question: "Do you offer same-day shower door installation near me?",
-      answer: "For urgent needs, we offer expedited scheduling when possible. Most standard installations are scheduled within 1-2 weeks from measurement to completion. Call us to discuss your timeline."
-    },
-    {
-      question: "How do I find glass shower enclosure installation near me?",
-      answer: "Baja Glass serves the entire Las Vegas Valley with professional glass shower enclosure installation. We provide free in-home consultations and measurements. Contact us at (702) 383-0779."
+      question: "How much does shower door installation cost in Las Vegas?",
+      answer: "Shower door installation costs in Las Vegas range from $600-$3,000+ depending on door type, glass thickness, and configuration. Frameless doors typically cost more than semi-frameless or framed options. We provide free in-home quotes with exact pricing. See our full pricing guide for detailed breakdowns."
     },
     {
       question: "How long does professional shower door installation take?",
       answer: "Most single shower door installations take 1-2 hours. Full enclosures may take 2-4 hours. Custom and complex installations could require 4-6 hours. We complete most jobs in a single visit."
+    },
+    {
+      question: "Do you remove old shower doors?",
+      answer: "Yes! We handle complete removal of your old shower door or enclosure, including safe disposal of glass and hardware. Old door removal is included in our installation service."
+    },
+    {
+      question: "Do you install frameless, semi-frameless, and sliding doors?",
+      answer: "Absolutely. We install all types including frameless, semi-frameless, framed, sliding/bypass, hinged/pivot, and custom enclosures. Our installers are experienced with every configuration."
+    },
+    {
+      question: "Where can I find frameless shower door installers near me?",
+      answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated with over 20 years of experience. Call (702) 383-0779 for a free quote."
     },
     {
       question: "Are your shower door installers licensed and insured?",
