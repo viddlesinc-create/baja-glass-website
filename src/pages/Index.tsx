@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Link } from "react-router-dom";
-import { Star, Phone, Shield, Clock, Users, Award, MapPin } from "lucide-react";
+import { Star, Phone, Shield, Clock, Users, Award, MapPin, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import GoogleMap from "@/components/GoogleMap";
@@ -127,10 +127,10 @@ const Index = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Las Vegas 
-                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">Shower Door & Glass Company</span>
+                Baja Glass & Mirror –
+                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">Shower Doors & Custom Glass</span>
                 <span className="block text-3xl md:text-4xl lg:text-5xl drop-shadow-2xl">
-                  Custom Glass Solutions
+                  in Las Vegas
                 </span>
               </h1>
             </div>
@@ -204,6 +204,36 @@ const Index = () => {
 
       {/* Intro Section - Keyword Rich */}
       <IntroSection />
+
+      {/* Service Overview Section */}
+      <section className="py-16 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-8">Our Glass Services in Las Vegas</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Frameless and semi-frameless shower doors</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Custom shower enclosures & steam showers</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Residential glass repair & window replacement</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Mirrors, office enclosures and commercial glass</span>
+              </div>
+            </div>
+            <p className="text-muted-foreground">
+              <strong>Rated 4.9/5 by homeowners in Las Vegas and Henderson</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Services Overview */}
       <section className="py-24 bg-gradient-to-br from-secondary/20 via-background to-secondary/30">

@@ -16,6 +16,13 @@ const Footer = () => {
     { name: "Contact", href: "/contact" },
   ];
 
+  const serviceLinks = [
+    { name: "Shower Door Installation", href: "/shower-door-installation-las-vegas" },
+    { name: "Shower Door Repair", href: "/shower-doors-las-vegas/repair" },
+    { name: "Glass Company Services", href: "/glass-company-las-vegas" },
+    { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
+  ];
+
   const locationLinks = [
     { name: "Henderson", href: "/shower-doors-henderson-nv" },
     { name: "Summerlin", href: "/shower-doors-summerlin-nv" },
@@ -123,6 +130,24 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
               {quickLinks.map((link) => (
+              <div key={link.name}>
+                <Link
+                  to={link.href}
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  {link.name}
+                </Link>
+              </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <div className="space-y-2">
+              {serviceLinks.map((link) => (
               <div key={link.name}>
                 <Link
                   to={link.href}

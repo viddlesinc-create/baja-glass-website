@@ -121,12 +121,12 @@ const ShowerGlassRepair = () => {
       {/* Hero Section - Optimized for "shower door repair near me" */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         <div className="absolute inset-0">
-          <img src={damagedShowerGlass} alt="Damaged shower glass door needing repair in Las Vegas" className="w-full h-full object-cover" />
+          <img src={damagedShowerGlass} alt="Shower door repair service in Las Vegas - damaged glass" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/60 to-primary/80"></div>
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Shower Door Repair Near Me | Las Vegas & Henderson Emergency Service</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Shower Door Repair Las Vegas – Fast Glass & Hardware Fixes</h1>
             <p className="text-xl mb-4 text-white/90">Same-day scheduling for broken glass, off-track sliders, leaks, and hardware issues throughout the Las Vegas Valley.</p>
             <div className="flex flex-wrap gap-4 mb-8">
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg">

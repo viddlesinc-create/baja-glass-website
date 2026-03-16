@@ -22,7 +22,6 @@ export const routes = [
   "/sitemap",
   "/reviews",
   "/faq",
-  "/custom-shower-doors-las-vegas",
   "/shower-door-installation-las-vegas",
   "/faq",
   "/shower-doors-henderson-nv",

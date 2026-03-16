@@ -202,9 +202,9 @@ const ShowerDoorsHub = () => {
         
         {/* Hero Image */}
         <div className="absolute inset-0">
-          <img 
+           <img 
             src="/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" 
-            alt="Large sliding shower door installation with black hardware and marble tile - professional Las Vegas shower glass by Baja Glass"
+            alt="Custom frameless shower door installation in Las Vegas"
             className="w-full h-full object-cover opacity-75"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
@@ -216,17 +216,30 @@ const ShowerDoorsHub = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Shower Doors in 
+                Custom Shower Doors in 
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Las Vegas
+                </span>
+                <span className="block text-2xl md:text-3xl font-normal mt-2 text-white/90">
+                  Frameless & Sliding Glass Options
                 </span>
               </h1>
             </div>
             
+            {/* Above-fold service bullets */}
+            <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.15s' }}>
+              <ul className="text-white/90 text-lg space-y-1 mb-6 max-w-2xl">
+                <li>✓ Custom frameless shower doors</li>
+                <li>✓ Sliding glass shower doors</li>
+                <li>✓ Shower door replacement & repair</li>
+                <li>✓ Serving Las Vegas, Henderson, Summerlin & nearby areas</li>
+              </ul>
+            </div>
+
             {/* Subheading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.2s' }}>
               <p className="text-lg md:text-xl text-white/95 mb-6 max-w-2xl leading-relaxed font-light drop-shadow-lg">
-                Expertly crafted shower doors featuring premium glass, precision hardware, and professional installation—delivering the perfect balance of beauty and functionality.
+                Expertly crafted shower doors featuring premium glass, precision hardware, and professional installation.
               </p>
             </div>
 
@@ -245,7 +258,7 @@ const ShowerDoorsHub = () => {
             {/* CTA Buttons */}
             <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16 mb-8" style={{ animationDelay: '0.6s' }}>
               <Button variant="hero" size="lg" asChild className="animate-scale-in">
-                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get My Free Shower Door Estimate</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
@@ -291,10 +304,13 @@ const ShowerDoorsHub = () => {
               At Baja Glass, we design, fabricate, and install shower doors that fit your space and style. From minimalist frameless designs to space‑saving sliders and <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>custom shower enclosures</Link>, every detail is measured and installed for a tight, leak‑resistant fit.
             </p>
             <p className="text-muted-foreground mb-6">
-              Looking for <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door installation in Las Vegas</Link>? Our expert <strong>frameless shower door installers</strong> handle everything from measurement to final walkthrough. We also specialize in <Link to="/custom-shower-doors-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>custom shower doors in Las Vegas</Link> for unique bathroom layouts.
+              Need professional <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door installation in Las Vegas</Link>? Our expert <strong>frameless shower door installers</strong> handle everything from measurement to final walkthrough. We also handle <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door repair</Link> for broken glass, off-track sliders, and hardware issues.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              <strong>Rated 4.9/5 by Las Vegas homeowners</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
             </p>
             <p className="text-muted-foreground">
-              Need <Link to="/shower-doors-las-vegas/repair" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door repair</Link>? We also fix broken glass, off-track sliders, and hardware issues with same-day scheduling available.
+              Wondering about pricing? See our full guide on <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door installation cost in Las Vegas</Link>.
             </p>
           </div>
         </div>

@@ -235,7 +235,7 @@ const Reviews = () => {
         </div>
         
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Customer Reviews</h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Customer Reviews for Baja Glass & Mirror</h1>
           
           {/* Aggregate Rating Display */}
           <div className="flex flex-col items-center gap-4 mb-8">

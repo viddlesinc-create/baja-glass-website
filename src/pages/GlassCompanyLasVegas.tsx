@@ -205,11 +205,11 @@ const GlassCompanyLasVegas = () => {
         
         {/* Hero Image */}
         <div className="absolute inset-0">
-          <img 
-            src="/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png" 
-            alt="Modern commercial glass partition installation - professional office glass work in Las Vegas by Baja Glass"
-            className="w-full h-full object-cover opacity-75"
-          />
+             <img 
+              src="/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png" 
+              alt="Las Vegas glass company - commercial and residential glass services"
+              className="w-full h-full object-cover opacity-75"
+            />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
         </div>
 
@@ -218,9 +218,9 @@ const GlassCompanyLasVegas = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Las Vegas Glass Company — 
+                Full-Service Glass Company in{" "}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
-                  Custom Glass, Office Enclosures, and Shower Doors
+                  Las Vegas
                 </span>
               </h1>
             </div>
@@ -276,9 +276,29 @@ const GlassCompanyLasVegas = () => {
       <section className="py-16 bg-gradient-to-br from-secondary/20 via-background to-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
               Baja Glass is a residential and commercial glass company serving the Las Vegas Valley. We design, measure, fabricate, and install shower doors and enclosures, and office glass partitions—delivering precise fit, clean finishes, and dependable performance.
             </p>
+            
+            {/* Service bullets */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
+              <div className="flex items-start gap-2">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Custom shower glass & enclosures</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Mirrors & mirror walls</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Residential window glass repair</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">Commercial storefront glass & office enclosures</span>
+              </div>
+            </div>
 
             {/* Quick Links */}
             <div className="flex flex-wrap justify-center gap-4">

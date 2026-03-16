@@ -9,24 +9,24 @@ import PhoneNumber from "@/components/PhoneNumber";
 const ShowerDoorInstallationLasVegas = () => {
   const faqs = [
     {
-      question: "Where can I find frameless shower door installers near me?",
-      answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated with over 20 years of experience. Call (702) 383-0779 for a free quote."
-    },
-    {
-      question: "What is the cost of shower door installation in Las Vegas?",
-      answer: "Shower door installation costs in Las Vegas range from $600-$3,000+ depending on door type, glass thickness, and configuration. Frameless doors typically cost more than semi-frameless or framed options. We provide free in-home quotes with exact pricing."
-    },
-    {
-      question: "Do you offer same-day shower door installation near me?",
-      answer: "For urgent needs, we offer expedited scheduling when possible. Most standard installations are scheduled within 1-2 weeks from measurement to completion. Call us to discuss your timeline."
-    },
-    {
-      question: "How do I find glass shower enclosure installation near me?",
-      answer: "Baja Glass serves the entire Las Vegas Valley with professional glass shower enclosure installation. We provide free in-home consultations and measurements. Contact us at (702) 383-0779."
+      question: "How much does shower door installation cost in Las Vegas?",
+      answer: "Shower door installation costs in Las Vegas range from $600-$3,000+ depending on door type, glass thickness, and configuration. Frameless doors typically cost more than semi-frameless or framed options. We provide free in-home quotes with exact pricing. See our full pricing guide for detailed breakdowns."
     },
     {
       question: "How long does professional shower door installation take?",
       answer: "Most single shower door installations take 1-2 hours. Full enclosures may take 2-4 hours. Custom and complex installations could require 4-6 hours. We complete most jobs in a single visit."
+    },
+    {
+      question: "Do you remove old shower doors?",
+      answer: "Yes! We handle complete removal of your old shower door or enclosure, including safe disposal of glass and hardware. Old door removal is included in our installation service."
+    },
+    {
+      question: "Do you install frameless, semi-frameless, and sliding doors?",
+      answer: "Absolutely. We install all types including frameless, semi-frameless, framed, sliding/bypass, hinged/pivot, and custom enclosures. Our installers are experienced with every configuration."
+    },
+    {
+      question: "Where can I find frameless shower door installers near me?",
+      answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated with over 20 years of experience. Call (702) 383-0779 for a free quote."
     },
     {
       question: "Are your shower door installers licensed and insured?",
@@ -58,7 +58,7 @@ const ShowerDoorInstallationLasVegas = () => {
     {
       title: "Custom Door Installation",
       description: "Made-to-measure doors for unique spaces. Angled cuts, notches, and non-standard sizes.",
-      href: "/custom-shower-doors-las-vegas"
+      href: "/shower-doors-las-vegas/custom-enclosures"
     },
     {
       title: "Shower Door Replacement",
@@ -147,7 +147,7 @@ const ShowerDoorInstallationLasVegas = () => {
         <div className="absolute inset-0">
           <img 
             src="/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" 
-            alt="Professional shower door installation Las Vegas - expert glass installers by Baja Glass"
+            alt="Professional shower door installation in Las Vegas home"
             className="w-full h-full object-cover opacity-75"
             width="1920"
             height="1080"
@@ -164,10 +164,7 @@ const ShowerDoorInstallationLasVegas = () => {
               Licensed & Insured Installers
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Shower Door Installation Las Vegas
-              <span className="block text-2xl md:text-3xl font-normal mt-2 text-white/90">
-                Expert Glass Installers Near Me
-              </span>
+              Professional Shower Door Installation in Las Vegas
             </h1>
             <p className="text-xl mb-8 text-white/90 max-w-2xl">
               Professional shower door and glass enclosure installation throughout Las Vegas Valley. Frameless, sliding, and custom configurations by licensed experts.
@@ -216,12 +213,15 @@ const ShowerDoorInstallationLasVegas = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Professional Shower Door Installers Near Me</h2>
+            <h2 className="text-3xl font-bold mb-6">Shower Door Installation Services in Las Vegas</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Looking for <strong>shower door installation in Las Vegas</strong>? Baja Glass provides expert installation for frameless, semi-frameless, sliding, and custom shower doors. Our licensed installers handle everything from single door replacements to complete <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80">glass shower enclosure installation</Link>.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground mb-4">
               Whether you need <strong>frameless shower door installers near me</strong> or <strong>shower glass installation near me</strong>, our local team delivers precision installation with quality materials and professional service.
+            </p>
+            <p className="text-muted-foreground">
+              Wondering about pricing? Read our <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80">Shower Door Cost Guide</Link> for detailed 2026 pricing.
             </p>
           </div>
         </div>
@@ -230,7 +230,7 @@ const ShowerDoorInstallationLasVegas = () => {
       {/* Installation Types */}
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">Glass Shower Enclosure Installation Services</h2>
+          <h2 className="text-3xl font-bold text-center mb-4">Types of Shower Doors We Install</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
             From single door installations to complete enclosure systems, we provide professional installation for all shower glass types.
           </p>
@@ -257,7 +257,7 @@ const ShowerDoorInstallationLasVegas = () => {
       {/* Installation Process */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">Shower Glass Installation Near Me - Our Process</h2>
+          <h2 className="text-3xl font-bold text-center mb-4">Installation Costs & Estimates</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
             Our proven installation process ensures every shower door fits perfectly and functions flawlessly.
           </p>
@@ -389,7 +389,7 @@ const ShowerDoorInstallationLasVegas = () => {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-lg">Installation Cost Guide</CardTitle>
-                <CardDescription>2025 pricing for Las Vegas shower door installation</CardDescription>
+                <CardDescription>2026 pricing for Las Vegas shower door installation</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" asChild className="w-full">

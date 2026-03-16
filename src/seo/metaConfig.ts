@@ -6,20 +6,20 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/lovable-uploads/favicon.png`;
 export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
-    title: 'Frameless Shower Doors & Custom Glass in Las Vegas | Baja Glass & Mirror',
-    description: 'Upgrade your bathroom with frameless shower doors and custom glass in Las Vegas. Baja Glass & Mirror installs modern, high-quality glass with expert craftsmanship. Call today!',
+    title: 'Baja Glass & Mirror | Shower Doors & Glass in Las Vegas',
+    description: 'Baja Glass & Mirror is a local Las Vegas glass company specializing in frameless shower doors, custom glass enclosures and mirrors. Serving Henderson & Summerlin. Free estimates.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-las-vegas': {
-    title: 'Frameless Shower Doors in Las Vegas | Custom Glass Showers – Baja Glass & Mirror',
-    description: 'Looking for frameless shower doors in Las Vegas? Baja Glass & Mirror designs and installs custom glass showers with modern hardware and precise installation. Get a free quote!',
+    title: 'Custom Shower Doors Las Vegas | Frameless & Sliding Glass',
+    description: 'Looking for shower doors in Las Vegas? Baja Glass designs and installs frameless, semi-frameless and sliding glass shower doors. Free in-home estimate, fast local installation.',
     canonical: `${BASE_URL}/shower-doors-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/glass-company-las-vegas': {
-    title: 'Glass Company in Las Vegas | Residential & Commercial Glass – Baja Glass & Mirror',
-    description: 'Baja Glass & Mirror is a trusted glass company in Las Vegas, offering frameless shower doors, mirrors, and custom glass solutions for homes and businesses. Schedule a consultation today.',
+    title: 'Glass Company Las Vegas | Residential & Commercial Glass',
+    description: 'Baja Glass & Mirror is a trusted glass company in Las Vegas for shower doors, mirrors, windows and commercial glass. Local, licensed and insured. Request a free quote.',
     canonical: `${BASE_URL}/glass-company-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -30,14 +30,14 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/reviews': {
-    title: 'Baja Glass & Mirror Reviews | Frameless Shower Doors in Las Vegas',
-    description: 'See why Las Vegas homeowners trust Baja Glass & Mirror for frameless shower doors and custom glass. Read real customer reviews and learn about our quality, service, and reliability.',
+    title: 'Customer Reviews | Baja Glass & Mirror Las Vegas',
+    description: 'See why Las Vegas homeowners trust Baja Glass & Mirror for frameless shower doors and custom glass. Read real reviews from Henderson, Summerlin and Paradise customers.',
     canonical: `${BASE_URL}/reviews`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/areas-served': {
-    title: 'Frameless Shower Doors in Las Vegas & Surrounding Areas | Baja Glass & Mirror',
-    description: 'Baja Glass & Mirror provides frameless shower doors and custom glass installations in Las Vegas, Henderson, Summerlin, and nearby areas. Check if we serve your neighborhood.',
+    title: 'Shower Door & Glass Services Near You | Las Vegas Area',
+    description: 'Baja Glass provides shower doors, glass repair and custom enclosures near you in Las Vegas, Henderson, Summerlin, Paradise and surrounding areas.',
     canonical: `${BASE_URL}/areas-served`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -62,15 +62,9 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: `${BASE_URL}/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png`,
   },
   '/shower-door-installation-las-vegas': {
-    title: 'Shower Door Installation Las Vegas | Expert Glass Installers Near Me - Baja Glass',
-    description: 'Professional shower door installation in Las Vegas. Frameless, sliding, custom enclosures. Licensed installers serving Henderson, Summerlin. Free quotes: (702) 383-0779',
+    title: 'Shower Door Installation Las Vegas | Expert Installers',
+    description: 'Professional shower door installation in Las Vegas. Frameless and semi-frameless glass doors, accurate measurements, leak-free installation. Get a free quote today.',
     canonical: `${BASE_URL}/shower-door-installation-las-vegas`,
-    ogImage: DEFAULT_OG_IMAGE,
-  },
-  '/custom-shower-doors-las-vegas': {
-    title: 'Custom Shower Doors Las Vegas | Made-to-Measure Glass Solutions - Baja Glass',
-    description: 'Custom shower doors in Las Vegas. Made-to-measure glass doors for any space. Neo-angle, corner, inline configurations. Free design consultation: (702) 383-0779',
-    canonical: `${BASE_URL}/custom-shower-doors-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-las-vegas/semi-frameless-framed': {
@@ -104,7 +98,7 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-las-vegas/repair': {
-    title: 'Shower Door Repair Near Me | Las Vegas Emergency Service - Baja Glass',
+    title: 'Shower Door Repair Las Vegas | Fast Glass & Hardware Fixes',
     description: 'Same-day shower door repair in Las Vegas & Henderson. Broken glass, sliding door repair, seal replacement, hardware fixes. Call (702) 383-0779 for emergency service.',
     canonical: `${BASE_URL}/shower-doors-las-vegas/repair`,
     ogImage: DEFAULT_OG_IMAGE,
@@ -192,8 +186,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/blog/shower-door-installation-cost-las-vegas': {
-    title: 'Shower Door Cost Las Vegas 2025 | Complete Pricing Guide - Baja Glass & Mirror',
-    description: '2025 shower door installation pricing guide for Las Vegas. Compare frameless, semi-frameless, and framed costs. Glass thickness, hardware finishes, and more.',
+    title: 'Shower Door Cost Las Vegas 2026 | Pricing Guide',
+    description: 'How much does shower door installation cost in Las Vegas? See 2026 price ranges for frameless, semi-frameless and sliding glass shower doors, plus cost factors.',
     canonical: `${BASE_URL}/blog/shower-door-installation-cost-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
