@@ -103,7 +103,7 @@ function App() {
               <Route path="/shower-doors-las-vegas/hinged" element={<HingedShowerDoors />} />
               <Route path="/shower-doors-las-vegas/custom-enclosures" element={<CustomEnclosures />} />
               <Route path="/shower-doors-las-vegas/steam-enclosures" element={<SteamShowerEnclosures />} />
-              <Route path="/shower-doors-las-vegas/repair" element={<ShowerGlassRepair />} />
+              <Route path="/shower-doors-las-vegas/repair" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
               <Route path="/shower-enclosures-las-vegas" element={<ShowerEnclosuresLasVegas />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/areas-served" element={<AreasServed />} />
