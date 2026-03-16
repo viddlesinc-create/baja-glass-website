@@ -213,12 +213,15 @@ const ShowerDoorInstallationLasVegas = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Professional Shower Door Installers Near Me</h2>
+            <h2 className="text-3xl font-bold mb-6">Shower Door Installation Services in Las Vegas</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Looking for <strong>shower door installation in Las Vegas</strong>? Baja Glass provides expert installation for frameless, semi-frameless, sliding, and custom shower doors. Our licensed installers handle everything from single door replacements to complete <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80">glass shower enclosure installation</Link>.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground mb-4">
               Whether you need <strong>frameless shower door installers near me</strong> or <strong>shower glass installation near me</strong>, our local team delivers precision installation with quality materials and professional service.
+            </p>
+            <p className="text-muted-foreground">
+              Wondering about pricing? Read our <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80">Shower Door Cost Guide</Link> for detailed 2026 pricing.
             </p>
           </div>
         </div>
