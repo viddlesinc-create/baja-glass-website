@@ -50,7 +50,7 @@ const ShowerDoorsHenderson = () => {
           longitude: "-114.9817"
         }}
         heroImage="/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png"
-        description="Henderson's trusted expert for custom shower doors. Frameless, sliding, and semi-frameless installations and repairs. Professional service with perfect results."
+        description="Henderson's trusted expert for custom shower doors. Frameless, sliding, and semi-frameless installations and replacements. Professional service with perfect results."
         additionalContent={
           <>
             <h2 className="text-3xl font-bold mb-6">Shower Door Installation Henderson NV</h2>
