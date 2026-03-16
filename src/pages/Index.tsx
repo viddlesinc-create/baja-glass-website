@@ -145,7 +145,7 @@ const Index = () => {
             animationDelay: '0.3s'
           }}>
               <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl leading-relaxed font-light drop-shadow-lg">
-                Professional glass installation services including shower doors, mirrors, office glass, and residential glass repair—delivered with precision and care.
+                Professional glass installation services including shower doors, mirrors, office glass, and residential glass replacement—delivered with precision and care.
               </p>
             </div>
 
