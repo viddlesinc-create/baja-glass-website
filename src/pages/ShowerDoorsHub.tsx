@@ -216,17 +216,30 @@ const ShowerDoorsHub = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Shower Doors in 
+                Custom Shower Doors in 
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Las Vegas
+                </span>
+                <span className="block text-2xl md:text-3xl font-normal mt-2 text-white/90">
+                  Frameless & Sliding Glass Options
                 </span>
               </h1>
             </div>
             
+            {/* Above-fold service bullets */}
+            <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.15s' }}>
+              <ul className="text-white/90 text-lg space-y-1 mb-6 max-w-2xl">
+                <li>✓ Custom frameless shower doors</li>
+                <li>✓ Sliding glass shower doors</li>
+                <li>✓ Shower door replacement & repair</li>
+                <li>✓ Serving Las Vegas, Henderson, Summerlin & nearby areas</li>
+              </ul>
+            </div>
+
             {/* Subheading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.2s' }}>
               <p className="text-lg md:text-xl text-white/95 mb-6 max-w-2xl leading-relaxed font-light drop-shadow-lg">
-                Expertly crafted shower doors featuring premium glass, precision hardware, and professional installation—delivering the perfect balance of beauty and functionality.
+                Expertly crafted shower doors featuring premium glass, precision hardware, and professional installation.
               </p>
             </div>
 
