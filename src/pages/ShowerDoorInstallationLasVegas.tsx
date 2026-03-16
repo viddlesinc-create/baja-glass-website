@@ -389,7 +389,7 @@ const ShowerDoorInstallationLasVegas = () => {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-lg">Installation Cost Guide</CardTitle>
-                <CardDescription>2025 pricing for Las Vegas shower door installation</CardDescription>
+                <CardDescription>2026 pricing for Las Vegas shower door installation</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" asChild className="w-full">
