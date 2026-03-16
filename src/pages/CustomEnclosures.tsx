@@ -181,7 +181,7 @@ const CustomEnclosures = () => {
               From complex angles to steam‑ready designs, custom enclosures demand precision. We measure, fabricate, and install to your layout for a polished fit and clean finishes.
             </p>
             <p className="text-center text-muted-foreground">
-              Looking for <Link to="/custom-shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">custom shower doors in Las Vegas</Link>? We also offer made-to-measure door solutions. Need professional <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80">shower door installation</Link>? Our expert team handles projects of all sizes.
+              Explore our full range of <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower doors in Las Vegas</Link> including made-to-measure door solutions. Our expert team handles projects of all sizes.
             </p>
           </div>
         </div>
