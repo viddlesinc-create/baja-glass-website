@@ -144,7 +144,7 @@ const FramelessShowerDoors = () => {
               Frameless shower doors offer a clean, modern look that makes bathrooms feel bigger and brighter. At Baja Glass, we measure, fabricate, and install frameless systems with thick tempered glass, premium hardware, and tight, clean finishes for a leak-resistant fit.
             </p>
             <p className="text-center text-muted-foreground mb-6">
-              Looking for professional <Link to="/shower-door-installation-las-vegas" className="text-primary underline hover:text-primary/80">shower door installation in Las Vegas</Link>? Our expert team handles everything from measurement to final walkthrough.
+              Need shower doors? Explore all our <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower door options in Las Vegas</Link>. Our expert team handles everything from measurement to final walkthrough.
             </p>
             <p className="text-center text-muted-foreground">
               Learn more about <Link to="/blog/frameless-vs-semi-frameless-shower-doors" className="text-primary underline hover:text-primary/80">comparing frameless and semi-frameless options</Link> or explore our <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80">complete pricing guide</Link>.

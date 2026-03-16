@@ -414,9 +414,9 @@ const ShowerEnclosuresLasVegas = () => {
               <h3 className="font-semibold mb-2">Steam Enclosures</h3>
               <p className="text-sm text-muted-foreground">Spa-like experience</p>
             </Link>
-            <Link to="/shower-doors-las-vegas/repair" className="bg-secondary/30 p-6 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
-              <h3 className="font-semibold mb-2">Repair Services</h3>
-              <p className="text-sm text-muted-foreground">Fix & maintenance</p>
+            <Link to="/gallery" className="bg-secondary/30 p-6 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
+              <h3 className="font-semibold mb-2">Gallery</h3>
+              <p className="text-sm text-muted-foreground">View our work</p>
             </Link>
           </div>
         </div>
