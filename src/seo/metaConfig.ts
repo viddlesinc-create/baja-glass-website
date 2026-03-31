@@ -192,6 +192,20 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
 
+  // ===== Index Pages =====
+  '/blog': {
+    title: 'Shower Door Blog | Tips, Guides & Industry Insights - Baja Glass & Mirror',
+    description: 'Expert articles on shower doors, glass care, installation tips, and cost guides for Las Vegas homeowners. Stay informed with Baja Glass & Mirror.',
+    canonical: `${BASE_URL}/blog`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/faq': {
+    title: 'Shower Door FAQ | Common Questions Answered - Baja Glass & Mirror',
+    description: 'Get answers to frequently asked questions about shower doors, glass installation, pricing, and maintenance from Baja Glass & Mirror in Las Vegas.',
+    canonical: `${BASE_URL}/faq`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
+
   // ===== Utility Pages =====
   '/resources': {
     title: 'Shower Door Resources & Guides | Baja Glass & Mirror Las Vegas',
