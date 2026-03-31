@@ -1,7 +1,6 @@
 // All routes from App.tsx - SINGLE SOURCE OF TRUTH
 export const routes = [
   "/",
-  "/lp/frameless-shower-doors",
   "/glass-company-las-vegas",
   "/glass-company-las-vegas/residential-glass-repair",
   "/glass-company-las-vegas/office-enclosures",
@@ -12,7 +11,6 @@ export const routes = [
   "/shower-doors-las-vegas/hinged",
   "/shower-doors-las-vegas/custom-enclosures",
   "/shower-doors-las-vegas/steam-enclosures",
-  
   "/shower-enclosures-las-vegas",
   "/gallery",
   "/areas-served",
@@ -22,14 +20,13 @@ export const routes = [
   "/sitemap",
   "/reviews",
   "/faq",
-  
-  "/faq",
   "/shower-doors-henderson-nv",
   "/shower-doors-summerlin-nv",
   "/shower-doors-paradise-nv",
   "/shower-doors-spring-valley-nv",
   "/shower-doors-enterprise-nv",
   "/shower-doors-green-valley-nv",
+  "/blog",
   "/blog/glass-care-guide",
   "/blog/choosing-right-door",
   "/blog/installation-process",

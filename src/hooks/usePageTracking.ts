@@ -20,8 +20,9 @@ export const usePageTracking = () => {
       page_title: document.title
     });
     
-    console.log('DataLayer Event: page_view', {
-      path: location.pathname
-    });
+    // Debug only in development
+    if (import.meta.env.DEV) {
+      console.log('DataLayer Event: page_view', { path: location.pathname });
+    }
   }, [location.pathname]);
 };
