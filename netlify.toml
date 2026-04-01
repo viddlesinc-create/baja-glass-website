@@ -3,7 +3,7 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 
 # ==========================================
 # PATH-BASED 301 REDIRECTS (before SPA catch-all)
@@ -166,11 +166,7 @@
 # SPA CATCH-ALL (must be LAST)
 # ==========================================
 
-[[redirects]]
-  from = "/.netlify/*"
-  to = "/.netlify/:splat"
-  status = 200
-  force = true
+
 
 [[redirects]]
   from = "/*"
