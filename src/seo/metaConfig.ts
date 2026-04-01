@@ -7,7 +7,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
     title: 'Baja Glass & Mirror | Shower Doors & Glass in Las Vegas',
-    description: 'Baja Glass & Mirror is a local Las Vegas glass company specializing in frameless shower doors, custom glass enclosures and mirrors. Serving Henderson & Summerlin. Free estimates.',
+    description: 'Local Las Vegas glass company. Frameless shower doors, custom enclosures and mirrors. Serving Henderson & Summerlin. Free estimates.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
