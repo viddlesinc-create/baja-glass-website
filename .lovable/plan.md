@@ -1,68 +1,93 @@
 
 
-# Fix: All Routes Rendering Homepage Content
+# Fix: Prerendered Route Files Not Serving Unique Content
 
-## Problem
+## Root Cause Analysis
 
-The SSG prerender pipeline is correctly set up in code (`AppSSR.tsx` with eager imports, `prerender.js` writing `route/index.html` files), but every URL on the live site still returns the homepage HTML. There are **two root causes**:
+After auditing every file in the build pipeline, I identified **three concrete problems** that together explain why all routes serve homepage content:
 
-### Root Cause 1: Netlify's Built-in Prerendering Plugin
+### Problem 1: `analytics.ts` crashes SSR silently
 
-You likely have Netlify's "Prerendering" feature enabled (under Site Settings > Build & Deploy > Post Processing). This feature intercepts bot/crawler requests, loads your SPA in a headless browser, waits for JS to execute, and caches the result. Because the SPA uses `React.lazy()` and code splitting, the headless browser captures the page while it's still showing the Homepage component (before the lazy chunk loads). This overrides your static `route/index.html` files.
+`pushToDataLayer()` (line 13) references `window` directly with no SSR guard. While most calls are inside `onClick` handlers (safe), the module is imported by `PhoneNumber.tsx`, `GoogleMap.tsx`, and many pages. If any analytics function is called during render (not just in useEffect), `renderToString()` throws and the catch block in `prerender.js` skips that route. Netlify then falls back to the SPA catch-all `index.html` (homepage).
 
-**Fix:** Disable Netlify's Prerendering feature in site settings. Your SSG build already produces the correct static HTML.
+### Problem 2: No post-build verification
 
-### Root Cause 2: Potential Silent SSR Failures
+The build script has no verification step to confirm that the generated HTML files actually contain unique content per route. If the prerender silently fails for every route, the build "succeeds" but `dist/` only contains the generic SPA `index.html`. There is no way to detect this from the Netlify build log.
 
-If any page component throws during `renderToString()` (e.g., accessing `window`, `document`, `localStorage`, or browser-only APIs), the `catch` block in `prerender.js` silently skips that route without writing a file. Netlify then falls back to the SPA catch-all (`/index.html` = homepage).
+### Problem 3: The `index.html` template still has a hardcoded `<title>`
 
-**Fix:** Add SSR safety guards and improve error visibility.
-
-## Changes
-
-### 1. Harden `prerender.js` with validation (scripts/prerender.js)
-
-After rendering each route, verify the HTML contains route-specific content (not just the homepage). Log a warning if the rendered HTML appears to be a fallback. Also improve error logging to show full stack traces.
-
-```text
-For each route:
-  - After render(), check html.length > 500 (not empty/skeleton)
-  - After writing file, verify it exists and has content
-  - On error, log full error.stack, not just error.message
+Line 39 of `index.html`:
+```html
+<title>Baja Glass & Mirror | Custom Shower Doors Las Vegas</title>
 ```
 
-### 2. Add SSR guards to `usePageTracking` (src/hooks/usePageTracking.ts)
+The `stripDefaultMetaTags` regex in `prerender.js` removes `<title>` tags, but if the regex fails for any reason (e.g., the tag has extra whitespace or attributes), the homepage title persists in every prerendered file.
 
-Wrap the `window.dataLayer` access in a `typeof window !== 'undefined'` check. Although `useEffect` doesn't run during SSR, the hook itself should be SSR-safe to prevent any edge-case issues.
+## Plan
 
-### 3. Add SSR guard to `QueryParameterRedirects` (src/components/QueryParameterRedirects.tsx)
+### 1. Add SSR guard to `src/lib/analytics.ts`
 
-Add a server-side early return. During SSR, `useNavigate` may behave unexpectedly. Return `null` immediately if `typeof window === 'undefined'`.
+Wrap `pushToDataLayer` and every exported function with `typeof window === 'undefined'` early return. This prevents any SSR crash from analytics during rendering.
 
-### 4. Add SSR guard to `RedirectComponent` (src/components/RedirectComponent.tsx)
+```ts
+const pushToDataLayer = (event: string, data: Record<string, any>) => {
+  if (typeof window === 'undefined') return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event, ...data });
+};
+```
 
-Same pattern — return `null` during SSR to prevent `useNavigate` issues.
+Apply the same guard to `trackPhoneClick`, `trackPageView`, `trackMapInteraction`, and every other function that reads `window.location` or `document.title`.
 
-### 5. Remove default OG tags from `index.html` (index.html)
+### 2. Add post-build verification to `scripts/build-ssr.js`
 
-The `stripDefaultMetaTags` regex in `prerender.js` already handles this at build time, but having default OG tags in the template is fragile. Remove the default OG and Twitter meta block (lines 58-68) entirely. The `<title>` tag can stay as a fallback for the non-prerendered SPA shell.
+After the prerender step completes, add a new Step 6 that reads 5 representative route files and checks that each has a unique `<title>` and `<h1>`. If any file is missing or contains the homepage title, the build fails with a clear error message. This makes silent failures impossible.
 
-### 6. Update `netlify.toml` — document that built-in prerendering must be OFF
+```text
+Check files:
+  dist/about/index.html        → expects "About Baja Glass"
+  dist/contact/index.html      → expects "Get Your Free Quote"
+  dist/shower-doors-las-vegas/index.html → expects "Custom Shower Doors"
+  dist/blog/index.html         → expects "Shower Door Blog"
+  dist/faq/index.html          → expects "Shower Door FAQ"
 
-Add a comment in the redirects section clarifying that Netlify's prerendering plugin must be disabled since static HTML files are generated at build time.
+For each: read file, extract <title>, verify it differs from homepage title.
+If any check fails → console.error + process.exit(1)
+```
 
-## Summary of files
+### 3. Harden `prerender.js` error handling
+
+Change the error handling so that if ANY route fails to render, the entire build fails (not just logs a warning). This prevents partial builds from deploying with missing route files.
+
+Also add a final summary that lists every generated file path and its `<title>` tag, giving full visibility in the Netlify build log.
+
+### 4. Remove hardcoded title from `index.html`
+
+Remove line 39 (`<title>Baja Glass & Mirror | Custom Shower Doors Las Vegas</title>`) from the template. Helmet injects the correct title per route. The SPA shell doesn't need a title tag since `SEOHead` handles it client-side, and the prerendered files will have the correct title injected.
+
+### 5. Add dual file output to `prerender.js` (belt and suspenders)
+
+For each route, write BOTH:
+- `dist/about/index.html` (directory-based, current approach)
+- `dist/about.html` (file-based, Netlify fallback)
+
+This ensures Netlify serves the correct file regardless of its "Pretty URLs" setting or how it resolves clean URLs. Both formats are valid and Netlify checks both.
+
+## Files Changed
 
 | File | Change |
 |------|--------|
-| `scripts/prerender.js` | Add content validation and better error logging |
-| `src/hooks/usePageTracking.ts` | Add `typeof window` guard |
-| `src/components/QueryParameterRedirects.tsx` | Add SSR early return |
-| `src/components/RedirectComponent.tsx` | Add SSR early return |
-| `index.html` | Remove hardcoded OG/Twitter meta tags |
-| `netlify.toml` | Add comment about disabling built-in prerendering |
+| `src/lib/analytics.ts` | Add `typeof window === 'undefined'` guard to all functions |
+| `scripts/build-ssr.js` | Add post-build verification step that fails the build if route files are missing or have wrong content |
+| `scripts/prerender.js` | Fail build on any route error; write both `route/index.html` AND `route.html`; log title per file |
+| `index.html` | Remove hardcoded `<title>` tag |
 
-## Manual step required (outside code)
+## Expected Outcome
 
-Go to **Netlify Dashboard > Site Settings > Build & Deploy > Post Processing > Prerendering** and **disable** it. Your custom SSG build already generates static HTML for every route — Netlify's prerender plugin conflicts with this by overriding the static files with its own headless-browser capture (which shows the homepage).
+After these changes, the Netlify build log will show:
+- The title extracted from each generated HTML file
+- A verification pass/fail for 5 representative routes
+- Build failure if any route doesn't produce unique content
+
+This eliminates the possibility of a "successful" build that deploys homepage content for all routes.
 
