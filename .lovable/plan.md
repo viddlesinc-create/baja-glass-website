@@ -1,65 +1,68 @@
 
 
-# SEO Prerender Audit: Root Cause & Fix Plan
+# Fix: All Routes Rendering Homepage Content
 
-## A. Root Cause Found
+## Problem
 
-**Every route except the homepage renders identical placeholder HTML during the SSG build.** The technical cause:
+The SSG prerender pipeline is correctly set up in code (`AppSSR.tsx` with eager imports, `prerender.js` writing `route/index.html` files), but every URL on the live site still returns the homepage HTML. There are **two root causes**:
 
-`App.tsx` uses `React.lazy()` for all page components except `Index` and `NotFound`. During the SSG prerender step (`scripts/prerender.js`), `renderToString()` is called — this is a **synchronous** API that cannot resolve dynamic `import()` calls. When it encounters a `<Suspense>` boundary wrapping a lazy component, it renders the **fallback** instead: the `<PageLoader />` skeleton (a generic pulse animation div).
+### Root Cause 1: Netlify's Built-in Prerendering Plugin
 
-**Result:** All 33+ prerendered HTML files contain identical body content: Header → BreadcrumbNav → PageLoader skeleton → Footer. Only the Helmet metadata (title, description, canonical) differs between files, but even that is undermined by Problem #2.
+You likely have Netlify's "Prerendering" feature enabled (under Site Settings > Build & Deploy > Post Processing). This feature intercepts bot/crawler requests, loads your SPA in a headless browser, waits for JS to execute, and caches the result. Because the SPA uses `React.lazy()` and code splitting, the headless browser captures the page while it's still showing the Homepage component (before the lazy chunk loads). This overrides your static `route/index.html` files.
 
-**Problem #2: Duplicate meta tags.** The `index.html` template contains hardcoded default OG tags (og:title, og:description, og:image, twitter:card, etc.). The prerender script appends Helmet-generated page-specific tags before `</head>` but never removes the defaults. Crawlers see TWO sets of OG tags and may pick the wrong (default) one.
+**Fix:** Disable Netlify's Prerendering feature in site settings. Your SSG build already produces the correct static HTML.
 
-**Problem #3: No SSR-specific routing.** `entry-server.tsx` imports `App` directly, which uses lazy loading. There is no server-side variant with eager imports.
+### Root Cause 2: Potential Silent SSR Failures
 
-## B. Pass/Fail Summary (Current State)
+If any page component throws during `renderToString()` (e.g., accessing `window`, `document`, `localStorage`, or browser-only APIs), the `catch` block in `prerender.js` silently skips that route without writing a file. Netlify then falls back to the SPA catch-all (`/index.html` = homepage).
 
-| Check | `/` (homepage) | All other routes |
-|-------|:-:|:-:|
-| Unique `<title>` in raw HTML | ✅ | ⚠️ Present but duplicated with default |
-| Unique meta description | ✅ | ⚠️ Present but duplicated with default |
-| Unique canonical | ✅ | ⚠️ Present but duplicated with default |
-| Unique H1 in raw HTML | ✅ | ❌ All show PageLoader div |
-| Unique body content | ✅ | ❌ All identical skeleton |
-| Correct schema (JSON-LD) | ✅ | ❌ Not rendered (inside lazy components) |
-| Correct prerendered HTML | ✅ | ❌ Generic fallback |
+**Fix:** Add SSR safety guards and improve error visibility.
 
-## C. Fixes
+## Changes
 
-### 1. Create `src/AppSSR.tsx` — Server-side App with eager imports
+### 1. Harden `prerender.js` with validation (scripts/prerender.js)
 
-A copy of `App.tsx` where every page component is eagerly imported (no `lazy()`), and the `<Suspense>` wrapper is removed. This is only used during the SSG build, not in the client bundle.
+After rendering each route, verify the HTML contains route-specific content (not just the homepage). Log a warning if the rendered HTML appears to be a fallback. Also improve error logging to show full stack traces.
 
-All ~30 page components will be statically imported. The route definitions stay identical to `App.tsx`.
+```text
+For each route:
+  - After render(), check html.length > 500 (not empty/skeleton)
+  - After writing file, verify it exists and has content
+  - On error, log full error.stack, not just error.message
+```
 
-### 2. Update `src/entry-server.tsx` to use `AppSSR`
+### 2. Add SSR guards to `usePageTracking` (src/hooks/usePageTracking.ts)
 
-Change `import App from './App'` → `import App from './AppSSR'` so the SSG prerender uses synchronous imports.
+Wrap the `window.dataLayer` access in a `typeof window !== 'undefined'` check. Although `useEffect` doesn't run during SSR, the hook itself should be SSR-safe to prevent any edge-case issues.
 
-### 3. Fix duplicate meta tags in `scripts/prerender.js`
+### 3. Add SSR guard to `QueryParameterRedirects` (src/components/QueryParameterRedirects.tsx)
 
-Before injecting Helmet tags, strip the hardcoded default OG/twitter tags from the template HTML:
-- Remove all `<meta property="og:*">` defaults
-- Remove all `<meta name="twitter:*">` defaults
-- Then inject Helmet-generated tags cleanly
+Add a server-side early return. During SSR, `useNavigate` may behave unexpectedly. Return `null` immediately if `typeof window === 'undefined'`.
 
-### 4. Fix `index.html` default `<title>` tag
+### 4. Add SSR guard to `RedirectComponent` (src/components/RedirectComponent.tsx)
 
-Add a default `<title>` tag to `index.html` so that even the raw SPA fallback has a proper title. Helmet will override it per-route in prerendered files.
+Same pattern — return `null` during SSR to prevent `useNavigate` issues.
 
-### Files changed
+### 5. Remove default OG tags from `index.html` (index.html)
 
-| File | Action |
+The `stripDefaultMetaTags` regex in `prerender.js` already handles this at build time, but having default OG tags in the template is fragile. Remove the default OG and Twitter meta block (lines 58-68) entirely. The `<title>` tag can stay as a fallback for the non-prerendered SPA shell.
+
+### 6. Update `netlify.toml` — document that built-in prerendering must be OFF
+
+Add a comment in the redirects section clarifying that Netlify's prerendering plugin must be disabled since static HTML files are generated at build time.
+
+## Summary of files
+
+| File | Change |
 |------|--------|
-| `src/AppSSR.tsx` | **New** — eager-import version of App for SSR |
-| `src/entry-server.tsx` | Import `AppSSR` instead of `App` |
-| `scripts/prerender.js` | Strip default OG/twitter meta before Helmet injection |
-| `index.html` | Add default `<title>` tag |
+| `scripts/prerender.js` | Add content validation and better error logging |
+| `src/hooks/usePageTracking.ts` | Add `typeof window` guard |
+| `src/components/QueryParameterRedirects.tsx` | Add SSR early return |
+| `src/components/RedirectComponent.tsx` | Add SSR early return |
+| `index.html` | Remove hardcoded OG/Twitter meta tags |
+| `netlify.toml` | Add comment about disabling built-in prerendering |
 
-### What this does NOT change
-- Client-side bundle: `App.tsx` with lazy loading remains untouched — users still get code-splitting benefits
-- No URL changes, no redirect changes, no content changes
-- Netlify Prerender extension can remain enabled as a belt-and-suspenders approach, but the static HTML files will now contain full page-specific content
+## Manual step required (outside code)
+
+Go to **Netlify Dashboard > Site Settings > Build & Deploy > Post Processing > Prerendering** and **disable** it. Your custom SSG build already generates static HTML for every route — Netlify's prerender plugin conflicts with this by overriding the static files with its own headless-browser capture (which shows the homepage).
 
