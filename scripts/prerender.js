@@ -70,8 +70,11 @@ async function prerender() {
         }
       }
 
-      const routePath = route === '/' ? '/index' : route;
-      const filePath = path.join(distDir, `${routePath}.html`);
+      // Write as route/index.html so Netlify serves them for clean URLs
+      // (e.g. /shower-doors-las-vegas → /shower-doors-las-vegas/index.html)
+      const filePath = route === '/'
+        ? path.join(distDir, 'index.html')
+        : path.join(distDir, route, 'index.html');
       const dir = path.dirname(filePath);
 
       if (!fs.existsSync(dir)) {
