@@ -11,6 +11,8 @@ export const usePageTracking = () => {
   const location = useLocation();
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
     // Push page_view event to dataLayer for GTM
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({

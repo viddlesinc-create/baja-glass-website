@@ -11,18 +11,18 @@ const RedirectComponent = ({ to, permanent = true }: RedirectComponentProps) => 
   const location = useLocation();
 
   useEffect(() => {
-    // Clean any query parameters and redirect
-    const cleanTo = to + location.hash; // preserve hash if any
+    if (typeof window === 'undefined') return;
+
+    const cleanTo = to + location.hash;
     
     if (permanent) {
-      // For SEO, we want to replace the history entry for permanent redirects
       navigate(cleanTo, { replace: true });
     } else {
       navigate(cleanTo);
     }
   }, [navigate, to, location.hash, permanent]);
 
-  return null; // This component doesn't render anything
+  return null;
 };
 
 export default RedirectComponent;

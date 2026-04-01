@@ -90,7 +90,7 @@ async function prerender() {
       successCount++;
 
     } catch (error) {
-      console.error(`❌ ${route}:`, error.message);
+      console.error(`❌ ${route}:`, error.stack || error.message);
       errorCount++;
     }
   }
