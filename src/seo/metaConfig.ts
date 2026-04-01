@@ -19,7 +19,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/glass-company-las-vegas': {
     title: 'Glass Company Las Vegas | Residential & Commercial Glass',
-    description: 'Baja Glass & Mirror is a trusted glass company in Las Vegas for shower doors, mirrors, windows and commercial glass. Local, licensed and insured. Request a free quote.',
+    description: 'Trusted Las Vegas glass company for shower doors, mirrors, windows and commercial glass. Licensed and insured. Free quotes.',
     canonical: `${BASE_URL}/glass-company-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
