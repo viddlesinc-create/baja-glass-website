@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Phone, Home, Shield, Clock, CheckCircle, Star, Wrench } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import brokenWindowLasVegas from "@/assets/broken-window-las-vegas.jpg";
+const brokenWindowLasVegas = "/images/broken-window-las-vegas.jpg";
 
 const ResidentialGlassRepair = () => {
   const services = [

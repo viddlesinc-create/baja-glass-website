@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Shield, FileText, Phone, AlertTriangle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import hardwareFinishes from "@/assets/hardware-finishes.jpg";
+const hardwareFinishes = "/images/hardware-finishes.jpg";
 
 const WarrantyInformation = () => {
   return (
@@ -34,7 +34,7 @@ const WarrantyInformation = () => {
             },
             "datePublished": "2025-01-15",
             "dateModified": "2026-01-10",
-            "image": "https://bajaglass.com/assets/hardware-finishes.jpg",
+            "image": "https://bajaglass.com/images/hardware-finishes.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://bajaglass.com/blog/warranty-information"

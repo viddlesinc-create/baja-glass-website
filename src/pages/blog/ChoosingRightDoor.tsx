@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Ruler, Frame, Palette, Home } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import customEnclosure from "@/assets/custom-enclosure.jpg";
+const customEnclosure = "/images/custom-enclosure.jpg";
 
 const ChoosingRightDoor = () => {
   return (
@@ -34,7 +34,7 @@ const ChoosingRightDoor = () => {
             },
             "datePublished": "2025-01-15",
             "dateModified": "2026-01-10",
-            "image": "https://bajaglass.com/assets/custom-enclosure.jpg",
+            "image": "https://bajaglass.com/images/custom-enclosure.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://bajaglass.com/blog/choosing-right-door"

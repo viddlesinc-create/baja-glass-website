@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, Clock, Wrench, Calendar } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import installationProcess from "@/assets/installation-process.jpg";
+const installationProcess = "/images/installation-process.jpg";
 
 const InstallationProcess = () => {
   return (
@@ -34,7 +34,7 @@ const InstallationProcess = () => {
             },
             "datePublished": "2025-01-15",
             "dateModified": "2026-01-10",
-            "image": "https://bajaglass.com/assets/installation-process.jpg",
+            "image": "https://bajaglass.com/images/installation-process.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://bajaglass.com/blog/installation-process"
