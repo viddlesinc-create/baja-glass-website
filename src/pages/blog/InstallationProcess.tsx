@@ -34,7 +34,7 @@ const InstallationProcess = () => {
             },
             "datePublished": "2025-01-15",
             "dateModified": "2026-01-10",
-            "image": "https://bajaglass.com/assets/installation-process.jpg",
+            "image": "https://bajaglass.com/images/installation-process.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://bajaglass.com/blog/installation-process"
