@@ -53,8 +53,7 @@ const OptimizedImage = ({
   height = 1080,
   sizes = '100vw',
   priority = false,
-  ...rest
-}: OptimizedImageProps & React.ImgHTMLAttributes<HTMLImageElement>) => {
+}: OptimizedImageProps) => {
   // Generate appropriate widths based on the target width
   const widths = width <= 200 
     ? [width, width * 2, width * 3].filter(w => w <= 600) // For small images like logos
