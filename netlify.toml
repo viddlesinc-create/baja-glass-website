@@ -121,50 +121,50 @@
   from = "/about/"
   to = "/about"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/contact/"
   to = "/contact"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/gallery/"
   to = "/gallery"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/resources/"
   to = "/resources"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/areas-served/"
   to = "/areas-served"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/shower-doors-las-vegas/"
   to = "/shower-doors-las-vegas"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/glass-company-las-vegas/"
   to = "/glass-company-las-vegas"
   status = 301
-  force = true
+  force = false
 
 # Semi-frameless URL variation
 [[redirects]]
   from = "/shower-doors-las-vegas/semi-frameless"
   to = "/shower-doors-las-vegas/semi-frameless-framed"
   status = 301
-  force = true
+  force = false
 
 # ==========================================
 # SPA CATCH-ALL (must be LAST)
