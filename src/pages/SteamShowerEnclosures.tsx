@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Phone, Droplets, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
+import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 const customEnclosureImage = "/images/custom-enclosure.jpg";
 
 const steamGalleryImages = [
