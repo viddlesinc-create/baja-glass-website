@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
+import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 
 const framelessGalleryImages = [
   { src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png", alt: "Luxury frameless glass shower door with freestanding tub", caption: "Modern Frameless Design" },
