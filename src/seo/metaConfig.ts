@@ -49,7 +49,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/about': {
     title: 'About Baja Glass & Mirror | Local Frameless Shower Door Experts in Las Vegas',
-    description: 'Learn about Baja Glass & Mirror, a locally owned glass company in Las Vegas specializing in frameless shower doors and custom glass. Discover our experience, values, and team.',
+    description: 'Locally owned Las Vegas glass company specializing in frameless shower doors and custom glass. Meet the Baja Glass & Mirror team.',
     canonical: `${BASE_URL}/about`,
     ogImage: DEFAULT_OG_IMAGE,
   },
