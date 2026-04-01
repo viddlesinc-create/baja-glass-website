@@ -18,7 +18,7 @@
   from = "/*"
   to = "/about"
   status = 301
-  force = true
+  force = false
   [redirects.query]
     page_id = "32"
 
@@ -26,7 +26,7 @@
   from = "/*"
   to = "/contact"
   status = 301
-  force = true
+  force = false
   [redirects.query]
     page_id = "85"
 
@@ -35,7 +35,7 @@
   from = "/*"
   to = "/:splat"
   status = 301
-  force = true
+  force = false
   [redirects.query]
     kuid = ":kuid"
 
@@ -43,7 +43,7 @@
   from = "/*"
   to = "/:splat"
   status = 301
-  force = true
+  force = false
   [redirects.query]
     yandex-source = ":yandex"
 
@@ -51,7 +51,7 @@
   from = "/*"
   to = "/:splat"
   status = 301
-  force = true
+  force = false
   [redirects.query]
     ga_action = ":ga"
 
@@ -59,7 +59,7 @@
   from = "/*"
   to = "/:splat"
   status = 301
-  force = true
+  force = false
   [redirects.query]
     s = ":s"
 
@@ -67,7 +67,7 @@
   from = "/*"
   to = "/:splat"
   status = 301
-  force = true
+  force = false
   [redirects.query]
     kref = ":kref"
 
