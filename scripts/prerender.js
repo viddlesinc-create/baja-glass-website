@@ -11,15 +11,16 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
  * so that Helmet-injected page-specific tags are the only ones present.
  */
 function stripDefaultMetaTags(html) {
-  // Remove default OG meta tags
   html = html.replace(/<meta\s+property="og:[^"]*"\s+content="[^"]*"\s*\/?>/gi, '');
-  // Remove default Twitter meta tags
   html = html.replace(/<meta\s+name="twitter:[^"]*"\s+content="[^"]*"\s*\/?>/gi, '');
-  // Remove any default <title>…</title> so Helmet's title takes precedence
   html = html.replace(/<title>[^<]*<\/title>/i, '');
-  // Clean up resulting blank lines
   html = html.replace(/\n\s*\n\s*\n/g, '\n');
   return html;
+}
+
+function extractTag(html, tagRegex) {
+  const match = html.match(tagRegex);
+  return match ? match[1] : null;
 }
 
 async function prerender() {
@@ -39,27 +40,24 @@ async function prerender() {
   const rawTemplate = fs.readFileSync(path.join(__dirname, '../dist/index.html'), 'utf-8');
 
   let successCount = 0;
-  let errorCount = 0;
+  const errors = [];
+  const results = [];
 
   for (const route of routes) {
     try {
       const { render } = await vite.ssrLoadModule('/src/entry-server.tsx');
       const { html, helmetContext } = await render(route);
 
-      // Validate that we got real content, not an empty shell
       if (!html || html.length < 500) {
-        console.warn(`⚠️  ${route}: rendered HTML is suspiciously short (${html?.length || 0} chars) — possible fallback`);
+        throw new Error(`Rendered HTML is suspiciously short (${html?.length || 0} chars) — possible fallback`);
       }
       
-      // Start from the template with default meta stripped
       let finalHtml = stripDefaultMetaTags(rawTemplate);
-      // Replace root div with SSR content
       finalHtml = finalHtml.replace(
         '<div id="root"></div>',
         `<div id="root" data-ssr="true">${html}</div>`
       );
       
-      // Inject helmet tags if available
       const { helmet } = helmetContext;
       if (helmet) {
         const headTags = [
@@ -74,32 +72,50 @@ async function prerender() {
         }
       }
 
-      // Write as route/index.html so Netlify serves them for clean URLs
-      // (e.g. /shower-doors-las-vegas → /shower-doors-las-vegas/index.html)
-      const filePath = route === '/'
+      // Write directory-based: /about/index.html
+      const dirFilePath = route === '/'
         ? path.join(distDir, 'index.html')
         : path.join(distDir, route, 'index.html');
-      const dir = path.dirname(filePath);
-
+      const dir = path.dirname(dirFilePath);
       if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
       }
+      fs.writeFileSync(dirFilePath, finalHtml);
 
-      fs.writeFileSync(filePath, finalHtml);
-      console.log(`✅ ${route}`);
+      // Write file-based: /about.html (skip for root)
+      if (route !== '/') {
+        const fileBasedPath = path.join(distDir, `${route}.html`);
+        const fileDir = path.dirname(fileBasedPath);
+        if (!fs.existsSync(fileDir)) {
+          fs.mkdirSync(fileDir, { recursive: true });
+        }
+        fs.writeFileSync(fileBasedPath, finalHtml);
+      }
+
+      const title = extractTag(finalHtml, /<title[^>]*>([^<]+)<\/title>/i) || '(no title)';
+      console.log(`✅ ${route} → <title>${title}</title>`);
+      results.push({ route, title });
       successCount++;
 
     } catch (error) {
       console.error(`❌ ${route}:`, error.stack || error.message);
-      errorCount++;
+      errors.push({ route, error: error.message });
     }
   }
 
   await vite.close();
+
+  console.log(`\n🎉 Prerendering complete: ${successCount}/${routes.length} pages`);
   
-  console.log('\n🎉 Prerendering complete!');
-  console.log(`✅ Success: ${successCount} pages`);
-  if (errorCount > 0) console.log(`❌ Errors: ${errorCount} pages`);
+  if (errors.length > 0) {
+    console.error('\n🚨 FAILED ROUTES:');
+    errors.forEach(e => console.error(`  ❌ ${e.route}: ${e.error}`));
+    console.error('\nBuild FAILED — all routes must render successfully.');
+    process.exit(1);
+  }
 }
 
-prerender().catch(console.error);
+prerender().catch(err => {
+  console.error('Fatal prerender error:', err);
+  process.exit(1);
+});

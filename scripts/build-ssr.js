@@ -50,15 +50,50 @@ try {
   console.log('\n🎨 Pre-rendering pages...');
   execSync('node scripts/prerender.js', { cwd: root, stdio: 'inherit' });
 
-  // Step 6: Create dedicated 404.html
+  // Step 6: Post-build verification
+  console.log('\n🔍 Verifying prerendered output...');
+  const HOMEPAGE_TITLE = 'Baja Glass & Mirror | Custom Shower Doors Las Vegas';
+  const verifyRoutes = [
+    { path: 'about/index.html', expectTitleContains: 'About' },
+    { path: 'contact/index.html', expectTitleContains: 'Contact' },
+    { path: 'shower-doors-las-vegas/index.html', expectTitleContains: 'Shower' },
+    { path: 'blog/index.html', expectTitleContains: 'Blog' },
+    { path: 'faq/index.html', expectTitleContains: 'FAQ' },
+  ];
+
+  let verifyFailed = false;
+  for (const check of verifyRoutes) {
+    const filePath = path.join(distDir, check.path);
+    if (!fs.existsSync(filePath)) {
+      console.error(`❌ MISSING: ${check.path}`);
+      verifyFailed = true;
+      continue;
+    }
+    const content = fs.readFileSync(filePath, 'utf-8');
+    const titleMatch = content.match(/<title[^>]*>([^<]+)<\/title>/i);
+    const title = titleMatch ? titleMatch[1] : '(no title found)';
+    
+    if (title === HOMEPAGE_TITLE || title === '(no title found)') {
+      console.error(`❌ WRONG TITLE: ${check.path} → "${title}"`);
+      verifyFailed = true;
+    } else {
+      console.log(`✅ ${check.path} → "${title}"`);
+    }
+  }
+
+  if (verifyFailed) {
+    console.error('\n🚨 Post-build verification FAILED — route files have wrong or missing content.');
+    process.exit(1);
+  }
+
+  // Step 7: Create dedicated 404.html
   console.log('\n📄 Creating dedicated 404.html...');
   const notFoundHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf-8');
   fs.writeFileSync(path.join(distDir, '404.html'), notFoundHtml);
   console.log('✅ 404.html created');
 
   console.log('\n✨ SSG build complete!');
-  console.log('📦 Deploy the dist/ folder to Netlify');
-  console.log('🔍 All 21 routes are now crawlable with full SEO metadata\n');
+  console.log('📦 Deploy the dist/ folder to Netlify\n');
 
 } catch (error) {
   console.error('❌ Build failed:', error.message);
