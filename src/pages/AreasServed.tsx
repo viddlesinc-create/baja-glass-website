@@ -3,9 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone, CheckCircle, Instagram, Facebook, MapPin } from "lucide-react";
-import heroImage from "@/assets/hero-shower-door.jpg";
-import slidingDoors from "@/assets/sliding-doors.jpg";
-import customEnclosure from "@/assets/custom-enclosure.jpg";
+const heroImage = "/images/hero-shower-door.jpg";
+const slidingDoors = "/images/sliding-doors.jpg";
+const customEnclosure = "/images/custom-enclosure.jpg";
 import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
 import GoogleMap from "@/components/GoogleMap";

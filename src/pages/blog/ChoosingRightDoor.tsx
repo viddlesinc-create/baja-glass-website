@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Ruler, Frame, Palette, Home } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import customEnclosure from "@/assets/custom-enclosure.jpg";
+const customEnclosure = "/images/custom-enclosure.jpg";
 
 const ChoosingRightDoor = () => {
   return (

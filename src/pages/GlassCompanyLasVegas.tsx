@@ -4,9 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone, Clock, Award, Shield, Users, CheckCircle, Instagram, Facebook } from "lucide-react";
 import heroImage from "/lovable-uploads/1097be0e-6f50-458e-9cc0-56a340dec89f.png";
-import slidingDoors from "@/assets/sliding-doors.jpg";
-import customEnclosure from "@/assets/custom-enclosure.jpg";
-import hardwareFinishes from "@/assets/hardware-finishes.jpg";
+const slidingDoors = "/images/sliding-doors.jpg";
+const customEnclosure = "/images/custom-enclosure.jpg";
+const hardwareFinishes = "/images/hardware-finishes.jpg";
 import { Helmet } from "react-helmet-async";
 
 const GlassCompanyLasVegas = () => {

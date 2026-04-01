@@ -14,11 +14,11 @@ import OptimizedImage from "@/components/OptimizedImage";
 import PhoneNumber from "@/components/PhoneNumber";
 import IntroSection from "@/components/IntroSection";
 import SiteLinks from "@/components/SiteLinks";
-import heroImage from "@/assets/hero-shower-door.jpg";
-import installationProcess from "@/assets/installation-process.jpg";
-import slidingDoors from "@/assets/sliding-doors.jpg";
-import customEnclosure from "@/assets/custom-enclosure.jpg";
-import hardwareFinishes from "@/assets/hardware-finishes.jpg";
+const heroImage = "/images/hero-shower-door.jpg";
+const installationProcess = "/images/installation-process.jpg";
+const slidingDoors = "/images/sliding-doors.jpg";
+const customEnclosure = "/images/custom-enclosure.jpg";
+const hardwareFinishes = "/images/hardware-finishes.jpg";
   const services = [{
     title: "Frameless Shower Doors",
     description: "Sleek, modern, built with 3/8\" or 1/2\" tempered glass for strength and clarity.",

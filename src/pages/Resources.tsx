@@ -3,10 +3,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { BookOpen, HelpCircle, Wrench, Shield } from "lucide-react";
-import clearGlass from "@/assets/clear-glass.jpg";
-import lowIronGlass from "@/assets/low-iron-glass.jpg";
-import frostedGlass from "@/assets/frosted-glass.jpg";
-import rainGlass from "@/assets/rain-glass.jpg";
+const clearGlass = "/images/clear-glass.jpg";
+const lowIronGlass = "/images/low-iron-glass.jpg";
+const frostedGlass = "/images/frosted-glass.jpg";
+const rainGlass = "/images/rain-glass.jpg";
 import { Helmet } from "react-helmet-async";
 
 const Resources = () => {

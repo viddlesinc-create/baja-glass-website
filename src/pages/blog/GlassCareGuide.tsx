@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Droplets, Shield, Clock, Sparkles } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import heroShowerDoor from "@/assets/hero-shower-door.jpg";
+const heroShowerDoor = "/images/hero-shower-door.jpg";
 
 const GlassCareGuide = () => {
   return (

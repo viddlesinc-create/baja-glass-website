@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Phone, Droplets, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
-import customEnclosureImage from "@/assets/custom-enclosure.jpg";
+const customEnclosureImage = "/images/custom-enclosure.jpg";
 
 const steamGalleryImages = [
   { src: "/lovable-uploads/63a30f9e-c80e-421e-9968-d4ed286876f4.png", alt: "Steam shower before installation", caption: "Before Upgrade" },

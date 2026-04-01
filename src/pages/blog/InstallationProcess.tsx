@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, Clock, Wrench, Calendar } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import installationProcess from "@/assets/installation-process.jpg";
+const installationProcess = "/images/installation-process.jpg";
 
 const InstallationProcess = () => {
   return (

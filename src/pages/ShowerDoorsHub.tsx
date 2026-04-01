@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-shower-door.jpg";
+const heroImage = "/images/hero-shower-door.jpg";
 import { Helmet } from "react-helmet-async";
 
 const ShowerDoorsHub = () => {

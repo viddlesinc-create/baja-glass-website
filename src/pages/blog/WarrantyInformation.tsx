@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Shield, FileText, Phone, AlertTriangle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import hardwareFinishes from "@/assets/hardware-finishes.jpg";
+const hardwareFinishes = "/images/hardware-finishes.jpg";
 
 const WarrantyInformation = () => {
   return (
