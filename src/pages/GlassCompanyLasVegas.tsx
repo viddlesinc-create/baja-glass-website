@@ -8,6 +8,7 @@ const slidingDoors = "/images/sliding-doors.jpg";
 const customEnclosure = "/images/custom-enclosure.jpg";
 const hardwareFinishes = "/images/hardware-finishes.jpg";
 import { Helmet } from "react-helmet-async";
+import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 
 const GlassCompanyLasVegas = () => {
   const services = [
