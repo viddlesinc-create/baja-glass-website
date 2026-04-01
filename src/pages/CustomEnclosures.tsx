@@ -5,6 +5,7 @@ import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
 import ProductGallery from "@/components/ProductGallery";
+import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 
 const CustomEnclosures = () => {
   const customEnclosureImages = [
