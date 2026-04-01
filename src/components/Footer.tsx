@@ -14,6 +14,7 @@ const Footer = () => {
     { name: "Areas Served", href: "/areas-served" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   const serviceLinks = [
