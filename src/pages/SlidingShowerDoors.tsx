@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
+import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 
 const slidingGalleryImages = [
   { src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png", alt: "Sliding glass shower door installation", caption: "Smooth-Glide System" },
@@ -318,6 +319,7 @@ const SlidingShowerDoors = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

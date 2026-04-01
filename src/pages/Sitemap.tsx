@@ -15,6 +15,7 @@ const Sitemap = () => {
         { name: "Customer Reviews", href: "/reviews" },
         { name: "Areas Served", href: "/areas-served" },
         { name: "Resources", href: "/resources" },
+        { name: "FAQ", href: "/faq" },
       ]
     },
     {
@@ -28,7 +29,7 @@ const Sitemap = () => {
         { name: "Hinged & Pivot Doors", href: "/shower-doors-las-vegas/hinged" },
         { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
         { name: "Steam Shower Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
-        
+        { name: "Shower Enclosures Las Vegas", href: "/shower-enclosures-las-vegas" },
       ]
     },
     {

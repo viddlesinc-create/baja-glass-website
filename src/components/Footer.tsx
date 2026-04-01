@@ -14,12 +14,14 @@ const Footer = () => {
     { name: "Areas Served", href: "/areas-served" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   const serviceLinks = [
     { name: "Shower Doors Las Vegas", href: "/shower-doors-las-vegas" },
     { name: "Glass Company Services", href: "/glass-company-las-vegas" },
     { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
+    { name: "Shower Enclosures", href: "/shower-enclosures-las-vegas" },
   ];
 
   const locationLinks = [

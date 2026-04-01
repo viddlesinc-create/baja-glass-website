@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
+import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 
 const semiFramelessGalleryImages = [
   { src: "/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png", alt: "Semi-frameless shower doors on bathtub", caption: "Semi-Frameless Design" },
@@ -360,6 +361,7 @@ const SemiFramelessShowerDoors = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

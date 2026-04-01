@@ -7,31 +7,31 @@ export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
     title: 'Baja Glass & Mirror | Shower Doors & Glass in Las Vegas',
-    description: 'Baja Glass & Mirror is a local Las Vegas glass company specializing in frameless shower doors, custom glass enclosures and mirrors. Serving Henderson & Summerlin. Free estimates.',
+    description: 'Local Las Vegas glass company. Frameless shower doors, custom enclosures and mirrors. Serving Henderson & Summerlin. Free estimates.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-las-vegas': {
     title: 'Custom Shower Doors Las Vegas | Frameless & Sliding Glass',
-    description: 'Looking for shower doors in Las Vegas? Baja Glass designs and installs frameless, semi-frameless and sliding glass shower doors. Free in-home estimate, fast local installation.',
+    description: 'Shower doors in Las Vegas by Baja Glass. Frameless, semi-frameless and sliding options. Free in-home estimate, fast local installation.',
     canonical: `${BASE_URL}/shower-doors-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/glass-company-las-vegas': {
     title: 'Glass Company Las Vegas | Residential & Commercial Glass',
-    description: 'Baja Glass & Mirror is a trusted glass company in Las Vegas for shower doors, mirrors, windows and commercial glass. Local, licensed and insured. Request a free quote.',
+    description: 'Trusted Las Vegas glass company for shower doors, mirrors, windows and commercial glass. Licensed and insured. Free quotes.',
     canonical: `${BASE_URL}/glass-company-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/gallery': {
     title: 'Frameless Shower Door Gallery | Baja Glass & Mirror Las Vegas',
-    description: 'View our frameless shower door gallery to see completed projects across Las Vegas. Get inspiration for your next custom glass shower or mirror installation with Baja Glass & Mirror.',
+    description: 'Frameless shower door gallery — completed projects across Las Vegas. Get inspiration for your custom glass shower or mirror installation.',
     canonical: `${BASE_URL}/gallery`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/reviews': {
     title: 'Customer Reviews | Baja Glass & Mirror Las Vegas',
-    description: 'See why Las Vegas homeowners trust Baja Glass & Mirror for frameless shower doors and custom glass. Read real reviews from Henderson, Summerlin and Paradise customers.',
+    description: 'Real reviews from Henderson, Summerlin and Paradise customers. See why Las Vegas homeowners trust Baja Glass for shower doors.',
     canonical: `${BASE_URL}/reviews`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -43,13 +43,13 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/contact': {
     title: 'Contact Baja Glass & Mirror | Frameless Shower Doors in Las Vegas',
-    description: 'Request a free quote for frameless shower doors or custom glass in Las Vegas. Contact Baja Glass & Mirror today by phone or form to schedule your in-home measurement.',
+    description: 'Request a free quote for frameless shower doors or custom glass in Las Vegas. Call or fill out our form to schedule a measurement.',
     canonical: `${BASE_URL}/contact`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/about': {
     title: 'About Baja Glass & Mirror | Local Frameless Shower Door Experts in Las Vegas',
-    description: 'Learn about Baja Glass & Mirror, a locally owned glass company in Las Vegas specializing in frameless shower doors and custom glass. Discover our experience, values, and team.',
+    description: 'Locally owned Las Vegas glass company specializing in frameless shower doors and custom glass. Meet the Baja Glass & Mirror team.',
     canonical: `${BASE_URL}/about`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -60,12 +60,6 @@ export const seoConfig: Record<string, SEOMeta> = {
     description: 'Premium frameless shower doors in Las Vegas, NV. Expert installation and replacement. Low-iron glass, modern hardware. Free quotes from licensed installers.',
     canonical: `${BASE_URL}/shower-doors-las-vegas/frameless`,
     ogImage: `${BASE_URL}/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png`,
-  },
-  '/shower-doors-las-vegas/semi-frameless': {
-    title: 'Semi-Frameless & Framed Shower Doors Las Vegas | Baja Glass & Mirror',
-    description: 'Professional semi-frameless and framed shower door installation in Las Vegas. Balanced style with strategic support. Multiple glass and hardware finish options.',
-    canonical: `${BASE_URL}/shower-doors-las-vegas/semi-frameless`,
-    ogImage: `${BASE_URL}/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png`,
   },
   '/shower-doors-las-vegas/semi-frameless-framed': {
     title: 'Semi-Frameless & Framed Shower Doors Las Vegas | Baja Glass & Mirror',
@@ -169,7 +163,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/blog/installation-process': {
     title: 'Shower Door Installation Process | What to Expect - Baja Glass & Mirror',
-    description: 'Complete guide to shower door installation from consultation to final inspection. Learn preparation steps, timeline, and what to expect during professional installation.',
+    description: 'Complete guide to shower door installation — consultation to final inspection. Learn preparation steps, timeline, and what to expect.',
     canonical: `${BASE_URL}/blog/installation-process`,
     ogImage: DEFAULT_OG_IMAGE,
   },

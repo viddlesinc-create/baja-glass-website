@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Phone, Star, Check } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
+import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 
 const ShowerEnclosuresLasVegas = () => {
   const enclosureTypes = [
@@ -442,6 +443,7 @@ const ShowerEnclosuresLasVegas = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

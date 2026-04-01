@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Phone, Home, Shield, Clock, CheckCircle, Star, Wrench } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 const brokenWindowLasVegas = "/images/broken-window-las-vegas.jpg";
 
 const ResidentialGlassRepair = () => {
@@ -285,6 +286,7 @@ const ResidentialGlassRepair = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };
