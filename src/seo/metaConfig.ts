@@ -13,7 +13,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/shower-doors-las-vegas': {
     title: 'Custom Shower Doors Las Vegas | Frameless & Sliding Glass',
-    description: 'Looking for shower doors in Las Vegas? Baja Glass designs and installs frameless, semi-frameless and sliding glass shower doors. Free in-home estimate, fast local installation.',
+    description: 'Shower doors in Las Vegas by Baja Glass. Frameless, semi-frameless and sliding options. Free in-home estimate, fast local installation.',
     canonical: `${BASE_URL}/shower-doors-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
