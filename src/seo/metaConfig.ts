@@ -31,7 +31,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/reviews': {
     title: 'Customer Reviews | Baja Glass & Mirror Las Vegas',
-    description: 'See why Las Vegas homeowners trust Baja Glass & Mirror for frameless shower doors and custom glass. Read real reviews from Henderson, Summerlin and Paradise customers.',
+    description: 'Real reviews from Henderson, Summerlin and Paradise customers. See why Las Vegas homeowners trust Baja Glass for shower doors.',
     canonical: `${BASE_URL}/reviews`,
     ogImage: DEFAULT_OG_IMAGE,
   },
