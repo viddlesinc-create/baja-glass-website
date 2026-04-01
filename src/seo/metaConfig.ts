@@ -61,12 +61,6 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/shower-doors-las-vegas/frameless`,
     ogImage: `${BASE_URL}/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png`,
   },
-  '/shower-doors-las-vegas/semi-frameless': {
-    title: 'Semi-Frameless & Framed Shower Doors Las Vegas | Baja Glass & Mirror',
-    description: 'Professional semi-frameless and framed shower door installation in Las Vegas. Balanced style with strategic support. Multiple glass and hardware finish options.',
-    canonical: `${BASE_URL}/shower-doors-las-vegas/semi-frameless`,
-    ogImage: `${BASE_URL}/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png`,
-  },
   '/shower-doors-las-vegas/semi-frameless-framed': {
     title: 'Semi-Frameless & Framed Shower Doors Las Vegas | Baja Glass & Mirror',
     description: 'Professional semi-frameless and framed shower door installation in Las Vegas. Balanced style with strategic support. Multiple glass and hardware finish options.',
