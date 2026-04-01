@@ -163,7 +163,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/blog/installation-process': {
     title: 'Shower Door Installation Process | What to Expect - Baja Glass & Mirror',
-    description: 'Complete guide to shower door installation from consultation to final inspection. Learn preparation steps, timeline, and what to expect during professional installation.',
+    description: 'Complete guide to shower door installation — consultation to final inspection. Learn preparation steps, timeline, and what to expect.',
     canonical: `${BASE_URL}/blog/installation-process`,
     ogImage: DEFAULT_OG_IMAGE,
   },

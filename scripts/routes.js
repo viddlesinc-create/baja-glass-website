@@ -6,7 +6,6 @@ export const routes = [
   "/glass-company-las-vegas/office-enclosures",
   "/shower-doors-las-vegas",
   "/shower-doors-las-vegas/frameless",
-  "/shower-doors-las-vegas/semi-frameless",
   "/shower-doors-las-vegas/semi-frameless-framed",
   "/shower-doors-las-vegas/sliding",
   "/shower-doors-las-vegas/hinged",
