@@ -136,8 +136,7 @@ function App() {
               <Route path="/contact-us" element={<RedirectComponent to="/contact" />} />
               <Route path="/contact-us/*" element={<RedirectComponent to="/contact" />} />
               
-              {/* Semi-frameless URL variations */}
-              <Route path="/shower-doors-las-vegas/semi-frameless" element={<RedirectComponent to="/shower-doors-las-vegas/semi-frameless-framed" />} />
+              <Route path="/shower-doors-las-vegas/semi-frameless" element={<SemiFramelessShowerDoors />} />
               
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

@@ -57,6 +57,12 @@ try {
     { path: 'about/index.html', expectTitleContains: 'About' },
     { path: 'contact/index.html', expectTitleContains: 'Contact' },
     { path: 'shower-doors-las-vegas/index.html', expectTitleContains: 'Shower' },
+    {
+      path: 'shower-doors-las-vegas/semi-frameless/index.html',
+      expectTitleContains: 'Semi-Frameless',
+      expectH1Contains: 'North Las Vegas Semi',
+      expectBodyContains: 'At Baja Glass, we measure, fabricate, and install units built for everyday reliability'
+    },
     { path: 'blog/index.html', expectTitleContains: 'Blog' },
     { path: 'faq/index.html', expectTitleContains: 'FAQ' },
   ];
@@ -72,12 +78,23 @@ try {
     const content = fs.readFileSync(filePath, 'utf-8');
     const titleMatch = content.match(/<title[^>]*>([^<]+)<\/title>/i);
     const title = titleMatch ? titleMatch[1] : '(no title found)';
+    const h1Match = content.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+    const h1 = h1Match ? h1Match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() : '(no h1 found)';
     
     if (title === HOMEPAGE_TITLE || title === '(no title found)') {
       console.error(`❌ WRONG TITLE: ${check.path} → "${title}"`);
       verifyFailed = true;
+    } else if (check.expectTitleContains && !title.includes(check.expectTitleContains)) {
+      console.error(`❌ TITLE MISMATCH: ${check.path} → "${title}"`);
+      verifyFailed = true;
+    } else if (check.expectH1Contains && !h1.includes(check.expectH1Contains)) {
+      console.error(`❌ H1 MISMATCH: ${check.path} → "${h1}"`);
+      verifyFailed = true;
+    } else if (check.expectBodyContains && !content.includes(check.expectBodyContains)) {
+      console.error(`❌ BODY MISMATCH: ${check.path} missing expected page-specific content`);
+      verifyFailed = true;
     } else {
-      console.log(`✅ ${check.path} → "${title}"`);
+      console.log(`✅ ${check.path} → "${title}" | H1: "${h1}"`);
     }
   }
 
