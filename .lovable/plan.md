@@ -1,51 +1,94 @@
 
 
-# Fix: Remove `_redirects` File That Overrides Prerendered Content
+# Plan: ServiceAreasBlock, Fix Non-Canonical Sitemap URLs, Orphan Pages, and Meta Description Audit
 
-## Problem
+## Summary
 
-The `_redirects` file written by `build-ssr.js` (line 114) contains `/* /index.html 200`. On Netlify, `_redirects` rules are processed **before** `netlify.toml` rules. Unlike `netlify.toml` where `force = false` means "check static files first," the `_redirects` format has no `force` concept — a `200` rewrite always proxies to the target. This means every request hits `/index.html` regardless of whether a prerendered file exists.
+Four issues to fix:
+1. **Build a ServiceAreasBlock component** — a reusable block of city links added to the bottom of service pages for internal linking
+2. **Remove non-canonical URL from sitemap** — `/shower-doors-las-vegas/semi-frameless` 301-redirects to `/semi-frameless-framed`, so it should not be in the sitemap or routes list
+3. **Fix orphan pages** — `/faq` and `/shower-enclosures-las-vegas` are not linked from the header or footer navigation
+4. **Trim meta descriptions over 160 characters** — at least 7 pages have descriptions exceeding 160 chars
 
-The `netlify.toml` already has the correct SPA catch-all with `force = false` (lines 175-179), which is sufficient.
+---
 
-## Plan
+## 1. Create ServiceAreasBlock Component
 
-### 1. Remove `_redirects` generation from `scripts/build-ssr.js` (lines 112-115)
+**New file: `src/components/ServiceAreasBlock.tsx`**
 
-Delete the entire Step 8 block that writes `_redirects`. The `netlify.toml` catch-all with `force = false` handles SPA fallback correctly while respecting static files.
+A simple, reusable component that renders a grid of internal links to all 6 location pages plus the Areas Served page. Styled to match existing card/section patterns. Includes a heading like "Serving the Greater Las Vegas Area" and links to Henderson, Summerlin, Paradise, Spring Valley, Enterprise, and Green Valley.
 
-### 2. Improve 404 handling in `netlify.toml`
+**Add it to the bottom of these service pages** (before the closing `</div>`):
+- `src/pages/ShowerDoorsHub.tsx`
+- `src/pages/FramelessShowerDoors.tsx`
+- `src/pages/SemiFramelessShowerDoors.tsx`
+- `src/pages/SlidingShowerDoors.tsx`
+- `src/pages/HingedShowerDoors.tsx`
+- `src/pages/CustomEnclosures.tsx`
+- `src/pages/SteamShowerEnclosures.tsx`
+- `src/pages/ShowerEnclosuresLasVegas.tsx`
+- `src/pages/GlassCompanyLasVegas.tsx`
+- `src/pages/ResidentialGlassRepair.tsx`
+- `src/pages/OfficeEnclosures.tsx`
 
-The current catch-all serves `index.html` with status `200` for non-existent pages. This is fine for client-side routing (React Router shows the NotFound component), but search engines see a `200` for missing pages.
+---
 
-**No change needed here for now** — Netlify automatically serves `dist/404.html` with a 404 status when no static file matches and no redirect applies. However, the current `/* /index.html 200` catch-all in `netlify.toml` prevents this from ever triggering. We have two options:
+## 2. Remove Non-Canonical URL from Sitemap
 
-**Option A (safe, recommended):** Keep the `netlify.toml` catch-all as-is (`200`). Client-side React Router handles 404 display. Search engines get `200` but see "Page Not Found" content — not ideal but functional.
+`/shower-doors-las-vegas/semi-frameless` is 301-redirected to `/shower-doors-las-vegas/semi-frameless-framed` in `netlify.toml`. Having the redirect source in the sitemap tells Google to crawl a URL that immediately bounces — wastes crawl budget and confuses indexing.
 
-**Option B (better SEO):** Change the catch-all to serve `404.html` with status `404`:
-```toml
-[[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
-  force = false
-```
-This breaks client-side SPA navigation for unprerendered routes. Only safe if ALL routes are prerendered.
+**Changes:**
+- **`scripts/routes.js`** — Remove `/shower-doors-las-vegas/semi-frameless` from the routes array (line 9)
+- **`public/sitemap.xml`** — Remove the `<url>` entry for `/shower-doors-las-vegas/semi-frameless` (or regenerate)
+- **`src/seo/metaConfig.ts`** — Remove the `/shower-doors-las-vegas/semi-frameless` entry (lines 64-69), since it's a redirect target and should never serve its own meta
 
-Since all 35 routes ARE prerendered, **Option B is safe** and gives proper 404 status codes.
+---
 
-## Files Changed
+## 3. Fix Orphan Pages
+
+These pages exist in the router but aren't linked from header or footer navigation:
+
+| Page | Current linkage | Fix |
+|------|----------------|-----|
+| `/faq` | Only linked from NotFound and SiteLinks | Add "FAQ" to Footer quickLinks array |
+| `/shower-enclosures-las-vegas` | Linked from ShowerDoorsHub and SiteLinks but not footer/header | Add to Sitemap.tsx under "Shower Doors & Enclosures" section, and to Footer serviceLinks |
+| `/glass-company-las-vegas` sub-pages | Footer only has hub link | Already linked from SiteLinks and Sitemap page — acceptable |
+
+**Changes:**
+- **`src/components/Footer.tsx`** — Add `{ name: "FAQ", href: "/faq" }` to `quickLinks` array
+- **`src/components/Footer.tsx`** — Add `{ name: "Shower Enclosures", href: "/shower-enclosures-las-vegas" }` to `serviceLinks` array
+- **`src/pages/Sitemap.tsx`** — Add `{ name: "Shower Enclosures Las Vegas", href: "/shower-enclosures-las-vegas" }` to the "Shower Doors & Enclosures" section, and add `{ name: "FAQ", href: "/faq" }` to the "Main Pages" section
+
+---
+
+## 4. Meta Descriptions Over 160 Characters
+
+These descriptions need trimming (current char counts in parentheses):
+
+| Route | Current length | Shortened to |
+|-------|---------------|-------------|
+| `/` | ~178 | "Local Las Vegas glass company. Frameless shower doors, custom enclosures and mirrors. Serving Henderson & Summerlin. Free estimates." |
+| `/shower-doors-las-vegas` | ~176 | "Shower doors in Las Vegas by Baja Glass. Frameless, semi-frameless and sliding options. Free in-home estimate, fast local installation." |
+| `/glass-company-las-vegas` | ~167 | "Trusted Las Vegas glass company for shower doors, mirrors, windows and commercial glass. Licensed and insured. Free quotes." |
+| `/gallery` | ~180 | "Frameless shower door gallery — completed projects across Las Vegas. Get inspiration for your custom glass shower or mirror installation." |
+| `/reviews` | ~165 | "Real reviews from Henderson, Summerlin and Paradise customers. See why Las Vegas homeowners trust Baja Glass for shower doors." |
+| `/contact` | ~165 | "Request a free quote for frameless shower doors or custom glass in Las Vegas. Call or fill out our form to schedule a measurement." |
+| `/about` | ~175 | "Locally owned Las Vegas glass company specializing in frameless shower doors and custom glass. Meet the Baja Glass & Mirror team." |
+| `/blog/installation-process` | ~170 | "Complete guide to shower door installation — consultation to final inspection. Learn preparation steps, timeline, and what to expect." |
+
+**File changed:** `src/seo/metaConfig.ts` — update the `description` field for each route listed above.
+
+---
+
+## Files Changed Summary
 
 | File | Change |
 |------|--------|
-| `scripts/build-ssr.js` | Remove lines 112-115 (Step 8: `_redirects` generation) |
-| `netlify.toml` | Change SPA catch-all from `/index.html` status `200` → `/404.html` status `404` |
-
-## Verification
-
-After deploy:
-- `/about` → serves `dist/about/index.html` with unique content ✅
-- `/contact` → serves `dist/contact/index.html` with unique content ✅  
-- `/shower-doors-las-vegas/semi-frameless` → 301 redirect to `/semi-frameless-framed` ✅
-- `/this-does-not-exist` → returns 404 status with 404.html ✅
+| `src/components/ServiceAreasBlock.tsx` | **NEW** — reusable city links component |
+| `src/components/Footer.tsx` | Add FAQ and Shower Enclosures links |
+| `src/pages/Sitemap.tsx` | Add FAQ and Shower Enclosures entries |
+| `src/seo/metaConfig.ts` | Trim 8 meta descriptions + remove semi-frameless entry |
+| `scripts/routes.js` | Remove `/shower-doors-las-vegas/semi-frameless` |
+| `public/sitemap.xml` | Remove semi-frameless URL entry |
+| 11 service page files | Import and add `<ServiceAreasBlock />` |
 
