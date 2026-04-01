@@ -109,10 +109,12 @@ try {
   fs.writeFileSync(path.join(distDir, '404.html'), notFoundHtml);
   console.log('✅ 404.html created');
 
-  // Step 8: Generate _redirects fallback for SPA catch-all
-  console.log('\n📄 Writing _redirects SPA fallback...');
-  fs.writeFileSync(path.join(distDir, '_redirects'), '/* /index.html 200\n');
-  console.log('✅ _redirects created');
+  // Step 8: Remove any _redirects file to avoid overriding prerendered content
+  const redirectsPath = path.join(distDir, '_redirects');
+  if (fs.existsSync(redirectsPath)) {
+    fs.unlinkSync(redirectsPath);
+    console.log('🗑️ Removed _redirects file (netlify.toml handles routing)');
+  }
 
   console.log('\n✨ SSG build complete!');
   console.log('📦 Deploy the dist/ folder to Netlify\n');
