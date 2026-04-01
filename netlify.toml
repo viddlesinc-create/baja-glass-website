@@ -166,11 +166,7 @@
 # SPA CATCH-ALL (must be LAST)
 # ==========================================
 
-[[redirects]]
-  from = "/.netlify/*"
-  to = "/.netlify/:splat"
-  status = 200
-  force = true
+
 
 [[redirects]]
   from = "/*"
