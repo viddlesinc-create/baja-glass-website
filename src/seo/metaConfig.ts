@@ -25,7 +25,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/gallery': {
     title: 'Frameless Shower Door Gallery | Baja Glass & Mirror Las Vegas',
-    description: 'View our frameless shower door gallery to see completed projects across Las Vegas. Get inspiration for your next custom glass shower or mirror installation with Baja Glass & Mirror.',
+    description: 'Frameless shower door gallery — completed projects across Las Vegas. Get inspiration for your custom glass shower or mirror installation.',
     canonical: `${BASE_URL}/gallery`,
     ogImage: DEFAULT_OG_IMAGE,
   },
