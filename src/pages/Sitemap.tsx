@@ -15,6 +15,7 @@ const Sitemap = () => {
         { name: "Customer Reviews", href: "/reviews" },
         { name: "Areas Served", href: "/areas-served" },
         { name: "Resources", href: "/resources" },
+        { name: "FAQ", href: "/faq" },
       ]
     },
     {
