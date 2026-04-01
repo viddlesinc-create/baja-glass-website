@@ -443,6 +443,7 @@ const ShowerEnclosuresLasVegas = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

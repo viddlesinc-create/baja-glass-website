@@ -446,6 +446,7 @@ const ShowerDoorsHub = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

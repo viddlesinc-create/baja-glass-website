@@ -389,6 +389,7 @@ const FramelessShowerDoors = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

@@ -605,6 +605,7 @@ const GlassCompanyLasVegas = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

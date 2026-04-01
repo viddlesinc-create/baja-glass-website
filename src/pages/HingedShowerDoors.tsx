@@ -320,6 +320,7 @@ const HingedShowerDoors = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

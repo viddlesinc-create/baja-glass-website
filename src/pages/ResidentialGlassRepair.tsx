@@ -286,6 +286,7 @@ const ResidentialGlassRepair = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

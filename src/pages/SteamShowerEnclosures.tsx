@@ -432,6 +432,7 @@ const SteamShowerEnclosures = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

@@ -456,6 +456,7 @@ const CustomEnclosures = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

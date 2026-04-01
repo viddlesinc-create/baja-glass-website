@@ -349,6 +349,7 @@ const OfficeEnclosures = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };

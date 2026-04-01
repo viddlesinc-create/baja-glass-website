@@ -361,6 +361,7 @@ const SemiFramelessShowerDoors = () => {
           </div>
         </div>
       </section>
+      <ServiceAreasBlock />
     </div>
   );
 };
