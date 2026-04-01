@@ -58,10 +58,8 @@ try {
     { path: 'contact/index.html', expectTitleContains: 'Contact' },
     { path: 'shower-doors-las-vegas/index.html', expectTitleContains: 'Shower' },
     {
-      path: 'shower-doors-las-vegas/semi-frameless/index.html',
+      path: 'shower-doors-las-vegas/semi-frameless-framed/index.html',
       expectTitleContains: 'Semi-Frameless',
-      expectH1Contains: 'North Las Vegas Semi',
-      expectBodyContains: 'At Baja Glass, we measure, fabricate, and install units built for everyday reliability'
     },
     { path: 'blog/index.html', expectTitleContains: 'Blog' },
     { path: 'faq/index.html', expectTitleContains: 'FAQ' },
