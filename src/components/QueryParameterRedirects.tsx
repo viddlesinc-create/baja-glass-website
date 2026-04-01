@@ -6,6 +6,8 @@ const QueryParameterRedirects = () => {
   const location = useLocation();
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
     const urlParams = new URLSearchParams(location.search);
     
     // Handle WordPress page_id redirects
@@ -29,7 +31,6 @@ const QueryParameterRedirects = () => {
                              urlParams.has('page_id');
 
     if (hasUnwantedParams) {
-      // Clean URL by removing all query parameters
       navigate(location.pathname, { replace: true });
     }
   }, [location, navigate]);

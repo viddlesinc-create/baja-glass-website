@@ -5,6 +5,10 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# IMPORTANT: Disable Netlify's built-in "Prerendering" under
+# Site Settings > Build & Deploy > Post Processing > Prerendering.
+# Our build generates static HTML per route; the plugin conflicts with that.
+#
 # ==========================================
 # PATH-BASED 301 REDIRECTS (before SPA catch-all)
 # ==========================================
