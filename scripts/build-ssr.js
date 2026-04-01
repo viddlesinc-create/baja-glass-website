@@ -24,7 +24,7 @@ try {
 
   // Step 3: Build the application
   console.log('\n⚡ Building application...');
-  execSync('vite build', { cwd: root, stdio: 'inherit' });
+  execSync('npx vite build', { cwd: root, stdio: 'inherit' });
 
   // Step 4: Copy static assets
   console.log('\n📁 Copying static assets...');
