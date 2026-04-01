@@ -6,6 +6,22 @@ import { routes } from './routes.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+/**
+ * Strip hardcoded default OG / Twitter meta tags from the HTML template
+ * so that Helmet-injected page-specific tags are the only ones present.
+ */
+function stripDefaultMetaTags(html) {
+  // Remove default OG meta tags
+  html = html.replace(/<meta\s+property="og:[^"]*"\s+content="[^"]*"\s*\/?>/gi, '');
+  // Remove default Twitter meta tags
+  html = html.replace(/<meta\s+name="twitter:[^"]*"\s+content="[^"]*"\s*\/?>/gi, '');
+  // Remove any default <title>…</title> so Helmet's title takes precedence
+  html = html.replace(/<title>[^<]*<\/title>/i, '');
+  // Clean up resulting blank lines
+  html = html.replace(/\n\s*\n\s*\n/g, '\n');
+  return html;
+}
+
 async function prerender() {
   console.log('🚀 Starting SSG prerendering...');
   
@@ -20,7 +36,7 @@ async function prerender() {
     fs.mkdirSync(distDir, { recursive: true });
   }
 
-  const template = fs.readFileSync(path.join(__dirname, '../dist/index.html'), 'utf-8');
+  const rawTemplate = fs.readFileSync(path.join(__dirname, '../dist/index.html'), 'utf-8');
 
   let successCount = 0;
   let errorCount = 0;
@@ -30,9 +46,8 @@ async function prerender() {
       const { render } = await vite.ssrLoadModule('/src/entry-server.tsx');
       const { html, helmetContext } = await render(route);
       
-      // Extract helmet data
-      const { helmet } = helmetContext;
-      let finalHtml = template;
+      // Start from the template with default meta stripped
+      let finalHtml = stripDefaultMetaTags(rawTemplate);
       
       // Replace root div with SSR content
       finalHtml = finalHtml.replace(
@@ -41,20 +56,18 @@ async function prerender() {
       );
       
       // Inject helmet tags if available
+      const { helmet } = helmetContext;
       if (helmet) {
-        if (helmet.title) finalHtml = finalHtml.replace('</head>', `${helmet.title.toString()}</head>`);
-        if (helmet.meta) finalHtml = finalHtml.replace('</head>', `${helmet.meta.toString()}</head>`);
-        if (helmet.link) finalHtml = finalHtml.replace('</head>', `${helmet.link.toString()}</head>`);
-        if (helmet.script) finalHtml = finalHtml.replace('</head>', `${helmet.script.toString()}</head>`);
-      }
-      
-      // Check if this is a 404 page
-      const is404 = html.includes('404') || html.includes('Page not found') || html.includes('Page Not Found');
-      if (is404) {
-        finalHtml = finalHtml.replace(
-          '</head>',
-          '<meta name="prerender-status-code" content="404"></head>'
-        );
+        const headTags = [
+          helmet.title ? helmet.title.toString() : '',
+          helmet.meta ? helmet.meta.toString() : '',
+          helmet.link ? helmet.link.toString() : '',
+          helmet.script ? helmet.script.toString() : '',
+        ].filter(Boolean).join('\n');
+
+        if (headTags) {
+          finalHtml = finalHtml.replace('</head>', `${headTags}\n</head>`);
+        }
       }
 
       const routePath = route === '/' ? '/index' : route;
