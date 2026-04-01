@@ -43,7 +43,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/contact': {
     title: 'Contact Baja Glass & Mirror | Frameless Shower Doors in Las Vegas',
-    description: 'Request a free quote for frameless shower doors or custom glass in Las Vegas. Contact Baja Glass & Mirror today by phone or form to schedule your in-home measurement.',
+    description: 'Request a free quote for frameless shower doors or custom glass in Las Vegas. Call or fill out our form to schedule a measurement.',
     canonical: `${BASE_URL}/contact`,
     ogImage: DEFAULT_OG_IMAGE,
   },
