@@ -45,10 +45,14 @@ async function prerender() {
     try {
       const { render } = await vite.ssrLoadModule('/src/entry-server.tsx');
       const { html, helmetContext } = await render(route);
+
+      // Validate that we got real content, not an empty shell
+      if (!html || html.length < 500) {
+        console.warn(`⚠️  ${route}: rendered HTML is suspiciously short (${html?.length || 0} chars) — possible fallback`);
+      }
       
       // Start from the template with default meta stripped
       let finalHtml = stripDefaultMetaTags(rawTemplate);
-      
       // Replace root div with SSR content
       finalHtml = finalHtml.replace(
         '<div id="root"></div>',
