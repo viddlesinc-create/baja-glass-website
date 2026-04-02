@@ -75,14 +75,15 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" onClick={() => window.scrollTo(0, 0)}>
-            <OptimizedImage 
-              src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
+            <img 
+              src="/images/logo-320.webp" 
               alt="Baja Glass — Shower Doors & Glass in Las Vegas"
               className="h-16 w-auto"
               width={160}
-              height={64}
-              sizes="160px"
-              priority={true}
+              height={160}
+              loading="eager"
+              decoding="sync"
+              fetchPriority="high"
             />
           </Link>
 
