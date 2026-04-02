@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import PhoneNumber from "@/components/PhoneNumber";
 import { GetDirections, GOOGLE_MAPS_URL } from "@/components/GetDirections";
 import { trackMapInteraction } from "@/lib/analytics";
-import OptimizedImage from "@/components/OptimizedImage";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
