@@ -56,8 +56,32 @@ const OptimizedImage = ({
 }: OptimizedImageProps) => {
   const [fallbackToOriginal, setFallbackToOriginal] = useState(false);
 
-  // During SSR or in development, render a simple img tag without non-standard attributes
-  if (isSSR || !isNetlify() || fallbackToOriginal) {
+  // During SSR, use Netlify CDN URLs so prerendered HTML points to optimized images
+  if (isSSR) {
+    const ssrWidths = width <= 200
+      ? [width, width * 2, width * 3].filter(w => w <= 600)
+      : [400, 800, 1200, 1920].filter(w => w <= width * 2);
+    const ssrWebpSrcSet = ssrWidths
+      .map(w => `${getNetlifyImageUrl(src, w, 'webp')} ${w}w`)
+      .join(', ');
+    return (
+      <picture>
+        <source type="image/webp" srcSet={ssrWebpSrcSet} sizes={sizes} />
+        <img
+          src={getNetlifyImageUrl(src, 1200, 'webp')}
+          alt={alt}
+          className={className}
+          width={width}
+          height={height}
+          fetchPriority={priority ? 'high' : 'auto'}
+          loading={priority ? 'eager' : 'lazy'}
+          decoding={priority ? 'sync' : 'async'}
+        />
+      </picture>
+    );
+  }
+
+  if (!isNetlify() || fallbackToOriginal) {
     return (
       <img
         src={src}
@@ -65,6 +89,7 @@ const OptimizedImage = ({
         className={className}
         width={width}
         height={height}
+        fetchPriority={priority ? 'high' : 'auto'}
         loading={priority ? 'eager' : 'lazy'}
         decoding={priority ? 'sync' : 'async'}
       />
