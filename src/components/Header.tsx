@@ -76,8 +76,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" onClick={() => window.scrollTo(0, 0)}>
             <img 
-              src="/images/logo-320.webp" 
-              alt="Baja Glass — Shower Doors & Glass in Las Vegas"
+              src="/images/logo-160.webp" 
+              alt="Baja Glass — Shower Doors &amp; Glass in Las Vegas"
               className="h-16 w-auto"
               width={160}
               height={160}
@@ -173,8 +173,8 @@ const Header = () => {
                 <div className="flex flex-col gap-6 mt-6">
                   <Link to="/" className="flex items-center gap-3" onClick={() => { setIsOpen(false); window.scrollTo(0, 0); }}>
                     <img 
-                      src="/images/logo-320.webp" 
-                      alt="Baja Glass — Shower Doors & Glass in Las Vegas"
+                      src="/images/logo-160.webp" 
+                      alt="Baja Glass — Shower Doors &amp; Glass in Las Vegas"
                       className="h-10 w-auto"
                       width={100}
                       height={100}
