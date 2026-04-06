@@ -39,7 +39,7 @@ const Reviews = lazy(() => import("./pages/Reviews"));
 const ResidentialGlassRepair = lazy(() => import("./pages/ResidentialGlassRepair"));
 const OfficeEnclosures = lazy(() => import("./pages/OfficeEnclosures"));
 const FAQ = lazy(() => import("./pages/FAQ"));
-const ShowerDoorReplacement = lazy(() => import("./pages/ShowerDoorReplacement"));
+
 const ShowerDoorInstallationLasVegas = lazy(() => import("./pages/ShowerDoorInstallationLasVegas"));
 
 
@@ -138,8 +138,6 @@ function App() {
               <Route path="/services/*" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
               <Route path="/contact-us" element={<RedirectComponent to="/contact" />} />
               <Route path="/contact-us/*" element={<RedirectComponent to="/contact" />} />
-              
-              <Route path="/shower-doors-las-vegas/semi-frameless" element={<SemiFramelessShowerDoors />} />
               
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
