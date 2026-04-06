@@ -40,6 +40,7 @@ const ResidentialGlassRepair = lazy(() => import("./pages/ResidentialGlassRepair
 const OfficeEnclosures = lazy(() => import("./pages/OfficeEnclosures"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const ShowerDoorReplacement = lazy(() => import("./pages/ShowerDoorReplacement"));
+const ShowerDoorInstallationLasVegas = lazy(() => import("./pages/ShowerDoorInstallationLasVegas"));
 
 
 // Location pages
@@ -114,9 +115,9 @@ function App() {
               <Route path="/sitemap" element={<Sitemap />} />
               <Route path="/reviews" element={<Reviews />} />
               <Route path="/faq" element={<FAQ />} />
-              <Route path="/shower-door-replacement-las-vegas" element={<ShowerDoorReplacement />} />
+              <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
+              <Route path="/shower-door-replacement-las-vegas" element={<RedirectComponent to="/shower-door-installation-las-vegas" />} />
               <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
-              <Route path="/shower-door-installation-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
               <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />
               <Route path="/shower-doors-summerlin-nv" element={<ShowerDoorsSummerlin />} />
               <Route path="/shower-doors-paradise-nv" element={<ShowerDoorsParadise />} />
