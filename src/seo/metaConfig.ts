@@ -219,6 +219,12 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/sitemap`,
     ogImage: DEFAULT_OG_IMAGE,
   },
+  '/shower-door-replacement-las-vegas': {
+    title: 'Shower Door Replacement Las Vegas | Baja Glass',
+    description: 'Professional shower door replacement in Las Vegas. We remove old doors and install frameless, sliding, or custom glass. Free estimates. Fast turnaround.',
+    canonical: `${BASE_URL}/shower-door-replacement-las-vegas`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
 };
 
 export const defaultSEO: SEOMeta = {
