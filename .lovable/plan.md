@@ -1,49 +1,28 @@
 
 
-## Analysis
+## Recommendation: Enrich the Shower Doors Hub — No New Page Needed
 
-The query "shower door replacement near me" is a high-intent, transactional keyword. Currently:
-- No dedicated URL targets it
-- Content is fragmented across `/shower-doors-las-vegas`, `/shower-doors-las-vegas/frameless`, `/shower-doors-las-vegas/repair` (which redirects), and location pages
-- The `/shower-doors-las-vegas` hub partially covers it but its H1 and meta are focused on "Shower Doors Las Vegas" broadly
+These three queries share identical intent with your existing `/shower-doors-las-vegas` hub. Building separate pages would split authority and create cannibalization. The fix is optimizing the hub to also rank for "shower glass" variants.
 
-## Plan: Create a Shower Door Replacement Page
+### What Changes
 
-### New file: `src/pages/ShowerDoorReplacement.tsx`
+**1. Update meta tags in `src/seo/metaConfig.ts`**
+- Title: `Shower Glass Doors Las Vegas | Frameless, Sliding & Custom - Baja Glass`
+- Description: Weave in "shower glass doors," "bath glass shower doors," and "near me" phrasing naturally
 
-A dedicated service page at `/shower-door-replacement-las-vegas` targeting:
-- **Primary**: "shower door replacement near me", "shower door replacement las vegas"
-- **Secondary**: "replace shower door las vegas", "shower door upgrade"
+**2. Enrich on-page content in `src/pages/ShowerDoorsHub.tsx`**
+- Add "shower glass" and "bath glass" phrasing into the intro paragraph and H2 subheadings
+- Add a short section or paragraph addressing "shower glass doors" as a concept (e.g., "Whether you're searching for shower glass doors, bath glass enclosures, or custom shower panels...")
+- Keep H1 focused but broaden supporting copy
 
-**Page structure** (following existing service page patterns like FramelessShowerDoors.tsx):
+**3. Add FAQ entries to the hub**
+- "What are shower glass doors?" — brief answer distinguishing frameless glass from framed/acrylic
+- "Do you install bath glass shower doors?" — yes, with link to product types
 
-1. **SEO Head** — H1: "Shower Door Replacement Las Vegas", meta description targeting the keyword
-2. **Structured Data** — Service schema for "Shower Door Replacement" + BreadcrumbList + FAQ
-3. **Hero section** — Reuse existing hero image, strong CTA
-4. **"Signs You Need a Replacement"** — Content section (cracked glass, outdated frames, leaks, hard water damage)
-5. **Replacement process steps** — Inspect → Measure → Remove → Install
-6. **Types of replacement options** — Cards linking to frameless, semi-frameless, sliding, hinged pages (internal linking)
-7. **FAQ section** — 4-5 questions targeting long-tail variants ("how much does shower door replacement cost", "how long does it take")
-8. **ServiceAreasBlock** — Reusable component already in use
-9. **Final CTA** — Phone number + contact link
+### Files Modified
+- `src/seo/metaConfig.ts` — updated title/description for `/shower-doors-las-vegas`
+- `src/pages/ShowerDoorsHub.tsx` — enriched copy + 2 FAQ entries
 
-### Route addition: `src/App.tsx`
-Add route: `/shower-door-replacement-las-vegas` → `ShowerDoorReplacement`
-
-### Update `scripts/routes.js`
-Add `/shower-door-replacement-las-vegas` to the routes array for prerendering
-
-### Update `public/sitemap.xml`
-Add the new URL entry
-
-### Internal linking updates
-- **ShowerDoorsHub.tsx**: Add a card/link for "Shower Door Replacement"
-- **Footer.tsx**: Add link under services section
-- **Header navigation**: No change needed (the hub dropdown covers service types)
-
-### Technical details
-- Lazy-loaded via `React.lazy()` like other pages
-- Uses `Helmet` for meta tags, same pattern as FramelessShowerDoors
-- Includes `ServiceAreasBlock` at bottom
-- LocalBusiness + Service structured data with "near me" signals (areaServed, geo coordinates)
+### Why Not a New Page
+All three queries have identical search intent. Google treats "shower glass doors," "shower doors glass," and "bath glass shower doors" as the same topic. A dedicated page would compete with your hub and dilute authority.
 
