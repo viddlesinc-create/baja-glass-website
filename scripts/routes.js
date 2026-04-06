@@ -34,7 +34,7 @@ export const routes = [
   "/blog/shower-door-installation-cost-las-vegas",
   "/blog/frameless-vs-semi-frameless-shower-doors",
   "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions",
-  "/shower-door-replacement-las-vegas"
+  "/shower-door-installation-las-vegas"
 ];
 
 export const domain = 'https://bajaglass.com';

@@ -22,7 +22,7 @@ const Footer = () => {
     { name: "Glass Company Services", href: "/glass-company-las-vegas" },
     { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
     { name: "Shower Enclosures", href: "/shower-enclosures-las-vegas" },
-    { name: "Shower Door Replacement", href: "/shower-door-replacement-las-vegas" },
+    { name: "Shower Door Installation", href: "/shower-door-installation-las-vegas" },
   ];
 
   const locationLinks = [
