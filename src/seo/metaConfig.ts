@@ -12,8 +12,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-las-vegas': {
-    title: 'Custom Shower Doors Las Vegas | Frameless & Sliding Glass',
-    description: 'Shower doors in Las Vegas by Baja Glass. Frameless, semi-frameless and sliding options. Free in-home estimate, fast local installation.',
+    title: 'Shower Glass Doors Las Vegas | Frameless & Custom',
+    description: 'Shower glass doors in Las Vegas. Frameless, semi-frameless, sliding and bath glass options. Free in-home estimate, fast local installation.',
     canonical: `${BASE_URL}/shower-doors-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
