@@ -64,6 +64,14 @@ const ShowerDoorsHub = () => {
       answer: "Yes. We specialize in full shower door replacements and upgrades—swapping out old glass, hardware, and seals for a modern, leak-free result."
     },
     {
+      question: "What are shower glass doors?",
+      answer: "Shower glass doors are glass panels—frameless, semi-frameless, or framed—used in place of shower curtains or acrylic enclosures. They're more durable, easier to clean, and give your bathroom a modern, open look."
+    },
+    {
+      question: "Do you install bath glass shower doors?",
+      answer: "Yes. We supply and install all styles of bath glass shower doors including frameless, sliding, hinged, and custom enclosures. We fabricate the glass ourselves—we don't install doors purchased from big-box stores."
+    },
+    {
       question: "What areas do you serve?",
       answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City, and nearby communities."
     }
@@ -295,12 +303,12 @@ const ShowerDoorsHub = () => {
                 <Star className="h-6 w-6 text-accent" />
               </div>
             </div>
-            <h2 className="text-3xl font-bold mb-6">Professional Shower Door Installation in Las Vegas</h2>
+            <h2 className="text-3xl font-bold mb-6">Shower Glass Doors & Bath Glass Installation in Las Vegas</h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-              At Baja Glass, we design, fabricate, and install shower doors that fit your space and style. From minimalist frameless designs to space‑saving sliders and <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>custom shower enclosures</Link>, every detail is measured and installed for a tight, leak‑resistant fit.
+              Whether you're searching for shower glass doors, bath glass shower doors, or custom shower panels, Baja Glass designs, fabricates, and installs every piece to fit your space. From minimalist frameless designs to space‑saving sliders and <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>custom shower enclosures</Link>, every detail is measured and installed for a tight, leak‑resistant fit.
             </p>
             <p className="text-muted-foreground mb-6">
-              Our expert <strong>frameless shower door installers</strong> handle everything from measurement to final walkthrough—delivering precision fit, clean silicone work, and dependable performance.
+              Our expert <strong>shower glass installers</strong> handle everything from measurement to final walkthrough—delivering precision fit, clean silicone work, and dependable performance.
             </p>
             <p className="text-muted-foreground mb-6">
               <strong>Rated 4.9/5 by Las Vegas homeowners</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
