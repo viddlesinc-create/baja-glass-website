@@ -78,10 +78,10 @@
   status = 301
   force = true
 
-# Removed pages: redirect to shower doors hub
+# Replacement URL consolidation
 [[redirects]]
-  from = "/shower-door-installation-las-vegas"
-  to = "/shower-doors-las-vegas"
+  from = "/shower-door-replacement-las-vegas"
+  to = "/shower-door-installation-las-vegas"
   status = 301
   force = true
 
@@ -164,7 +164,7 @@
   from = "/shower-doors-las-vegas/semi-frameless"
   to = "/shower-doors-las-vegas/semi-frameless-framed"
   status = 301
-  force = false
+  force = true
 
 # ==========================================
 # SPA CATCH-ALL (must be LAST)
