@@ -29,6 +29,7 @@ if (container.hasAttribute('data-ssr')) {
       </HelmetProvider>
     </QueryClientProvider>
   );
+  window.prerenderReady = true;
 } else {
   // Client-side render (development mode)
   createRoot(container).render(
