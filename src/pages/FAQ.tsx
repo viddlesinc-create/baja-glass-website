@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { Phone, HelpCircle, ChevronRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import {
-import { trackPhoneClick } from "@/lib/analytics";
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { trackPhoneClick } from "@/lib/analytics";
 
 const FAQ = () => {
   const faqCategories = [
