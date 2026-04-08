@@ -5,7 +5,6 @@ import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
-import { trackPhoneClick } from "@/lib/analytics";
 
 const semiFramelessGalleryImages = [
   { src: "/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png", alt: "Semi-frameless shower doors on bathtub", caption: "Semi-Frameless Design" },
@@ -102,7 +101,7 @@ const SemiFramelessShowerDoors = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("semi_frameless")}>
+                <a href="tel:+17023830779" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779
                 </a>
@@ -354,7 +353,7 @@ const SemiFramelessShowerDoors = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("semi_frameless")}>
+              <a href="tel:+17023830779" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 Call Now: (702) 383-0779
               </a>

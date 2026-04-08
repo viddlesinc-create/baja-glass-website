@@ -4,7 +4,6 @@ import { Phone, MapPin, Clock, Shield } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 const damagedShowerGlass = "/images/damaged-shower-glass.jpg";
 import PhoneNumber from "@/components/PhoneNumber";
-import { trackPhoneClick } from "@/lib/analytics";
 
 const ShowerGlassRepair = () => {
   const commonProblems = [{
@@ -265,7 +264,7 @@ const ShowerGlassRepair = () => {
             <p className="text-muted-foreground">4280 Reno Ave, Ste A, Las Vegas, NV 89118</p>
             <p className="text-2xl font-bold text-primary mt-4">(702) 383-0779</p>
             <Button variant="cta" size="lg" className="mt-6 w-full" asChild>
-              <a href="tel:+17023830779" className="flex items-center justify-center gap-2" onClick={() => trackPhoneClick("glass_repair")}>
+              <a href="tel:+17023830779" className="flex items-center justify-center gap-2">
                 <Phone className="h-5 w-5" />
                 Call for Emergency Service
               </a>

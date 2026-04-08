@@ -5,7 +5,6 @@ import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
-import { trackPhoneClick } from "@/lib/analytics";
 
 const hingedGalleryImages = [
   { src: "/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png", alt: "Hinged glass shower door with black fixtures", caption: "Modern Hinged Design" },
@@ -108,7 +107,7 @@ const HingedShowerDoors = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("hinged_doors")}>
+                <a href="tel:+17023830779" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779
                 </a>
@@ -313,7 +312,7 @@ const HingedShowerDoors = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("hinged_doors")}>
+              <a href="tel:+17023830779" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 Call Now: (702) 383-0779
               </a>

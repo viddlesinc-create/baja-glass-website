@@ -1,5 +1,4 @@
 import { Phone } from "lucide-react";
-import { trackPhoneClick } from "@/lib/analytics";
 
 /**
  * PhoneNumber Component
