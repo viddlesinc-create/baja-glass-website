@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Star, Shield, Clock, Award } from "lucide-react";
-import { trackPhoneClick, trackFormSubmission, trackCTAClick } from "@/lib/analytics";
+import { trackFormSubmission, trackCTAClick } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
 import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
@@ -107,9 +107,6 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
     }
   };
 
-  const handlePhoneClick = () => {
-    trackPhoneClick("landing_hero");
-  };
 
   const handleCTAClick = () => {
     trackCTAClick("get_quote", "landing_hero");

@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, MapPin, Star, Shield, Clock } from "lucide-react";
-import { trackPhoneClick, trackFormSubmission } from "@/lib/analytics";
+import { trackFormSubmission } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
 import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
@@ -90,9 +90,6 @@ export const FinalCTA = () => {
     }
   };
 
-  const handlePhoneClick = () => {
-    trackPhoneClick("landing_final_cta");
-  };
 
   return (
     <section id="get-quote" className="py-20 bg-gradient-to-br from-charcoal via-primary to-charcoal text-white">

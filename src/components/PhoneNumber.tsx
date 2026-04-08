@@ -40,9 +40,6 @@ export const PhoneNumber = ({
   className = "",
   showPrefix = false
 }: PhoneNumberProps) => {
-  const handleClick = () => {
-    trackPhoneClick(location);
-  };
 
   const content = (
     <>
@@ -61,7 +58,7 @@ export const PhoneNumber = ({
         href={`tel:${BUSINESS_PHONE_TEL}`}
         className={`flex items-center gap-2 ${className}`}
         aria-label={ariaLabel}
-        onClick={handleClick}
+        
         data-phone-number="true"
       >
         {content}

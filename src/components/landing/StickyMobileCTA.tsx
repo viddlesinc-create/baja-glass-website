@@ -1,15 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageSquare } from "lucide-react";
-import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { trackCTAClick } from "@/lib/analytics";
 
 interface StickyMobileCTAProps {
   onQuoteClick: () => void;
 }
 
 export const StickyMobileCTA = ({ onQuoteClick }: StickyMobileCTAProps) => {
-  const handlePhoneClick = () => {
-    trackPhoneClick("sticky_mobile_cta");
-  };
 
   const handleQuoteClick = () => {
     trackCTAClick("get_quote", "sticky_mobile_cta");
