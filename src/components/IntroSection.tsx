@@ -16,15 +16,15 @@ const IntroSection = () => {
           {/* Trust Badges */}
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             <Badge className="bg-accent/10 text-accent border-accent/20 px-4 py-2">
-              <Shield className="h-4 w-4 mr-2" />
+              <Shield className="h-4 w-4 mr-2" aria-hidden="true" />
               Licensed & Bonded
             </Badge>
             <Badge className="bg-accent/10 text-accent border-accent/20 px-4 py-2">
-              <Award className="h-4 w-4 mr-2" />
+              <Award className="h-4 w-4 mr-2" aria-hidden="true" />
               First Responder Owned
             </Badge>
             <Badge className="bg-accent/10 text-accent border-accent/20 px-4 py-2">
-              <Users className="h-4 w-4 mr-2" />
+              <Users className="h-4 w-4 mr-2" aria-hidden="true" />
               Family Operated
             </Badge>
           </div>
@@ -67,7 +67,7 @@ const IntroSection = () => {
                 key={index} 
                 className="bg-background rounded-xl p-6 text-center shadow-lg border border-border/50 hover:shadow-xl transition-shadow duration-300"
               >
-                <stat.icon className="h-8 w-8 mx-auto mb-3 text-accent" />
+                <stat.icon className="h-8 w-8 mx-auto mb-3 text-accent" aria-hidden="true" />
                 <div className="text-3xl md:text-4xl font-bold text-foreground mb-1">
                   {stat.value}
                 </div>
