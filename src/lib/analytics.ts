@@ -46,6 +46,14 @@ export const trackPhoneClick = (location?: string) => {
 
   pushToDataLayer('phone_click', eventData);
 
+  // Fire GA4 generate_lead event directly via gtag
+  fireGtagEvent('generate_lead', {
+    event_category: 'Contact',
+    event_label: 'Phone Call Click',
+    click_location: location || 'unknown',
+    page_location: window.location.href,
+  });
+
   console.log('DataLayer Event: phone_click', {
     location, 
     page: window.location.pathname 
