@@ -58,7 +58,6 @@ export const PhoneNumber = ({
         href={`tel:${BUSINESS_PHONE_TEL}`}
         className={`flex items-center gap-2 ${className}`}
         aria-label={ariaLabel}
-        
         data-phone-number="true"
       >
         {content}

@@ -121,7 +121,6 @@ export const FinalCTA = () => {
               <div className="space-y-4">
                 <a 
                   href="tel:+17023830779" 
-                  onClick={handlePhoneClick}
                   className="flex items-center gap-3 text-white hover:text-red-accent transition-colors"
                 >
                   <Phone className="h-6 w-6" />
@@ -259,7 +258,6 @@ export const FinalCTA = () => {
                   </p>
                   <a 
                     href="tel:+17023830779" 
-                    onClick={handlePhoneClick}
                     className="text-red-accent hover:text-red-accent-light font-semibold flex items-center justify-center gap-2"
                   >
                     <Phone className="h-5 w-5" />

@@ -171,7 +171,6 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
               >
                 <a 
                   href={`tel:${COMPANY_PHONE}`}
-                  onClick={handlePhoneClick}
                   className="flex items-center gap-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -191,7 +190,6 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                 <p className="text-white/90 mb-4">We'll contact you within 24-48 hours with your free quote.</p>
                 <a 
                   href={`tel:${COMPANY_PHONE}`}
-                  onClick={handlePhoneClick}
                   className="text-red-accent hover:text-red-accent-light font-semibold flex items-center justify-center gap-2"
                 >
                   <Phone className="h-5 w-5" />

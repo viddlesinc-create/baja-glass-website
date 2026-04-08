@@ -22,7 +22,6 @@ export const StickyMobileCTA = ({ onQuoteClick }: StickyMobileCTAProps) => {
         >
           <a
             href="tel:+17023830779"
-            onClick={handlePhoneClick}
             className="flex items-center justify-center gap-2"
           >
             <Phone className="h-5 w-5" />
