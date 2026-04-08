@@ -3,8 +3,18 @@
 declare global {
   interface Window {
     dataLayer?: Record<string, any>[];
+    gtag?: (...args: any[]) => void;
   }
 }
+
+/**
+ * Fire a GA4 event directly via gtag if available
+ */
+const fireGtagEvent = (eventName: string, params: Record<string, any>) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', eventName, params);
+  }
+};
 
 /**
  * Push event to dataLayer for GTM
