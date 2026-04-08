@@ -45,4 +45,5 @@ if (container.hasAttribute('data-ssr')) {
       </HelmetProvider>
     </QueryClientProvider>
   );
+  window.prerenderReady = true;
 }
