@@ -6,7 +6,6 @@ import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
-import { trackPhoneClick } from "@/lib/analytics";
 
 const CustomEnclosures = () => {
   const customEnclosureImages = [
@@ -449,7 +448,7 @@ const CustomEnclosures = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("custom_enclosures")}>
+              <a href="tel:+17023830779" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 Call Now: (702) 383-0779
               </a>

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { Phone, Building, Users, Eye, CheckCircle, Star, Briefcase } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
-import { trackPhoneClick } from "@/lib/analytics";
 
 const OfficeEnclosures = () => {
   const services = [
@@ -162,7 +161,7 @@ const OfficeEnclosures = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Commercial Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("office_enclosures")}>
+                <a href="tel:+17023830779" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
                   Call: (702) 383-0779
                 </a>
@@ -339,7 +338,7 @@ const OfficeEnclosures = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="secondary" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("office_enclosures")}>
+              <a href="tel:+17023830779" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 Call (702) 383-0779
               </a>

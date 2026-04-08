@@ -8,15 +8,6 @@ declare global {
 }
 
 /**
- * Fire a GA4 event directly via gtag if available
- */
-const fireGtagEvent = (eventName: string, params: Record<string, any>) => {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', eventName, params);
-  }
-};
-
-/**
  * Push event to dataLayer for GTM
  */
 const pushToDataLayer = (event: string, data: Record<string, any>) => {
@@ -25,38 +16,6 @@ const pushToDataLayer = (event: string, data: Record<string, any>) => {
   window.dataLayer.push({
     event,
     ...data
-  });
-};
-
-/**
- * Track phone click events for GTM and GA4
- */
-export const trackPhoneClick = (location?: string) => {
-  if (typeof window === 'undefined') return;
-  const eventData = {
-    event_category: 'contact',
-    event_label: location || 'general',
-    value: 1,
-    link_url: 'tel:+17023830779',
-    link_text: '(702) 383-0779',
-    page_location: window.location.href,
-    page_title: document.title,
-    click_location: location || 'unknown'
-  };
-
-  pushToDataLayer('phone_click', eventData);
-
-  // Fire GA4 generate_lead event directly via gtag
-  fireGtagEvent('generate_lead', {
-    event_category: 'Contact',
-    event_label: 'Phone Call Click',
-    click_location: location || 'unknown',
-    page_location: window.location.href,
-  });
-
-  console.log('DataLayer Event: phone_click', {
-    location, 
-    page: window.location.pathname 
   });
 };
 

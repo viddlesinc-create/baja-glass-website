@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Star, Shield, Clock, Award } from "lucide-react";
-import { trackPhoneClick, trackFormSubmission, trackCTAClick } from "@/lib/analytics";
+import { trackFormSubmission, trackCTAClick } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
 import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
@@ -107,9 +107,6 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
     }
   };
 
-  const handlePhoneClick = () => {
-    trackPhoneClick("landing_hero");
-  };
 
   const handleCTAClick = () => {
     trackCTAClick("get_quote", "landing_hero");
@@ -174,7 +171,6 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
               >
                 <a 
                   href={`tel:${COMPANY_PHONE}`}
-                  onClick={handlePhoneClick}
                   className="flex items-center gap-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -194,7 +190,6 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                 <p className="text-white/90 mb-4">We'll contact you within 24-48 hours with your free quote.</p>
                 <a 
                   href={`tel:${COMPANY_PHONE}`}
-                  onClick={handlePhoneClick}
                   className="text-red-accent hover:text-red-accent-light font-semibold flex items-center justify-center gap-2"
                 >
                   <Phone className="h-5 w-5" />

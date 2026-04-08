@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link, useLocation } from "react-router-dom";
 import { Star, Phone, MapPin, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { trackPhoneClick, trackHendersonConversion } from "@/lib/analytics";
+import { trackHendersonConversion } from "@/lib/analytics";
 import OptimizedImage from "@/components/OptimizedImage";
 import { getSEOConfig } from "@/seo/metaConfig";
 import PhoneNumber from "@/components/PhoneNumber";
