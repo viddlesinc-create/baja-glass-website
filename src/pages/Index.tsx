@@ -99,7 +99,7 @@ const Index = () => {
         {/* Hero Image - LCP Optimized with WebP + responsive srcset */}
         <div className="absolute inset-0">
           <OptimizedImage
-            src="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png"
+            src="/images/hero-shower-door-main.webp"
             alt="Modern frameless sliding shower doors with black hardware and pebble tile flooring by Baja Glass Las Vegas"
             className="w-full h-full object-cover opacity-75"
             width={1920}
