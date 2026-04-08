@@ -6,6 +6,7 @@ import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import { trackPhoneClick } from "@/lib/analytics";
 
 const framelessGalleryImages = [
   { src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png", alt: "Luxury frameless glass shower door with freestanding tub", caption: "Modern Frameless Design" },
@@ -120,7 +121,7 @@ const FramelessShowerDoors = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
+                <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("frameless_doors")}>
                   <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779
                 </a>
@@ -381,7 +382,7 @@ const FramelessShowerDoors = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
+              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("frameless_doors")}>
                 <Phone className="h-5 w-5" />
                 Call Now: (702) 383-0779
               </a>

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Phone, HelpCircle, ChevronRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import {
+import { trackPhoneClick } from "@/lib/analytics";
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -361,7 +362,7 @@ const FAQ = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Free Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <a href="tel:+17023830779" className="flex items-center gap-2">
+                <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("faq")}>
                   <Phone className="h-5 w-5" />
                   (702) 383-0779
                 </a>
@@ -442,7 +443,7 @@ const FAQ = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact Us</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
+              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("faq")}>
                 <Phone className="h-5 w-5" />
                 Call Now: (702) 383-0779
               </a>

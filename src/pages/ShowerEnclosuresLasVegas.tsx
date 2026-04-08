@@ -6,6 +6,7 @@ import { Phone, Star, Check } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import { trackPhoneClick } from "@/lib/analytics";
 
 const ShowerEnclosuresLasVegas = () => {
   const enclosureTypes = [
@@ -435,7 +436,7 @@ const ShowerEnclosuresLasVegas = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Free Quote</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
+              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("enclosures_lv")}>
                 <Phone className="h-5 w-5" />
                 (702) 383-0779
               </a>

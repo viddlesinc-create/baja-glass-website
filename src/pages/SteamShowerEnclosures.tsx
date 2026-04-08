@@ -5,6 +5,7 @@ import { Phone, Droplets, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import { trackPhoneClick } from "@/lib/analytics";
 const customEnclosureImage = "/images/custom-enclosure.jpg";
 
 const steamGalleryImages = [
@@ -154,7 +155,7 @@ const SteamShowerEnclosures = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="shadow-xl">
-                <a href="tel:+17023830779" className="flex items-center gap-2">
+                <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("steam_enclosures")}>
                   <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779
                 </a>
@@ -304,7 +305,7 @@ const SteamShowerEnclosures = () => {
           </div>
           <div className="text-center mt-12">
             <Button variant="phone" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
+              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("steam_enclosures")}>
                 <Phone className="h-5 w-5" />
                 Call Now: (702) 383-0779
               </a>
@@ -424,7 +425,7 @@ const SteamShowerEnclosures = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
+              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("steam_enclosures")}>
                 <Phone className="h-5 w-5" />
                 Call Now: (702) 383-0779
               </a>
