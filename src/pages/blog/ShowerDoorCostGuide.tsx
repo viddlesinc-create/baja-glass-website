@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { DollarSign, Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { trackPhoneClick } from "@/lib/analytics";
 
 const ShowerDoorCostGuide = () => {
   const costBreakdown = [
@@ -319,7 +320,7 @@ const ShowerDoorCostGuide = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Free Quote</Link>
             </Button>
             <Button variant="glass" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
+              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("blog_cost_guide")}>
                 <Phone className="h-5 w-5" />
                 Call: (702) 383-0779
               </a>

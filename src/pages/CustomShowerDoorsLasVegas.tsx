@@ -5,6 +5,7 @@ import { Phone, Ruler, Palette, Settings, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import PhoneNumber from "@/components/PhoneNumber";
+import { trackPhoneClick } from "@/lib/analytics";
 
 const customDoorsGalleryImages = [
   { src: "/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png", alt: "Custom frameless shower door with sliding mechanism", caption: "Custom Sliding Design" },
@@ -392,7 +393,7 @@ const CustomShowerDoorsLasVegas = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Free Consultation</Link>
             </Button>
             <Button variant="ghost" size="lg" asChild>
-              <a href="tel:+17023830779" className="flex items-center gap-2">
+              <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("custom_shower_doors")}>
                 <Phone className="h-5 w-5" />
                 Call Now: (702) 383-0779
               </a>

@@ -14,6 +14,7 @@ import OptimizedImage from "@/components/OptimizedImage";
 import PhoneNumber from "@/components/PhoneNumber";
 import IntroSection from "@/components/IntroSection";
 import SiteLinks from "@/components/SiteLinks";
+import { trackPhoneClick } from "@/lib/analytics";
 const heroImage = "/images/hero-shower-door.jpg";
 const installationProcess = "/images/installation-process.jpg";
 const slidingDoors = "/images/sliding-doors.jpg";
@@ -545,7 +546,7 @@ const Index = () => {
               <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
             </Button>
             <Button variant="glass" size="xl" asChild className="shadow-2xl">
-              <a href="tel:+17023830779" className="flex items-center gap-3" aria-label="Call Now: (702) 383-0779">
+              <a href="tel:+17023830779" className="flex items-center gap-3" aria-label="Call Now: (702) 383-0779" onClick={() => trackPhoneClick("homepage_cta")}>
                 <Phone className="h-6 w-6" aria-hidden="true" />
                 Call Now: (702) 383-0779
               </a>

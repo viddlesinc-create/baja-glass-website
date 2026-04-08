@@ -9,6 +9,7 @@ const customEnclosure = "/images/custom-enclosure.jpg";
 const hardwareFinishes = "/images/hardware-finishes.jpg";
 import { Helmet } from "react-helmet-async";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import { trackPhoneClick } from "@/lib/analytics";
 
 const GlassCompanyLasVegas = () => {
   const services = [
@@ -251,7 +252,7 @@ const GlassCompanyLasVegas = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="lg" asChild className="shadow-xl">
-                <a href="tel:+17023830779" className="flex items-center gap-2">
+                <a href="tel:+17023830779" className="flex items-center gap-2" onClick={() => trackPhoneClick("glass_company")}>
                   <Phone className="h-5 w-5" />
                   Call Now: (702) 383-0779
                 </a>
@@ -446,7 +447,7 @@ const GlassCompanyLasVegas = () => {
           <div className="text-center">
             <p className="text-lg font-medium text-foreground">
               Baja Glass & Mirror LLC • 4280 Reno Ave, Ste A, Las Vegas, NV 89118 • 
-              <a href="tel:+17023830779" className="text-accent hover:text-accent/80 ml-2">
+              <a href="tel:+17023830779" className="text-accent hover:text-accent/80 ml-2" onClick={() => trackPhoneClick("glass_company")}>
                 (702) 383‑0779
               </a>
             </p>
@@ -596,7 +597,7 @@ const GlassCompanyLasVegas = () => {
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
               </Button>
               <Button variant="glass" size="xl" asChild className="shadow-2xl">
-                <a href="tel:+17023830779" className="flex items-center gap-3">
+                <a href="tel:+17023830779" className="flex items-center gap-3" onClick={() => trackPhoneClick("glass_company")}>
                   <Phone className="h-6 w-6" />
                   Call Now: (702) 383-0779
                 </a>
