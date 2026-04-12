@@ -44,6 +44,8 @@ const localBusinessData = {
   "name": "Baja Glass & Mirror LLC",
   "alternateName": ["Baja Glass", "Baja Glass and Mirror"],
   "image": `${BASE_URL}/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png`,
+  "logo": `${BASE_URL}/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png`,
+  "foundingDate": "2004",
   "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation in Las Vegas, Henderson, and Summerlin. First Responder Owned. Licensed, bonded, and insured.",
   "url": BASE_URL,
   "telephone": "(702) 383-0779",

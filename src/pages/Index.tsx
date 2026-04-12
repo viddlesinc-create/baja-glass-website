@@ -43,22 +43,22 @@ const hardwareFinishes = "/images/hardware-finishes.jpg";
   const whyChooseUs = ["Precision Measurements: Laser-accurate for a tight, leak-resistant fit.", "Premium Materials: Tempered safety glass, pro-grade hardware, clean silicone work.", "Fast Turnaround: Local fabrication and scheduling to fit your timeline.", "In-House Installers: Trained, background-checked team—no rushed subcontracting.", "Honest Communication: Clear options and timelines from start to finish.", "Strong Warranty: Robust hardware and workmanship coverage."];
   const faqs = [{
     question: "How long does it take to get a new shower door installed?",
-    answer: "Most projects take a few business days from measurement to install, with installation completed in a single day."
+    answer: "Installation timelines depend on several factors, but most projects take 3–7 business days from initial measurement to final installation. Here's what to expect: First, our team visits your home for a precise custom measurement, which typically takes about an hour. We then fabricate your custom glass panels in our Las Vegas shop—this usually takes 2–5 business days depending on complexity and current order volume. Finally, our installation crew arrives and completes the install in a single day, usually within 4–6 hours for a standard shower enclosure. Larger custom projects or those requiring structural modifications may take longer. Baja Glass & Mirror will provide an exact timeline during your free in-home estimate so there are no surprises."
   }, {
     question: "What's the difference between frameless, semi-frameless, and framed?",
-    answer: "Frameless uses thicker glass and minimal metal for a clean look. Semi-frameless balances aesthetics and metal support. Framed uses full metal framing."
+    answer: "Frameless shower doors use thicker tempered glass—typically 3/8\" or 1/2\"—with minimal metal hardware, creating a clean, modern aesthetic that makes your bathroom feel more open and spacious. Semi-frameless designs use a partial metal frame around the outer edges while leaving the door itself frameless, offering a balance of sleek style and added structural support at a lower price point. Framed shower doors feature full metal framing around every glass panel, providing maximum durability and the widest range of budget-friendly options. At Baja Glass & Mirror in Las Vegas, we install all three styles and can help you choose the best fit based on your bathroom layout, design preferences, and budget during a free consultation."
   }, {
     question: "Which glass thickness should I choose—3/8\" or 1/2\"?",
-    answer: "3/8\" is the standard for strength and clarity. 1/2\" offers added rigidity and a luxury feel; often preferred for larger spans."
+    answer: "The right glass thickness depends on your door style and personal preference. 3/8\" tempered glass is the industry standard for most shower door installations—it provides excellent strength, safety, and optical clarity while keeping costs reasonable. 1/2\" glass offers added rigidity, a more substantial feel, and a premium luxury look that many Las Vegas homeowners prefer, especially for larger frameless panels or wide openings where the extra thickness prevents flexing. Both thicknesses meet all safety codes and are made from tempered safety glass that breaks into small, rounded pieces rather than sharp shards. Our team at Baja Glass & Mirror will recommend the ideal thickness based on your enclosure design, panel size, and hardware selection during your free measurement appointment."
   }, {
     question: "Do you offer low-iron glass and protective coatings?",
-    answer: "Yes. Low-iron reduces the green tint for a clearer edge. Hydrophobic coatings help reduce water spots and make cleaning easier."
+    answer: "Yes, Baja Glass & Mirror offers both low-iron glass and hydrophobic protective coatings for Las Vegas homeowners. Standard glass has a slight green tint visible along the edges—low-iron glass virtually eliminates this, delivering crystal-clear transparency that showcases your tile work and bathroom design. Hydrophobic coatings (such as ShowerGuard or EnduroShield) create an invisible barrier on the glass surface that causes water to bead and roll off, significantly reducing hard water spots and mineral buildup—a common concern in Las Vegas due to our hard water. This means less scrubbing and easier day-to-day maintenance. We recommend combining low-iron glass with a protective coating for the cleanest, most maintenance-friendly shower enclosure. Ask us about these upgrade options during your free estimate."
   }, {
     question: "Can you replace my existing shower door?",
-    answer: "Yes. We specialize in full shower door replacements and upgrades—swapping out old panels, hardware, and seals for a fresh, modern look."
+    answer: "Absolutely. Baja Glass & Mirror specializes in full shower door replacements and upgrades throughout Las Vegas, Henderson, and Summerlin. Whether you have an outdated framed door, a foggy or damaged panel, or simply want to upgrade to a modern frameless design, we handle the entire process. Our team carefully removes your old door, inspects the opening for any water damage or structural issues, and installs your new custom-fabricated glass with fresh hardware, seals, and silicone. We can match existing tile lines and work with out-of-plumb walls to ensure a tight, leak-resistant fit. Most replacement projects are completed in a single visit. Contact us for a free in-home assessment and quote."
   }, {
     question: "What areas do you serve?",
-    answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City—and nearby communities."
+    answer: "Baja Glass & Mirror proudly serves the entire Las Vegas Valley from our shop at 4280 W Reno Ave in Las Vegas. Our service area includes Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Green Valley, Boulder City, and surrounding communities. As a locally owned and operated company with over 20 years of experience, we know the unique needs of Las Vegas homeowners—from hard water considerations to desert climate factors that affect glass and hardware selection. Whether you're in a new Henderson development or a classic Summerlin home, our team provides the same precise measurements, quality materials, and professional installation. Call (702) 383-0779 for a free estimate anywhere in the valley."
   }];
 const Index = () => {
   return <div className="min-h-screen">
@@ -218,7 +218,7 @@ const Index = () => {
               </div>
             </div>
             <p className="text-muted-foreground">
-              <strong>Rated 4.9/5 by homeowners in Las Vegas and Henderson</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
+              <strong>Rated 4.6/5 by homeowners in Las Vegas and Henderson</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
             </p>
           </div>
         </div>

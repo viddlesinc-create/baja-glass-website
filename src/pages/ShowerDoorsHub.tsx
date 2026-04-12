@@ -311,7 +311,7 @@ const ShowerDoorsHub = () => {
               Our expert <strong>shower glass installers</strong> handle everything from measurement to final walkthrough—delivering precision fit, clean silicone work, and dependable performance.
             </p>
             <p className="text-muted-foreground mb-6">
-              <strong>Rated 4.9/5 by Las Vegas homeowners</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
+              <strong>Rated 4.6/5 by Las Vegas homeowners</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
             </p>
             <p className="text-muted-foreground">
               Wondering about pricing? See our full guide on <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door installation cost in Las Vegas</Link>.

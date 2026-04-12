@@ -299,7 +299,23 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center space-y-4">
-          <div className="flex justify-center gap-4 text-sm">
+          <div className="flex justify-center flex-wrap gap-4 text-sm">
+            <Link
+              to="/privacy-policy"
+              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors underline"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-primary-foreground/40">|</span>
+            <Link
+              to="/terms-of-service"
+              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors underline"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Terms of Service
+            </Link>
+            <span className="text-primary-foreground/40">|</span>
             <Link
               to="/sitemap"
               className="text-primary-foreground/80 hover:text-primary-foreground transition-colors underline"
