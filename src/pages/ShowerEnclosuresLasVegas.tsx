@@ -129,8 +129,8 @@ const ShowerEnclosuresLasVegas = () => {
             ],
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "127",
+              "ratingValue": "4.6",
+              "reviewCount": "27",
               "bestRating": "5",
               "worstRating": "1"
             },
