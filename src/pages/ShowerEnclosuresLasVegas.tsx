@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Phone, Star, Check } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import PhoneNumber from "@/components/PhoneNumber";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 
@@ -76,108 +77,8 @@ const ShowerEnclosuresLasVegas = () => {
 
   return (
     <div className="min-h-screen">
+      <LocalBusinessSchema />
       <Helmet>
-        {/* LocalBusiness Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "@id": "https://bajaglass.com/#localbusiness",
-            "name": "Baja Glass & Mirror LLC",
-            "description": "Professional shower enclosure installation in Las Vegas. Custom glass shower enclosures including inline, corner, neo-angle, and steam designs.",
-            "url": "https://bajaglass.com/shower-enclosures-las-vegas",
-            "telephone": "(702) 383-0779",
-            "email": "info@bajaglass.com",
-            "priceRange": "$800 - $4500+",
-            "image": "https://bajaglass.com/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "4280 Reno Ave, Ste A",
-              "addressLocality": "Las Vegas",
-              "addressRegion": "NV",
-              "postalCode": "89118",
-              "addressCountry": "US"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 36.0839,
-              "longitude": -115.2098
-            },
-            "openingHoursSpecification": [
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "07:00",
-                "closes": "17:00"
-              },
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "08:00",
-                "closes": "14:00"
-              }
-            ],
-            "areaServed": [
-              { "@type": "City", "name": "Las Vegas", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-              { "@type": "City", "name": "Henderson", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-              { "@type": "City", "name": "Summerlin", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-              { "@type": "City", "name": "Paradise", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-              { "@type": "City", "name": "Spring Valley", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-              { "@type": "City", "name": "Enterprise", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-              { "@type": "City", "name": "Green Valley", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-              { "@type": "City", "name": "North Las Vegas", "containedInPlace": { "@type": "State", "name": "Nevada" } }
-            ],
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "reviewCount": "27",
-              "bestRating": "5",
-              "worstRating": "1"
-            },
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Shower Enclosure Services",
-              "itemListElement": [
-                {
-                  "@type": "OfferCatalog",
-                  "name": "Inline Shower Enclosures",
-                  "itemListElement": [
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Frameless Inline Enclosure Installation", "description": "Clean, straight-line designs with door and fixed panels" } },
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Semi-Frameless Inline Enclosure Installation" } }
-                  ]
-                },
-                {
-                  "@type": "OfferCatalog",
-                  "name": "Corner Shower Enclosures",
-                  "itemListElement": [
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "90-Degree Corner Enclosure Installation", "description": "Space-efficient designs maximizing bathroom layout" } },
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Neo-Angle Corner Enclosure Installation" } }
-                  ]
-                },
-                {
-                  "@type": "OfferCatalog",
-                  "name": "Steam Shower Enclosures",
-                  "itemListElement": [
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Shower Enclosure Installation", "description": "Fully sealed enclosures for spa-like steam experiences" } }
-                  ]
-                },
-                {
-                  "@type": "OfferCatalog",
-                  "name": "Walk-In Shower Enclosures",
-                  "itemListElement": [
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Curbless Walk-In Enclosure Installation", "description": "Open-concept accessible shower designs" } },
-                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ADA-Compliant Shower Enclosure Installation" } }
-                  ]
-                }
-              ]
-            },
-            "sameAs": [
-              "https://www.facebook.com/BajaGlassLV",
-              "https://www.instagram.com/bajaglass_lv",
-              "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas"
-            ]
-          })}
-        </script>
         {/* Service Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
