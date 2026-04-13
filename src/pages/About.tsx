@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Shield, Users, Award, Clock } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import GoogleMap from "@/components/GoogleMap";
 import GetDirections from "@/components/GetDirections";
 
@@ -40,39 +41,10 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <LocalBusinessSchema />
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "AboutPage",
-            "mainEntity": {
-              "@type": "LocalBusiness",
-              "name": "Baja Glass & Mirror LLC", 
-              "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation. First Responder Owned.",
-              "foundingDate": "2010",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4280 W Reno Ave Ste A",
-                "addressLocality": "Las Vegas",
-                "addressRegion": "NV", 
-                "postalCode": "89118",
-                "addressCountry": "US"
-              },
-              "telephone": "(702) 383-0779",
-              "url": "https://bajaglass.com",
-              "openingHours": "Mo-Fr 08:00-16:00",
-              "areaServed": { "@type": "Place", "name": "Las Vegas Valley" },
-              "hasCredential": [
-                { "@type": "EducationalOccupationalCredential", "credentialCategory": "License", "name": "C8 Glass And Glazing License" },
-                { "@type": "EducationalOccupationalCredential", "credentialCategory": "Insurance", "name": "Bonded & Insured" },
-                { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certification", "name": "Safety Glass Certified" }
-              ],
-              "additionalProperty": [
-                { "@type": "PropertyValue", "name": "Business Attribute", "value": "First Responder Owned" }
-              ]
-            }
-          })}
-        </script>
+        <title>About Baja Glass & Mirror | Las Vegas Glass Company</title>
+        <meta name="description" content="Learn about Baja Glass & Mirror LLC — a family-owned, first responder owned glass company serving Las Vegas since 2004. Licensed, bonded, and insured." />
       </Helmet>
       
       {/* Hero Section */}
