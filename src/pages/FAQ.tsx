@@ -323,23 +323,6 @@ const FAQ = () => {
             }))
           })}
         </script>
-        {/* Organization Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Baja Glass & Mirror LLC",
-            "url": "https://bajaglass.com",
-            "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+1-702-383-0779",
-              "contactType": "customer service",
-              "areaServed": "US",
-              "availableLanguage": ["English", "Spanish"]
-            }
-          })}
-        </script>
       </Helmet>
 
       {/* Hero Section */}

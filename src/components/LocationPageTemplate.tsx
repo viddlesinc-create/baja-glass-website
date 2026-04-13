@@ -83,7 +83,11 @@ const LocationPageTemplate = ({
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
+            "@id": "https://bajaglass.com/#localbusiness",
             "name": `Baja Glass - ${city} Shower Doors`,
+            "image": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
+            "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
+            "foundingDate": "2004",
             "areaServed": {
               "@type": "City",
               "name": city,
@@ -108,13 +112,28 @@ const LocationPageTemplate = ({
             "telephone": "(702) 383-0779",
             "url": seoConfig.canonical,
             "priceRange": "$$",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "16:00"
+              }
+            ],
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.6",
               "bestRating": "5",
               "worstRating": "1",
+              "reviewCount": "27",
               "ratingCount": "27"
-            }
+            },
+            "sameAs": [
+              "https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z",
+              "https://www.instagram.com/baja_glass_lv/",
+              "https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/",
+              "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas"
+            ]
           })}
         </script>
       </Helmet>

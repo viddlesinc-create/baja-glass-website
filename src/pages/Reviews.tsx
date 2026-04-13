@@ -183,49 +183,9 @@ const Reviews = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "@id": "https://bajaglass.com/#localbusiness",
-            "name": "Baja Glass & Mirror LLC",
-            "url": "https://bajaglass.com",
-            "telephone": "(702) 383-0779",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "4280 W Reno Ave Ste A",
-              "addressLocality": "Las Vegas",
-              "addressRegion": "NV",
-              "postalCode": "89118",
-              "addressCountry": "US"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 36.097781,
-              "longitude": -115.197234
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "bestRating": "5",
-              "worstRating": "1",
-              "reviewCount": "27",
-              "ratingCount": "27"
-            },
-            "review": reviews.slice(0, 10).map(review => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": review.name },
-              "datePublished": new Date(review.date).toISOString().split('T')[0],
-              "reviewRating": { 
-                "@type": "Rating", 
-                "ratingValue": review.rating, 
-                "bestRating": "5",
-                "worstRating": "1"
-              },
-              "reviewBody": review.text
-            }))
-          })}
-        </script>
+        <title>Customer Reviews | Baja Glass & Mirror Las Vegas</title>
+        <meta name="description" content="Read verified customer reviews of Baja Glass & Mirror. Rated 4.6/5 stars for shower door installation in Las Vegas, Henderson, and Summerlin." />
+        <link rel="canonical" href="https://bajaglass.com/reviews" />
       </Helmet>
 
       {/* Hero Section */}
