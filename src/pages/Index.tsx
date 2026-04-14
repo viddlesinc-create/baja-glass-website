@@ -117,9 +117,9 @@ const Index = () => {
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 Baja Glass & Mirror –
-                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">Shower Doors & Custom Glass</span>
+                <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">Shower Doors Las Vegas</span>
                 <span className="block text-3xl md:text-4xl lg:text-5xl drop-shadow-2xl">
-                  in Las Vegas
+                  & Custom Glass
                 </span>
               </h1>
             </div>

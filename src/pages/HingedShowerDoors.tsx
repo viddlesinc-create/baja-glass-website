@@ -66,6 +66,31 @@ const HingedShowerDoors = () => {
             ]
           })}
         </script>
+        {/* Product Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Hinged Shower Door",
+            "description": "Classic hinged and pivot shower doors with precise alignment and quality hardware. Frameless and semi-frameless options in Las Vegas.",
+            "brand": { "@type": "Brand", "name": "Baja Glass & Mirror" },
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "USD",
+              "lowPrice": "900",
+              "highPrice": "2800",
+              "offerCount": "5",
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.6",
+              "reviewCount": "27",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          })}
+        </script>
         {/* FAQPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
