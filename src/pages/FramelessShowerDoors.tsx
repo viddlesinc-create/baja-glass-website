@@ -79,6 +79,31 @@ const FramelessShowerDoors = () => {
             ]
           })}
         </script>
+        {/* Product Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Frameless Shower Door",
+            "description": "Custom frameless shower doors with premium tempered glass (3/8\" or 1/2\") and quality hardware. Professional installation in Las Vegas.",
+            "brand": { "@type": "Brand", "name": "Baja Glass & Mirror" },
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "USD",
+              "lowPrice": "1200",
+              "highPrice": "3000",
+              "offerCount": "6",
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.6",
+              "reviewCount": "27",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          })}
+        </script>
         {/* FAQPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

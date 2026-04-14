@@ -1,7 +1,7 @@
 import { SEOMeta } from './types';
 
 const BASE_URL = 'https://bajaglass.com';
-const DEFAULT_OG_IMAGE = `${BASE_URL}/lovable-uploads/favicon.png`;
+const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 
 export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
@@ -218,6 +218,20 @@ export const seoConfig: Record<string, SEOMeta> = {
     description: 'Complete sitemap of Baja Glass website. Find all pages including shower doors, glass services, locations, gallery, blog, and contact information.',
     canonical: `${BASE_URL}/sitemap`,
     ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/privacy-policy': {
+    title: 'Privacy Policy | Baja Glass & Mirror Las Vegas',
+    description: 'Privacy policy for Baja Glass & Mirror LLC. Learn how we collect, use, and protect your personal information.',
+    canonical: `${BASE_URL}/privacy-policy`,
+    ogImage: DEFAULT_OG_IMAGE,
+    noIndex: true,
+  },
+  '/terms-of-service': {
+    title: 'Terms of Service | Baja Glass & Mirror Las Vegas',
+    description: 'Terms of service for Baja Glass & Mirror LLC. Review our policies, warranties, and service agreements.',
+    canonical: `${BASE_URL}/terms-of-service`,
+    ogImage: DEFAULT_OG_IMAGE,
+    noIndex: true,
   },
   '/shower-door-installation-las-vegas': {
     title: 'Shower Door Installation Las Vegas | Custom Glass Doors - Baja Glass',

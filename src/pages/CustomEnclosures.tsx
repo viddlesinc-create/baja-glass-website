@@ -121,6 +121,31 @@ const CustomEnclosures = () => {
             }
           })}
         </script>
+        {/* Product Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Custom Shower Enclosure",
+            "description": "Custom shower enclosures including neo-angle, corner, inline, and steam designs. Made to precise measurements for Las Vegas homes.",
+            "brand": { "@type": "Brand", "name": "Baja Glass & Mirror" },
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "USD",
+              "lowPrice": "1500",
+              "highPrice": "4000",
+              "offerCount": "6",
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.6",
+              "reviewCount": "27",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          })}
+        </script>
         {/* FAQPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

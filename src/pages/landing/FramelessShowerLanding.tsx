@@ -110,7 +110,7 @@ const FramelessShowerLanding = () => {
           name="description" 
           content="Transform your bathroom with premium frameless shower doors. Expert installation in Las Vegas. Free in-home measurement. Lifetime hardware warranty. Call (702) 383-0779." 
         />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://bajaglass.com/lp/frameless-shower-doors" />
         
         {/* Open Graph */}
