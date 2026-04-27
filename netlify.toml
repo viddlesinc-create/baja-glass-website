@@ -167,6 +167,16 @@
   force = true
 
 # ==========================================
+# WWW → NON-WWW (consolidate link equity)
+# ==========================================
+
+[[redirects]]
+  from = "https://www.bajaglass.com/*"
+  to = "https://bajaglass.com/:splat"
+  status = 301
+  force = true
+
+# ==========================================
 # SPA CATCH-ALL (must be LAST)
 # ==========================================
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 const ShowerDoorsSpringValley = () => {
@@ -10,6 +11,11 @@ const ShowerDoorsSpringValley = () => {
       }}
       heroImage="/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png"
       description="Quality shower door installation throughout Spring Valley. Serving residential neighborhoods with reliable service, quality materials, and professional craftsmanship you can trust."
+      additionalContent={
+        <p className="text-lg text-muted-foreground">
+          As part of our complete range of <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower doors Las Vegas</Link> services, we bring the same precision installation and quality materials to every Spring Valley neighborhood.
+        </p>
+      }
       neighborhoods={[
         "Spring Valley",
         "Desert Inn",

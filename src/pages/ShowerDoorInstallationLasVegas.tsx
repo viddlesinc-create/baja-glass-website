@@ -164,10 +164,13 @@ const ShowerDoorInstallationLasVegas = () => {
               Licensed & Insured Installers
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Professional Shower Door Installation in Las Vegas
+              Shower Door Installation in Las Vegas
             </h1>
-            <p className="text-xl mb-8 text-white/90 max-w-2xl">
-              Professional shower door and glass enclosure installation throughout Las Vegas Valley. Frameless, sliding, and custom configurations by licensed experts.
+            <p className="text-xl mb-4 text-white/90 max-w-2xl">
+              Licensed local experts for frameless, sliding, and custom glass enclosure installation throughout Las Vegas Valley — same-day scheduling available for replacements.
+            </p>
+            <p className="text-base mb-8 text-white/80 max-w-2xl">
+              Serving all Clark County neighborhoods including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, and Green Valley.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="lg" asChild>

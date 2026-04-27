@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 const ShowerDoorsGreenValley = () => {
@@ -10,6 +11,11 @@ const ShowerDoorsGreenValley = () => {
       }}
       heroImage="/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png"
       description="Expert shower door installation throughout Green Valley. Serving this established Henderson community with quality craftsmanship and attention to detail that Green Valley homeowners expect."
+      additionalContent={
+        <p className="text-lg text-muted-foreground">
+          Green Valley residents have access to our complete range of <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower doors Las Vegas</Link> services — frameless, semi-frameless, sliding, and custom enclosures — with free in-home estimates and same-day scheduling for replacements.
+        </p>
+      }
       neighborhoods={[
         "Green Valley Ranch",
         "Green Valley South",

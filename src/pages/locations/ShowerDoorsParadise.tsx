@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 const ShowerDoorsParadise = () => {
@@ -10,6 +11,11 @@ const ShowerDoorsParadise = () => {
       }}
       heroImage="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png"
       description="Expert shower door installation throughout Paradise. From the Las Vegas Strip area to Winchester and Paradise Valley, we deliver quality installations with professional service."
+      additionalContent={
+        <p className="text-lg text-muted-foreground">
+          As part of our full range of <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower doors Las Vegas</Link> services, we bring the same frameless craftsmanship and precision installation to every Paradise neighborhood.
+        </p>
+      }
       neighborhoods={[
         "Paradise Valley",
         "Winchester",
