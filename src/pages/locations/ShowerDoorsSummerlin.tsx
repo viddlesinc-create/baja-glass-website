@@ -9,7 +9,7 @@ const ShowerDoorsSummerlin = () => {
         Looking for professional <strong>frameless shower door installation in Summerlin</strong>? Baja Glass provides expert installation services throughout Summerlin's luxury communities including The Ridges, Red Rock Country Club, and Tournament Hills. Our team specializes in high-end frameless systems with premium low-iron glass and designer hardware finishes.
       </p>
       <p className="text-muted-foreground mb-6">
-        From professional shower door installation to <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">custom shower doors</Link>, we handle projects of all sizes across Summerlin.
+        From premium local installations to the full range of <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower doors Las Vegas</Link> options, we handle projects of all sizes across Summerlin.
       </p>
     </div>
   );

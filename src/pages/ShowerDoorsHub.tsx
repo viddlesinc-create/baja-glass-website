@@ -310,11 +310,24 @@ const ShowerDoorsHub = () => {
             <p className="text-muted-foreground mb-6">
               Our expert <strong>shower glass installers</strong> handle everything from measurement to final walkthrough—delivering precision fit, clean silicone work, and dependable performance.
             </p>
+
+            <h3 className="text-xl font-semibold mb-3 mt-8">Frameless, Semi-Frameless, or Framed — Which Is Right for Your Bathroom?</h3>
+            <p className="text-muted-foreground mb-4">
+              <strong>Frameless shower doors</strong> use 3/8″ or 1/2″ tempered glass with minimal metal hardware for a clean, open look — the most popular choice for modern Las Vegas bathroom remodels. <strong>Semi-frameless</strong> designs add strategic metal support around the outer edges, balancing aesthetics and structural stability at a lower price point. <strong>Framed doors</strong> use full metal framing for the widest range of budget-friendly options and maximum durability. Not sure which fits your space? Our team walks you through every option during a free in-home measurement.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-3 mt-6">Las Vegas Hard Water & Your Shower Glass</h3>
+            <p className="text-muted-foreground mb-4">
+              Las Vegas water is among the hardest in the country — mineral deposits build up fast on untreated glass. We recommend pairing your new shower door with a hydrophobic protective coating (EnduroShield or equivalent) that causes water to bead and roll off, dramatically reducing spotting and cleaning time. Low-iron glass also eliminates the green tint visible on standard glass edges, delivering crystal-clear transparency that shows off your tile work. <Link to="/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>See our full Las Vegas hard water guide</Link>.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-3 mt-6">Shower Door Installation Cost in Las Vegas</h3>
+            <p className="text-muted-foreground mb-6">
+              Most shower door installations in Las Vegas range from <strong>$600 to $3,000+</strong> depending on door style, glass thickness, hardware finish, and enclosure complexity. Frameless doors with premium hardware sit at the higher end; framed and semi-frameless options offer more budget-friendly entry points. All pricing includes custom fabrication and professional installation — we don't install doors purchased from big-box stores. <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>See the full 2026 pricing breakdown</Link>.
+            </p>
+
             <p className="text-muted-foreground mb-6">
               <strong>Rated 4.6/5 by Las Vegas homeowners</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
-            </p>
-            <p className="text-muted-foreground">
-              Wondering about pricing? See our full guide on <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>shower door installation cost in Las Vegas</Link>.
             </p>
           </div>
         </div>

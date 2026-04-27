@@ -112,8 +112,8 @@ export const seoConfig: Record<string, SEOMeta> = {
 
   // ===== Location Pages =====
   '/shower-doors-henderson-nv': {
-    title: 'Shower Doors Henderson NV | Installation & Replacement - Baja Glass & Mirror',
-    description: 'Shower door installation & replacement in Henderson, NV. Frameless shower doors, glass shower doors, custom enclosures. Serving Green Valley, Anthem, Seven Hills. Free quotes.',
+    title: 'Shower Doors Henderson NV — Custom Glass Enclosures | Baja Glass & Mirror',
+    description: 'Expert frameless shower door installation & replacement in Henderson. Serving Green Valley, Anthem, MacDonald Ranch & Seven Hills — free in-home consultations.',
     canonical: `${BASE_URL}/shower-doors-henderson-nv`,
     ogImage: `${BASE_URL}/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png`,
   },
@@ -234,8 +234,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     noIndex: true,
   },
   '/shower-door-installation-las-vegas': {
-    title: 'Shower Door Installation Las Vegas | Custom Glass Doors - Baja Glass',
-    description: 'Full-service shower door installation in Las Vegas. We custom-fabricate and install frameless, sliding, and custom doors. Not labor-only — we supply the glass. Free estimates.',
+    title: 'Shower Door Installation Las Vegas — Same-Day Service | Baja Glass & Mirror',
+    description: 'Las Vegas shower door installation by licensed local experts. Frameless, custom & replacement glass. Serving all Clark County neighborhoods. Call for a free quote.',
     canonical: `${BASE_URL}/shower-door-installation-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },

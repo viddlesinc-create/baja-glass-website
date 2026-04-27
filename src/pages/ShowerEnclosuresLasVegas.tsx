@@ -79,6 +79,7 @@ const ShowerEnclosuresLasVegas = () => {
     <div className="min-h-screen">
       <LocalBusinessSchema />
       <Helmet>
+        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/custom-enclosures" />
         {/* Service Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

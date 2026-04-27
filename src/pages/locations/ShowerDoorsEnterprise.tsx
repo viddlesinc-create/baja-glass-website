@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
 
 const ShowerDoorsEnterprise = () => {
@@ -10,6 +11,11 @@ const ShowerDoorsEnterprise = () => {
       }}
       heroImage="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png"
       description="Professional shower door installation in Enterprise. From compact bathrooms to spacious master suites, we provide quality installations tailored to your space and budget."
+      additionalContent={
+        <p className="text-lg text-muted-foreground">
+          Enterprise homeowners have access to our full range of <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower doors Las Vegas</Link> options — from frameless enclosures to steam showers — with the same local expertise and free in-home estimates.
+        </p>
+      }
       neighborhoods={[
         "Enterprise",
         "Southwest",
