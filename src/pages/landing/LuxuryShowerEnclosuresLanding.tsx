@@ -23,9 +23,9 @@ const galleryImages = [
     caption: "Red Rock Country Club — custom neo-angle, low-iron glass",
   },
   {
-    src: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",
-    alt: "Custom frameless shower enclosure with matte black hardware — Baja Glass Henderson",
-    caption: "Green Valley estate — matte black hardware, low-iron glass",
+    src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+    alt: "Ultra-clear low-iron glass frameless shower — Baja Glass Las Vegas",
+    caption: "Anthem — ultra-clear glass with chrome hardware",
   },
   {
     src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
@@ -446,8 +446,8 @@ const LuxuryShowerEnclosuresLanding = () => {
         <section className="py-4 bg-secondary/20">
           {[
             {
-              image: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",
-              alt: "Low-iron glass shower enclosure with matte black hardware — Baja Glass",
+              image: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+              alt: "Ultra-clear low-iron glass frameless shower enclosure — Baja Glass Las Vegas",
               headline: "Pure Clarity — No Green Tint",
               body: "Standard glass carries a subtle green cast that becomes visible along every edge — competing with your tile work and fixtures. Low-iron glass eliminates it entirely. The result is crystal-clear transparency that lets your stone, marble, and hardware speak for themselves, exactly as your designer intended.",
               badge: "Low-Iron Glass",
