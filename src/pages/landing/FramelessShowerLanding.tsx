@@ -144,6 +144,9 @@ const FramelessShowerLanding = () => {
           <div className="container mx-auto px-4">
             <p>© {new Date().getFullYear()} Baja Glass & Mirror LLC. All rights reserved.</p>
             <p className="mt-1">4280 W Reno Ave Ste A, Las Vegas, NV 89118 | (702) 383-0779</p>
+            <p className="mt-1">
+              <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
+            </p>
           </div>
         </footer>
       </div>
