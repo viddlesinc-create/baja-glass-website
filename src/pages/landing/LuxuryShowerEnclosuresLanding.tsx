@@ -33,14 +33,14 @@ const galleryImages = [
     caption: "Seven Hills — brushed nickel finish, 1/2\" tempered glass",
   },
   {
-    src: "/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png",
-    alt: "Contemporary frameless glass shower Henderson NV — Baja Glass",
-    caption: "Henderson — contemporary frameless design",
+    src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
+    alt: "Luxury marble shower with matte black hardware and built-in bench — Baja Glass Las Vegas",
+    caption: "Summerlin — marble surround, matte black hardware, built-in bench",
   },
   {
-    src: "/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png",
-    alt: "Elegant walk-in frameless shower enclosure Las Vegas — Baja Glass",
-    caption: "Walk-in frameless — curbless entry with ceiling panel",
+    src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
+    alt: "Frameless shower enclosure with pebble accent strip — Baja Glass Las Vegas",
+    caption: "The Ridges — frameless inline with pebble accent detail",
   },
 ];
 
