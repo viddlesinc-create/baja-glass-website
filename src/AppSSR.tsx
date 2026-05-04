@@ -18,6 +18,7 @@ import { usePageTracking } from "./hooks/usePageTracking";
 
 // Landing pages
 import FramelessShowerLanding from "./pages/landing/FramelessShowerLanding";
+import FramelessShowerDoorsLVLanding from "./pages/landing/FramelessShowerDoorsLVLanding";
 import LuxuryShowerEnclosuresLanding from "./pages/landing/LuxuryShowerEnclosuresLanding";
 
 // All pages — eagerly imported for SSR
@@ -74,6 +75,7 @@ function AppSSR() {
         <ScrollToTop />
         <Routes>
           <Route path="/lp/frameless-shower-doors" element={<FramelessShowerLanding />} />
+          <Route path="/lp/frameless-shower-doors-lv" element={<FramelessShowerDoorsLVLanding />} />
           <Route path="/lp/luxury-shower-enclosures" element={<LuxuryShowerEnclosuresLanding />} />
         </Routes>
       </>

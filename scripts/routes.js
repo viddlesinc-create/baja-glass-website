@@ -36,6 +36,7 @@ export const routes = [
   "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions",
   "/shower-door-installation-las-vegas",
   "/lp/frameless-shower-doors",
+  "/lp/frameless-shower-doors-lv",
   "/lp/luxury-shower-enclosures"
 ];
 

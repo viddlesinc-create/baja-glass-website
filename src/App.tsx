@@ -13,6 +13,7 @@ import { usePageTracking } from "./hooks/usePageTracking";
 
 // Landing pages (standalone, no header/footer)
 const FramelessShowerLanding = lazy(() => import("./pages/landing/FramelessShowerLanding"));
+const FramelessShowerDoorsLVLanding = lazy(() => import("./pages/landing/FramelessShowerDoorsLVLanding"));
 const LuxuryShowerEnclosuresLanding = lazy(() => import("./pages/landing/LuxuryShowerEnclosuresLanding"));
 
 // Eagerly load critical pages
@@ -80,6 +81,7 @@ function App() {
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/lp/frameless-shower-doors" element={<FramelessShowerLanding />} />
+            <Route path="/lp/frameless-shower-doors-lv" element={<FramelessShowerDoorsLVLanding />} />
             <Route path="/lp/luxury-shower-enclosures" element={<LuxuryShowerEnclosuresLanding />} />
           </Routes>
         </Suspense>
