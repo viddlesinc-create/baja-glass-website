@@ -9,7 +9,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const PHONE = "(702) 383-0779";
 const PHONE_HREF = "tel:+17023830779";
-const FORMSPREE = "https://formspree.io/f/xqaydjpg";
+const FORMSPREE = "https://formspree.io/f/mgopllzj";
 
 const galleryImages = [
   {
@@ -19,18 +19,18 @@ const galleryImages = [
   },
   {
     src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
-    alt: "Custom neo-angle shower enclosure Red Rock Country Club — Baja Glass",
-    caption: "Red Rock Country Club — custom neo-angle, low-iron glass",
+    alt: "Custom neo-angle shower enclosure — Baja Glass",
+    caption: "Custom neo-angle enclosure, low-iron glass",
   },
   {
     src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
     alt: "Ultra-clear low-iron glass frameless shower — Baja Glass Las Vegas",
-    caption: "Anthem — ultra-clear glass with chrome hardware",
+    caption: "Ultra-clear glass with chrome hardware",
   },
   {
     src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
-    alt: "Frameless shower door Seven Hills Henderson brushed nickel — Baja Glass",
-    caption: "Seven Hills — brushed nickel finish, 1/2\" tempered glass",
+    alt: "Frameless shower door with brushed nickel — Baja Glass",
+    caption: "Brushed nickel finish, 1/2\" tempered glass",
   },
   {
     src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
@@ -40,7 +40,7 @@ const galleryImages = [
   {
     src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
     alt: "Frameless shower enclosure with pebble accent strip — Baja Glass Las Vegas",
-    caption: "The Ridges — frameless inline with pebble accent detail",
+    caption: "Frameless inline enclosure with pebble accent detail",
   },
 ];
 
@@ -51,12 +51,12 @@ const testimonials = [
     neighborhood: "Green Valley",
     service: "Frameless Shower Door",
     rating: 5,
-    text: "Baja Glass installed a beautiful frameless shower door in our Henderson home. The installers were professional, on time, and the quality is outstanding. The low-iron glass they recommended makes the tile work look incredible — you really notice the difference. Highly recommend.",
+    text: "Baja Glass installed a beautiful frameless shower door in our Henderson bathroom. The installers were professional, on time, and the quality is outstanding. The low-iron glass they recommended makes the tile work look incredible — you really notice the difference. Highly recommend.",
   },
   {
     name: "Robert Chen",
     location: "Summerlin, NV",
-    neighborhood: "The Ridges",
+    neighborhood: "Summerlin",
     service: "Custom Shower Enclosure",
     rating: 5,
     text: "We hired Baja Glass for our Summerlin bathroom remodel. The custom enclosure they designed fits perfectly and the matte black hardware matches our fixtures exactly. Great communication throughout — they understood exactly what the space needed.",
@@ -64,10 +64,10 @@ const testimonials = [
   {
     name: "David Kim",
     location: "Enterprise, NV",
-    neighborhood: "Southern Highlands",
+    neighborhood: "Enterprise",
     service: "Steam Shower Enclosure",
     rating: 5,
-    text: "Baja Glass built a custom steam shower enclosure for our master bathroom. They understood the special requirements for steam containment and used the right glass thickness with proper ceiling panels and gasketing. The result is a true spa experience. Worth every penny.",
+    text: "Baja Glass built a custom steam shower enclosure for our bathroom. They understood the special requirements for steam containment and used the right glass thickness with proper ceiling panels and gasketing. The result is a true spa experience. Worth every penny.",
   },
 ];
 
@@ -110,8 +110,8 @@ const faqs = [
     a: "Most projects run 7–14 days from initial measurement to final installation. We schedule your in-home consultation first, then fabricate your custom glass panels in our Las Vegas shop — typically 5–10 business days depending on complexity. Installation itself is completed in a single visit, usually 2–4 hours for a standard enclosure.",
   },
   {
-    q: "What glass thickness do you recommend for luxury homes?",
-    a: "We recommend 1/2\" tempered glass for most luxury installations. It provides a more substantial feel, superior rigidity across larger panel spans, and a premium aesthetic that 3/8\" glass simply can't match. For frameless pivot and hinged doors in master suites, 1/2\" is our standard.",
+    q: "What glass thickness do you recommend for luxury installations?",
+    a: "We recommend 1/2\" tempered glass for most luxury installations. It provides a more substantial feel, superior rigidity across larger panel spans, and a premium aesthetic that 3/8\" glass simply can't match. For frameless pivot and hinged doors, 1/2\" is our standard.",
   },
   {
     q: "Do you work with interior designers and general contractors?",
@@ -119,7 +119,7 @@ const faqs = [
   },
   {
     q: "Is the hydrophobic coating included or an add-on?",
-    a: "The hydrophobic coating is an add-on that we strongly recommend for Las Vegas homes due to the area's hard water. It creates an invisible barrier that causes water to bead and roll off the glass surface, dramatically reducing mineral deposits and cleaning time. We'll walk you through the options during your consultation.",
+    a: "The hydrophobic coating is an add-on that we strongly recommend for Las Vegas bathrooms due to the area's hard water. It creates an invisible barrier that causes water to bead and roll off the glass surface, dramatically reducing mineral deposits and cleaning time. We'll walk you through the options during your consultation.",
   },
   {
     q: "What hardware finishes are available?",
@@ -162,6 +162,12 @@ function ConsultationForm({ id }: { id: string }) {
     const data = new FormData(form);
     try {
       await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
+      fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      }).catch(() => {});
+      if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
       setSubmitted(true);
     } catch {
       // silent — still show success to not block leads
@@ -203,7 +209,7 @@ function ConsultationForm({ id }: { id: string }) {
       </div>
       <div>
         <label className="block text-sm font-medium text-charcoal mb-1">Neighborhood / Community</label>
-        <input name="neighborhood" placeholder="e.g. The Ridges, Green Valley, MacDonald Ranch" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+        <input name="neighborhood" placeholder="e.g. Summerlin, Green Valley, Henderson" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
       </div>
       <div>
         <label className="block text-sm font-medium text-charcoal mb-1">Project Description</label>
@@ -245,15 +251,12 @@ const LuxuryShowerEnclosuresLanding = () => {
         "@type": "Service",
         "@id": "https://bajaglass.com/lp/luxury-shower-enclosures#service",
         "name": "Luxury Custom Shower Enclosure Installation",
-        "description": "Custom luxury glass shower enclosures designed for Las Vegas' finest homes. Low-iron glass, designer hardware finishes, C8 licensed installation.",
+        "description": "Custom luxury glass shower enclosures in Las Vegas. Low-iron glass, designer hardware finishes, C8 licensed installation.",
         "provider": { "@type": "LocalBusiness", "@id": "https://bajaglass.com/#localbusiness" },
         "areaServed": [
-          { "@type": "Place", "name": "The Ridges, Las Vegas, NV" },
-          { "@type": "Place", "name": "Ascaya, Henderson, NV" },
-          { "@type": "Place", "name": "Red Rock Country Club, Las Vegas, NV" },
-          { "@type": "Place", "name": "MacDonald Ranch, Henderson, NV" },
-          { "@type": "Place", "name": "Summerlin, Las Vegas, NV" },
+          { "@type": "Place", "name": "Las Vegas, NV" },
           { "@type": "Place", "name": "Henderson, NV" },
+          { "@type": "Place", "name": "Summerlin, Las Vegas, NV" },
         ],
         "serviceType": "Custom Shower Enclosure Installation",
       },
@@ -294,12 +297,12 @@ const LuxuryShowerEnclosuresLanding = () => {
   return (
     <>
       <Helmet>
-        <title>Luxury Shower Enclosures Las Vegas | Custom Glass for The Ridges & Summerlin | Baja Glass</title>
-        <meta name="description" content="Custom luxury shower enclosures for Las Vegas' finest homes. Low-iron glass, designer hardware, C8 licensed installation. Serving The Ridges, Ascaya & Red Rock Country Club." />
+        <title>Luxury Shower Enclosures Las Vegas | Custom Glass | Baja Glass</title>
+        <meta name="description" content="Custom luxury shower enclosures in Las Vegas. Low-iron glass, designer hardware, C8 licensed installation. Serving Las Vegas and Henderson." />
         <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://bajaglass.com/lp/luxury-shower-enclosures" />
         <meta property="og:title" content="Luxury Shower Enclosures Las Vegas | Baja Glass & Mirror" />
-        <meta property="og:description" content="Custom glass shower enclosures crafted for Las Vegas' most distinguished homes." />
+        <meta property="og:description" content="Custom glass shower enclosures crafted for Las Vegas bathrooms." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/lp/luxury-shower-enclosures" />
         <meta property="og:image" content="https://bajaglass.com/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" />
@@ -334,15 +337,15 @@ const LuxuryShowerEnclosuresLanding = () => {
               {/* Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-xl">
                 Crafted for Las Vegas'
-                <span className="block text-white/90 mt-1">Most Distinguished Homes</span>
+                <span className="block text-white/90 mt-1">Most Distinguished Bathrooms</span>
               </h1>
 
               {/* Sub */}
               <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-4 max-w-xl">
-                Custom glass shower enclosures designed for The Ridges, Ascaya, Red Rock Country Club, and beyond — measured, fabricated, and installed by licensed glazing specialists with 20+ years in the Las Vegas Valley.
+                Custom glass shower enclosures designed, measured, fabricated, and installed by licensed glazing specialists with 20+ years in the Las Vegas Valley.
               </p>
               <p className="text-base text-white/70 mb-10 max-w-xl">
-                Not labor-only. Not off-the-shelf. Every panel is custom-fabricated to your home's exact specifications.
+                Not labor-only. Not off-the-shelf. Every panel is custom-fabricated to your bathroom's exact specifications.
               </p>
 
               {/* CTAs */}
@@ -389,7 +392,7 @@ const LuxuryShowerEnclosuresLanding = () => {
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>Bonded &amp; Insured</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
-              <span className="text-white/60 text-xs">The Ridges · Ascaya · Red Rock CC · MacDonald Ranch</span>
+              <span className="text-white/60 text-xs">Serving Las Vegas & Henderson</span>
             </div>
           </div>
         </section>
@@ -403,7 +406,7 @@ const LuxuryShowerEnclosuresLanding = () => {
                 Three Steps. Zero Compromise.
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto text-lg">
-                From the first conversation to the final walkthrough, every step is designed around your home — not our inventory.
+                From the first conversation to the final walkthrough, every step is designed around your bathroom — not our inventory.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -417,13 +420,13 @@ const LuxuryShowerEnclosuresLanding = () => {
                 {
                   step: "02",
                   title: "Designed to Your Space",
-                  desc: "Glass thickness, hardware finish, and configuration are selected to complement your architect's vision and your home's interior palette. We coordinate with your designer or contractor if needed.",
+                  desc: "Glass thickness, hardware finish, and configuration are selected to complement your architect's vision and your interior palette. We coordinate with your designer or contractor if needed.",
                   icon: Ruler,
                 },
                 {
                   step: "03",
                   title: "Installed to Perfection",
-                  desc: "Our licensed crew completes most installations in a single day, leaving your home spotless. Every seal, hinge, and panel is inspected before we leave.",
+                  desc: "Our licensed crew completes most installations in a single day, leaving your space spotless. Every seal, hinge, and panel is inspected before we leave.",
                   icon: Wrench,
                 },
               ].map(({ step, title, desc, icon: Icon }) => (
@@ -456,14 +459,14 @@ const LuxuryShowerEnclosuresLanding = () => {
             {
               image: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
               alt: "Frameless shower door with brushed nickel hardware — Baja Glass Henderson",
-              headline: "Hardware That Matches Your Home, Not a Catalog",
+              headline: "Hardware That Matches Your Space, Not a Catalog",
               body: "We offer matte black, brushed nickel, polished chrome, satin brass, unlacquered brass, and oil-rubbed bronze. Every hinge, handle, clip, and towel bar is individually selected to complement your existing plumbing fixtures and interior metalwork — not what happened to be in stock.",
               badge: "Designer Hardware",
               reverse: true,
             },
             {
               image: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
-              alt: "Custom neo-angle shower enclosure Red Rock Country Club — Baja Glass Summerlin",
+              alt: "Custom neo-angle shower enclosure — Baja Glass Las Vegas",
               headline: "Glass That Stays Pristine in Las Vegas Water",
               body: "Las Vegas water is among the hardest in the country. Untreated glass develops mineral deposits within weeks. Our hydrophobic glass treatment bonds to the surface at a molecular level, causing water to bead and roll off rather than film and deposit. Less cleaning. More clarity. A finish that holds up to the desert.",
               badge: "Hydrophobic Treatment",
@@ -504,7 +507,7 @@ const LuxuryShowerEnclosuresLanding = () => {
             <div className="text-center mb-14">
               <p className="text-sm font-semibold tracking-widest text-white/50 uppercase mb-3">Why Baja Glass</p>
               <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
-                The Standard Your Home Deserves
+                The Standard Your Bathroom Deserves
               </h2>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -526,7 +529,7 @@ const LuxuryShowerEnclosuresLanding = () => {
           <div className="container mx-auto px-4 text-center">
             <p className="text-sm font-semibold tracking-widest text-red-600 uppercase mb-4">Our Commitment</p>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-charcoal max-w-3xl mx-auto mb-6 leading-tight">
-              Most Las Vegas glass companies install what they stock.<br className="hidden md:block" /> We fabricate what your home requires.
+              Most Las Vegas glass companies install what they stock.<br className="hidden md:block" /> We fabricate what your bathroom requires.
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">
               Every panel is cut to your exact measurements in our Las Vegas shop. We do not install doors purchased from big-box stores, and we never will.
@@ -540,7 +543,7 @@ const LuxuryShowerEnclosuresLanding = () => {
             <div className="flex items-center justify-center gap-3 text-muted-foreground">
               <Stars />
               <span className="font-semibold text-charcoal">4.6 / 5</span>
-              <span>· 27 verified reviews from Las Vegas homeowners</span>
+              <span>· 27 verified reviews from Las Vegas clients</span>
             </div>
           </div>
         </section>
@@ -574,7 +577,7 @@ const LuxuryShowerEnclosuresLanding = () => {
             <div className="text-center mb-12">
               <p className="text-sm font-semibold tracking-widest text-red-600 uppercase mb-3">Client Stories</p>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-4">
-                Heard from Las Vegas Homeowners
+                Heard from Las Vegas Clients
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -599,7 +602,7 @@ const LuxuryShowerEnclosuresLanding = () => {
             <div className="text-center mb-12">
               <p className="text-sm font-semibold tracking-widest text-red-600 uppercase mb-3">Our Work</p>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-4">
-                Installed Across Las Vegas' Finest Communities
+                Installed Across the Las Vegas Valley
               </h2>
               <p className="text-muted-foreground text-lg">Click any image to view in full detail.</p>
             </div>
@@ -665,7 +668,7 @@ const LuxuryShowerEnclosuresLanding = () => {
                 Not All Glass Companies Are Equal
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Your home took years to design and build. The glass that frames your master bathroom should be held to the same standard.
+                Your bathroom should be held to the same standard as the rest of your space — finished with glass that's built for it.
               </p>
             </div>
             <div className="max-w-4xl mx-auto overflow-x-auto">
@@ -743,10 +746,10 @@ const LuxuryShowerEnclosuresLanding = () => {
               <div>
                 <p className="text-sm font-semibold tracking-widest text-white/50 uppercase mb-4">Private Consultation</p>
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-tight mb-6">
-                  Your Bathroom Deserves the Detail Your Home Was Built For
+                  Your Bathroom Deserves Glass Built to the Same Standard
                 </h2>
                 <p className="text-white/80 text-lg leading-relaxed mb-8">
-                  Schedule a private in-home consultation. We'll bring glass samples, take measurements, and walk you through every option — at your convenience, in your home. No showroom visit. No pressure. Just expertise.
+                  Schedule a private in-home consultation. We'll bring glass samples, take measurements, and walk you through every option — at your convenience. No showroom visit. No pressure. Just expertise.
                 </p>
 
                 {/* Trust badges */}
