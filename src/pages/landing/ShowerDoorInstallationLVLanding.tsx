@@ -176,38 +176,6 @@ const ProcessTimeline = () => (
 );
 
 // ─── Installer Credentials ────────────────────────────────────────────────────
-const InstallerCredentials = () => (
-  <section className="py-16 bg-charcoal text-white">
-    <div className="container mx-auto px-4">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-          Credentials You Can Verify
-        </h2>
-        {/* VERIFY WITH CLIFF BEFORE MERGE: add license #, insurance coverage amounts, and confirm Cliff-inspects claim */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
-          <div className="bg-white/10 rounded-xl p-5">
-            <h3 className="font-bold text-white mb-2">Nevada State Licensed</h3>
-            <p className="text-white/75 text-sm">
-              C8 Glass &amp; Glazing license issued by the Nevada State Contractors Board. Documentation available on request.
-            </p>
-          </div>
-          <div className="bg-white/10 rounded-xl p-5">
-            <h3 className="font-bold text-white mb-2">Fully Insured</h3>
-            <p className="text-white/75 text-sm">
-              General liability and workers' compensation coverage. Certificate of insurance available before any job starts.
-            </p>
-          </div>
-          <div className="bg-white/10 rounded-xl p-5">
-            <h3 className="font-bold text-white mb-2">Owner-Operated Since 1999</h3>
-            <p className="text-white/75 text-sm">
-              First Responder-owned business. The same family has been installing glass in Las Vegas for over 25 years.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-);
 
 // ─── Installer-Tone Reviews ───────────────────────────────────────────────────
 const installerReviews = [
@@ -458,9 +426,6 @@ const ShowerDoorInstallationLVLanding = () => {
 
         {/* Process timeline */}
         <ProcessTimeline />
-
-        {/* Installer credentials */}
-        <InstallerCredentials />
 
         {/* Reviews */}
         <InstallerReviews />
