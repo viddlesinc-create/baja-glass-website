@@ -15,6 +15,7 @@ import { usePageTracking } from "./hooks/usePageTracking";
 const FramelessShowerLanding = lazy(() => import("./pages/landing/FramelessShowerLanding"));
 const FramelessShowerDoorsLVLanding = lazy(() => import("./pages/landing/FramelessShowerDoorsLVLanding"));
 const LuxuryShowerEnclosuresLanding = lazy(() => import("./pages/landing/LuxuryShowerEnclosuresLanding"));
+const ShowerDoorInstallationLVLanding = lazy(() => import("./pages/landing/ShowerDoorInstallationLVLanding"));
 
 // Eagerly load critical pages
 import Index from "./pages/Index";
@@ -83,6 +84,7 @@ function App() {
             <Route path="/lp/frameless-shower-doors" element={<FramelessShowerLanding />} />
             <Route path="/lp/frameless-shower-doors-lv" element={<FramelessShowerDoorsLVLanding />} />
             <Route path="/lp/luxury-shower-enclosures" element={<LuxuryShowerEnclosuresLanding />} />
+            <Route path="/lp/shower-door-installation-lv" element={<ShowerDoorInstallationLVLanding />} />
           </Routes>
         </Suspense>
       </>

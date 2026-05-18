@@ -15,6 +15,8 @@ interface FinalCTAProps {
   formspreeUrl?: string;
   /** When true, Email and "Tell us about your project" become required fields. */
   requireAllFields?: boolean;
+  /** Override the success confirmation message shown after form submit. */
+  successMessage?: string;
 }
 
 const DEFAULT_FORMSPREE_URL = "https://formspree.io/f/mgopllzj";
@@ -22,6 +24,7 @@ const DEFAULT_FORMSPREE_URL = "https://formspree.io/f/mgopllzj";
 export const FinalCTA = ({
   formspreeUrl = DEFAULT_FORMSPREE_URL,
   requireAllFields = false,
+  successMessage,
 }: FinalCTAProps = {}) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -286,7 +289,7 @@ export const FinalCTA = ({
                   </div>
                   <h3 className="text-2xl font-bold text-charcoal mb-2">Thank You!</h3>
                   <p className="text-muted-foreground mb-6">
-                    We'll contact you within 24-48 hours with your free quote.
+                    {successMessage ?? "We'll contact you within 24-48 hours with your free quote."}
                   </p>
                   <a 
                     href="tel:+17023830779" 

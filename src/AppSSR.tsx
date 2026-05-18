@@ -20,6 +20,7 @@ import { usePageTracking } from "./hooks/usePageTracking";
 import FramelessShowerLanding from "./pages/landing/FramelessShowerLanding";
 import FramelessShowerDoorsLVLanding from "./pages/landing/FramelessShowerDoorsLVLanding";
 import LuxuryShowerEnclosuresLanding from "./pages/landing/LuxuryShowerEnclosuresLanding";
+import ShowerDoorInstallationLVLanding from "./pages/landing/ShowerDoorInstallationLVLanding";
 
 // All pages — eagerly imported for SSR
 import Index from "./pages/Index";
@@ -77,6 +78,7 @@ function AppSSR() {
           <Route path="/lp/frameless-shower-doors" element={<FramelessShowerLanding />} />
           <Route path="/lp/frameless-shower-doors-lv" element={<FramelessShowerDoorsLVLanding />} />
           <Route path="/lp/luxury-shower-enclosures" element={<LuxuryShowerEnclosuresLanding />} />
+          <Route path="/lp/shower-door-installation-lv" element={<ShowerDoorInstallationLVLanding />} />
         </Routes>
       </>
     );
