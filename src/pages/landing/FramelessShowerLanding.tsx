@@ -258,7 +258,7 @@ const FramelessShowerLanding = () => {
           name="description"
           content="Heavy-glass frameless shower doors, custom-fabricated and professionally installed. Free in-home measurement. Licensed since 1999. Call (702) 383-0779."
         />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://bajaglass.com/lp/frameless-shower-doors" />
 
         <meta

@@ -103,10 +103,23 @@ const getRouteConfig = (route) => {
   return { priority: '0.5', changefreq: 'monthly' };
 };
 
+/**
+ * Routes excluded from sitemap.xml.
+ * Google Ads landing pages (/lp/*) are noindex,nofollow and exist only to
+ * serve paid traffic. Listing them in the sitemap would invite organic
+ * indexing and cannibalize equivalent organic pages. They still get
+ * prerendered (routes.js is the source of truth for prerender.js); we
+ * simply omit them from the sitemap.
+ */
+const isExcludedFromSitemap = (route) => route.startsWith('/lp/');
+
 const generateSitemap = () => {
   const today = new Date().toISOString().split('T')[0];
-  
-  const urlEntries = routes.map(route => {
+
+  const indexableRoutes = routes.filter(r => !isExcludedFromSitemap(r));
+  const excludedRoutes = routes.filter(isExcludedFromSitemap);
+
+  const urlEntries = indexableRoutes.map(route => {
     const { priority, changefreq } = getRouteConfig(route);
     return `  <url>
     <loc>${domain}${route}</loc>
@@ -117,14 +130,20 @@ const generateSitemap = () => {
   }).join('\n');
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Google Ads landing pages (/lp/*) are intentionally excluded — they are
+  noindex,nofollow and exist only for paid traffic. See generate-sitemap.js
+  for the exclusion rule.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urlEntries}
 </urlset>`;
 
   fs.writeFileSync(path.join(process.cwd(), 'public', 'sitemap.xml'), sitemap);
-  
+
   console.log('✅ Sitemap generated successfully!');
-  console.log(`   📄 Total routes: ${routes.length}`);
+  console.log(`   📄 Indexable routes: ${indexableRoutes.length}`);
+  console.log(`   🚫 Excluded (/lp/*): ${excludedRoutes.length} — ${excludedRoutes.join(', ') || 'none'}`);
   console.log(`   📅 Last modified: ${today}`);
   console.log(`   🌐 Domain: ${domain}`);
 };
