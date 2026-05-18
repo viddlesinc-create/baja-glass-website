@@ -39,6 +39,16 @@ export const trackFormSubmission = (formData: {
 
   pushToDataLayer('generate_lead', eventData);
 
+  // Dedicated event for Google Ads LP conversion (action 7498720245). Frank wires the
+  // Google Ads Conversion tag in GTM to fire on this event without coupling to the
+  // broader generate_lead funnel.
+  if (typeof window !== 'undefined') {
+    pushToDataLayer('lp_form_submission', {
+      ...eventData,
+      lp_path: window.location.pathname,
+    });
+  }
+
   console.log('DataLayer Event: generate_lead', formData);
 };
 

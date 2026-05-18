@@ -9,7 +9,20 @@ import { trackFormSubmission } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
 import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
-export const FinalCTA = () => {
+interface FinalCTAProps {
+  /** Override the Formspree endpoint. Defaults to the original mgopllzj endpoint
+   * so existing LPs (luxury, frameless-shower-doors-lv) keep their current bucket. */
+  formspreeUrl?: string;
+  /** When true, Email and "Tell us about your project" become required fields. */
+  requireAllFields?: boolean;
+}
+
+const DEFAULT_FORMSPREE_URL = "https://formspree.io/f/mgopllzj";
+
+export const FinalCTA = ({
+  formspreeUrl = DEFAULT_FORMSPREE_URL,
+  requireAllFields = false,
+}: FinalCTAProps = {}) => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -42,10 +55,17 @@ export const FinalCTA = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.name || !formData.phone || !formData.city || !formData.projectType) {
+    const missingBaseline =
+      !formData.name || !formData.phone || !formData.city || !formData.projectType;
+    const missingExtra =
+      requireAllFields && (!formData.email || !formData.message);
+
+    if (missingBaseline || missingExtra) {
       toast({
         title: "Missing Information",
-        description: "Please fill in all required fields (Name, Phone, City, Project Type).",
+        description: requireAllFields
+          ? "Please fill in every field — Name, Phone, Email, City, Project Type, and project details."
+          : "Please fill in all required fields (Name, Phone, City, Project Type).",
         variant: "destructive"
       });
       return;
@@ -65,7 +85,7 @@ export const FinalCTA = () => {
     trackFormSubmission({ projectType: formData.projectType, source: "landing_final_cta", city: formData.city });
     
     try {
-      const response = await fetch("https://formspree.io/f/xqaydjpg", {
+      const response = await fetch(formspreeUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -74,6 +94,12 @@ export const FinalCTA = () => {
       });
       
       if (response.ok) {
+        fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }).catch(() => {});
+        if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
         setSubmitted(true);
       } else {
         throw new Error('Form submission failed');
@@ -171,12 +197,15 @@ export const FinalCTA = () => {
                     
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="lp-email" className="text-charcoal">Email</Label>
+                        <Label htmlFor="lp-email" className="text-charcoal">
+                          Email {requireAllFields && "*"}
+                        </Label>
                         <Input
                           id="lp-email"
                           type="email"
                           value={formData.email}
                           onChange={(e) => handleInputChange("email", e.target.value)}
+                          required={requireAllFields}
                           className="border-border"
                         />
                       </div>
@@ -208,12 +237,15 @@ export const FinalCTA = () => {
                     </div>
 
                     <div>
-                      <Label htmlFor="lp-message" className="text-charcoal">Tell us about your project</Label>
+                      <Label htmlFor="lp-message" className="text-charcoal">
+                        Tell us about your project {requireAllFields && "*"}
+                      </Label>
                       <Textarea
                         id="lp-message"
                         value={formData.message}
                         onChange={(e) => handleInputChange("message", e.target.value)}
                         placeholder="Describe your shower space, style preferences, or any questions..."
+                        required={requireAllFields}
                         className="border-border min-h-[80px]"
                       />
                     </div>
