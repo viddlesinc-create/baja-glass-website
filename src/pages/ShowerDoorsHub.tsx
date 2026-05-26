@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone } from "lucide-react";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import FramelessQualification from "@/components/FramelessQualification";
+import StickyMobileCallBar from "@/components/StickyMobileCallBar";
 const heroImage = "/images/hero-shower-door.jpg";
 import { Helmet } from "react-helmet-async";
 
@@ -220,7 +222,7 @@ const ShowerDoorsHub = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Custom Shower Doors in 
+                Glass Shower Doors in
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Las Vegas
                 </span>
@@ -262,13 +264,13 @@ const ShowerDoorsHub = () => {
             {/* CTA Buttons */}
             <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 text-left md:justify-center lg:justify-start lg:ml-16 mb-8" style={{ animationDelay: '0.6s' }}>
               <Button variant="hero" size="lg" asChild className="animate-scale-in">
-                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get My Free Shower Door Estimate</Link>
-              </Button>
-              <Button variant="glass" size="lg" asChild className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
-                  Call Now: (702) 383-0779
+                  Call (702) 383-0779
                 </a>
+              </Button>
+              <Button variant="glass" size="lg" asChild className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get My Free Shower Door Estimate</Link>
               </Button>
             </div>
 
@@ -293,6 +295,8 @@ const ShowerDoorsHub = () => {
           </div>
         </div>
       </section>
+
+      <FramelessQualification />
 
       {/* Intro */}
       <section className="py-24 bg-gradient-to-b from-background to-secondary/30">
@@ -471,6 +475,7 @@ const ShowerDoorsHub = () => {
         </div>
       </section>
       <ServiceAreasBlock />
+      <StickyMobileCallBar />
     </div>
   );
 };

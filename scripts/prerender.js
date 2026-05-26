@@ -26,7 +26,10 @@ function extractTag(html, tagRegex) {
 async function prerender() {
   console.log('🚀 Starting SSG prerendering...');
   
+  // mode: 'production' ensures vite.config's dev-only componentTagger() is
+  // excluded, so prerendered HTML doesn't carry data-lov-* attributes.
   const vite = await createServer({
+    mode: 'production',
     server: { middlewareMode: true },
     appType: 'custom',
     logLevel: 'error'
@@ -50,6 +53,9 @@ async function prerender() {
 
       if (!html || html.length < 500) {
         throw new Error(`Rendered HTML is suspiciously short (${html?.length || 0} chars) — possible fallback`);
+      }
+      if (!/<h1[\s>]/i.test(html)) {
+        throw new Error(`Rendered body has no <h1> — route likely renders an empty shell or a client-only redirect (check AppSSR.tsx route registration)`);
       }
       
       let finalHtml = stripDefaultMetaTags(rawTemplate);
@@ -101,6 +107,37 @@ async function prerender() {
       console.error(`❌ ${route}:`, error.stack || error.message);
       errors.push({ route, error: error.message });
     }
+  }
+
+  // Generate a real 404.html from the NotFound component (catch-all route)
+  // instead of copying the homepage, so unknown URLs (served with HTTP 404 by
+  // netlify.toml) show proper "Page Not Found" content.
+  try {
+    const { render } = await vite.ssrLoadModule('/src/entry-server.tsx');
+    const { html, helmetContext } = await render('/__not-found__');
+    if (!html || !/<h1[\s>]/i.test(html)) {
+      throw new Error('NotFound render produced no <h1>');
+    }
+    let finalHtml = stripDefaultMetaTags(rawTemplate);
+    finalHtml = finalHtml.replace(
+      '<div id="root"></div>',
+      `<div id="root" data-ssr="true">${html}</div>`
+    );
+    const { helmet } = helmetContext;
+    if (helmet) {
+      const headTags = [
+        helmet.title ? helmet.title.toString() : '',
+        helmet.meta ? helmet.meta.toString() : '',
+        helmet.link ? helmet.link.toString() : '',
+        helmet.script ? helmet.script.toString() : '',
+      ].filter(Boolean).join('\n');
+      if (headTags) finalHtml = finalHtml.replace('</head>', `${headTags}\n</head>`);
+    }
+    fs.writeFileSync(path.join(distDir, '404.html'), finalHtml);
+    console.log('✅ 404.html → NotFound page');
+  } catch (error) {
+    console.error('❌ 404.html generation failed:', error.stack || error.message);
+    errors.push({ route: '404.html', error: error.message });
   }
 
   await vite.close();

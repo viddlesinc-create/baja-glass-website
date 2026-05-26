@@ -163,7 +163,7 @@ const Contact = () => {
             className="w-full h-full object-cover opacity-30"
             width="1920"
             height="600"
-            fetchPriority="high"
+            fetchpriority="high"
             loading="eager"
             decoding="sync"
           />

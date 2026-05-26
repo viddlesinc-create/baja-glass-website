@@ -73,7 +73,7 @@ const OptimizedImage = ({
           className={className}
           width={width}
           height={height}
-          fetchPriority={priority ? 'high' : 'auto'}
+          fetchpriority={priority ? 'high' : 'auto'}
           loading={priority ? 'eager' : 'lazy'}
           decoding={priority ? 'sync' : 'async'}
         />
@@ -89,7 +89,7 @@ const OptimizedImage = ({
         className={className}
         width={width}
         height={height}
-        fetchPriority={priority ? 'high' : 'auto'}
+        fetchpriority={priority ? 'high' : 'auto'}
         loading={priority ? 'eager' : 'lazy'}
         decoding={priority ? 'sync' : 'async'}
       />
@@ -124,7 +124,7 @@ const OptimizedImage = ({
         className={className}
         width={width}
         height={height}
-        fetchPriority={priority ? 'high' : 'auto'}
+        fetchpriority={priority ? 'high' : 'auto'}
         loading={priority ? 'eager' : 'lazy'}
         decoding={priority ? 'sync' : 'async'}
         onError={() => setFallbackToOriginal(true)}

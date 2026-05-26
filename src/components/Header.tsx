@@ -83,7 +83,7 @@ const Header = () => {
               height={160}
               loading="eager"
               decoding="sync"
-              fetchPriority="high"
+              fetchpriority="high"
             />
           </Link>
 

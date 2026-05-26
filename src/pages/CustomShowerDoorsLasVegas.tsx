@@ -126,7 +126,7 @@ const CustomShowerDoorsLasVegas = () => {
             className="w-full h-full object-cover"
             width="1920"
             height="1080"
-            fetchPriority="high"
+            fetchpriority="high"
             loading="eager"
             decoding="sync"
           />

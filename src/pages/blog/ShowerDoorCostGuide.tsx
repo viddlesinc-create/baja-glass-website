@@ -355,6 +355,11 @@ const ShowerDoorCostGuide = () => {
                   Custom Enclosure Quote
                 </Link>
               </Button>
+              <Button asChild variant="outline">
+                <Link to="/shower-door-installation-las-vegas" onClick={() => window.scrollTo(0, 0)}>
+                  Installation Service
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

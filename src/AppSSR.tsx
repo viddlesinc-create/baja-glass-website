@@ -34,6 +34,7 @@ import HingedShowerDoors from "./pages/HingedShowerDoors";
 import CustomEnclosures from "./pages/CustomEnclosures";
 import SteamShowerEnclosures from "./pages/SteamShowerEnclosures";
 import ShowerEnclosuresLasVegas from "./pages/ShowerEnclosuresLasVegas";
+import ShowerDoorInstallationLasVegas from "./pages/ShowerDoorInstallationLasVegas";
 import Gallery from "./pages/Gallery";
 import AreasServed from "./pages/AreasServed";
 import About from "./pages/About";
@@ -116,7 +117,7 @@ function AppSSR() {
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
-            <Route path="/shower-door-installation-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
+            <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
             <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />
             <Route path="/shower-doors-summerlin-nv" element={<ShowerDoorsSummerlin />} />
             <Route path="/shower-doors-paradise-nv" element={<ShowerDoorsParadise />} />

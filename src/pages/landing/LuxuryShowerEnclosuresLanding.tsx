@@ -319,7 +319,7 @@ const LuxuryShowerEnclosuresLanding = () => {
               src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png"
               alt="Luxury frameless shower enclosure with freestanding tub — Baja Glass Las Vegas"
               className="w-full h-full object-cover"
-              fetchPriority="high"
+              fetchpriority="high"
               loading="eager"
               decoding="sync"
             />

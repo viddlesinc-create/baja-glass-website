@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { Phone, CheckCircle, Clock, Shield, Wrench, MapPin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
+import FramelessQualification from "@/components/FramelessQualification";
+import StickyMobileCallBar from "@/components/StickyMobileCallBar";
 
 const ShowerDoorInstallationLasVegas = () => {
   const faqs = [
@@ -61,9 +63,9 @@ const ShowerDoorInstallationLasVegas = () => {
       href: "/shower-doors-las-vegas/custom-enclosures"
     },
     {
-      title: "Shower Door Replacement",
-      description: "Replace old, damaged, or outdated shower doors with modern upgrades.",
-      href: "/shower-doors-las-vegas/repair"
+      title: "Frameless Upgrade & Replacement",
+      description: "Replace your old framed or outdated shower door with new custom frameless glass.",
+      href: "/shower-doors-las-vegas/frameless"
     }
   ];
 
@@ -151,7 +153,7 @@ const ShowerDoorInstallationLasVegas = () => {
             className="w-full h-full object-cover opacity-75"
             width="1920"
             height="1080"
-            fetchPriority="high"
+            fetchpriority="high"
             loading="eager"
             decoding="sync"
           />
@@ -164,29 +166,30 @@ const ShowerDoorInstallationLasVegas = () => {
               Licensed & Insured Installers
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Shower Door Installation in Las Vegas
+              Frameless Shower Door Installation in Las Vegas
             </h1>
             <p className="text-xl mb-4 text-white/90 max-w-2xl">
-              Licensed local experts for frameless, sliding, and custom glass enclosure installation throughout Las Vegas Valley — same-day scheduling available for replacements.
+              Licensed local experts for custom frameless shower door installation and frameless upgrades throughout the Las Vegas Valley — we design and install new frameless glass, we don&apos;t repair other brands&apos; hardware.
             </p>
             <p className="text-base mb-8 text-white/80 max-w-2xl">
               Serving all Clark County neighborhoods including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, and Green Valley.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="lg" asChild>
-                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Free Installation Quote</Link>
+                <a href="tel:+17023830779" className="flex items-center gap-2">
+                  <Phone className="h-5 w-5" />
+                  Call (702) 383-0779
+                </a>
               </Button>
               <Button variant="glass" size="lg" asChild>
-                <PhoneNumber 
-                  location="installation_hero"
-                  showIcon={true}
-                  showPrefix={true}
-                />
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Free Measurement Quote</Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
+
+      <FramelessQualification />
 
       {/* Trust Signals */}
       <section className="py-12 bg-secondary/50">
@@ -452,6 +455,8 @@ const ShowerDoorInstallationLasVegas = () => {
           </div>
         </div>
       </section>
+
+      <StickyMobileCallBar />
     </div>
   );
 };

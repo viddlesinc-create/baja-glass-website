@@ -456,6 +456,10 @@ const FramelessVsSemiFrameless = () => {
               <Link to="/shower-doors-las-vegas/semi-frameless-framed" className="text-primary font-semibold hover:underline">
                 semi-frameless options
               </Link>
+              , or book{" "}
+              <Link to="/shower-door-installation-las-vegas" className="text-primary font-semibold hover:underline">
+                professional installation
+              </Link>
               . We serve{" "}
               <Link to="/shower-doors-henderson-nv" className="text-primary font-semibold hover:underline">
                 Henderson

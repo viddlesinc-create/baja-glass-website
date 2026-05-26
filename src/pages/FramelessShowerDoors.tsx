@@ -6,6 +6,8 @@ import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import FramelessQualification from "@/components/FramelessQualification";
+import StickyMobileCallBar from "@/components/StickyMobileCallBar";
 
 const framelessGalleryImages = [
   { src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png", alt: "Luxury frameless glass shower door with freestanding tub", caption: "Modern Frameless Design" },
@@ -130,7 +132,7 @@ const FramelessShowerDoors = () => {
             className="w-full h-full object-cover opacity-75"
             width="1920"
             height="1080"
-            fetchPriority="high"
+            fetchpriority="high"
             loading="eager"
             decoding="sync"
           />
@@ -141,14 +143,14 @@ const FramelessShowerDoors = () => {
             <h1 className="text-5xl font-bold mb-6">Frameless Shower Doors Las Vegas NV</h1>
             <p className="text-xl mb-8 text-white/90">Minimal metal, maximum openness—custom glass measured precisely and installed by experts.</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="glass" size="lg" asChild>
-                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
-              </Button>
-              <Button variant="ghost" size="lg" asChild>
+              <Button variant="hero" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2">
                   <Phone className="h-5 w-5" />
-                  Call Now: (702) 383-0779
+                  Call (702) 383-0779
                 </a>
+              </Button>
+              <Button variant="glass" size="lg" asChild>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Free Measurement Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
                 <a href="#gallery" className="flex items-center gap-2">
@@ -160,6 +162,8 @@ const FramelessShowerDoors = () => {
           </div>
         </div>
       </section>
+
+      <FramelessQualification />
 
       {/* Intro */}
       <section className="py-16 bg-background">
@@ -183,9 +187,9 @@ const FramelessShowerDoors = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-6">Frameless Shower Door Replacement Las Vegas</h2>
+            <h2 className="text-3xl font-bold text-center mb-6">Replace Your Old Framed Door with Frameless — a Frameless Upgrade</h2>
             <p className="text-lg text-muted-foreground text-center mb-6">
-              Is your existing shower door outdated, damaged, or no longer functioning properly? Our <strong>frameless shower door replacement</strong> service transforms your bathroom with modern, high-quality glass. We remove your old door, prepare the opening, and install a new frameless system with precision hardware.
+              Ready to upgrade an outdated framed or sliding shower door? Our <strong>frameless shower door replacement</strong> isn&apos;t a repair — it&apos;s a full upgrade to new custom frameless glass. We remove and dispose of your old door, prepare the opening, and install a brand-new frameless system with thick tempered glass and precision hardware.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-background p-4 rounded-lg text-center">
@@ -415,6 +419,7 @@ const FramelessShowerDoors = () => {
         </div>
       </section>
       <ServiceAreasBlock />
+      <StickyMobileCallBar />
     </div>
   );
 };

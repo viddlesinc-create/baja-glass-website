@@ -117,7 +117,7 @@ const HingedShowerDoors = () => {
             className="w-full h-full object-cover opacity-75"
             width="1920"
             height="1080"
-            fetchPriority="high"
+            fetchpriority="high"
             loading="eager"
             decoding="sync"
           />

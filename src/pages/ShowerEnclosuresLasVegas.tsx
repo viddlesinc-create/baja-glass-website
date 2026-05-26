@@ -7,6 +7,8 @@ import { Helmet } from "react-helmet-async";
 import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import PhoneNumber from "@/components/PhoneNumber";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import FramelessQualification from "@/components/FramelessQualification";
+import StickyMobileCallBar from "@/components/StickyMobileCallBar";
 
 const ShowerEnclosuresLasVegas = () => {
   const enclosureTypes = [
@@ -164,6 +166,8 @@ const ShowerEnclosuresLasVegas = () => {
           </div>
         </div>
       </section>
+
+      <FramelessQualification />
 
       {/* Intro Section */}
       <section className="py-16 bg-background">
@@ -346,6 +350,7 @@ const ShowerEnclosuresLasVegas = () => {
         </div>
       </section>
       <ServiceAreasBlock />
+      <StickyMobileCallBar />
     </div>
   );
 };
