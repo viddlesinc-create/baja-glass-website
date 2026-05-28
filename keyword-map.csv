@@ -1,0 +1,36 @@
+page,cluster,priority,primary_keyword,secondary_keywords,notes
+/shower-door-installation-las-vegas,install_demand,1,shower door installation las vegas,"shower door installation near me; shower door installers near me; shower door installers; shower glass installation; frameless shower door installation near me; shower door installation cost",42.3% of impressions; was empty shell to crawlers before SSR fix
+/shower-doors-las-vegas/frameless,core_frameless+replacement_demand,2,frameless shower doors las vegas,"custom shower doors near me; frameless shower doors near me; custom glass shower doors near me; shower door replacement near me (as frameless upgrade); custom shower doors las vegas","Double duty: 23.1% replacement + 3.9% core frameless; reframed as 'frameless upgrade'"
+/shower-doors-las-vegas,shower_generic,3,glass shower doors las vegas,"glass shower doors near me; shower glass near me; shower doors near me; shower doors las vegas; shower glass las vegas; bath glass shower doors near me",20.9% of impressions; hub page; already earns most clicks
+/shower-enclosures-las-vegas,enclosure,4,shower enclosures las vegas,"custom shower enclosures clark county nv; custom glass walk in shower enclosures las vegas nv; custom glass shower enclosures clark county nv","4.3% impressions but wPos 21 → fast win, closest to page 1"
+/shower-doors-las-vegas/semi-frameless-framed,style_spoke,5,semi-frameless shower doors las vegas,semi frameless vs frameless shower door; framed shower doors,
+/shower-doors-las-vegas/sliding,style_spoke,5,sliding shower doors las vegas,bypass shower doors; sliding glass shower door,
+/shower-doors-las-vegas/hinged,style_spoke,5,hinged shower doors las vegas,pivot shower doors; swing shower door,
+/shower-doors-las-vegas/custom-enclosures,enclosure,5,custom shower enclosures las vegas,neo-angle shower enclosure; corner shower enclosure,
+/shower-doors-las-vegas/steam-enclosures,enclosure,5,steam shower enclosures las vegas,steam shower enclosures,
+/shower-doors-henderson-nv,install_demand_geo,3,shower doors henderson nv,shower door installation henderson; glass shower door replacement henderson,Highest-volume geo page
+/shower-doors-summerlin-nv,install_demand_geo,4,shower doors summerlin nv,shower doors summerlin,
+/shower-doors-paradise-nv,install_demand_geo,5,shower doors paradise nv,shower doors paradise,
+/shower-doors-spring-valley-nv,install_demand_geo,5,shower doors spring valley nv,shower doors spring valley,
+/shower-doors-enterprise-nv,install_demand_geo,5,shower doors enterprise nv,shower doors enterprise,
+/shower-doors-green-valley-nv,install_demand_geo,5,shower doors green valley nv,shower doors green valley,
+/blog/shower-door-installation-cost-las-vegas,info,4,shower door installation cost,how much does a glass shower door cost; frameless shower door cost,Cost guide; high-intent info
+/blog/frameless-vs-semi-frameless-shower-doors,info,5,frameless vs framed shower doors,semi frameless vs frameless shower door,Comparison guide
+/blog/choosing-right-door,info,6,how to choose a shower door,how to pick a shower door,
+/blog/glass-care-guide,info,6,shower glass cleaning,shower glass care; maintenance,
+/blog/las-vegas-water-quality-shower-glass-hard-water-solutions,info,6,las vegas hard water shower glass,shower glass hard water solutions,
+/blog/warranty-information,info,7,shower door warranty,warranty terms,
+/blog/installation-process,info,7,shower door installation process,what to expect installation,
+/glass-company-las-vegas,non_core,7,glass company las vegas,las vegas glass company,Non-shower glass hub
+/glass-company-las-vegas/residential-glass-repair,non_core_caution,8,residential glass replacement las vegas,window glass replacement; mirror replacement,⚠️ Adjacent to EXCLUDED repair/mirror intent — review if attracting bad-fit leads
+/glass-company-las-vegas/office-enclosures,non_core,8,office glass enclosures las vegas,commercial glass partitions; conference room glass,Commercial; off the frameless thesis
+/,utility,brand,baja glass,baja glass las vegas; baja glass and mirror,Homepage; brand + catch-all
+/about,utility,low,about baja glass,baja glass team,
+/contact,utility,low,contact baja glass,baja glass phone; baja glass quote,Conversion page
+/gallery,utility,low,frameless shower door gallery,baja glass gallery,
+/reviews,utility,low,baja glass reviews,baja glass las vegas reviews,
+/areas-served,utility,low,baja glass areas served,las vegas valley glass service area,
+/faq,utility,low,shower door faq,baja glass faq,
+/resources,utility,low,shower door resources,shower door guides,
+/blog,utility,low,baja glass blog,shower door blog las vegas,
+/sitemap,utility,low,sitemap,,
