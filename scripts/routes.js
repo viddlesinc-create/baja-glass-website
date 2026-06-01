@@ -38,7 +38,10 @@ export const routes = [
   "/lp/frameless-shower-doors",
   "/lp/frameless-shower-doors-lv",
   "/lp/luxury-shower-enclosures",
-  "/lp/shower-door-installation-lv"
+  "/lp/shower-door-installation-lv",
+  "/lp/shower-door-installation-near-me",
+  "/lp/steam-shower-installation-lv",
+  "/lp/custom-shower-enclosures-lv"
 ];
 
 export const domain = 'https://bajaglass.com';

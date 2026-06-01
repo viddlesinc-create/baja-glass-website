@@ -103,6 +103,32 @@ export const trackQuoteRequest = (source: string) => {
 };
 
 /**
+ * Track click-to-call events for Google Ads phone-call conversion.
+ *
+ * Pushes both `phone_call` (general) and `lp_phone_call` (LP-specific) to dataLayer.
+ * Frank wires the Google Ads phone-call conversion tag in GTM to fire on `lp_phone_call`
+ * without coupling to the broader phone_call funnel.
+ */
+export const trackPhoneCall = (location: string) => {
+  if (typeof window === 'undefined') return;
+  const eventData = {
+    event_category: 'conversion',
+    event_label: location,
+    value: 1,
+    conversion_type: 'phone_call',
+    page_location: window.location.pathname,
+  };
+
+  pushToDataLayer('phone_call', eventData);
+  pushToDataLayer('lp_phone_call', {
+    ...eventData,
+    lp_path: window.location.pathname,
+  });
+
+  console.log('DataLayer Event: phone_call', { location });
+};
+
+/**
  * Track page views for SPA navigation
  */
 export const trackPageView = (path: string, title?: string) => {

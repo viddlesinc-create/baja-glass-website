@@ -21,6 +21,9 @@ import FramelessShowerLanding from "./pages/landing/FramelessShowerLanding";
 import FramelessShowerDoorsLVLanding from "./pages/landing/FramelessShowerDoorsLVLanding";
 import LuxuryShowerEnclosuresLanding from "./pages/landing/LuxuryShowerEnclosuresLanding";
 import ShowerDoorInstallationLVLanding from "./pages/landing/ShowerDoorInstallationLVLanding";
+import ShowerDoorInstallationNearMeLanding from "./pages/landing/ShowerDoorInstallationNearMeLanding";
+import SteamShowerInstallationLVLanding from "./pages/landing/SteamShowerInstallationLVLanding";
+import CustomShowerEnclosuresLVLanding from "./pages/landing/CustomShowerEnclosuresLVLanding";
 
 // All pages — eagerly imported for SSR
 import Index from "./pages/Index";
@@ -80,6 +83,9 @@ function AppSSR() {
           <Route path="/lp/frameless-shower-doors-lv" element={<FramelessShowerDoorsLVLanding />} />
           <Route path="/lp/luxury-shower-enclosures" element={<LuxuryShowerEnclosuresLanding />} />
           <Route path="/lp/shower-door-installation-lv" element={<ShowerDoorInstallationLVLanding />} />
+          <Route path="/lp/shower-door-installation-near-me" element={<ShowerDoorInstallationNearMeLanding />} />
+          <Route path="/lp/steam-shower-installation-lv" element={<SteamShowerInstallationLVLanding />} />
+          <Route path="/lp/custom-shower-enclosures-lv" element={<CustomShowerEnclosuresLVLanding />} />
         </Routes>
       </>
     );

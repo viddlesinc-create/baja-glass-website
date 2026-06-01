@@ -9,7 +9,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const PHONE = "(702) 383-0779";
 const PHONE_HREF = "tel:+17023830779";
-const FORMSPREE = "https://formspree.io/f/mgopllzj";
+const FORMSPREE = "https://formspree.io/f/xqaydjpg";
 
 const galleryImages = [
   {
@@ -35,7 +35,7 @@ const galleryImages = [
   {
     src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
     alt: "Luxury marble shower with matte black hardware and built-in bench — Baja Glass Las Vegas",
-    caption: "Summerlin — marble surround, matte black hardware, built-in bench",
+    caption: "Marble surround, matte black hardware, built-in bench",
   },
   {
     src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
@@ -47,43 +47,40 @@ const galleryImages = [
 const testimonials = [
   {
     name: "Jennifer Martinez",
-    location: "Henderson, NV",
-    neighborhood: "Green Valley",
+    location: "Las Vegas, NV",
     service: "Frameless Shower Door",
     rating: 5,
-    text: "Baja Glass installed a beautiful frameless shower door in our Henderson bathroom. The installers were professional, on time, and the quality is outstanding. The low-iron glass they recommended makes the tile work look incredible — you really notice the difference. Highly recommend.",
+    text: "Baja Glass installed a beautiful frameless shower door for us. The installers were professional, on time, and the quality is outstanding. The low-iron glass they recommended makes the tile work look incredible — you really notice the difference. Highly recommend.",
   },
   {
     name: "Robert Chen",
-    location: "Summerlin, NV",
-    neighborhood: "Summerlin",
+    location: "Las Vegas, NV",
     service: "Custom Shower Enclosure",
     rating: 5,
-    text: "We hired Baja Glass for our Summerlin bathroom remodel. The custom enclosure they designed fits perfectly and the matte black hardware matches our fixtures exactly. Great communication throughout — they understood exactly what the space needed.",
+    text: "We hired Baja Glass for our bathroom remodel. The custom enclosure they designed fits perfectly and the matte black hardware matches our fixtures exactly. Great communication throughout — they understood exactly what the space needed.",
   },
   {
     name: "David Kim",
-    location: "Enterprise, NV",
-    neighborhood: "Enterprise",
+    location: "Las Vegas, NV",
     service: "Steam Shower Enclosure",
     rating: 5,
-    text: "Baja Glass built a custom steam shower enclosure for our bathroom. They understood the special requirements for steam containment and used the right glass thickness with proper ceiling panels and gasketing. The result is a true spa experience. Worth every penny.",
+    text: "Baja Glass built a custom steam shower enclosure for us. They understood the special requirements for steam containment and used the right glass thickness with proper ceiling panels and gasketing. The result is a true spa experience. Worth every penny.",
   },
 ];
 
 const features = [
   { icon: Shield, label: "C8 Glass & Glazing License", sub: "Nevada State Contractors Board" },
   { icon: Award, label: "Bonded & Insured", sub: "Full coverage on every project" },
-  { icon: Star, label: "First Responder Owned", sub: "Serving those who serve our community" },
+  { icon: Star, label: "First Responder Owned", sub: "Serving those who serve Las Vegas" },
   { icon: Clock, label: "20+ Years Experience", sub: "Thousands of Las Vegas installations" },
   { icon: Layers, label: "Low-Iron Ultra-Clear Glass", sub: "No green tint — pure transparency" },
   { icon: Droplets, label: "Hydrophobic Glass Coating", sub: "Water beads off — less mineral buildup" },
   { icon: Ruler, label: "Custom Fabrication Only", sub: "No off-the-shelf doors — ever" },
-  { icon: Home, label: "Free In-Home Measurement", sub: "We come to you, at your convenience" },
+  { icon: Home, label: "Free On-Site Measurement", sub: "We come to you, at your convenience" },
 ];
 
 const included = [
-  "Free in-home measurement & consultation",
+  "Free on-site measurement & consultation",
   "Custom glass fabrication (3/8\" or 1/2\" tempered)",
   "Hardware finish selection & matching",
   "Professional licensed installation",
@@ -99,7 +96,7 @@ const comparisonRows = [
   { feature: "Low-iron ultra-clear glass", baja: true, bigBox: false, generic: "Rarely" },
   { feature: "Hydrophobic glass coating", baja: true, bigBox: false, generic: false },
   { feature: "Hardware finish matching", baja: true, bigBox: "Limited", generic: "Limited" },
-  { feature: "Free in-home consultation", baja: true, bigBox: false, generic: "Sometimes" },
+  { feature: "Free on-site consultation", baja: true, bigBox: false, generic: "Sometimes" },
   { feature: "First Responder owned", baja: true, bigBox: false, generic: false },
   { feature: "20+ years Las Vegas experience", baja: true, bigBox: "N/A", generic: "Varies" },
 ];
@@ -107,7 +104,7 @@ const comparisonRows = [
 const faqs = [
   {
     q: "How long does the process take from consultation to installation?",
-    a: "Most projects run 7–14 days from initial measurement to final installation. We schedule your in-home consultation first, then fabricate your custom glass panels in our Las Vegas shop — typically 5–10 business days depending on complexity. Installation itself is completed in a single visit, usually 2–4 hours for a standard enclosure.",
+    a: "Most projects run 7–14 days from initial measurement to final installation. We schedule your on-site consultation first, then fabricate your custom glass panels in our Las Vegas shop — typically 5–10 business days depending on complexity. Installation itself is completed in a single visit, usually 2–4 hours for a standard enclosure.",
   },
   {
     q: "What glass thickness do you recommend for luxury installations?",
@@ -184,7 +181,7 @@ function ConsultationForm({ id }: { id: string }) {
           <Check className="h-8 w-8 text-emerald-600" />
         </div>
         <h3 className="text-xl font-bold text-charcoal mb-2">Consultation Request Received</h3>
-        <p className="text-muted-foreground mb-4">We'll contact you within one business day to schedule your in-home visit.</p>
+        <p className="text-muted-foreground mb-4">We'll contact you within one business day to schedule your on-site visit.</p>
         <p className="text-charcoal font-semibold">Questions in the meantime?</p>
         <a href={PHONE_HREF} className="text-red-600 font-bold text-lg hover:underline">{PHONE}</a>
       </div>
@@ -208,8 +205,8 @@ function ConsultationForm({ id }: { id: string }) {
         <input name="email" type="email" placeholder="you@email.com" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
       </div>
       <div>
-        <label className="block text-sm font-medium text-charcoal mb-1">Neighborhood / Community</label>
-        <input name="neighborhood" placeholder="e.g. Summerlin, Green Valley, Henderson" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+        <label className="block text-sm font-medium text-charcoal mb-1">ZIP Code</label>
+        <input name="zip" placeholder="89118" maxLength={5} className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
       </div>
       <div>
         <label className="block text-sm font-medium text-charcoal mb-1">Project Description</label>
@@ -414,7 +411,7 @@ const LuxuryShowerEnclosuresLanding = () => {
                 {
                   step: "01",
                   title: "We Come to You",
-                  desc: "Your in-home consultation happens at your convenience. We assess your space, review your existing fixtures, and discuss every option — no showroom visit required.",
+                  desc: "Your on-site consultation happens at your convenience. We assess your space, review your existing fixtures, and discuss every option — no showroom visit required.",
                   icon: Home,
                 },
                 {
@@ -581,13 +578,13 @@ const LuxuryShowerEnclosuresLanding = () => {
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {testimonials.map(({ name, location, neighborhood, service, rating, text }) => (
+              {testimonials.map(({ name, location, service, rating, text }) => (
                 <div key={name} className="bg-secondary/30 rounded-2xl p-8 flex flex-col">
                   <Stars count={rating} />
                   <p className="text-charcoal leading-relaxed mt-4 mb-6 flex-1 italic">"{text}"</p>
                   <div className="border-t border-border pt-4">
                     <p className="font-bold text-charcoal">{name}</p>
-                    <p className="text-sm text-muted-foreground">{neighborhood} · {location}</p>
+                    <p className="text-sm text-muted-foreground">{location}</p>
                     <p className="text-xs text-muted-foreground mt-0.5">{service}</p>
                   </div>
                 </div>
@@ -749,7 +746,7 @@ const LuxuryShowerEnclosuresLanding = () => {
                   Your Bathroom Deserves Glass Built to the Same Standard
                 </h2>
                 <p className="text-white/80 text-lg leading-relaxed mb-8">
-                  Schedule a private in-home consultation. We'll bring glass samples, take measurements, and walk you through every option — at your convenience. No showroom visit. No pressure. Just expertise.
+                  Schedule a private on-site consultation. We'll bring glass samples, take measurements, and walk you through every option — at your convenience. No showroom visit. No pressure. Just expertise.
                 </p>
 
                 {/* Trust badges */}

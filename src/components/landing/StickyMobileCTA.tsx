@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageSquare } from "lucide-react";
-import { trackCTAClick } from "@/lib/analytics";
+import { trackCTAClick, trackPhoneCall } from "@/lib/analytics";
 
 interface StickyMobileCTAProps {
   onQuoteClick: () => void;
@@ -22,6 +22,7 @@ export const StickyMobileCTA = ({ onQuoteClick }: StickyMobileCTAProps) => {
         >
           <a
             href="tel:+17023830779"
+            onClick={() => trackPhoneCall("sticky_mobile_cta")}
             className="flex items-center justify-center gap-2"
           >
             <Phone className="h-5 w-5" />

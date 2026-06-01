@@ -19,7 +19,7 @@ interface FinalCTAProps {
   successMessage?: string;
 }
 
-const DEFAULT_FORMSPREE_URL = "https://formspree.io/f/mgopllzj";
+const DEFAULT_FORMSPREE_URL = "https://formspree.io/f/xqaydjpg";
 
 export const FinalCTA = ({
   formspreeUrl = DEFAULT_FORMSPREE_URL,

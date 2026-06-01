@@ -16,6 +16,9 @@ const FramelessShowerLanding = lazy(() => import("./pages/landing/FramelessShowe
 const FramelessShowerDoorsLVLanding = lazy(() => import("./pages/landing/FramelessShowerDoorsLVLanding"));
 const LuxuryShowerEnclosuresLanding = lazy(() => import("./pages/landing/LuxuryShowerEnclosuresLanding"));
 const ShowerDoorInstallationLVLanding = lazy(() => import("./pages/landing/ShowerDoorInstallationLVLanding"));
+const ShowerDoorInstallationNearMeLanding = lazy(() => import("./pages/landing/ShowerDoorInstallationNearMeLanding"));
+const SteamShowerInstallationLVLanding = lazy(() => import("./pages/landing/SteamShowerInstallationLVLanding"));
+const CustomShowerEnclosuresLVLanding = lazy(() => import("./pages/landing/CustomShowerEnclosuresLVLanding"));
 
 // Eagerly load critical pages
 import Index from "./pages/Index";
@@ -85,6 +88,9 @@ function App() {
             <Route path="/lp/frameless-shower-doors-lv" element={<FramelessShowerDoorsLVLanding />} />
             <Route path="/lp/luxury-shower-enclosures" element={<LuxuryShowerEnclosuresLanding />} />
             <Route path="/lp/shower-door-installation-lv" element={<ShowerDoorInstallationLVLanding />} />
+            <Route path="/lp/shower-door-installation-near-me" element={<ShowerDoorInstallationNearMeLanding />} />
+            <Route path="/lp/steam-shower-installation-lv" element={<SteamShowerInstallationLVLanding />} />
+            <Route path="/lp/custom-shower-enclosures-lv" element={<CustomShowerEnclosuresLVLanding />} />
           </Routes>
         </Suspense>
       </>
