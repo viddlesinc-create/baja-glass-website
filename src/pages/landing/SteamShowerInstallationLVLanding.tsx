@@ -221,17 +221,17 @@ function ConsultForm({ id }: { id: string }) {
         </div>
       </div>
       <div>
-        <label className="block text-sm font-medium text-charcoal mb-1">Email</label>
-        <input name="email" type="email" placeholder="you@email.com" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+        <label className="block text-sm font-medium text-charcoal mb-1">Email *</label>
+        <input name="email" type="email" required placeholder="you@email.com" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
       </div>
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-charcoal mb-1">ZIP</label>
-          <input name="zip" placeholder="89118" maxLength={5} className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+          <label className="block text-sm font-medium text-charcoal mb-1">ZIP *</label>
+          <input name="zip" required placeholder="89118" maxLength={5} pattern="[0-9]{5}" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
         </div>
         <div>
-          <label className="block text-sm font-medium text-charcoal mb-1">Project Type</label>
-          <select name="project_type" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal bg-background">
+          <label className="block text-sm font-medium text-charcoal mb-1">Project Type *</label>
+          <select name="project_type" required className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal bg-background">
             <option value="">Select…</option>
             <option value="new_remodel">New bathroom remodel</option>
             <option value="retrofit">Retrofit into existing bathroom</option>
@@ -240,8 +240,8 @@ function ConsultForm({ id }: { id: string }) {
         </div>
       </div>
       <div>
-        <label className="block text-sm font-medium text-charcoal mb-1">Project Description</label>
-        <textarea name="message" rows={3} placeholder="Approximate size, current state, timeline, anything else we should know…" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal resize-none" />
+        <label className="block text-sm font-medium text-charcoal mb-1">Project Description *</label>
+        <textarea name="message" rows={3} required placeholder="Approximate size, current state, timeline, anything else we should know…" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal resize-none" />
       </div>
       <input type="hidden" name="_subject" value="Steam Shower Design Consult Request" />
       <input type="hidden" name="source_lp" value="/lp/steam-shower-installation-lv" />
@@ -471,7 +471,7 @@ const SteamShowerInstallationLVLanding = () => {
                 </h2>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-background rounded-2xl p-6 border border-border mb-10">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-background rounded-2xl p-6 border border-border">
                 <div className="text-center">
                   <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Location</p>
                   <p className="font-bold text-charcoal">{caseStudy.location}</p>
@@ -488,20 +488,6 @@ const SteamShowerInstallationLVLanding = () => {
                   <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Final Cost</p>
                   <p className="font-bold text-red-600 text-lg">{caseStudy.finalCost}</p>
                 </div>
-              </div>
-
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {caseStudy.photos.map((p, i) => (
-                  <div key={i} className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-md group">
-                    <img src={p.src} alt={p.caption} className="w-full h-full object-cover" loading="lazy" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/30 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-3">
-                      <p className="text-white text-xs font-medium leading-snug">
-                        <span className="text-red-300 font-bold">Step {i + 1}.</span> {p.caption}
-                      </p>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
