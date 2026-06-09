@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, MapPin, Star, Shield, Clock } from "lucide-react";
-import { trackFormSubmission } from "@/lib/analytics";
+import { trackFormSubmission, trackPhoneCall } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
 import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
@@ -85,8 +85,7 @@ export const FinalCTA = ({
     }
 
     setIsSubmitting(true);
-    trackFormSubmission({ projectType: formData.projectType, source: "landing_final_cta", city: formData.city });
-    
+
     try {
       const response = await fetch(formspreeUrl, {
         method: "POST",
@@ -95,7 +94,7 @@ export const FinalCTA = ({
         },
         body: JSON.stringify(formData),
       });
-      
+
       if (response.ok) {
         fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
           method: "POST",
@@ -104,6 +103,7 @@ export const FinalCTA = ({
         }).catch(() => {});
         if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
         setSubmitted(true);
+        trackFormSubmission({ projectType: formData.projectType, source: "landing_final_cta", city: formData.city });
       } else {
         throw new Error('Form submission failed');
       }
@@ -148,8 +148,9 @@ export const FinalCTA = ({
 
               {/* Contact Info */}
               <div className="space-y-4">
-                <a 
-                  href="tel:+17023830779" 
+                <a
+                  href="tel:+17023830779"
+                  onClick={() => trackPhoneCall("final_cta")}
                   className="flex items-center gap-3 text-white hover:text-red-accent transition-colors"
                 >
                   <Phone className="h-6 w-6" />
@@ -291,8 +292,9 @@ export const FinalCTA = ({
                   <p className="text-muted-foreground mb-6">
                     {successMessage ?? "We'll contact you within 24-48 hours with your free quote."}
                   </p>
-                  <a 
-                    href="tel:+17023830779" 
+                  <a
+                    href="tel:+17023830779"
+                    onClick={() => trackPhoneCall("final_cta_footer")}
                     className="text-red-accent hover:text-red-accent-light font-semibold flex items-center justify-center gap-2"
                   >
                     <Phone className="h-5 w-5" />

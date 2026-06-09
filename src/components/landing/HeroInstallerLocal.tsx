@@ -1,6 +1,6 @@
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { trackCTAClick } from "@/lib/analytics";
+import { trackCTAClick, trackPhoneCall } from "@/lib/analytics";
 
 interface HeroInstallerLocalProps {
   onScrollToQuote: () => void;
@@ -50,7 +50,7 @@ export const HeroInstallerLocal = ({ onScrollToQuote }: HeroInstallerLocalProps)
               <a
                 href="tel:+17023830779"
                 className="flex items-center gap-2"
-                onClick={() => trackCTAClick("call_phone", "hero_installer_secondary")}
+                onClick={() => trackPhoneCall("hero_installer")}
               >
                 <Phone className="h-5 w-5" />
                 Call (702) 383-0779 — Speak to an Installer

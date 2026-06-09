@@ -176,14 +176,16 @@ function ConsultForm({ id }: { id: string }) {
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
-      await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
-      fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      }).catch(() => {});
-      if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
-      trackFormSubmission({ source: "lp_steam_shower_installation_lv", projectType: "steam_shower" });
+      const response = await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
+      if (response.ok) {
+        fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
+          method: "POST",
+          body: data,
+          headers: { Accept: "application/json" },
+        }).catch(() => {});
+        if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
+        trackFormSubmission({ source: "lp_steam_shower_installation_lv", projectType: "steam_shower" });
+      }
       setSubmitted(true);
     } catch {
       setSubmitted(true);

@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Star, Shield, Clock, Award } from "lucide-react";
-import { trackFormSubmission, trackCTAClick } from "@/lib/analytics";
+import { trackFormSubmission, trackCTAClick, trackPhoneCall } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
 import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
@@ -78,8 +78,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
     }
 
     setIsSubmitting(true);
-    trackFormSubmission({ projectType: formData.projectType, source: "landing_hero", city: formData.city });
-    
+
     try {
       const response = await fetch("https://formspree.io/f/xqaydjpg", {
         method: "POST",
@@ -88,9 +87,10 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
         },
         body: JSON.stringify(formData),
       });
-      
+
       if (response.ok) {
         setSubmitted(true);
+        trackFormSubmission({ projectType: formData.projectType, source: "landing_hero", city: formData.city });
         onFormSubmit?.(formData);
       } else {
         throw new Error('Form submission failed');
@@ -169,8 +169,9 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                 variant="outline"
                 className="border-2 border-white bg-white/20 text-white hover:bg-white hover:text-charcoal text-lg px-8 py-6 rounded-lg backdrop-blur-sm"
               >
-                <a 
+                <a
                   href={`tel:${COMPANY_PHONE}`}
+                  onClick={() => trackPhoneCall("landing_hero")}
                   className="flex items-center gap-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -188,8 +189,9 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
                 <p className="text-white/90 mb-4">We'll contact you within 24-48 hours with your free quote.</p>
-                <a 
+                <a
                   href={`tel:${COMPANY_PHONE}`}
+                  onClick={() => trackPhoneCall("landing_hero_success")}
                   className="text-red-accent hover:text-red-accent-light font-semibold flex items-center justify-center gap-2"
                 >
                   <Phone className="h-5 w-5" />
