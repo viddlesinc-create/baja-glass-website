@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PJK7SWRX');</script>
+    <!-- Google Tag Manager — deferred until first interaction or 3s, whichever
+         comes first. Frees the network + main thread for the LCP hero on mobile.
+         dataLayer is live immediately, so any app pushes (page_view, conversions)
+         queue and flush the moment GTM loads. gclid is captured from the URL on
+         load regardless of timing; conversions fire on form/call, well after. -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    (function(w,d,s,l,i){
+      var loaded=false;
+      function loadGTM(){
+        if(loaded) return; loaded=true;
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0], j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      }
+      var evs=['scroll','mousemove','touchstart','keydown','pointerdown'];
+      function onFirst(){ evs.forEach(function(e){w.removeEventListener(e,onFirst);}); loadGTM(); }
+      evs.forEach(function(e){ w.addEventListener(e,onFirst,{passive:true}); });
+      setTimeout(loadGTM, 3000);
+    })(window,document,'script','dataLayer','GTM-PJK7SWRX');
+    </script>
     <!-- End Google Tag Manager -->
     <script>window.prerenderReady = false;</script>
     
