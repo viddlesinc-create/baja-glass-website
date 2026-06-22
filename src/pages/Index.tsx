@@ -11,6 +11,7 @@ import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import GoogleMap from "@/components/GoogleMap";
 import { WebSiteSchema, SpeakableSchema } from "@/components/StructuredData";
 import OptimizedImage from "@/components/OptimizedImage";
+import HeroImagePreload from "@/components/HeroImagePreload";
 import PhoneNumber from "@/components/PhoneNumber";
 import IntroSection from "@/components/IntroSection";
 import SiteLinks from "@/components/SiteLinks";
@@ -97,6 +98,7 @@ const Index = () => {
         </div>
         
         {/* Hero Image - LCP Optimized with WebP + responsive srcset */}
+        <HeroImagePreload src="/images/hero-shower-door-main.webp" width={1920} />
         <div className="absolute inset-0">
           <OptimizedImage
             src="/images/hero-shower-door-main.webp"

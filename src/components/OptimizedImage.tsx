@@ -26,7 +26,7 @@ const isNetlify = () => {
 /**
  * Generates Netlify Image CDN URL for optimized image delivery
  */
-const getNetlifyImageUrl = (src: string, width: number, format?: 'webp' | 'avif') => {
+export const getNetlifyImageUrl = (src: string, width: number, format?: 'webp' | 'avif') => {
   const params = new URLSearchParams({
     url: src,
     w: width.toString(),
@@ -38,6 +38,18 @@ const getNetlifyImageUrl = (src: string, width: number, format?: 'webp' | 'avif'
   }
   
   return `/.netlify/images?${params.toString()}`;
+};
+
+/**
+ * Builds the WebP srcset string a hero <picture> renders, so a matching
+ * <link rel="preload" imagesrcset> can be emitted without a mismatched fetch.
+ * Mirrors the width logic used in OptimizedImage's SSR/Netlify branches.
+ */
+export const getHeroPreloadSrcSet = (src: string, width = 1920) => {
+  const widths = width <= 200
+    ? [width, width * 2, width * 3].filter(w => w <= 600)
+    : [400, 800, 1200, 1920].filter(w => w <= width * 2);
+  return widths.map(w => `${getNetlifyImageUrl(src, w, 'webp')} ${w}w`).join(', ');
 };
 
 /**

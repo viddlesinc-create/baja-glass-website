@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Phone, Star, ChevronLeft, ChevronRight, X, Check, Shield, Award, Clock, Droplets, Layers, Ruler, Wrench, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import OptimizedImage from "@/components/OptimizedImage";
+import HeroImagePreload from "@/components/HeroImagePreload";
 import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
@@ -312,13 +314,15 @@ const LuxuryShowerEnclosuresLanding = () => {
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background image */}
           <div className="absolute inset-0">
-            <img
+            <HeroImagePreload src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" width={1414} />
+            <OptimizedImage
               src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png"
               alt="Luxury frameless shower enclosure with freestanding tub — Baja Glass Las Vegas"
+              width={1414}
+              height={1650}
+              sizes="100vw"
+              priority
               className="w-full h-full object-cover"
-              fetchpriority="high"
-              loading="eager"
-              decoding="sync"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/70 to-charcoal/30" />
           </div>
@@ -333,8 +337,8 @@ const LuxuryShowerEnclosuresLanding = () => {
 
               {/* Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-xl">
-                Crafted for Las Vegas'
-                <span className="block text-white/90 mt-1">Most Distinguished Bathrooms</span>
+                Luxury Shower Enclosures in Las Vegas
+                <span className="block text-white/90 mt-1">Crafted for the Most Distinguished Bathrooms</span>
               </h1>
 
               {/* Sub */}
@@ -475,7 +479,7 @@ const LuxuryShowerEnclosuresLanding = () => {
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto ${reverse ? "lg:flex-row-reverse" : ""}`}>
                   <div className={reverse ? "lg:order-2" : ""}>
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
-                      <img src={image} alt={alt} className="w-full h-full object-cover" loading="lazy" />
+                      <OptimizedImage src={image} alt={alt} width={800} height={600} sizes="(min-width: 1024px) 50vw, 100vw" className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent" />
                     </div>
                   </div>
@@ -611,11 +615,13 @@ const LuxuryShowerEnclosuresLanding = () => {
                   className="relative aspect-[4/3] overflow-hidden rounded-xl group cursor-pointer focus:outline-none focus:ring-2 focus:ring-charcoal focus:ring-offset-2 shadow-md hover:shadow-xl transition-shadow duration-300"
                   aria-label={`View ${img.caption}`}
                 >
-                  <img
+                  <OptimizedImage
                     src={img.src}
                     alt={img.alt}
+                    width={800}
+                    height={600}
+                    sizes="(min-width: 768px) 33vw, 50vw"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">

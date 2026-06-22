@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { Phone, CheckCircle, MapPin } from "lucide-react";
 import { HeroInstallerLocal } from "@/components/landing/HeroInstallerLocal";
+import OptimizedImage from "@/components/OptimizedImage";
 import { TrustBar } from "@/components/landing/TrustBar";
 import { QuickQuoteForm } from "@/components/landing/QuickQuoteForm";
 import { FAQAccordion, FAQItem } from "@/components/landing/FAQAccordion";
@@ -386,9 +387,12 @@ const ShowerDoorInstallationLVLanding = () => {
         <header className="sticky top-0 z-50 bg-charcoal shadow-md">
           <div className="container mx-auto px-4 py-3 flex items-center justify-between">
             <a href="/" aria-label="Baja Glass Home">
-              <img
+              <OptimizedImage
                 src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png"
                 alt="Baja Glass & Mirror"
+                width={160}
+                height={159}
+                priority
                 className="h-10 w-auto"
               />
             </a>

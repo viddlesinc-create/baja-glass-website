@@ -5,6 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Star, Shield, Clock, Award } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
+import HeroImagePreload from "@/components/HeroImagePreload";
 import { trackFormSubmission, trackCTAClick, trackPhoneCall } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
 import { useMathCaptcha } from "@/hooks/useMathCaptcha";
@@ -115,15 +117,18 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png')`
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/95 via-charcoal/85 to-charcoal/75" />
-      </div>
+      <HeroImagePreload src="/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png" width={1382} />
+      {/* Background Image with Overlay (LCP element — optimized + preloaded) */}
+      <OptimizedImage
+        src="/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png"
+        alt=""
+        width={1382}
+        height={1726}
+        sizes="100vw"
+        priority
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-charcoal/95 via-charcoal/85 to-charcoal/75" />
 
       <div className="container mx-auto px-4 relative z-10 py-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -143,14 +148,14 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
             </div>
           </div>
 
-          {/* Main Headline */}
+          {/* Main Headline — leads with exact-match query for ad relevance */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight">
-            Transform Your Bathroom with Premium{" "}
-            <span className="text-red-accent">Frameless Shower Doors</span>
+            Frameless Shower Doors{" "}
+            <span className="text-red-accent">in Las Vegas</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Expert Installation in Las Vegas • Free In-Home Measurement • Lifetime Warranty on Hardware
+            Custom-fit & expertly installed — free in-home measurement and a lifetime warranty on hardware
           </p>
 
           {/* CTA Buttons or Form */}
