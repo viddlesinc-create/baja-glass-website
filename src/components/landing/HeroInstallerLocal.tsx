@@ -1,5 +1,7 @@
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import OptimizedImage from "@/components/OptimizedImage";
+import HeroImagePreload from "@/components/HeroImagePreload";
 import { trackCTAClick, trackPhoneCall } from "@/lib/analytics";
 
 interface HeroInstallerLocalProps {
@@ -14,11 +16,15 @@ export const HeroInstallerLocal = ({ onScrollToQuote }: HeroInstallerLocalProps)
 
   return (
     <section className="relative text-white py-24 md:py-36 overflow-hidden">
-      {/* Background image */}
-      <img
+      <HeroImagePreload src="/images/hero-shower-door-main.webp" width={1920} />
+      {/* Background image (LCP element — optimized + preloaded) */}
+      <OptimizedImage
         src="/images/hero-shower-door-main.webp"
         alt=""
-        aria-hidden="true"
+        width={1920}
+        height={1080}
+        sizes="100vw"
+        priority
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
       {/* Dark overlay so text is readable */}

@@ -38,9 +38,9 @@
     
     <!-- Preload Logo (above-the-fold, first painted element) -->
     <link rel="preload" as="image" type="image/webp" href="/images/logo-160.webp" fetchpriority="high">
-    <!-- Preload LCP Hero Image - WebP optimized -->
-    <link rel="preload" as="image" type="image/webp" href="/images/hero-shower-door-main.webp" fetchpriority="high">
-    
+    <!-- LCP hero image is preloaded per-route via <HeroImagePreload> (Helmet) so each
+         page preloads its own hero and the correct Netlify Image CDN candidate. -->
+
     <!-- Google Fonts - Non-render-blocking with preload -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap"></noscript>

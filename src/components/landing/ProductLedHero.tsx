@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Shield, Wrench, Sparkles } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
+import HeroImagePreload from "@/components/HeroImagePreload";
 import { trackCTAClick } from "@/lib/analytics";
 
 interface ProductLedHeroProps {
@@ -21,14 +23,18 @@ export const ProductLedHero = ({ onQuoteClick }: ProductLedHeroProps) => {
 
   return (
     <section className="relative min-h-[88vh] flex items-center justify-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/images/hero-shower-door-main.webp')`,
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/60 to-charcoal/40" />
-      </div>
+      <HeroImagePreload src="/images/hero-shower-door-main.webp" width={1920} />
+      {/* Background image (LCP element — optimized + preloaded) */}
+      <OptimizedImage
+        src="/images/hero-shower-door-main.webp"
+        alt=""
+        width={1920}
+        height={1080}
+        sizes="100vw"
+        priority
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/60 to-charcoal/40" />
 
       <div className="container mx-auto px-4 relative z-10 py-20">
         <div className="max-w-4xl mx-auto text-center">

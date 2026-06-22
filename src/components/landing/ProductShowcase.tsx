@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
 
 interface ShowcaseItem {
   name: string;
@@ -64,10 +65,12 @@ export const ProductShowcase = () => {
                 className="bg-background rounded-xl shadow-lg overflow-hidden flex flex-col"
               >
                 <div className="aspect-[4/3] overflow-hidden bg-muted">
-                  <img
+                  <OptimizedImage
                     src={item.image}
                     alt={item.alt}
-                    loading="lazy"
+                    width={800}
+                    height={600}
+                    sizes="(min-width: 768px) 33vw, 100vw"
                     className="w-full h-full object-cover"
                   />
                 </div>

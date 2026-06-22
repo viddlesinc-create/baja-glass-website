@@ -18,6 +18,8 @@ import {
   Ruler,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import OptimizedImage from "@/components/OptimizedImage";
+import HeroImagePreload from "@/components/HeroImagePreload";
 import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { trackFormSubmission, trackPhoneCall } from "@/lib/analytics";
@@ -355,13 +357,15 @@ const SteamShowerInstallationLVLanding = () => {
         {/* ── 1. HERO ─────────────────────────────────────────────────────── */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0">
-            <img
+            <HeroImagePreload src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" width={1414} />
+            <OptimizedImage
               src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png"
               alt="Custom steam shower installation with vapor-tight frameless glass — Baja Glass Las Vegas"
+              width={1414}
+              height={1650}
+              sizes="100vw"
+              priority
               className="w-full h-full object-cover"
-              fetchpriority="high"
-              loading="eager"
-              decoding="sync"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/75 to-charcoal/40" />
           </div>
@@ -600,7 +604,7 @@ const SteamShowerInstallationLVLanding = () => {
                   className="relative aspect-[4/3] overflow-hidden rounded-xl group cursor-pointer focus:outline-none focus:ring-2 focus:ring-charcoal focus:ring-offset-2 shadow-md hover:shadow-xl transition-shadow duration-300"
                   aria-label={`View ${img.caption}`}
                 >
-                  <img src={img.src} alt={img.alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  <OptimizedImage src={img.src} alt={img.alt} width={800} height={600} sizes="(min-width: 768px) 33vw, 50vw" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <p className="text-white text-sm font-medium leading-snug">{img.caption}</p>

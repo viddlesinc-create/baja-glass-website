@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import OptimizedImage from "@/components/OptimizedImage";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 interface GalleryImage {
@@ -78,11 +79,13 @@ export const LandingGallery = () => {
               onClick={() => openLightbox(index)}
               className="relative aspect-[4/3] overflow-hidden rounded-lg group cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             >
-              <img
+              <OptimizedImage
                 src={image.src}
                 alt={image.alt}
+                width={800}
+                height={600}
+                sizes="(min-width: 768px) 33vw, 50vw"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-4">
