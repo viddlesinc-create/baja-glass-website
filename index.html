@@ -28,23 +28,18 @@
     <!-- Page-specific meta tags will be injected here by SSR -->
     
     <!-- Preconnect hints - must come before any resources from these origins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    
-    <!-- DNS Prefetch for additional origins -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    
+
     <!-- Preload Logo (above-the-fold, first painted element) -->
     <link rel="preload" as="image" type="image/webp" href="/images/logo-160.webp" fetchpriority="high">
     <!-- LCP hero image is preloaded per-route via <HeroImagePreload> (Helmet) so each
          page preloads its own hero and the correct Netlify Image CDN candidate. -->
 
-    <!-- Google Fonts - Non-render-blocking with preload -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap"></noscript>
-    
+    <!-- Self-hosted fonts (same-origin, immutable-cached) preloaded so the H1 LCP
+         font (Playfair) and body font (Inter) arrive early — no cross-origin chain. -->
+    <link rel="preload" href="/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+
     <!-- OG/Twitter meta tags are injected per-page by react-helmet-async (SSG) -->
   </head>
 
