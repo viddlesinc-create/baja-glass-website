@@ -68,17 +68,22 @@ const OptimizedImage = ({
 }: OptimizedImageProps) => {
   const [fallbackToOriginal, setFallbackToOriginal] = useState(false);
 
-  // During SSR, use Netlify CDN URLs so prerendered HTML points to optimized images
-  if (isSSR) {
-    const ssrWidths = width <= 200
-      ? [width, width * 2, width * 3].filter(w => w <= 600)
-      : [400, 800, 1200, 1920].filter(w => w <= width * 2);
-    const ssrWebpSrcSet = ssrWidths
-      .map(w => `${getNetlifyImageUrl(src, w, 'webp')} ${w}w`)
-      .join(', ');
+  // Render IDENTICAL markup on the server and on the Netlify client so React
+  // hydration is a no-op (a divergent <picture> here forced a re-render of every
+  // image during hydration, re-painting the hero and pushing LCP out). Single
+  // webp source keeps the per-page hero preload (also webp) a 1:1 match.
+  const widths = width <= 200
+    ? [width, width * 2, width * 3].filter(w => w <= 600)
+    : [400, 800, 1200, 1920].filter(w => w <= width * 2);
+
+  const webpSrcSet = widths
+    .map(w => `${getNetlifyImageUrl(src, w, 'webp')} ${w}w`)
+    .join(', ');
+
+  if (isSSR || (isNetlify() && !fallbackToOriginal)) {
     return (
       <picture>
-        <source type="image/webp" srcSet={ssrWebpSrcSet} sizes={sizes} />
+        <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
         <img
           src={getNetlifyImageUrl(src, 1200, 'webp')}
           alt={alt}
@@ -88,60 +93,24 @@ const OptimizedImage = ({
           fetchpriority={priority ? 'high' : 'auto'}
           loading={priority ? 'eager' : 'lazy'}
           decoding={priority ? 'sync' : 'async'}
+          onError={() => setFallbackToOriginal(true)}
         />
       </picture>
     );
   }
 
-  if (!isNetlify() || fallbackToOriginal) {
-    return (
-      <img
-        src={src}
-        alt={alt}
-        className={className}
-        width={width}
-        height={height}
-        fetchpriority={priority ? 'high' : 'auto'}
-        loading={priority ? 'eager' : 'lazy'}
-        decoding={priority ? 'sync' : 'async'}
-      />
-    );
-  }
-
-  // Generate appropriate widths based on the target width
-  const widths = width <= 200 
-    ? [width, width * 2, width * 3].filter(w => w <= 600)
-    : [400, 800, 1200, 1920].filter(w => w <= width * 2);
-
-  const avifSrcSet = widths
-    .map(w => `${getNetlifyImageUrl(src, w, 'avif')} ${w}w`)
-    .join(', ');
-
-  const webpSrcSet = widths
-    .map(w => `${getNetlifyImageUrl(src, w, 'webp')} ${w}w`)
-    .join(', ');
-
-  const fallbackSrcSet = widths
-    .map(w => `${getNetlifyImageUrl(src, w)} ${w}w`)
-    .join(', ');
-
+  // Dev / non-Netlify / CDN error: serve the original asset directly.
   return (
-    <picture>
-      <source type="image/avif" srcSet={avifSrcSet} sizes={sizes} />
-      <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
-      <source srcSet={fallbackSrcSet} sizes={sizes} />
-      <img
-        src={getNetlifyImageUrl(src, 1200)}
-        alt={alt}
-        className={className}
-        width={width}
-        height={height}
-        fetchpriority={priority ? 'high' : 'auto'}
-        loading={priority ? 'eager' : 'lazy'}
-        decoding={priority ? 'sync' : 'async'}
-        onError={() => setFallbackToOriginal(true)}
-      />
-    </picture>
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      width={width}
+      height={height}
+      fetchpriority={priority ? 'high' : 'auto'}
+      loading={priority ? 'eager' : 'lazy'}
+      decoding={priority ? 'sync' : 'async'}
+    />
   );
 };
 
