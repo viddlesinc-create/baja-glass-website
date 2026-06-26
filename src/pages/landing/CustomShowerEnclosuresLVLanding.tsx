@@ -1,11 +1,8 @@
-import { useRef, useState } from "react";
+import { useRef, useState, lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import {
   Phone,
   Star,
-  ChevronLeft,
-  ChevronRight,
-  X,
   Check,
   Shield,
   Award,
@@ -20,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import OptimizedImage from "@/components/OptimizedImage";
 import HeroImagePreload from "@/components/HeroImagePreload";
 import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+const PortfolioLightbox = lazy(() => import("@/components/landing/PortfolioLightbox"));
 import { trackFormSubmission, trackPhoneCall } from "@/lib/analytics";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
@@ -476,29 +473,17 @@ const CustomShowerEnclosuresLVLanding = () => {
             </div>
           </div>
 
-          <Dialog open={lightboxIndex !== null} onOpenChange={(open) => !open && closeLightbox()}>
-            <DialogContent className="max-w-5xl w-full p-0 bg-charcoal border-0 overflow-hidden">
-              <div className="relative">
-                {lightboxIndex !== null && (
-                  <img src={portfolio[lightboxIndex].src} alt={portfolio[lightboxIndex].alt} className="w-full max-h-[80vh] object-contain" />
-                )}
-                <button onClick={closeLightbox} className="absolute top-4 right-4 bg-white/10 hover:bg-white/20 rounded-full p-2 text-white transition-colors" aria-label="Close">
-                  <X className="h-5 w-5" />
-                </button>
-                <button onClick={prevImage} className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-3 text-white transition-colors" aria-label="Previous">
-                  <ChevronLeft className="h-5 w-5" />
-                </button>
-                <button onClick={nextImage} className="absolute right-14 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-3 text-white transition-colors" aria-label="Next">
-                  <ChevronRight className="h-5 w-5" />
-                </button>
-                {lightboxIndex !== null && (
-                  <div className="px-6 py-4">
-                    <p className="text-white/80 text-sm">{portfolio[lightboxIndex].caption}</p>
-                  </div>
-                )}
-              </div>
-            </DialogContent>
-          </Dialog>
+          {lightboxIndex !== null && (
+            <Suspense fallback={null}>
+              <PortfolioLightbox
+                images={portfolio}
+                index={lightboxIndex}
+                onClose={closeLightbox}
+                onPrev={prevImage}
+                onNext={nextImage}
+              />
+            </Suspense>
+          )}
         </section>
 
         {/* ── 4. MADE-TO-FIT FEATURES ─────────────────────────────────────── */}

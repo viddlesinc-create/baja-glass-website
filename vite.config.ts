@@ -28,12 +28,15 @@ export default defineConfig(({ mode }) => ({
     cssMinify: true,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
-          'ui-forms': ['@radix-ui/react-tabs', '@radix-ui/react-select'],
-          forms: ['react-hook-form', '@hookform/resolvers', 'zod'],
-          charts: ['recharts'],
+        // Only the React core (needed on every route) is a shared eager chunk.
+        // Everything else — radix dialog/select, recharts, forms — is left to
+        // Rollup's per-dynamic-import splitting so it ships in the lazy chunk
+        // that actually uses it, instead of being force-preloaded on the
+        // standalone /lp/* landing pages that never render it.
+        manualChunks(id) {
+          if (/[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom|scheduler)[\\/]/.test(id)) {
+            return 'vendor';
+          }
         }
       }
     }

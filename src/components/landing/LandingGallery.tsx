@@ -1,14 +1,10 @@
-import { useState } from "react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
+import { useState, lazy, Suspense } from "react";
 import OptimizedImage from "@/components/OptimizedImage";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import type { GalleryImage } from "./GalleryLightbox";
 
-interface GalleryImage {
-  src: string;
-  alt: string;
-  caption?: string;
-}
+// Lazy so radix-dialog stays out of the landing page's initial critical JS;
+// it loads only when a visitor opens the lightbox.
+const GalleryLightbox = lazy(() => import("./GalleryLightbox"));
 
 const galleryImages: GalleryImage[] = [
   {
@@ -96,54 +92,18 @@ export const LandingGallery = () => {
           ))}
         </div>
 
-        {/* Lightbox */}
-        <Dialog open={selectedIndex !== null} onOpenChange={() => closeLightbox()}>
-          <DialogContent className="max-w-5xl w-full p-0 bg-charcoal border-0">
-            <div className="relative">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="absolute top-4 right-4 z-10 text-white hover:bg-white/20"
-                onClick={closeLightbox}
-              >
-                <X className="h-6 w-6" />
-              </Button>
-
-              <Button
-                variant="ghost"
-                size="icon"
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white hover:bg-white/20"
-                onClick={goToPrevious}
-              >
-                <ChevronLeft className="h-8 w-8" />
-              </Button>
-
-              <Button
-                variant="ghost"
-                size="icon"
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white hover:bg-white/20"
-                onClick={goToNext}
-              >
-                <ChevronRight className="h-8 w-8" />
-              </Button>
-
-              {selectedIndex !== null && (
-                <div className="flex flex-col">
-                  <img
-                    src={galleryImages[selectedIndex].src}
-                    alt={galleryImages[selectedIndex].alt}
-                    className="w-full h-auto max-h-[80vh] object-contain"
-                  />
-                  {galleryImages[selectedIndex].caption && (
-                    <div className="p-4 text-center">
-                      <p className="text-white font-medium">{galleryImages[selectedIndex].caption}</p>
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-          </DialogContent>
-        </Dialog>
+        {/* Lightbox — mounted only after a thumbnail is opened, lazy-loaded */}
+        {selectedIndex !== null && (
+          <Suspense fallback={null}>
+            <GalleryLightbox
+              images={galleryImages}
+              selectedIndex={selectedIndex}
+              onClose={closeLightbox}
+              onPrevious={goToPrevious}
+              onNext={goToNext}
+            />
+          </Suspense>
+        )}
       </div>
     </section>
   );
