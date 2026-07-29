@@ -13,7 +13,6 @@ import { trackFormSubmission, trackHendersonConversion } from "@/lib/analytics";
 import PhoneNumber from "@/components/PhoneNumber";
 import GoogleMap from "@/components/GoogleMap";
 import GetDirections from "@/components/GetDirections";
-import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,9 +23,11 @@ const Contact = () => {
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  // Honeypot — bots fill it, humans never see it. Named _gotcha (Formspree
+  // convention); never name a honeypot after a real autofill field.
+  const [gotcha, setGotcha] = useState("");
 
   const { toast } = useToast();
-  const { captcha, userAnswer, setUserAnswer, validateCaptcha, resetCaptcha } = useMathCaptcha();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,13 +41,12 @@ const Contact = () => {
       return;
     }
 
-    if (!validateCaptcha()) {
+    if (gotcha) {
+      // Bot: pretend success, send nothing
       toast({
-        title: "Incorrect Answer",
-        description: "Please solve the math problem correctly.",
-        variant: "destructive"
+        title: "Quote Request Submitted!",
+        description: "We'll contact you within 24-48 hours with your free quote and consultation details.",
       });
-      resetCaptcha();
       return;
     }
 
@@ -112,7 +112,7 @@ const Contact = () => {
     "Sliding Shower Door", 
     "Hinged/Pivot Door",
     "Custom Enclosure",
-    "Repair/Replacement",
+    "Shower Door Replacement",
     "Steam Shower",
     "Residential Glass Replacement",
     "Office Glass Enclosures",
@@ -185,10 +185,22 @@ const Contact = () => {
               <span className="ml-2">Trusted by Las Vegas homeowners</span>
             </div>
           </div>
-          <div className="flex flex-wrap justify-center gap-2">
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
             <Badge variant="outline" className="bg-white/10 text-white border-white/20">Free In-Home Measurements</Badge>
             <Badge variant="outline" className="bg-white/10 text-white border-white/20">Licensed & Insured</Badge>
             <Badge variant="outline" className="bg-white/10 text-white border-white/20">Strong Warranty</Badge>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="glass" size="lg" asChild>
+              <a href="#quote-form">Start My Free Quote</a>
+            </Button>
+            <Button variant="ghost" size="lg" asChild>
+              <PhoneNumber
+                location="contact_hero"
+                showIcon={true}
+                showPrefix={true}
+              />
+            </Button>
           </div>
         </div>
       </section>
@@ -276,15 +288,15 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div>
-                    <Label htmlFor="captcha">Spam Check: {captcha.question} *</Label>
+                  <div className="sr-only" aria-hidden="true">
+                    <Label htmlFor="_gotcha">Leave this field empty</Label>
                     <Input
-                      id="captcha"
-                      type="number"
-                      value={userAnswer}
-                      onChange={(e) => setUserAnswer(e.target.value)}
-                      placeholder="Enter your answer"
-                      required
+                      id="_gotcha"
+                      name="_gotcha"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={gotcha}
+                      onChange={(e) => setGotcha(e.target.value)}
                     />
                   </div>
 

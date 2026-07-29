@@ -10,7 +10,11 @@ const ShowerDoorsHenderson = () => {
     },
     {
       question: "Do you offer shower door replacement in Henderson?",
-      answer: "Yes! We provide comprehensive shower door replacement in Henderson including broken glass panel swaps, roller and track upgrades, seal replacement, and full hardware upgrades. Same-day scheduling available for emergencies."
+      answer: "Yes! We replace outdated framed and sliding doors with brand-new custom glass — a full upgrade, not a repair. We remove and dispose of your old door, take precise laser measurements, and install a new frameless or semi-frameless system built for your opening. We don't repair or service other brands' hardware."
+    },
+    {
+      question: "Who installs shower doors in Henderson?",
+      answer: "Baja Glass & Mirror is a locally owned Las Vegas glass company whose installers handle Henderson projects daily, from Green Valley to Anthem. Every door is custom-measured in your home, fabricated from tempered glass, and installed by our own team — never subcontractors."
     },
     {
       question: "What's the best type of frameless shower door for Henderson homes?",
@@ -64,20 +68,23 @@ const ShowerDoorsHenderson = () => {
               </p>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Shower Door Replacement & Upgrades in Henderson</h2>
+            <h2 className="text-3xl font-bold mb-6 mt-12">Henderson Shower Door Installers You Can Trust</h2>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                Looking to <strong>replace your shower door in Henderson</strong>? We provide fast, reliable service for all types of shower door upgrades. Our comprehensive <strong>Henderson shower door replacement</strong> services include:
+                Searching for <strong>shower door installers in Henderson</strong>? Our own team — never subcontractors — handles every step: free in-home consultation, laser measurement, custom fabrication from tempered glass, and precision installation. Most standard installs are finished in a single 2–4 hour visit.
               </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Broken or cracked glass panel replacement</li>
-                <li>Sliding door roller and track upgrades</li>
-                <li>Shower seal and sweep replacement</li>
-                <li>Full hardware upgrades and modernization</li>
-                <li>Complete door replacement for persistent leaks</li>
-              </ul>
               <p>
-                For emergency <strong>shower glass replacement in Henderson</strong>, call us at (702) 383-0779 for same-day scheduling.
+                Every installation is backed by our workmanship warranty and built to handle Henderson's hard water with optional protective glass coatings.
+              </p>
+            </div>
+
+            <h2 className="text-3xl font-bold mb-6 mt-12">Shower Door Replacement in Henderson — Full Upgrades, Not Repairs</h2>
+            <div className="space-y-4 text-lg text-muted-foreground">
+              <p>
+                Ready to <strong>replace your shower door in Henderson</strong>? We replace old framed, sliding, and builder-grade doors with brand-new custom frameless or semi-frameless glass. We remove and dispose of your existing door, prepare the opening, and install a completely new system — thick tempered glass, premium hardware, watertight fit.
+              </p>
+              <p>
+                We design and install new glass only — we don&apos;t repair or service other brands&apos; hardware. If your old door is failing, a full <strong>Henderson shower door replacement</strong> is the lasting fix. Call (702) 383-0779 for a free quote.
               </p>
             </div>
 

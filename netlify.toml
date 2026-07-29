@@ -166,6 +166,13 @@
   status = 301
   force = true
 
+# Repair URL retired — no repair services offered (renamed to replacement, Jul 2026)
+[[redirects]]
+  from = "/glass-company-las-vegas/residential-glass-repair"
+  to = "/glass-company-las-vegas/residential-glass-replacement"
+  status = 301
+  force = true
+
 # ==========================================
 # WWW → NON-WWW (consolidate link equity)
 # ==========================================

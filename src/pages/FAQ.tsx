@@ -337,7 +337,7 @@ const FAQ = () => {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Frequently Asked Questions</h1>
             <p className="text-xl text-white/90 mb-8">
-              Expert answers about shower doors, glass enclosures, installation, and repair services in Las Vegas.
+              Expert answers about shower doors, glass enclosures, and custom installation in Las Vegas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="glass" size="lg" asChild>

@@ -492,7 +492,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/residential-glass-repair" onClick={() => window.scrollTo(0, 0)}>Emergency Glass Replacement</Link>
+                  <Link to="/glass-company-las-vegas/residential-glass-replacement" onClick={() => window.scrollTo(0, 0)}>Emergency Glass Replacement</Link>
                 </Button>
               </CardContent>
             </Card>

@@ -42,7 +42,7 @@ const GlassCompanyLasVegas = () => {
         "Mirror installation and replacement",
         "Patio door glass and emergency services"
       ],
-      href: "/glass-company-las-vegas/residential-glass-repair",
+      href: "/glass-company-las-vegas/residential-glass-replacement",
       image: "/lovable-uploads/bf541daa-269d-4a2f-88a1-ade3c731b28b.png"
     }
   ];

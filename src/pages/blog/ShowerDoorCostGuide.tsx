@@ -78,7 +78,7 @@ const ShowerDoorCostGuide = () => {
               }
             },
             "datePublished": "2025-01-15",
-            "dateModified": "2026-01-10",
+            "dateModified": "2026-07-29",
             "image": "https://bajaglass.com/og-image.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",

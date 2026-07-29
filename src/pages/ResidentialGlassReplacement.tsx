@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 const brokenWindowLasVegas = "/images/broken-window-las-vegas.jpg";
 
-const ResidentialGlassRepair = () => {
+const ResidentialGlassReplacement = () => {
   const services = [
     {
       title: "Window Glass Replacement",
@@ -291,4 +291,4 @@ const ResidentialGlassRepair = () => {
   );
 };
 
-export default ResidentialGlassRepair;
+export default ResidentialGlassReplacement;

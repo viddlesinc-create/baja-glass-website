@@ -431,8 +431,8 @@ const CustomEnclosures = () => {
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-lg">Shower Glass Repair</CardTitle>
-                <CardDescription>Professional repair and replacement</CardDescription>
+                <CardTitle className="text-lg">Shower Door Replacement</CardTitle>
+                <CardDescription>Full upgrades to new custom glass</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" asChild className="w-full">

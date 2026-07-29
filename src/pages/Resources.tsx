@@ -394,7 +394,7 @@ const Resources = () => {
                   <li>• Insurance claim assistance</li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/residential-glass-repair" onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
+                  <Link to="/glass-company-las-vegas/residential-glass-replacement" onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
                 </Button>
               </CardContent>
             </Card>

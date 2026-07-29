@@ -37,7 +37,7 @@ const Header = () => {
   ];
 
   const glassCompanyPages = [
-    { name: "Residential Glass Replacement", href: "/glass-company-las-vegas/residential-glass-repair" },
+    { name: "Residential Glass Replacement", href: "/glass-company-las-vegas/residential-glass-replacement" },
     { name: "Office Enclosures", href: "/glass-company-las-vegas/office-enclosures" },
   ];
 

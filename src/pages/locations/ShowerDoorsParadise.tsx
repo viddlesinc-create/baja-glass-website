@@ -34,12 +34,6 @@ const ShowerDoorsParadise = () => {
           service: "Sliding Shower Door"
         },
         {
-          name: "Carlos Sanchez",
-          text: "Our shower door rollers were worn out and the door was hard to slide. Baja Glass came out, replaced the rollers and tracks, and now it glides like new.",
-          rating: 5,
-          service: "Sliding Door Upgrade"
-        },
-        {
           name: "Nicole Adams",
           text: "Love our new sliding shower door! The installation was quick and the quality is excellent. The door slides smoothly and looks beautiful. Highly recommend Baja Glass.",
           rating: 5,
