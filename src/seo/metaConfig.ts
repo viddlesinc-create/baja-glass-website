@@ -6,8 +6,8 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
-    title: 'Baja Glass & Mirror | Custom Made Shower Doors Las Vegas',
-    description: 'Custom made shower doors, frameless enclosures & mirrors from a local Las Vegas glass company. Serving Henderson & Summerlin. Free in-home estimates.',
+    title: 'Custom Shower Doors Las Vegas | Baja Glass & Mirror',
+    description: 'Custom shower doors, frameless enclosures & mirrors, made to measure by a local Las Vegas glass company. Henderson & Summerlin. Free in-home estimates.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
