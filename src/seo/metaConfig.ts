@@ -7,7 +7,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
     title: 'Custom Shower Doors Las Vegas | Baja Glass & Mirror',
-    description: 'Custom shower doors, frameless enclosures & mirrors, made to measure by a local Las Vegas glass company. Henderson & Summerlin. Free in-home estimates.',
+    description: 'Rated 4.6★ by Las Vegas homeowners. Custom shower doors, frameless enclosures & mirrors made to measure, installed in one visit. Free in-home estimates.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -80,8 +80,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: `${BASE_URL}/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png`,
   },
   '/shower-doors-las-vegas/custom-enclosures': {
-    title: 'Custom Shower Doors Las Vegas | Enclosures Made to Measure',
-    description: 'Custom shower doors & enclosures in Las Vegas — inline, corner, neo-angle, alcove & steam, built to precise measurements. Expert installation. Free quotes.',
+    title: 'Custom Shower Enclosures Las Vegas | Walk-In & Steam',
+    description: 'Custom glass shower enclosures for Las Vegas & Clark County — walk-in, corner, neo-angle, alcove & steam, built to precise measurements. Free quotes.',
     canonical: `${BASE_URL}/shower-doors-las-vegas/custom-enclosures`,
     ogImage: `${BASE_URL}/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png`,
   },
@@ -112,8 +112,8 @@ export const seoConfig: Record<string, SEOMeta> = {
 
   // ===== Location Pages =====
   '/shower-doors-henderson-nv': {
-    title: 'Shower Door Installers Henderson NV | Frameless & Custom',
-    description: 'Local shower door installers serving Henderson — frameless, sliding & custom glass, installed in one visit. Green Valley, Anthem, Seven Hills. Free quotes.',
+    title: 'Shower Door Installation & Replacement Henderson NV',
+    description: 'Henderson shower door installation & replacement from $800. Frameless doors & custom shower enclosures, installed in one visit. Green Valley, Anthem, Seven Hills. Free quotes.',
     canonical: `${BASE_URL}/shower-doors-henderson-nv`,
     ogImage: `${BASE_URL}/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png`,
   },
@@ -175,13 +175,13 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/blog/shower-door-installation-cost-las-vegas': {
     title: 'Shower Door Installation Cost: 2026 Las Vegas Price Guide',
-    description: 'How much does shower door installation cost? Real 2026 prices for frameless, semi-frameless & sliding doors from a Las Vegas installer, plus what drives cost.',
+    description: 'How much does shower door installation cost in Las Vegas? Real 2026 prices: framed from $400, semi-frameless from $800, frameless $1,200–$2,800. Full guide.',
     canonical: `${BASE_URL}/blog/shower-door-installation-cost-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/blog/frameless-vs-semi-frameless-shower-doors': {
-    title: 'Frameless vs Semi-Frameless Shower Doors | Comparison Guide - Baja Glass & Mirror',
-    description: 'Compare frameless, semi-frameless, and framed shower doors. Learn about aesthetics, pricing, maintenance, and which style is best for Las Vegas homes.',
+    title: 'Frameless vs Framed vs Semi-Frameless Shower Doors (2026)',
+    description: 'Frameless vs framed vs semi-frameless shower doors compared: price ($400–$2,800), looks, cleaning & durability — plus which is best for Las Vegas homes.',
     canonical: `${BASE_URL}/blog/frameless-vs-semi-frameless-shower-doors`,
     ogImage: DEFAULT_OG_IMAGE,
   },

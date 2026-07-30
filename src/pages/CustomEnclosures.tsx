@@ -42,6 +42,10 @@ const CustomEnclosures = () => {
   ];
   const faqs = [
     {
+      question: "Do you build custom glass walk-in shower enclosures?",
+      answer: "Yes — walk-in enclosures are one of our most requested builds in Las Vegas and Henderson. We fabricate fixed panels and doors from 3/8\" or 1/2\" tempered glass, sized to your opening, with low-profile or curbless thresholds where your layout allows."
+    },
+    {
       question: "Can you handle neo‑angle and steam enclosures?",
       answer: "Absolutely! We specialize in complex layouts including neo‑angle corners, steam-ready designs with proper sealing, and unique architectural challenges."
     },
@@ -96,6 +100,13 @@ const CustomEnclosures = () => {
               "@type": "OfferCatalog",
               "name": "Custom Shower Enclosures",
               "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Walk-In Shower Enclosures"
+                  }
+                },
                 {
                   "@type": "Offer",
                   "itemOffered": {
@@ -181,8 +192,8 @@ const CustomEnclosures = () => {
         
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">Custom Shower Enclosures in Enterprise & Spring Valley</h1>
-            <p className="text-xl mb-8 text-white/90">Inline, corner, neo‑angle, alcove, and steam—made to measure for a perfect fit.</p>
+            <h1 className="text-5xl font-bold mb-6">Custom Shower Enclosures in Las Vegas & Clark County</h1>
+            <p className="text-xl mb-8 text-white/90">Walk-in, inline, corner, neo‑angle, alcove, and steam—made to measure for a perfect fit.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="glass" size="lg" asChild>
                 <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Fast Quote</Link>
@@ -231,14 +242,49 @@ const CustomEnclosures = () => {
         </div>
       </section>
 
-      {/* Layouts & Configurations */}
+      {/* Walk-In Enclosures */}
       <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-8">Custom Glass Walk-In Shower Enclosures</h2>
+            <p className="text-lg text-muted-foreground text-center mb-6">
+              Walk-in showers are the most requested custom build in Las Vegas remodels — open, curbless-friendly layouts with heavy fixed panels instead of a swinging or sliding door. We fabricate <strong className="text-foreground">custom glass walk-in shower enclosures</strong> from 3/8" or 1/2" tempered glass, anchored with polished channel or minimal clips, and sized to your exact opening.
+            </p>
+            <p className="text-lg text-muted-foreground text-center mb-8">
+              Whether it's a single splash panel, a panel-and-return corner, or a full walk-through double-entry layout, every walk-in enclosure is laser-measured in your home and installed by our own team across Las Vegas, Henderson, and all of Clark County.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div className="bg-background p-6 rounded-lg">
+                <h3 className="font-semibold mb-2">Single Fixed Panel</h3>
+                <p className="text-sm text-muted-foreground">One heavy glass splash screen — the cleanest, most open look</p>
+              </div>
+              <div className="bg-background p-6 rounded-lg">
+                <h3 className="font-semibold mb-2">Panel + Return</h3>
+                <p className="text-sm text-muted-foreground">L-shaped glass for corner walk-ins and kneewall layouts</p>
+              </div>
+              <div className="bg-background p-6 rounded-lg">
+                <h3 className="font-semibold mb-2">Walk-Through</h3>
+                <p className="text-sm text-muted-foreground">Double-entry designs with glass on both sides</p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <Button variant="cta" asChild>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Walk-In Shower Quote</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Layouts & Configurations */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Enclosure Types We Build</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div>
               <h3 className="text-xl font-semibold mb-4">Layout Options</h3>
               <ul className="space-y-2 text-muted-foreground">
+                <li>• Walk-in showers and fixed splash panels</li>
                 <li>• Inline and panel‑door combinations</li>
                 <li>• Neo‑angle and corner enclosures</li>
                 <li>• Alcove and tub‑to‑shower conversions</li>

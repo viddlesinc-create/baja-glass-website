@@ -25,6 +25,10 @@ const ShowerDoorsHenderson = () => {
       answer: "Absolutely! We serve all Henderson neighborhoods including Green Valley, Anthem, Seven Hills, Inspirada, Cadence, Lake Las Vegas, and MacDonald Ranch with professional shower door installation and replacement."
     },
     {
+      question: "Do you build custom shower enclosures in Henderson?",
+      answer: "Yes. We design and install custom shower enclosures throughout Henderson — walk-in, corner, neo-angle, and steam-ready layouts. Each enclosure is laser-measured and fabricated to your exact opening, with your choice of glass thickness and hardware finish."
+    },
+    {
       question: "How long does shower door installation in Henderson take?",
       answer: "Most Henderson shower door installations are completed in 2-4 hours for standard configurations. Custom enclosures may take longer. We schedule at your convenience and complete most installs in a single visit."
     }
@@ -85,6 +89,16 @@ const ShowerDoorsHenderson = () => {
               </p>
               <p>
                 We design and install new glass only — we don&apos;t repair or service other brands&apos; hardware. If your old door is failing, a full <strong>Henderson shower door replacement</strong> is the lasting fix. Call (702) 383-0779 for a free quote.
+              </p>
+            </div>
+
+            <h2 className="text-3xl font-bold mb-6 mt-12">Custom Shower Doors &amp; Enclosures in Henderson</h2>
+            <div className="space-y-4 text-lg text-muted-foreground">
+              <p>
+                Beyond standard doors, we build <strong>custom shower enclosures for Henderson</strong> homes — walk-in, corner, neo-angle, and steam-ready configurations, each fabricated to your exact opening. Every <strong>custom shower door in Henderson</strong> starts with laser measurement, so out-of-square walls, kneewalls, and benches are accounted for before the glass is cut.
+              </p>
+              <p>
+                Explore our <Link to="/shower-doors-las-vegas/custom-enclosures" className="text-primary underline hover:text-primary/80">custom shower enclosures</Link> and <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80">glass shower enclosures</Link> to see layouts we've built across Green Valley, Seven Hills, and Anthem.
               </p>
             </div>
 

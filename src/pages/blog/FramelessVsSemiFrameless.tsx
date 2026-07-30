@@ -47,6 +47,10 @@ const FramelessVsSemiFrameless = () => {
 
   const faqs = [
     {
+      question: "What is the difference between framed and frameless shower doors?",
+      answer: "Framed shower doors use a full metal frame around 1/4\" glass for support, while frameless doors use thicker 3/8\" or 1/2\" tempered glass that needs no frame. Frameless costs more ($1,200-$2,800 vs $400-$800 installed) but looks cleaner, is easier to keep free of mineral buildup, and typically adds more resale value."
+    },
+    {
       question: "Which type of shower door is best for Las Vegas homes?",
       answer: "Frameless doors are most popular in Las Vegas due to their modern aesthetic and easy maintenance. In our hard water environment, having fewer metal channels means less mineral buildup. However, semi-frameless offers great value for secondary bathrooms."
     },
@@ -79,7 +83,7 @@ const FramelessVsSemiFrameless = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": "Frameless vs Semi-Frameless vs Framed Shower Doors: Which is Best?",
+            "headline": "Frameless vs Framed vs Semi-Frameless Shower Doors: Which is Best?",
             "description": "Complete comparison of frameless, semi-frameless, and framed shower doors. Learn the differences in style, cost, and maintenance for Las Vegas homes.",
             "author": {
               "@type": "Person",
@@ -98,7 +102,7 @@ const FramelessVsSemiFrameless = () => {
               }
             },
             "datePublished": "2025-01-15",
-            "dateModified": "2026-01-10",
+            "dateModified": "2026-07-30",
             "image": "https://bajaglass.com/og-image.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
@@ -129,7 +133,7 @@ const FramelessVsSemiFrameless = () => {
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-white/20 text-white">Comparison Guide</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Semi Frameless vs Frameless Shower Door: Which is Best?
+              Frameless vs Framed vs Semi-Frameless Shower Doors: Which is Best?
             </h1>
             <p className="text-xl text-white/90">
               Complete comparison of frameless, semi-frameless, and framed shower doors. Learn the differences in style, cost, and maintenance for Las Vegas homes.
@@ -142,8 +146,8 @@ const FramelessVsSemiFrameless = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-center">Semi Frameless vs Frameless Shower Door Comparison</h2>
-            <p className="text-center text-muted-foreground mb-8">What is the difference between frameless and semi frameless shower doors? Here's a complete breakdown:</p>
+            <h2 className="text-3xl font-bold mb-4 text-center">Frameless vs Framed vs Semi-Frameless Comparison</h2>
+            <p className="text-center text-muted-foreground mb-8">What is the difference between frameless, semi-frameless, and framed shower doors? Here's a complete breakdown:</p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
