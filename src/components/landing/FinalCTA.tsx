@@ -138,7 +138,7 @@ export const FinalCTA = ({
               <div className="flex flex-wrap gap-4 mb-8">
                 <div className="flex items-center gap-2 text-white/90">
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  <span>4.6 Star Rating</span>
+                  <span>4.7 Star Rating</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/90">
                   <Shield className="h-5 w-5" />

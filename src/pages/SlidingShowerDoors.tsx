@@ -84,8 +84,8 @@ const SlidingShowerDoors = () => {
             },
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "reviewCount": "27",
+              "ratingValue": "4.7",
+              "reviewCount": "42",
               "bestRating": "5",
               "worstRating": "1"
             }

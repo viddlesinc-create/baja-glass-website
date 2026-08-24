@@ -198,10 +198,10 @@ const FramelessShowerLanding = () => {
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.6",
+          "ratingValue": "4.7",
           "bestRating": "5",
           "worstRating": "1",
-          "reviewCount": "27",
+          "reviewCount": "42",
         },
         "priceRange": "$$",
         "openingHoursSpecification": [
@@ -232,8 +232,8 @@ const FramelessShowerLanding = () => {
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.6",
-          "reviewCount": "27",
+          "ratingValue": "4.7",
+          "reviewCount": "42",
         },
       },
       {

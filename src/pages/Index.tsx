@@ -220,7 +220,7 @@ const Index = () => {
               </div>
             </div>
             <p className="text-muted-foreground">
-              <strong>Rated 4.6/5 by homeowners in Las Vegas and Henderson</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
+              <strong>Rated 4.7/5 by homeowners in Las Vegas and Henderson</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
             </p>
           </div>
         </div>
@@ -277,13 +277,13 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">What Our Customers Say</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-accent to-charcoal mx-auto rounded-full mb-6"></div>
-            <div className="flex items-center justify-center gap-2 mb-2" role="img" aria-label="4.6 out of 5 stars rating">
+            <div className="flex items-center justify-center gap-2 mb-2" role="img" aria-label="4.7 out of 5 stars rating">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" aria-hidden="true" />
               ))}
-              <span className="ml-2 text-2xl font-bold">4.6</span>
+              <span className="ml-2 text-2xl font-bold">4.7</span>
             </div>
-            <p className="text-muted-foreground">Based on 27 Google reviews from Las Vegas homeowners</p>
+            <p className="text-muted-foreground">Based on 42 Google reviews from Las Vegas homeowners</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">

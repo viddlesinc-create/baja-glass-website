@@ -329,10 +329,10 @@ const CustomShowerEnclosuresLVLanding = () => {
         },
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.6",
+          ratingValue: "4.7",
           bestRating: "5",
           worstRating: "1",
-          reviewCount: "27",
+          reviewCount: "42",
         },
         priceRange: "$$$",
       },
@@ -432,8 +432,8 @@ const CustomShowerEnclosuresLVLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">4.6 Rated</span>
-                <span className="text-white/50">· 27 Reviews</span>
+                <span className="font-semibold">4.7 Rated</span>
+                <span className="text-white/50">· 42 Reviews</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
@@ -554,8 +554,8 @@ const CustomShowerEnclosuresLVLanding = () => {
               </h2>
               <div className="flex items-center justify-center gap-2">
                 <Stars />
-                <span className="font-semibold text-charcoal">4.6 / 5</span>
-                <span className="text-muted-foreground">· 27 verified reviews</span>
+                <span className="font-semibold text-charcoal">4.7 / 5</span>
+                <span className="text-muted-foreground">· 42 verified reviews</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">

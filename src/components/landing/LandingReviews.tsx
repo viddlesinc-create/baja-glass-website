@@ -97,9 +97,9 @@ export const FeaturedReviews = () => {
           </h2>
           <div className="flex items-center justify-center gap-2 mb-2">
             {renderStars(5)}
-            <span className="text-lg font-semibold ml-2">4.6 out of 5</span>
+            <span className="text-lg font-semibold ml-2">4.7 out of 5</span>
           </div>
-          <p className="text-muted-foreground">Based on 27 Google reviews</p>
+          <p className="text-muted-foreground">Based on 42 Google reviews</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">

@@ -122,10 +122,10 @@ const LocationPageTemplate = ({
             ],
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "4.6",
+              "ratingValue": "4.7",
               "bestRating": "5",
               "worstRating": "1",
-              "reviewCount": "27",
+              "reviewCount": "42",
               "ratingCount": "27"
             },
             "sameAs": [

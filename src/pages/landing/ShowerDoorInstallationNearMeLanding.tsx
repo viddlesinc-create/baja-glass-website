@@ -91,7 +91,7 @@ const features = [
   { icon: Clock, label: "Free On-Site Measure in 24h", sub: "Most days, same-week appointments" },
   { icon: MapPin, label: "Local to Las Vegas + Henderson", sub: "15-minute callbacks, not 3 weeks" },
   { icon: Wrench, label: "One-Day Install", sub: "Standard doors finished in half a day" },
-  { icon: Star, label: "4.6 ★ Google Reviews", sub: "27 verified customer reviews" },
+  { icon: Star, label: "4.7 ★ Google Reviews", sub: "42 verified customer reviews" },
   { icon: Shield, label: "1-Year Parts & Labor Warranty", sub: "Plus lifetime hardware warranty" },
 ];
 
@@ -280,10 +280,10 @@ const ShowerDoorInstallationNearMeLanding = () => {
         geo: { "@type": "GeoCoordinates", latitude: 36.097781, longitude: -115.197234 },
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.6",
+          ratingValue: "4.7",
           bestRating: "5",
           worstRating: "1",
-          reviewCount: "27",
+          reviewCount: "42",
         },
         priceRange: "$$",
       },
@@ -339,7 +339,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="text-white/90 text-sm font-medium tracking-wide">
-                  Licensed Installer · Local to Las Vegas · 4.6 ★ Google
+                  Licensed Installer · Local to Las Vegas · 4.7 ★ Google
                 </span>
               </div>
 
@@ -383,8 +383,8 @@ const ShowerDoorInstallationNearMeLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">4.6 Rated</span>
-                <span className="text-white/50">· 27 Reviews</span>
+                <span className="font-semibold">4.7 Rated</span>
+                <span className="text-white/50">· 42 Reviews</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
@@ -539,8 +539,8 @@ const ShowerDoorInstallationNearMeLanding = () => {
               </h2>
               <div className="flex items-center justify-center gap-2">
                 <Stars />
-                <span className="font-semibold text-charcoal">4.6 / 5</span>
-                <span className="text-muted-foreground">· 27 verified Google reviews</span>
+                <span className="font-semibold text-charcoal">4.7 / 5</span>
+                <span className="text-muted-foreground">· 42 verified Google reviews</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">

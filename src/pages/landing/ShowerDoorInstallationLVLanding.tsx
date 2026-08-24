@@ -217,9 +217,9 @@ const InstallerReviews = () => (
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
           ))}
-          <span className="ml-2 text-lg font-semibold">4.6 out of 5</span>
+          <span className="ml-2 text-lg font-semibold">4.7 out of 5</span>
         </div>
-        <p className="text-muted-foreground">Based on 27 Google reviews</p>
+        <p className="text-muted-foreground">Based on 42 Google reviews</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         {installerReviews.map((review, i) => (
@@ -334,10 +334,10 @@ const structuredData = {
       },
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: "4.6",
+        ratingValue: "4.7",
         bestRating: "5",
         worstRating: "1",
-        reviewCount: "27",
+        reviewCount: "42",
       },
       openingHoursSpecification: [
         {

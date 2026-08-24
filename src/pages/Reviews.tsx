@@ -184,7 +184,7 @@ const Reviews = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Customer Reviews | Baja Glass & Mirror Las Vegas</title>
-        <meta name="description" content="Read verified customer reviews of Baja Glass & Mirror. Rated 4.6/5 stars for shower door installation in Las Vegas, Henderson, and Summerlin." />
+        <meta name="description" content="Read verified customer reviews of Baja Glass & Mirror. Rated 4.7/5 stars for shower door installation in Las Vegas, Henderson, and Summerlin." />
         <link rel="canonical" href="https://bajaglass.com/reviews" />
       </Helmet>
 
@@ -200,14 +200,14 @@ const Reviews = () => {
           {/* Aggregate Rating Display */}
           <div className="flex flex-col items-center gap-4 mb-8">
             <div className="flex items-center gap-3">
-              <span className="text-6xl font-bold">4.6</span>
+              <span className="text-6xl font-bold">4.7</span>
               <div>
                 <div className="flex gap-1 mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className={`h-6 w-6 ${i < 4 ? 'fill-yellow-400 text-yellow-400' : 'fill-yellow-400/60 text-yellow-400/60'}`} />
                   ))}
                 </div>
-                <p className="text-white/90">Based on 27 Google reviews</p>
+                <p className="text-white/90">Based on 42 Google reviews</p>
               </div>
             </div>
           </div>
