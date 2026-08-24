@@ -196,24 +196,24 @@ function ConsultationForm({ id }: { id: string }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Full Name *</label>
-          <input name="name" required placeholder="Your name" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+          <input name="name" required placeholder="Your name" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal" />
         </div>
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Phone *</label>
-          <input name="phone" type="tel" required placeholder="(702) 000-0000" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+          <input name="phone" type="tel" required placeholder="(702) 000-0000" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal" />
         </div>
       </div>
       <div>
         <label className="block text-sm font-medium text-charcoal mb-1">Email</label>
-        <input name="email" type="email" placeholder="you@email.com" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+        <input name="email" type="email" placeholder="you@email.com" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal" />
       </div>
       <div>
         <label className="block text-sm font-medium text-charcoal mb-1">ZIP Code</label>
-        <input name="zip" placeholder="89118" maxLength={5} className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+        <input name="zip" placeholder="89118" maxLength={5} className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal" />
       </div>
       <div>
         <label className="block text-sm font-medium text-charcoal mb-1">Project Description</label>
-        <textarea name="message" rows={3} placeholder="Tell us about your bathroom — enclosure type, hardware preferences, timeline..." className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal resize-none" />
+        <textarea name="message" rows={3} placeholder="Tell us about your bathroom — enclosure type, hardware preferences, timeline..." className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal resize-none" />
       </div>
       <input type="hidden" name="_subject" value="Luxury Shower Enclosure Consultation Request" />
       <Button

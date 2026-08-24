@@ -180,4 +180,22 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Tailwind's preflight sets `color: inherit` on form controls, so any field
+     rendered inside a dark `text-white` section inherits white text and the
+     value becomes invisible as the visitor types. Anchor every control to the
+     readable default here. These are base-layer element selectors, so any
+     `text-*` / `placeholder:text-*` utility on the field still overrides them —
+     a field that genuinely needs light text just says so explicitly. */
+  input:where(:not([type="checkbox"]):not([type="radio"]):not([type="range"])),
+  textarea,
+  select {
+    color: hsl(var(--foreground));
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: hsl(var(--muted-foreground));
+    opacity: 1;
+  }
 }

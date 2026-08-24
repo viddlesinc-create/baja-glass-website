@@ -214,25 +214,25 @@ function ConsultForm({ id }: { id: string }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Full Name *</label>
-          <input name="name" required placeholder="Your name" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+          <input name="name" required placeholder="Your name" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal" />
         </div>
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Phone *</label>
-          <input name="phone" type="tel" required placeholder="(702) 000-0000" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+          <input name="phone" type="tel" required placeholder="(702) 000-0000" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal" />
         </div>
       </div>
       <div>
         <label className="block text-sm font-medium text-charcoal mb-1">Email *</label>
-        <input name="email" type="email" required placeholder="you@email.com" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+        <input name="email" type="email" required placeholder="you@email.com" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal" />
       </div>
       <div className="grid grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">ZIP *</label>
-          <input name="zip" required placeholder="89118" maxLength={5} pattern="[0-9]{5}" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal" />
+          <input name="zip" required placeholder="89118" maxLength={5} pattern="[0-9]{5}" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal" />
         </div>
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Project Type *</label>
-          <select name="project_type" required className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal bg-background">
+          <select name="project_type" required className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal">
             <option value="">Select…</option>
             <option value="new_remodel">New bathroom remodel</option>
             <option value="retrofit">Retrofit into existing bathroom</option>
@@ -242,7 +242,7 @@ function ConsultForm({ id }: { id: string }) {
       </div>
       <div>
         <label className="block text-sm font-medium text-charcoal mb-1">Project Description *</label>
-        <textarea name="message" rows={3} required placeholder="Approximate size, current state, timeline, anything else we should know…" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-charcoal resize-none" />
+        <textarea name="message" rows={3} required placeholder="Approximate size, current state, timeline, anything else we should know…" className="w-full border border-border rounded-lg px-3 py-2.5 text-sm bg-white text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-charcoal resize-none" />
       </div>
       <input type="hidden" name="_subject" value="Steam Shower Design Consult Request" />
       <input type="hidden" name="source_lp" value="/lp/steam-shower-installation-lv" />
