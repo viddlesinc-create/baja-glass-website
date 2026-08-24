@@ -3,10 +3,19 @@
  * Used exclusively by entry-server.tsx during SSG prerendering so that
  * renderToString() produces full page HTML instead of the Suspense fallback.
  *
- * Keep route definitions in sync with App.tsx.
+ * Keep route definitions in sync with App.tsx + MainSite.tsx.
+ *
+ * The <Suspense> boundaries below carry no laziness here — every import in this
+ * file is eager. They exist because the client tree (App.tsx wrapping a lazy
+ * MainSite, and MainSite wrapping its own lazy routes) has boundaries at these
+ * exact positions, and renderToString emits boundary markers into the HTML.
+ * Drop one and hydration fails at <Suspense>, outside any boundary, so React
+ * discards the entire prerendered page and re-renders it on the client.
  */
 import * as React from "react";
+import { Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import PageLoader from "./components/PageLoader";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -48,6 +57,8 @@ import Reviews from "./pages/Reviews";
 import ResidentialGlassReplacement from "./pages/ResidentialGlassReplacement";
 import OfficeEnclosures from "./pages/OfficeEnclosures";
 import FAQ from "./pages/FAQ";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 // Location pages
 import ShowerDoorsHenderson from "./pages/locations/ShowerDoorsHenderson";
@@ -78,21 +89,23 @@ function AppSSR() {
       <>
         <SEOHead />
         <ScrollToTop />
-        <Routes>
-          <Route path="/lp/frameless-shower-doors" element={<FramelessShowerLanding />} />
-          <Route path="/lp/frameless-shower-doors-lv" element={<FramelessShowerDoorsLVLanding />} />
-          <Route path="/lp/luxury-shower-enclosures" element={<LuxuryShowerEnclosuresLanding />} />
-          <Route path="/lp/shower-door-installation-lv" element={<ShowerDoorInstallationLVLanding />} />
-          <Route path="/lp/shower-door-installation-near-me" element={<ShowerDoorInstallationNearMeLanding />} />
-          <Route path="/lp/steam-shower-installation-lv" element={<SteamShowerInstallationLVLanding />} />
-          <Route path="/lp/custom-shower-enclosures-lv" element={<CustomShowerEnclosuresLVLanding />} />
-        </Routes>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/lp/frameless-shower-doors" element={<FramelessShowerLanding />} />
+            <Route path="/lp/frameless-shower-doors-lv" element={<FramelessShowerDoorsLVLanding />} />
+            <Route path="/lp/luxury-shower-enclosures" element={<LuxuryShowerEnclosuresLanding />} />
+            <Route path="/lp/shower-door-installation-lv" element={<ShowerDoorInstallationLVLanding />} />
+            <Route path="/lp/shower-door-installation-near-me" element={<ShowerDoorInstallationNearMeLanding />} />
+            <Route path="/lp/steam-shower-installation-lv" element={<SteamShowerInstallationLVLanding />} />
+            <Route path="/lp/custom-shower-enclosures-lv" element={<CustomShowerEnclosuresLVLanding />} />
+          </Routes>
+        </Suspense>
       </>
     );
   }
 
   return (
-    <>
+    <Suspense fallback={<PageLoader />}>
       <SEOHead />
       <QueryParameterRedirects />
       <ScrollToTop />
@@ -100,7 +113,8 @@ function AppSSR() {
         <Header />
         <BreadcrumbNav />
         <main id="main-content" className="flex-1">
-          <Routes>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
             <Route path="/glass-company-las-vegas/residential-glass-replacement" element={<ResidentialGlassReplacement />} />
@@ -122,6 +136,9 @@ function AppSSR() {
             <Route path="/sitemap" element={<Sitemap />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/shower-door-replacement-las-vegas" element={<RedirectComponent to="/shower-door-installation-las-vegas" />} />
             <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
             <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
             <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />
@@ -147,12 +164,13 @@ function AppSSR() {
             
             <Route path="/shower-doors-las-vegas/semi-frameless" element={<SemiFramelessShowerDoors />} />
             
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>
-    </>
+    </Suspense>
   );
 }
 
