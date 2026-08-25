@@ -99,19 +99,38 @@ const getRouteConfig = (route) => {
     return { priority: '0.85', changefreq: 'weekly' };
   }
   
+  // Indexable paid landing page — high-value product-intent content
+  if (route === '/lp/frameless-shower-doors-lv') {
+    return { priority: '0.9', changefreq: 'weekly' };
+  }
+
   // Default fallback
   return { priority: '0.5', changefreq: 'monthly' };
 };
 
 /**
+ * Google Ads landing pages that are deliberately indexable and therefore DO
+ * belong in the sitemap. Everything else under /lp/ stays noindex,nofollow and
+ * stays out (see isExcludedFromSitemap below).
+ *
+ * /lp/frameless-shower-doors-lv is the one exception: it is the product-intent
+ * page for [glass shower doors] and carries substantive, unique product content
+ * (glass thicknesses, glass types, hardware finishes, frameless vs
+ * semi-frameless, replacement) that the organic tree does not cover in one
+ * place. It is index,follow with a self-referencing canonical.
+ */
+const INDEXABLE_LP_ROUTES = new Set(['/lp/frameless-shower-doors-lv']);
+
+/**
  * Routes excluded from sitemap.xml.
- * Google Ads landing pages (/lp/*) are noindex,nofollow and exist only to
- * serve paid traffic. Listing them in the sitemap would invite organic
+ * The remaining Google Ads landing pages (/lp/*) are noindex,nofollow and exist
+ * only to serve paid traffic. Listing them in the sitemap would invite organic
  * indexing and cannibalize equivalent organic pages. They still get
  * prerendered (routes.js is the source of truth for prerender.js); we
  * simply omit them from the sitemap.
  */
-const isExcludedFromSitemap = (route) => route.startsWith('/lp/');
+const isExcludedFromSitemap = (route) =>
+  route.startsWith('/lp/') && !INDEXABLE_LP_ROUTES.has(route);
 
 const generateSitemap = () => {
   const today = new Date().toISOString().split('T')[0];
@@ -132,7 +151,8 @@ const generateSitemap = () => {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Google Ads landing pages (/lp/*) are intentionally excluded — they are
-  noindex,nofollow and exist only for paid traffic. See generate-sitemap.js
+  noindex,nofollow and exist only for paid traffic. The one exception is
+  /lp/frameless-shower-doors-lv, which is index,follow. See generate-sitemap.js
   for the exclusion rule.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

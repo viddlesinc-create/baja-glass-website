@@ -18,6 +18,42 @@ function stripDefaultMetaTags(html) {
   return html;
 }
 
+/**
+ * Vite emits the entry `<script type="module">` (and its modulepreload) ahead of
+ * the `<link rel="stylesheet">`. Chrome fetches all three at high priority, so
+ * the render-blocking stylesheet ends up queued behind ~95KB of deferred JS that
+ * nothing above the fold needs — measured on this build, the CSS landed at
+ * ~999ms instead of ~250ms, and first paint waited for it.
+ *
+ * Hoisting the stylesheet above the module script lets CSS win the connection.
+ * The scripts are `type="module"`, so they are deferred either way and execution
+ * order is unaffected.
+ */
+function hoistStylesheetAboveModuleScript(html) {
+  const styleMatch = html.match(/[ \t]*<link[^>]+rel="stylesheet"[^>]*>\n?/i);
+  const scriptMatch = html.match(/[ \t]*<script[^>]+type="module"[^>]*>[\s\S]*?<\/script>\n?/i);
+  if (!styleMatch || !scriptMatch) return html;
+
+  // Only reorder when the stylesheet currently sits after the module script.
+  if (html.indexOf(styleMatch[0]) < html.indexOf(scriptMatch[0])) return html;
+
+  return html
+    .replace(styleMatch[0], '')
+    .replace(scriptMatch[0], `${styleMatch[0]}${scriptMatch[0]}`);
+}
+
+/**
+ * react-helmet-async stamps data-rh="true" on everything it emits. The attribute
+ * is how the client re-attaches to meta/link/script tags on hydration, so it has
+ * to stay on those — but <title> is applied via document.title and never
+ * re-created, so stripping it there is safe and leaves an attribute-free
+ * <title> for SEO tooling (and `grep -o '<title>'`) to match.
+ */
+function renderTitleTag(helmet) {
+  if (!helmet.title) return '';
+  return helmet.title.toString().replace(/<title\s+data-rh="true"\s*>/i, '<title>');
+}
+
 function extractTag(html, tagRegex) {
   const match = html.match(tagRegex);
   return match ? match[1] : null;
@@ -58,7 +94,7 @@ async function prerender() {
         throw new Error(`Rendered body has no <h1> — route likely renders an empty shell or a client-only redirect (check AppSSR.tsx route registration)`);
       }
       
-      let finalHtml = stripDefaultMetaTags(rawTemplate);
+      let finalHtml = hoistStylesheetAboveModuleScript(stripDefaultMetaTags(rawTemplate));
       finalHtml = finalHtml.replace(
         '<div id="root"></div>',
         `<div id="root" data-ssr="true">${html}</div>`
@@ -67,7 +103,7 @@ async function prerender() {
       const { helmet } = helmetContext;
       if (helmet) {
         const headTags = [
-          helmet.title ? helmet.title.toString() : '',
+          renderTitleTag(helmet),
           helmet.meta ? helmet.meta.toString() : '',
           helmet.link ? helmet.link.toString() : '',
           helmet.script ? helmet.script.toString() : '',
@@ -118,7 +154,7 @@ async function prerender() {
     if (!html || !/<h1[\s>]/i.test(html)) {
       throw new Error('NotFound render produced no <h1>');
     }
-    let finalHtml = stripDefaultMetaTags(rawTemplate);
+    let finalHtml = hoistStylesheetAboveModuleScript(stripDefaultMetaTags(rawTemplate));
     finalHtml = finalHtml.replace(
       '<div id="root"></div>',
       `<div id="root" data-ssr="true">${html}</div>`
@@ -126,7 +162,7 @@ async function prerender() {
     const { helmet } = helmetContext;
     if (helmet) {
       const headTags = [
-        helmet.title ? helmet.title.toString() : '',
+        renderTitleTag(helmet),
         helmet.meta ? helmet.meta.toString() : '',
         helmet.link ? helmet.link.toString() : '',
         helmet.script ? helmet.script.toString() : '',
