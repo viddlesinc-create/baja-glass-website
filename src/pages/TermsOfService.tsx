@@ -4,10 +4,7 @@ const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Terms of Service | Baja Glass & Mirror</title>
-        <meta name="description" content="Terms of service for Baja Glass & Mirror in Las Vegas. Service agreements, warranties, and policies for our glass and shower door services." />
         <link rel="canonical" href="https://bajaglass.com/terms-of-service" />
-        <meta name="robots" content="noindex, follow" />
       </Helmet>
 
       <div className="container mx-auto px-4 py-16 max-w-4xl">

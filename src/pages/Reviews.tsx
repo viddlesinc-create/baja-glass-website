@@ -35,8 +35,6 @@ const Reviews = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Customer Reviews | Baja Glass & Mirror Las Vegas</title>
-        <meta name="description" content="Customer reviews for Baja Glass &amp; Mirror, custom shower door and glass installers in Las Vegas, Henderson and Summerlin. Call (702) 383-0779 for a free quote." />
         <link rel="canonical" href="https://bajaglass.com/reviews" />
       </Helmet>
 

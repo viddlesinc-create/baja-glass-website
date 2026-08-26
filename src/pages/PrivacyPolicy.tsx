@@ -5,10 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Privacy Policy | Baja Glass & Mirror</title>
-        <meta name="description" content="Privacy policy for Baja Glass & Mirror in Las Vegas. Learn how we collect, use, and protect your personal information." />
         <link rel="canonical" href="https://bajaglass.com/privacy-policy" />
-        <meta name="robots" content="noindex, follow" />
       </Helmet>
 
       <div className="container mx-auto px-4 py-16 max-w-4xl">

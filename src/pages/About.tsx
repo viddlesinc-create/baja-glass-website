@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Shield, Users, Award, Clock } from "lucide-react";
-import { Helmet } from "react-helmet-async";
 import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import GoogleMap from "@/components/GoogleMap";
 import GetDirections from "@/components/GetDirections";
@@ -42,10 +41,6 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <LocalBusinessSchema />
-      <Helmet>
-        <title>About Baja Glass & Mirror | Las Vegas Glass Company</title>
-        <meta name="description" content="Learn about Baja Glass & Mirror LLC — a family-owned, first responder owned glass company serving Las Vegas since 2009. Licensed, bonded, and insured." />
-      </Helmet>
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white">

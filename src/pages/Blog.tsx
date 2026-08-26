@@ -23,16 +23,9 @@ const Blog = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Shower Door Blog | Tips, Guides & Resources - Baja Glass & Mirror</title>
-        <meta 
-          name="description" 
-          content="Expert shower door guides, maintenance tips, and industry insights from Las Vegas's trusted glass company. Learn about installation, costs, and care." 
-        />
         <link rel="canonical" href="https://bajaglass.com/blog" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Shower Door Blog | Tips, Guides & Resources - Baja Glass & Mirror" />
-        <meta property="og:description" content="Expert shower door guides, maintenance tips, and industry insights from Las Vegas's trusted glass company." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/blog" />
         <meta property="og:image" content="https://bajaglass.com/og-image.jpg" />
@@ -42,8 +35,6 @@ const Blog = () => {
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Shower Door Blog | Baja Glass & Mirror" />
-        <meta name="twitter:description" content="Expert shower door guides and tips from Las Vegas's trusted glass company." />
         <meta name="twitter:image" content="https://bajaglass.com/og-image.jpg" />
 
         {/* Blog Schema */}
