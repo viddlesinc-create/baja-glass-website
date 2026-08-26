@@ -369,7 +369,7 @@ const ShowerDoorsHub = () => {
                 <span className="font-medium">Custom Designs</span>
               </Link>
               <Link to="/shower-door-installation-las-vegas" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
-                <span className="font-medium">Installation & Replacement</span>
+                <span className="font-medium">Shower Door Installation in Las Vegas</span>
               </Link>
             </div>
           </div>

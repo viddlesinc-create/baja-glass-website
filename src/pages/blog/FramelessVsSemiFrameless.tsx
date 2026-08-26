@@ -454,7 +454,7 @@ const FramelessVsSemiFrameless = () => {
               </Link>
               , or book{" "}
               <Link to="/shower-door-installation-las-vegas" className="text-primary font-semibold hover:underline">
-                professional installation
+                professional shower door installation in Las Vegas
               </Link>
               . We serve{" "}
               <Link to="/shower-doors-henderson-nv" className="text-primary font-semibold hover:underline">

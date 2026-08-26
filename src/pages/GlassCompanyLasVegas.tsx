@@ -219,7 +219,7 @@ const GlassCompanyLasVegas = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Full-Service Glass Company in{" "}
+                Mirrors, Windows &amp; Commercial Glass in{" "}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
                   Las Vegas
                 </span>
@@ -229,7 +229,7 @@ const GlassCompanyLasVegas = () => {
             {/* Subheading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.2s' }}>
               <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl leading-relaxed drop-shadow-lg">
-                Residential glass measured precisely, fabricated locally, and installed by experts—clean, safe, and built to last.
+                Mirrors, window glass, table tops and commercial office glass — measured precisely, fabricated locally, and installed by licensed glaziers.
               </p>
             </div>
 
@@ -359,7 +359,7 @@ const GlassCompanyLasVegas = () => {
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Button variant="outline" asChild className="flex-1">
                         <Link to={service.href} onClick={() => window.scrollTo(0, 0)}>
-                          Learn More → {service.title === "Shower Doors & Enclosures" ? "Shower Doors Las Vegas" : "Office Enclosures"}
+                          Learn More → {service.title} in Las Vegas
                         </Link>
                       </Button>
                       <Button variant="cta" asChild className="flex-1">

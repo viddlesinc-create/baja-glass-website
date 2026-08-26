@@ -18,8 +18,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/glass-company-las-vegas': {
-    title: 'Glass Company Las Vegas | Residential & Commercial Glass',
-    description: 'One of the top-rated glass companies in Las Vegas for shower doors, mirrors, windows & commercial glass. Licensed and insured. Free same-week quotes.',
+    title: 'Mirrors, Windows & Commercial Glass in Las Vegas NV',
+    description: 'Custom mirrors, window glass replacement and commercial office glass in Las Vegas. Measured and installed by licensed glaziers since 2009. Call for a quote.',
     canonical: `${BASE_URL}/glass-company-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
