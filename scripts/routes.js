@@ -20,6 +20,8 @@ export const routes = [
   "/sitemap",
   "/reviews",
   "/faq",
+  "/privacy-policy",
+  "/terms-of-service",
   "/shower-doors-henderson-nv",
   "/shower-doors-summerlin-nv",
   "/shower-doors-paradise-nv",

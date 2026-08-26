@@ -31,32 +31,32 @@ const galleryImages = [
   {
     src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png",
     alt: "Custom steam shower enclosure with frameless glass — Baja Glass Las Vegas",
-    caption: "Finished steam enclosure — frameless, vapor-tight",
+    caption: "Finished steam enclosure — frameless, vapor-tight"
   },
   {
     src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
     alt: "Steam shower with low-iron ultra-clear glass — Baja Glass",
-    caption: "Low-iron glass keeps the tile work visible through steam",
+    caption: "Low-iron glass keeps the tile work visible through steam"
   },
   {
     src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
     alt: "Custom steam shower with built-in bench — Baja Glass Las Vegas",
-    caption: "Built-in bench, sloped ceiling, matte black hardware",
+    caption: "Built-in bench, sloped ceiling, matte black hardware"
   },
   {
     src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
     alt: "Neo-angle steam enclosure with full ceiling panel — Baja Glass",
-    caption: "Neo-angle enclosure with full ceiling panel",
+    caption: "Neo-angle enclosure with full ceiling panel"
   },
   {
     src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
     alt: "Steam shower glass door with brushed nickel transom — Baja Glass",
-    caption: "Brushed nickel transom + gasketed steam door",
+    caption: "Brushed nickel transom + gasketed steam door"
   },
   {
     src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
     alt: "Frameless steam shower enclosure detail — Baja Glass",
-    caption: "Vapor-tight seal detail",
+    caption: "Vapor-tight seal detail"
   },
 ];
 
@@ -64,27 +64,27 @@ const buildSpecs = [
   {
     icon: Layers,
     title: "Vapor-tight frameless glass enclosure",
-    body: "Full ceiling panel, heavy 3/8\" or 1/2\" tempered glass, vapor-rated gasketing on every edge. Steam stays in, hardware stays dry.",
+    body: "Full ceiling panel, heavy 3/8\" or 1/2\" tempered glass, vapor-rated gasketing on every edge. Steam stays in, hardware stays dry."
   },
   {
     icon: Zap,
     title: "Steam generator placement + sizing",
-    body: "Generator KW is sized to your room's cubic footage and tile R-value. We coordinate placement — closet, vanity bay, attic — for short pipe runs and quiet operation.",
+    body: "Generator KW is sized to your room's cubic footage and tile R-value. We coordinate placement — closet, vanity bay, attic — for short pipe runs and quiet operation."
   },
   {
     icon: Thermometer,
     title: "Ceiling slope for condensation control",
-    body: "Steam ceilings need a 2-inch slope per foot so condensation runs off instead of dripping on you. We coordinate this with the tile installer before glass is fabricated.",
+    body: "Steam ceilings need a 2-inch slope per foot so condensation runs off instead of dripping on you. We coordinate this with the tile installer before glass is fabricated."
   },
   {
     icon: Droplets,
     title: "Tile waterproofing + pan",
-    body: "Schluter Kerdi or equivalent waterproof membrane behind every tile, sloped curbless or low-curb pan, properly flashed niches. The glass is only as good as the box it seals.",
+    body: "Schluter Kerdi or equivalent waterproof membrane behind every tile, sloped curbless or low-curb pan, properly flashed niches. The glass is only as good as the box it seals."
   },
   {
     icon: Wrench,
     title: "Electrical + plumbing integration",
-    body: "240V circuit for the generator, dedicated water line, condensate drain, control valve and aromatherapy port locations. We coordinate directly with your electrician and plumber.",
+    body: "240V circuit for the generator, dedicated water line, condensate drain, control valve and aromatherapy port locations. We coordinate directly with your electrician and plumber."
   },
 ];
 
@@ -129,27 +129,27 @@ const includedItems = [
 const faqs = [
   {
     q: "Is my bathroom big enough for a steam shower?",
-    a: "Most steam showers work in a footprint of 30 cubic feet or more — roughly a 3' × 3' × 7' enclosure at minimum. We measure your space, calculate cubic footage, and confirm whether your room can hold steam properly before quoting. If it's tight, we'll tell you up front — we don't build steam rooms that won't work.",
+    a: "Most steam showers work in a footprint of 30 cubic feet or more — roughly a 3' × 3' × 7' enclosure at minimum. We measure your space, calculate cubic footage, and confirm whether your room can hold steam properly before quoting. If it's tight, we'll tell you up front — we don't build steam rooms that won't work."
   },
   {
     q: "Do I need new plumbing for a steam shower?",
-    a: "Yes — typically. A steam generator requires a dedicated cold water line, a condensate drain, and access to the existing hot/cold mixing valve. We coordinate directly with your plumber so the rough-in is right the first time. If your bathroom is being remodeled, this is the right moment to do it.",
+    a: "Yes — typically. A steam generator requires a dedicated cold water line, a condensate drain, and access to the existing hot/cold mixing valve. We coordinate directly with your plumber so the rough-in is right the first time. If your bathroom is being remodeled, this is the right moment to do it."
   },
   {
     q: "How long does the install take?",
-    a: "From rough-in to commissioning, a full steam shower build runs about 21 days — the bulk of which is tile + waterproofing work. Our part (glass templating, fabrication, install, and generator commissioning) is the last 3–4 days of that timeline. Standalone retrofits (everything else is done) take about 5 working days.",
+    a: "From rough-in to commissioning, a full steam shower build runs about 21 days — the bulk of which is tile + waterproofing work. Our part (glass templating, fabrication, install, and generator commissioning) is the last 3–4 days of that timeline. Standalone retrofits (everything else is done) take about 5 working days."
   },
   {
     q: "What permits are needed?",
-    a: "Steam shower installs in Clark County typically require electrical and plumbing permits — the 240V circuit for the generator and the water/condensate work both trigger inspections. We handle permit pulling and inspection scheduling. Glass installation itself doesn't require a separate permit.",
+    a: "Steam shower installs in Clark County typically require electrical and plumbing permits — the 240V circuit for the generator and the water/condensate work both trigger inspections. We handle permit pulling and inspection scheduling. Glass installation itself doesn't require a separate permit."
   },
   {
     q: "What does a typical steam shower cost?",
-    a: "Most steam showers install for $5,000–$12,000 depending on size, generator KW, tile complexity, and finish selections. Larger custom builds with full ceiling panels, aromatherapy, chromotherapy lighting, and high-end fixtures run $12,000–$18,000. Your written quote breaks every line item out — no ballparks.",
+    a: "Most steam showers install for $5,000–$12,000 depending on size, generator KW, tile complexity, and finish selections. Larger custom builds with full ceiling panels, aromatherapy, chromotherapy lighting, and high-end fixtures run $12,000–$18,000. Your written quote breaks every line item out — no ballparks."
   },
   {
     q: "Can you do this as a retrofit, or only in a full remodel?",
-    a: "Both. The cleanest path is during a full bathroom remodel — that's when waterproofing, ceiling slope, and electrical can all be done right. But if your bathroom is already tiled and watertight, we can often retrofit a steam enclosure and generator with minimal demo. We'll tell you which path makes sense after the on-site measure.",
+    a: "Both. The cleanest path is during a full bathroom remodel — that's when waterproofing, ceiling slope, and electrical can all be done right. But if your bathroom is already tiled and watertight, we can often retrofit a steam enclosure and generator with minimal demo. We'll tell you which path makes sense after the on-site measure."
   },
 ];
 
@@ -180,7 +180,7 @@ function ConsultForm({ id }: { id: string }) {
         fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
           method: "POST",
           body: data,
-          headers: { Accept: "application/json" },
+          headers: { Accept: "application/json" }
         }).catch(() => {});
         if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
         trackFormSubmission({ source: "lp_steam_shower_installation_lv", projectType: "steam_shower" });
@@ -293,9 +293,9 @@ const SteamShowerInstallationLVLanding = () => {
             "@type": "PriceSpecification",
             priceCurrency: "USD",
             minPrice: "5000",
-            maxPrice: "18000",
+            maxPrice: "18000"
           },
-        },
+        }
       },
       {
         "@type": "LocalBusiness",
@@ -309,24 +309,17 @@ const SteamShowerInstallationLVLanding = () => {
           addressLocality: "Las Vegas",
           addressRegion: "NV",
           postalCode: "89118",
-          addressCountry: "US",
+          addressCountry: "US"
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.6",
-          bestRating: "5",
-          worstRating: "1",
-          reviewCount: "27",
-        },
-        priceRange: "$$$",
+        priceRange: "$$$"
       },
       {
         "@type": "FAQPage",
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.q,
-          acceptedAnswer: { "@type": "Answer", text: faq.a },
-        })),
+          acceptedAnswer: { "@type": "Answer", text: faq.a }
+        }))
       },
     ],
   };

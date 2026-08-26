@@ -35,39 +35,6 @@ const AREAS_SERVED = [
   { "@type": "City", "name": "Green Valley", "containedInPlace": { "@type": "State", "name": "Nevada" } }
 ];
 
-// Real reviews from Google (curated selection for schema)
-const CURATED_REVIEWS = [
-  {
-    author: "Jennifer Martinez",
-    datePublished: "2024-11-15",
-    reviewBody: "Baja Glass installed a beautiful frameless shower door in our Henderson home. The installers were professional, on time, and the quality is outstanding. Highly recommend!",
-    ratingValue: 5
-  },
-  {
-    author: "Robert Chen",
-    datePublished: "2024-10-28",
-    reviewBody: "We hired Baja Glass for our Summerlin bathroom remodel. The custom enclosure they designed fits perfectly and looks amazing. Great communication throughout the process.",
-    ratingValue: 5
-  },
-  {
-    author: "Sarah Thompson",
-    datePublished: "2024-10-12",
-    reviewBody: "Professional service from start to finish. The team at Baja Glass helped us choose the perfect sliding door for our space. Installation was quick and clean. Worth every penny!",
-    ratingValue: 5
-  },
-  {
-    author: "Michael Rodriguez",
-    datePublished: "2024-09-30",
-    reviewBody: "Had a crack in our shower glass and Baja Glass came out quickly to assess and replace it. They matched the glass perfectly and the new panel looks great.",
-    ratingValue: 5
-  },
-  {
-    author: "Emily Watson",
-    datePublished: "2024-09-18",
-    reviewBody: "Absolutely love our new frameless shower door! The clarity of the glass is incredible and the hardware is top quality. The Baja Glass team was knowledgeable and helped us make the right choices.",
-    ratingValue: 5
-  }
-];
 
 interface OrganizationProps {
   type?: 'Organization' | 'LocalBusiness';
@@ -96,19 +63,7 @@ interface ServiceProps {
   areaServed?: string[];
 }
 
-interface AggregateRatingProps {
-  ratingValue: string;
-  reviewCount: string;
-  bestRating?: string;
-  worstRating?: string;
-}
 
-interface ReviewProps {
-  author: string;
-  datePublished: string;
-  reviewBody: string;
-  ratingValue: number;
-}
 
 // Comprehensive Organization Schema with Reviews
 export const OrganizationSchema = ({ type = 'Organization' }: OrganizationProps) => {
@@ -126,7 +81,7 @@ export const OrganizationSchema = ({ type = 'Organization' }: OrganizationProps)
       "height": 80
     },
     "image": LOGO_URL,
-    "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation in Las Vegas, Henderson, and Summerlin. First Responder Owned. Licensed, bonded, and insured with over 20 years of experience.",
+    "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation in Las Vegas, Henderson, and Summerlin. First Responder Owned. Licensed, bonded, and insured, serving Las Vegas since 2009.",
     "telephone": PHONE_E164,
     "email": "info@bajaglass.com",
     "foundingDate": "2010",
@@ -161,29 +116,6 @@ export const OrganizationSchema = ({ type = 'Organization' }: OrganizationProps)
         "closes": "16:00"
       }
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.6",
-      "bestRating": "5",
-      "worstRating": "1",
-      "reviewCount": "27",
-      "ratingCount": "27"
-    },
-    "review": CURATED_REVIEWS.map(review => ({
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": review.author
-      },
-      "datePublished": review.datePublished,
-      "reviewBody": review.reviewBody,
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": review.ratingValue,
-        "bestRating": 5,
-        "worstRating": 1
-      }
-    })),
     "hasCredential": [
       { "@type": "EducationalOccupationalCredential", "credentialCategory": "License", "name": "C8 Glass And Glazing License", "recognizedBy": { "@type": "Organization", "name": "Nevada State Contractors Board" } },
       { "@type": "EducationalOccupationalCredential", "credentialCategory": "Insurance", "name": "Bonded & Insured" },
@@ -337,11 +269,6 @@ export const ServiceSchema = ({
       "geo": {
         "@type": "GeoCoordinates",
         ...GEO_COORDINATES
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.6",
-        "reviewCount": "27"
       }
     },
     "areaServed": areaServed.map(city => ({
@@ -360,74 +287,6 @@ export const ServiceSchema = ({
   );
 };
 
-// AggregateRating Schema
-export const AggregateRatingSchema = ({
-  ratingValue,
-  reviewCount,
-  bestRating = '5',
-  worstRating = '1'
-}: AggregateRatingProps) => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${BASE_URL}/#organization`,
-    "name": "Baja Glass & Mirror LLC",
-    "address": BUSINESS_ADDRESS,
-    "geo": {
-      "@type": "GeoCoordinates",
-      ...GEO_COORDINATES
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": ratingValue,
-      "bestRating": bestRating,
-      "worstRating": worstRating,
-      "reviewCount": reviewCount,
-      "ratingCount": reviewCount
-    }
-  };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </Helmet>
-  );
-};
-
-// Review Schema Component (for multiple reviews)
-export const ReviewsSchema = ({ reviews }: { reviews: ReviewProps[] }) => {
-  const reviewSchemas = reviews.map(review => ({
-    "@type": "Review",
-    "author": {
-      "@type": "Person",
-      "name": review.author
-    },
-    "datePublished": review.datePublished,
-    "reviewBody": review.reviewBody,
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": review.ratingValue,
-      "bestRating": 5,
-      "worstRating": 1
-    }
-  }));
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${BASE_URL}/#organization`,
-    "name": "Baja Glass & Mirror LLC",
-    "review": reviewSchemas
-  };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </Helmet>
-  );
-};
-
-// NEW: Speakable Schema for AI/Voice assistants
 export const SpeakableSchema = ({ 
   name, 
   description, 
@@ -462,8 +321,6 @@ export const SpeakableSchema = ({
   );
 };
 
-// Export curated reviews for use in other components
-export const getCuratedReviews = () => CURATED_REVIEWS;
 export const getBusinessInfo = () => ({
   name: "Baja Glass & Mirror LLC",
   phone: PHONE,
@@ -479,9 +336,6 @@ export default {
   WebSiteSchema,
   BlogPostingSchema,
   ServiceSchema,
-  AggregateRatingSchema,
-  ReviewsSchema,
   SpeakableSchema,
-  getCuratedReviews,
   getBusinessInfo
 };

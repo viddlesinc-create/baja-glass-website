@@ -59,7 +59,7 @@ const hardwareFinishes = "/images/hardware-finishes.jpg";
     answer: "Absolutely. Baja Glass & Mirror specializes in full shower door replacements and upgrades throughout Las Vegas, Henderson, and Summerlin. Whether you have an outdated framed door, a foggy or damaged panel, or simply want to upgrade to a modern frameless design, we handle the entire process. Our team carefully removes your old door, inspects the opening for any water damage or structural issues, and installs your new custom-fabricated glass with fresh hardware, seals, and silicone. We can match existing tile lines and work with out-of-plumb walls to ensure a tight, leak-resistant fit. Most replacement projects are completed in a single visit. Contact us for a free in-home assessment and quote."
   }, {
     question: "What areas do you serve?",
-    answer: "Baja Glass & Mirror proudly serves the entire Las Vegas Valley from our shop at 4280 W Reno Ave in Las Vegas. Our service area includes Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Green Valley, Boulder City, and surrounding communities. As a locally owned and operated company with over 20 years of experience, we know the unique needs of Las Vegas homeowners—from hard water considerations to desert climate factors that affect glass and hardware selection. Whether you're in a new Henderson development or a classic Summerlin home, our team provides the same precise measurements, quality materials, and professional installation. Call (702) 383-0779 for a free estimate anywhere in the valley."
+    answer: "Baja Glass & Mirror proudly serves the entire Las Vegas Valley from our shop at 4280 W Reno Ave in Las Vegas. Our service area includes Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Green Valley, Boulder City, and surrounding communities. As a locally owned and operated company serving Las Vegas since 2009, we know the unique needs of Las Vegas homeowners—from hard water considerations to desert climate factors that affect glass and hardware selection. Whether you're in a new Henderson development or a classic Summerlin home, our team provides the same precise measurements, quality materials, and professional installation. Call (702) 383-0779 for a free estimate anywhere in the valley."
   }];
 const Index = () => {
   return <div className="min-h-screen">
@@ -178,7 +178,7 @@ const Index = () => {
             <div className="animate-fade-in-up flex flex-wrap gap-3 text-left md:justify-center lg:justify-start lg:ml-16" style={{
             animationDelay: '0.9s'
           }}>
-              {['Licensed', 'Bonded', 'Insured', '20+ years of trusted service in Las Vegas'].map(badge => <Badge key={badge} className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-xs px-3 py-1 hover:bg-white/20 transition-all duration-300 shadow-lg">
+              {['Licensed', 'Bonded', 'Insured', 'Trusted service in Las Vegas since 2009'].map(badge => <Badge key={badge} className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-xs px-3 py-1 hover:bg-white/20 transition-all duration-300 shadow-lg">
                   {badge}
                 </Badge>)}
             </div>
@@ -275,55 +275,22 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-br from-background via-secondary/20 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">What Our Customers Say</h2>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Trusted by Las Vegas Homeowners</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-accent to-charcoal mx-auto rounded-full mb-6"></div>
-            <div className="flex items-center justify-center gap-2 mb-2" role="img" aria-label="4.6 out of 5 stars rating">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-              ))}
-              <span className="ml-2 text-2xl font-bold">4.6</span>
-            </div>
-            <p className="text-muted-foreground">Based on 27 Google reviews from Las Vegas homeowners</p>
+            {/* TODO(owner): the "4.6 stars / 27 Google reviews" claim was removed because the
+                reviews backing it proved to be placeholder copy, so the count could not be
+                trusted either. Restore ONLY after confirming the live figures on the Google
+                Business Profile, and keep this number in sync with GBP going forward. */}
+            <p className="text-muted-foreground">
+              Custom shower doors and glass, measured and installed across the Las Vegas
+              Valley since 2009 &mdash; licensed, bonded and insured.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-            {[
-              {
-                name: "Jennifer Martinez",
-                location: "Henderson, NV",
-                text: "Baja Glass installed a beautiful frameless shower door in our Henderson home. The installers were professional, on time, and the quality is outstanding. Highly recommend!",
-                service: "Frameless Shower Door"
-              },
-              {
-                name: "Robert Chen",
-                location: "Summerlin, NV",
-                text: "We hired Baja Glass for our Summerlin bathroom remodel. The custom enclosure they designed fits perfectly and looks amazing. Great communication throughout the process.",
-                service: "Custom Shower Enclosure"
-              },
-              {
-                name: "Sarah Thompson",
-                location: "Paradise, NV",
-                text: "Professional service from start to finish. The team at Baja Glass helped us choose the perfect sliding door for our space. Installation was quick and clean. Worth every penny!",
-                service: "Sliding Shower Door"
-              }
-            ].map((review, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 bg-background/80 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center gap-1 mb-2" role="img" aria-label="5 out of 5 stars">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-                    ))}
-                  </div>
-                  <CardTitle className="text-lg">{review.name}</CardTitle>
-                  <p className="text-sm text-muted-foreground">{review.location}</p>
-                </CardHeader>
-                <CardContent>
-                  <Badge variant="outline" className="mb-3 text-xs">{review.service}</Badge>
-                  <p className="text-muted-foreground leading-relaxed">{review.text}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          {/* TODO(owner): restore with REAL verified Google reviews.
+              The three testimonials previously shown here were placeholder copy,
+              not genuine customer reviews, and were removed along with the
+              Review/AggregateRating JSON-LD they backed. */}
 
           <div className="text-center">
             <Button variant="outline" size="lg" asChild>

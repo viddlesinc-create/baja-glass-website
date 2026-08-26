@@ -26,26 +26,11 @@ const ShowerDoorsEnterprise = () => {
         "Fort Apache",
         "Blue Diamond"
       ]}
-      testimonials={[
-        {
-          name: "David Kim",
-          text: "Baja Glass built a custom steam shower enclosure for our master bathroom. They understood the special requirements for steam and used the right thickness glass with proper sealing.",
-          rating: 5,
-          service: "Steam Shower Enclosure"
-        },
-        {
-          name: "Rebecca Johnson",
-          text: "We upgraded to low-iron glass and it was absolutely worth it. The clarity is amazing compared to regular glass. Baja Glass explained all the options clearly.",
-          rating: 5,
-          service: "Frameless Door with Low-Iron Glass"
-        },
-        {
-          name: "Steven Harris",
-          text: "Excellent experience from start to finish. Fair pricing, professional installation, and beautiful results. Our frameless shower door is the centerpiece of our bathroom remodel.",
-          rating: 5,
-          service: "Frameless Shower Door"
-        }
-      ]}
+      // TODO(owner): supply REAL verified testimonials for this city.
+      // Previous entries were placeholder copy, not genuine reviews. The template
+      // hides this section entirely while the list is empty — do not refill with
+      // invented names.
+      testimonials={[]}
       projectImages={[
         {
           src: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",

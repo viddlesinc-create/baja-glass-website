@@ -48,26 +48,11 @@ const ShowerDoorsSummerlin = () => {
         "The Pueblo",
         "Tournament Hills"
       ]}
-      testimonials={[
-        {
-          name: "Robert Chen",
-          text: "We hired Baja Glass for our Summerlin bathroom remodel. The custom enclosure they designed fits perfectly and looks amazing. Great communication throughout the process.",
-          rating: 5,
-          service: "Custom Shower Enclosure"
-        },
-        {
-          name: "James Miller",
-          text: "Worked with Baja Glass on a challenging neo-angle shower enclosure. They handled the complex angles perfectly and the result is stunning. True professionals.",
-          rating: 5,
-          service: "Custom Enclosure"
-        },
-        {
-          name: "Daniel Park",
-          text: "Replaced our old framed door with a new frameless one. The difference is night and day. The bathroom feels more spacious and modern. Great job!",
-          rating: 5,
-          service: "Frameless Installation"
-        }
-      ]}
+      // TODO(owner): supply REAL verified testimonials for this city.
+      // Previous entries were placeholder copy, not genuine reviews. The template
+      // hides this section entirely while the list is empty — do not refill with
+      // invented names.
+      testimonials={[]}
       projectImages={[
         {
           src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",

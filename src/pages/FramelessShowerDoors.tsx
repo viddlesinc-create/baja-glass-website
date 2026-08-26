@@ -96,13 +96,6 @@ const FramelessShowerDoors = () => {
               "highPrice": "3000",
               "offerCount": "6",
               "availability": "https://schema.org/InStock"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "reviewCount": "27",
-              "bestRating": "5",
-              "worstRating": "1"
             }
           })}
         </script>

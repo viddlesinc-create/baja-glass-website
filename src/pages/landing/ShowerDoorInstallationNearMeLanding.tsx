@@ -31,58 +31,38 @@ const galleryImages = [
   {
     src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png",
     alt: "Frameless shower door installation by Baja Glass — Las Vegas",
-    caption: "Frameless install — Las Vegas",
+    caption: "Frameless install — Las Vegas"
   },
   {
     src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
     alt: "Custom neo-angle shower install — Baja Glass Las Vegas",
-    caption: "Custom neo-angle install",
+    caption: "Custom neo-angle install"
   },
   {
     src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
     alt: "Frameless shower door install with low-iron glass — Baja Glass",
-    caption: "Low-iron glass, completed install",
+    caption: "Low-iron glass, completed install"
   },
   {
     src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
     alt: "Frameless shower door with brushed nickel hardware — installed by Baja Glass",
-    caption: "Brushed nickel — installed in Henderson",
+    caption: "Brushed nickel — installed in Henderson"
   },
   {
     src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
     alt: "Matte black shower hardware install — Baja Glass Las Vegas",
-    caption: "Matte black hardware install",
+    caption: "Matte black hardware install"
   },
   {
     src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
     alt: "Frameless inline shower install — Baja Glass",
-    caption: "Frameless inline panel install",
+    caption: "Frameless inline panel install"
   },
 ];
 
-const reviews = [
-  {
-    name: "Jennifer Martinez",
-    location: "Henderson, NV",
-    service: "Frameless Shower Door Installation",
-    rating: 5,
-    text: "The installers were professional, on time, and the quality is outstanding. Precise measurements, flawless installation, and they cleaned up before they left.",
-  },
-  {
-    name: "Patricia Lewis",
-    location: "Las Vegas, NV",
-    service: "Frameless Shower Door",
-    rating: 5,
-    text: "From quote to installation, everything was smooth. Great communication throughout — they showed up exactly when they said they would.",
-  },
-  {
-    name: "Kevin Brown",
-    location: "Henderson, NV",
-    service: "Frameless Shower Door",
-    rating: 5,
-    text: "They answered every question, were easy to work with, and the door is perfect. The installer walked us through everything before he left.",
-  },
-];
+// TODO(owner): repopulate with REAL verified Google reviews. The previous entries
+// were placeholder copy, not genuine customer reviews, and were removed.
+const reviews: Array<{ name: string; location?: string; rating?: number; service?: string; text?: string; quote?: string; city?: string }> = [];
 
 const features = [
   { icon: Shield, label: "C8 Glass & Glazing License", sub: "Nevada State Contractors Board" },
@@ -113,27 +93,27 @@ const includedItems = [
 const faqs = [
   {
     q: "How long does installation take?",
-    a: "Most standard shower door installations take a single half-day on site — usually 2 to 4 hours from the moment we arrive to the final cleanup. Steam enclosures and large multi-panel custom builds may take a full day. You'll have a fully functional, installed shower door before our crew leaves.",
+    a: "Most standard shower door installations take a single half-day on site — usually 2 to 4 hours from the moment we arrive to the final cleanup. Steam enclosures and large multi-panel custom builds may take a full day. You'll have a fully functional, installed shower door before our crew leaves."
   },
   {
     q: "Do you handle permits?",
-    a: "Yes — when permits are required for your project (typically for steam shower installs and certain new-construction situations), we handle the permitting process with Clark County or the appropriate jurisdiction. For straightforward replacement installs, no permit is required in most cases. We confirm permitting needs during your free on-site measure.",
+    a: "Yes — when permits are required for your project (typically for steam shower installs and certain new-construction situations), we handle the permitting process with Clark County or the appropriate jurisdiction. For straightforward replacement installs, no permit is required in most cases. We confirm permitting needs during your free on-site measure."
   },
   {
     q: "What's included in the quote?",
-    a: "Everything. Custom glass fabrication, all hardware, professional installation, caulking and waterproofing, removal of your old shower door, full site cleanup, and a written 1-year parts and labor warranty. No hidden upsells, no day-of-install surprises. The number on your quote is the number you pay.",
+    a: "Everything. Custom glass fabrication, all hardware, professional installation, caulking and waterproofing, removal of your old shower door, full site cleanup, and a written 1-year parts and labor warranty. No hidden upsells, no day-of-install surprises. The number on your quote is the number you pay."
   },
   {
     q: "Are you licensed and insured?",
-    a: "Yes. Baja Glass & Mirror LLC holds a C8 Glass and Glazing license from the Nevada State Contractors Board, and we carry general liability and workers' compensation insurance. We provide documentation before any job starts — ask and we'll send it over.",
+    a: "Yes. Baja Glass & Mirror LLC holds a C8 Glass and Glazing license from the Nevada State Contractors Board, and we carry general liability and workers' compensation insurance. We provide documentation before any job starts — ask and we'll send it over."
   },
   {
     q: "How fast can you come measure?",
-    a: "Most on-site measurement appointments are scheduled within 24 hours of your first call. Same-week installation slots are typically available Monday through Friday.",
+    a: "Most on-site measurement appointments are scheduled within 24 hours of your first call. Same-week installation slots are typically available Monday through Friday."
   },
   {
     q: "What areas do you serve?",
-    a: "Las Vegas, Henderson, Summerlin, North Las Vegas, Boulder City, Paradise, Spring Valley, Enterprise, and Green Valley. If you're in Clark County, call us — we likely cover your area.",
+    a: "Las Vegas, Henderson, Summerlin, North Las Vegas, Boulder City, Paradise, Spring Valley, Enterprise, and Green Valley. If you're in Clark County, call us — we likely cover your area."
   },
 ];
 
@@ -165,7 +145,7 @@ function MeasureForm({ id }: { id: string }) {
       fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
         method: "POST",
         body: data,
-        headers: { Accept: "application/json" },
+        headers: { Accept: "application/json" }
       }).catch(() => {});
       if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
       trackFormSubmission({ source: "lp_shower_door_installation_near_me" });
@@ -261,7 +241,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
           { "@type": "City", name: "Summerlin", addressRegion: "NV" },
           { "@type": "City", name: "North Las Vegas", addressRegion: "NV" },
           { "@type": "City", name: "Paradise", addressRegion: "NV" },
-        ],
+        ]
       },
       {
         "@type": "LocalBusiness",
@@ -275,25 +255,18 @@ const ShowerDoorInstallationNearMeLanding = () => {
           addressLocality: "Las Vegas",
           addressRegion: "NV",
           postalCode: "89118",
-          addressCountry: "US",
+          addressCountry: "US"
         },
         geo: { "@type": "GeoCoordinates", latitude: 36.097781, longitude: -115.197234 },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.6",
-          bestRating: "5",
-          worstRating: "1",
-          reviewCount: "27",
-        },
-        priceRange: "$$",
+        priceRange: "$$"
       },
       {
         "@type": "FAQPage",
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.q,
-          acceptedAnswer: { "@type": "Answer", text: faq.a },
-        })),
+          acceptedAnswer: { "@type": "Answer", text: faq.a }
+        }))
       },
     ],
   };

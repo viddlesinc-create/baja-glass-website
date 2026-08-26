@@ -233,7 +233,7 @@ const FAQ = () => {
       faqs: [
         {
           question: "Where can I find frameless shower door installers near me?",
-          answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated with over 20 years of experience. Call (702) 383-0779 for a free quote."
+          answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated, serving Las Vegas since 2009. Call (702) 383-0779 for a free quote."
         },
         {
           question: "What is the cost of shower door installation in Las Vegas?",

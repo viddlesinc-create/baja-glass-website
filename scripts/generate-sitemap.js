@@ -88,6 +88,11 @@ const getRouteConfig = (route) => {
   if (['/areas-served', '/resources', '/sitemap'].includes(route)) {
     return { priority: '0.5', changefreq: 'yearly' };
   }
+
+  // Legal / trust pages - required for E-E-A-T trust signals but low crawl priority
+  if (['/privacy-policy', '/terms-of-service'].includes(route)) {
+    return { priority: '0.3', changefreq: 'yearly' };
+  }
   
   // FAQ page - important for SEO rich results
   if (route === '/faq') {

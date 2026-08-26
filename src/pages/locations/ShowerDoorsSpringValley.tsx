@@ -26,26 +26,11 @@ const ShowerDoorsSpringValley = () => {
         "Jones",
         "Buffalo"
       ]}
-      testimonials={[
-        {
-          name: "Emily Watson",
-          text: "Absolutely love our new frameless shower door! The clarity of the glass is incredible and the hardware is top quality. The Baja Glass team was knowledgeable and helpful.",
-          rating: 5,
-          service: "Frameless Shower Door"
-        },
-        {
-          name: "Thomas Wright",
-          text: "Baja Glass created a custom enclosure for our oddly-shaped shower. They measured multiple times to ensure perfect fit and the result exceeded our expectations.",
-          rating: 5,
-          service: "Custom Glass Work"
-        },
-        {
-          name: "Christopher Lee",
-          text: "Top-notch service and quality. The hinged door they installed operates perfectly and looks great. The team was professional and respectful of our home.",
-          rating: 5,
-          service: "Hinged Door Installation"
-        }
-      ]}
+      // TODO(owner): supply REAL verified testimonials for this city.
+      // Previous entries were placeholder copy, not genuine reviews. The template
+      // hides this section entirely while the list is empty — do not refill with
+      // invented names.
+      testimonials={[]}
       projectImages={[
         {
           src: "/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png",
@@ -67,7 +52,7 @@ const ShowerDoorsSpringValley = () => {
         homeStyles: "Spring Valley's established neighborhoods feature ranch-style homes, two-story family residences, and newer developments. We install shower doors that match your home's character, from traditional framed doors to modern frameless designs.",
         hardWater: "Spring Valley water contains minerals common to the Las Vegas area. Daily squeegee use significantly reduces water spots. We offer protective coating options for easier long-term maintenance."
       }}
-      metaDescription="Professional shower door installation in Spring Valley, NV. Quality materials and expert installation. Licensed, insured, 20+ years experience. Free quotes."
+      metaDescription="Professional shower door installation in Spring Valley, NV. Quality materials and expert installation. Licensed, insured, serving Las Vegas since 2009. Free quotes."
     />
   );
 };

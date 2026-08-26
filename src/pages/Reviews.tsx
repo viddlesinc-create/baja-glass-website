@@ -6,169 +6,21 @@ import { Star, Phone, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 const Reviews = () => {
-  const reviews = [
-    {
-      name: "Jennifer Martinez",
-      location: "Henderson, NV",
-      rating: 5,
-      date: "November 15, 2024",
-      service: "Frameless Shower Door Installation",
-      text: "Baja Glass installed a beautiful frameless shower door in our Henderson home. The installers were professional, on time, and the quality is outstanding. They took precise measurements and the installation was flawless. Our bathroom looks amazing now! Highly recommend their services.",
-      verified: true
-    },
-    {
-      name: "Robert Chen",
-      location: "Summerlin, NV",
-      rating: 5,
-      date: "October 28, 2024",
-      service: "Custom Shower Enclosure",
-      text: "We hired Baja Glass for our Summerlin bathroom remodel. The custom enclosure they designed fits perfectly and looks amazing. Great communication throughout the process, and they completed the job exactly when promised. The attention to detail is exceptional."
-    },
-    {
-      name: "Sarah Thompson",
-      location: "Paradise, NV",
-      rating: 5,
-      date: "October 12, 2024",
-      service: "Sliding Shower Door",
-      text: "Professional service from start to finish. The team at Baja Glass helped us choose the perfect sliding door for our space. Installation was quick and clean. The door operates smoothly and looks beautiful. Worth every penny!"
-    },
-    {
-      name: "Michael Rodriguez",
-      location: "Las Vegas, NV",
-      rating: 5,
-      date: "September 30, 2024",
-      service: "Glass Replacement",
-      text: "Had a crack in our shower glass and Baja Glass came out quickly to assess and replace it. They matched the glass perfectly and the new panel looks great. Fair pricing and excellent customer service."
-    },
-    {
-      name: "Emily Watson",
-      location: "Spring Valley, NV",
-      rating: 5,
-      date: "September 18, 2024",
-      service: "Frameless Shower Door",
-      text: "Absolutely love our new frameless shower door! The clarity of the glass is incredible and the hardware is top quality. The Baja Glass team was knowledgeable and helped us make the right choices for our bathroom."
-    },
-    {
-      name: "David Kim",
-      location: "Enterprise, NV",
-      rating: 5,
-      date: "August 25, 2024",
-      service: "Steam Shower Enclosure",
-      text: "Baja Glass built a custom steam shower enclosure for our master bathroom. They understood the special requirements for steam and used the right thickness glass with proper sealing. The craftsmanship is excellent."
-    },
-    {
-      name: "Lisa Anderson",
-      location: "Henderson, NV",
-      rating: 5,
-      date: "August 10, 2024",
-      service: "Hinged Shower Door",
-      text: "Very pleased with our hinged shower door installation. The team was courteous, cleaned up after themselves, and the door is perfect. It opens and closes smoothly with a solid feel. Highly recommend!"
-    },
-    {
-      name: "James Miller",
-      location: "Summerlin, NV",
-      rating: 5,
-      date: "July 22, 2024",
-      service: "Custom Enclosure",
-      text: "Worked with Baja Glass on a challenging neo-angle shower enclosure. They handled the complex angles perfectly and the result is stunning. True professionals who take pride in their work."
-    },
-    {
-      name: "Patricia Lewis",
-      location: "Las Vegas, NV",
-      rating: 5,
-      date: "July 8, 2024",
-      service: "Frameless Shower Door",
-      text: "From quote to installation, everything was smooth and professional. The frameless door they installed transformed our bathroom. The glass is crystal clear and the hardware finish matches our fixtures perfectly."
-    },
-    {
-      name: "Carlos Sanchez",
-      location: "Paradise, NV",
-      rating: 5,
-      date: "June 20, 2024",
-      service: "Sliding Door Upgrade",
-      text: "Our shower door rollers were worn out and the door was hard to slide. Baja Glass came out, replaced the rollers and tracks, and now it glides like new. Great service at a fair price."
-    },
-    {
-      name: "Amanda Foster",
-      location: "Henderson, NV",
-      rating: 5,
-      date: "June 5, 2024",
-      service: "Semi-Frameless Door",
-      text: "Beautiful semi-frameless door installation. The team was punctual, professional, and the installation was done in a few hours. Our shower looks modern and elegant now."
-    },
-    {
-      name: "Thomas Wright",
-      location: "Spring Valley, NV",
-      rating: 5,
-      date: "May 18, 2024",
-      service: "Custom Glass Work",
-      text: "Baja Glass created a custom enclosure for our oddly-shaped shower. They measured multiple times to ensure perfect fit and the result exceeded our expectations. Excellent craftsmanship!"
-    },
-    {
-      name: "Rebecca Johnson",
-      location: "Enterprise, NV",
-      rating: 5,
-      date: "May 2, 2024",
-      service: "Frameless Door with Low-Iron Glass",
-      text: "We upgraded to low-iron glass and it was absolutely worth it. The clarity is amazing compared to regular glass. Baja Glass explained all the options clearly and helped us make the best choice."
-    },
-    {
-      name: "Daniel Park",
-      location: "Summerlin, NV",
-      rating: 5,
-      date: "April 15, 2024",
-      service: "Shower Door Replacement",
-      text: "Replaced our old framed door with a new frameless one. The difference is night and day. The bathroom feels more spacious and modern. Great job by the Baja Glass team!"
-    },
-    {
-      name: "Michelle Turner",
-      location: "Las Vegas, NV",
-      rating: 5,
-      date: "March 28, 2024",
-      service: "Custom Enclosure",
-      text: "Professional, knowledgeable, and detail-oriented. They built a beautiful custom enclosure that fits our space perfectly. Very happy with the quality and service."
-    },
-    {
-      name: "Kevin Brown",
-      location: "Henderson, NV",
-      rating: 5,
-      date: "March 10, 2024",
-      service: "Frameless Shower Door",
-      text: "From the initial consultation to final installation, Baja Glass was fantastic. They answered all our questions, provided fair pricing, and delivered excellent work. Will use them again!"
-    },
-    {
-      name: "Nicole Adams",
-      location: "Paradise, NV",
-      rating: 5,
-      date: "February 22, 2024",
-      service: "Sliding Shower Door",
-      text: "Love our new sliding shower door! The installation was quick and the quality is excellent. The door slides smoothly and looks beautiful. Highly recommend Baja Glass."
-    },
-    {
-      name: "Christopher Lee",
-      location: "Spring Valley, NV",
-      rating: 5,
-      date: "February 5, 2024",
-      service: "Hinged Door Installation",
-      text: "Top-notch service and quality. The hinged door they installed operates perfectly and looks great. The team was professional and respectful of our home."
-    },
-    {
-      name: "Angela Martinez",
-      location: "Summerlin, NV",
-      rating: 5,
-      date: "January 20, 2024",
-      service: "Steam Shower Enclosure",
-      text: "Baja Glass installed our steam shower enclosure with the proper ceiling and sealing. They knew exactly what was needed and executed it perfectly. Very impressed with their expertise."
-    },
-    {
-      name: "Steven Harris",
-      location: "Enterprise, NV",
-      rating: 5,
-      date: "January 8, 2024",
-      service: "Frameless Shower Door",
-      text: "Excellent experience from start to finish. Fair pricing, professional installation, and beautiful results. Our frameless shower door is the centerpiece of our bathroom remodel."
-    }
-  ];
+  // TODO(owner): populate with REAL Google reviews before this page is repopulated.
+  // The previous ten entries were placeholder copy, not genuine customer reviews — two of
+  // them described repair work the business does not offer. They were removed along with the
+  // Review/AggregateRating JSON-LD they fed, which was a Google structured-data policy risk.
+  // Re-add only verified reviews (reviewer first name + city + real date), and only then
+  // restore review schema so the markup matches what is actually shown on the page.
+  const reviews: {
+    name: string;
+    location: string;
+    rating: number;
+    date: string;
+    service: string;
+    text: string;
+    verified?: boolean;
+  }[] = [];
 
   const renderStars = (rating: number) => {
     return (
@@ -184,7 +36,7 @@ const Reviews = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Customer Reviews | Baja Glass & Mirror Las Vegas</title>
-        <meta name="description" content="Read verified customer reviews of Baja Glass & Mirror. Rated 4.6/5 stars for shower door installation in Las Vegas, Henderson, and Summerlin." />
+        <meta name="description" content="Customer reviews for Baja Glass &amp; Mirror, custom shower door and glass installers in Las Vegas, Henderson and Summerlin. Call (702) 383-0779 for a free quote." />
         <link rel="canonical" href="https://bajaglass.com/reviews" />
       </Helmet>
 
@@ -197,23 +49,12 @@ const Reviews = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Customer Reviews for Baja Glass & Mirror</h1>
           
-          {/* Aggregate Rating Display */}
-          <div className="flex flex-col items-center gap-4 mb-8">
-            <div className="flex items-center gap-3">
-              <span className="text-6xl font-bold">4.6</span>
-              <div>
-                <div className="flex gap-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className={`h-6 w-6 ${i < 4 ? 'fill-yellow-400 text-yellow-400' : 'fill-yellow-400/60 text-yellow-400/60'}`} />
-                  ))}
-                </div>
-                <p className="text-white/90">Based on 27 Google reviews</p>
-              </div>
-            </div>
-          </div>
+          {/* TODO(owner): the "4.6 / 27 Google reviews" figure was removed along with the
+              placeholder testimonials that backed it. Restore only after confirming the live
+              rating and count on the Google Business Profile, and keep them in sync. */}
 
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            See what Las Vegas homeowners are saying about their experience with Baja Glass.
+            Custom shower doors and glass, installed across the Las Vegas Valley since 2009.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2">
@@ -228,6 +69,16 @@ const Reviews = () => {
       {/* Reviews Grid */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
+          {reviews.length === 0 && (
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="text-2xl font-semibold mb-3">Reviews are being updated</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                We're refreshing this page with verified reviews from our Google Business
+                Profile. In the meantime, you can read what Las Vegas homeowners say about
+                Baja Glass &amp; Mirror directly on Google, or call us at (702) 383-0779.
+              </p>
+            </div>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 bg-background/80 backdrop-blur-sm">

@@ -31,37 +31,37 @@ const portfolio = [
     src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png",
     alt: "Custom walk-in shower enclosure with freestanding tub — Baja Glass Las Vegas",
     type: "Walk-In",
-    caption: "Walk-in enclosure, frameless inline panel",
+    caption: "Walk-in enclosure, frameless inline panel"
   },
   {
     src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
     alt: "Custom neo-angle shower enclosure — Baja Glass",
     type: "Neo-Angle",
-    caption: "Neo-angle, low-iron glass, polished chrome",
+    caption: "Neo-angle, low-iron glass, polished chrome"
   },
   {
     src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
     alt: "Custom alcove shower enclosure with low-iron glass — Baja Glass Las Vegas",
     type: "Alcove",
-    caption: "Alcove enclosure, ultra-clear low-iron glass",
+    caption: "Alcove enclosure, ultra-clear low-iron glass"
   },
   {
     src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
     alt: "Custom corner shower enclosure with brushed nickel hardware — Baja Glass",
     type: "Corner",
-    caption: "Corner enclosure, brushed nickel, 1/2\" tempered",
+    caption: "Corner enclosure, brushed nickel, 1/2\" tempered"
   },
   {
     src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
     alt: "Custom shower enclosure with matte black hardware and built-in bench — Baja Glass Las Vegas",
     type: "Walk-In",
-    caption: "Walk-in with matte black hardware + built-in bench",
+    caption: "Walk-in with matte black hardware + built-in bench"
   },
   {
     src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
     alt: "Custom inline shower enclosure with pebble accent — Baja Glass",
     type: "Inline",
-    caption: "Frameless inline, pebble accent detail",
+    caption: "Frameless inline, pebble accent detail"
   },
 ];
 
@@ -69,22 +69,22 @@ const fitFeatures = [
   {
     icon: Ruler,
     title: "Measured to Your Bathroom — Not a Catalog",
-    body: "Every wall in Las Vegas is a little out of square, every floor a little out of level, every ceiling a little different. We measure your actual space — including the angles nobody else checks — and fabricate to fit it. No shims, no caulk-to-fill-the-gap.",
+    body: "Every wall in Las Vegas is a little out of square, every floor a little out of level, every ceiling a little different. We measure your actual space — including the angles nobody else checks — and fabricate to fit it. No shims, no caulk-to-fill-the-gap."
   },
   {
     icon: Layers,
     title: "Heavy 3/8\" or 1/2\" Tempered Glass",
-    body: "No 5/16\" \"good enough\" big-box glass. The glass that matters in a custom enclosure is heavy enough to feel like architecture — and stable enough to span large openings without flex.",
+    body: "No 5/16\" \"good enough\" big-box glass. The glass that matters in a custom enclosure is heavy enough to feel like architecture — and stable enough to span large openings without flex."
   },
   {
     icon: Sparkles,
     title: "Hand-Polished Edges Standard",
-    body: "Every visible edge is hand-polished to a true flat polish — not the cheap arris bevel mass-production shops use. You feel the difference the first time you run a hand along the edge.",
+    body: "Every visible edge is hand-polished to a true flat polish — not the cheap arris bevel mass-production shops use. You feel the difference the first time you run a hand along the edge."
   },
   {
     icon: Shield,
     title: "Lifetime Hardware Warranty",
-    body: "Hinges, handles, clips, brackets — every piece of hardware we install carries a lifetime warranty. We can do that because we don't install economy hardware to begin with.",
+    body: "Hinges, handles, clips, brackets — every piece of hardware we install carries a lifetime warranty. We can do that because we don't install economy hardware to begin with."
   },
 ];
 
@@ -103,54 +103,34 @@ const includedItems = [
   "Lifetime hardware warranty",
 ];
 
-const reviews = [
-  {
-    name: "Robert Chen",
-    location: "Las Vegas, NV",
-    service: "Custom Shower Enclosure",
-    rating: 5,
-    text: "We hired Baja Glass for our bathroom remodel. The custom enclosure they designed fits perfectly and the matte black hardware matches our fixtures exactly. Great communication throughout — they understood exactly what the space needed.",
-  },
-  {
-    name: "David Kim",
-    location: "Las Vegas, NV",
-    service: "Custom Enclosure",
-    rating: 5,
-    text: "Old bathroom had walls that were way out of square. They measured every angle, fabricated glass that fit perfectly, and the install looked like the bathroom was built around the glass. Worth every penny.",
-  },
-  {
-    name: "Jennifer Martinez",
-    location: "Henderson, NV",
-    service: "Custom Walk-In",
-    rating: 5,
-    text: "The low-iron glass they recommended makes the tile work look incredible — you really notice the difference. Highly recommend.",
-  },
-];
+// TODO(owner): repopulate with REAL verified Google reviews. The previous entries
+// were placeholder copy, not genuine customer reviews, and were removed.
+const reviews: Array<{ name: string; location?: string; rating?: number; service?: string; text?: string; quote?: string; city?: string }> = [];
 
 const faqs = [
   {
     q: "What makes a shower enclosure \"custom\"?",
-    a: "Three things: (1) the glass is cut to your exact opening, not an off-the-shelf size, (2) the configuration — inline, corner, neo-angle, walk-in, alcove — is whatever fits your bathroom rather than whatever's on the shelf, and (3) hardware finish, glass type, and door swing are selected to match your design. Nothing about a custom enclosure is pulled from a box.",
+    a: "Three things: (1) the glass is cut to your exact opening, not an off-the-shelf size, (2) the configuration — inline, corner, neo-angle, walk-in, alcove — is whatever fits your bathroom rather than whatever's on the shelf, and (3) hardware finish, glass type, and door swing are selected to match your design. Nothing about a custom enclosure is pulled from a box."
   },
   {
     q: "Can you build to an irregular space?",
-    a: "Yes — that's most of what we do. Out-of-square walls, sloped ceilings, knee walls, half-walls, awkward plumbing locations. We template the actual space (or send photos for a preliminary look) and fabricate the glass to match. Templates fail in old Las Vegas bathrooms; custom fabrication doesn't.",
+    a: "Yes — that's most of what we do. Out-of-square walls, sloped ceilings, knee walls, half-walls, awkward plumbing locations. We template the actual space (or send photos for a preliminary look) and fabricate the glass to match. Templates fail in old Las Vegas bathrooms; custom fabrication doesn't."
   },
   {
     q: "How much do custom enclosures cost?",
-    a: "Most custom enclosures run $2,500–$6,500 depending on size, glass thickness, hardware finish, and any specialty glass options (low-iron, hydrophobic coating). Larger walk-in installs with heavy 1/2\" glass and premium hardware run $6,500–$12,000. We give you an exact written quote — no ballparks.",
+    a: "Most custom enclosures run $2,500–$6,500 depending on size, glass thickness, hardware finish, and any specialty glass options (low-iron, hydrophobic coating). Larger walk-in installs with heavy 1/2\" glass and premium hardware run $6,500–$12,000. We give you an exact written quote — no ballparks."
   },
   {
     q: "How long from measure to install?",
-    a: "Typically 10–14 business days. We measure on-site, fabricate the glass in our Las Vegas shop (5–10 days depending on glass type), and schedule installation at your convenience. Installation itself takes a single half-day for most enclosures.",
+    a: "Typically 10–14 business days. We measure on-site, fabricate the glass in our Las Vegas shop (5–10 days depending on glass type), and schedule installation at your convenience. Installation itself takes a single half-day for most enclosures."
   },
   {
     q: "Can I just text you photos for a quote?",
-    a: "Yes. For preliminary pricing, send us photos of your space using the form below or text them to (702) 383-0779. We can usually give you a price range within a business day. For a final quote, we still need to measure on-site — but the photo step lets you decide whether to schedule that measurement.",
+    a: "Yes. For preliminary pricing, send us photos of your space using the form below or text them to (702) 383-0779. We can usually give you a price range within a business day. For a final quote, we still need to measure on-site — but the photo step lets you decide whether to schedule that measurement."
   },
   {
     q: "What hardware finishes are available?",
-    a: "Matte black, brushed nickel, polished chrome, satin brass, unlacquered brass, oil-rubbed bronze, and custom powder coat finishes. Every hinge, handle, clip, and towel bar is selected individually to match your existing plumbing fixtures and interior metalwork.",
+    a: "Matte black, brushed nickel, polished chrome, satin brass, unlacquered brass, oil-rubbed bronze, and custom powder coat finishes. Every hinge, handle, clip, and towel bar is selected individually to match your existing plumbing fixtures and interior metalwork."
   },
 ];
 
@@ -185,7 +165,7 @@ function PhotoQuoteForm({ id }: { id: string }) {
       fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
         method: "POST",
         body: data,
-        headers: { Accept: "application/json" },
+        headers: { Accept: "application/json" }
       }).catch(() => {});
       if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
       trackFormSubmission({ source: "lp_custom_shower_enclosures_lv", projectType: "custom_enclosure" });
@@ -309,9 +289,9 @@ const CustomShowerEnclosuresLVLanding = () => {
             "@type": "PriceSpecification",
             priceCurrency: "USD",
             minPrice: "2500",
-            maxPrice: "12000",
+            maxPrice: "12000"
           },
-        },
+        }
       },
       {
         "@type": "LocalBusiness",
@@ -325,24 +305,17 @@ const CustomShowerEnclosuresLVLanding = () => {
           addressLocality: "Las Vegas",
           addressRegion: "NV",
           postalCode: "89118",
-          addressCountry: "US",
+          addressCountry: "US"
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.6",
-          bestRating: "5",
-          worstRating: "1",
-          reviewCount: "27",
-        },
-        priceRange: "$$$",
+        priceRange: "$$$"
       },
       {
         "@type": "FAQPage",
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.q,
-          acceptedAnswer: { "@type": "Answer", text: faq.a },
-        })),
+          acceptedAnswer: { "@type": "Answer", text: faq.a }
+        }))
       },
     ],
   };

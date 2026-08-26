@@ -44,7 +44,7 @@ const About = () => {
       <LocalBusinessSchema />
       <Helmet>
         <title>About Baja Glass & Mirror | Las Vegas Glass Company</title>
-        <meta name="description" content="Learn about Baja Glass & Mirror LLC — a family-owned, first responder owned glass company serving Las Vegas since 2004. Licensed, bonded, and insured." />
+        <meta name="description" content="Learn about Baja Glass & Mirror LLC — a family-owned, first responder owned glass company serving Las Vegas since 2009. Licensed, bonded, and insured." />
       </Helmet>
       
       {/* Hero Section */}

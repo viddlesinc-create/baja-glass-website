@@ -26,26 +26,11 @@ const ShowerDoorsGreenValley = () => {
         "Valle Verde",
         "Whitney Ranch"
       ]}
-      testimonials={[
-        {
-          name: "Jennifer Martinez",
-          text: "Baja Glass installed a beautiful frameless shower door in our Green Valley home. The installers were professional, on time, and the quality is outstanding. Highly recommend their services!",
-          rating: 5,
-          service: "Frameless Shower Door Installation"
-        },
-        {
-          name: "Amanda Foster",
-          text: "Beautiful semi-frameless door installation in our Green Valley South home. The team was punctual, professional, and completed the work in just a few hours. Love the modern look!",
-          rating: 5,
-          service: "Semi-Frameless Door"
-        },
-        {
-          name: "Kevin Brown",
-          text: "From initial consultation to final installation, Baja Glass was fantastic. They answered all our questions and provided fair pricing. Very happy Green Valley customer!",
-          rating: 5,
-          service: "Frameless Shower Door"
-        }
-      ]}
+      // TODO(owner): supply REAL verified testimonials for this city.
+      // Previous entries were placeholder copy, not genuine reviews. The template
+      // hides this section entirely while the list is empty — do not refill with
+      // invented names.
+      testimonials={[]}
       projectImages={[
         {
           src: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",

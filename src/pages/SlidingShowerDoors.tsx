@@ -81,13 +81,6 @@ const SlidingShowerDoors = () => {
               "highPrice": "2500",
               "offerCount": "4",
               "availability": "https://schema.org/InStock"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "reviewCount": "27",
-              "bestRating": "5",
-              "worstRating": "1"
             }
           })}
         </script>

@@ -16,19 +16,19 @@ import { Card, CardContent } from "@/components/ui/card";
 const whyColumns = [
   {
     title: "Site-Specific Fit",
-    body: "Every Las Vegas bathroom is different — older homes, custom tile patterns, sloped pans. Template installs fail; in-home measurement doesn't. We fabricate to your exact dimensions.",
+    body: "Every Las Vegas bathroom is different — older homes, custom tile patterns, sloped pans. Template installs fail; in-home measurement doesn't. We fabricate to your exact dimensions."
   },
   {
     title: "Same-Day Re-Visit",
-    body: "If the install reveals an issue, we're 15 minutes away, not 3 weeks out. Being local means we can stand behind our work in a way out-of-town crews never could.",
+    body: "If the install reveals an issue, we're 15 minutes away, not 3 weeks out. Being local means we can stand behind our work in a way out-of-town crews never could."
   },
   {
     title: "Real Warranty",
-    body: "1 year parts and labor, plus a lifetime hardware warranty. We honor it because we live here. Our reputation in this city is worth more than the cost of any callback.",
+    body: "1 year parts and labor, plus a lifetime hardware warranty. We honor it because we live here. Our reputation in this city is worth more than the cost of any callback."
   },
   {
     title: "No Middleman",
-    body: "You're hiring the company that fabricates the glass — not a subcontractor. Direct accountability. If something's wrong, the same hands that built it come fix it.",
+    body: "You're hiring the company that fabricates the glass — not a subcontractor. Direct accountability. If something's wrong, the same hands that built it come fix it."
   },
 ];
 
@@ -128,22 +128,22 @@ const timelineSteps = [
   {
     label: "Today",
     title: "Call or submit the form",
-    body: "We schedule your free in-home measurement within 48 hours.",
+    body: "We schedule your free in-home measurement within 48 hours."
   },
   {
     label: "Week 1",
     title: "Free in-home measurement",
-    body: "A licensed installer visits your bathroom. You get an exact written quote — no ballpark, no surprises.",
+    body: "A licensed installer visits your bathroom. You get an exact written quote — no ballpark, no surprises."
   },
   {
     label: "Weeks 3–4",
     title: "Glass fabricated in our LV shop",
-    body: "Your custom glass is cut, tempered, and finished here in Las Vegas. Install is scheduled at your convenience.",
+    body: "Your custom glass is cut, tempered, and finished here in Las Vegas. Install is scheduled at your convenience."
   },
   {
     label: "Install Day",
     title: "One half-day. Done.",
-    body: "Professional installation, site cleanup, and a full walkthrough. Your bathroom is ready that evening.",
+    body: "Professional installation, site cleanup, and a full walkthrough. Your bathroom is ready that evening."
   },
 ];
 
@@ -179,32 +179,9 @@ const ProcessTimeline = () => (
 // ─── Installer Credentials ────────────────────────────────────────────────────
 
 // ─── Installer-Tone Reviews ───────────────────────────────────────────────────
-const installerReviews = [
-  {
-    name: "Jennifer Martinez",
-    location: "Henderson, NV",
-    service: "Frameless Shower Door Installation",
-    text: "The installers were professional, on time, and the quality is outstanding. They took precise measurements and the installation was flawless.",
-  },
-  {
-    name: "Patricia Lewis",
-    location: "Las Vegas, NV",
-    service: "Frameless Shower Door",
-    text: "From quote to installation, everything was smooth and professional. Great communication throughout — they showed up exactly when they said they would.",
-  },
-  {
-    name: "Lisa Anderson",
-    location: "Henderson, NV",
-    service: "Hinged Shower Door",
-    text: "The team was courteous, cleaned up after themselves, and the door is perfect. They walked us through everything before they left. Highly recommend!",
-  },
-  {
-    name: "Kevin Brown",
-    location: "Henderson, NV",
-    service: "Frameless Shower Door",
-    text: "From initial consultation to final installation, Baja Glass was fantastic. They answered every question, were easy to work with, and delivered excellent work.",
-  },
-];
+// TODO(owner): repopulate with REAL verified Google reviews. The previous entries
+// were placeholder copy, not genuine customer reviews, and were removed.
+const installerReviews: Array<{ name: string; location?: string; rating?: number; service?: string; text?: string; quote?: string; city?: string }> = [];
 
 const InstallerReviews = () => (
   <section className="py-16 bg-secondary/30">
@@ -249,35 +226,35 @@ const InstallerReviews = () => (
 const faqs: FAQItem[] = [
   {
     q: "How quickly can you come measure?",
-    a: "We typically schedule free in-home measurements within 48 hours of your first contact. Same-week appointments are usually available Monday through Friday.",
+    a: "We typically schedule free in-home measurements within 48 hours of your first contact. Same-week appointments are usually available Monday through Friday."
   },
   {
     q: "Do you charge for the measurement visit?",
-    a: "No. The in-home measurement is completely free with no obligation. You'll receive an exact written quote — no pressure to proceed.",
+    a: "No. The in-home measurement is completely free with no obligation. You'll receive an exact written quote — no pressure to proceed."
   },
   {
     q: "How long does the actual install take?",
-    a: "Most shower door installs take one half-day. You'll have a fully functional, installed shower door before the crew leaves. Steam enclosures may take a full day.",
+    a: "Most shower door installs take one half-day. You'll have a fully functional, installed shower door before the crew leaves. Steam enclosures may take a full day."
   },
   {
     q: "What if there's a problem after the install?",
-    a: "We back every install with a 1-year parts and labor warranty. We're local — if something isn't right, we come back and fix it. Lifetime warranty on all hardware.",
+    a: "We back every install with a 1-year parts and labor warranty. We're local — if something isn't right, we come back and fix it. Lifetime warranty on all hardware."
   },
   {
     q: "Are you licensed and insured? Can I see proof?",
-    a: "Yes. We hold a C8 Glass & Glazing license from the Nevada State Contractors Board and carry general liability and workers' compensation insurance. We provide documentation before any job starts — just ask.",
+    a: "Yes. We hold a C8 Glass & Glazing license from the Nevada State Contractors Board and carry general liability and workers' compensation insurance. We provide documentation before any job starts — just ask."
   },
   {
     q: "Will my bathroom be a mess afterward?",
-    a: "No. Full site cleanup is included in every install. We haul away packaging, old hardware, and debris. Your bathroom is move-in ready when we leave.",
+    a: "No. Full site cleanup is included in every install. We haul away packaging, old hardware, and debris. Your bathroom is move-in ready when we leave."
   },
   {
     q: "Do you remove the old shower door?",
-    a: "Yes. Removal and disposal of your existing shower door or curtain rod is included at no extra charge.",
+    a: "Yes. Removal and disposal of your existing shower door or curtain rod is included at no extra charge."
   },
   {
     q: "What if my walls aren't perfectly square?",
-    a: "That's exactly why in-home measurement matters. Our installers measure the actual angles of your space — including any out-of-square walls — and we custom-fabricate the glass to fit. Templates fail here; custom fabrication doesn't.",
+    a: "That's exactly why in-home measurement matters. Our installers measure the actual angles of your space — including any out-of-square walls — and we custom-fabricate the glass to fit. Templates fail here; custom fabrication doesn't."
   },
 ];
 
@@ -294,7 +271,7 @@ const structuredData = {
       serviceType: "Shower Door Installation",
       provider: {
         "@type": "LocalBusiness",
-        "@id": "https://bajaglass.com/#localbusiness",
+        "@id": "https://bajaglass.com/#localbusiness"
       },
       areaServed: [
         { "@type": "City", name: "Las Vegas", addressRegion: "NV" },
@@ -309,9 +286,9 @@ const structuredData = {
         availability: "https://schema.org/InStock",
         priceSpecification: {
           "@type": "PriceSpecification",
-          priceCurrency: "USD",
+          priceCurrency: "USD"
         },
-      },
+      }
     },
     {
       "@type": "LocalBusiness",
@@ -325,28 +302,21 @@ const structuredData = {
         addressLocality: "Las Vegas",
         addressRegion: "NV",
         postalCode: "89118",
-        addressCountry: "US",
+        addressCountry: "US"
       },
       geo: {
         "@type": "GeoCoordinates",
         latitude: 36.097781,
-        longitude: -115.197234,
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.6",
-        bestRating: "5",
-        worstRating: "1",
-        reviewCount: "27",
+        longitude: -115.197234
       },
       openingHoursSpecification: [
         {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           opens: "08:00",
-          closes: "17:00",
+          closes: "17:00"
         },
-      ],
+      ]
     },
   ],
 };

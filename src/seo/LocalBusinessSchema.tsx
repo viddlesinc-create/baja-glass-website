@@ -3,39 +3,6 @@ import { Helmet } from "react-helmet-async";
 const BASE_URL = 'https://bajaglass.com';
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z';
 
-// Curated reviews for rich snippets (matching Google reviews)
-const curatedReviews = [
-  {
-    author: "Jennifer Martinez",
-    datePublished: "2024-11-15",
-    reviewBody: "Baja Glass installed a beautiful frameless shower door in our Henderson home. The installers were professional, on time, and the quality is outstanding. Highly recommend!",
-    ratingValue: 5
-  },
-  {
-    author: "Robert Chen",
-    datePublished: "2024-10-28",
-    reviewBody: "We hired Baja Glass for our Summerlin bathroom remodel. The custom enclosure they designed fits perfectly and looks amazing. Great communication throughout the process.",
-    ratingValue: 5
-  },
-  {
-    author: "Sarah Thompson",
-    datePublished: "2024-10-12",
-    reviewBody: "Professional service from start to finish. The team at Baja Glass helped us choose the perfect sliding door for our space. Installation was quick and clean. Worth every penny!",
-    ratingValue: 5
-  },
-  {
-    author: "Michael Rodriguez",
-    datePublished: "2024-09-30",
-    reviewBody: "Had a crack in our shower glass and Baja Glass came out quickly to assess and replace it. They matched the glass perfectly and the new panel looks great.",
-    ratingValue: 5
-  },
-  {
-    author: "Emily Watson",
-    datePublished: "2024-09-18",
-    reviewBody: "Absolutely love our new frameless shower door! The clarity of the glass is incredible and the hardware is top quality.",
-    ratingValue: 5
-  }
-];
 
 const localBusinessData = {
   "@context": "https://schema.org",
@@ -45,10 +12,10 @@ const localBusinessData = {
   "alternateName": ["Baja Glass", "Baja Glass and Mirror"],
   "image": `${BASE_URL}/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png`,
   "logo": `${BASE_URL}/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png`,
-  "foundingDate": "2004",
+  "foundingDate": "2009",
   "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation in Las Vegas, Henderson, and Summerlin. First Responder Owned. Licensed, bonded, and insured.",
   "url": BASE_URL,
-  "telephone": "(702) 383-0779",
+  "telephone": "+17023830779",
   "email": "info@bajaglass.com",
   "priceRange": "$$",
   "currenciesAccepted": "USD",
@@ -75,30 +42,6 @@ const localBusinessData = {
       "closes": "16:00"
     }
   ],
-  // Google Review Rich Snippets
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.6",
-    "bestRating": "5",
-    "worstRating": "1",
-    "reviewCount": "27",
-    "ratingCount": "27"
-  },
-  "review": curatedReviews.map(review => ({
-    "@type": "Review",
-    "author": {
-      "@type": "Person",
-      "name": review.author
-    },
-    "datePublished": review.datePublished,
-    "reviewBody": review.reviewBody,
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": review.ratingValue,
-      "bestRating": 5,
-      "worstRating": 1
-    }
-  })),
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Glass Services",
@@ -157,7 +100,7 @@ const localBusinessData = {
   ],
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "(702) 383-0779",
+    "telephone": "+17023830779",
     "contactType": "Customer Service",
     "areaServed": "US",
     "availableLanguage": ["English", "Spanish"]

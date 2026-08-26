@@ -124,26 +124,11 @@ const ShowerDoorsHenderson = () => {
           "MacDonald Ranch",
           "Anthem Country Club"
         ]}
-        testimonials={[
-          {
-            name: "Jennifer Martinez",
-            text: "Baja Glass installed a beautiful frameless shower door in our Henderson home. The installers were professional, on time, and the quality is outstanding. Highly recommend!",
-            rating: 5,
-            service: "Frameless Shower Door"
-          },
-          {
-            name: "Amanda Foster",
-            text: "Beautiful semi-frameless door installation. The team was punctual, professional, and the installation was done in a few hours. Our shower looks modern and elegant now.",
-            rating: 5,
-            service: "Semi-Frameless Door"
-          },
-          {
-            name: "Kevin Brown",
-            text: "From the initial consultation to final installation, Baja Glass was fantastic. They answered all our questions, provided fair pricing, and delivered excellent work.",
-            rating: 5,
-            service: "Frameless Shower Door"
-          }
-        ]}
+      // TODO(owner): supply REAL verified testimonials for this city.
+      // Previous entries were placeholder copy, not genuine reviews. The template
+      // hides this section entirely while the list is empty — do not refill with
+      // invented names.
+      testimonials={[]}
         projectImages={[
           {
             src: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",

@@ -48,6 +48,8 @@ import Reviews from "./pages/Reviews";
 import ResidentialGlassReplacement from "./pages/ResidentialGlassReplacement";
 import OfficeEnclosures from "./pages/OfficeEnclosures";
 import FAQ from "./pages/FAQ";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 // Location pages
 import ShowerDoorsHenderson from "./pages/locations/ShowerDoorsHenderson";
@@ -122,6 +124,8 @@ function AppSSR() {
             <Route path="/sitemap" element={<Sitemap />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
             <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
             <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />

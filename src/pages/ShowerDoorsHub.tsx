@@ -106,7 +106,7 @@ const ShowerDoorsHub = () => {
                 "latitude": "36.1215",
                 "longitude": "-115.2269"
               },
-              "telephone": "(702) 383-0779",
+              "telephone": "+17023830779",
               "url": "https://bajaglass.com",
               "priceRange": "$$",
               "hasOfferCatalog": {

@@ -36,7 +36,7 @@ const IntroSection = () => {
             </h2>
             <div className="prose prose-lg mx-auto text-muted-foreground">
               <p className="text-lg leading-relaxed mb-4">
-                For over <strong>20 years</strong>, <strong>Baja Glass & Mirror</strong> has been the trusted choice for 
+                Since <strong>2009</strong>, <strong>Baja Glass & Mirror</strong> has been the trusted choice for 
                 <strong> custom frameless shower doors</strong>, <strong>glass enclosures</strong>, and professional 
                 <strong> glass installation</strong> throughout the <strong>Las Vegas Valley</strong>. As a 
                 <strong> family-owned, first responder-operated company</strong>, we bring the same dedication to your 

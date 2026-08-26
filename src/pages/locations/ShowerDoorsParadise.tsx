@@ -26,20 +26,11 @@ const ShowerDoorsParadise = () => {
         "Sunrise Manor",
         "Flamingo Wash"
       ]}
-      testimonials={[
-        {
-          name: "Sarah Thompson",
-          text: "Professional service from start to finish. The team at Baja Glass helped us choose the perfect sliding door for our space. Installation was quick and clean. Worth every penny!",
-          rating: 5,
-          service: "Sliding Shower Door"
-        },
-        {
-          name: "Nicole Adams",
-          text: "Love our new sliding shower door! The installation was quick and the quality is excellent. The door slides smoothly and looks beautiful. Highly recommend Baja Glass.",
-          rating: 5,
-          service: "Sliding Shower Door"
-        }
-      ]}
+      // TODO(owner): supply REAL verified testimonials for this city.
+      // Previous entries were placeholder copy, not genuine reviews. The template
+      // hides this section entirely while the list is empty — do not refill with
+      // invented names.
+      testimonials={[]}
       projectImages={[
         {
           src: "/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png",

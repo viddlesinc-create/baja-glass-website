@@ -65,35 +65,35 @@ const StickyHeader = () => (
 const faqs = [
   {
     q: "How long does a frameless shower door installation take?",
-    a: "Most installations take 2 to 4 hours on install day. From the moment you request a quote, expect about 3–4 weeks total: free measurement in week 1, custom fabrication in weeks 2–3, and installation in week 3 or 4.",
+    a: "Most installations take 2 to 4 hours on install day. From the moment you request a quote, expect about 3–4 weeks total: free measurement in week 1, custom fabrication in weeks 2–3, and installation in week 3 or 4."
   },
   {
     q: "What thickness of glass should I choose?",
-    a: "Most frameless installs use 3/8\" tempered glass, which is plenty strong and gives the classic frameless look. 1/2\" is a step up — heavier, more substantial feel, and better for very large doors. We'll recommend the right thickness based on your door size and how the door swings.",
+    a: "Most frameless installs use 3/8\" tempered glass, which is plenty strong and gives the classic frameless look. 1/2\" is a step up — heavier, more substantial feel, and better for very large doors. We'll recommend the right thickness based on your door size and how the door swings."
   },
   {
     q: "Do frameless shower doors leak?",
-    a: "Properly installed frameless doors are designed to keep water inside the shower. We use a small clear seal along the bottom and at hinge points to direct water back into the pan. With correct in-swing or out-swing orientation and a properly sloped pan, leaks are not an issue.",
+    a: "Properly installed frameless doors are designed to keep water inside the shower. We use a small clear seal along the bottom and at hinge points to direct water back into the pan. With correct in-swing or out-swing orientation and a properly sloped pan, leaks are not an issue."
   },
   {
     q: "Can you install frameless doors in any bathroom?",
-    a: "Almost always, yes — but the wall has to be plumb (straight up and down) and the curb or pan has to be level. If a wall is significantly out of plumb, we can shim, use a notched panel, or recommend a header bar. We confirm all of this at the free measurement appointment before fabrication.",
+    a: "Almost always, yes — but the wall has to be plumb (straight up and down) and the curb or pan has to be level. If a wall is significantly out of plumb, we can shim, use a notched panel, or recommend a header bar. We confirm all of this at the free measurement appointment before fabrication."
   },
   {
     q: "How do I clean and maintain frameless shower glass?",
-    a: "Squeegee the glass after each shower — that one habit prevents 90% of hard-water spotting. For weekly cleaning, a 50/50 vinegar and water spray works well. Avoid abrasive scrubbers and ammonia-based cleaners. If you opt for ShowerGuard coating, maintenance is even easier.",
+    a: "Squeegee the glass after each shower — that one habit prevents 90% of hard-water spotting. For weekly cleaning, a 50/50 vinegar and water spray works well. Avoid abrasive scrubbers and ammonia-based cleaners. If you opt for ShowerGuard coating, maintenance is even easier."
   },
   {
     q: "What's the warranty?",
-    a: "We provide a lifetime warranty on all hardware. The tempered glass carries the manufacturer's warranty. If anything isn't right after installation, we come back and fix it at no charge.",
+    a: "We provide a lifetime warranty on all hardware. The tempered glass carries the manufacturer's warranty. If anything isn't right after installation, we come back and fix it at no charge."
   },
   {
     q: "How is pricing determined?",
-    a: "Three things drive price: glass thickness (3/8\" vs 1/2\"), hardware finish (chrome and brushed nickel are baseline; matte black, oil-rubbed bronze, and brass are step-ups), and site conditions (wall straightness, hardware accessibility, any custom cuts). We give you a firm price after the free in-home measurement.",
+    a: "Three things drive price: glass thickness (3/8\" vs 1/2\"), hardware finish (chrome and brushed nickel are baseline; matte black, oil-rubbed bronze, and brass are step-ups), and site conditions (wall straightness, hardware accessibility, any custom cuts). We give you a firm price after the free in-home measurement."
   },
   {
     q: "Do you offer financing?",
-    a: "We do not offer in-house financing. Most customers pay by check, card, or bank transfer. Many home equity lines and credit cards offer 0% intro periods that work well for bathroom upgrades — ask us and we'll point you to options that have worked for past clients.",
+    a: "We do not offer in-house financing. Most customers pay by check, card, or bank transfer. Many home equity lines and credit cards offer 0% intro periods that work well for bathroom upgrades — ask us and we'll point you to options that have worked for past clients."
   },
 ];
 
@@ -169,39 +169,32 @@ const FramelessShowerLanding = () => {
           "Custom-built frameless shower doors and enclosures. Heavy tempered glass, polished edges, professional installation, lifetime hardware warranty.",
         "provider": {
           "@type": "LocalBusiness",
-          "@id": "https://bajaglass.com/#localbusiness",
+          "@id": "https://bajaglass.com/#localbusiness"
         },
         "areaServed": {
           "@type": "AdministrativeArea",
-          "name": "Las Vegas, NV",
+          "name": "Las Vegas, NV"
         },
-        "serviceType": "Frameless Shower Door Installation",
+        "serviceType": "Frameless Shower Door Installation"
       },
       {
         "@type": "LocalBusiness",
         "@id": "https://bajaglass.com/#localbusiness",
         "name": "Baja Glass & Mirror LLC",
         "url": "https://bajaglass.com",
-        "telephone": "(702) 383-0779",
+        "telephone": "+17023830779",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "4280 W Reno Ave Ste A",
           "addressLocality": "Las Vegas",
           "addressRegion": "NV",
           "postalCode": "89118",
-          "addressCountry": "US",
+          "addressCountry": "US"
         },
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 36.097781,
-          "longitude": -115.197234,
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.6",
-          "bestRating": "5",
-          "worstRating": "1",
-          "reviewCount": "27",
+          "longitude": -115.197234
         },
         "priceRange": "$$",
         "openingHoursSpecification": [
@@ -209,9 +202,9 @@ const FramelessShowerLanding = () => {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
             "opens": "08:00",
-            "closes": "17:00",
+            "closes": "17:00"
           },
-        ],
+        ]
       },
       {
         "@type": "Product",
@@ -221,20 +214,15 @@ const FramelessShowerLanding = () => {
           "Custom-fabricated frameless shower doors and enclosures with 3/8\" or 1/2\" tempered glass and premium hardware.",
         "brand": {
           "@type": "Brand",
-          "name": "Baja Glass & Mirror",
+          "name": "Baja Glass & Mirror"
         },
         "offers": {
           "@type": "AggregateOffer",
           "priceCurrency": "USD",
           "lowPrice": "1500",
           "highPrice": "5500",
-          "availability": "https://schema.org/InStock",
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.6",
-          "reviewCount": "27",
-        },
+          "availability": "https://schema.org/InStock"
+        }
       },
       {
         "@type": "FAQPage",
@@ -244,8 +232,8 @@ const FramelessShowerLanding = () => {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": faq.a,
-          },
-        })),
+          }
+        }))
       },
     ],
   };

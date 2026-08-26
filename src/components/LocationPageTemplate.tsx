@@ -18,7 +18,9 @@ interface LocationPageProps {
   heroImage: string;
   description: string;
   neighborhoods: string[];
-  testimonials: Array<{
+  /** Real, verified customer testimonials only. Omit rather than fabricate —
+   *  the section hides itself when empty. */
+  testimonials?: Array<{
     name: string;
     text: string;
     rating: number;
@@ -47,7 +49,7 @@ const LocationPageTemplate = ({
   heroImage,
   description,
   neighborhoods,
-  testimonials,
+  testimonials = [],
   projectImages,
   localInfo,
   metaDescription,
@@ -84,10 +86,10 @@ const LocationPageTemplate = ({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "@id": "https://bajaglass.com/#localbusiness",
-            "name": `Baja Glass - ${city} Shower Doors`,
+            "name": "Baja Glass & Mirror LLC",
             "image": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
             "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-            "foundingDate": "2004",
+            "foundingDate": "2009",
             "areaServed": {
               "@type": "City",
               "name": city,
@@ -109,7 +111,7 @@ const LocationPageTemplate = ({
               "postalCode": "89118",
               "addressCountry": "US"
             },
-            "telephone": "(702) 383-0779",
+            "telephone": "+17023830779",
             "url": seoConfig.canonical,
             "priceRange": "$$",
             "openingHoursSpecification": [
@@ -120,14 +122,6 @@ const LocationPageTemplate = ({
                 "closes": "16:00"
               }
             ],
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "bestRating": "5",
-              "worstRating": "1",
-              "reviewCount": "27",
-              "ratingCount": "27"
-            },
             "sameAs": [
               "https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z",
               "https://www.instagram.com/baja_glass_lv/",
@@ -298,7 +292,8 @@ const LocationPageTemplate = ({
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials — rendered only when real, verified reviews exist */}
+      {testimonials.length > 0 && (
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">What {city} Customers Say</h2>
@@ -329,6 +324,7 @@ const LocationPageTemplate = ({
           </div>
         </div>
       </section>
+      )}
 
       {/* Service Areas */}
       <section className="py-20 bg-secondary/50">
@@ -437,7 +433,7 @@ const LocationPageTemplate = ({
               Ready for Your {city} Shower Door Installation?
             </h2>
             <p className="text-xl md:text-2xl mb-12 text-primary-foreground/90 leading-relaxed">
-              Get a free quote and expert consultation from Baja Glass. Serving {city} for over 20 years.
+              Get a free quote and expert consultation from Baja Glass. Serving {city} since 2009.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">

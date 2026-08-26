@@ -81,7 +81,11 @@ const ShowerEnclosuresLasVegas = () => {
     <div className="min-h-screen">
       <LocalBusinessSchema />
       <Helmet>
-        <link rel="canonical" href="https://bajaglass.com/shower-doors-las-vegas/custom-enclosures" />
+        {/* Self-referencing canonical. Previously pointed at /shower-doors-las-vegas/custom-enclosures,
+            but GSC URL Inspection reports googleCanonical as this URL itself and the page as
+            "Submitted and indexed" — Google rejected the cross-canonical. The two pages also win
+            different queries, so they are not duplicates. */}
+        <link rel="canonical" href="https://bajaglass.com/shower-enclosures-las-vegas" />
         {/* Service Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

@@ -18,58 +18,38 @@ const galleryImages = [
   {
     src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png",
     alt: "Luxury frameless shower enclosure with freestanding tub — Baja Glass Las Vegas",
-    caption: "Frameless enclosure with freestanding soaking tub — low-iron glass",
+    caption: "Frameless enclosure with freestanding soaking tub — low-iron glass"
   },
   {
     src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
     alt: "Custom neo-angle shower enclosure — Baja Glass",
-    caption: "Custom neo-angle enclosure, low-iron glass",
+    caption: "Custom neo-angle enclosure, low-iron glass"
   },
   {
     src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
     alt: "Ultra-clear low-iron glass frameless shower — Baja Glass Las Vegas",
-    caption: "Ultra-clear glass with chrome hardware",
+    caption: "Ultra-clear glass with chrome hardware"
   },
   {
     src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
     alt: "Frameless shower door with brushed nickel — Baja Glass",
-    caption: "Brushed nickel finish, 1/2\" tempered glass",
+    caption: "Brushed nickel finish, 1/2\" tempered glass"
   },
   {
     src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
     alt: "Luxury marble shower with matte black hardware and built-in bench — Baja Glass Las Vegas",
-    caption: "Marble surround, matte black hardware, built-in bench",
+    caption: "Marble surround, matte black hardware, built-in bench"
   },
   {
     src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
     alt: "Frameless shower enclosure with pebble accent strip — Baja Glass Las Vegas",
-    caption: "Frameless inline enclosure with pebble accent detail",
+    caption: "Frameless inline enclosure with pebble accent detail"
   },
 ];
 
-const testimonials = [
-  {
-    name: "Jennifer Martinez",
-    location: "Las Vegas, NV",
-    service: "Frameless Shower Door",
-    rating: 5,
-    text: "Baja Glass installed a beautiful frameless shower door for us. The installers were professional, on time, and the quality is outstanding. The low-iron glass they recommended makes the tile work look incredible — you really notice the difference. Highly recommend.",
-  },
-  {
-    name: "Robert Chen",
-    location: "Las Vegas, NV",
-    service: "Custom Shower Enclosure",
-    rating: 5,
-    text: "We hired Baja Glass for our bathroom remodel. The custom enclosure they designed fits perfectly and the matte black hardware matches our fixtures exactly. Great communication throughout — they understood exactly what the space needed.",
-  },
-  {
-    name: "David Kim",
-    location: "Las Vegas, NV",
-    service: "Steam Shower Enclosure",
-    rating: 5,
-    text: "Baja Glass built a custom steam shower enclosure for us. They understood the special requirements for steam containment and used the right glass thickness with proper ceiling panels and gasketing. The result is a true spa experience. Worth every penny.",
-  },
-];
+// TODO(owner): repopulate with REAL verified Google reviews. The previous entries
+// were placeholder copy, not genuine customer reviews, and were removed.
+const testimonials: Array<{ name: string; location?: string; rating?: number; service?: string; text?: string; quote?: string; city?: string }> = [];
 
 const features = [
   { icon: Shield, label: "C8 Glass & Glazing License", sub: "Nevada State Contractors Board" },
@@ -101,33 +81,33 @@ const comparisonRows = [
   { feature: "Hardware finish matching", baja: true, bigBox: "Limited", generic: "Limited" },
   { feature: "Free on-site consultation", baja: true, bigBox: false, generic: "Sometimes" },
   { feature: "First Responder owned", baja: true, bigBox: false, generic: false },
-  { feature: "20+ years Las Vegas experience", baja: true, bigBox: "N/A", generic: "Varies" },
+  { feature: "Las Vegas owned since 2009", baja: true, bigBox: "N/A", generic: "Varies" },
 ];
 
 const faqs = [
   {
     q: "How long does the process take from consultation to installation?",
-    a: "Most projects run 7–14 days from initial measurement to final installation. We schedule your on-site consultation first, then fabricate your custom glass panels in our Las Vegas shop — typically 5–10 business days depending on complexity. Installation itself is completed in a single visit, usually 2–4 hours for a standard enclosure.",
+    a: "Most projects run 7–14 days from initial measurement to final installation. We schedule your on-site consultation first, then fabricate your custom glass panels in our Las Vegas shop — typically 5–10 business days depending on complexity. Installation itself is completed in a single visit, usually 2–4 hours for a standard enclosure."
   },
   {
     q: "What glass thickness do you recommend for luxury installations?",
-    a: "We recommend 1/2\" tempered glass for most luxury installations. It provides a more substantial feel, superior rigidity across larger panel spans, and a premium aesthetic that 3/8\" glass simply can't match. For frameless pivot and hinged doors, 1/2\" is our standard.",
+    a: "We recommend 1/2\" tempered glass for most luxury installations. It provides a more substantial feel, superior rigidity across larger panel spans, and a premium aesthetic that 3/8\" glass simply can't match. For frameless pivot and hinged doors, 1/2\" is our standard."
   },
   {
     q: "Do you work with interior designers and general contractors?",
-    a: "Yes — and we prefer it. Working with your designer or contractor early means we can align hardware finishes, glass type, and configuration with the broader project before anything is fabricated. We're comfortable reading architectural drawings and coordinating with tile installers and plumbers.",
+    a: "Yes — and we prefer it. Working with your designer or contractor early means we can align hardware finishes, glass type, and configuration with the broader project before anything is fabricated. We're comfortable reading architectural drawings and coordinating with tile installers and plumbers."
   },
   {
     q: "Is the hydrophobic coating included or an add-on?",
-    a: "The hydrophobic coating is an add-on that we strongly recommend for Las Vegas bathrooms due to the area's hard water. It creates an invisible barrier that causes water to bead and roll off the glass surface, dramatically reducing mineral deposits and cleaning time. We'll walk you through the options during your consultation.",
+    a: "The hydrophobic coating is an add-on that we strongly recommend for Las Vegas bathrooms due to the area's hard water. It creates an invisible barrier that causes water to bead and roll off the glass surface, dramatically reducing mineral deposits and cleaning time. We'll walk you through the options during your consultation."
   },
   {
     q: "What hardware finishes are available?",
-    a: "We offer matte black, brushed nickel, polished chrome, satin brass, unlacquered brass, oil-rubbed bronze, and custom powder coat finishes. Every hinge, handle, clip, and towel bar is selected to match your existing plumbing fixtures and interior metalwork precisely.",
+    a: "We offer matte black, brushed nickel, polished chrome, satin brass, unlacquered brass, oil-rubbed bronze, and custom powder coat finishes. Every hinge, handle, clip, and towel bar is selected to match your existing plumbing fixtures and interior metalwork precisely."
   },
   {
     q: "What does your warranty cover?",
-    a: "Our warranty covers workmanship on the installation — including any issues with seals, alignment, hardware function, and glass fit. Glass itself is covered under manufacturer warranty against defects. We stand behind our work and will return to address any issues that arise from our installation.",
+    a: "Our warranty covers workmanship on the installation — including any issues with seals, alignment, hardware function, and glass fit. Glass itself is covered under manufacturer warranty against defects. We stand behind our work and will return to address any issues that arise from our installation."
   },
 ];
 
@@ -165,7 +145,7 @@ function ConsultationForm({ id }: { id: string }) {
       fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
         method: "POST",
         body: data,
-        headers: { Accept: "application/json" },
+        headers: { Accept: "application/json" }
       }).catch(() => {});
       if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
       setSubmitted(true);
@@ -258,7 +238,7 @@ const LuxuryShowerEnclosuresLanding = () => {
           { "@type": "Place", "name": "Henderson, NV" },
           { "@type": "Place", "name": "Summerlin, Las Vegas, NV" },
         ],
-        "serviceType": "Custom Shower Enclosure Installation",
+        "serviceType": "Custom Shower Enclosure Installation"
       },
       {
         "@type": "LocalBusiness",
@@ -272,24 +252,17 @@ const LuxuryShowerEnclosuresLanding = () => {
           "addressLocality": "Las Vegas",
           "addressRegion": "NV",
           "postalCode": "89118",
-          "addressCountry": "US",
+          "addressCountry": "US"
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.6",
-          "bestRating": "5",
-          "worstRating": "1",
-          "reviewCount": "27",
-        },
-        "priceRange": "$$$",
+        "priceRange": "$$$"
       },
       {
         "@type": "FAQPage",
         "mainEntity": faqs.map((faq) => ({
           "@type": "Question",
           "name": faq.q,
-          "acceptedAnswer": { "@type": "Answer", "text": faq.a },
-        })),
+          "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+        }))
       },
     ],
   };
@@ -344,7 +317,7 @@ const LuxuryShowerEnclosuresLanding = () => {
 
               {/* Sub */}
               <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-4 max-w-xl">
-                Custom glass shower enclosures designed, measured, fabricated, and installed by licensed glazing specialists with 20+ years in the Las Vegas Valley.
+                Custom glass shower enclosures designed, measured, fabricated, and installed by licensed glazing specialists working in the Las Vegas Valley since 2009.
               </p>
               <p className="text-base text-white/70 mb-10 max-w-xl">
                 Not labor-only. Not off-the-shelf. Every panel is custom-fabricated to your bathroom's exact specifications.
@@ -417,19 +390,19 @@ const LuxuryShowerEnclosuresLanding = () => {
                   step: "01",
                   title: "We Come to You",
                   desc: "Your on-site consultation happens at your convenience. We assess your space, review your existing fixtures, and discuss every option — no showroom visit required.",
-                  icon: Home,
+                  icon: Home
                 },
                 {
                   step: "02",
                   title: "Designed to Your Space",
                   desc: "Glass thickness, hardware finish, and configuration are selected to complement your architect's vision and your interior palette. We coordinate with your designer or contractor if needed.",
-                  icon: Ruler,
+                  icon: Ruler
                 },
                 {
                   step: "03",
                   title: "Installed to Perfection",
                   desc: "Our licensed crew completes most installations in a single day, leaving your space spotless. Every seal, hinge, and panel is inspected before we leave.",
-                  icon: Wrench,
+                  icon: Wrench
                 },
               ].map(({ step, title, desc, icon: Icon }) => (
                 <div key={step} className="relative text-center group">
@@ -456,7 +429,7 @@ const LuxuryShowerEnclosuresLanding = () => {
               headline: "Pure Clarity — No Green Tint",
               body: "Standard glass carries a subtle green cast that becomes visible along every edge — competing with your tile work and fixtures. Low-iron glass eliminates it entirely. The result is crystal-clear transparency that lets your stone, marble, and hardware speak for themselves, exactly as your designer intended.",
               badge: "Low-Iron Glass",
-              reverse: false,
+              reverse: false
             },
             {
               image: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
@@ -464,7 +437,7 @@ const LuxuryShowerEnclosuresLanding = () => {
               headline: "Hardware That Matches Your Space, Not a Catalog",
               body: "We offer matte black, brushed nickel, polished chrome, satin brass, unlacquered brass, and oil-rubbed bronze. Every hinge, handle, clip, and towel bar is individually selected to complement your existing plumbing fixtures and interior metalwork — not what happened to be in stock.",
               badge: "Designer Hardware",
-              reverse: true,
+              reverse: true
             },
             {
               image: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
@@ -472,7 +445,7 @@ const LuxuryShowerEnclosuresLanding = () => {
               headline: "Glass That Stays Pristine in Las Vegas Water",
               body: "Las Vegas water is among the hardest in the country. Untreated glass develops mineral deposits within weeks. Our hydrophobic glass treatment bonds to the surface at a molecular level, causing water to bead and roll off rather than film and deposit. Less cleaning. More clarity. A finish that holds up to the desert.",
               badge: "Hydrophobic Treatment",
-              reverse: false,
+              reverse: false
             },
           ].map(({ image, alt, headline, body, badge, reverse }) => (
             <div key={headline} className={`py-16 ${reverse ? "bg-background" : "bg-secondary/20"}`}>

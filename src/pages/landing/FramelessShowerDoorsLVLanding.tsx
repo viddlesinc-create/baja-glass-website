@@ -109,7 +109,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Lifetime hardware warranty", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Tempered safety glass (3/8\" or 1/2\")", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Local Las Vegas company", baja: "✓", bigBox: "✕", generic: "✓" },
-  { feature: "20+ years experience", baja: "✓", bigBox: "✕", generic: "✕" },
+  { feature: "Las Vegas owned since 2009", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Free in-home measurement", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Same-week quote response", baja: "✓", bigBox: "✕", generic: "✓" },
 ];
@@ -282,7 +282,7 @@ const FramelessShowerDoorsLVLanding = () => {
         "@id": "https://bajaglass.com/#localbusiness",
         "name": "Baja Glass & Mirror LLC",
         "url": "https://bajaglass.com",
-        "telephone": "(702) 383-0779",
+        "telephone": "+17023830779",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "4280 W Reno Ave Ste A",
@@ -295,13 +295,6 @@ const FramelessShowerDoorsLVLanding = () => {
           "@type": "GeoCoordinates",
           "latitude": 36.097781,
           "longitude": -115.197234
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.6",
-          "bestRating": "5",
-          "worstRating": "1",
-          "reviewCount": "27"
         },
         "priceRange": "$$",
         "openingHoursSpecification": [
@@ -326,11 +319,6 @@ const FramelessShowerDoorsLVLanding = () => {
           "@type": "AggregateOffer",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.6",
-          "reviewCount": "27"
         }
       },
       {
