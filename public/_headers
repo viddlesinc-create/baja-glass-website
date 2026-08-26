@@ -1,11 +1,13 @@
-/*
-  X-Frame-Options: DENY
-  X-Content-Type-Options: nosniff
-  X-XSS-Protection: 1; mode=block
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=()
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.facebook.com; connect-src 'self' https://formspree.io https://www.facebook.com https://hook.us2.make.com; img-src 'self' data: blob: https://www.facebook.com https://*.fbcdn.net; frame-src https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:
+# ==========================================
+# CACHE-CONTROL ONLY
+# ==========================================
+# Security headers (CSP, HSTS, X-Frame-Options, etc.) live in netlify.toml and are
+# deliberately NOT duplicated here. This file previously carried its own conflicting
+# Content-Security-Policy that allowed neither googletagmanager.com nor Supabase, and
+# instead whitelisted Facebook — a stale reference from an earlier stack. netlify.toml
+# takes precedence on Netlify, so the site worked, but if that block were ever trimmed
+# or reordered, GTM and the Supabase client would both have broken silently.
+# One CSP, one file. Do not re-add security headers here.
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable

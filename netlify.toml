@@ -208,7 +208,21 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
-    Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; connect-src 'self' https:; img-src 'self' data: blob: https:; frame-src https:; style-src 'self' 'unsafe-inline' https:; font-src 'self' data: https:"
+    # THE site's Content-Security-Policy. Do not add a second one to public/_headers —
+    # that file used to carry a conflicting policy that blocked GTM and Supabase.
+    #
+    # Origins below are named explicitly so they survive any future tightening:
+    #   formspree.io ......... landing-page lead forms (fetch POST) — breaking this loses leads
+    #   hook.us2.make.com .... webhook fired alongside the Formspree submit
+    #   *.supabase.co ........ Supabase client + edge functions
+    #   googletagmanager.com . GTM-PJK7SWRX container (script + noscript iframe)
+    #   *.google-analytics.com / *.analytics.google.com ... GA4 beacons
+    #
+    # The trailing `https:` on script-src/connect-src/frame-src is DELIBERATE. GTM injects
+    # third-party tags (Google Ads conversion, call tracking, whatever is in the container)
+    # that cannot be enumerated from this repo. Dropping it would silently break tags that
+    # are invisible from here. Tighten only after auditing the live GTM container.
+    Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https:; connect-src 'self' https://formspree.io https://hook.us2.make.com https://wzeuuhbrtjykwcatafyr.supabase.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https:; img-src 'self' data: blob: https:; frame-src 'self' https://www.googletagmanager.com https:; style-src 'self' 'unsafe-inline' https:; font-src 'self' data: https:; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'"
 
 [[headers]]
   for = "/*.js"
