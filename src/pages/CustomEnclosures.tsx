@@ -78,11 +78,7 @@ const CustomEnclosures = () => {
             "serviceType": "Custom Shower Enclosure Installation",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass & Mirror LLC",
-              "areaServed": {
-                "@type": "State",
-                "name": "Nevada"
-              }
+              "@id": "https://bajaglass.com/#localbusiness"
             },
             "areaServed": [
               {

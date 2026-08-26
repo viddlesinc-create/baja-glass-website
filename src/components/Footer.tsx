@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Star, Instagram, Facebook, MapPin } from "lucide-react";
-import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
 import { GetDirections, GOOGLE_MAPS_URL } from "@/components/GetDirections";
 import { trackMapInteraction } from "@/lib/analytics";
@@ -52,44 +51,6 @@ const Footer = () => {
 
   return (
     <>
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Baja Glass & Mirror LLC",
-            "url": "https://bajaglass.com",
-            "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-            "description": "Family-owned shower door and glass company in Las Vegas, NV. Custom frameless shower doors, glass replacement, and interior glass services. First Responder Owned.",
-            "telephone": "+17023830779",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "4280 W Reno Ave Ste A",
-              "addressLocality": "Las Vegas",
-              "addressRegion": "NV",
-              "postalCode": "89118",
-              "addressCountry": "US"
-            },
-            "areaServed": [
-              "Las Vegas",
-              "Henderson",
-              "Summerlin",
-              "North Las Vegas",
-              "Paradise",
-              "Spring Valley",
-              "Enterprise"
-            ],
-            "sameAs": [
-              "https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z",
-              "https://www.instagram.com/baja_glass_lv/",
-              "https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/",
-              "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas",
-              "https://www.homeadvisor.com/rated.BajaGlassandMirror.33547383.html",
-              "https://www.bbb.org/us/nv/las-vegas/profile/window-glass/baja-glass-and-mirror-llc-1086-90011741"
-            ]
-          })}
-        </script>
-      </Helmet>
       <footer className="bg-primary text-primary-foreground" role="contentinfo">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

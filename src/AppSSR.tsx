@@ -14,6 +14,7 @@ import { BreadcrumbNav } from "./components/BreadcrumbNav";
 import RedirectComponent from "./components/RedirectComponent";
 import QueryParameterRedirects from "./components/QueryParameterRedirects";
 import { SEOHead } from "./seo";
+import LocalBusinessSchema from "./seo/LocalBusinessSchema";
 import { usePageTracking } from "./hooks/usePageTracking";
 
 // Landing pages
@@ -96,6 +97,10 @@ function AppSSR() {
   return (
     <>
       <SEOHead />
+      {/* The site's single canonical business entity (@id .../#localbusiness).
+          Mounted once here so every page carries exactly one full node; pages
+          reference it by @id rather than redeclaring the business. */}
+      <LocalBusinessSchema />
       <QueryParameterRedirects />
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">

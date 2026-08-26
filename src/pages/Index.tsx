@@ -7,7 +7,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Link } from "react-router-dom";
 import { Star, Phone, Shield, Clock, Users, Award, MapPin, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import GoogleMap from "@/components/GoogleMap";
 import { WebSiteSchema, SpeakableSchema } from "@/components/StructuredData";
 import OptimizedImage from "@/components/OptimizedImage";
@@ -63,7 +62,6 @@ const hardwareFinishes = "/images/hardware-finishes.jpg";
   }];
 const Index = () => {
   return <div className="min-h-screen">
-      <LocalBusinessSchema />
       <WebSiteSchema />
       <SpeakableSchema 
         name="Baja Glass & Mirror - Las Vegas Shower Door Installation"

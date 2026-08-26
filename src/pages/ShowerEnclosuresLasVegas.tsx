@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Phone, Star, Check } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import PhoneNumber from "@/components/PhoneNumber";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import FramelessQualification from "@/components/FramelessQualification";
@@ -79,7 +78,6 @@ const ShowerEnclosuresLasVegas = () => {
 
   return (
     <div className="min-h-screen">
-      <LocalBusinessSchema />
       <Helmet>
         {/* Self-referencing canonical. Previously pointed at /shower-doors-las-vegas/custom-enclosures,
             but GSC URL Inspection reports googleCanonical as this URL itself and the page as

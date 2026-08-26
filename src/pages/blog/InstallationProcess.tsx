@@ -17,20 +17,12 @@ const InstallationProcess = () => {
             "headline": "Shower Door Installation Process: What to Expect",
             "description": "A complete walkthrough of the professional installation process, from initial consultation to final inspection and warranty coverage.",
             "author": {
-              "@type": "Person",
-              "name": "Baja Glass Team",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Baja Glass & Mirror LLC"
-              }
+              "@type": "Organization",
+              "@id": "https://bajaglass.com/#localbusiness"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Baja Glass & Mirror LLC",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png"
-              }
+              "@id": "https://bajaglass.com/#localbusiness"
             },
             "datePublished": "2025-01-15",
             "dateModified": "2026-01-10",

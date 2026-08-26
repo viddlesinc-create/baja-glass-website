@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Shield, Users, Award, Clock } from "lucide-react";
-import LocalBusinessSchema from "@/seo/LocalBusinessSchema";
 import GoogleMap from "@/components/GoogleMap";
 import GetDirections from "@/components/GetDirections";
 
@@ -40,7 +39,6 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
-      <LocalBusinessSchema />
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white">

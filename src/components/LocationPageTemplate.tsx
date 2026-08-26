@@ -81,55 +81,10 @@ const LocationPageTemplate = ({
     <div className="min-h-screen">
       <Helmet>
         {/* LocalBusiness Schema - basic SEO handled by SEOHead via metaConfig */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "@id": "https://bajaglass.com/#localbusiness",
-            "name": "Baja Glass & Mirror LLC",
-            "image": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-            "logo": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png",
-            "foundingDate": "2009",
-            "areaServed": {
-              "@type": "City",
-              "name": city,
-              "containedIn": {
-                "@type": "State",
-                "name": "Nevada"
-              }
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": coordinates.latitude,
-              "longitude": coordinates.longitude
-            },
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "4280 W Reno Ave Ste A",
-              "addressLocality": "Las Vegas",
-              "addressRegion": "NV",
-              "postalCode": "89118",
-              "addressCountry": "US"
-            },
-            "telephone": "+17023830779",
-            "url": seoConfig.canonical,
-            "priceRange": "$$",
-            "openingHoursSpecification": [
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "08:00",
-                "closes": "16:00"
-              }
-            ],
-            "sameAs": [
-              "https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z",
-              "https://www.instagram.com/baja_glass_lv/",
-              "https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/",
-              "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas"
-            ]
-          })}
-        </script>
+        {/* The business entity is emitted once globally (LocalBusinessSchema, @id
+            .../#localbusiness). This template previously redeclared a full node under the
+            same @id but with a per-city name, so the same identifier resolved to different
+            businesses across location pages. */}
       </Helmet>
 
       {/* Hero Section */}

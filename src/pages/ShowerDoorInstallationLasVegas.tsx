@@ -92,21 +92,7 @@ const ShowerDoorInstallationLasVegas = () => {
             "description": "Professional shower door installation in Las Vegas. Frameless, sliding, and custom glass enclosure installation by licensed experts.",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass & Mirror LLC",
-              "telephone": "+17023830779",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4280 Reno Ave, Ste A",
-                "addressLocality": "Las Vegas",
-                "addressRegion": "NV",
-                "postalCode": "89118"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "36.1215",
-                "longitude": "-115.2269"
-              },
-              "priceRange": "$$"
+              "@id": "https://bajaglass.com/#localbusiness"
             },
             "areaServed": [
               { "@type": "City", "name": "Las Vegas", "containedIn": "Clark County, NV" },

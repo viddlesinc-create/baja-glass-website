@@ -8,6 +8,7 @@ import { BreadcrumbNav } from "./components/BreadcrumbNav";
 import RedirectComponent from "./components/RedirectComponent";
 import QueryParameterRedirects from "./components/QueryParameterRedirects";
 import { SEOHead } from "./seo";
+import LocalBusinessSchema from "./seo/LocalBusinessSchema";
 
 // Every page here is lazy so none of it lands in the entry chunk that the
 // standalone /lp/* paid landing pages download. App.tsx loads this whole module
@@ -61,6 +62,10 @@ const HardWaterSolutions = lazy(() => import("./pages/blog/HardWaterSolutions"))
 const MainSite = () => (
   <>
     <SEOHead />
+    {/* The site's single canonical business entity (@id .../#localbusiness).
+        Mounted once here so every page carries exactly one full node; pages
+        reference it by @id rather than redeclaring the business. */}
+    <LocalBusinessSchema />
     <QueryParameterRedirects />
     <ScrollToTop />
     <div className="min-h-screen flex flex-col">

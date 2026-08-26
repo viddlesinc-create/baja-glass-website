@@ -86,20 +86,12 @@ const FramelessVsSemiFrameless = () => {
             "headline": "Frameless vs Framed vs Semi-Frameless Shower Doors: Which is Best?",
             "description": "Complete comparison of frameless, semi-frameless, and framed shower doors. Learn the differences in style, cost, and maintenance for Las Vegas homes.",
             "author": {
-              "@type": "Person",
-              "name": "Baja Glass Team",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Baja Glass & Mirror LLC"
-              }
+              "@type": "Organization",
+              "@id": "https://bajaglass.com/#localbusiness"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Baja Glass & Mirror LLC",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://bajaglass.com/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png"
-              }
+              "@id": "https://bajaglass.com/#localbusiness"
             },
             "datePublished": "2025-01-15",
             "dateModified": "2026-07-30",

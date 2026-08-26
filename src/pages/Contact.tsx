@@ -128,26 +128,7 @@ const Contact = () => {
             "@type": "ContactPage",
             "mainEntity": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass & Mirror LLC",
-              "address": {
-                "@type": "PostalAddress", 
-                "streetAddress": "4280 W Reno Ave Ste A",
-                "addressLocality": "Las Vegas",
-                "addressRegion": "NV",
-                "postalCode": "89118",
-                "addressCountry": "US"
-              },
-              "telephone": "+17023830779",
-              "email": "info@bajaglass.com",
-              "url": "https://bajaglass.com",
-              "openingHours": "Mo-Fr 08:00-16:00",
-              "contactPoint": [
-                { "@type": "ContactPoint", "telephone": "+17023830779", "contactType": "Customer Service", "availableLanguage": "English", "areaServed": "Las Vegas Valley" },
-                { "@type": "ContactPoint", "contactType": "Sales", "availableLanguage": "English", "serviceType": "Free Consultation" }
-              ],
-              "priceRange": "$$",
-              "paymentAccepted": "Cash, Credit Card, Check",
-              "currenciesAccepted": "USD"
+              "@id": "https://bajaglass.com/#localbusiness"
             }
           })}
         </script>

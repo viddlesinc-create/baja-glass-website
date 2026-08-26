@@ -70,7 +70,7 @@ export const OrganizationSchema = ({ type = 'Organization' }: OrganizationProps)
   const schema = {
     "@context": "https://schema.org",
     "@type": type,
-    "@id": `${BASE_URL}/#organization`,
+    "@id": `${BASE_URL}/#localbusiness`,
     "name": "Baja Glass & Mirror LLC",
     "alternateName": ["Baja Glass", "Baja Glass and Mirror", "Baja Glass Las Vegas"],
     "url": BASE_URL,
@@ -171,12 +171,7 @@ export const WebSiteSchema = ({ name = 'Baja Glass & Mirror', url = BASE_URL }: 
     "inLanguage": "en-US",
     "publisher": {
       "@type": "Organization",
-      "@id": `${BASE_URL}/#organization`,
-      "name": "Baja Glass & Mirror LLC",
-      "logo": {
-        "@type": "ImageObject",
-        "url": LOGO_URL
-      }
+      "@id": "https://bajaglass.com/#localbusiness"
     },
     "potentialAction": {
       "@type": "SearchAction",
@@ -215,20 +210,13 @@ export const BlogPostingSchema = ({
     "dateModified": dateModified,
     "author": {
       "@type": "Organization",
-      "@id": `${BASE_URL}/#organization`,
+      "@id": `${BASE_URL}/#localbusiness`,
       "name": author,
       "url": BASE_URL
     },
     "publisher": {
       "@type": "Organization",
-      "@id": `${BASE_URL}/#organization`,
-      "name": "Baja Glass & Mirror LLC",
-      "logo": {
-        "@type": "ImageObject",
-        "url": LOGO_URL,
-        "width": 200,
-        "height": 80
-      }
+      "@id": "https://bajaglass.com/#localbusiness"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -262,14 +250,7 @@ export const ServiceSchema = ({
     "image": image || `${BASE_URL}/og-image.jpg`,
     "provider": {
       "@type": "LocalBusiness",
-      "@id": `${BASE_URL}/#organization`,
-      "name": "Baja Glass & Mirror LLC",
-      "telephone": PHONE_E164,
-      "address": BUSINESS_ADDRESS,
-      "geo": {
-        "@type": "GeoCoordinates",
-        ...GEO_COORDINATES
-      }
+      "@id": "https://bajaglass.com/#localbusiness"
     },
     "areaServed": areaServed.map(city => ({
       "@type": "City",
@@ -310,7 +291,7 @@ export const SpeakableSchema = ({
     },
     "mainEntity": {
       "@type": "LocalBusiness",
-      "@id": `${BASE_URL}/#organization`
+      "@id": `${BASE_URL}/#localbusiness`
     }
   };
 

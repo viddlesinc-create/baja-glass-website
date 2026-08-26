@@ -82,7 +82,7 @@ const SteamShowerEnclosures = () => {
             "serviceType": "Steam Shower Enclosure Installation",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Baja Glass & Mirror LLC"
+              "@id": "https://bajaglass.com/#localbusiness"
             },
             "areaServed": [
               {
