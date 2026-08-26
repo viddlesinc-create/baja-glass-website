@@ -58,7 +58,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
+                src="/images/baja-glass-mirror-logo.webp" 
                 alt="Baja Glass — Shower Doors & Glass in Las Vegas"
                 className="h-14 w-auto"
                 width="140"

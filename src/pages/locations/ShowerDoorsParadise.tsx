@@ -9,7 +9,7 @@ const ShowerDoorsParadise = () => {
         latitude: "36.0972",
         longitude: "-115.1461"
       }}
-      heroImage="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png"
+      heroImage="/images/bypass-sliding-glass-doors-4.webp"
       description="Expert shower door installation throughout Paradise. From the Las Vegas Strip area to Winchester and Paradise Valley, we deliver quality installations with professional service."
       additionalContent={
         <p className="text-lg text-muted-foreground">
@@ -33,17 +33,17 @@ const ShowerDoorsParadise = () => {
       testimonials={[]}
       projectImages={[
         {
-          src: "/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png",
+          src: "/images/custom-shower-enclosure-enterprise-premium-glass.webp",
           alt: "Sliding shower doors Paradise with smooth operation",
           caption: "Paradise Valley - Sliding bypass door with brushed nickel hardware"
         },
         {
-          src: "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png",
+          src: "/images/completed-steam-shower-enclosure-2.webp",
           alt: "Frameless shower installation Paradise NV",
           caption: "Winchester - Frameless inline panel with chrome finish"
         },
         {
-          src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
+          src: "/images/completed-steam-shower-enclosure-3.webp",
           alt: "Modern shower door Paradise with matte black hardware",
           caption: "University District - Contemporary frameless with matte black accents"
         }

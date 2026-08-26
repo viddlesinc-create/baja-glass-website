@@ -36,7 +36,7 @@ const ShowerDoorsSummerlin = () => {
         latitude: "36.1699",
         longitude: "-115.3267"
       }}
-      heroImage="/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png"
+      heroImage="/images/corner-shower-enclosure-black-hardware.webp"
       description="Luxury frameless shower door installation throughout Summerlin. Serving The Ridges, Red Rock Country Club, and all Summerlin neighborhoods with premium glass and expert installation."
       neighborhoods={[
         "The Ridges",
@@ -55,17 +55,17 @@ const ShowerDoorsSummerlin = () => {
       testimonials={[]}
       projectImages={[
         {
-          src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
+          src: "/images/bypass-sliding-glass-doors.webp",
           alt: "Luxury frameless shower door installation Summerlin with elegant tile work",
           caption: "The Ridges estate - Frameless enclosure with polished brass hardware"
         },
         {
-          src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
+          src: "/images/corner-shower-enclosure-black-hardware.webp",
           alt: "Custom corner shower enclosure Summerlin installation with matte black hardware",
           caption: "Red Rock Country Club - Custom neo-angle with low-iron glass"
         },
         {
-          src: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",
+          src: "/images/custom-corner-shower-enclosure-summerlin-installation.webp",
           alt: "Premium frameless shower glass installation Summerlin master bath",
           caption: "The Trails - Steam-ready enclosure with architectural detailing"
         }

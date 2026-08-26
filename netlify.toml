@@ -173,6 +173,332 @@
   status = 301
   force = true
 
+
+# ==========================================
+# LEGACY IMAGE PATHS -> DESCRIPTIVE WEBP
+# ==========================================
+# Lovable's UUID filenames carried no meaning for image search and shipped as PNG. Assets
+# moved to /images/<descriptive-name>.webp (10.1 MB lighter). These 301s preserve any of the
+# old URLs already indexed in Google Images. Generated once — see git history for the map.
+
+[[redirects]]
+  from = "/lovable-uploads/04d04176-aad8-47c9-9880-5c8eed82308f.png"
+  to = "/images/compact-shower-frameless-glass-door.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/1097be0e-6f50-458e-9cc0-56a340dec89f.png"
+  to = "/images/shower-doors-enclosures.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/182850ed-180a-4525-aee1-917367fff2bb.png"
+  to = "/images/corner-shower-subway-tile-black-fixtures.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png"
+  to = "/images/complete-hinged-shower-enclosure.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png"
+  to = "/images/custom-shower-enclosure-enterprise-premium-glass.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/2145af91-ce61-458d-a311-72b26193aeb2.png"
+  to = "/images/bypass-sliding-shower-doors-completed-project.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png"
+  to = "/images/corner-hinged-shower-enclosure-2.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png"
+  to = "/images/completed-steam-shower-enclosure.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png"
+  to = "/images/professional-shower-door-installation-gallery-showcase.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/30ead577-c1b4-4057-a808-f7d0d612125f.png"
+  to = "/images/corner-steam-shower-configuration.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/32eaf66a-2f41-4fc8-92f4-2faf7cf74d56.png"
+  to = "/images/modern-walk-shower-penny-tile-accent.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png"
+  to = "/images/completed-steam-shower-enclosure-3.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png"
+  to = "/images/glass-company-commercial-residential-services.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/3c35382d-7bd5-49a9-a187-938bb11dddbc.png"
+  to = "/images/custom-frosted-glass-table-chrome-base.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png"
+  to = "/images/bypass-sliding-glass-doors.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/482d4c2b-fc42-4a15-b833-a141e61e4d91.png"
+  to = "/images/contemporary-frameless-shower-low-iron-glass.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png"
+  to = "/images/custom-corner-shower-enclosure-summerlin-installation.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/4940799d-2ddf-41b7-bd8c-22aa0ab12cdb.png"
+  to = "/images/rain-glass-shower-doors-black-hardware.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/4f6832d0-9951-4037-bfc2-c9153c280a12.png"
+  to = "/images/single-panel-shower-door-chrome-hardware.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png"
+  to = "/images/baja-glass-mirror-logo.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/5691175d-8fb2-4e96-9445-987ca41039fb.png"
+  to = "/images/contemporary-frameless-shower-design.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/60045135-144e-49b1-b017-133adce3a58d.png"
+  to = "/images/walk-shower-installation-progress-black-hardware.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/60879279-461a-40ca-b2cd-78b1d7fa95b3.png"
+  to = "/images/large-custom-shower-enclosure-glass-niches.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/63a30f9e-c80e-421e-9968-d4ed286876f4.png"
+  to = "/images/completed-steam-shower-enclosure-4.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/70012b37-e3d6-4261-b567-0a42b8632737.png"
+  to = "/images/completed-steam-shower-enclosure-5.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/722b5530-b688-42ad-8731-3cc0be1756ed.png"
+  to = "/images/tub-shower-conversion-sliding-glass-doors.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/7281360e-8ce3-43c7-890e-3f4b5f73e8a4.png"
+  to = "/images/tub-enclosure-black-hardware-accent-tile.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png"
+  to = "/images/bypass-sliding-glass-doors-3.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png"
+  to = "/images/bypass-sliding-shower-doors-completed-project-2.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/91755c9c-0083-4cb9-bb28-670bdbf4a700.png"
+  to = "/images/narrow-shower-herringbone-accent-tile-black.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png"
+  to = "/images/bypass-sliding-glass-doors-4.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png"
+  to = "/images/contemporary-frameless-shower-design-2.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png"
+  to = "/images/completed-steam-shower-enclosure-2.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/9cb21233-99c8-47f9-a756-a38f36471524.png"
+  to = "/images/custom-glass-dining-table-modern-base.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png"
+  to = "/images/custom-frameless-shower-door-installation.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/a038cf4c-a8a3-4089-b29d-40d9ca793fff.png"
+  to = "/images/walk-shower-black-hardware-subway-tile.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png"
+  to = "/images/corner-shower-enclosure-black-hardware.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/ab324ca0-1c7d-49d5-ba4f-dd8865a3b916.png"
+  to = "/images/framed-shower-before-upgrade-3.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/b23c9420-2184-4048-b39c-d5d90544053a.png"
+  to = "/images/complete-hinged-shower-enclosure-3.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png"
+  to = "/images/custom-corner-shower-enclosure-brushed-nickel.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/b924d7a0-9e63-4616-9595-c35e3546e89a.png"
+  to = "/images/framed-shower-before-upgrade-2.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/beffc522-39a0-4b73-954d-5be7a6c03e82.png"
+  to = "/images/modern-office-glass-partitions-conference-room.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/bf541daa-269d-4a2f-88a1-ade3c731b28b.png"
+  to = "/images/custom-bathroom-mirror-polished-edges.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/cd86f335-efa7-4203-92ce-e32d77e9b26b.png"
+  to = "/images/bypass-sliding-glass-doors-2.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png"
+  to = "/images/custom-frameless-shower-enclosure-sliding-doors.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png"
+  to = "/images/custom-neo-angle-shower-enclosure.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/e0470406-f3bb-4471-83cf-84adb149756b.png"
+  to = "/images/office-glass-enclosures.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/eb713b05-a28a-4385-b0c4-cdcb90a610ee.png"
+  to = "/images/complete-hinged-shower-enclosure-2.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/ec6a560e-8579-44ed-9f2a-ff3fa3889f09.png"
+  to = "/images/large-shower-partial-glass-panel-black.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/fa10a8e6-c837-4e10-b9f0-c8bbd5506ea4.png"
+  to = "/images/framed-shower-before-upgrade.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/favicon.png"
+  to = "/images/favicon.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png"
+  to = "/images/corner-hinged-shower-enclosure.webp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png"
+  to = "/images/elegant-bathroom-custom-glass-shower-enclosure.webp"
+  status = 301
+  force = true
+
 # ==========================================
 # WWW → NON-WWW (consolidate link equity)
 # ==========================================

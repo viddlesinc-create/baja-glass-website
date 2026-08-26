@@ -129,7 +129,7 @@ const ShowerDoorsHub = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
            <img 
-            src="/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" 
+            src="/images/custom-frameless-shower-door-installation.webp" 
             alt="Custom frameless shower door installation in Las Vegas"
             className="w-full h-full object-cover opacity-75"
           />

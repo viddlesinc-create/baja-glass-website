@@ -350,7 +350,7 @@ const FramelessShowerDoorsLVLanding = () => {
         <meta property="og:description" content="Transform your bathroom with premium frameless shower doors. Expert installation in Las Vegas. Free in-home measurement." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/lp/frameless-shower-doors-lv" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png" />
+        <meta property="og:image" content="https://bajaglass.com/images/completed-steam-shower-enclosure.webp" />
 
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}

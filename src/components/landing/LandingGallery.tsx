@@ -8,32 +8,32 @@ const GalleryLightbox = lazy(() => import("./GalleryLightbox"));
 
 const galleryImages: GalleryImage[] = [
   {
-    src: "/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png",
+    src: "/images/completed-steam-shower-enclosure.webp",
     alt: "Modern frameless glass shower enclosure in Las Vegas bathroom",
     caption: "Modern Frameless Enclosure - Henderson"
   },
   {
-    src: "/lovable-uploads/2145af91-ce61-458d-a311-72b26193aeb2.png",
+    src: "/images/bypass-sliding-shower-doors-completed-project.webp",
     alt: "Elegant frameless shower door with chrome hardware",
     caption: "Elegant Chrome Hardware - Summerlin"
   },
   {
-    src: "/lovable-uploads/bf541daa-269d-4a2f-88a1-ade3c731b28b.png",
+    src: "/images/custom-bathroom-mirror-polished-edges.webp",
     alt: "Custom frameless shower installation with clear glass",
     caption: "Custom Clear Glass - Las Vegas"
   },
   {
-    src: "/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png",
+    src: "/images/custom-frameless-shower-door-installation.webp",
     alt: "Frameless shower door with brushed nickel finish",
     caption: "Brushed Nickel Finish - Paradise"
   },
   {
-    src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
+    src: "/images/bypass-sliding-glass-doors.webp",
     alt: "Luxurious frameless glass shower enclosure",
     caption: "Luxury Installation - Enterprise"
   },
   {
-    src: "/lovable-uploads/482d4c2b-fc42-4a15-b833-a141e61e4d91.png",
+    src: "/images/contemporary-frameless-shower-low-iron-glass.webp",
     alt: "Contemporary frameless shower with low-iron glass",
     caption: "Low-Iron Glass - Spring Valley"
   }

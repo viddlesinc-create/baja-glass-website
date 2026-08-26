@@ -9,7 +9,7 @@ const ShowerDoorsEnterprise = () => {
         latitude: "36.0253",
         longitude: "-115.2422"
       }}
-      heroImage="/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png"
+      heroImage="/images/bypass-sliding-glass-doors-4.webp"
       description="Professional shower door installation in Enterprise. From compact bathrooms to spacious master suites, we provide quality installations tailored to your space and budget."
       additionalContent={
         <p className="text-lg text-muted-foreground">
@@ -33,17 +33,17 @@ const ShowerDoorsEnterprise = () => {
       testimonials={[]}
       projectImages={[
         {
-          src: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",
+          src: "/images/custom-corner-shower-enclosure-summerlin-installation.webp",
           alt: "Custom shower enclosure Enterprise with premium glass",
           caption: "Mountain's Edge - Custom steam enclosure with ceiling"
         },
         {
-          src: "/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png",
+          src: "/images/custom-shower-enclosure-enterprise-premium-glass.webp",
           alt: "Sliding shower door Enterprise with smooth rollers",
           caption: "Silverado Ranch - Sliding door with quiet roller system"
         },
         {
-          src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
+          src: "/images/corner-shower-enclosure-black-hardware.webp",
           alt: "Frameless corner shower Enterprise with black hardware",
           caption: "Southern Highlands border - Frameless corner with matte black"
         }

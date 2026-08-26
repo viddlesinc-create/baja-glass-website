@@ -11,12 +11,12 @@ import StickyMobileCallBar from "@/components/StickyMobileCallBar";
 import ComparisonTable from "@/components/ComparisonTable";
 
 const framelessGalleryImages = [
-  { src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png", alt: "Luxury frameless glass shower door with freestanding tub", caption: "Modern Frameless Design" },
-  { src: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png", alt: "Frameless shower enclosure with chrome hardware", caption: "Chrome Hardware Finish" },
-  { src: "/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png", alt: "Elegant frameless walk-in shower", caption: "Walk-In Elegance" },
-  { src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png", alt: "Large frameless glass shower enclosure", caption: "Spacious Enclosure" },
-  { src: "/lovable-uploads/5691175d-8fb2-4e96-9445-987ca41039fb.png", alt: "Frameless shower door upgrade result", caption: "Complete Transformation" },
-  { src: "/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png", alt: "Contemporary frameless shower design", caption: "Contemporary Style" },
+  { src: "/images/custom-neo-angle-shower-enclosure.webp", alt: "Luxury frameless glass shower door with freestanding tub", caption: "Modern Frameless Design" },
+  { src: "/images/custom-corner-shower-enclosure-summerlin-installation.webp", alt: "Frameless shower enclosure with chrome hardware", caption: "Chrome Hardware Finish" },
+  { src: "/images/elegant-bathroom-custom-glass-shower-enclosure.webp", alt: "Elegant frameless walk-in shower", caption: "Walk-In Elegance" },
+  { src: "/images/completed-steam-shower-enclosure-3.webp", alt: "Large frameless glass shower enclosure", caption: "Spacious Enclosure" },
+  { src: "/images/contemporary-frameless-shower-design.webp", alt: "Frameless shower door upgrade result", caption: "Complete Transformation" },
+  { src: "/images/contemporary-frameless-shower-design-2.webp", alt: "Contemporary frameless shower design", caption: "Contemporary Style" },
 ];
 
 const FramelessShowerDoors = () => {
@@ -121,7 +121,7 @@ const FramelessShowerDoors = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" 
+            src="/images/custom-neo-angle-shower-enclosure.webp" 
             alt="Modern luxury bathroom with frameless glass shower door and freestanding tub - professional glass installation Las Vegas"
             className="w-full h-full object-cover opacity-75"
             width="1920"

@@ -134,7 +134,7 @@ const ShowerDoorInstallationLasVegas = () => {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal via-primary to-charcoal text-white">
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" 
+            src="/images/custom-frameless-shower-door-installation.webp" 
             alt="Professional shower door installation in Las Vegas home"
             className="w-full h-full object-cover opacity-75"
             width="1920"

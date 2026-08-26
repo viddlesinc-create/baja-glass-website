@@ -117,10 +117,10 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <HeroImagePreload src="/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png" width={1382} />
+      <HeroImagePreload src="/images/completed-steam-shower-enclosure.webp" width={1382} />
       {/* Background Image with Overlay (LCP element — optimized + preloaded) */}
       <OptimizedImage
-        src="/lovable-uploads/22e931d0-6005-492b-ba38-baab99486f52.png"
+        src="/images/completed-steam-shower-enclosure.webp"
         alt=""
         width={1382}
         height={1726}

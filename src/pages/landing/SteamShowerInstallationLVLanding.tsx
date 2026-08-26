@@ -29,32 +29,32 @@ const FORMSPREE = "https://formspree.io/f/xqaydjpg";
 
 const galleryImages = [
   {
-    src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png",
+    src: "/images/custom-neo-angle-shower-enclosure.webp",
     alt: "Custom steam shower enclosure with frameless glass — Baja Glass Las Vegas",
     caption: "Finished steam enclosure — frameless, vapor-tight"
   },
   {
-    src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+    src: "/images/bypass-sliding-shower-doors-completed-project-2.webp",
     alt: "Steam shower with low-iron ultra-clear glass — Baja Glass",
     caption: "Low-iron glass keeps the tile work visible through steam"
   },
   {
-    src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
+    src: "/images/custom-corner-shower-enclosure-brushed-nickel.webp",
     alt: "Custom steam shower with built-in bench — Baja Glass Las Vegas",
     caption: "Built-in bench, sloped ceiling, matte black hardware"
   },
   {
-    src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
+    src: "/images/corner-shower-enclosure-black-hardware.webp",
     alt: "Neo-angle steam enclosure with full ceiling panel — Baja Glass",
     caption: "Neo-angle enclosure with full ceiling panel"
   },
   {
-    src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
+    src: "/images/completed-steam-shower-enclosure-3.webp",
     alt: "Steam shower glass door with brushed nickel transom — Baja Glass",
     caption: "Brushed nickel transom + gasketed steam door"
   },
   {
-    src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
+    src: "/images/bypass-sliding-glass-doors.webp",
     alt: "Frameless steam shower enclosure detail — Baja Glass",
     caption: "Vapor-tight seal detail"
   },
@@ -94,12 +94,12 @@ const caseStudy = {
   generator: "9 KW SteamSpa",
   finalCost: "$11,400",
   photos: [
-    { src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png", caption: "Rough-in: 240V circuit, water line, condensate drain" },
-    { src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png", caption: "Waterproofing: Schluter Kerdi behind every tile" },
-    { src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png", caption: "Tile-set with sloped ceiling for condensation control" },
-    { src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png", caption: "Generator installed in adjacent linen closet" },
-    { src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png", caption: "Frameless glass with full ceiling panel + transom" },
-    { src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png", caption: "Beauty shot: matte black hardware, low-iron glass" },
+    { src: "/images/custom-corner-shower-enclosure-brushed-nickel.webp", caption: "Rough-in: 240V circuit, water line, condensate drain" },
+    { src: "/images/bypass-sliding-shower-doors-completed-project-2.webp", caption: "Waterproofing: Schluter Kerdi behind every tile" },
+    { src: "/images/corner-shower-enclosure-black-hardware.webp", caption: "Tile-set with sloped ceiling for condensation control" },
+    { src: "/images/custom-neo-angle-shower-enclosure.webp", caption: "Generator installed in adjacent linen closet" },
+    { src: "/images/bypass-sliding-glass-doors.webp", caption: "Frameless glass with full ceiling panel + transom" },
+    { src: "/images/completed-steam-shower-enclosure-3.webp", caption: "Beauty shot: matte black hardware, low-iron glass" },
   ],
 };
 
@@ -338,7 +338,7 @@ const SteamShowerInstallationLVLanding = () => {
         <meta property="og:description" content="Vapor-tight frameless steam enclosures. Generator sizing, ceiling slope, waterproofing. From $5,000." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/lp/steam-shower-installation-lv" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" />
+        <meta property="og:image" content="https://bajaglass.com/images/custom-neo-angle-shower-enclosure.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
@@ -347,9 +347,9 @@ const SteamShowerInstallationLVLanding = () => {
         {/* ── 1. HERO ─────────────────────────────────────────────────────── */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0">
-            <HeroImagePreload src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" width={1414} />
+            <HeroImagePreload src="/images/custom-neo-angle-shower-enclosure.webp" width={1414} />
             <OptimizedImage
-              src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png"
+              src="/images/custom-neo-angle-shower-enclosure.webp"
               alt="Custom steam shower installation with vapor-tight frameless glass — Baja Glass Las Vegas"
               width={1414}
               height={1650}

@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Star, Phone, Clock, Award, Shield, Users, CheckCircle, Instagram, Facebook } from "lucide-react";
-import heroImage from "/lovable-uploads/1097be0e-6f50-458e-9cc0-56a340dec89f.png";
+import heroImage from "/images/shower-doors-enclosures.webp";
 const slidingDoors = "/images/sliding-doors.jpg";
 const customEnclosure = "/images/custom-enclosure.jpg";
 const hardwareFinishes = "/images/hardware-finishes.jpg";
@@ -21,7 +21,7 @@ const GlassCompanyLasVegas = () => {
         "Replacements: panels, rollers, hinges, seals, upgrades"
       ],
       href: "/shower-doors-las-vegas",
-      image: "/lovable-uploads/e0470406-f3bb-4471-83cf-84adb149756b.png"
+      image: "/images/office-glass-enclosures.webp"
     },
     {
       title: "Office Glass Enclosures",
@@ -32,7 +32,7 @@ const GlassCompanyLasVegas = () => {
         "Safety backing and professional mounting"
       ],
       href: "/glass-company-las-vegas/office-enclosures",
-      image: "/lovable-uploads/beffc522-39a0-4b73-954d-5be7a6c03e82.png"
+      image: "/images/modern-office-glass-partitions-conference-room.webp"
     },
     {
       title: "Residential Glass Replacement",
@@ -43,7 +43,7 @@ const GlassCompanyLasVegas = () => {
         "Patio door glass and emergency services"
       ],
       href: "/glass-company-las-vegas/residential-glass-replacement",
-      image: "/lovable-uploads/bf541daa-269d-4a2f-88a1-ade3c731b28b.png"
+      image: "/images/custom-bathroom-mirror-polished-edges.webp"
     }
   ];
 
@@ -101,13 +101,13 @@ const GlassCompanyLasVegas = () => {
     {
       title: "Frosted Custom Table",
       description: "Custom frosted glass table with precision-cut edges and modern chrome base for contemporary office spaces.",
-      image: "/lovable-uploads/3c35382d-7bd5-49a9-a187-938bb11dddbc.png",
+      image: "/images/custom-frosted-glass-table-chrome-base.webp",
       alt: "Custom frosted glass table with chrome base — Baja Glass Las Vegas office furniture"
     },
     {
       title: "Custom Mirror", 
       description: "Custom-cut mirror with polished edges and professional mounting for elegant bathroom and vanity installations.",
-      image: "/lovable-uploads/bf541daa-269d-4a2f-88a1-ade3c731b28b.png",
+      image: "/images/custom-bathroom-mirror-polished-edges.webp",
       alt: "Custom bathroom mirror with polished edges — Baja Glass Las Vegas mirror installation"
     }
   ];
@@ -207,7 +207,7 @@ const GlassCompanyLasVegas = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
              <img 
-              src="/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png" 
+              src="/images/glass-company-commercial-residential-services.webp" 
               alt="Las Vegas glass company - commercial and residential glass services"
               className="w-full h-full object-cover opacity-75"
             />

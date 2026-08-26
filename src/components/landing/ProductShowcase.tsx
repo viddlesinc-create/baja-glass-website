@@ -13,7 +13,7 @@ interface ShowcaseItem {
 const items: ShowcaseItem[] = [
   {
     name: "Inline Frameless",
-    image: "/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png",
+    image: "/images/custom-frameless-shower-door-installation.webp",
     alt: "Inline frameless shower enclosure with clear glass and matte black hardware",
     short:
       "A single run of glass with a hinged door. The most common configuration for alcove showers.",
@@ -22,7 +22,7 @@ const items: ShowcaseItem[] = [
   },
   {
     name: "90° Corner Enclosure",
-    image: "/lovable-uploads/482d4c2b-fc42-4a15-b833-a141e61e4d91.png",
+    image: "/images/contemporary-frameless-shower-low-iron-glass.webp",
     alt: "Frameless 90 degree corner shower enclosure with two glass panels meeting at the corner",
     short:
       "Two glass panels meeting at a corner. The signature look for corner showers and modern master bathrooms.",
@@ -31,7 +31,7 @@ const items: ShowcaseItem[] = [
   },
   {
     name: "Pivot Single Door",
-    image: "/lovable-uploads/2145af91-ce61-458d-a311-72b26193aeb2.png",
+    image: "/images/bypass-sliding-shower-doors-completed-project.webp",
     alt: "Frameless pivot shower door with rain glass and matte black hardware",
     short:
       "One hinged door, no side panel. Often the right call for tub-to-shower conversions.",

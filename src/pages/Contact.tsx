@@ -139,7 +139,7 @@ const Contact = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png" 
+            src="/images/custom-frameless-shower-enclosure-sliding-doors.webp" 
             alt="Custom frameless shower enclosure with sliding doors and stone tile walls - professional installation by Baja Glass Las Vegas"
             className="w-full h-full object-cover opacity-30"
             width="1920"

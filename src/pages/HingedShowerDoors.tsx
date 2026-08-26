@@ -8,12 +8,12 @@ import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import ComparisonTable from "@/components/ComparisonTable";
 
 const hingedGalleryImages = [
-  { src: "/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png", alt: "Hinged glass shower door with black fixtures", caption: "Modern Hinged Design" },
-  { src: "/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png", alt: "Custom hinged door under staircase", caption: "Custom Installation" },
-  { src: "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png", alt: "Corner hinged shower enclosure", caption: "Corner Configuration" },
-  { src: "/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png", alt: "Hinged door with decorative tile", caption: "Tile Integration" },
-  { src: "/lovable-uploads/eb713b05-a28a-4385-b0c4-cdcb90a610ee.png", alt: "Hinged door with brass hardware", caption: "Brass Finish" },
-  { src: "/lovable-uploads/b23c9420-2184-4048-b39c-d5d90544053a.png", alt: "Complete hinged shower enclosure", caption: "Full Enclosure" },
+  { src: "/images/corner-hinged-shower-enclosure.webp", alt: "Hinged glass shower door with black fixtures", caption: "Modern Hinged Design" },
+  { src: "/images/corner-hinged-shower-enclosure-2.webp", alt: "Custom hinged door under staircase", caption: "Custom Installation" },
+  { src: "/images/completed-steam-shower-enclosure-2.webp", alt: "Corner hinged shower enclosure", caption: "Corner Configuration" },
+  { src: "/images/complete-hinged-shower-enclosure.webp", alt: "Hinged door with decorative tile", caption: "Tile Integration" },
+  { src: "/images/complete-hinged-shower-enclosure-2.webp", alt: "Hinged door with brass hardware", caption: "Brass Finish" },
+  { src: "/images/complete-hinged-shower-enclosure-3.webp", alt: "Complete hinged shower enclosure", caption: "Full Enclosure" },
 ];
 
 const HingedShowerDoors = () => {
@@ -106,7 +106,7 @@ const HingedShowerDoors = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png" 
+            src="/images/corner-hinged-shower-enclosure.webp" 
             alt="Modern hinged glass shower door with black fixtures and geometric tile design - professional installation Las Vegas"
             className="w-full h-full object-cover opacity-75"
             width="1920"

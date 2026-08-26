@@ -11,32 +11,32 @@ import ComparisonTable from "@/components/ComparisonTable";
 const CustomEnclosures = () => {
   const customEnclosureImages = [
     {
-      src: "/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png",
+      src: "/images/custom-frameless-shower-enclosure-sliding-doors.webp",
       alt: "Custom frameless shower enclosure with sliding doors and stone tile walls",
       caption: "Frameless sliding enclosure - Spring Valley"
     },
     {
-      src: "/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png",
+      src: "/images/corner-hinged-shower-enclosure-2.webp",
       alt: "Under-stair custom shower installation with frameless glass door",
       caption: "Custom under-stair enclosure - Las Vegas"
     },
     {
-      src: "/lovable-uploads/70012b37-e3d6-4261-b567-0a42b8632737.png",
+      src: "/images/completed-steam-shower-enclosure-5.webp",
       alt: "Custom corner shower enclosure with clear glass panels",
       caption: "Corner enclosure modernization - Spring Valley"
     },
     {
-      src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
+      src: "/images/completed-steam-shower-enclosure-3.webp",
       alt: "Large walk-in shower with custom frameless glass panels",
       caption: "Walk-in custom enclosure - Enterprise"
     },
     {
-      src: "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png",
+      src: "/images/completed-steam-shower-enclosure-2.webp",
       alt: "Corner shower enclosure with black hardware and built-in seating",
       caption: "Neo-angle with bench - Henderson"
     },
     {
-      src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
+      src: "/images/bypass-sliding-glass-doors.webp",
       alt: "Custom shower with pebble accent strip and frameless glass enclosure",
       caption: "Custom inline enclosure - Summerlin"
     }
@@ -168,7 +168,7 @@ const CustomEnclosures = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png" 
+            src="/images/custom-frameless-shower-enclosure-sliding-doors.webp" 
             alt="Custom frameless shower enclosure with sliding doors and stone tile walls - professional installation by Baja Glass Las Vegas"
             className="w-full h-full object-cover"
             width="1920"

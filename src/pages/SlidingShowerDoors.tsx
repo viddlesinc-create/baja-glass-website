@@ -8,12 +8,12 @@ import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import ComparisonTable from "@/components/ComparisonTable";
 
 const slidingGalleryImages = [
-  { src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png", alt: "Sliding glass shower door installation", caption: "Smooth-Glide System" },
-  { src: "/lovable-uploads/2145af91-ce61-458d-a311-72b26193aeb2.png", alt: "Bypass sliding shower doors completed project", caption: "Bypass Configuration" },
-  { src: "/lovable-uploads/cd86f335-efa7-4203-92ce-e32d77e9b26b.png", alt: "Sliding shower door before installation", caption: "Before Upgrade" },
-  { src: "/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png", alt: "Sliding doors on bathtub enclosure", caption: "Tub Enclosure" },
-  { src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png", alt: "Bypass sliding glass doors", caption: "Space-Saving Design" },
-  { src: "/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png", alt: "Modern sliding shower system", caption: "Modern Aesthetics" },
+  { src: "/images/bypass-sliding-shower-doors-completed-project-2.webp", alt: "Sliding glass shower door installation", caption: "Smooth-Glide System" },
+  { src: "/images/bypass-sliding-shower-doors-completed-project.webp", alt: "Bypass sliding shower doors completed project", caption: "Bypass Configuration" },
+  { src: "/images/bypass-sliding-glass-doors-2.webp", alt: "Sliding shower door before installation", caption: "Before Upgrade" },
+  { src: "/images/bypass-sliding-glass-doors-3.webp", alt: "Sliding doors on bathtub enclosure", caption: "Tub Enclosure" },
+  { src: "/images/bypass-sliding-glass-doors.webp", alt: "Bypass sliding glass doors", caption: "Space-Saving Design" },
+  { src: "/images/bypass-sliding-glass-doors-4.webp", alt: "Modern sliding shower system", caption: "Modern Aesthetics" },
 ];
 
 const SlidingShowerDoors = () => {
@@ -105,7 +105,7 @@ const SlidingShowerDoors = () => {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png"
+            src="/images/bypass-sliding-shower-doors-completed-project-2.webp"
             alt="Sliding glass shower door installation with smooth-glide system - professional Las Vegas installation"
             className="w-full h-full object-cover"
             width="1920"

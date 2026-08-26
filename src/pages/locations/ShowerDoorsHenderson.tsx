@@ -58,7 +58,7 @@ const ShowerDoorsHenderson = () => {
           latitude: "36.0395",
           longitude: "-114.9817"
         }}
-        heroImage="/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png"
+        heroImage="/images/contemporary-frameless-shower-design-2.webp"
         description="Henderson's trusted expert for custom shower doors. Frameless, sliding, and semi-frameless installations and replacements. Professional service with perfect results."
         additionalContent={
           <>
@@ -131,17 +131,17 @@ const ShowerDoorsHenderson = () => {
       testimonials={[]}
         projectImages={[
           {
-            src: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",
+            src: "/images/custom-corner-shower-enclosure-summerlin-installation.webp",
             alt: "Custom frameless shower enclosure Henderson installation with premium hardware",
             caption: "Custom enclosure in Green Valley - Low-iron glass with matte black hardware"
           },
           {
-            src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
+            src: "/images/completed-steam-shower-enclosure-3.webp",
             alt: "Frameless shower doors Henderson Seven Hills by Baja Glass",
             caption: "Frameless installation in Seven Hills - Brushed nickel finish"
           },
           {
-            src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+            src: "/images/bypass-sliding-shower-doors-completed-project-2.webp",
             alt: "Modern shower glass Henderson Anthem with clean lines",
             caption: "Anthem project - Ultra-clear glass with chrome hardware"
           }

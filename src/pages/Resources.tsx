@@ -113,12 +113,12 @@ const Resources = () => {
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/resources" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png" />
+        <meta property="og:image" content="https://bajaglass.com/images/completed-steam-shower-enclosure-3.webp" />
         <meta property="og:site_name" content="Baja Glass & Mirror LLC" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://bajaglass.com/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png" />
+        <meta name="twitter:image" content="https://bajaglass.com/images/completed-steam-shower-enclosure-3.webp" />
         
         {/* FAQ Schema */}
         <script type="application/ld+json">
@@ -142,7 +142,7 @@ const Resources = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png')`
+            backgroundImage: `url('/images/completed-steam-shower-enclosure-3.webp')`
           }}
         ></div>
         <div className="relative container mx-auto px-4 text-center">

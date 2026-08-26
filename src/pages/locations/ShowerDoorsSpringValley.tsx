@@ -9,7 +9,7 @@ const ShowerDoorsSpringValley = () => {
         latitude: "36.1080",
         longitude: "-115.2453"
       }}
-      heroImage="/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png"
+      heroImage="/images/complete-hinged-shower-enclosure.webp"
       description="Quality shower door installation throughout Spring Valley. Serving residential neighborhoods with reliable service, quality materials, and professional craftsmanship you can trust."
       additionalContent={
         <p className="text-lg text-muted-foreground">
@@ -33,17 +33,17 @@ const ShowerDoorsSpringValley = () => {
       testimonials={[]}
       projectImages={[
         {
-          src: "/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png",
+          src: "/images/complete-hinged-shower-enclosure.webp",
           alt: "Semi-frameless shower door Spring Valley with chrome frame",
           caption: "Spring Valley - Semi-frameless with polished chrome hardware"
         },
         {
-          src: "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png",
+          src: "/images/completed-steam-shower-enclosure-2.webp",
           alt: "Custom shower enclosure Spring Valley precision installation",
           caption: "Rainbow Gardens - Custom neo-angle enclosure"
         },
         {
-          src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+          src: "/images/bypass-sliding-shower-doors-completed-project-2.webp",
           alt: "Frameless shower door Spring Valley brushed nickel hardware",
           caption: "Desert Inn - Frameless with brushed nickel handle"
         }

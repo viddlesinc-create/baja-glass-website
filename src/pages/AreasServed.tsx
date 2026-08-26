@@ -16,56 +16,56 @@ const areas = [
     {
       name: "Spanish Hills",
       description: "Specializing in bespoke shower enclosures for Spanish Hills' luxury homes—we create one‑of‑a‑kind designs with premium low‑iron glass, architectural hardware finishes, and precision craftsmanship. Every enclosure is tailored to complement your unique tile work and bathroom architecture.",
-      image: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",
+      image: "/images/custom-corner-shower-enclosure-summerlin-installation.webp",
       alt: "Custom glass shower enclosure Spanish Hills — premium low‑iron glass, architectural hardware by Baja Glass",
       services: ["Custom Enclosures", "Frameless", "Steam", "Luxury Hardware", "Architectural Glass"]
     },
     {
       name: "Spanish Trail", 
       description: "From refreshed primary baths to guest suites, we deliver premium glass doors that elevate Spanish Trail homes. Expect tight, clean silicone lines and carefully placed seals to help reduce splashing without distracting from your tile.",
-      image: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
+      image: "/images/bypass-sliding-glass-doors.webp",
       alt: "Premium glass shower door Spanish Trail — elegant pebble accent and frameless design",
       services: ["Frameless", "Hinged/Pivot", "Replacement"]
     },
     {
       name: "The Ridges (Summerlin South)",
       description: "For modern layouts in The Ridges, our frameless and steam‑ready enclosures pair ultra‑clear glass with minimalist hardware. We account for niches, benches, and custom angles to maintain a refined, architectural look.",
-      image: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
+      image: "/images/corner-shower-enclosure-black-hardware.webp",
       alt: "Frameless corner shower enclosure The Ridges — black hardware, architectural design",
       services: ["Frameless", "Custom Enclosures", "Steam", "Gallery"]
     },
     {
       name: "Rhodes Ranch",
       description: "Space‑smart solutions like sliding bypass doors and clean, durable framed options are popular in Rhodes Ranch. We align tracks and rollers for smooth glide and fit seals precisely to help prevent drips.",
-      image: "/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png",
+      image: "/images/custom-shower-enclosure-enterprise-premium-glass.webp",
       alt: "Sliding shower doors Rhodes Ranch — brushed nickel rollers and handle",
       services: ["Sliding", "Semi‑Frameless/Framed", "Replacement"]
     },
     {
       name: "Southern Highlands",
       description: "Luxury frameless doors, inline panels, and custom hardware finishes complement Southern Highlands' high‑end bathrooms. Our measurements and edge polishing deliver even reveals and a tight, confident close.",
-      image: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
+      image: "/images/completed-steam-shower-enclosure-3.webp",
       alt: "Frameless shower Southern Highlands — matte black clips, clear seals",
       services: ["Frameless", "Hinged/Pivot", "Custom Enclosures"]
     },
     {
       name: "Mountains Edge",
       description: "Whether updating a primary bath or secondary shower, we install sturdy, stylish doors with dependable sealing. Choose from clear or low‑iron glass and finishes that match your fixtures.",
-      image: "/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png",
+      image: "/images/complete-hinged-shower-enclosure.webp",
       alt: "Semi‑frameless shower door Mountains Edge — polished chrome frame",
       services: ["Semi‑Frameless/Framed", "Sliding", "Replacement"]
     },
     {
       name: "Coronado Ranch",
       description: "From frameless inline doors to corner neo‑angle layouts, we tailor enclosures to Coronado Ranch homes with clean silicone work and reliable operation. Roller, hinge, and seal replacements available.",
-      image: "/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png",
+      image: "/images/completed-steam-shower-enclosure-2.webp",
       alt: "Neo‑angle enclosure Coronado Ranch — precise miter and clean silicone lines",
       services: ["Custom Enclosures", "Replacement", "Frameless"]
     },
     {
       name: "Anthem",
       description: "Anthem homeowners choose low‑iron glass and refined hardware for a bright, open feel. We build steam‑compatible and standard enclosures with discreet sealing and a premium finish.",
-      image: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+      image: "/images/bypass-sliding-shower-doors-completed-project-2.webp",
       alt: "Frameless shower door Anthem — low‑iron glass, brushed nickel handle",
       services: ["Frameless", "Steam", "Gallery"]
     }

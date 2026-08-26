@@ -28,37 +28,37 @@ const FORMSPREE = "https://formspree.io/f/xqaydjpg";
 
 const portfolio = [
   {
-    src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png",
+    src: "/images/custom-neo-angle-shower-enclosure.webp",
     alt: "Custom walk-in shower enclosure with freestanding tub — Baja Glass Las Vegas",
     type: "Walk-In",
     caption: "Walk-in enclosure, frameless inline panel"
   },
   {
-    src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
+    src: "/images/corner-shower-enclosure-black-hardware.webp",
     alt: "Custom neo-angle shower enclosure — Baja Glass",
     type: "Neo-Angle",
     caption: "Neo-angle, low-iron glass, polished chrome"
   },
   {
-    src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+    src: "/images/bypass-sliding-shower-doors-completed-project-2.webp",
     alt: "Custom alcove shower enclosure with low-iron glass — Baja Glass Las Vegas",
     type: "Alcove",
     caption: "Alcove enclosure, ultra-clear low-iron glass"
   },
   {
-    src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
+    src: "/images/completed-steam-shower-enclosure-3.webp",
     alt: "Custom corner shower enclosure with brushed nickel hardware — Baja Glass",
     type: "Corner",
     caption: "Corner enclosure, brushed nickel, 1/2\" tempered"
   },
   {
-    src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
+    src: "/images/custom-corner-shower-enclosure-brushed-nickel.webp",
     alt: "Custom shower enclosure with matte black hardware and built-in bench — Baja Glass Las Vegas",
     type: "Walk-In",
     caption: "Walk-in with matte black hardware + built-in bench"
   },
   {
-    src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
+    src: "/images/bypass-sliding-glass-doors.webp",
     alt: "Custom inline shower enclosure with pebble accent — Baja Glass",
     type: "Inline",
     caption: "Frameless inline, pebble accent detail"
@@ -334,7 +334,7 @@ const CustomShowerEnclosuresLVLanding = () => {
         <meta property="og:description" content="Built to your bathroom. No off-the-shelf sizes. Heavy glass, hand-polished, lifetime hardware warranty." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/lp/custom-shower-enclosures-lv" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" />
+        <meta property="og:image" content="https://bajaglass.com/images/custom-neo-angle-shower-enclosure.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
@@ -343,9 +343,9 @@ const CustomShowerEnclosuresLVLanding = () => {
         {/* ── 1. HERO ─────────────────────────────────────────────────────── */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0">
-            <HeroImagePreload src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" width={1414} />
+            <HeroImagePreload src="/images/custom-neo-angle-shower-enclosure.webp" width={1414} />
             <OptimizedImage
-              src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png"
+              src="/images/custom-neo-angle-shower-enclosure.webp"
               alt="Custom shower enclosure built to fit a Las Vegas bathroom — Baja Glass"
               width={1414}
               height={1650}

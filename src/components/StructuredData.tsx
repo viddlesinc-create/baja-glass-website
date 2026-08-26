@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 const BASE_URL = 'https://bajaglass.com';
-const LOGO_URL = `${BASE_URL}/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png`;
+const LOGO_URL = `${BASE_URL}/images/baja-glass-mirror-logo.webp`;
 const PHONE = '(702) 383-0779';
 const PHONE_E164 = '+17023830779';
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z';

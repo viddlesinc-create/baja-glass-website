@@ -146,7 +146,7 @@ const OfficeEnclosures = () => {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/beffc522-39a0-4b73-954d-5be7a6c03e82.png" 
+            src="/images/modern-office-glass-partitions-conference-room.webp" 
             alt="Modern office glass partitions and conference room enclosures in Las Vegas commercial space"
             className="w-full h-full object-cover"
           />
@@ -276,7 +276,7 @@ const OfficeEnclosures = () => {
               </div>
               <div>
                 <img 
-                  src="/lovable-uploads/39961667-9133-43a9-af6d-ddf507a69690.png" 
+                  src="/images/glass-company-commercial-residential-services.webp" 
                   alt="Modern office with glass conference room partitions and professional interior design"
                   className="rounded-lg shadow-lg w-full"
                 />

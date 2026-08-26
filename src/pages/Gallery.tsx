@@ -15,29 +15,29 @@ const Gallery = () => {
     {
       title: "Frosted to Clear Glass Upgrade",
       location: "Las Vegas",
-      beforeImage: "/lovable-uploads/fa10a8e6-c837-4e10-b9f0-c8bbd5506ea4.png",
-      afterImage: "/lovable-uploads/5691175d-8fb2-4e96-9445-987ca41039fb.png",
+      beforeImage: "/images/framed-shower-before-upgrade.webp",
+      afterImage: "/images/contemporary-frameless-shower-design.webp",
       description: "Upgraded standard contractor grade framed frosted glass door to modern frameless design with premium hardware."
     },
     {
       title: "Sliding Door Transformation",
       location: "Henderson", 
-      beforeImage: "/lovable-uploads/cd86f335-efa7-4203-92ce-e32d77e9b26b.png",
-      afterImage: "/lovable-uploads/2145af91-ce61-458d-a311-72b26193aeb2.png",
+      beforeImage: "/images/bypass-sliding-glass-doors-2.webp",
+      afterImage: "/images/bypass-sliding-shower-doors-completed-project.webp",
       description: "Replaced frosted sliding shower doors with crystal clear glass and modern chrome hardware for an open, spacious feel."
     },
     {
       title: "Framed to Frameless Upgrade",
       location: "Summerlin",
-      beforeImage: "/lovable-uploads/b924d7a0-9e63-4616-9595-c35e3546e89a.png", 
-      afterImage: "/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png",
+      beforeImage: "/images/framed-shower-before-upgrade-2.webp", 
+      afterImage: "/images/contemporary-frameless-shower-design-2.webp",
       description: "Upgraded from traditional framed shower doors to modern frameless design with premium glass and sleek hardware."
     },
     {
       title: "Custom Enclosure Modernization",
       location: "Spring Valley",
-      beforeImage: "/lovable-uploads/63a30f9e-c80e-421e-9968-d4ed286876f4.png",
-      afterImage: "/lovable-uploads/70012b37-e3d6-4261-b567-0a42b8632737.png",
+      beforeImage: "/images/completed-steam-shower-enclosure-4.webp",
+      afterImage: "/images/completed-steam-shower-enclosure-5.webp",
       description: "Updated shower enclosure with enhanced clear glass and precision-fit frameless design for maximum elegance."
     }
   ];
@@ -119,7 +119,7 @@ const Gallery = () => {
       {/* Hero Section */}
       <section className="py-20 relative text-white overflow-hidden" aria-labelledby="gallery-hero-heading">
         <img 
-          src="/lovable-uploads/2f745a96-a6dd-41f6-9126-d3e94b754d89.png"
+          src="/images/professional-shower-door-installation-gallery-showcase.webp"
           alt="Professional shower door installation gallery showcase"
           className="absolute inset-0 w-full h-full object-cover"
           width="1920"
@@ -234,10 +234,10 @@ const Gallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png")}
+              onClick={() => setLightboxImage("/images/custom-corner-shower-enclosure-summerlin-installation.webp")}
             >
               <img 
-                src="/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png" 
+                src="/images/custom-corner-shower-enclosure-summerlin-installation.webp" 
                 alt="Frameless glass shower doors with chrome hardware"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -248,10 +248,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png")}
+              onClick={() => setLightboxImage("/images/elegant-bathroom-custom-glass-shower-enclosure.webp")}
             >
               <img 
-                src="/lovable-uploads/fe18e70d-a2bb-43a7-9636-2077c7e662b9.png" 
+                src="/images/elegant-bathroom-custom-glass-shower-enclosure.webp" 
                 alt="Elegant bathroom with custom glass shower enclosure"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -262,10 +262,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png")}
+              onClick={() => setLightboxImage("/images/corner-hinged-shower-enclosure-2.webp")}
             >
               <img 
-                src="/lovable-uploads/22adea8d-10a9-4780-8904-b61e4a017de8.png" 
+                src="/images/corner-hinged-shower-enclosure-2.webp" 
                 alt="Under-stair shower installation with custom glass door"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -276,10 +276,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/eb713b05-a28a-4385-b0c4-cdcb90a610ee.png")}
+              onClick={() => setLightboxImage("/images/complete-hinged-shower-enclosure-2.webp")}
             >
               <img 
-                src="/lovable-uploads/eb713b05-a28a-4385-b0c4-cdcb90a610ee.png" 
+                src="/images/complete-hinged-shower-enclosure-2.webp" 
                 alt="Modern bathroom mirror with brass fixtures"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -290,10 +290,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png")}
+              onClick={() => setLightboxImage("/images/custom-shower-enclosure-enterprise-premium-glass.webp")}
             >
               <img 
-                src="/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png" 
+                src="/images/custom-shower-enclosure-enterprise-premium-glass.webp" 
                 alt="Textured glass shower doors with black hardware"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -304,10 +304,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/ab324ca0-1c7d-49d5-ba4f-dd8865a3b916.png")}
+              onClick={() => setLightboxImage("/images/framed-shower-before-upgrade-3.webp")}
             >
               <img 
-                src="/lovable-uploads/ab324ca0-1c7d-49d5-ba4f-dd8865a3b916.png" 
+                src="/images/framed-shower-before-upgrade-3.webp" 
                 alt="Frosted glass shower panel with black frame"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -318,10 +318,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png")}
+              onClick={() => setLightboxImage("/images/complete-hinged-shower-enclosure.webp")}
             >
               <img 
-                src="/lovable-uploads/1d372151-698c-4fdb-91f7-16d12469dcd1.png" 
+                src="/images/complete-hinged-shower-enclosure.webp" 
                 alt="Tiled shower with black framed glass doors"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -332,10 +332,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png")}
+              onClick={() => setLightboxImage("/images/completed-steam-shower-enclosure-3.webp")}
             >
               <img 
-                src="/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png" 
+                src="/images/completed-steam-shower-enclosure-3.webp" 
                 alt="Large walk-in shower with frameless glass panels"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -346,10 +346,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png")}
+              onClick={() => setLightboxImage("/images/completed-steam-shower-enclosure-2.webp")}
             >
               <img 
-                src="/lovable-uploads/965cff5c-c7a5-4e41-b978-72fc31a0550e.png" 
+                src="/images/completed-steam-shower-enclosure-2.webp" 
                 alt="Corner shower with black hardware and built-in seating"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -360,10 +360,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png")}
+              onClick={() => setLightboxImage("/images/bypass-sliding-shower-doors-completed-project-2.webp")}
             >
               <img 
-                src="/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png" 
+                src="/images/bypass-sliding-shower-doors-completed-project-2.webp" 
                 alt="Tub-to-shower conversion with frameless glass doors"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -374,10 +374,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png")}
+              onClick={() => setLightboxImage("/images/bypass-sliding-glass-doors.webp")}
             >
               <img 
-                src="/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png" 
+                src="/images/bypass-sliding-glass-doors.webp" 
                 alt="Elegant shower with pebble accent strip and frameless glass"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -388,10 +388,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/7281360e-8ce3-43c7-890e-3f4b5f73e8a4.png")}
+              onClick={() => setLightboxImage("/images/tub-enclosure-black-hardware-accent-tile.webp")}
             >
               <img 
-                src="/lovable-uploads/7281360e-8ce3-43c7-890e-3f4b5f73e8a4.png" 
+                src="/images/tub-enclosure-black-hardware-accent-tile.webp" 
                 alt="Tub enclosure with black hardware and accent tile"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -402,10 +402,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/04d04176-aad8-47c9-9880-5c8eed82308f.png")}
+              onClick={() => setLightboxImage("/images/compact-shower-frameless-glass-door.webp")}
             >
               <img 
-                src="/lovable-uploads/04d04176-aad8-47c9-9880-5c8eed82308f.png" 
+                src="/images/compact-shower-frameless-glass-door.webp" 
                 alt="Compact shower with frameless glass door"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -416,10 +416,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png")}
+              onClick={() => setLightboxImage("/images/corner-shower-enclosure-black-hardware.webp")}
             >
               <img 
-                src="/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png" 
+                src="/images/corner-shower-enclosure-black-hardware.webp" 
                 alt="Corner shower enclosure with black hardware"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -430,10 +430,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/9cb21233-99c8-47f9-a756-a38f36471524.png")}
+              onClick={() => setLightboxImage("/images/custom-glass-dining-table-modern-base.webp")}
             >
               <img 
-                src="/lovable-uploads/9cb21233-99c8-47f9-a756-a38f36471524.png" 
+                src="/images/custom-glass-dining-table-modern-base.webp" 
                 alt="Custom glass dining table with modern base"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -444,10 +444,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/a038cf4c-a8a3-4089-b29d-40d9ca793fff.png")}
+              onClick={() => setLightboxImage("/images/walk-shower-black-hardware-subway-tile.webp")}
             >
               <img 
-                src="/lovable-uploads/a038cf4c-a8a3-4089-b29d-40d9ca793fff.png" 
+                src="/images/walk-shower-black-hardware-subway-tile.webp" 
                 alt="Walk-in shower with black hardware and subway tile"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -458,10 +458,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/ec6a560e-8579-44ed-9f2a-ff3fa3889f09.png")}
+              onClick={() => setLightboxImage("/images/large-shower-partial-glass-panel-black.webp")}
             >
               <img 
-                src="/lovable-uploads/ec6a560e-8579-44ed-9f2a-ff3fa3889f09.png" 
+                src="/images/large-shower-partial-glass-panel-black.webp" 
                 alt="Large shower with partial glass panel and black fixtures"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -472,10 +472,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/91755c9c-0083-4cb9-bb28-670bdbf4a700.png")}
+              onClick={() => setLightboxImage("/images/narrow-shower-herringbone-accent-tile-black.webp")}
             >
               <img 
-                src="/lovable-uploads/91755c9c-0083-4cb9-bb28-670bdbf4a700.png" 
+                src="/images/narrow-shower-herringbone-accent-tile-black.webp" 
                 alt="Narrow shower with herringbone accent tile and black hardware"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -486,10 +486,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/60879279-461a-40ca-b2cd-78b1d7fa95b3.png")}
+              onClick={() => setLightboxImage("/images/large-custom-shower-enclosure-glass-niches.webp")}
             >
               <img 
-                src="/lovable-uploads/60879279-461a-40ca-b2cd-78b1d7fa95b3.png" 
+                src="/images/large-custom-shower-enclosure-glass-niches.webp" 
                 alt="Large custom shower enclosure with glass niches and built-in seating"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -500,10 +500,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/722b5530-b688-42ad-8731-3cc0be1756ed.png")}
+              onClick={() => setLightboxImage("/images/tub-shower-conversion-sliding-glass-doors.webp")}
             >
               <img 
-                src="/lovable-uploads/722b5530-b688-42ad-8731-3cc0be1756ed.png" 
+                src="/images/tub-shower-conversion-sliding-glass-doors.webp" 
                 alt="Tub-to-shower conversion with sliding glass doors"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -514,10 +514,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/60045135-144e-49b1-b017-133adce3a58d.png")}
+              onClick={() => setLightboxImage("/images/walk-shower-installation-progress-black-hardware.webp")}
             >
               <img 
-                src="/lovable-uploads/60045135-144e-49b1-b017-133adce3a58d.png" 
+                src="/images/walk-shower-installation-progress-black-hardware.webp" 
                 alt="Walk-in shower installation in progress with black hardware"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -528,10 +528,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/4f6832d0-9951-4037-bfc2-c9153c280a12.png")}
+              onClick={() => setLightboxImage("/images/single-panel-shower-door-chrome-hardware.webp")}
             >
               <img 
-                src="/lovable-uploads/4f6832d0-9951-4037-bfc2-c9153c280a12.png" 
+                src="/images/single-panel-shower-door-chrome-hardware.webp" 
                 alt="Single panel shower door with chrome hardware"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -542,10 +542,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png")}
+              onClick={() => setLightboxImage("/images/custom-corner-shower-enclosure-brushed-nickel.webp")}
             >
               <img 
-                src="/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png" 
+                src="/images/custom-corner-shower-enclosure-brushed-nickel.webp" 
                 alt="Marble shower with black hardware and built-in bench"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -556,10 +556,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/482d4c2b-fc42-4a15-b833-a141e61e4d91.png")}
+              onClick={() => setLightboxImage("/images/contemporary-frameless-shower-low-iron-glass.webp")}
             >
               <img 
-                src="/lovable-uploads/482d4c2b-fc42-4a15-b833-a141e61e4d91.png" 
+                src="/images/contemporary-frameless-shower-low-iron-glass.webp" 
                 alt="L-shaped shower enclosure with marble tile and chrome hardware"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -570,10 +570,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/182850ed-180a-4525-aee1-917367fff2bb.png")}
+              onClick={() => setLightboxImage("/images/corner-shower-subway-tile-black-fixtures.webp")}
             >
               <img 
-                src="/lovable-uploads/182850ed-180a-4525-aee1-917367fff2bb.png" 
+                src="/images/corner-shower-subway-tile-black-fixtures.webp" 
                 alt="Corner shower with subway tile and black fixtures"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -584,10 +584,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/30ead577-c1b4-4057-a808-f7d0d612125f.png")}
+              onClick={() => setLightboxImage("/images/corner-steam-shower-configuration.webp")}
             >
               <img 
-                src="/lovable-uploads/30ead577-c1b4-4057-a808-f7d0d612125f.png" 
+                src="/images/corner-steam-shower-configuration.webp" 
                 alt="Luxury steam shower with dark tinted glass"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -598,10 +598,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/32eaf66a-2f41-4fc8-92f4-2faf7cf74d56.png")}
+              onClick={() => setLightboxImage("/images/modern-walk-shower-penny-tile-accent.webp")}
             >
               <img 
-                src="/lovable-uploads/32eaf66a-2f41-4fc8-92f4-2faf7cf74d56.png" 
+                src="/images/modern-walk-shower-penny-tile-accent.webp" 
                 alt="Modern walk-in shower with penny tile accent and multiple shower heads"
                 className="w-full aspect-video object-cover"
                 width="800"
@@ -612,10 +612,10 @@ const Gallery = () => {
             </div>
             <div 
               className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
-              onClick={() => setLightboxImage("/lovable-uploads/4940799d-2ddf-41b7-bd8c-22aa0ab12cdb.png")}
+              onClick={() => setLightboxImage("/images/rain-glass-shower-doors-black-hardware.webp")}
             >
               <img 
-                src="/lovable-uploads/4940799d-2ddf-41b7-bd8c-22aa0ab12cdb.png" 
+                src="/images/rain-glass-shower-doors-black-hardware.webp" 
                 alt="Rain glass shower doors with black hardware"
                 className="w-full aspect-video object-cover"
                 width="800"

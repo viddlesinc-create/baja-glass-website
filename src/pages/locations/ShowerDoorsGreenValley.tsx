@@ -9,7 +9,7 @@ const ShowerDoorsGreenValley = () => {
         latitude: "36.0672",
         longitude: "-115.0692"
       }}
-      heroImage="/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png"
+      heroImage="/images/custom-corner-shower-enclosure-summerlin-installation.webp"
       description="Expert shower door installation throughout Green Valley. Serving this established Henderson community with quality craftsmanship and attention to detail that Green Valley homeowners expect."
       additionalContent={
         <p className="text-lg text-muted-foreground">
@@ -33,17 +33,17 @@ const ShowerDoorsGreenValley = () => {
       testimonials={[]}
       projectImages={[
         {
-          src: "/lovable-uploads/4931cd4a-c80f-424c-9069-47f88a7b344e.png",
+          src: "/images/custom-corner-shower-enclosure-summerlin-installation.webp",
           alt: "Custom frameless shower enclosure Green Valley with low-iron glass",
           caption: "Green Valley Ranch - Custom enclosure with premium hardware"
         },
         {
-          src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+          src: "/images/bypass-sliding-shower-doors-completed-project-2.webp",
           alt: "Frameless shower door Green Valley brushed nickel finish",
           caption: "Paseos Village - Low-iron glass with brushed nickel"
         },
         {
-          src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
+          src: "/images/completed-steam-shower-enclosure-3.webp",
           alt: "Modern shower glass Green Valley with matte black clips",
           caption: "Tuscany Village - Frameless with contemporary matte black hardware"
         }

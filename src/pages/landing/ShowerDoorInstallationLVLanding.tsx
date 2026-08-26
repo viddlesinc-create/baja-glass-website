@@ -351,7 +351,7 @@ const ShowerDoorInstallationLVLanding = () => {
           <div className="container mx-auto px-4 py-3 flex items-center justify-between">
             <a href="/" aria-label="Baja Glass Home">
               <OptimizedImage
-                src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png"
+                src="/images/baja-glass-mirror-logo.webp"
                 alt="Baja Glass & Mirror"
                 width={160}
                 height={159}

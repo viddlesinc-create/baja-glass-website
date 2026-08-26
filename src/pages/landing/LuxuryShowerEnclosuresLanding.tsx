@@ -16,32 +16,32 @@ const FORMSPREE = "https://formspree.io/f/xqaydjpg";
 
 const galleryImages = [
   {
-    src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png",
+    src: "/images/custom-neo-angle-shower-enclosure.webp",
     alt: "Luxury frameless shower enclosure with freestanding tub — Baja Glass Las Vegas",
     caption: "Frameless enclosure with freestanding soaking tub — low-iron glass"
   },
   {
-    src: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
+    src: "/images/corner-shower-enclosure-black-hardware.webp",
     alt: "Custom neo-angle shower enclosure — Baja Glass",
     caption: "Custom neo-angle enclosure, low-iron glass"
   },
   {
-    src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+    src: "/images/bypass-sliding-shower-doors-completed-project-2.webp",
     alt: "Ultra-clear low-iron glass frameless shower — Baja Glass Las Vegas",
     caption: "Ultra-clear glass with chrome hardware"
   },
   {
-    src: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
+    src: "/images/completed-steam-shower-enclosure-3.webp",
     alt: "Frameless shower door with brushed nickel — Baja Glass",
     caption: "Brushed nickel finish, 1/2\" tempered glass"
   },
   {
-    src: "/lovable-uploads/b7a46310-552a-43ed-9ed5-89fb8e2cd2b0.png",
+    src: "/images/custom-corner-shower-enclosure-brushed-nickel.webp",
     alt: "Luxury marble shower with matte black hardware and built-in bench — Baja Glass Las Vegas",
     caption: "Marble surround, matte black hardware, built-in bench"
   },
   {
-    src: "/lovable-uploads/3ee9d065-d743-4ef3-906e-14fefa87f848.png",
+    src: "/images/bypass-sliding-glass-doors.webp",
     alt: "Frameless shower enclosure with pebble accent strip — Baja Glass Las Vegas",
     caption: "Frameless inline enclosure with pebble accent detail"
   },
@@ -278,7 +278,7 @@ const LuxuryShowerEnclosuresLanding = () => {
         <meta property="og:description" content="Custom glass shower enclosures crafted for Las Vegas bathrooms." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/lp/luxury-shower-enclosures" />
-        <meta property="og:image" content="https://bajaglass.com/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" />
+        <meta property="og:image" content="https://bajaglass.com/images/custom-neo-angle-shower-enclosure.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
@@ -288,9 +288,9 @@ const LuxuryShowerEnclosuresLanding = () => {
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background image */}
           <div className="absolute inset-0">
-            <HeroImagePreload src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png" width={1414} />
+            <HeroImagePreload src="/images/custom-neo-angle-shower-enclosure.webp" width={1414} />
             <OptimizedImage
-              src="/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png"
+              src="/images/custom-neo-angle-shower-enclosure.webp"
               alt="Luxury frameless shower enclosure with freestanding tub — Baja Glass Las Vegas"
               width={1414}
               height={1650}
@@ -424,7 +424,7 @@ const LuxuryShowerEnclosuresLanding = () => {
         <section className="py-4 bg-secondary/20">
           {[
             {
-              image: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png",
+              image: "/images/bypass-sliding-shower-doors-completed-project-2.webp",
               alt: "Ultra-clear low-iron glass frameless shower enclosure — Baja Glass Las Vegas",
               headline: "Pure Clarity — No Green Tint",
               body: "Standard glass carries a subtle green cast that becomes visible along every edge — competing with your tile work and fixtures. Low-iron glass eliminates it entirely. The result is crystal-clear transparency that lets your stone, marble, and hardware speak for themselves, exactly as your designer intended.",
@@ -432,7 +432,7 @@ const LuxuryShowerEnclosuresLanding = () => {
               reverse: false
             },
             {
-              image: "/lovable-uploads/396df078-b884-4e72-809a-1ea98329d6e4.png",
+              image: "/images/completed-steam-shower-enclosure-3.webp",
               alt: "Frameless shower door with brushed nickel hardware — Baja Glass Henderson",
               headline: "Hardware That Matches Your Space, Not a Catalog",
               body: "We offer matte black, brushed nickel, polished chrome, satin brass, unlacquered brass, and oil-rubbed bronze. Every hinge, handle, clip, and towel bar is individually selected to complement your existing plumbing fixtures and interior metalwork — not what happened to be in stock.",
@@ -440,7 +440,7 @@ const LuxuryShowerEnclosuresLanding = () => {
               reverse: true
             },
             {
-              image: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
+              image: "/images/corner-shower-enclosure-black-hardware.webp",
               alt: "Custom neo-angle shower enclosure — Baja Glass Las Vegas",
               headline: "Glass That Stays Pristine in Las Vegas Water",
               body: "Las Vegas water is among the hardest in the country. Untreated glass develops mineral deposits within weeks. Our hydrophobic glass treatment bonds to the surface at a molecular level, causing water to bead and roll off rather than film and deposit. Less cleaning. More clarity. A finish that holds up to the desert.",

@@ -132,7 +132,7 @@ const ShowerEnclosuresLasVegas = () => {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden text-white">
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/9cfdfabc-5ef4-4012-b9f5-01271979a5c7.png" 
+            src="/images/custom-frameless-shower-door-installation.webp" 
             alt="Custom glass shower enclosure installation Las Vegas with modern hardware"
             className="w-full h-full object-cover"
           />

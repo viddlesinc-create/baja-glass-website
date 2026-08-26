@@ -8,12 +8,12 @@ import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import ComparisonTable from "@/components/ComparisonTable";
 
 const semiFramelessGalleryImages = [
-  { src: "/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png", alt: "Semi-frameless shower doors on bathtub", caption: "Semi-Frameless Design" },
-  { src: "/lovable-uploads/1deef348-0e86-4da2-9bcb-2ca2964582bf.png", alt: "Textured semi-frameless glass", caption: "Textured Glass Option" },
-  { src: "/lovable-uploads/ab324ca0-1c7d-49d5-ba4f-dd8865a3b916.png", alt: "Frosted semi-frameless door", caption: "Frosted Privacy Glass" },
-  { src: "/lovable-uploads/fa10a8e6-c837-4e10-b9f0-c8bbd5506ea4.png", alt: "Framed shower before upgrade", caption: "Before Upgrade" },
-  { src: "/lovable-uploads/b924d7a0-9e63-4616-9595-c35e3546e89a.png", alt: "Traditional framed shower enclosure", caption: "Traditional Frame" },
-  { src: "/lovable-uploads/70012b37-e3d6-4261-b567-0a42b8632737.png", alt: "Upgraded semi-frameless installation", caption: "Complete Transformation" },
+  { src: "/images/bypass-sliding-glass-doors-3.webp", alt: "Semi-frameless shower doors on bathtub", caption: "Semi-Frameless Design" },
+  { src: "/images/custom-shower-enclosure-enterprise-premium-glass.webp", alt: "Textured semi-frameless glass", caption: "Textured Glass Option" },
+  { src: "/images/framed-shower-before-upgrade-3.webp", alt: "Frosted semi-frameless door", caption: "Frosted Privacy Glass" },
+  { src: "/images/framed-shower-before-upgrade.webp", alt: "Framed shower before upgrade", caption: "Before Upgrade" },
+  { src: "/images/framed-shower-before-upgrade-2.webp", alt: "Traditional framed shower enclosure", caption: "Traditional Frame" },
+  { src: "/images/completed-steam-shower-enclosure-5.webp", alt: "Upgraded semi-frameless installation", caption: "Complete Transformation" },
 ];
 
 const SemiFramelessShowerDoors = () => {
@@ -68,7 +68,7 @@ const SemiFramelessShowerDoors = () => {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png" 
+            src="/images/bypass-sliding-glass-doors-3.webp" 
             alt="Semi-frameless glass shower doors on bathtub with marble tile and black hardware - professional installation Las Vegas"
             className="w-full h-full object-cover opacity-75"
             width="1920"
@@ -240,7 +240,7 @@ const SemiFramelessShowerDoors = () => {
           <div className="bg-background p-6 rounded-lg inline-block shadow-lg">
             <div className="flex items-center gap-3 justify-center mb-4">
               <img 
-                src="/lovable-uploads/54a1a8b1-33ac-4549-bc66-3c91c62ef596.png" 
+                src="/images/baja-glass-mirror-logo.webp" 
                 alt="Baja Glass — Shower Doors & Glass in Las Vegas"
                 className="h-8 w-auto"
               />
