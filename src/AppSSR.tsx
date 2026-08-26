@@ -15,6 +15,7 @@ import RedirectComponent from "./components/RedirectComponent";
 import QueryParameterRedirects from "./components/QueryParameterRedirects";
 import { SEOHead } from "./seo";
 import LocalBusinessSchema from "./seo/LocalBusinessSchema";
+import LastUpdated from "./components/LastUpdated";
 import { usePageTracking } from "./hooks/usePageTracking";
 
 // Landing pages
@@ -50,6 +51,7 @@ import ResidentialGlassReplacement from "./pages/ResidentialGlassReplacement";
 import OfficeEnclosures from "./pages/OfficeEnclosures";
 import FAQ from "./pages/FAQ";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CliffRobinson from "./pages/authors/CliffRobinson";
 import TermsOfService from "./pages/TermsOfService";
 
 // Location pages
@@ -106,6 +108,9 @@ function AppSSR() {
       <div className="min-h-screen flex flex-col">
         <Header />
         <BreadcrumbNav />
+        <div className="container mx-auto px-4">
+          <LastUpdated />
+        </div>
         <main id="main-content" className="flex-1">
           <Routes>
             <Route path="/" element={<Index />} />
@@ -131,6 +136,7 @@ function AppSSR() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/authors/cliff-robinson" element={<CliffRobinson />} />
             <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
             <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
             <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />

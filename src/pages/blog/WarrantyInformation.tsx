@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import ArticleByline from "@/components/ArticleByline";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Shield, FileText, Phone, AlertTriangle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -17,8 +18,10 @@ const WarrantyInformation = () => {
             "headline": "Understanding Your Shower Door Warranty Coverage",
             "description": "Comprehensive warranty information including coverage terms, maintenance requirements, and how to request service for your shower door investment.",
             "author": {
-              "@type": "Organization",
-              "@id": "https://bajaglass.com/#localbusiness"
+              "@type": "Person",
+              "@id": "https://bajaglass.com/authors/cliff-robinson#person",
+              "name": "Cliff Robinson",
+              "url": "https://bajaglass.com/authors/cliff-robinson"
             },
             "publisher": {
               "@type": "Organization",
@@ -51,6 +54,11 @@ const WarrantyInformation = () => {
             <p className="text-xl text-muted-foreground max-w-3xl">
               Comprehensive warranty information including coverage terms, maintenance requirements, and how to request service for your shower door investment.
             </p>
+            <ArticleByline
+              datePublished="2025-01-15"
+              dateModified="2026-01-10"
+              wordCount={592}
+            />
           </div>
         </header>
 

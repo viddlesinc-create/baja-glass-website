@@ -8,6 +8,7 @@ import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import FramelessQualification from "@/components/FramelessQualification";
 import StickyMobileCallBar from "@/components/StickyMobileCallBar";
+import ComparisonTable from "@/components/ComparisonTable";
 
 const framelessGalleryImages = [
   { src: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png", alt: "Luxury frameless glass shower door with freestanding tub", caption: "Modern Frameless Design" },
@@ -411,6 +412,20 @@ const FramelessShowerDoors = () => {
           </div>
         </div>
       </section>
+      {/* Comparison table — a real <table> so the options are extractable by
+          screen readers, rich results and AI answer engines, not just visually. */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-serif font-bold mb-6">Frameless vs Semi-Frameless vs Framed</h2>
+          <ComparisonTable
+            caption="Comparison of frameless, semi-frameless and framed shower doors installed by Baja Glass & Mirror in Las Vegas, with typical cost ranges."
+            columns={["Door type", "Typical cost in Las Vegas", "Best for", "Trade-off"]}
+            rows={[["Frameless (3/8\" glass)", "$1,200 - $2,000", "Master bathrooms where the glass is the feature", "Needs solid backing and precise measuring"], ["Frameless (1/2\" glass)", "$1,600 - $2,800", "Wide openings and heavy panels", "Heaviest option; hardware must be rated for it"], ["Semi-frameless", "$800 - $1,400", "Getting a clean look on a tighter budget", "Visible framing on some edges"], ["Framed", "$400 - $800", "Guest baths and rentals", "Most metal in the sightline; more track to clean"]]}
+            footnote="Las Vegas price ranges from our own installation cost guide. Final pricing depends on opening size, glass thickness and hardware finish \u2014 we confirm it at the free in-home measure."
+          />
+        </div>
+      </section>
+
       <ServiceAreasBlock />
       <StickyMobileCallBar />
     </div>

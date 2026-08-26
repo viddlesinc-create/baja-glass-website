@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import ArticleByline from "@/components/ArticleByline";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Droplets, Shield, Clock, Sparkles } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -17,8 +18,10 @@ const GlassCareGuide = () => {
             "headline": "Complete Glass Care Guide for Shower Doors",
             "description": "Professional tips and techniques to maintain crystal-clear shower glass and extend the life of your investment.",
             "author": {
-              "@type": "Organization",
-              "@id": "https://bajaglass.com/#localbusiness"
+              "@type": "Person",
+              "@id": "https://bajaglass.com/authors/cliff-robinson#person",
+              "name": "Cliff Robinson",
+              "url": "https://bajaglass.com/authors/cliff-robinson"
             },
             "publisher": {
               "@type": "Organization",
@@ -51,6 +54,11 @@ const GlassCareGuide = () => {
             <p className="text-xl text-muted-foreground max-w-3xl">
               Professional tips and techniques to maintain crystal-clear shower glass and extend the life of your investment.
             </p>
+            <ArticleByline
+              datePublished="2025-01-15"
+              dateModified="2026-01-10"
+              wordCount={479}
+            />
           </div>
         </header>
 

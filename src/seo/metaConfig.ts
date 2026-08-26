@@ -226,6 +226,12 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
     noIndex: true,
   },
+  '/authors/cliff-robinson': {
+    title: 'Cliff Robinson, Owner | Baja Glass & Mirror Las Vegas',
+    description: 'Cliff Robinson founded Baja Glass & Mirror in 2009 and installs custom shower doors and glass across Las Vegas. Read about the team behind the work.',
+    canonical: `${BASE_URL}/authors/cliff-robinson`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
   '/terms-of-service': {
     title: 'Terms of Service | Baja Glass & Mirror LLC, Las Vegas',
     description: 'Terms of service for Baja Glass & Mirror LLC in Las Vegas: quotes, deposits, scheduling, warranty coverage and policies for our glass and shower door work.',

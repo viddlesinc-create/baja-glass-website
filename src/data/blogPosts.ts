@@ -19,9 +19,9 @@ export const blogPosts: BlogPost[] = [
     category: "Pricing & Cost",
     featuredImage: "/lovable-uploads/dff9a879-f6db-4f4a-908d-2842b809c7e4.png",
     datePublished: "2025-01-15",
-    dateModified: "2026-01-10",
-    author: "Baja Glass & Mirror",
-    readTime: "8 min read",
+    dateModified: "2026-07-29",
+    author: "Cliff Robinson",
+    readTime: "4 min read",
     url: "/blog/shower-door-installation-cost-las-vegas"
   },
   {
@@ -31,9 +31,9 @@ export const blogPosts: BlogPost[] = [
     category: "Comparison Guides",
     featuredImage: "/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png",
     datePublished: "2025-01-10",
-    dateModified: "2026-01-10",
-    author: "Baja Glass & Mirror",
-    readTime: "10 min read",
+    dateModified: "2026-07-30",
+    author: "Cliff Robinson",
+    readTime: "4 min read",
     url: "/blog/frameless-vs-semi-frameless-shower-doors"
   },
   {
@@ -44,8 +44,8 @@ export const blogPosts: BlogPost[] = [
     featuredImage: "/lovable-uploads/92357ff9-fc77-40cb-b708-fb8fe634aa42.png",
     datePublished: "2025-01-08",
     dateModified: "2026-01-10",
-    author: "Baja Glass & Mirror",
-    readTime: "7 min read",
+    author: "Cliff Robinson",
+    readTime: "4 min read",
     url: "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions"
   },
   {
@@ -56,8 +56,8 @@ export const blogPosts: BlogPost[] = [
     featuredImage: "/lovable-uploads/9642038d-f5d9-4f9d-8096-46dc1eb70052.png",
     datePublished: "2025-01-15",
     dateModified: "2026-01-10",
-    author: "Baja Glass & Mirror",
-    readTime: "6 min read",
+    author: "Cliff Robinson",
+    readTime: "2 min read",
     url: "/blog/glass-care-guide"
   },
   {
@@ -68,8 +68,8 @@ export const blogPosts: BlogPost[] = [
     featuredImage: "/lovable-uploads/a77b5014-d325-4972-91dc-b5714d7b34a7.png",
     datePublished: "2025-01-12",
     dateModified: "2026-01-10",
-    author: "Baja Glass & Mirror",
-    readTime: "9 min read",
+    author: "Cliff Robinson",
+    readTime: "3 min read",
     url: "/blog/choosing-right-door"
   },
   {
@@ -80,8 +80,8 @@ export const blogPosts: BlogPost[] = [
     featuredImage: "/lovable-uploads/d89fa07d-a693-478f-8b0d-e12f2607c1e7.png",
     datePublished: "2025-01-05",
     dateModified: "2026-01-10",
-    author: "Baja Glass & Mirror",
-    readTime: "5 min read",
+    author: "Cliff Robinson",
+    readTime: "3 min read",
     url: "/blog/installation-process"
   },
   {
@@ -92,8 +92,8 @@ export const blogPosts: BlogPost[] = [
     featuredImage: "/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png",
     datePublished: "2025-01-01",
     dateModified: "2026-01-10",
-    author: "Baja Glass & Mirror",
-    readTime: "4 min read",
+    author: "Cliff Robinson",
+    readTime: "3 min read",
     url: "/blog/warranty-information"
   }
 ];

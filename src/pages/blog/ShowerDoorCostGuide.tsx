@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import ArticleByline from "@/components/ArticleByline";
 import { Link } from "react-router-dom";
 import { DollarSign, Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -62,8 +63,10 @@ const ShowerDoorCostGuide = () => {
             "headline": "2026 Guide: Shower Door Installation Cost in Las Vegas",
             "description": "Comprehensive guide to shower door installation costs in Las Vegas including frameless, semi-frameless, and custom enclosure pricing.",
             "author": {
-              "@type": "Organization",
-              "@id": "https://bajaglass.com/#localbusiness"
+              "@type": "Person",
+              "@id": "https://bajaglass.com/authors/cliff-robinson#person",
+              "name": "Cliff Robinson",
+              "url": "https://bajaglass.com/authors/cliff-robinson"
             },
             "publisher": {
               "@type": "Organization",
@@ -107,6 +110,11 @@ const ShowerDoorCostGuide = () => {
             <p className="text-xl text-white/90">
               Complete breakdown of shower door costs in Las Vegas including frameless, semi-frameless, and custom enclosure pricing
             </p>
+            <ArticleByline
+              datePublished="2025-01-15"
+              dateModified="2026-07-29"
+              wordCount={765}
+            />
           </div>
         </div>
       </section>

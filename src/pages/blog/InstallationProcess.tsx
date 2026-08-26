@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import ArticleByline from "@/components/ArticleByline";
 import { Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, Clock, Wrench, Calendar } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -17,8 +18,10 @@ const InstallationProcess = () => {
             "headline": "Shower Door Installation Process: What to Expect",
             "description": "A complete walkthrough of the professional installation process, from initial consultation to final inspection and warranty coverage.",
             "author": {
-              "@type": "Organization",
-              "@id": "https://bajaglass.com/#localbusiness"
+              "@type": "Person",
+              "@id": "https://bajaglass.com/authors/cliff-robinson#person",
+              "name": "Cliff Robinson",
+              "url": "https://bajaglass.com/authors/cliff-robinson"
             },
             "publisher": {
               "@type": "Organization",
@@ -51,6 +54,11 @@ const InstallationProcess = () => {
             <p className="text-xl text-muted-foreground max-w-3xl">
               A complete walkthrough of the professional installation process, from initial consultation to final inspection and warranty coverage.
             </p>
+            <ArticleByline
+              datePublished="2025-01-15"
+              dateModified="2026-01-10"
+              wordCount={621}
+            />
           </div>
         </header>
 

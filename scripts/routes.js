@@ -22,6 +22,7 @@ export const routes = [
   "/faq",
   "/privacy-policy",
   "/terms-of-service",
+  "/authors/cliff-robinson",
   "/shower-doors-henderson-nv",
   "/shower-doors-summerlin-nv",
   "/shower-doors-paradise-nv",

@@ -5,6 +5,7 @@ import { Phone, Droplets, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import ComparisonTable from "@/components/ComparisonTable";
 const customEnclosureImage = "/images/custom-enclosure.jpg";
 
 const steamGalleryImages = [
@@ -432,6 +433,20 @@ const SteamShowerEnclosures = () => {
           </div>
         </div>
       </section>
+      {/* Comparison table — a real <table> so the options are extractable by
+          screen readers, rich results and AI answer engines, not just visually. */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-serif font-bold mb-6">Steam Enclosure vs Standard Frameless</h2>
+          <ComparisonTable
+            caption="Steam shower enclosures compared with standard frameless enclosures by Baja Glass & Mirror in Las Vegas, including cost and sealing requirements."
+            columns={["Option", "Typical cost in Las Vegas", "Sealing", "Best for"]}
+            rows={[["Steam enclosure", "$3,000 - $6,000+", "Fully sealed, ceiling panel and transom", "Keeping steam in for a spa-style shower"], ["Frameless enclosure", "$1,200 - $2,800", "Standard gasketing only", "Everyday showers with no steam generator"], ["Custom enclosure", "$2,000 - $4,500+", "Depends on configuration", "Non-standard openings without steam"]]}
+            footnote="Las Vegas price ranges from our own installation cost guide. Final pricing depends on opening size, glass thickness and hardware finish \u2014 we confirm it at the free in-home measure."
+          />
+        </div>
+      </section>
+
       <ServiceAreasBlock />
     </div>
   );

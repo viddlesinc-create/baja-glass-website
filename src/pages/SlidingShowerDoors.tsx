@@ -5,6 +5,7 @@ import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import ComparisonTable from "@/components/ComparisonTable";
 
 const slidingGalleryImages = [
   { src: "/lovable-uploads/8d2689e6-fd94-4a12-99a9-51ab76c77b0d.png", alt: "Sliding glass shower door installation", caption: "Smooth-Glide System" },
@@ -337,6 +338,20 @@ const SlidingShowerDoors = () => {
           </div>
         </div>
       </section>
+      {/* Comparison table — a real <table> so the options are extractable by
+          screen readers, rich results and AI answer engines, not just visually. */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-serif font-bold mb-6">Sliding vs Hinged: Choosing by Bathroom Space</h2>
+          <ComparisonTable
+            caption="Sliding, bypass and hinged shower door configurations installed by Baja Glass & Mirror in Las Vegas, compared by space requirement and cost."
+            columns={["Configuration", "Typical cost in Las Vegas", "Door swing needed", "Best for"]}
+            rows={[["Sliding / bypass", "$800 - $2,000", "None \u2014 panels run on a track", "Tight bathrooms and tub-to-shower conversions"], ["Hinged / pivot", "$1,200 - $2,800", "Clear floor space in front of the opening", "Larger bathrooms with room to swing"], ["Custom enclosure", "$2,000 - $4,500+", "Depends on configuration", "Corner, neo-angle and non-standard openings"]]}
+            footnote="Las Vegas price ranges from our own installation cost guide. Final pricing depends on opening size, glass thickness and hardware finish \u2014 we confirm it at the free in-home measure."
+          />
+        </div>
+      </section>
+
       <ServiceAreasBlock />
     </div>
   );

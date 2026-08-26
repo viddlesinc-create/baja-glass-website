@@ -57,9 +57,11 @@ const Blog = () => {
               "dateModified": post.dateModified,
               "url": `https://bajaglass.com${post.url}`,
               "author": {
-                "@type": "Organization",
-                "@id": "https://bajaglass.com/#localbusiness"
-              }
+              "@type": "Person",
+              "@id": "https://bajaglass.com/authors/cliff-robinson#person",
+              "name": "Cliff Robinson",
+              "url": "https://bajaglass.com/authors/cliff-robinson"
+            }
             }))
           })}
         </script>

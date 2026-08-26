@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import ArticleByline from "@/components/ArticleByline";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Ruler, Frame, Palette, Home } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -17,8 +18,10 @@ const ChoosingRightDoor = () => {
             "headline": "How to Choose the Right Shower Door - Complete Guide",
             "description": "A comprehensive guide to selecting the ideal shower door style, glass type, and hardware that matches your space and budget.",
             "author": {
-              "@type": "Organization",
-              "@id": "https://bajaglass.com/#localbusiness"
+              "@type": "Person",
+              "@id": "https://bajaglass.com/authors/cliff-robinson#person",
+              "name": "Cliff Robinson",
+              "url": "https://bajaglass.com/authors/cliff-robinson"
             },
             "publisher": {
               "@type": "Organization",
@@ -51,6 +54,11 @@ const ChoosingRightDoor = () => {
             <p className="text-xl text-muted-foreground max-w-3xl">
               A comprehensive guide to selecting the ideal shower door style, glass type, and hardware that matches your space and budget.
             </p>
+            <ArticleByline
+              datePublished="2025-01-15"
+              dateModified="2026-01-10"
+              wordCount={591}
+            />
           </div>
         </header>
 

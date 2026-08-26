@@ -9,6 +9,7 @@ import RedirectComponent from "./components/RedirectComponent";
 import QueryParameterRedirects from "./components/QueryParameterRedirects";
 import { SEOHead } from "./seo";
 import LocalBusinessSchema from "./seo/LocalBusinessSchema";
+import LastUpdated from "./components/LastUpdated";
 
 // Every page here is lazy so none of it lands in the entry chunk that the
 // standalone /lp/* paid landing pages download. App.tsx loads this whole module
@@ -37,6 +38,7 @@ const ResidentialGlassReplacement = lazy(() => import("./pages/ResidentialGlassR
 const OfficeEnclosures = lazy(() => import("./pages/OfficeEnclosures"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const CliffRobinson = lazy(() => import("./pages/authors/CliffRobinson"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 
 const ShowerDoorInstallationLasVegas = lazy(() => import("./pages/ShowerDoorInstallationLasVegas"));
@@ -71,6 +73,9 @@ const MainSite = () => (
     <div className="min-h-screen flex flex-col">
       <Header />
       <BreadcrumbNav />
+      <div className="container mx-auto px-4">
+        <LastUpdated />
+      </div>
       <main id="main-content" className="flex-1">
         <Suspense fallback={<PageLoader />}>
           <Routes>
@@ -97,6 +102,7 @@ const MainSite = () => (
             <Route path="/faq" element={<FAQ />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/authors/cliff-robinson" element={<CliffRobinson />} />
             <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
             <Route path="/shower-door-replacement-las-vegas" element={<RedirectComponent to="/shower-door-installation-las-vegas" />} />
             <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />

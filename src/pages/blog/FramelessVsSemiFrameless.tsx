@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import ArticleByline from "@/components/ArticleByline";
 import { Link } from "react-router-dom";
 import { Check, X, Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -86,8 +87,10 @@ const FramelessVsSemiFrameless = () => {
             "headline": "Frameless vs Framed vs Semi-Frameless Shower Doors: Which is Best?",
             "description": "Complete comparison of frameless, semi-frameless, and framed shower doors. Learn the differences in style, cost, and maintenance for Las Vegas homes.",
             "author": {
-              "@type": "Organization",
-              "@id": "https://bajaglass.com/#localbusiness"
+              "@type": "Person",
+              "@id": "https://bajaglass.com/authors/cliff-robinson#person",
+              "name": "Cliff Robinson",
+              "url": "https://bajaglass.com/authors/cliff-robinson"
             },
             "publisher": {
               "@type": "Organization",
@@ -130,6 +133,11 @@ const FramelessVsSemiFrameless = () => {
             <p className="text-xl text-white/90">
               Complete comparison of frameless, semi-frameless, and framed shower doors. Learn the differences in style, cost, and maintenance for Las Vegas homes.
             </p>
+            <ArticleByline
+              datePublished="2025-01-15"
+              dateModified="2026-07-30"
+              wordCount={873}
+            />
           </div>
         </div>
       </section>

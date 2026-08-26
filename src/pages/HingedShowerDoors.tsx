@@ -5,6 +5,7 @@ import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import ComparisonTable from "@/components/ComparisonTable";
 
 const hingedGalleryImages = [
   { src: "/lovable-uploads/fb2b173a-c011-49f6-aba2-541dbd7b4387.png", alt: "Hinged glass shower door with black fixtures", caption: "Modern Hinged Design" },
@@ -338,6 +339,20 @@ const HingedShowerDoors = () => {
           </div>
         </div>
       </section>
+      {/* Comparison table — a real <table> so the options are extractable by
+          screen readers, rich results and AI answer engines, not just visually. */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-serif font-bold mb-6">Hinged and Pivot Doors Compared</h2>
+          <ComparisonTable
+            caption="Hinged and pivot shower doors from Baja Glass & Mirror in Las Vegas, compared with sliding alternatives on cost and clearance."
+            columns={["Option", "Typical cost in Las Vegas", "Clearance required", "Best for"]}
+            rows={[["Hinged (wall-mounted)", "$1,200 - $2,000", "Swing radius of the door leaf", "Standard alcove openings with floor space"], ["Pivot", "$1,600 - $2,800", "Less than a full hinge swing", "Wider or heavier single panels"], ["Sliding (for reference)", "$800 - $2,000", "None", "Bathrooms without room to swing a door"]]}
+            footnote="Las Vegas price ranges from our own installation cost guide. Final pricing depends on opening size, glass thickness and hardware finish \u2014 we confirm it at the free in-home measure."
+          />
+        </div>
+      </section>
+
       <ServiceAreasBlock />
     </div>
   );

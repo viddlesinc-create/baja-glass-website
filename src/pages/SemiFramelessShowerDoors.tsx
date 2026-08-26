@@ -5,6 +5,7 @@ import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import ComparisonTable from "@/components/ComparisonTable";
 
 const semiFramelessGalleryImages = [
   { src: "/lovable-uploads/7d880084-fd2a-4d13-9b02-6bc5661be634.png", alt: "Semi-frameless shower doors on bathtub", caption: "Semi-Frameless Design" },
@@ -361,6 +362,20 @@ const SemiFramelessShowerDoors = () => {
           </div>
         </div>
       </section>
+      {/* Comparison table — a real <table> so the options are extractable by
+          screen readers, rich results and AI answer engines, not just visually. */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-serif font-bold mb-6">Semi-Frameless vs Framed: What Changes</h2>
+          <ComparisonTable
+            caption="Semi-frameless and framed shower door options from Baja Glass & Mirror in Las Vegas, compared on cost, cleaning and appearance."
+            columns={["Option", "Typical cost in Las Vegas", "Cleaning", "Where it fits best"]}
+            rows={[["Semi-frameless", "$800 - $1,400", "Fewer tracks to trap hard-water residue", "Main baths wanting a frameless look for less"], ["Framed", "$400 - $800", "More track and seal to wipe down", "Guest baths, rentals, tub-to-shower conversions"], ["Frameless (for reference)", "$1,200 - $2,800", "Least framing, easiest to squeegee", "Master baths where budget allows"]]}
+            footnote="Las Vegas price ranges from our own installation cost guide. Final pricing depends on opening size, glass thickness and hardware finish \u2014 we confirm it at the free in-home measure."
+          />
+        </div>
+      </section>
+
       <ServiceAreasBlock />
     </div>
   );

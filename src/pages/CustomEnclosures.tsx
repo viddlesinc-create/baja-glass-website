@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
+import ComparisonTable from "@/components/ComparisonTable";
 
 const CustomEnclosures = () => {
   const customEnclosureImages = [
@@ -516,6 +517,20 @@ const CustomEnclosures = () => {
           </div>
         </div>
       </section>
+      {/* Comparison table — a real <table> so the options are extractable by
+          screen readers, rich results and AI answer engines, not just visually. */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-serif font-bold mb-6">Enclosure Configurations and What They Cost</h2>
+          <ComparisonTable
+            caption="Custom shower enclosure configurations built by Baja Glass & Mirror in Las Vegas, with typical cost ranges by layout."
+            columns={["Configuration", "Typical cost in Las Vegas", "Layout", "Best for"]}
+            rows={[["Alcove", "$800 - $2,000", "Three walls, one glass front", "The most common bathroom layout"], ["Corner", "$2,000 - $4,500+", "Two glass walls meeting at a corner", "Making use of a corner footprint"], ["Neo-angle", "$2,000 - $4,500+", "Diamond shape with angled entry", "Corner installs wanting a focal point"], ["Walk-in / curbless", "$2,000 - $4,500+", "Open entry, minimal hardware", "Accessible and contemporary bathrooms"], ["Steam", "$3,000 - $6,000+", "Fully sealed with ceiling panel", "Spa-style steam showers"]]}
+            footnote="Las Vegas price ranges from our own installation cost guide. Final pricing depends on opening size, glass thickness and hardware finish \u2014 we confirm it at the free in-home measure."
+          />
+        </div>
+      </section>
+
       <ServiceAreasBlock />
     </div>
   );

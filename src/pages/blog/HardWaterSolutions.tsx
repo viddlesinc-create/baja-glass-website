@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import ArticleByline from "@/components/ArticleByline";
 import { Link } from "react-router-dom";
 import { Droplets, Phone, Shield } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -70,8 +71,10 @@ const HardWaterSolutions = () => {
             "headline": "Las Vegas Water Quality & Your Shower Glass: Hard Water Solutions",
             "description": "Solutions and prevention strategies for Las Vegas's extremely hard water affecting shower glass.",
             "author": {
-              "@type": "Organization",
-              "@id": "https://bajaglass.com/#localbusiness"
+              "@type": "Person",
+              "@id": "https://bajaglass.com/authors/cliff-robinson#person",
+              "name": "Cliff Robinson",
+              "url": "https://bajaglass.com/authors/cliff-robinson"
             },
             "publisher": {
               "@type": "Organization",
@@ -115,6 +118,11 @@ const HardWaterSolutions = () => {
             <p className="text-xl text-white/90">
               Solutions and prevention strategies for Las Vegas's extremely hard water
             </p>
+            <ArticleByline
+              datePublished="2025-01-15"
+              dateModified="2026-01-10"
+              wordCount={881}
+            />
           </div>
         </div>
       </section>
