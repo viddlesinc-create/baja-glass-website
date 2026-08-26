@@ -405,7 +405,7 @@ const CustomShowerEnclosuresLVLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">4.6 Rated</span>
+                <span className="font-semibold">Since 2009</span>
                 <span className="text-white/50">· 27 Reviews</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
@@ -527,8 +527,8 @@ const CustomShowerEnclosuresLVLanding = () => {
               </h2>
               <div className="flex items-center justify-center gap-2">
                 <Stars />
-                <span className="font-semibold text-charcoal">4.6 / 5</span>
-                <span className="text-muted-foreground">· 27 verified reviews</span>
+                <span className="font-semibold text-charcoal">Licensed &amp; Insured</span>
+                
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">

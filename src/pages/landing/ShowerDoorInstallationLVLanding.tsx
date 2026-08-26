@@ -183,20 +183,13 @@ const ProcessTimeline = () => (
 // were placeholder copy, not genuine customer reviews, and were removed.
 const installerReviews: Array<{ name: string; location?: string; rating?: number; service?: string; text?: string; quote?: string; city?: string }> = [];
 
-const InstallerReviews = () => (
+const InstallerReviews = () => installerReviews.length === 0 ? null : (
   <section className="py-16 bg-secondary/30">
     <div className="container mx-auto px-4">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
           What Customers Say About Our Installers
         </h2>
-        <div className="flex items-center justify-center gap-1 mb-2">
-          {[...Array(5)].map((_, i) => (
-            <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-          ))}
-          <span className="ml-2 text-lg font-semibold">4.6 out of 5</span>
-        </div>
-        <p className="text-muted-foreground">Based on 27 Google reviews</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         {installerReviews.map((review, i) => (

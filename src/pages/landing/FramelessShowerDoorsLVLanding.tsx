@@ -19,7 +19,7 @@ const MidPageCTA = ({ onQuoteClick }: { onQuoteClick: () => void }) => (
         {[...Array(5)].map((_, i) => (
           <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
         ))}
-        <span className="ml-2 text-white/90 font-semibold text-lg">4.6 / 5 — 27 Google Reviews</span>
+        <span className="ml-2 text-white/90 font-semibold text-lg">Licensed &amp; Insured · Las Vegas Since 2009</span>
       </div>
       <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
         Ready to See Your Custom Quote?

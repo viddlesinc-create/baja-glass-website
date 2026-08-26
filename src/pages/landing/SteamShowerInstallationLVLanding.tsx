@@ -410,7 +410,7 @@ const SteamShowerInstallationLVLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">4.6 Rated</span>
+                <span className="font-semibold">Since 2009</span>
                 <span className="text-white/50">· 27 Reviews</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
@@ -562,7 +562,7 @@ const SteamShowerInstallationLVLanding = () => {
                 { icon: Thermometer, label: "Vapor-Rated Hardware", sub: "Hinges and gasketing built for steam" },
                 { icon: Droplets, label: "Waterproofing Coordination", sub: "Schluter Kerdi standard" },
                 { icon: Ruler, label: "Custom Templated", sub: "Glass measured to the millimeter" },
-                { icon: Star, label: "4.6 ★ Google Reviews", sub: "27 verified Las Vegas clients" },
+                { icon: Star, label: "Las Vegas Since 2009", sub: "Licensed, bonded and insured" },
               ].map(({ icon: Icon, label, sub }) => (
                 <div key={label} className="text-center group">
                   <div className="inline-flex items-center justify-center w-14 h-14 bg-white/10 group-hover:bg-white/20 rounded-xl mb-4 transition-colors duration-200">

@@ -331,7 +331,7 @@ const ShowerDoorsHub = () => {
             </p>
 
             <p className="text-muted-foreground mb-6">
-              <strong>Rated 4.6/5 by Las Vegas homeowners</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
+              <strong>Licensed, bonded and insured &mdash; serving Las Vegas since 2009</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
             </p>
           </div>
         </div>

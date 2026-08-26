@@ -355,7 +355,7 @@ const LuxuryShowerEnclosuresLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">4.6 Rated</span>
+                <span className="font-semibold">Since 2009</span>
                 <span className="text-white/50">· 27 Reviews</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
@@ -517,8 +517,8 @@ const LuxuryShowerEnclosuresLanding = () => {
             </Button>
             <div className="flex items-center justify-center gap-3 text-muted-foreground">
               <Stars />
-              <span className="font-semibold text-charcoal">4.6 / 5</span>
-              <span>· 27 verified reviews from Las Vegas clients</span>
+              <span className="font-semibold text-charcoal">Licensed &amp; Insured</span>
+              
             </div>
           </div>
         </section>

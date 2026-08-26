@@ -220,7 +220,7 @@ const Index = () => {
               </div>
             </div>
             <p className="text-muted-foreground">
-              <strong>Rated 4.6/5 by homeowners in Las Vegas and Henderson</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
+              <strong>Licensed, bonded and insured &mdash; serving Las Vegas and Henderson since 2009</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
             </p>
           </div>
         </div>

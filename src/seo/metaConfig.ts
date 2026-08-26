@@ -7,7 +7,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
     title: 'Custom Shower Doors Las Vegas | Baja Glass & Mirror',
-    description: 'Rated 4.6★ by Las Vegas homeowners. Custom shower doors, frameless enclosures & mirrors made to measure, installed in one visit. Free in-home estimates.',
+    description: 'Custom shower doors, frameless enclosures and mirrors made to measure and installed in one visit. Serving Las Vegas since 2009. Free in-home estimates.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
