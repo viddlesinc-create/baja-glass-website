@@ -57,7 +57,7 @@ const Reviews = () => {
 
           <div className="flex flex-wrap justify-center gap-2">
             <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">Licensed & Insured</Badge>
-            <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">20+ Years Experience</Badge>
+            <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">Las Vegas Owned Since 2009</Badge>
             <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">Family Owned</Badge>
             <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">Warranty Backed</Badge>
           </div>

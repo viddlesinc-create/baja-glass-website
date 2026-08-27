@@ -187,7 +187,7 @@ const ShowerDoorInstallationLasVegas = () => {
             </div>
             <div className="text-center">
               <Clock className="h-8 w-8 mx-auto mb-2 text-accent" />
-              <p className="font-semibold">20+ Years Experience</p>
+              <p className="font-semibold">Las Vegas Owned Since 2009</p>
             </div>
             <div className="text-center">
               <Wrench className="h-8 w-8 mx-auto mb-2 text-accent" />
@@ -278,6 +278,71 @@ const ShowerDoorInstallationLasVegas = () => {
         </div>
       </section>
 
+
+      {/* Installation process — the step-by-step and timing that "installation near me"
+          searchers are actually looking for. Every duration below is the figure already
+          published in our own FAQ and installation guide, not an estimate invented here. */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-bold text-center mb-4">How Shower Door Installation Works</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Four steps from first call to finished shower. Most Las Vegas installations run
+            1&ndash;2 weeks from measurement to completion.
+          </p>
+          <ol className="space-y-6">
+            {[
+              { step: "1", title: "Free in-home measurement", detail: "We measure your opening on site rather than working from your numbers. Walls in Las Vegas homes are rarely plumb, and a door cut to an assumed size will not seal." },
+              { step: "2", title: "Custom fabrication", detail: "Your glass is cut, tempered and polished to the measured opening, and your hardware finish is ordered. Nothing is off-the-shelf." },
+              { step: "3", title: "Installation day", detail: "A single shower door takes 1\u20132 hours. A full enclosure takes 2\u20134 hours. Custom enclosures with multiple panels or complex configurations take 4\u20136 hours. Most projects are finished in one visit." },
+              { step: "4", title: "Walkthrough and care", detail: "We test the swing or slide, check every seal, clean up, and show you how to keep the glass clear in Las Vegas hard water." },
+            ].map((s) => (
+              <li key={s.step} className="flex gap-5">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">{s.step}</span>
+                <div>
+                  <h3 className="font-semibold text-lg mb-1">{s.title}</h3>
+                  <p className="text-muted-foreground">{s.detail}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Replacement intent. "shower door replacement near me" had no page speaking to it
+          directly, so a category hub was being served for it instead. */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-bold mb-4">Replacing an Existing Shower Door</h2>
+          <p className="text-muted-foreground mb-8">
+            Most of our work is replacement rather than new construction. We remove the old
+            door and hardware, check the opening, and fit the new glass to the space as it is
+            today &mdash; not as it was when the original was installed.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="font-semibold text-lg mb-3">What replacement includes</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>&bull; Removing and disposing of the existing door, track and hardware</li>
+                <li>&bull; Re-measuring the opening before anything is ordered</li>
+                <li>&bull; New tempered glass cut to the current opening</li>
+                <li>&bull; New hardware in your chosen finish</li>
+                <li>&bull; Fresh seals and sweeps, and a water test before we leave</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-3">Common reasons to replace</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>&bull; Hard-water etching that no longer cleans off</li>
+                <li>&bull; A framed door being upgraded to frameless</li>
+                <li>&bull; Worn rollers, sagging hinges or a door that no longer seals</li>
+                <li>&bull; A tub-to-shower conversion changing the opening</li>
+                <li>&bull; Chipped or cracked glass &mdash; we replace, we do not repair</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-4">
@@ -293,7 +358,7 @@ const ShowerDoorInstallationLasVegas = () => {
             <div className="flex items-start gap-4">
               <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold mb-2">20+ Years Experience</h3>
+                <h3 className="font-semibold mb-2">Las Vegas Owned Since 2009</h3>
                 <p className="text-muted-foreground">Thousands of installations completed across the Las Vegas Valley.</p>
               </div>
             </div>

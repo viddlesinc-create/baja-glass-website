@@ -122,7 +122,7 @@ const localBusinessData = {
     {
       "@type": "PropertyValue",
       "name": "Experience",
-      "value": "20+ Years"
+      "value": "Serving Las Vegas since 2009"
     }
   ],
   "hasCredential": [

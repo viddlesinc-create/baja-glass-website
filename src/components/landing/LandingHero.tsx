@@ -144,7 +144,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Award className="h-5 w-5 text-white" aria-hidden="true" />
-              <span className="text-white font-medium">20+ Years Experience</span>
+              <span className="text-white font-medium">Las Vegas Owned Since 2009</span>
             </div>
           </div>
 

@@ -86,7 +86,7 @@ const WhatIsIncluded = () => (
         </div>
         <p className="text-center text-muted-foreground mt-8 text-sm">
           <Shield className="inline h-4 w-4 mr-1" />
-          Licensed & Insured · Nevada Contractor's License · 20+ Years in Las Vegas
+          Licensed & Insured · Nevada Contractor's License · In Las Vegas Since 2009
         </p>
       </div>
     </div>

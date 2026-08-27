@@ -55,7 +55,7 @@ const features = [
   { icon: Shield, label: "C8 Glass & Glazing License", sub: "Nevada State Contractors Board" },
   { icon: Award, label: "Bonded & Insured", sub: "Full coverage on every project" },
   { icon: Star, label: "First Responder Owned", sub: "Serving those who serve Las Vegas" },
-  { icon: Clock, label: "20+ Years Experience", sub: "Thousands of Las Vegas installations" },
+  { icon: Clock, label: "Las Vegas Owned Since 2009", sub: "Licensed, bonded and insured" },
   { icon: Layers, label: "Low-Iron Ultra-Clear Glass", sub: "No green tint — pure transparency" },
   { icon: Droplets, label: "Hydrophobic Glass Coating", sub: "Water beads off — less mineral buildup" },
   { icon: Ruler, label: "Custom Fabrication Only", sub: "No off-the-shelf doors — ever" },
@@ -361,7 +361,7 @@ const LuxuryShowerEnclosuresLanding = () => {
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
-              <span>20+ Years in Las Vegas</span>
+              <span>In Las Vegas Since 2009</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>First Responder Owned</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
@@ -715,7 +715,7 @@ const LuxuryShowerEnclosuresLanding = () => {
 
                 {/* Trust badges */}
                 <div className="flex flex-wrap gap-3 mb-10">
-                  {["C8 Licensed", "Bonded & Insured", "First Responder Owned", "20+ Years Experience"].map((badge) => (
+                  {["C8 Licensed", "Bonded & Insured", "First Responder Owned", "Since 2009"].map((badge) => (
                     <span key={badge} className="bg-white/10 border border-white/20 text-white/80 text-xs font-medium px-3 py-1.5 rounded-full">
                       {badge}
                     </span>

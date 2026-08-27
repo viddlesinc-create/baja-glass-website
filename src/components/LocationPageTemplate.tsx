@@ -154,7 +154,7 @@ const LocationPageTemplate = ({
             <div className="flex items-start gap-4">
               <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold mb-2">Serving {city} for 20+ Years</h3>
+                <h3 className="font-semibold mb-2">Serving {city} Since 2009</h3>
                 <p className="text-muted-foreground">Local expertise with hundreds of installations throughout the {city} area.</p>
               </div>
             </div>

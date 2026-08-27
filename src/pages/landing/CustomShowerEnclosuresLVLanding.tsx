@@ -411,7 +411,7 @@ const CustomShowerEnclosuresLVLanding = () => {
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
-              <span>20+ Years in Las Vegas</span>
+              <span>In Las Vegas Since 2009</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>Lifetime Hardware Warranty</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
