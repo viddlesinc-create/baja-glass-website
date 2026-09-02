@@ -50,6 +50,7 @@ const ShowerDoorsParadise = lazy(() => import("./pages/locations/ShowerDoorsPara
 const ShowerDoorsSpringValley = lazy(() => import("./pages/locations/ShowerDoorsSpringValley"));
 const ShowerDoorsEnterprise = lazy(() => import("./pages/locations/ShowerDoorsEnterprise"));
 const ShowerDoorsGreenValley = lazy(() => import("./pages/locations/ShowerDoorsGreenValley"));
+const ShowerDoorsCentennialHills = lazy(() => import("./pages/locations/ShowerDoorsCentennialHills"));
 
 // Blog pages
 const Blog = lazy(() => import("./pages/Blog"));
@@ -60,6 +61,11 @@ const WarrantyInformation = lazy(() => import("./pages/blog/WarrantyInformation"
 const ShowerDoorCostGuide = lazy(() => import("./pages/blog/ShowerDoorCostGuide"));
 const FramelessVsSemiFrameless = lazy(() => import("./pages/blog/FramelessVsSemiFrameless"));
 const HardWaterSolutions = lazy(() => import("./pages/blog/HardWaterSolutions"));
+const HowLongShowerDoorInstallation = lazy(() => import("./pages/blog/HowLongShowerDoorInstallation"));
+const CrackedShowerGlassReplacement = lazy(() => import("./pages/blog/CrackedShowerGlassReplacement"));
+const HardwareFinishesDesert = lazy(() => import("./pages/blog/HardwareFinishesDesert"));
+const SteamVsStandardEnclosures = lazy(() => import("./pages/blog/SteamVsStandardEnclosures"));
+const HiringShowerDoorInstaller = lazy(() => import("./pages/blog/HiringShowerDoorInstaller"));
 
 const MainSite = () => (
   <>
@@ -112,6 +118,7 @@ const MainSite = () => (
             <Route path="/shower-doors-spring-valley-nv" element={<ShowerDoorsSpringValley />} />
             <Route path="/shower-doors-enterprise-nv" element={<ShowerDoorsEnterprise />} />
             <Route path="/shower-doors-green-valley-nv" element={<ShowerDoorsGreenValley />} />
+            <Route path="/shower-doors-centennial-hills-nv" element={<ShowerDoorsCentennialHills />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/glass-care-guide" element={<GlassCareGuide />} />
             <Route path="/blog/choosing-right-door" element={<ChoosingRightDoor />} />
@@ -120,6 +127,11 @@ const MainSite = () => (
             <Route path="/blog/shower-door-installation-cost-las-vegas" element={<ShowerDoorCostGuide />} />
             <Route path="/blog/frameless-vs-semi-frameless-shower-doors" element={<FramelessVsSemiFrameless />} />
             <Route path="/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" element={<HardWaterSolutions />} />
+            <Route path="/blog/how-long-does-shower-door-installation-take" element={<HowLongShowerDoorInstallation />} />
+            <Route path="/blog/cracked-shower-glass-replacement-las-vegas" element={<CrackedShowerGlassReplacement />} />
+            <Route path="/blog/shower-door-hardware-finishes-desert" element={<HardwareFinishesDesert />} />
+            <Route path="/blog/steam-vs-standard-shower-enclosures" element={<SteamVsStandardEnclosures />} />
+            <Route path="/blog/what-to-ask-before-hiring-shower-door-installer" element={<HiringShowerDoorInstaller />} />
 
             {/* Legacy WordPress redirects */}
             <Route path="/services" element={<RedirectComponent to="/shower-doors-las-vegas" />} />

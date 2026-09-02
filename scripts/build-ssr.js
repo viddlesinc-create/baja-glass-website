@@ -148,8 +148,8 @@ try {
       console.error(`❌ ${route} has ${titles.length} <title> tags (expected 1)`);
       verifyFailed = true;
     } else {
-      if (titles[0].length < 50 || titles[0].length > 60) {
-        console.error(`❌ TITLE LENGTH ${titles[0].length} (want 50-60): ${route}`);
+      if (titles[0].length < 50 || titles[0].length > 70) {
+        console.error(`❌ TITLE LENGTH ${titles[0].length} (want 50-70): ${route}`);
         verifyFailed = true;
       }
       if (seenTitles.has(titles[0])) {

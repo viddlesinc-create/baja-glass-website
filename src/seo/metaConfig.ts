@@ -147,6 +147,12 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/shower-doors-green-valley-nv`,
     ogImage: DEFAULT_OG_IMAGE,
   },
+  '/shower-doors-centennial-hills-nv': {
+    title: 'Shower Doors Centennial Hills NV | Frameless Glass Installation',
+    description: 'Shower doors in Centennial Hills NV — custom frameless installs, sliding doors and full replacements by Baja Glass and Mirror. Call (702) 383-0779.',
+    canonical: `${BASE_URL}/shower-doors-centennial-hills-nv`,
+    ogImage: `${BASE_URL}/images/contemporary-frameless-shower-low-iron-glass.webp`,
+  },
 
   // ===== Blog Pages =====
   '/blog/glass-care-guide': {
@@ -189,6 +195,36 @@ export const seoConfig: Record<string, SEOMeta> = {
     title: 'Las Vegas Hard Water Solutions for Shower Glass Care',
     description: 'Las Vegas hard water etches shower glass fast. Compare softeners, hydrophobic coatings and the daily habits that stop permanent spotting, from local glaziers.',
     canonical: `${BASE_URL}/blog/las-vegas-water-quality-shower-glass-hard-water-solutions`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/blog/how-long-does-shower-door-installation-take': {
+    title: 'How Long Does Shower Door Installation Take? | Baja Glass and Mirror',
+    description: 'How long does shower door installation take? Typical timelines from measure to install day for frameless and sliding doors in Las Vegas, from our installers.',
+    canonical: `${BASE_URL}/blog/how-long-does-shower-door-installation-take`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/blog/cracked-shower-glass-replacement-las-vegas': {
+    title: 'Cracked Shower Glass Replacement in Las Vegas | Baja Glass and Mirror',
+    description: 'Cracked shower glass in Las Vegas? We replace broken shower door panels with new custom tempered glass — full panel replacement, done safely. (702) 383-0779.',
+    canonical: `${BASE_URL}/blog/cracked-shower-glass-replacement-las-vegas`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/blog/shower-door-hardware-finishes-desert': {
+    title: 'Shower Door Hardware Finishes for the Desert | Baja Glass and Mirror',
+    description: 'Which shower door hardware finishes hold up in the desert? Chrome, brushed nickel and matte black compared for Las Vegas heat, sun and hard water.',
+    canonical: `${BASE_URL}/blog/shower-door-hardware-finishes-desert`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/blog/steam-vs-standard-shower-enclosures': {
+    title: 'Steam Shower vs Standard Frameless Enclosure | Baja Glass and Mirror',
+    description: 'Steam shower vs standard frameless enclosure: sealed glass, transoms, ventilation and cost factors compared so you can pick the right build for your bathroom.',
+    canonical: `${BASE_URL}/blog/steam-vs-standard-shower-enclosures`,
+    ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/blog/what-to-ask-before-hiring-shower-door-installer': {
+    title: 'What to Ask Before Hiring a Shower Door Shop | Baja Glass and Mirror',
+    description: 'Seven questions to ask before hiring a shower door shop in Las Vegas — licensing, tempered glass, measuring, warranties and who actually does the install.',
+    canonical: `${BASE_URL}/blog/what-to-ask-before-hiring-shower-door-installer`,
     ogImage: DEFAULT_OG_IMAGE,
   },
 
