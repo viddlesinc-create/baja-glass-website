@@ -51,6 +51,7 @@ const Sitemap = () => {
         { name: "Spring Valley Shower Doors", href: "/shower-doors-spring-valley-nv" },
         { name: "Enterprise Shower Doors", href: "/shower-doors-enterprise-nv" },
         { name: "Green Valley Shower Doors", href: "/shower-doors-green-valley-nv" },
+        { name: "Centennial Hills Shower Doors", href: "/shower-doors-centennial-hills-nv" },
       ]
     },
     {
@@ -66,6 +67,11 @@ const Sitemap = () => {
         { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
         { name: "Frameless vs Semi-Frameless", href: "/blog/frameless-vs-semi-frameless-shower-doors" },
         { name: "Hard Water Solutions", href: "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" },
+        { name: "How Long Does Installation Take?", href: "/blog/how-long-does-shower-door-installation-take" },
+        { name: "Cracked Shower Glass Replacement", href: "/blog/cracked-shower-glass-replacement-las-vegas" },
+        { name: "Hardware Finishes for the Desert", href: "/blog/shower-door-hardware-finishes-desert" },
+        { name: "Steam vs Standard Enclosures", href: "/blog/steam-vs-standard-shower-enclosures" },
+        { name: "Hiring a Shower Door Shop", href: "/blog/what-to-ask-before-hiring-shower-door-installer" },
       ]
     }
   ];

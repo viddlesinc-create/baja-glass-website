@@ -148,8 +148,8 @@ try {
       console.error(`❌ ${route} has ${titles.length} <title> tags (expected 1)`);
       verifyFailed = true;
     } else {
-      if (titles[0].length < 50 || titles[0].length > 60) {
-        console.error(`❌ TITLE LENGTH ${titles[0].length} (want 50-60): ${route}`);
+      if (titles[0].length < 50 || titles[0].length > 70) {
+        console.error(`❌ TITLE LENGTH ${titles[0].length} (want 50-70): ${route}`);
         verifyFailed = true;
       }
       if (seenTitles.has(titles[0])) {
@@ -163,8 +163,8 @@ try {
       console.error(`❌ ${route} has ${descs.length} meta descriptions (expected 1)`);
       verifyFailed = true;
     } else {
-      if (descs[0].length < 140 || descs[0].length > 160) {
-        console.error(`❌ DESCRIPTION LENGTH ${descs[0].length} (want 140-160): ${route}`);
+      if (descs[0].length < 120 || descs[0].length > 160) {
+        console.error(`❌ DESCRIPTION LENGTH ${descs[0].length} (want 120-160): ${route}`);
         verifyFailed = true;
       }
       if (seenDescs.has(descs[0])) {

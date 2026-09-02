@@ -13,6 +13,66 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-long-does-shower-door-installation-take",
+    title: "How Long Does Shower Door Installation Take?",
+    excerpt: "The honest timeline from first call to finished shower door: in-home measurement, fabrication lead time, a single install visit, and the 24-hour cure at the end.",
+    category: "Installation",
+    featuredImage: "/images/installation-process.jpg",
+    datePublished: "2026-09-02",
+    dateModified: "2026-09-02",
+    author: "Cliff Robinson",
+    readTime: "4 min read",
+    url: "/blog/how-long-does-shower-door-installation-take"
+  },
+  {
+    slug: "cracked-shower-glass-replacement-las-vegas",
+    title: "Cracked Shower Glass Replacement in Las Vegas",
+    excerpt: "Why tempered shower panels crack or shatter, what to do in the first hour, and how a full panel replacement works — new custom glass, fabricated for your opening.",
+    category: "Buying Guides",
+    featuredImage: "/images/damaged-shower-glass.jpg",
+    datePublished: "2026-09-02",
+    dateModified: "2026-09-02",
+    author: "Cliff Robinson",
+    readTime: "4 min read",
+    url: "/blog/cracked-shower-glass-replacement-las-vegas"
+  },
+  {
+    slug: "shower-door-hardware-finishes-desert",
+    title: "Shower Door Hardware Finishes for the Desert",
+    excerpt: "Chrome, brushed nickel, matte black, and brass compared for Las Vegas conditions — which finishes hide hard water spotting and which ones demand daily upkeep.",
+    category: "Buying Guides",
+    featuredImage: "/images/hardware-finishes.jpg",
+    datePublished: "2026-09-02",
+    dateModified: "2026-09-02",
+    author: "Cliff Robinson",
+    readTime: "4 min read",
+    url: "/blog/shower-door-hardware-finishes-desert"
+  },
+  {
+    slug: "steam-vs-standard-shower-enclosures",
+    title: "Steam Shower vs Standard Frameless Enclosure",
+    excerpt: "A steam enclosure holds an atmosphere; a standard enclosure manages water. What that means for glass, seals, transoms, and which build fits your bathroom.",
+    category: "Comparison Guides",
+    featuredImage: "/images/completed-steam-shower-enclosure-2.webp",
+    datePublished: "2026-09-02",
+    dateModified: "2026-09-02",
+    author: "Cliff Robinson",
+    readTime: "4 min read",
+    url: "/blog/steam-vs-standard-shower-enclosures"
+  },
+  {
+    slug: "what-to-ask-before-hiring-shower-door-installer",
+    title: "What to Ask Before Hiring a Shower Door Shop",
+    excerpt: "Seven direct questions — licensing, who does the work, how they measure, glass specs, warranty terms — and the answers a professional glass shop should give.",
+    category: "Buying Guides",
+    featuredImage: "/images/professional-shower-door-installation-gallery-showcase.webp",
+    datePublished: "2026-09-02",
+    dateModified: "2026-09-02",
+    author: "Cliff Robinson",
+    readTime: "4 min read",
+    url: "/blog/what-to-ask-before-hiring-shower-door-installer"
+  },
+  {
     slug: "shower-door-installation-cost-las-vegas",
     title: "How Much Does Shower Door Installation Cost in Las Vegas? (2026 Guide)",
     excerpt: "Complete pricing breakdown for frameless, semi-frameless, and framed shower doors in Las Vegas. Learn about factors affecting cost and get accurate estimates.",

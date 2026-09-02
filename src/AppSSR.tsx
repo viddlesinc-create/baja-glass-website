@@ -61,6 +61,7 @@ import ShowerDoorsParadise from "./pages/locations/ShowerDoorsParadise";
 import ShowerDoorsSpringValley from "./pages/locations/ShowerDoorsSpringValley";
 import ShowerDoorsEnterprise from "./pages/locations/ShowerDoorsEnterprise";
 import ShowerDoorsGreenValley from "./pages/locations/ShowerDoorsGreenValley";
+import ShowerDoorsCentennialHills from "./pages/locations/ShowerDoorsCentennialHills";
 
 // Blog pages
 import Blog from "./pages/Blog";
@@ -71,6 +72,11 @@ import WarrantyInformation from "./pages/blog/WarrantyInformation";
 import ShowerDoorCostGuide from "./pages/blog/ShowerDoorCostGuide";
 import FramelessVsSemiFrameless from "./pages/blog/FramelessVsSemiFrameless";
 import HardWaterSolutions from "./pages/blog/HardWaterSolutions";
+import HowLongShowerDoorInstallation from "./pages/blog/HowLongShowerDoorInstallation";
+import CrackedShowerGlassReplacement from "./pages/blog/CrackedShowerGlassReplacement";
+import HardwareFinishesDesert from "./pages/blog/HardwareFinishesDesert";
+import SteamVsStandardEnclosures from "./pages/blog/SteamVsStandardEnclosures";
+import HiringShowerDoorInstaller from "./pages/blog/HiringShowerDoorInstaller";
 
 function AppSSR() {
   usePageTracking();
@@ -145,6 +151,7 @@ function AppSSR() {
             <Route path="/shower-doors-spring-valley-nv" element={<ShowerDoorsSpringValley />} />
             <Route path="/shower-doors-enterprise-nv" element={<ShowerDoorsEnterprise />} />
             <Route path="/shower-doors-green-valley-nv" element={<ShowerDoorsGreenValley />} />
+            <Route path="/shower-doors-centennial-hills-nv" element={<ShowerDoorsCentennialHills />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/glass-care-guide" element={<GlassCareGuide />} />
             <Route path="/blog/choosing-right-door" element={<ChoosingRightDoor />} />
@@ -153,6 +160,11 @@ function AppSSR() {
             <Route path="/blog/shower-door-installation-cost-las-vegas" element={<ShowerDoorCostGuide />} />
             <Route path="/blog/frameless-vs-semi-frameless-shower-doors" element={<FramelessVsSemiFrameless />} />
             <Route path="/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" element={<HardWaterSolutions />} />
+            <Route path="/blog/how-long-does-shower-door-installation-take" element={<HowLongShowerDoorInstallation />} />
+            <Route path="/blog/cracked-shower-glass-replacement-las-vegas" element={<CrackedShowerGlassReplacement />} />
+            <Route path="/blog/shower-door-hardware-finishes-desert" element={<HardwareFinishesDesert />} />
+            <Route path="/blog/steam-vs-standard-shower-enclosures" element={<SteamVsStandardEnclosures />} />
+            <Route path="/blog/what-to-ask-before-hiring-shower-door-installer" element={<HiringShowerDoorInstaller />} />
             
             {/* Legacy WordPress redirects */}
             <Route path="/services" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
