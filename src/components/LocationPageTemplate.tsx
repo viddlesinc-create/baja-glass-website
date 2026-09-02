@@ -109,7 +109,7 @@ const LocationPageTemplate = ({
                 Serving {city}, Nevada
               </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-              Shower Doors {city} NV
+              Shower Doors {city} NV{" "}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
                   Professional Installation
                 </span>

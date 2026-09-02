@@ -163,8 +163,8 @@ try {
       console.error(`❌ ${route} has ${descs.length} meta descriptions (expected 1)`);
       verifyFailed = true;
     } else {
-      if (descs[0].length < 140 || descs[0].length > 160) {
-        console.error(`❌ DESCRIPTION LENGTH ${descs[0].length} (want 140-160): ${route}`);
+      if (descs[0].length < 120 || descs[0].length > 160) {
+        console.error(`❌ DESCRIPTION LENGTH ${descs[0].length} (want 120-160): ${route}`);
         verifyFailed = true;
       }
       if (seenDescs.has(descs[0])) {

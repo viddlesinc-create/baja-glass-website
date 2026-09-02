@@ -57,7 +57,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   // ===== Product Pages =====
   '/shower-doors-las-vegas/frameless': {
     title: 'Frameless Shower Doors Las Vegas | Installs & Upgrades',
-    description: 'Upgrade your old framed shower door to custom frameless glass in Las Vegas. New frameless installs & replacements by Baja Glass. Call (702) 383-0779.',
+    description: 'Frameless shower doors Las Vegas — custom installs and framed-to-frameless upgrades by Baja Glass and Mirror. Call (702) 383-0779.',
     canonical: `${BASE_URL}/shower-doors-las-vegas/frameless`,
     ogImage: `${BASE_URL}/images/custom-neo-angle-shower-enclosure.webp`,
   },
@@ -112,8 +112,8 @@ export const seoConfig: Record<string, SEOMeta> = {
 
   // ===== Location Pages =====
   '/shower-doors-henderson-nv': {
-    title: 'Shower Door Installation & Replacement Henderson NV',
-    description: 'Shower door installation and replacement in Henderson NV. Frameless doors and custom enclosures fitted in one visit. Free quotes for Green Valley and Anthem.',
+    title: 'Shower Doors Henderson NV | Frameless Install & Replace',
+    description: 'Shower doors Henderson NV — frameless installs and full replacements by Baja Glass and Mirror. Free quotes for Green Valley and Anthem. Call (702) 383-0779.',
     canonical: `${BASE_URL}/shower-doors-henderson-nv`,
     ogImage: `${BASE_URL}/images/contemporary-frameless-shower-design-2.webp`,
   },
