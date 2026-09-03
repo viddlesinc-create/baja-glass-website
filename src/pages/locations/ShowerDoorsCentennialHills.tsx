@@ -139,7 +139,7 @@ const ShowerDoorsCentennialHills = () => {
             <CardContent className="p-6">
               <p className="font-semibold text-foreground mb-2">Baja Glass and Mirror</p>
               <p className="text-muted-foreground">4280 W Reno Ave Ste A, Las Vegas, NV 89118</p>
-              <p className="text-muted-foreground">Mon–Fri 8am–4pm · Sat 9am–5pm · Sun closed</p>
+              <p className="text-muted-foreground">Mon–Fri 8am–4pm · Sat &amp; Sun closed</p>
               <p className="text-muted-foreground mt-2">
                 <a href="tel:+17023830779" className="text-primary underline hover:text-primary/80">(702) 383-0779</a>
               </p>
