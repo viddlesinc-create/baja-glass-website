@@ -1,25 +1,20 @@
 import { Helmet } from "react-helmet-async";
 
 const BASE_URL = 'https://bajaglass.com';
-const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z';
-
 
 const localBusinessData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "HomeAndConstructionBusiness",
   "@id": `${BASE_URL}/#localbusiness`,
-  "name": "Baja Glass & Mirror LLC",
-  "alternateName": ["Baja Glass", "Baja Glass and Mirror"],
+  "name": "Baja Glass and Mirror",
+  "legalName": "Baja Glass and Mirror LLC",
+  "alternateName": ["Baja Glass"],
   "image": `${BASE_URL}/images/baja-glass-mirror-logo.webp`,
   "logo": `${BASE_URL}/images/baja-glass-mirror-logo.webp`,
   "foundingDate": "2009",
-  "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation in Las Vegas, Henderson, and Summerlin. First Responder Owned. Licensed, bonded, and insured.",
+  "description": "Shower door company in Las Vegas specializing in custom frameless shower doors, sliding and semi-frameless doors, custom and steam shower enclosures, and full shower door replacements. First responder owned. Serving Las Vegas and Henderson since 2009. Licensed, bonded, and insured.",
   "url": BASE_URL,
   "telephone": "+17023830779",
-  "email": "info@bajaglass.com",
-  "priceRange": "$$",
-  "currenciesAccepted": "USD",
-  "paymentAccepted": "Cash, Credit Card, Check",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "4280 W Reno Ave Ste A",
@@ -30,10 +25,9 @@ const localBusinessData = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 36.097781,
-    "longitude": -115.197234
+    "latitude": 36.09774,
+    "longitude": -115.197267
   },
-  "hasMap": GOOGLE_MAPS_URL,
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -44,7 +38,7 @@ const localBusinessData = {
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Glass Services",
+    "name": "Shower Door Services",
     "itemListElement": [
       {
         "@type": "Offer",
@@ -59,7 +53,23 @@ const localBusinessData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Sliding Shower Doors",
-          "description": "Space-saving sliding shower door installation for any bathroom"
+          "description": "Space-saving sliding and bypass shower door installation for tubs and showers"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Semi-Frameless Shower Doors",
+          "description": "Semi-frameless and framed shower door installation with multiple hardware finishes"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hinged Shower Doors",
+          "description": "Hinged and pivot shower door installation with precise alignment"
         }
       },
       {
@@ -67,7 +77,15 @@ const localBusinessData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Custom Shower Enclosures",
-          "description": "Made-to-measure shower enclosures including neo-angle, steam, and alcove designs"
+          "description": "Made-to-measure shower enclosures including walk-in, corner, neo-angle, and alcove designs"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Steam Shower Enclosures",
+          "description": "Fully sealed steam shower enclosures with operable transoms"
         }
       },
       {
@@ -75,15 +93,7 @@ const localBusinessData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Shower Door Replacement",
-          "description": "Expert shower door replacement and upgrade services"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Mirror Installation",
-          "description": "Bathroom mirrors, gym mirrors installation and removal"
+          "description": "Full replacement of framed and builder-grade shower doors with new custom glass"
         }
       }
     ]
@@ -91,39 +101,18 @@ const localBusinessData = {
   "areaServed": [
     { "@type": "City", "name": "Las Vegas", "containedInPlace": { "@type": "State", "name": "Nevada" } },
     { "@type": "City", "name": "Henderson", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-    { "@type": "City", "name": "Summerlin", "containedInPlace": { "@type": "State", "name": "Nevada" } },
+    { "@type": "Place", "name": "Summerlin", "containedInPlace": { "@type": "City", "name": "Las Vegas" } },
     { "@type": "City", "name": "Paradise", "containedInPlace": { "@type": "State", "name": "Nevada" } },
     { "@type": "City", "name": "Spring Valley", "containedInPlace": { "@type": "State", "name": "Nevada" } },
     { "@type": "City", "name": "Enterprise", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-    { "@type": "City", "name": "North Las Vegas", "containedInPlace": { "@type": "State", "name": "Nevada" } },
-    { "@type": "City", "name": "Green Valley", "containedInPlace": { "@type": "State", "name": "Nevada" } }
+    { "@type": "Place", "name": "Green Valley", "containedInPlace": { "@type": "City", "name": "Henderson" } }
   ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+17023830779",
-    "contactType": "Customer Service",
-    "areaServed": "US",
-    "availableLanguage": ["English", "Spanish"]
-  },
   "sameAs": [
-    GOOGLE_MAPS_URL,
-    "https://www.instagram.com/baja_glass_lv/",
-    "https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/",
+    "https://maps.apple.com/place?place-id=I3B0F0891DD44D2AD",
+    "https://www.bing.com/maps?ss=ypid.YNA3A22CB0424DCE0B",
     "https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas",
-    "https://www.homeadvisor.com/rated.BajaGlassandMirror.33547383.html",
-    "https://www.bbb.org/us/nv/las-vegas/profile/window-glass/baja-glass-and-mirror-llc-1086-90011741"
-  ],
-  "additionalProperty": [
-    {
-      "@type": "PropertyValue",
-      "name": "Business Attribute",
-      "value": "First Responder Owned"
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "Experience",
-      "value": "Serving Las Vegas since 2009"
-    }
+    "https://www.bbb.org/us/nv/las-vegas/profile/window-glass/baja-glass-and-mirror-llc-1086-90011741",
+    "https://702alliance.com/members/baja-glass-mirror/"
   ],
   "hasCredential": [
     {
@@ -148,10 +137,10 @@ const localBusinessData = {
     "Hinged Shower Doors",
     "Custom Shower Enclosures",
     "Steam Shower Enclosures",
-    "Glass Replacement",
-    "Mirror Installation",
+    "Shower Door Replacement",
+    "Tempered Safety Glass",
     "Low-Iron Glass",
-    "Tempered Safety Glass"
+    "Glass Replacement"
   ]
 };
 
