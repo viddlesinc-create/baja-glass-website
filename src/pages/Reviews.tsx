@@ -45,7 +45,7 @@ const Reviews = () => {
         </div>
         
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Customer Reviews for Baja Glass & Mirror</h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Customer Reviews for Baja Glass and Mirror</h1>
           
           {/* TODO(owner): the "4.6 / 27 Google reviews" figure was removed along with the
               placeholder testimonials that backed it. Restore only after confirming the live
