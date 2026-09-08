@@ -44,7 +44,7 @@ const About = () => {
       <section className="py-20 bg-gradient-to-r from-charcoal to-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">About Baja Glass</h1>
+            <h1 className="text-5xl font-bold mb-6">About Baja Glass and Mirror</h1>
             <p className="text-xl mb-8 text-white/90">
               Your trusted partner for custom shower doors and glass solutions throughout the Las Vegas Valley.
             </p>
