@@ -192,8 +192,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/blog/shower-door-installation-cost-las-vegas': {
-    title: 'Frameless Shower Door Cost Las Vegas | 2026 Price Guide',
-    description: 'Frameless shower door cost Las Vegas — 2026 ranges: frameless $1,200–$2,800, framed from $400, semi-frameless from $800. Free quote (702) 383-0779.',
+    title: 'Shower Door Installation Cost Las Vegas: 2026 Prices by Type',
+    description: 'Shower door installation cost in Las Vegas for 2026: framed $400–$800, semi-frameless $800–$1,400, frameless $1,200–$2,800. Free quote (702) 383-0779.',
     canonical: `${BASE_URL}/blog/shower-door-installation-cost-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
