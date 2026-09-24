@@ -34,11 +34,14 @@ const Header = () => {
     { name: "Hinged Doors", href: "/shower-doors-las-vegas/hinged" },
     { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
     { name: "Steam Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
+    { name: "Shower Door Replacement", href: "/shower-door-replacement-las-vegas" },
   ];
 
   const glassCompanyPages = [
     { name: "Residential Glass Replacement", href: "/glass-company-las-vegas/residential-glass-replacement" },
     { name: "Office Enclosures", href: "/glass-company-las-vegas/office-enclosures" },
+    { name: "Custom Mirrors", href: "/glass-company-las-vegas/custom-mirrors" },
+    { name: "Custom Glass Doors", href: "/glass-company-las-vegas/custom-glass-doors" },
   ];
 
   const socialLinks = [
