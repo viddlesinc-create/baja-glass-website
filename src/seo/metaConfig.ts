@@ -109,6 +109,12 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/glass-company-las-vegas/office-enclosures`,
     ogImage: DEFAULT_OG_IMAGE,
   },
+  '/glass-company-las-vegas/custom-mirrors': {
+    title: 'Custom Mirrors Las Vegas | Measured & Installed | Baja Glass',
+    description: 'Custom-cut mirrors measured and installed across the Las Vegas Valley by Baja Glass & Mirror — serving Las Vegas since 2009. Free quote: (702) 383-0779',
+    canonical: `${BASE_URL}/glass-company-las-vegas/custom-mirrors`,
+    ogImage: `${BASE_URL}/images/custom-bathroom-mirror-polished-edges.webp`,
+  },
 
   // ===== Location Pages =====
   '/shower-doors-henderson-nv': {
