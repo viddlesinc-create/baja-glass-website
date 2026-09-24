@@ -478,6 +478,40 @@ const Index = () => {
                 </Button>
               </CardContent>
             </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  Custom Mirrors
+                  <Badge variant="secondary">Residential</Badge>
+                </CardTitle>
+                <CardDescription>
+                  Mirrors custom-cut to your measured space and installed across the Las Vegas Valley, plus mirror replacement.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button asChild className="w-full">
+                  <Link to="/glass-company-las-vegas/custom-mirrors" onClick={() => window.scrollTo(0, 0)}>Custom Mirrors</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  Custom Glass Doors
+                  <Badge variant="secondary">Home &amp; Commercial</Badge>
+                </CardTitle>
+                <CardDescription>
+                  Custom glass doors, glass pivot doors, and commercial and restaurant glass doors for Las Vegas homes and businesses.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button asChild className="w-full">
+                  <Link to="/glass-company-las-vegas/custom-glass-doors" onClick={() => window.scrollTo(0, 0)}>Custom Glass &amp; Pivot Doors</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
           
           <div className="text-center mt-12">

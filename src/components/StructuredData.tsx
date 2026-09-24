@@ -5,7 +5,7 @@ const LOGO_URL = `${BASE_URL}/images/baja-glass-mirror-logo.webp`;
 const PHONE = '(702) 383-0779';
 const PHONE_E164 = '+17023830779';
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/Baja+Glass+%26+Mirror+LLC/@36.0977853,-115.1998091,17z';
-const PLACE_ID = 'ChIJq6r6ekbGyocQ_KDPoQYhGVI';
+const PLACE_ID = 'ChIJq6r6eofGyIAR_KDPoQYhGVI';
 
 // Accurate coordinates from Google Maps
 const GEO_COORDINATES = {

@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { Shield, Award, Clock, Users, CheckCircle, Star } from "lucide-react";
 
 const IntroSection = () => {
@@ -6,7 +7,7 @@ const IntroSection = () => {
     { value: "20+", label: "Years Experience", icon: Clock },
     { value: "1,000+", label: "Projects Completed", icon: CheckCircle },
     { value: "98%", label: "Customer Satisfaction", icon: Star },
-    { value: "5", label: "Star Average Rating", icon: Award },
+    { value: "4.7★", label: "Google Rating", icon: Award },
   ];
 
   return (
@@ -52,8 +53,8 @@ const IntroSection = () => {
               </p>
               <p className="text-lg leading-relaxed">
                 We use only <strong>tempered safety glass</strong>, <strong>premium hardware finishes</strong>, and 
-                <strong> professional-grade installation techniques</strong>. Our <strong>shower door replacement</strong> services 
-                handle everything from broken glass to hardware replacement. Experience the difference of working with 
+                <strong> professional-grade installation techniques</strong>. Our <strong><Link to="/shower-door-replacement-las-vegas" className="text-primary underline hover:text-primary/80">shower door replacement</Link></strong> services 
+                handle everything from broken glass panels to full door replacement. Experience the difference of working with 
                 <strong> Las Vegas's premier glass company</strong>—where quality, integrity, and customer satisfaction 
                 aren't just promises, they're our foundation.
               </p>

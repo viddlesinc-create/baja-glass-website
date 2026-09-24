@@ -15,7 +15,7 @@ interface GetDirectionsProps {
 const BUSINESS = {
   name: "Baja Glass & Mirror LLC",
   address: "4280 W Reno Ave Ste A, Las Vegas, NV 89118",
-  placeId: "ChIJq6r6ekbGyocQ_KDPoQYhGVI",
+  placeId: "ChIJq6r6eofGyIAR_KDPoQYhGVI",
 };
 
 const DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(BUSINESS.address)}&destination_place_id=${BUSINESS.placeId}`;

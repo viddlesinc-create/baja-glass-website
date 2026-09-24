@@ -6,8 +6,8 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
-    title: 'Custom Shower Doors Las Vegas | Baja Glass and Mirror',
-    description: 'Custom shower doors Las Vegas — frameless, sliding, and enclosures by Baja Glass and Mirror. Call (702) 383-0779.',
+    title: 'Custom Shower Doors & Installation Las Vegas | Baja Glass',
+    description: 'Custom shower doors & installation in Las Vegas — frameless, sliding & enclosures. Free in-home measure. 4.7★ on Google. Call (702) 383-0779.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
