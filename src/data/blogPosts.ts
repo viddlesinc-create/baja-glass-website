@@ -122,14 +122,14 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "choosing-right-door",
-    title: "How to Choose the Right Shower Door for Your Bathroom",
-    excerpt: "Expert guide to selecting the perfect shower door. Compare frameless vs framed, glass thickness options, hardware finishes, and space considerations.",
+    title: "How to Choose a Shower Door",
+    excerpt: "Five decisions in order: door style, glass thickness, glass clarity, protective coating and hardware finish, with a decision table and the price each choice adds.",
     category: "Buying Guides",
     featuredImage: "/images/corner-shower-enclosure-black-hardware.webp",
     datePublished: "2025-01-12",
-    dateModified: "2026-01-10",
+    dateModified: "2026-09-24",
     author: "Cliff Robinson",
-    readTime: "3 min read",
+    readTime: "6 min read",
     url: "/blog/choosing-right-door"
   },
   {

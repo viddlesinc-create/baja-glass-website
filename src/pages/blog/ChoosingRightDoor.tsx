@@ -2,21 +2,58 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ArticleByline from "@/components/ArticleByline";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Ruler, Frame, Palette, Home } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 const customEnclosure = "/images/custom-enclosure.jpg";
+
+const DATE_PUBLISHED = "2025-01-15";
+const DATE_MODIFIED = "2026-09-24";
+
+// Every price below comes from the published cost guide
+// (/blog/shower-door-installation-cost-las-vegas). Do not add figures that are not there.
+const decisions = [
+  { decision: "Door style", options: "Framed, semi-frameless or frameless; sliding, hinged or pivot", guide: "Framed $400–$800 · semi-frameless $800–$1,400 · frameless $1,200–$2,800" },
+  { decision: "Glass thickness", options: "3/8\" (standard) or 1/2\" (premium) tempered safety glass", guide: "1/2\" glass adds $400–$800" },
+  { decision: "Glass clarity", options: "Standard clear or low-iron ultra-clear", guide: "Low-iron adds $200–$500" },
+  { decision: "Protective coating", options: "None, or a hydrophobic coating such as ShowerGuard or EnduroShield", guide: "Coating adds $150–$300" },
+  { decision: "Hardware finish", options: "Polished chrome, brushed nickel, matte black or brass/gold", guide: "Chrome standard · nickel +$100–$150 · black +$150–$250 · brass/gold +$200–$300" },
+  { decision: "Budget", options: "Add the style range to any upgrades you choose", guide: "Custom enclosure $2,000–$4,500+ · steam enclosure $3,000–$6,000+" }
+];
+
+const faqs = [
+  {
+    question: "What is the most important decision when choosing a shower door?",
+    answer: "Door style. Framed, semi-frameless or frameless sets most of the price and the look, and it determines which glass thickness makes sense. Choose the style first, then glass, coating and hardware finish."
+  },
+  {
+    question: "Is 3/8\" or 1/2\" glass better for a shower door?",
+    answer: "3/8\" tempered glass is our standard and works for most doors. 1/2\" glass is the premium option; it feels heavier and more solid and adds $400–$800 to the project."
+  },
+  {
+    question: "Is low-iron glass worth it?",
+    answer: "Low-iron glass is ultra-clear, which matters most if you want the glass to disappear or you have light-colored tile. It adds $200–$500."
+  },
+  {
+    question: "Do I need a protective coating on my shower glass?",
+    answer: "A hydrophobic coating such as ShowerGuard or EnduroShield helps water bead off the glass and adds $150–$300. It is worth considering in Las Vegas because of the valley's hard water."
+  },
+  {
+    question: "How much does a new shower door cost?",
+    answer: "Framed doors run $400–$800, semi-frameless $800–$1,400 and frameless $1,200–$2,800. Custom enclosures start around $2,000 and steam enclosures around $3,000. Measurements and quotes are free."
+  }
+];
 
 const ChoosingRightDoor = () => {
   return (
     <>
-        <Helmet>
+      <Helmet>
         {/* Article Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": "How to Choose the Right Shower Door - Complete Guide",
-            "description": "A comprehensive guide to selecting the ideal shower door style, glass type, and hardware that matches your space and budget.",
+            "headline": "How to Choose a Shower Door",
+            "description": "Choose a shower door in five decisions: door style, glass thickness, glass clarity, protective coating and hardware finish, with the price each choice adds.",
             "author": {
               "@type": "Person",
               "@id": "https://bajaglass.com/authors/cliff-robinson#person",
@@ -27,8 +64,8 @@ const ChoosingRightDoor = () => {
               "@type": "Organization",
               "@id": "https://bajaglass.com/#localbusiness"
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2026-01-10",
+            "datePublished": DATE_PUBLISHED,
+            "dateModified": DATE_MODIFIED,
             "image": "https://bajaglass.com/images/custom-enclosure.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
@@ -36,28 +73,43 @@ const ChoosingRightDoor = () => {
             }
           })}
         </script>
+        {/* FAQPage Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
       </Helmet>
-      
+
       <article className="min-h-screen">
         {/* Header */}
         <header className="py-8 bg-background border-b">
           <div className="container mx-auto px-4">
             <Button variant="ghost" asChild className="mb-4">
-              <Link to="/resources" className="flex items-center gap-2">
+              <Link to="/blog" className="flex items-center gap-2">
                 <ArrowLeft className="h-4 w-4" />
-                Back to Resources
+                Back to Blog
               </Link>
             </Button>
             <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-              How to Choose the Perfect Shower Door for Your Bathroom
+              How to Choose a Shower Door
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
-              A comprehensive guide to selecting the ideal shower door style, glass type, and hardware that matches your space and budget.
+              To choose a shower door, decide five things in order: the door style (framed, semi-frameless or frameless, and how it opens), the glass thickness, the glass clarity, whether to add a protective coating, and the hardware finish. Style sets most of the budget; the other four are upgrades you add on top.
             </p>
             <ArticleByline
-              datePublished="2025-01-15"
-              dateModified="2026-01-10"
-              wordCount={591}
+              datePublished={DATE_PUBLISHED}
+              dateModified={DATE_MODIFIED}
+              wordCount={1180}
             />
           </div>
         </header>
@@ -65,277 +117,128 @@ const ChoosingRightDoor = () => {
         {/* Featured Image */}
         <section className="py-8">
           <div className="container mx-auto px-4">
-            <img 
+            <img
               src={customEnclosure}
-              alt="Beautiful custom shower enclosure showcasing various door options and glass types"
+              alt="Glass shower enclosure with a hinged glass door"
               className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
             />
           </div>
         </section>
 
-        {/* Opening Content */}
+        {/* Decision table */}
         <section className="py-8">
           <div className="container mx-auto px-4 max-w-4xl">
-            <div className="prose prose-lg max-w-none">
-              <p className="text-lg leading-relaxed mb-6">
-                <strong>Choosing the right shower door is one of the most important decisions in your bathroom renovation.</strong> 
-                The perfect door combines functionality, style, and durability while complementing your bathroom's design and meeting 
-                your practical needs. With numerous options available, this guide will help you navigate the decision-making process 
-                with confidence.
-              </p>
+            <h2 className="text-3xl font-bold mb-4">The Shower Door Decision Table</h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Use this table as a checklist. Work top to bottom, and write down your choice in each row before you request a quote. Prices are the published Las Vegas ranges from our{" "}
+              <Link to="/blog/shower-door-installation-cost-las-vegas" className="text-primary underline hover:text-primary/80">shower door installation cost guide</Link>.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b-2 border-border">
+                    <th className="py-3 pr-4 font-semibold">Decision</th>
+                    <th className="py-3 pr-4 font-semibold">Your options</th>
+                    <th className="py-3 font-semibold">Price guide</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {decisions.map((row) => (
+                    <tr key={row.decision} className="border-b border-border align-top">
+                      <td className="py-3 pr-4 font-medium">{row.decision}</td>
+                      <td className="py-3 pr-4 text-muted-foreground">{row.options}</td>
+                      <td className="py-3 text-muted-foreground">{row.guide}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
 
-        {/* Frameless vs Framed */}
+        {/* 1. Door style */}
+        <section className="py-12 bg-secondary/50">
+          <div className="container mx-auto px-4 max-w-4xl space-y-4 text-lg text-muted-foreground">
+            <h2 className="text-3xl font-bold text-foreground">1. Choose the Door Style</h2>
+            <p>
+              Door style is the decision that shapes everything else, so make it first. There are two parts to it: how much frame the door has, and how it opens.
+            </p>
+            <p>
+              <strong className="text-foreground">Frame.</strong> A framed door surrounds the glass with metal and is the most affordable option at $400–$800. A semi-frameless door keeps some metal support but drops most of the frame, at $800–$1,400. A frameless door uses heavier glass with minimal hardware for the most open look, at $1,200–$2,000 with 3/8" glass or $1,600–$2,800 with 1/2" glass. For a full side-by-side comparison of looks, cleaning and cost, read{" "}
+              <Link to="/blog/frameless-vs-semi-frameless-shower-doors" className="text-primary underline hover:text-primary/80">frameless vs. semi-frameless vs. framed shower doors</Link>.
+            </p>
+            <p>
+              <strong className="text-foreground">How it opens.</strong> Sliding doors run along the opening and do not swing into the room, which suits tub-and-shower combinations and tight bathrooms. Hinged doors swing open like a standard door and need clear floor space in front of the shower. Pivot doors turn on a pivot point at the top and bottom of the glass. If you want a larger layout, a custom enclosure ($2,000–$4,500+) or a steam enclosure ($3,000–$6,000+) combines the door with fixed panels built for your space.
+            </p>
+          </div>
+        </section>
+
+        {/* 2. Glass thickness */}
+        <section className="py-12">
+          <div className="container mx-auto px-4 max-w-4xl space-y-4 text-lg text-muted-foreground">
+            <h2 className="text-3xl font-bold text-foreground">2. Choose the Glass Thickness</h2>
+            <p>
+              Every door we install uses tempered safety glass. The choice is thickness: 3/8" is our standard and works for most doors, while 1/2" is the premium option. Thicker glass feels heavier and more solid when you open the door, and it is a common pairing with frameless designs. Moving from 3/8" to 1/2" glass adds $400–$800.
+            </p>
+          </div>
+        </section>
+
+        {/* 3. Glass clarity */}
+        <section className="py-12 bg-secondary/50">
+          <div className="container mx-auto px-4 max-w-4xl space-y-4 text-lg text-muted-foreground">
+            <h2 className="text-3xl font-bold text-foreground">3. Decide on Glass Clarity</h2>
+            <p>
+              Standard clear glass is what most showers use. Low-iron glass is an ultra-clear alternative that looks more transparent, especially at the edges and on thicker panels. It is worth considering if you want the glass to disappear or you are showcasing tile. Low-iron glass adds $200–$500.
+            </p>
+          </div>
+        </section>
+
+        {/* 4. Coating */}
+        <section className="py-12">
+          <div className="container mx-auto px-4 max-w-4xl space-y-4 text-lg text-muted-foreground">
+            <h2 className="text-3xl font-bold text-foreground">4. Decide Whether to Add a Protective Coating</h2>
+            <p>
+              A hydrophobic coating such as ShowerGuard or EnduroShield helps water bead and run off the glass instead of drying on it. In Las Vegas, where hard water leaves spots quickly, it is worth deciding on this when you order the door. A coating adds $150–$300.
+            </p>
+          </div>
+        </section>
+
+        {/* 5. Hardware */}
+        <section className="py-12 bg-secondary/50">
+          <div className="container mx-auto px-4 max-w-4xl space-y-4 text-lg text-muted-foreground">
+            <h2 className="text-3xl font-bold text-foreground">5. Pick a Hardware Finish</h2>
+            <p>
+              Match the hinges, handle and any other hardware on the door to your faucet and fixtures. Polished chrome is standard. Brushed nickel adds $100–$150, matte black adds $150–$250, and brass or gold adds $200–$300.
+            </p>
+          </div>
+        </section>
+
+        {/* 6. Budget */}
+        <section className="py-12">
+          <div className="container mx-auto px-4 max-w-4xl space-y-4 text-lg text-muted-foreground">
+            <h2 className="text-3xl font-bold text-foreground">6. Add It Up Against Your Budget</h2>
+            <p>
+              Start with the range for your door style, then add each upgrade you picked. For example, a frameless door with 3/8" glass ($1,200–$2,000) plus a hydrophobic coating ($150–$300) and matte black hardware ($150–$250) lands between $1,500 and $2,550. If the total is higher than you want, the upgrades are the easiest place to trim; the door style is the hardest to change later.
+            </p>
+            <p>
+              Published ranges are a guide. Your exact price depends on the measured opening, so every project gets a free in-home measurement and a written quote.
+            </p>
+          </div>
+        </section>
+
+        {/* FAQs */}
         <section className="py-12 bg-secondary/50">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
-              <Frame className="h-8 w-8 text-accent" />
-              Frameless vs. Framed vs. Semi-Frameless
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4">Frameless</h3>
-                  <div className="space-y-4">
-                    <p className="text-muted-foreground text-sm">Clean, modern aesthetic with unobstructed glass panels and minimal hardware.</p>
-                    <div>
-                      <h4 className="font-semibold mb-2">Pros:</h4>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Elegant, spa-like appearance</li>
-                        <li>• Easier to clean</li>
-                        <li>• Makes space appear larger</li>
-                        <li>• Timeless design</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Cons:</h4>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Higher cost</li>
-                        <li>• Requires thicker glass</li>
-                        <li>• Less water containment</li>
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4">Framed</h3>
-                  <div className="space-y-4">
-                    <p className="text-muted-foreground text-sm">Traditional design with metal frames around all glass edges for maximum stability.</p>
-                    <div>
-                      <h4 className="font-semibold mb-2">Pros:</h4>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Most affordable option</li>
-                        <li>• Excellent water containment</li>
-                        <li>• Wide range of finishes</li>
-                        <li>• Very stable and secure</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Cons:</h4>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• More cleaning required</li>
-                        <li>• Can appear dated</li>
-                        <li>• May obstruct view</li>
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4">Semi-Frameless</h3>
-                  <div className="space-y-4">
-                    <p className="text-muted-foreground text-sm">Hybrid design with framing around the perimeter but not around the door panel.</p>
-                    <div>
-                      <h4 className="font-semibold mb-2">Pros:</h4>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Balance of style and function</li>
-                        <li>• More affordable than frameless</li>
-                        <li>• Good water containment</li>
-                        <li>• Modern appearance</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Cons:</h4>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• More expensive than framed</li>
-                        <li>• Some frame cleaning required</li>
-                        <li>• Limited customization</li>
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Glass Thickness Options */}
-        <section className="py-12">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
-              <Ruler className="h-8 w-8 text-accent" />
-              Glass Thickness & Type Selection
-            </h2>
-            
-            <Card className="mb-8">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-6">Glass Thickness Guide</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h4 className="font-semibold mb-3">3/8" Glass (10mm)</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• Standard thickness for most applications</li>
-                      <li>• Suitable for framed and semi-frameless doors</li>
-                      <li>• Good balance of strength and cost</li>
-                      <li>• Adequate for doors up to 36" wide</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-3">1/2" Glass (12mm)</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• Premium thickness for frameless doors</li>
-                      <li>• Superior strength and stability</li>
-                      <li>• Luxurious feel and appearance</li>
-                      <li>• Required for doors over 36" wide</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-6">Glass Type Options</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h4 className="font-semibold mb-3">Clear Glass</h4>
-                    <p className="text-sm text-muted-foreground mb-3">Standard tempered glass with slight green tint on edges. Most popular and cost-effective choice.</p>
-                    <p className="text-xs text-muted-foreground"><strong>Best for:</strong> Budget-conscious projects, traditional bathrooms</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-3">Low-Iron Glass</h4>
-                    <p className="text-sm text-muted-foreground mb-3">Ultra-clear glass with minimal tint for maximum clarity and premium appearance.</p>
-                    <p className="text-xs text-muted-foreground"><strong>Best for:</strong> Luxury installations, modern designs</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-3">Frosted/Etched Glass</h4>
-                    <p className="text-sm text-muted-foreground mb-3">Provides privacy while maintaining light transmission. Available in various patterns.</p>
-                    <p className="text-xs text-muted-foreground"><strong>Best for:</strong> Privacy needs, decorative accents</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-3">Textured Glass</h4>
-                    <p className="text-sm text-muted-foreground mb-3">Various patterns like rain, bamboo, or geometric designs for visual interest.</p>
-                    <p className="text-xs text-muted-foreground"><strong>Best for:</strong> Unique designs, partial privacy</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Hardware Finishes */}
-        <section className="py-12 bg-secondary/50">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
-              <Palette className="h-8 w-8 text-accent" />
-              Hardware Finishes & Styles
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-4">Popular Finish Options</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-4 h-4 bg-charcoal rounded-full"></div>
-                      <span className="text-sm"><strong>Matte Black:</strong> Modern, versatile, hides fingerprints</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-4 h-4 bg-gradient-to-br from-gray-300 to-gray-100 rounded-full"></div>
-                      <span className="text-sm"><strong>Polished Chrome:</strong> Bright, timeless, reflects light</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-4 h-4 bg-gradient-to-br from-gray-400 to-gray-200 rounded-full"></div>
-                      <span className="text-sm"><strong>Brushed Nickel:</strong> Warm, textured, fingerprint resistant</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-4 h-4 bg-gradient-to-br from-yellow-600 to-yellow-400 rounded-full"></div>
-                      <span className="text-sm"><strong>Brass/Gold:</strong> Luxurious, bold, statement making</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-4">Hardware Style Considerations</h3>
-                  <ul className="space-y-3 text-sm text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-accent rounded-full mt-2"></span>
-                      <span><strong>Handle Style:</strong> Towel bars, pulls, or knobs to match your bathroom fixtures</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-accent rounded-full mt-2"></span>
-                      <span><strong>Hinge Type:</strong> Wall-mount or glass-to-glass for different opening directions</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-accent rounded-full mt-2"></span>
-                      <span><strong>Support Systems:</strong> Headers, stabilizing bars, or knee walls for structural integrity</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Space Considerations */}
-        <section className="py-12">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
-              <Home className="h-8 w-8 text-accent" />
-              Space & Layout Considerations
-            </h2>
-            
-            <div className="prose prose-lg max-w-none mb-8">
-              <p>
-                Your bathroom's layout, size, and existing features significantly impact which shower door options will work best. 
-                Consider these key factors before making your final decision.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-4">Opening Direction</h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>In-swing:</strong> Door opens into shower (saves bathroom space)</li>
-                    <li>• <strong>Out-swing:</strong> Door opens into bathroom (easier entry/exit)</li>
-                    <li>• <strong>Sliding:</strong> Panels slide along track (space-saving option)</li>
-                    <li>• <strong>Bi-fold:</strong> Folding doors for very tight spaces</li>
-                  </ul>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-4">Clearance Requirements</h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• Minimum 24" clearance for hinged doors</li>
-                    <li>• 6" minimum from toilet or vanity</li>
-                    <li>• Consider door swing radius</li>
-                    <li>• Account for towel bars and accessories</li>
-                  </ul>
-                </CardContent>
-              </Card>
+            <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              {faqs.map((faq) => (
+                <Card key={faq.question}>
+                  <CardContent className="p-6">
+                    <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
@@ -344,40 +247,19 @@ const ChoosingRightDoor = () => {
         <section className="py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 text-center max-w-4xl">
             <h2 className="text-3xl font-bold mb-6">
-              Ready to Choose Your Perfect Shower Door?
+              Get Help Choosing Your Shower Door
             </h2>
             <p className="text-xl mb-8 text-primary-foreground/80">
-              Our experts will help you select the ideal door style, glass type, and hardware to match your vision and budget.
+              Baja Glass &amp; Mirror has installed shower doors in Las Vegas since 2009. We will measure your shower, walk through each decision with you and give you a written quote, free. Call (702) 383-0779.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="glass" size="lg" asChild>
-                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get Free Consultation</Link>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Free In-Home Quote</Link>
               </Button>
               <Button variant="ghost" size="lg" asChild>
-                <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>View Our Gallery</Link>
+                <Link to="/blog/shower-door-installation-cost-las-vegas" onClick={() => window.scrollTo(0, 0)}>See the Cost Guide</Link>
               </Button>
             </div>
-          </div>
-        </section>
-
-        {/* Conclusion */}
-        <section className="py-12">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <Card>
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold mb-4">Make the Right Choice</h2>
-                <div className="prose prose-lg max-w-none">
-                  <p>
-                    Selecting the perfect shower door involves balancing style preferences, functional needs, and budget considerations. 
-                    Consider your bathroom's existing design, daily usage patterns, and long-term goals when making your decision.
-                  </p>
-                  <p>
-                    Remember that a quality shower door is an investment that will serve your family for decades. Take time to explore 
-                    options, ask questions, and work with experienced professionals who can guide you toward the best solution for your unique space.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </section>
       </article>

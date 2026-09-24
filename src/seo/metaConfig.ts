@@ -174,8 +174,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/blog/choosing-right-door': {
-    title: 'How to Choose a Shower Door | Las Vegas Buyer\'s Guide',
-    description: 'Frameless vs framed, glass thickness, hardware finishes and space limits, compared for Las Vegas bathrooms so you can pick the right shower door first time.',
+    title: 'How to Choose a Shower Door: Style, Glass, Hardware & Budget',
+    description: 'How to choose a shower door: style, glass thickness, low-iron clarity, coatings and hardware finish, with the price each choice adds. Free quotes in Las Vegas.',
     canonical: `${BASE_URL}/blog/choosing-right-door`,
     ogImage: DEFAULT_OG_IMAGE,
   },
