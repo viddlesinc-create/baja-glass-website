@@ -40,6 +40,7 @@ import CustomEnclosures from "./pages/CustomEnclosures";
 import SteamShowerEnclosures from "./pages/SteamShowerEnclosures";
 import ShowerEnclosuresLasVegas from "./pages/ShowerEnclosuresLasVegas";
 import ShowerDoorInstallationLasVegas from "./pages/ShowerDoorInstallationLasVegas";
+import ShowerDoorReplacementLasVegas from "./pages/ShowerDoorReplacementLasVegas";
 import Gallery from "./pages/Gallery";
 import AreasServed from "./pages/AreasServed";
 import About from "./pages/About";
@@ -49,6 +50,8 @@ import Sitemap from "./pages/Sitemap";
 import Reviews from "./pages/Reviews";
 import ResidentialGlassReplacement from "./pages/ResidentialGlassReplacement";
 import OfficeEnclosures from "./pages/OfficeEnclosures";
+import CustomGlassDoors from "./pages/CustomGlassDoors";
+import CustomMirrors from "./pages/CustomMirrors";
 import FAQ from "./pages/FAQ";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CliffRobinson from "./pages/authors/CliffRobinson";
@@ -123,6 +126,8 @@ function AppSSR() {
             <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
             <Route path="/glass-company-las-vegas/residential-glass-replacement" element={<ResidentialGlassReplacement />} />
             <Route path="/glass-company-las-vegas/office-enclosures" element={<OfficeEnclosures />} />
+            <Route path="/glass-company-las-vegas/custom-glass-doors" element={<CustomGlassDoors />} />
+            <Route path="/glass-company-las-vegas/custom-mirrors" element={<CustomMirrors />} />
             <Route path="/shower-doors-las-vegas" element={<ShowerDoorsHub />} />
             <Route path="/shower-doors-las-vegas/frameless" element={<FramelessShowerDoors />} />
             <Route path="/shower-doors-las-vegas/semi-frameless-framed" element={<SemiFramelessShowerDoors />} />
@@ -145,6 +150,7 @@ function AppSSR() {
             <Route path="/authors/cliff-robinson" element={<CliffRobinson />} />
             <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
             <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
+            <Route path="/shower-door-replacement-las-vegas" element={<ShowerDoorReplacementLasVegas />} />
             <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />
             <Route path="/shower-doors-summerlin-nv" element={<ShowerDoorsSummerlin />} />
             <Route path="/shower-doors-paradise-nv" element={<ShowerDoorsParadise />} />

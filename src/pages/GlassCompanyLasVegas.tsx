@@ -18,9 +18,10 @@ const GlassCompanyLasVegas = () => {
       bullets: [
         "Frameless, semi‑frameless, and framed options",
         "Inline, corner, neo‑angle, alcove, steam",
-        "Replacements: panels, rollers, hinges, seals, upgrades"
+        "Replacement: cracked glass panels and full doors"
       ],
       href: "/shower-doors-las-vegas",
+      id: "shower-doors",
       image: "/images/office-glass-enclosures.webp"
     },
     {
@@ -32,6 +33,7 @@ const GlassCompanyLasVegas = () => {
         "Safety backing and professional mounting"
       ],
       href: "/glass-company-las-vegas/office-enclosures",
+      id: "office-enclosures",
       image: "/images/modern-office-glass-partitions-conference-room.webp"
     },
     {
@@ -43,7 +45,32 @@ const GlassCompanyLasVegas = () => {
         "Patio door glass and emergency services"
       ],
       href: "/glass-company-las-vegas/residential-glass-replacement",
+      id: "residential-glass-replacement",
       image: "/images/custom-bathroom-mirror-polished-edges.webp"
+    },
+    {
+      title: "Custom Mirrors",
+      description: "Mirrors custom-cut to your measured space and installed across the Las Vegas Valley, plus replacement of old or damaged mirrors.",
+      bullets: [
+        "Cut to your measured space",
+        "Mirror replacement",
+        "Free measurements and quotes"
+      ],
+      href: "/glass-company-las-vegas/custom-mirrors",
+      id: "custom-mirrors",
+      image: "/images/custom-bathroom-mirror-polished-edges.webp"
+    },
+    {
+      title: "Custom Glass Doors",
+      description: "Custom glass doors and glass pivot doors for homes, plus commercial and restaurant glass doors for Las Vegas businesses.",
+      bullets: [
+        "Custom, luxury and interior glass doors",
+        "Glass pivot doors",
+        "Restaurant and commercial glass doors"
+      ],
+      href: "/glass-company-las-vegas/custom-glass-doors",
+      id: "custom-glass-doors",
+      image: "/images/glass-company-commercial-residential-services.webp"
     }
   ];
 
@@ -169,7 +196,7 @@ const GlassCompanyLasVegas = () => {
     },
     {
       question: "Do you handle replacements and upgrades?",
-      answer: "Yes, we replace broken panels, upgrade hardware, swap out rollers/hinges, and handle all types of shower glass and office glass replacements."
+      answer: "Yes. We replace broken or cracked shower glass panels and complete shower doors, and we handle residential and office glass replacement. We do not offer repairs."
     },
     {
       question: "What areas do you serve?",
@@ -332,7 +359,7 @@ const GlassCompanyLasVegas = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {services.map((service, index) => (
-              <div key={service.title} id={service.title === "Shower Doors & Enclosures" ? "shower-doors" : "office-enclosures"}>
+              <div key={service.title} id={service.id}>
                 <Card className="h-full border-0 shadow-lg hover:shadow-2xl transition-all duration-500">
                   <div className="aspect-video overflow-hidden rounded-t-lg">
                     <img 

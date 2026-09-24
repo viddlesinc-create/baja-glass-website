@@ -40,6 +40,8 @@ interface LocationPageProps {
   citySpecificFaqs?: Array<{
     question: string;
     answer: string;
+    /** Optional internal link rendered after the visible answer (not included in FAQ schema). */
+    link?: { href: string; label: string };
   }>;
 }
 
@@ -344,7 +346,15 @@ const LocationPageTemplate = ({
                 {citySpecificFaqs.map((faq, index) => (
                   <div key={index} className="bg-background p-6 rounded-lg">
                     <h3 className="font-semibold mb-3">{faq.question}</h3>
-                    <p className="text-muted-foreground">{faq.answer}</p>
+                    <p className="text-muted-foreground">
+                      {faq.answer}
+                      {faq.link && (
+                        <>
+                          {" "}
+                          <Link to={faq.link.href} className="text-primary underline hover:text-primary/80">{faq.link.label}</Link>
+                        </>
+                      )}
+                    </p>
                   </div>
                 ))}
               </div>

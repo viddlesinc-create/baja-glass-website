@@ -7,13 +7,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bajaglass.com/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bajaglass.com/glass-company-las-vegas</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -26,6 +26,18 @@
   <url>
     <loc>https://bajaglass.com/glass-company-las-vegas/office-enclosures</loc>
     <lastmod>2026-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bajaglass.com/glass-company-las-vegas/custom-glass-doors</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bajaglass.com/glass-company-las-vegas/custom-mirrors</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -91,7 +103,7 @@
   </url>
   <url>
     <loc>https://bajaglass.com/about</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -115,7 +127,7 @@
   </url>
   <url>
     <loc>https://bajaglass.com/reviews</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -145,7 +157,7 @@
   </url>
   <url>
     <loc>https://bajaglass.com/shower-doors-henderson-nv</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -199,13 +211,13 @@
   </url>
   <url>
     <loc>https://bajaglass.com/blog/choosing-right-door</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bajaglass.com/blog/installation-process</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -217,7 +229,7 @@
   </url>
   <url>
     <loc>https://bajaglass.com/blog/shower-door-installation-cost-las-vegas</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -266,6 +278,12 @@
   <url>
     <loc>https://bajaglass.com/shower-door-installation-las-vegas</loc>
     <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bajaglass.com/shower-door-replacement-las-vegas</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

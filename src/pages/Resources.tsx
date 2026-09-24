@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
-import { BookOpen, HelpCircle, Wrench, Shield } from "lucide-react";
+import { BookOpen, HelpCircle, Wrench, Shield, Square, DoorOpen } from "lucide-react";
 const clearGlass = "/images/clear-glass.jpg";
 const lowIronGlass = "/images/low-iron-glass.jpg";
 const frostedGlass = "/images/frosted-glass.jpg";
@@ -412,6 +412,50 @@ const Resources = () => {
                 </ul>
                 <Button asChild className="w-full">
                   <Link to="/glass-company-las-vegas/office-enclosures" onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Square className="h-5 w-5" />
+                  Custom Mirrors
+                </CardTitle>
+                <CardDescription>
+                  Mirrors custom-cut to your measured space and installed across the Las Vegas Valley.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Custom-cut mirrors</li>
+                  <li>• Mirror replacement</li>
+                  <li>• Free measurements and quotes</li>
+                </ul>
+                <Button asChild className="w-full">
+                  <Link to="/glass-company-las-vegas/custom-mirrors" onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <DoorOpen className="h-5 w-5" />
+                  Custom Glass Doors
+                </CardTitle>
+                <CardDescription>
+                  Custom glass doors and pivot doors for homes, plus commercial and restaurant glass doors.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Glass pivot doors</li>
+                  <li>• Luxury and interior glass doors</li>
+                  <li>• Restaurant and commercial glass doors</li>
+                </ul>
+                <Button asChild className="w-full">
+                  <Link to="/glass-company-las-vegas/custom-glass-doors" onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
                 </Button>
               </CardContent>
             </Card>

@@ -14,7 +14,7 @@ interface GoogleMapProps {
 const BUSINESS = {
   name: "Baja Glass & Mirror LLC",
   address: "4280 W Reno Ave Ste A, Las Vegas, NV 89118",
-  placeId: "ChIJq6r6ekbGyocQ_KDPoQYhGVI",
+  placeId: "ChIJq6r6eofGyIAR_KDPoQYhGVI",
   coordinates: {
     lat: 36.097781,
     lng: -115.197234

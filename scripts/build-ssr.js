@@ -56,7 +56,7 @@ try {
 
   // Step 6: Post-build verification
   console.log('\n🔍 Verifying prerendered output...');
-  const HOMEPAGE_TITLE = 'Custom Shower Doors Las Vegas | Baja Glass and Mirror';
+  const HOMEPAGE_TITLE = 'Custom Shower Doors & Installation Las Vegas | Baja Glass';
   const verifyRoutes = [
     { path: 'about/index.html', expectTitleContains: 'About' },
     { path: 'contact/index.html', expectTitleContains: 'Contact' },
