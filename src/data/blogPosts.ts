@@ -134,14 +134,14 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "installation-process",
-    title: "Shower Door Installation Process: What to Expect",
-    excerpt: "Complete guide to shower door installation from consultation to final inspection. Learn preparation steps, timeline, and what to expect during professional installation.",
+    title: "How Shower Door Installation Works, Step by Step",
+    excerpt: "The five steps from in-home laser measurement to final walkthrough, what homeowners should prepare, and how long each stage typically takes.",
     category: "Installation",
     featuredImage: "/images/custom-frameless-shower-enclosure-sliding-doors.webp",
     datePublished: "2025-01-05",
-    dateModified: "2026-01-10",
+    dateModified: "2026-09-24",
     author: "Cliff Robinson",
-    readTime: "3 min read",
+    readTime: "5 min read",
     url: "/blog/installation-process"
   },
   {

@@ -180,8 +180,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/blog/installation-process': {
-    title: 'Shower Door Installation Process | Step-by-Step Guide',
-    description: 'What happens during a shower door installation, from measuring to final inspection: preparation, timeline and what to expect on the day, from our installers.',
+    title: 'How Shower Door Installation Works: Measure to Install',
+    description: 'How shower door installation works: in-home laser measurement, design and quote, glass fabrication in 2–5 business days, and a typical single-day install.',
     canonical: `${BASE_URL}/blog/installation-process`,
     ogImage: DEFAULT_OG_IMAGE,
   },
