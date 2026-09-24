@@ -281,6 +281,12 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/shower-door-installation-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
+  '/shower-door-replacement-las-vegas': {
+    title: 'Shower Door Replacement Las Vegas & Henderson | Baja Glass',
+    description: 'Full shower door replacement or cracked glass panel replacement across Las Vegas & Henderson. Free in-home measure. Call (702) 383-0779.',
+    canonical: `${BASE_URL}/shower-door-replacement-las-vegas`,
+    ogImage: `${BASE_URL}/images/custom-frameless-shower-door-installation.webp`,
+  },
 };
 
 export const defaultSEO: SEOMeta = {
