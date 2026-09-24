@@ -109,7 +109,7 @@ const ChoosingRightDoor = () => {
             <ArticleByline
               datePublished={DATE_PUBLISHED}
               dateModified={DATE_MODIFIED}
-              wordCount={1180}
+              wordCount={1050}
             />
           </div>
         </header>
@@ -223,6 +223,19 @@ const ChoosingRightDoor = () => {
             <p>
               Published ranges are a guide. Your exact price depends on the measured opening, so every project gets a free in-home measurement and a written quote.
             </p>
+          </div>
+        </section>
+
+        {/* Common mistakes */}
+        <section className="py-12 bg-secondary/50">
+          <div className="container mx-auto px-4 max-w-4xl space-y-4 text-lg text-muted-foreground">
+            <h2 className="text-3xl font-bold text-foreground">Common Mistakes to Avoid</h2>
+            <ul className="space-y-3 list-disc pl-6">
+              <li><strong className="text-foreground">Choosing hardware before style.</strong> The finish is the easiest thing to change on paper and the least important to the budget. Settle the door style first.</li>
+              <li><strong className="text-foreground">Ignoring how the door opens.</strong> A hinged or pivot door needs clear floor space to swing. In a tight bathroom, a sliding door may be the better fit.</li>
+              <li><strong className="text-foreground">Ordering from your own measurements.</strong> Glass doors are cut to the opening, and tempered glass cannot be trimmed afterward. An on-site laser measurement avoids a door that does not fit.</li>
+              <li><strong className="text-foreground">Skipping the coating decision.</strong> A hydrophobic coating is simplest to add when the door is ordered, so decide on it up front.</li>
+            </ul>
           </div>
         </section>
 

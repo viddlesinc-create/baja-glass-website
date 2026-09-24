@@ -124,7 +124,7 @@ const InstallationProcess = () => {
             <ArticleByline
               datePublished={DATE_PUBLISHED}
               dateModified={DATE_MODIFIED}
-              wordCount={900}
+              wordCount={640}
             />
           </div>
         </header>

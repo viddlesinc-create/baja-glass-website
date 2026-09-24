@@ -169,6 +169,32 @@ const CustomMirrors = () => {
         </div>
       </section>
 
+      {/* Planning */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold mb-6">Planning a Custom Mirror</h2>
+          <p className="text-lg text-muted-foreground mb-6">
+            A few decisions before the measurement make the visit faster and the quote more accurate:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { title: "Where it will hang", detail: "Note the wall, and anything the mirror has to clear: light fixtures, outlets, switches, cabinets or trim." },
+              { title: "How big it should be", detail: "Decide whether the mirror should fill the wall edge to edge or sit within it. We measure the final size on site." },
+              { title: "What it replaces", detail: "If an old mirror is coming down, mention it when you book so the replacement can be planned with the new mirror." },
+              { title: "Your timeline", detail: "If the mirror is part of a remodel, tell us when the wall will be finished so the measurement happens at the right time." }
+            ].map((item) => (
+              <div key={item.title} className="bg-secondary/50 p-6 rounded-lg">
+                <h3 className="font-semibold mb-2">{item.title}</h3>
+                <p className="text-muted-foreground">{item.detail}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-lg text-muted-foreground mt-6">
+            Measuring on site matters because walls are rarely perfectly square. A mirror cut to the measured space fits the room it was made for.
+          </p>
+        </div>
+      </section>
+
       {/* Process */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">

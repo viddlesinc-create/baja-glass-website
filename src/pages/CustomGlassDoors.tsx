@@ -213,6 +213,29 @@ const CustomGlassDoors = () => {
         </div>
       </section>
 
+      {/* Planning */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold mb-6">Planning a Glass Door Project</h2>
+          <p className="text-lg text-muted-foreground mb-6">
+            Every custom glass door starts with the opening. These details help us give you an accurate quote:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { title: "Where the door goes", detail: "An entry, an interior doorway between rooms, or a restaurant or storefront opening. Interior and exterior doors are planned differently." },
+              { title: "How it should open", detail: "A pivot door turns on a pivot point for a wide, clean opening; other doors swing on hinges. Tell us which look you have in mind." },
+              { title: "New or replacement", detail: "Let us know whether the opening is new construction or an existing door being replaced, so the measurement covers what is there today." },
+              { title: "Business requirements", detail: "For commercial and restaurant doors, share your schedule and any building or landlord requirements before we quote." }
+            ].map((item) => (
+              <div key={item.title} className="bg-secondary/50 p-6 rounded-lg">
+                <h3 className="font-semibold mb-2">{item.title}</h3>
+                <p className="text-muted-foreground">{item.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section className="py-16 bg-secondary/50">
         <div className="container mx-auto px-4 max-w-4xl">
