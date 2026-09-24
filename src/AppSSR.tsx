@@ -50,6 +50,7 @@ import Sitemap from "./pages/Sitemap";
 import Reviews from "./pages/Reviews";
 import ResidentialGlassReplacement from "./pages/ResidentialGlassReplacement";
 import OfficeEnclosures from "./pages/OfficeEnclosures";
+import CustomGlassDoors from "./pages/CustomGlassDoors";
 import CustomMirrors from "./pages/CustomMirrors";
 import FAQ from "./pages/FAQ";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -125,6 +126,7 @@ function AppSSR() {
             <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
             <Route path="/glass-company-las-vegas/residential-glass-replacement" element={<ResidentialGlassReplacement />} />
             <Route path="/glass-company-las-vegas/office-enclosures" element={<OfficeEnclosures />} />
+            <Route path="/glass-company-las-vegas/custom-glass-doors" element={<CustomGlassDoors />} />
             <Route path="/glass-company-las-vegas/custom-mirrors" element={<CustomMirrors />} />
             <Route path="/shower-doors-las-vegas" element={<ShowerDoorsHub />} />
             <Route path="/shower-doors-las-vegas/frameless" element={<FramelessShowerDoors />} />
