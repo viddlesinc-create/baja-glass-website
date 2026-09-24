@@ -200,8 +200,8 @@ const ShowerDoorReplacementLasVegas = () => {
               src="/images/damaged-shower-glass.jpg"
               alt="Cracked tempered glass on a shower door panel"
               className="rounded-lg shadow-lg w-full h-auto object-cover"
-              width="800"
-              height="600"
+              width="1920"
+              height="1080"
               loading="lazy"
             />
           </div>
@@ -216,8 +216,8 @@ const ShowerDoorReplacementLasVegas = () => {
               src="/images/framed-shower-before-upgrade.webp"
               alt="Framed shower door with metal frame before an upgrade"
               className="rounded-lg shadow-lg w-full h-auto object-cover order-2 md:order-1"
-              width="800"
-              height="600"
+              width="1126"
+              height="1662"
               loading="lazy"
             />
             <div className="order-1 md:order-2">
