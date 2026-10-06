@@ -71,3 +71,29 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Tracking
+
+GTM (`GTM-PJK7SWRX`, loaded in `index.html`) owns GA4 and Google Ads. Its dataLayer events are pushed from `src/lib/analytics.ts` and `src/hooks/usePageTracking.ts`: `page_view`, `generate_lead`, `lp_form_submission`, `phone_call`, `lp_phone_call`, `cta_click`. Meta tracking below is additive and does not change any of them.
+
+### Meta Pixel + Conversions API
+
+| Event | Browser (Pixel) | Server (CAPI) | Fired from |
+|---|---|---|---|
+| `PageView` | ✅ | — | `initMetaPixel()` on load; `useMetaPageView()` on each SPA pathname change (Pixel's own pushState tracking is disabled) |
+| `Lead` | ✅ | ✅ | `trackMetaLead()` in each lead form's success branch, only after Formspree returns `ok` |
+| `Contact` | ✅ | ✅ | Any `tel:` link click, via one delegated listener in `initMetaPixel()` |
+
+- **Dedup:** browser `eventID` and server `event_id` are the same `crypto.randomUUID()` per event.
+- **Server:** `netlify/functions/meta-capi.mts` (`POST /.netlify/functions/meta-capi`). Allows only `Lead`/`Contact` (else 400) from `https://bajaglass.com` / `https://www.bajaglass.com` (else 403; localhost only under `netlify dev`). Normalizes and SHA-256 hashes email, phone, first/last name, zip and city server-side; IP and user agent are sent unhashed. Always returns 202 once validated, so a Meta outage never breaks a form.
+- **Phone clicks are `Contact`, never `Lead`.**
+
+| Env var | Where | Notes |
+|---|---|---|
+| `VITE_META_PIXEL_ID` | Netlify (build) | Public. Unset → Pixel fully disabled |
+| `META_PIXEL_ID` | Netlify (functions) | Same value, server copy |
+| `META_CAPI_ACCESS_TOKEN` | Netlify (functions) | **Secret. Never `VITE_`-prefixed** |
+| `META_GRAPH_VERSION` | Netlify (functions) | e.g. `v26.0` — confirm on the Graph API changelog |
+| `META_TEST_EVENT_CODE` | Netlify (functions) | Only while testing; remove and redeploy after |
+
+If GTM also contains a Meta Pixel tag, pause it — otherwise PageView and Lead double-count.

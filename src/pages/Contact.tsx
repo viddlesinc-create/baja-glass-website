@@ -10,6 +10,7 @@ import { MapPin, Phone, Clock, Mail, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
 import { trackFormSubmission, trackHendersonConversion } from "@/lib/analytics";
+import { trackMetaLead } from "@/lib/metaPixel";
 import PhoneNumber from "@/components/PhoneNumber";
 import GoogleMap from "@/components/GoogleMap";
 import GetDirections from "@/components/GetDirections";
@@ -76,6 +77,14 @@ const Contact = () => {
       if (formData.city.toLowerCase().includes('henderson')) {
         trackHendersonConversion('form_submit');
       }
+
+      trackMetaLead({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        city: formData.city,
+        service: formData.projectType,
+      });
 
       toast({
         title: "Quote Request Submitted!",
