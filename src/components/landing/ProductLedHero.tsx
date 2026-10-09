@@ -77,7 +77,7 @@ export const ProductLedHero = ({ onQuoteClick }: ProductLedHeroProps) => {
           <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Shield className="h-4 w-4 text-white" aria-hidden="true" />
-              <span className="text-white text-sm font-medium">Licensed &amp; Insured Since 1999</span>
+              <span className="text-white text-sm font-medium">Licensed &amp; Insured · Local Since 2009</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Sparkles className="h-4 w-4 text-white" aria-hidden="true" />
