@@ -357,14 +357,14 @@ const ShowerDoorInstallationNearMeLanding = () => {
               <div className="flex items-center gap-2">
                 <Stars />
                 <span className="font-semibold">Since 2009</span>
-                <span className="text-white/50">· 27 Reviews</span>
+                <span className="text-white/50">· 4.7★ on Google</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>Bonded &amp; Insured</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
-              <span>Owner-Operated Since 1999</span>
+              <span>Local Since 2009</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span className="text-white/60 text-xs">Serving Las Vegas &amp; Henderson</span>
             </div>
@@ -619,7 +619,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-3 mb-10">
-                  {["C8 Licensed", "Bonded & Insured", "Owner-Operated Since 1999", "First Responder Owned"].map((badge) => (
+                  {["C8 Licensed", "Bonded & Insured", "Serving Las Vegas Since 2009", "First Responder Owned"].map((badge) => (
                     <span key={badge} className="bg-white/10 border border-white/20 text-white/80 text-xs font-medium px-3 py-1.5 rounded-full">
                       {badge}
                     </span>
