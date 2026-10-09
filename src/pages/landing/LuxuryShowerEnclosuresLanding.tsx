@@ -356,7 +356,7 @@ const LuxuryShowerEnclosuresLanding = () => {
               <div className="flex items-center gap-2">
                 <Stars />
                 <span className="font-semibold">Since 2009</span>
-                <span className="text-white/50">· 27 Reviews</span>
+                <span className="text-white/50">· 4.7★ on Google</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>

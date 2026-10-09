@@ -20,7 +20,7 @@ const TrustBar = () => (
   <section className="bg-charcoal text-white py-4 border-y border-white/10">
     <div className="container mx-auto px-4">
       <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm md:text-base text-white/90 text-center">
-        <li className="font-medium">Licensed &amp; Insured Since 1999</li>
+        <li className="font-medium">Licensed &amp; Insured · Local Since 2009</li>
         <li className="hidden md:inline text-white/30">·</li>
         <li className="font-medium">First Responder Owned</li>
         <li className="hidden md:inline text-white/30">·</li>
@@ -244,7 +244,7 @@ const FramelessShowerLanding = () => {
         <title>Frameless Shower Doors — Custom Built &amp; Installed | Baja Glass</title>
         <meta
           name="description"
-          content="Heavy-glass frameless shower doors, custom-fabricated and professionally installed. Free in-home measurement. Licensed since 1999. Call (702) 383-0779."
+          content="Heavy-glass frameless shower doors, custom-fabricated and professionally installed. Free in-home measurement. Serving Las Vegas since 2009. Call (702) 383-0779."
         />
         <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://bajaglass.com/lp/frameless-shower-doors" />
