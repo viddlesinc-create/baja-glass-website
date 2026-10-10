@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import OptimizedImage from "@/components/OptimizedImage";
 import HeroImagePreload from "@/components/HeroImagePreload";
 import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
+import { trackMetaLead } from "@/lib/metaPixel";
 
 const PortfolioLightbox = lazy(() => import("@/components/landing/PortfolioLightbox"));
 
@@ -141,13 +142,21 @@ function ConsultationForm({ id }: { id: string }) {
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
-      await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
+      const response = await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
       fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" }
       }).catch(() => {});
-      if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
+      // Meta Lead only when Formspree actually accepted the submit.
+      if (response.ok) {
+        trackMetaLead({
+          name: data.get("name"),
+          email: data.get("email"),
+          phone: data.get("phone"),
+          zip: data.get("zip"),
+        });
+      }
       setSubmitted(true);
     } catch {
       // silent — still show success to not block leads

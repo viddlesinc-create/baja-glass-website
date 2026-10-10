@@ -20,6 +20,7 @@ import HeroImagePreload from "@/components/HeroImagePreload";
 import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
 const PortfolioLightbox = lazy(() => import("@/components/landing/PortfolioLightbox"));
 import { trackFormSubmission, trackPhoneCall } from "@/lib/analytics";
+import { trackMetaLead } from "@/lib/metaPixel";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -182,7 +183,13 @@ function ConsultForm({ id }: { id: string }) {
           body: data,
           headers: { Accept: "application/json" }
         }).catch(() => {});
-        if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
+        trackMetaLead({
+          name: data.get("name"),
+          email: data.get("email"),
+          phone: data.get("phone"),
+          zip: data.get("zip"),
+          service: data.get("project_type"),
+        });
         trackFormSubmission({ source: "lp_steam_shower_installation_lv", projectType: "steam_shower" });
       }
       setSubmitted(true);

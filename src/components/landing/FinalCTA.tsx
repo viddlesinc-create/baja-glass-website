@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, MapPin, Star, Shield, Clock } from "lucide-react";
 import { trackFormSubmission, trackPhoneCall } from "@/lib/analytics";
+import { trackMetaLead } from "@/lib/metaPixel";
 import { useToast } from "@/hooks/use-toast";
 import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
@@ -101,7 +102,13 @@ export const FinalCTA = ({
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
         }).catch(() => {});
-        if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
+        trackMetaLead({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          city: formData.city,
+          service: formData.projectType,
+        });
         setSubmitted(true);
         trackFormSubmission({ projectType: formData.projectType, source: "landing_final_cta", city: formData.city });
       } else {
