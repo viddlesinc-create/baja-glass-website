@@ -6,8 +6,8 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
-    title: 'Custom Shower Doors Las Vegas | Baja Glass and Mirror',
-    description: 'Custom shower doors Las Vegas — frameless, sliding, and enclosures by Baja Glass and Mirror. Call (702) 383-0779.',
+    title: 'Custom Shower Doors & Installation Las Vegas | Baja Glass',
+    description: 'Custom shower doors & installation in Las Vegas — frameless, sliding & enclosures. Free in-home measure. 4.7★ on Google. Call (702) 383-0779.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -109,6 +109,18 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/glass-company-las-vegas/office-enclosures`,
     ogImage: DEFAULT_OG_IMAGE,
   },
+  '/glass-company-las-vegas/custom-glass-doors': {
+    title: 'Custom Glass & Pivot Doors Las Vegas | Baja Glass & Mirror',
+    description: 'Custom glass doors, glass pivot doors and commercial glass doors for Las Vegas homes and businesses. Licensed, bonded & insured since 2009. (702) 383-0779',
+    canonical: `${BASE_URL}/glass-company-las-vegas/custom-glass-doors`,
+    ogImage: `${BASE_URL}/images/glass-company-commercial-residential-services.webp`,
+  },
+  '/glass-company-las-vegas/custom-mirrors': {
+    title: 'Custom Mirrors Las Vegas | Measured & Installed | Baja Glass',
+    description: 'Custom-cut mirrors measured and installed across the Las Vegas Valley by Baja Glass & Mirror — serving Las Vegas since 2009. Free quote: (702) 383-0779',
+    canonical: `${BASE_URL}/glass-company-las-vegas/custom-mirrors`,
+    ogImage: `${BASE_URL}/images/custom-bathroom-mirror-polished-edges.webp`,
+  },
 
   // ===== Location Pages =====
   '/shower-doors-henderson-nv': {
@@ -162,14 +174,14 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/blog/choosing-right-door': {
-    title: 'How to Choose a Shower Door | Las Vegas Buyer\'s Guide',
-    description: 'Frameless vs framed, glass thickness, hardware finishes and space limits, compared for Las Vegas bathrooms so you can pick the right shower door first time.',
+    title: 'How to Choose a Shower Door: Style, Glass, Hardware & Budget',
+    description: 'How to choose a shower door: style, glass thickness, low-iron clarity, coatings and hardware finish, with the price each choice adds. Free quotes in Las Vegas.',
     canonical: `${BASE_URL}/blog/choosing-right-door`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/blog/installation-process': {
-    title: 'Shower Door Installation Process | Step-by-Step Guide',
-    description: 'What happens during a shower door installation, from measuring to final inspection: preparation, timeline and what to expect on the day, from our installers.',
+    title: 'How Shower Door Installation Works: Measure to Install',
+    description: 'How shower door installation works: in-home laser measurement, design and quote, glass fabrication in 2–5 business days, and a typical single-day install.',
     canonical: `${BASE_URL}/blog/installation-process`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -180,8 +192,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/blog/shower-door-installation-cost-las-vegas': {
-    title: 'Frameless Shower Door Cost Las Vegas | 2026 Price Guide',
-    description: 'Frameless shower door cost Las Vegas — 2026 ranges: frameless $1,200–$2,800, framed from $400, semi-frameless from $800. Free quote (702) 383-0779.',
+    title: 'Shower Door Installation Cost Las Vegas: 2026 Prices by Type',
+    description: 'Shower door installation cost in Las Vegas for 2026: framed $400–$800, semi-frameless $800–$1,400, frameless $1,200–$2,800. Free quote (702) 383-0779.',
     canonical: `${BASE_URL}/blog/shower-door-installation-cost-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -280,6 +292,12 @@ export const seoConfig: Record<string, SEOMeta> = {
     description: "Professional shower door installation in Las Vegas, Henderson & Summerlin. Custom frameless glass, installed in one visit. Free measurement. (702) 383-0779.",
     canonical: `${BASE_URL}/shower-door-installation-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
+  },
+  '/shower-door-replacement-las-vegas': {
+    title: 'Shower Door Replacement Las Vegas & Henderson | Baja Glass',
+    description: 'Full shower door replacement or cracked glass panel replacement across Las Vegas & Henderson. Free in-home measure. Call (702) 383-0779.',
+    canonical: `${BASE_URL}/shower-door-replacement-las-vegas`,
+    ogImage: `${BASE_URL}/images/custom-frameless-shower-door-installation.webp`,
   },
 };
 

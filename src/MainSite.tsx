@@ -36,12 +36,15 @@ const Sitemap = lazy(() => import("./pages/Sitemap"));
 const Reviews = lazy(() => import("./pages/Reviews"));
 const ResidentialGlassReplacement = lazy(() => import("./pages/ResidentialGlassReplacement"));
 const OfficeEnclosures = lazy(() => import("./pages/OfficeEnclosures"));
+const CustomGlassDoors = lazy(() => import("./pages/CustomGlassDoors"));
+const CustomMirrors = lazy(() => import("./pages/CustomMirrors"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const CliffRobinson = lazy(() => import("./pages/authors/CliffRobinson"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 
 const ShowerDoorInstallationLasVegas = lazy(() => import("./pages/ShowerDoorInstallationLasVegas"));
+const ShowerDoorReplacementLasVegas = lazy(() => import("./pages/ShowerDoorReplacementLasVegas"));
 
 // Location pages
 const ShowerDoorsHenderson = lazy(() => import("./pages/locations/ShowerDoorsHenderson"));
@@ -89,6 +92,8 @@ const MainSite = () => (
             <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
             <Route path="/glass-company-las-vegas/residential-glass-replacement" element={<ResidentialGlassReplacement />} />
             <Route path="/glass-company-las-vegas/office-enclosures" element={<OfficeEnclosures />} />
+            <Route path="/glass-company-las-vegas/custom-glass-doors" element={<CustomGlassDoors />} />
+            <Route path="/glass-company-las-vegas/custom-mirrors" element={<CustomMirrors />} />
             <Route path="/shower-doors-las-vegas" element={<ShowerDoorsHub />} />
             <Route path="/shower-doors-las-vegas/frameless" element={<FramelessShowerDoors />} />
             <Route path="/shower-doors-las-vegas/semi-frameless-framed" element={<SemiFramelessShowerDoors />} />
@@ -110,7 +115,7 @@ const MainSite = () => (
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/authors/cliff-robinson" element={<CliffRobinson />} />
             <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
-            <Route path="/shower-door-replacement-las-vegas" element={<RedirectComponent to="/shower-door-installation-las-vegas" />} />
+            <Route path="/shower-door-replacement-las-vegas" element={<ShowerDoorReplacementLasVegas />} />
             <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
             <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />
             <Route path="/shower-doors-summerlin-nv" element={<ShowerDoorsSummerlin />} />

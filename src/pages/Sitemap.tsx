@@ -30,6 +30,7 @@ const Sitemap = () => {
         { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
         { name: "Steam Shower Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
         { name: "Shower Enclosures Las Vegas", href: "/shower-enclosures-las-vegas" },
+        { name: "Shower Door Replacement", href: "/shower-door-replacement-las-vegas" },
       ]
     },
     {
@@ -39,6 +40,8 @@ const Sitemap = () => {
         { name: "Glass Company Las Vegas", href: "/glass-company-las-vegas" },
         { name: "Residential Glass Replacement", href: "/glass-company-las-vegas/residential-glass-replacement" },
         { name: "Office Enclosures", href: "/glass-company-las-vegas/office-enclosures" },
+        { name: "Custom Mirrors", href: "/glass-company-las-vegas/custom-mirrors" },
+        { name: "Custom Glass Doors", href: "/glass-company-las-vegas/custom-glass-doors" },
       ]
     },
     {
