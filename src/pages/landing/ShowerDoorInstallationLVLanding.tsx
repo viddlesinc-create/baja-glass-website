@@ -328,7 +328,7 @@ const ShowerDoorInstallationLVLanding = () => {
         <title>Shower Door Installation Las Vegas — Licensed Installers | Baja Glass</title>
         <meta
           name="description"
-          content="Las Vegas shower door installation by licensed, insured installers. Free in-home measure. Same-week scheduling. Call (702) 383-0779 — owner-operated since 1999."
+          content="Las Vegas shower door installation by licensed, insured installers. Free in-home measure. Same-week scheduling. Call (702) 383-0779 — local since 2009."
         />
         <meta name="robots" content="noindex" />
         <link rel="canonical" href="https://bajaglass.com/lp/shower-door-installation-lv" />
@@ -376,7 +376,7 @@ const ShowerDoorInstallationLVLanding = () => {
         <TrustBar
           badges={[
             "Licensed & Insured",
-            "Owner-Operated Since 1999",
+            "Serving Las Vegas Since 2009",
             "First Responder Owned",
             "Same-Week Measurement Available",
           ]}
