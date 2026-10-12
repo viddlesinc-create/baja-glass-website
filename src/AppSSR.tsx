@@ -4,8 +4,14 @@
  * renderToString() produces full page HTML instead of the Suspense fallback.
  *
  * Keep route definitions in sync with App.tsx.
+ *
+ * Suspense boundaries must sit exactly where App.tsx / MainSite.tsx put theirs:
+ * renderToString emits a <!--$--> marker per boundary, and hydrateRoot fails the
+ * whole root (React #418/#423) if the client tree has a boundary the server HTML lacks.
  */
 import * as React from "react";
+import { Suspense } from "react";
+import PageLoader from "./components/PageLoader";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -89,6 +95,7 @@ function AppSSR() {
       <>
         <SEOHead />
         <ScrollToTop />
+        <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/lp/frameless-shower-doors" element={<FramelessShowerLanding />} />
           <Route path="/lp/frameless-shower-doors-lv" element={<FramelessShowerDoorsLVLanding />} />
@@ -98,12 +105,13 @@ function AppSSR() {
           <Route path="/lp/steam-shower-installation-lv" element={<SteamShowerInstallationLVLanding />} />
           <Route path="/lp/custom-shower-enclosures-lv" element={<CustomShowerEnclosuresLVLanding />} />
         </Routes>
+        </Suspense>
       </>
     );
   }
 
   return (
-    <>
+    <Suspense fallback={<PageLoader />}>
       <SEOHead />
       {/* The site's single canonical business entity (@id .../#localbusiness).
           Mounted once here so every page carries exactly one full node; pages
@@ -118,6 +126,7 @@ function AppSSR() {
           <LastUpdated />
         </div>
         <main id="main-content" className="flex-1">
+          <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
@@ -176,10 +185,11 @@ function AppSSR() {
             
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>
-    </>
+    </Suspense>
   );
 }
 
