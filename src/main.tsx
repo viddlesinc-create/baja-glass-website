@@ -7,9 +7,11 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { Toaster } from '@/components/ui/toaster';
 import { Toaster as Sonner } from '@/components/ui/sonner';
 import App from './App';
+import { initMetaPixel } from './lib/metaPixel';
 import './index.css';
 
 const queryClient = new QueryClient();
+initMetaPixel();
 const container = document.getElementById('root')!;
 
 // Check if app was server-rendered by looking for data-ssr attribute
