@@ -25,6 +25,7 @@ type Fbq = ((...args: unknown[]) => void) & {
   loaded: boolean;
   version: string;
   disablePushState?: boolean;
+  allowDuplicatePageViews?: boolean;
 };
 
 declare global {
@@ -131,6 +132,9 @@ export const initMetaPixel = () => {
   // We fire SPA PageViews ourselves from useMetaPageView(); the Pixel's automatic
   // history tracking would double-count them.
   fbq.disablePushState = true;
+  // fbevents silently drops every PageView after the first for a pixel unless this is
+  // set — without it, client-side navigations never reach Meta.
+  fbq.allowDuplicatePageViews = true;
   fbq("init", PIXEL_ID);
   fbq("track", "PageView");
   loadFbeventsDeferred();
@@ -142,13 +146,12 @@ export const initMetaPixel = () => {
 /** PageView on SPA pathname changes. The initial load is covered by initMetaPixel(). */
 export const useMetaPageView = () => {
   const { pathname } = useLocation();
-  const isFirst = useRef(true);
+  // Seeded with the landing path so the first effect (hydration) doesn't double-fire.
+  const lastTracked = useRef(pathname);
 
   useEffect(() => {
-    if (isFirst.current) {
-      isFirst.current = false;
-      return;
-    }
+    if (pathname === lastTracked.current) return;
+    lastTracked.current = pathname;
     if (!isEnabled() || !window.fbq) return;
     window.fbq("track", "PageView");
   }, [pathname]);
