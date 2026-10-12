@@ -203,7 +203,7 @@ function PhotoQuoteForm({ id }: { id: string }) {
   }
 
   return (
-    <form id={id} onSubmit={handleSubmit} encType="multipart/form-data" className="space-y-4">
+    <form id={id} onSubmit={handleSubmit} encType="multipart/form-data" className="space-y-4 text-charcoal">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Full Name *</label>
