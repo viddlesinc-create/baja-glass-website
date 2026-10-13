@@ -97,11 +97,6 @@ export const FinalCTA = ({
       });
 
       if (response.ok) {
-        fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }).catch(() => {});
         trackMetaLead({
           name: formData.name,
           email: formData.email,

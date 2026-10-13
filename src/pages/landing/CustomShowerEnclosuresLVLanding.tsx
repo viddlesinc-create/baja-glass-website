@@ -163,11 +163,6 @@ function PhotoQuoteForm({ id }: { id: string }) {
     const data = new FormData(form);
     try {
       const response = await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
-      fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" }
-      }).catch(() => {});
       // Meta Lead only when Formspree actually accepted the submit.
       if (response.ok) {
         trackMetaLead({
