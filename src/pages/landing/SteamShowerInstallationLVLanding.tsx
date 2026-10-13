@@ -178,11 +178,6 @@ function ConsultForm({ id }: { id: string }) {
     try {
       const response = await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
       if (response.ok) {
-        fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
-          method: "POST",
-          body: data,
-          headers: { Accept: "application/json" }
-        }).catch(() => {});
         trackMetaLead({
           name: data.get("name"),
           email: data.get("email"),
@@ -217,7 +212,7 @@ function ConsultForm({ id }: { id: string }) {
   }
 
   return (
-    <form id={id} onSubmit={handleSubmit} className="space-y-4">
+    <form id={id} onSubmit={handleSubmit} className="space-y-4 text-charcoal">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Full Name *</label>
