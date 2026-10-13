@@ -11,4 +11,4 @@ Verification (2026-10-12, Netlify function logs + Events Manager Test events):
 - Contact: meta-capi 200 events_received:1 (1:33 PM)
 - Lead (/lp/steam-shower-installation-lv): meta-capi 200 events_received:1 (1:40 PM); Pixel eid 8fdd0d9b-5055-45be-acec-84e82a4a5248
 - PageView: one per route change (/ → /gallery → /about), verified at main@f186c81
-- Domain verification meta tag (facebook-domain-verification) is in index.html <head>
+- Domain verification meta tag (facebook-domain-verification) is in index.html <head>; bajaglass.com shows Verified in Meta Business Settings (confirmed 2026-10-13)
