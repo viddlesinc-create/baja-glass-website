@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import FramelessQualification from "@/components/FramelessQualification";
-import StickyMobileCallBar from "@/components/StickyMobileCallBar";
+import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
 import ComparisonTable from "@/components/ComparisonTable";
 
 const framelessGalleryImages = [
@@ -20,6 +20,7 @@ const framelessGalleryImages = [
 ];
 
 const FramelessShowerDoors = () => {
+  const navigate = useNavigate();
   const faqs = [
     {
       question: "What makes a shower door 'frameless'?",
@@ -427,7 +428,7 @@ const FramelessShowerDoors = () => {
       </section>
 
       <ServiceAreasBlock />
-      <StickyMobileCallBar />
+      <StickyMobileCTA onQuoteClick={() => navigate("/contact")} />
     </div>
   );
 };

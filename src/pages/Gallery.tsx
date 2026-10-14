@@ -2,12 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Slider } from "@/components/ui/slider";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { X } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
+import { useStickyMobileCTAPadding } from "@/hooks/useStickyMobileCTAPadding";
 
 const Gallery = () => {
+  const navigate = useNavigate();
+  useStickyMobileCTAPadding();
   const [sliderValues, setSliderValues] = useState([50, 50, 50, 50]);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   
@@ -56,13 +60,6 @@ const Gallery = () => {
       description: "Soft-close rollers, brushed nickel finish. Replaced framed unit—no more water spots.",
       category: "Sliding",
       location: "Henderson"
-    },
-    {
-      title: "Neo-Angle Enclosure — North Las Vegas",
-      subtitle: "Low-Iron Glass",
-      description: "Space-saving design with precise mitered edges and clean silicone lines.",
-      category: "Custom",
-      location: "North Las Vegas"
     },
     {
       title: "Steam Shower Enclosure — Paradise",
@@ -657,7 +654,7 @@ const Gallery = () => {
             We proudly serve homes and businesses across the entire Las Vegas metropolitan area.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {["Las Vegas", "Henderson", "Summerlin", "North Las Vegas", "Paradise", "Spring Valley", "Enterprise", "Boulder City"].map((city) => (
+            {["Las Vegas", "Henderson", "Summerlin", "Paradise", "Spring Valley", "Enterprise"].map((city) => (
               <Badge key={city} variant="outline" className="text-sm">{city}</Badge>
             ))}
           </div>
@@ -709,6 +706,7 @@ const Gallery = () => {
           </div>
         </DialogContent>
       </Dialog>
+      <StickyMobileCTA onQuoteClick={() => navigate("/contact")} />
     </div>
   );
 };

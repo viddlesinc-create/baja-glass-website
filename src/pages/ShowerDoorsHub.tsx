@@ -1,15 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Star, Phone } from "lucide-react";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import FramelessQualification from "@/components/FramelessQualification";
-import StickyMobileCallBar from "@/components/StickyMobileCallBar";
+import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
 const heroImage = "/images/hero-shower-door.jpg";
 import { Helmet } from "react-helmet-async";
 
 const ShowerDoorsHub = () => {
+  const navigate = useNavigate();
   const services = [
     {
       title: "Frameless Shower Doors",
@@ -75,7 +76,7 @@ const ShowerDoorsHub = () => {
     },
     {
       question: "What areas do you serve?",
-      answer: "Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Boulder City, and nearby communities."
+      answer: "Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise, and nearby communities."
     }
   ];
 
@@ -395,7 +396,7 @@ const ShowerDoorsHub = () => {
         </div>
       </section>
       <ServiceAreasBlock />
-      <StickyMobileCallBar />
+      <StickyMobileCTA onQuoteClick={() => navigate("/contact")} />
     </div>
   );
 };

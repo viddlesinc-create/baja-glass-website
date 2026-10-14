@@ -193,7 +193,7 @@ const faqs = [
   },
   {
     q: "Do you serve areas outside Las Vegas proper?",
-    a: "Yes — we serve the entire Las Vegas Valley including Henderson, Summerlin, Spring Valley, Paradise, Enterprise, Green Valley, and North Las Vegas. If you're in Clark County, we can help."
+    a: "Yes — we serve the entire Las Vegas Valley including Henderson, Summerlin, Spring Valley, Paradise, Enterprise, and Green Valley. If you're in Clark County, we can help."
   },
   {
     q: "Is Baja Glass licensed and insured?",

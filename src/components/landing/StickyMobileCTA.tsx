@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageSquare } from "lucide-react";
+import { Phone, MessageSquare, Camera } from "lucide-react";
 import { trackCTAClick, trackPhoneCall } from "@/lib/analytics";
 
 interface StickyMobileCTAProps {
@@ -18,23 +18,36 @@ export const StickyMobileCTA = ({ onQuoteClick }: StickyMobileCTAProps) => {
       <div className="flex gap-2">
         <Button
           asChild
-          className="flex-1 bg-red-accent hover:bg-red-accent-light text-white font-semibold py-6"
+          className="flex-1 min-w-0 px-2 bg-red-accent hover:bg-red-accent-light text-white font-semibold text-sm py-6"
         >
           <a
             href="tel:+17023830779"
             onClick={() => trackPhoneCall("sticky_mobile_cta")}
-            className="flex items-center justify-center gap-2"
+            className="flex items-center justify-center gap-1.5 whitespace-nowrap"
           >
-            <Phone className="h-5 w-5" />
+            <Phone className="h-4 w-4" />
             Call Now
           </a>
         </Button>
         <Button
           onClick={handleQuoteClick}
-          className="flex-1 bg-white text-charcoal hover:bg-white/90 font-semibold py-6"
+          className="flex-1 min-w-0 px-2 gap-1.5 bg-white text-charcoal hover:bg-white/90 font-semibold text-sm py-6 whitespace-nowrap"
         >
-          <MessageSquare className="h-5 w-5 mr-2" />
+          <MessageSquare className="h-4 w-4" />
           Get Quote
+        </Button>
+        {/* Text-tap tracking is a GTM link-click trigger on "sms:" — no dataLayer push here. */}
+        <Button
+          asChild
+          className="flex-1 min-w-0 px-2 bg-white text-charcoal hover:bg-white/90 font-semibold text-sm py-6"
+        >
+          <a
+            href="sms:+17023830779?&body=Photo%20for%20Baja%20Glass%20quote%20(web)%20-%20"
+            className="flex items-center justify-center gap-1.5 whitespace-nowrap"
+          >
+            <Camera className="h-4 w-4" />
+            Text Photo
+          </a>
         </Button>
       </div>
     </div>

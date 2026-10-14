@@ -1,14 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import PhoneNumber from "@/components/PhoneNumber";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import ComparisonTable from "@/components/ComparisonTable";
+import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
+import { useStickyMobileCTAPadding } from "@/hooks/useStickyMobileCTAPadding";
 
 const CustomEnclosures = () => {
+  const navigate = useNavigate();
+  useStickyMobileCTAPadding();
   const customEnclosureImages = [
     {
       src: "/images/custom-frameless-shower-enclosure-sliding-doors.webp",
@@ -532,6 +536,7 @@ const CustomEnclosures = () => {
       </section>
 
       <ServiceAreasBlock />
+      <StickyMobileCTA onQuoteClick={() => navigate("/contact")} />
     </div>
   );
 };
