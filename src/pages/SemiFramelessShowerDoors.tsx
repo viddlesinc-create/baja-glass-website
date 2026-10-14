@@ -84,7 +84,7 @@ const SemiFramelessShowerDoors = () => {
           <div className="max-w-4xl mx-auto">
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                North Las Vegas Semi‑Frameless & 
+                Las Vegas Semi-Frameless &{" "}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Framed Doors
                 </span>
@@ -235,7 +235,7 @@ const SemiFramelessShowerDoors = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Installed by Local Experts</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Proudly serving North Las Vegas and the entire Las Vegas Valley with semi-frameless and framed shower door installation. Expect clean, careful work and clear communication from our experienced team.
+            Proudly serving the entire Las Vegas Valley with semi-frameless and framed shower door installation. Expect clean, careful work and clear communication from our experienced team.
           </p>
           <div className="bg-background p-6 rounded-lg inline-block shadow-lg">
             <div className="flex items-center gap-3 justify-center mb-4">
@@ -265,7 +265,7 @@ const SemiFramelessShowerDoors = () => {
               <Link to="/shower-doors-spring-valley-nv" className="text-primary font-semibold hover:underline">
                 Spring Valley
               </Link>
-              , and throughout North Las Vegas. Quality installations for all budgets.
+              , and throughout the Las Vegas Valley. Quality installations for all budgets.
             </p>
           </div>
         </div>

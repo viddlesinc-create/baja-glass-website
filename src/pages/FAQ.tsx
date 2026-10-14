@@ -197,7 +197,7 @@ const FAQ = () => {
         },
         {
           question: "Do you offer shower enclosure installation in Henderson and Summerlin?",
-          answer: "Yes! We install shower enclosures throughout the Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, and North Las Vegas."
+          answer: "Yes! We install shower enclosures throughout the Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, and Green Valley."
         },
         {
           question: "How long does shower enclosure installation take?",
@@ -293,7 +293,7 @@ const FAQ = () => {
         },
         {
           question: "What's your service area?",
-          answer: "We serve the entire Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, North Las Vegas, and surrounding communities."
+          answer: "We serve the entire Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, and surrounding communities."
         }
       ]
     }

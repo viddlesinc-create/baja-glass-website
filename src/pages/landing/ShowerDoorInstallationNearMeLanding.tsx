@@ -114,7 +114,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "Las Vegas, Henderson, Summerlin, North Las Vegas, Boulder City, Paradise, Spring Valley, Enterprise, and Green Valley. If you're in Clark County, call us — we likely cover your area."
+    a: "Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise, and Green Valley. If you're in Clark County, call us — we likely cover your area."
   },
 ];
 
@@ -243,7 +243,6 @@ const ShowerDoorInstallationNearMeLanding = () => {
           { "@type": "City", name: "Las Vegas", addressRegion: "NV" },
           { "@type": "City", name: "Henderson", addressRegion: "NV" },
           { "@type": "City", name: "Summerlin", addressRegion: "NV" },
-          { "@type": "City", name: "North Las Vegas", addressRegion: "NV" },
           { "@type": "City", name: "Paradise", addressRegion: "NV" },
         ]
       },
@@ -428,12 +427,10 @@ const ShowerDoorInstallationNearMeLanding = () => {
                   "Las Vegas",
                   "Henderson",
                   "Summerlin",
-                  "North Las Vegas",
                   "Paradise",
                   "Spring Valley",
                   "Enterprise",
                   "Green Valley",
-                  "Boulder City",
                 ].map((city) => (
                   <span key={city} className="bg-secondary/40 text-charcoal text-sm font-medium px-4 py-2 rounded-full border border-border">
                     {city}

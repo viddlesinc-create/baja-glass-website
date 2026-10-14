@@ -14,7 +14,10 @@ import { trackMetaLead } from "@/lib/metaPixel";
 import PhoneNumber from "@/components/PhoneNumber";
 import GoogleMap from "@/components/GoogleMap";
 import GetDirections from "@/components/GetDirections";
+import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
+import { useStickyMobileCTAPadding } from "@/hooks/useStickyMobileCTAPadding";
 const Contact = () => {
+  useStickyMobileCTAPadding();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -114,6 +117,14 @@ const Contact = () => {
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  // Sticky bar "Get Quote": scroll to the quote form and focus its first input.
+  const scrollToQuoteForm = () => {
+    const form = document.getElementById("quote-form");
+    if (!form) return;
+    form.scrollIntoView({ behavior: "smooth", block: "start" });
+    form.querySelector<HTMLInputElement>("input")?.focus({ preventScroll: true });
   };
 
   const projectTypes = [
@@ -457,6 +468,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <StickyMobileCTA onQuoteClick={scrollToQuoteForm} />
     </div>
   );
 };

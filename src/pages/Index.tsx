@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Star, Phone, Shield, Clock, Users, Award, MapPin, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import GoogleMap from "@/components/GoogleMap";
@@ -14,6 +14,8 @@ import HeroImagePreload from "@/components/HeroImagePreload";
 import PhoneNumber from "@/components/PhoneNumber";
 import IntroSection from "@/components/IntroSection";
 import SiteLinks from "@/components/SiteLinks";
+import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
+import { useStickyMobileCTAPadding } from "@/hooks/useStickyMobileCTAPadding";
 const heroImage = "/images/hero-shower-door.jpg";
 const installationProcess = "/images/installation-process.jpg";
 const slidingDoors = "/images/sliding-doors.jpg";
@@ -58,9 +60,11 @@ const hardwareFinishes = "/images/hardware-finishes.jpg";
     answer: "Absolutely. Baja Glass & Mirror specializes in full shower door replacements and upgrades throughout Las Vegas, Henderson, and Summerlin. Whether you have an outdated framed door, a foggy or damaged panel, or simply want to upgrade to a modern frameless design, we handle the entire process. Our team carefully removes your old door, inspects the opening for any water damage or structural issues, and installs your new custom-fabricated glass with fresh hardware, seals, and silicone. We can match existing tile lines and work with out-of-plumb walls to ensure a tight, leak-resistant fit. Most replacement projects are completed in a single visit. Contact us for a free in-home assessment and quote."
   }, {
     question: "What areas do you serve?",
-    answer: "Baja Glass & Mirror proudly serves the entire Las Vegas Valley from our shop at 4280 W Reno Ave in Las Vegas. Our service area includes Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Green Valley, Boulder City, and surrounding communities. As a locally owned and operated company serving Las Vegas since 2009, we know the unique needs of Las Vegas homeowners—from hard water considerations to desert climate factors that affect glass and hardware selection. Whether you're in a new Henderson development or a classic Summerlin home, our team provides the same precise measurements, quality materials, and professional installation. Call (702) 383-0779 for a free estimate anywhere in the valley."
+    answer: "Baja Glass & Mirror proudly serves the entire Las Vegas Valley from our shop at 4280 W Reno Ave in Las Vegas. Our service area includes Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, and surrounding communities. As a locally owned and operated company serving Las Vegas since 2009, we know the unique needs of Las Vegas homeowners—from hard water considerations to desert climate factors that affect glass and hardware selection. Whether you're in a new Henderson development or a classic Summerlin home, our team provides the same precise measurements, quality materials, and professional installation. Call (702) 383-0779 for a free estimate anywhere in the valley."
   }];
 const Index = () => {
+  const navigate = useNavigate();
+  useStickyMobileCTAPadding();
   return <div className="min-h-screen">
       <WebSiteSchema />
       <SpeakableSchema 
@@ -526,6 +530,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      <StickyMobileCTA onQuoteClick={() => navigate("/contact")} />
     </div>;
 };
 export default Index;

@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Phone, Images } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ProductGallery from "@/components/ProductGallery";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import ComparisonTable from "@/components/ComparisonTable";
+import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
+import { useStickyMobileCTAPadding } from "@/hooks/useStickyMobileCTAPadding";
 
 const slidingGalleryImages = [
   { src: "/images/bypass-sliding-shower-doors-completed-project-2.webp", alt: "Sliding glass shower door installation", caption: "Smooth-Glide System" },
@@ -17,6 +19,8 @@ const slidingGalleryImages = [
 ];
 
 const SlidingShowerDoors = () => {
+  const navigate = useNavigate();
+  useStickyMobileCTAPadding();
   const faqs = [
     {
       question: "What's the difference between single sliding and bypass?",
@@ -353,6 +357,7 @@ const SlidingShowerDoors = () => {
       </section>
 
       <ServiceAreasBlock />
+      <StickyMobileCTA onQuoteClick={() => navigate("/contact")} />
     </div>
   );
 };

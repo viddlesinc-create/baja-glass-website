@@ -109,7 +109,7 @@ const ServiceArea = () => (
           We Install Across the Las Vegas Valley
         </h2>
         <p className="text-muted-foreground text-lg mb-6">
-          Cities served: <strong>Las Vegas, Henderson, Summerlin, North Las Vegas, Boulder City, and Paradise.</strong>
+          Cities served: <strong>Las Vegas, Henderson, Summerlin, and Paradise.</strong>
         </p>
         <p className="text-sm text-muted-foreground mb-2">ZIP codes served:</p>
         <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto">
@@ -270,8 +270,6 @@ const structuredData = {
         { "@type": "City", name: "Las Vegas", addressRegion: "NV" },
         { "@type": "City", name: "Henderson", addressRegion: "NV" },
         { "@type": "City", name: "Summerlin", addressRegion: "NV" },
-        { "@type": "City", name: "North Las Vegas", addressRegion: "NV" },
-        { "@type": "City", name: "Boulder City", addressRegion: "NV" },
         { "@type": "City", name: "Paradise", addressRegion: "NV" },
       ],
       offers: {
