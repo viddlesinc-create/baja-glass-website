@@ -409,13 +409,13 @@ const CustomShowerEnclosuresLVLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">Since 2009</span>
+                <span className="font-semibold">Since 2010</span>
                 <span className="text-white/50">· 4.7★ on Google</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
-              <span>In Las Vegas Since 2009</span>
+              <span>In Las Vegas Since 2010</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>Lifetime Hardware Warranty</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />

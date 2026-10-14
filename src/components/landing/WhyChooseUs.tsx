@@ -15,7 +15,7 @@ const features = [
   {
     icon: Award,
     title: "Expert Installation",
-    description: "Licensed, insured professionals serving Las Vegas since 2009. Clean, careful installation guaranteed."
+    description: "Licensed, insured professionals serving Las Vegas since 2010. Clean, careful installation guaranteed."
   }
 ];
 
@@ -28,7 +28,7 @@ export const WhyChooseUs = () => {
             Why Choose Baja Glass?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Delivering premium frameless shower doors across the Las Vegas Valley since 2009.
+            Delivering premium frameless shower doors across the Las Vegas Valley since 2010.
           </p>
         </div>
 

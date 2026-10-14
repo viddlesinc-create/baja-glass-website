@@ -72,7 +72,7 @@ const features = [
   { icon: Clock, label: "Free On-Site Measure in 24h", sub: "Most days, same-week appointments" },
   { icon: MapPin, label: "Local to Las Vegas + Henderson", sub: "15-minute callbacks, not 3 weeks" },
   { icon: Wrench, label: "One-Day Install", sub: "Standard doors finished in half a day" },
-  { icon: Star, label: "Las Vegas Since 2009", sub: "Licensed, bonded and insured" },
+  { icon: Star, label: "Las Vegas Since 2010", sub: "Licensed, bonded and insured" },
   { icon: Shield, label: "1-Year Parts & Labor Warranty", sub: "Plus lifetime hardware warranty" },
 ];
 
@@ -315,7 +315,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="text-white/90 text-sm font-medium tracking-wide">
-                  Licensed Installer · Local to Las Vegas · Since 2009
+                  Licensed Installer · Local to Las Vegas · Since 2010
                 </span>
               </div>
 
@@ -359,7 +359,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">Since 2009</span>
+                <span className="font-semibold">Since 2010</span>
                 <span className="text-white/50">· 4.7★ on Google</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
@@ -367,7 +367,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>Bonded &amp; Insured</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
-              <span>Local Since 2009</span>
+              <span>Local Since 2010</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span className="text-white/60 text-xs">Serving Las Vegas &amp; Henderson</span>
             </div>
@@ -620,7 +620,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-3 mb-10">
-                  {["C8 Licensed", "Bonded & Insured", "Serving Las Vegas Since 2009", "First Responder Owned"].map((badge) => (
+                  {["C8 Licensed", "Bonded & Insured", "Serving Las Vegas Since 2010", "First Responder Owned"].map((badge) => (
                     <span key={badge} className="bg-white/10 border border-white/20 text-white/80 text-xs font-medium px-3 py-1.5 rounded-full">
                       {badge}
                     </span>

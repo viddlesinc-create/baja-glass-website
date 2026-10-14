@@ -120,7 +120,7 @@ const CrackedShowerGlassReplacement = () => {
                 stress the failure may have caused. Then your new panel is fabricated and tempered to order. On install day we set, align,
                 and seal the new glass — most panel replacements are finished in a single short visit. Every step is handled by our own
                 installers, the same team behind 1,000+ <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80">shower doors and enclosures</Link> across
-                the Las Vegas valley since 2009.
+                the Las Vegas valley since 2010.
               </p>
               <p>
                 One boundary we&apos;re upfront about: we build and install new glass. We don&apos;t repair other brands&apos; rollers,
