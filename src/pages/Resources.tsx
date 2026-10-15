@@ -60,7 +60,7 @@ const Resources = () => {
     },
     {
       question: "What warranty do you provide?",
-      answer: "We provide comprehensive warranty coverage on both materials and workmanship. Specific terms vary by product and will be clearly explained before installation."
+      answer: "Every install includes a 1-year parts and labor warranty and a lifetime warranty on all hardware."
     },
     // Call Tracking FAQ Section
     {

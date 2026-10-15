@@ -100,7 +100,7 @@ const WarrantyInformation = () => {
                   <h3 className="text-xl font-semibold mb-4">Materials Warranty</h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold mb-2">Tempered Glass (Lifetime)</h4>
+                      <h4 className="font-semibold mb-2">Tempered Glass (Manufacturer Warranty)</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
                         <li>• Manufacturing defects in glass</li>
                         <li>• Spontaneous glass breakage</li>
@@ -109,7 +109,7 @@ const WarrantyInformation = () => {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Hardware (10 Years)</h4>
+                      <h4 className="font-semibold mb-2">Hardware (Lifetime)</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
                         <li>• Hinges and pivot mechanisms</li>
                         <li>• Handles and towel bars</li>
@@ -126,7 +126,7 @@ const WarrantyInformation = () => {
                   <h3 className="text-xl font-semibold mb-4">Installation Warranty</h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold mb-2">Workmanship (5 Years)</h4>
+                      <h4 className="font-semibold mb-2">Parts & Labor (1 Year)</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
                         <li>• Installation errors and misalignment</li>
                         <li>• Seal and weatherstripping failure</li>
@@ -135,7 +135,7 @@ const WarrantyInformation = () => {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Structural Integrity (3 Years)</h4>
+                      <h4 className="font-semibold mb-2">Also Covered Under Parts & Labor (1 Year)</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
                         <li>• Door sagging or misalignment</li>
                         <li>• Wall anchor failure</li>
@@ -161,23 +161,13 @@ const WarrantyInformation = () => {
             <Card className="mb-8">
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold mb-6">Coverage Conditions</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 gap-8">
                   <div>
                     <h4 className="font-semibold mb-3">Warranty Activation</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• Warranty begins on installation completion date</li>
-                      <li>• Original purchaser must register warranty within 30 days</li>
                       <li>• Proof of purchase and installation required</li>
                       <li>• Property address must match installation location</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-3">Transferability</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• Warranty transfers to new homeowner</li>
-                      <li>• Transfer must be reported within 30 days</li>
-                      <li>• Remaining warranty period applies</li>
-                      <li>• Original documentation required</li>
                     </ul>
                   </div>
                 </div>
@@ -304,10 +294,10 @@ const WarrantyInformation = () => {
                   <div className="border-l-2 border-accent pl-4">
                     <h4 className="font-semibold">Step 2: Contact Our Service Team</h4>
                     <ul className="text-sm text-muted-foreground mt-2 space-y-1">
-                      <li>• Call our warranty service hotline: (702) 555-GLASS</li>
-                      <li>• Email warranty claims to: warranty@bajaglasslv.com</li>
+                      <li>• Call us: <a href="tel:+17023830779" className="text-primary underline hover:text-primary/80">(702) 383-0779</a></li>
+                      <li>• Email: <a href="mailto:info@bajaglass.com" className="text-primary underline hover:text-primary/80">info@bajaglass.com</a></li>
                       <li>• Online form submission at our website</li>
-                      <li>• Provide installation date and warranty registration number</li>
+                      <li>• Provide your installation date</li>
                     </ul>
                   </div>
                   

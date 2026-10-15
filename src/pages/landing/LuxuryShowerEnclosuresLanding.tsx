@@ -69,7 +69,7 @@ const included = [
   "Hardware finish selection & matching",
   "Professional licensed installation",
   "Full cleanup & final walkthrough",
-  "Strong workmanship warranty",
+  "1-year parts & labor + lifetime hardware warranty",
   "Hydrophobic coating available",
   "Low-iron ultra-clear glass available",
 ];
@@ -108,7 +108,7 @@ const faqs = [
   },
   {
     q: "What does your warranty cover?",
-    a: "Our warranty covers workmanship on the installation — including any issues with seals, alignment, hardware function, and glass fit. Glass itself is covered under manufacturer warranty against defects. We stand behind our work and will return to address any issues that arise from our installation."
+    a: "Every install has a 1-year parts and labor warranty covering seals, alignment, hardware function and glass fit, plus a lifetime warranty on all hardware. Glass itself is covered under manufacturer warranty against defects."
   },
 ];
 
