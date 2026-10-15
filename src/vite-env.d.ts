@@ -2,5 +2,5 @@
 
 interface Window {
   prerenderReady: boolean;
-  gtag?: (...args: any[]) => void;
+  gtag?: (...args: unknown[]) => void;
 }

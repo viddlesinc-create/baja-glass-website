@@ -64,7 +64,6 @@ export const FeaturedReviews = () => {
 };
 
 export const ReviewCarousel = () => {
-  if (carouselReviews.length === 0) return null;
   const [isPaused, setIsPaused] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -87,6 +86,8 @@ export const ReviewCarousel = () => {
     animationId = requestAnimationFrame(scroll);
     return () => cancelAnimationFrame(animationId);
   }, [isPaused]);
+
+  if (carouselReviews.length === 0) return null;
 
   const allReviews = [...carouselReviews, ...carouselReviews];
 

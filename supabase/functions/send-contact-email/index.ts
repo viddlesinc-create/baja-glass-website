@@ -144,12 +144,12 @@ const handler = async (req: Request): Promise<Response> => {
         },
       }
     );
-  } catch (error: any) {
+  } catch (error) {
     console.error("Error in send-contact-email function:", error);
     return new Response(
       JSON.stringify({ 
         success: false, 
-        error: error.message || "Failed to send email" 
+        error: error instanceof Error && error.message ? error.message : "Failed to send email" 
       }),
       {
         status: 500,
