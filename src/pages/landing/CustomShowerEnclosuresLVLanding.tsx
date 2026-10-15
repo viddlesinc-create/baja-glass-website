@@ -85,7 +85,7 @@ const fitFeatures = [
   {
     icon: Shield,
     title: "Lifetime Hardware Warranty",
-    body: "Hinges, handles, clips, brackets — every piece of hardware we install carries a lifetime warranty. We can do that because we don't install economy hardware to begin with."
+    body: "Hinges, handles, clips, brackets — every piece of hardware we install carries a lifetime warranty. We can do that because we don't install economy hardware to begin with. Plus a 1-year parts and labor warranty on every install."
   },
 ];
 
@@ -335,7 +335,7 @@ const CustomShowerEnclosuresLVLanding = () => {
         <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://bajaglass.com/lp/custom-shower-enclosures-lv" />
         <meta property="og:title" content="Custom Shower Enclosures, Las Vegas | Baja Glass" />
-        <meta property="og:description" content="Built to your bathroom. No off-the-shelf sizes. Heavy glass, hand-polished, lifetime hardware warranty." />
+        <meta property="og:description" content="Built to your bathroom. No off-the-shelf sizes. Heavy glass, hand-polished, 1-year parts & labor + lifetime hardware warranty." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bajaglass.com/lp/custom-shower-enclosures-lv" />
         <meta property="og:image" content="https://bajaglass.com/images/custom-neo-angle-shower-enclosure.webp" />

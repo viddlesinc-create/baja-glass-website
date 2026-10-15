@@ -27,8 +27,6 @@ const TrustBar = () => (
         <li className="font-medium">Custom Glass</li>
         <li className="hidden md:inline text-white/30">·</li>
         <li className="font-medium">Free In-Home Quote</li>
-        <li className="hidden md:inline text-white/30">·</li>
-        <li className="font-medium">90-Day Lead Growth Guarantee</li>
       </ul>
     </div>
   </section>
@@ -85,7 +83,7 @@ const faqs = [
   },
   {
     q: "What's the warranty?",
-    a: "We provide a lifetime warranty on all hardware. The tempered glass carries the manufacturer's warranty. If anything isn't right after installation, we come back and fix it at no charge."
+    a: "Every install comes with a 1-year parts and labor warranty plus a lifetime warranty on all hardware. The tempered glass carries the manufacturer's warranty."
   },
   {
     q: "How is pricing determined?",
@@ -166,7 +164,7 @@ const FramelessShowerLanding = () => {
         "@id": "https://bajaglass.com/lp/frameless-shower-doors#service",
         "name": "Frameless Shower Door Fabrication and Installation",
         "description":
-          "Custom-built frameless shower doors and enclosures. Heavy tempered glass, polished edges, professional installation, lifetime hardware warranty.",
+          "Custom-built frameless shower doors and enclosures. Heavy tempered glass, polished edges, professional installation, 1-year parts & labor + lifetime hardware warranty.",
         "provider": {
           "@type": "LocalBusiness",
           "@id": "https://bajaglass.com/#localbusiness"
