@@ -660,7 +660,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
 
         <footer className="bg-charcoal border-t border-white/10 text-white/50 py-5 text-center text-xs">
           <div className="container mx-auto px-4">
-            <p>© {new Date().getFullYear()} Baja Glass &amp; Mirror LLC · C8 Licensed · 4280 W Reno Ave Ste A, Las Vegas, NV 89118 · {PHONE}</p>
+            <p>© {__BUILD_YEAR__} Baja Glass &amp; Mirror LLC · C8 Licensed · 4280 W Reno Ave Ste A, Las Vegas, NV 89118 · {PHONE}</p>
             <p className="mt-1">
               <a href="/privacy-policy" className="hover:text-white/70 transition-colors">Privacy Policy</a>
               {" · "}

@@ -298,7 +298,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-primary-foreground/80">
-            Copyright © {new Date().getFullYear()} Baja Glass. All rights reserved.
+            Copyright © {__BUILD_YEAR__} Baja Glass. All rights reserved.
           </p>
         </div>
       </div>
