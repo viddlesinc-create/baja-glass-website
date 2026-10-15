@@ -145,7 +145,7 @@ const HiringShowerDoorInstaller = () => {
             <div className="mt-12 p-8 bg-secondary/50 rounded-lg text-center">
               <h2 className="text-2xl font-bold mb-3">Ask us all seven</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Baja Glass and Mirror has been measuring, fabricating, and installing custom shower doors in Las Vegas since 2009 — and we like these questions.
+                Baja Glass and Mirror has been measuring, fabricating, and installing custom shower doors in Las Vegas since 2010 — and we like these questions.
               </p>
               <Button variant="hero" size="lg" asChild>
                 <a href="tel:+17023830779" className="flex items-center gap-2 justify-center">

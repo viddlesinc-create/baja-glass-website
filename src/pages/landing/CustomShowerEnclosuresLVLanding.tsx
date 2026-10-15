@@ -19,6 +19,7 @@ import HeroImagePreload from "@/components/HeroImagePreload";
 import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
 const PortfolioLightbox = lazy(() => import("@/components/landing/PortfolioLightbox"));
 import { trackFormSubmission, trackPhoneCall } from "@/lib/analytics";
+import { trackMetaLead } from "@/lib/metaPixel";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -161,13 +162,16 @@ function PhotoQuoteForm({ id }: { id: string }) {
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
-      await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
-      fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" }
-      }).catch(() => {});
-      if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
+      const response = await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
+      // Meta Lead only when Formspree actually accepted the submit.
+      if (response.ok) {
+        trackMetaLead({
+          name: data.get("name"),
+          email: data.get("email"),
+          phone: data.get("phone"),
+          zip: data.get("zip"),
+        });
+      }
       trackFormSubmission({ source: "lp_custom_shower_enclosures_lv", projectType: "custom_enclosure" });
       setSubmitted(true);
     } catch {
@@ -194,7 +198,7 @@ function PhotoQuoteForm({ id }: { id: string }) {
   }
 
   return (
-    <form id={id} onSubmit={handleSubmit} encType="multipart/form-data" className="space-y-4">
+    <form id={id} onSubmit={handleSubmit} encType="multipart/form-data" className="space-y-4 text-charcoal">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Full Name *</label>
@@ -405,13 +409,13 @@ const CustomShowerEnclosuresLVLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">Since 2009</span>
-                <span className="text-white/50">· 27 Reviews</span>
+                <span className="font-semibold">Since 2010</span>
+                <span className="text-white/50">· 4.7★ on Google</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
-              <span>In Las Vegas Since 2009</span>
+              <span>In Las Vegas Since 2010</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>Lifetime Hardware Warranty</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />

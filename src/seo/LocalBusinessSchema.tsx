@@ -11,8 +11,8 @@ const localBusinessData = {
   "alternateName": ["Baja Glass"],
   "image": `${BASE_URL}/images/baja-glass-mirror-logo.webp`,
   "logo": `${BASE_URL}/images/baja-glass-mirror-logo.webp`,
-  "foundingDate": "2009",
-  "description": "Shower door company in Las Vegas specializing in custom frameless shower doors, sliding and semi-frameless doors, custom and steam shower enclosures, and full shower door replacements. First responder owned. Serving Las Vegas and Henderson since 2009. Licensed, bonded, and insured.",
+  "foundingDate": "2010",
+  "description": "Shower door company in Las Vegas specializing in custom frameless shower doors, sliding and semi-frameless doors, custom and steam shower enclosures, and full shower door replacements. First responder owned. Serving Las Vegas and Henderson since 2010. Licensed, bonded, and insured.",
   "url": BASE_URL,
   "telephone": "+17023830779",
   "address": {

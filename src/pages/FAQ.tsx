@@ -197,7 +197,7 @@ const FAQ = () => {
         },
         {
           question: "Do you offer shower enclosure installation in Henderson and Summerlin?",
-          answer: "Yes! We install shower enclosures throughout the Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, and North Las Vegas."
+          answer: "Yes! We install shower enclosures throughout the Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, and Green Valley."
         },
         {
           question: "How long does shower enclosure installation take?",
@@ -233,7 +233,7 @@ const FAQ = () => {
       faqs: [
         {
           question: "Where can I find frameless shower door installers near me?",
-          answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated, serving Las Vegas since 2009. Call (702) 383-0779 for a free quote."
+          answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated, serving Las Vegas since 2010. Call (702) 383-0779 for a free quote."
         },
         {
           question: "What is the cost of shower door installation in Las Vegas?",
@@ -293,7 +293,7 @@ const FAQ = () => {
         },
         {
           question: "What's your service area?",
-          answer: "We serve the entire Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, North Las Vegas, and surrounding communities."
+          answer: "We serve the entire Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, and surrounding communities."
         }
       ]
     }

@@ -52,12 +52,12 @@ const Reviews = () => {
               rating and count on the Google Business Profile, and keep them in sync. */}
 
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Custom shower doors and glass, installed across the Las Vegas Valley since 2009.
+            Custom shower doors and glass, installed across the Las Vegas Valley since 2010.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2">
             <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">Licensed & Insured</Badge>
-            <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">Las Vegas Owned Since 2009</Badge>
+            <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">Las Vegas Owned Since 2010</Badge>
             <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">Family Owned</Badge>
             <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30">Warranty Backed</Badge>
           </div>

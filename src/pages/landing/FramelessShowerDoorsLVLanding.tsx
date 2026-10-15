@@ -19,7 +19,7 @@ const MidPageCTA = ({ onQuoteClick }: { onQuoteClick: () => void }) => (
         {[...Array(5)].map((_, i) => (
           <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
         ))}
-        <span className="ml-2 text-white/90 font-semibold text-lg">Licensed &amp; Insured · Las Vegas Since 2009</span>
+        <span className="ml-2 text-white/90 font-semibold text-lg">Licensed &amp; Insured · Las Vegas Since 2010</span>
       </div>
       <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
         Ready to See Your Custom Quote?
@@ -86,7 +86,7 @@ const WhatIsIncluded = () => (
         </div>
         <p className="text-center text-muted-foreground mt-8 text-sm">
           <Shield className="inline h-4 w-4 mr-1" />
-          Licensed & Insured · Nevada Contractor's License · In Las Vegas Since 2009
+          Licensed & Insured · Nevada Contractor's License · In Las Vegas Since 2010
         </p>
       </div>
     </div>
@@ -109,7 +109,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Lifetime hardware warranty", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Tempered safety glass (3/8\" or 1/2\")", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Local Las Vegas company", baja: "✓", bigBox: "✕", generic: "✓" },
-  { feature: "Las Vegas owned since 2009", baja: "✓", bigBox: "✕", generic: "✕" },
+  { feature: "Las Vegas owned since 2010", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Free in-home measurement", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Same-week quote response", baja: "✓", bigBox: "✕", generic: "✓" },
 ];
@@ -193,7 +193,7 @@ const faqs = [
   },
   {
     q: "Do you serve areas outside Las Vegas proper?",
-    a: "Yes — we serve the entire Las Vegas Valley including Henderson, Summerlin, Spring Valley, Paradise, Enterprise, Green Valley, and North Las Vegas. If you're in Clark County, we can help."
+    a: "Yes — we serve the entire Las Vegas Valley including Henderson, Summerlin, Spring Valley, Paradise, Enterprise, and Green Valley. If you're in Clark County, we can help."
   },
   {
     q: "Is Baja Glass licensed and insured?",

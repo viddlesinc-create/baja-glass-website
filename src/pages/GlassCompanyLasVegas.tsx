@@ -200,7 +200,7 @@ const GlassCompanyLasVegas = () => {
     },
     {
       question: "What areas do you serve?",
-      answer: "We serve the entire Las Vegas Valley including Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City."
+      answer: "We serve the entire Las Vegas Valley including Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, and Enterprise."
     }
   ];
 
@@ -463,7 +463,7 @@ const GlassCompanyLasVegas = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Serving the Las Vegas Valley</h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
-              We work across Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, and Boulder City—bringing professional measurement, fabrication, and installation to every project.
+              We work across Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, and Enterprise—bringing professional measurement, fabrication, and installation to every project.
             </p>
             <div className="flex justify-center gap-4 text-sm">
               <Link to="/areas-served" className="text-accent hover:text-accent/80 font-medium" onClick={() => window.scrollTo(0, 0)}>Areas Served</Link>

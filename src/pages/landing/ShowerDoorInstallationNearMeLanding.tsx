@@ -20,6 +20,7 @@ import HeroImagePreload from "@/components/HeroImagePreload";
 import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
 const PortfolioLightbox = lazy(() => import("@/components/landing/PortfolioLightbox"));
 import { trackFormSubmission, trackPhoneCall } from "@/lib/analytics";
+import { trackMetaLead } from "@/lib/metaPixel";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -71,7 +72,7 @@ const features = [
   { icon: Clock, label: "Free On-Site Measure in 24h", sub: "Most days, same-week appointments" },
   { icon: MapPin, label: "Local to Las Vegas + Henderson", sub: "15-minute callbacks, not 3 weeks" },
   { icon: Wrench, label: "One-Day Install", sub: "Standard doors finished in half a day" },
-  { icon: Star, label: "Las Vegas Since 2009", sub: "Licensed, bonded and insured" },
+  { icon: Star, label: "Las Vegas Since 2010", sub: "Licensed, bonded and insured" },
   { icon: Shield, label: "1-Year Parts & Labor Warranty", sub: "Plus lifetime hardware warranty" },
 ];
 
@@ -113,7 +114,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "Las Vegas, Henderson, Summerlin, North Las Vegas, Boulder City, Paradise, Spring Valley, Enterprise, and Green Valley. If you're in Clark County, call us — we likely cover your area."
+    a: "Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise, and Green Valley. If you're in Clark County, call us — we likely cover your area."
   },
 ];
 
@@ -141,13 +142,16 @@ function MeasureForm({ id }: { id: string }) {
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
-      await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
-      fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" }
-      }).catch(() => {});
-      if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
+      const response = await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
+      // Meta Lead only when Formspree actually accepted the submit.
+      if (response.ok) {
+        trackMetaLead({
+          name: data.get("name"),
+          email: data.get("email"),
+          phone: data.get("phone"),
+          zip: data.get("zip"),
+        });
+      }
       trackFormSubmission({ source: "lp_shower_door_installation_near_me" });
       setSubmitted(true);
     } catch {
@@ -174,7 +178,7 @@ function MeasureForm({ id }: { id: string }) {
   }
 
   return (
-    <form id={id} onSubmit={handleSubmit} className="space-y-4">
+    <form id={id} onSubmit={handleSubmit} className="space-y-4 text-charcoal">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Full Name *</label>
@@ -239,7 +243,6 @@ const ShowerDoorInstallationNearMeLanding = () => {
           { "@type": "City", name: "Las Vegas", addressRegion: "NV" },
           { "@type": "City", name: "Henderson", addressRegion: "NV" },
           { "@type": "City", name: "Summerlin", addressRegion: "NV" },
-          { "@type": "City", name: "North Las Vegas", addressRegion: "NV" },
           { "@type": "City", name: "Paradise", addressRegion: "NV" },
         ]
       },
@@ -312,7 +315,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="text-white/90 text-sm font-medium tracking-wide">
-                  Licensed Installer · Local to Las Vegas · Since 2009
+                  Licensed Installer · Local to Las Vegas · Since 2010
                 </span>
               </div>
 
@@ -356,15 +359,15 @@ const ShowerDoorInstallationNearMeLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">Since 2009</span>
-                <span className="text-white/50">· 27 Reviews</span>
+                <span className="font-semibold">Since 2010</span>
+                <span className="text-white/50">· 4.7★ on Google</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>Bonded &amp; Insured</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
-              <span>Owner-Operated Since 1999</span>
+              <span>Local Since 2010</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span className="text-white/60 text-xs">Serving Las Vegas &amp; Henderson</span>
             </div>
@@ -424,12 +427,10 @@ const ShowerDoorInstallationNearMeLanding = () => {
                   "Las Vegas",
                   "Henderson",
                   "Summerlin",
-                  "North Las Vegas",
                   "Paradise",
                   "Spring Valley",
                   "Enterprise",
                   "Green Valley",
-                  "Boulder City",
                 ].map((city) => (
                   <span key={city} className="bg-secondary/40 text-charcoal text-sm font-medium px-4 py-2 rounded-full border border-border">
                     {city}
@@ -619,7 +620,7 @@ const ShowerDoorInstallationNearMeLanding = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-3 mb-10">
-                  {["C8 Licensed", "Bonded & Insured", "Owner-Operated Since 1999", "First Responder Owned"].map((badge) => (
+                  {["C8 Licensed", "Bonded & Insured", "Serving Las Vegas Since 2010", "First Responder Owned"].map((badge) => (
                     <span key={badge} className="bg-white/10 border border-white/20 text-white/80 text-xs font-medium px-3 py-1.5 rounded-full">
                       {badge}
                     </span>

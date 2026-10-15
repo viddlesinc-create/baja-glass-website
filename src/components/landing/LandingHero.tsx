@@ -8,6 +8,7 @@ import { Phone, Star, Shield, Clock, Award } from "lucide-react";
 import OptimizedImage from "@/components/OptimizedImage";
 import HeroImagePreload from "@/components/HeroImagePreload";
 import { trackFormSubmission, trackCTAClick, trackPhoneCall } from "@/lib/analytics";
+import { trackMetaLead } from "@/lib/metaPixel";
 import { useToast } from "@/hooks/use-toast";
 import { useMathCaptcha } from "@/hooks/useMathCaptcha";
 
@@ -93,6 +94,13 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
       if (response.ok) {
         setSubmitted(true);
         trackFormSubmission({ projectType: formData.projectType, source: "landing_hero", city: formData.city });
+        trackMetaLead({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          city: formData.city,
+          service: formData.projectType,
+        });
         onFormSubmit?.(formData);
       } else {
         throw new Error('Form submission failed');
@@ -136,7 +144,11 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-              <span className="text-white font-medium">Since 2009</span>
+              <span className="text-white font-medium">4.7★ on Google</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+              <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+              <span className="text-white font-medium">Since 2010</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Shield className="h-5 w-5 text-white" aria-hidden="true" />
@@ -144,7 +156,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Award className="h-5 w-5 text-white" aria-hidden="true" />
-              <span className="text-white font-medium">Las Vegas Owned Since 2009</span>
+              <span className="text-white font-medium">Las Vegas Owned Since 2010</span>
             </div>
           </div>
 

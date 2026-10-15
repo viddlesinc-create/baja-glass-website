@@ -19,7 +19,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/glass-company-las-vegas': {
     title: 'Mirrors, Windows & Commercial Glass in Las Vegas NV',
-    description: 'Custom mirrors, window glass replacement and commercial office glass in Las Vegas. Measured and installed by licensed glaziers since 2009. Call for a quote.',
+    description: 'Custom mirrors, window glass replacement and commercial office glass in Las Vegas. Measured and installed by licensed glaziers since 2010. Call for a quote.',
     canonical: `${BASE_URL}/glass-company-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -49,7 +49,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/about': {
     title: 'About Baja Glass and Mirror | Las Vegas Shower Door Company',
-    description: 'Baja Glass and Mirror — Las Vegas shower door company since 2009. Suite A. Call (702) 383-0779.',
+    description: 'Baja Glass and Mirror — Las Vegas shower door company since 2010. Suite A. Call (702) 383-0779.',
     canonical: `${BASE_URL}/about`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -243,7 +243,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   // ===== Index Pages =====
   '/blog': {
     title: 'Shower Door Blog | Las Vegas Guides, Tips and Costs',
-    description: 'Shower door guides, cost breakdowns, hard water tips and maintenance advice from Baja Glass, a Las Vegas glass company installing custom doors since 2009.',
+    description: 'Shower door guides, cost breakdowns, hard water tips and maintenance advice from Baja Glass, a Las Vegas glass company installing custom doors since 2010.',
     canonical: `${BASE_URL}/blog`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -276,7 +276,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/authors/cliff-robinson': {
     title: 'Cliff Robinson, Owner | Baja Glass & Mirror Las Vegas',
-    description: 'Cliff Robinson founded Baja Glass & Mirror in 2009 and installs custom shower doors and glass across Las Vegas. Read about the team behind the work.',
+    description: 'Cliff Robinson founded Baja Glass & Mirror in 2010 and installs custom shower doors and glass across Las Vegas. Read about the team behind the work.',
     canonical: `${BASE_URL}/authors/cliff-robinson`,
     ogImage: DEFAULT_OG_IMAGE,
   },

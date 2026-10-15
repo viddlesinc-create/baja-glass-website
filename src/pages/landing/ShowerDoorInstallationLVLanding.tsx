@@ -109,7 +109,7 @@ const ServiceArea = () => (
           We Install Across the Las Vegas Valley
         </h2>
         <p className="text-muted-foreground text-lg mb-6">
-          Cities served: <strong>Las Vegas, Henderson, Summerlin, North Las Vegas, Boulder City, and Paradise.</strong>
+          Cities served: <strong>Las Vegas, Henderson, Summerlin, and Paradise.</strong>
         </p>
         <p className="text-sm text-muted-foreground mb-2">ZIP codes served:</p>
         <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto">
@@ -270,8 +270,6 @@ const structuredData = {
         { "@type": "City", name: "Las Vegas", addressRegion: "NV" },
         { "@type": "City", name: "Henderson", addressRegion: "NV" },
         { "@type": "City", name: "Summerlin", addressRegion: "NV" },
-        { "@type": "City", name: "North Las Vegas", addressRegion: "NV" },
-        { "@type": "City", name: "Boulder City", addressRegion: "NV" },
         { "@type": "City", name: "Paradise", addressRegion: "NV" },
       ],
       offers: {
@@ -328,7 +326,7 @@ const ShowerDoorInstallationLVLanding = () => {
         <title>Shower Door Installation Las Vegas — Licensed Installers | Baja Glass</title>
         <meta
           name="description"
-          content="Las Vegas shower door installation by licensed, insured installers. Free in-home measure. Same-week scheduling. Call (702) 383-0779 — owner-operated since 1999."
+          content="Las Vegas shower door installation by licensed, insured installers. Free in-home measure. Same-week scheduling. Call (702) 383-0779 — local since 2010."
         />
         <meta name="robots" content="noindex" />
         <link rel="canonical" href="https://bajaglass.com/lp/shower-door-installation-lv" />
@@ -376,7 +374,7 @@ const ShowerDoorInstallationLVLanding = () => {
         <TrustBar
           badges={[
             "Licensed & Insured",
-            "Owner-Operated Since 1999",
+            "Serving Las Vegas Since 2010",
             "First Responder Owned",
             "Same-Week Measurement Available",
           ]}

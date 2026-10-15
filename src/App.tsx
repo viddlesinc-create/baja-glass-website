@@ -4,6 +4,7 @@ import PageLoader from "./components/PageLoader";
 import ScrollToTop from "./components/ScrollToTop";
 import { SEOHead } from "./seo";
 import { usePageTracking } from "./hooks/usePageTracking";
+import { useMetaPageView } from "./lib/metaPixel";
 
 // Landing pages (standalone, no header/footer). These are the ONLY routes a
 // /lp/* visitor can reach, so the entry chunk stays limited to them.
@@ -21,6 +22,7 @@ const MainSite = lazy(() => import("./MainSite"));
 
 function App() {
   usePageTracking();
+  useMetaPageView();
   const location = useLocation();
 
   // Render landing pages without header/footer

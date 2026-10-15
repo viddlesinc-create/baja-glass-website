@@ -156,7 +156,7 @@ const LocationPageTemplate = ({
             <div className="flex items-start gap-4">
               <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold mb-2">Serving {city} Since 2009</h3>
+                <h3 className="font-semibold mb-2">Serving {city} Since 2010</h3>
                 <p className="text-muted-foreground">Local expertise with hundreds of installations throughout the {city} area.</p>
               </div>
             </div>
@@ -398,7 +398,7 @@ const LocationPageTemplate = ({
               Ready for Your {city} Shower Door Installation?
             </h2>
             <p className="text-xl md:text-2xl mb-12 text-primary-foreground/90 leading-relaxed">
-              Get a free quote and expert consultation from Baja Glass. Serving {city} since 2009.
+              Get a free quote and expert consultation from Baja Glass. Serving {city} since 2010.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">

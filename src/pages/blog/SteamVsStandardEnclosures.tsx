@@ -132,7 +132,7 @@ const SteamVsStandardEnclosures = () => {
               <p>
                 Choose a standard frameless enclosure if you want the open, modern look, straightforward maintenance, and the best value —
                 it&apos;s what most Las Vegas bathrooms are best served by, and it&apos;s the majority of the 1,000+ enclosures we&apos;ve
-                installed since 2009. Choose steam if you&apos;ll genuinely use it: for households that love the spa ritual, dry desert
+                installed since 2010. Choose steam if you&apos;ll genuinely use it: for households that love the spa ritual, dry desert
                 winters make a steam session especially worthwhile, and a well-built steam room is a daily-use feature, not a novelty. The
                 deciding question isn&apos;t the hardware — it&apos;s whether steam bathing is something you&apos;ll do twice a week or
                 twice a year.

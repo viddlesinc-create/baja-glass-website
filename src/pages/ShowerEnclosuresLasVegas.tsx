@@ -68,7 +68,7 @@ const ShowerEnclosuresLasVegas = () => {
     },
     {
       question: "Do you offer shower enclosure installation in Henderson and Summerlin?",
-      answer: "Yes! We install shower enclosures throughout the Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, and North Las Vegas."
+      answer: "Yes! We install shower enclosures throughout the Las Vegas Valley including Henderson, Summerlin, Paradise, Spring Valley, Enterprise, and Green Valley."
     },
     {
       question: "How long does shower enclosure installation take?",
@@ -280,7 +280,7 @@ const ShowerEnclosuresLasVegas = () => {
             We install custom <strong>glass shower enclosures</strong> throughout the Las Vegas Valley:
           </p>
           <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
-            {["Las Vegas", "Henderson", "Summerlin", "Paradise", "Spring Valley", "Enterprise", "Green Valley", "North Las Vegas"].map(area => (
+            {["Las Vegas", "Henderson", "Summerlin", "Paradise", "Spring Valley", "Enterprise", "Green Valley"].map(area => (
               <Badge key={area} variant="secondary" className="text-sm px-4 py-2">{area}</Badge>
             ))}
           </div>

@@ -20,6 +20,7 @@ import HeroImagePreload from "@/components/HeroImagePreload";
 import { StickyMobileCTA } from "@/components/landing/StickyMobileCTA";
 const PortfolioLightbox = lazy(() => import("@/components/landing/PortfolioLightbox"));
 import { trackFormSubmission, trackPhoneCall } from "@/lib/analytics";
+import { trackMetaLead } from "@/lib/metaPixel";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -177,12 +178,13 @@ function ConsultForm({ id }: { id: string }) {
     try {
       const response = await fetch(FORMSPREE, { method: "POST", body: data, headers: { Accept: "application/json" } });
       if (response.ok) {
-        fetch("https://hook.us2.make.com/gfxiblklsuwae888toxx4nue58bgte6w", {
-          method: "POST",
-          body: data,
-          headers: { Accept: "application/json" }
-        }).catch(() => {});
-        if (typeof (window as any).fbq === "function") (window as any).fbq("track", "Lead");
+        trackMetaLead({
+          name: data.get("name"),
+          email: data.get("email"),
+          phone: data.get("phone"),
+          zip: data.get("zip"),
+          service: data.get("project_type"),
+        });
         trackFormSubmission({ source: "lp_steam_shower_installation_lv", projectType: "steam_shower" });
       }
       setSubmitted(true);
@@ -210,7 +212,7 @@ function ConsultForm({ id }: { id: string }) {
   }
 
   return (
-    <form id={id} onSubmit={handleSubmit} className="space-y-4">
+    <form id={id} onSubmit={handleSubmit} className="space-y-4 text-charcoal">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-charcoal mb-1">Full Name *</label>
@@ -410,8 +412,8 @@ const SteamShowerInstallationLVLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">Since 2009</span>
-                <span className="text-white/50">· 27 Reviews</span>
+                <span className="font-semibold">Since 2010</span>
+                <span className="text-white/50">· 4.7★ on Google</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
@@ -562,7 +564,7 @@ const SteamShowerInstallationLVLanding = () => {
                 { icon: Thermometer, label: "Vapor-Rated Hardware", sub: "Hinges and gasketing built for steam" },
                 { icon: Droplets, label: "Waterproofing Coordination", sub: "Schluter Kerdi standard" },
                 { icon: Ruler, label: "Custom Templated", sub: "Glass measured to the millimeter" },
-                { icon: Star, label: "Las Vegas Since 2009", sub: "Licensed, bonded and insured" },
+                { icon: Star, label: "Las Vegas Since 2010", sub: "Licensed, bonded and insured" },
               ].map(({ icon: Icon, label, sub }) => (
                 <div key={label} className="text-center group">
                   <div className="inline-flex items-center justify-center w-14 h-14 bg-white/10 group-hover:bg-white/20 rounded-xl mb-4 transition-colors duration-200">

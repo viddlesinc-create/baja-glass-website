@@ -25,7 +25,7 @@ const ShowerDoorsCentennialHills = () => {
           <div className="max-w-3xl">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">Shower Doors in Centennial Hills</h1>
             <p className="text-xl mb-8 text-white/90">
-              Custom frameless shower doors, measured in your home and installed by Baja Glass and Mirror — the shower door company Las Vegas homeowners have trusted since 2009.
+              Custom frameless shower doors, measured in your home and installed by Baja Glass and Mirror — the shower door company Las Vegas homeowners have trusted since 2010.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="lg" asChild>
@@ -108,7 +108,7 @@ const ShowerDoorsCentennialHills = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="flex items-start gap-3">
               <ShieldCheck className="h-6 w-6 text-accent mt-1 shrink-0" />
-              <p className="text-lg text-muted-foreground">Locally owned since 2009 — and first-responder owned. We stand behind every install with a workmanship warranty.</p>
+              <p className="text-lg text-muted-foreground">Locally owned since 2010 — and first-responder owned. We stand behind every install with a workmanship warranty.</p>
             </div>
             <div className="flex items-start gap-3">
               <Ruler className="h-6 w-6 text-accent mt-1 shrink-0" />

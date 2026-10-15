@@ -244,7 +244,7 @@ const ShowerDoorCostGuide = () => {
                 <p className="text-muted-foreground mb-4">
                   Installation costs are consistent throughout the Las Vegas Valley. Whether you're in Henderson's Green Valley, 
                   Summerlin's The Ridges, or Paradise, you'll receive the same competitive pricing. Some companies charge travel 
-                  fees for remote areas like Boulder City, but most established installers include service throughout metro Las Vegas.
+                  fees for remote areas, but most established installers include service throughout metro Las Vegas.
                 </p>
               </div>
 
