@@ -12,20 +12,18 @@ const areasServed = [
   "Las Vegas",
   "Henderson",
   "Summerlin",
-  "North Las Vegas",
   "Paradise",
   "Spring Valley",
   "Enterprise",
   "Green Valley",
   "Centennial Hills",
-  "Boulder City",
 ];
 
 const CustomGlassDoors = () => {
   const faqs = [
     {
       question: "Do you install custom glass doors in Las Vegas?",
-      answer: "Yes. Baja Glass & Mirror provides custom glass doors for Las Vegas homes and businesses, including glass pivot doors, luxury residential glass doors, interior glass doors, and commercial and restaurant glass doors. We serve the whole Las Vegas Valley, including Henderson, Summerlin and North Las Vegas."
+      answer: "Yes. Baja Glass & Mirror provides custom glass doors for Las Vegas homes and businesses, including glass pivot doors, luxury residential glass doors, interior glass doors, and commercial and restaurant glass doors. We serve the whole Las Vegas Valley, including Henderson and Summerlin."
     },
     {
       question: "Do you install glass pivot doors?",

@@ -12,20 +12,18 @@ const areasServed = [
   "Las Vegas",
   "Henderson",
   "Summerlin",
-  "North Las Vegas",
   "Paradise",
   "Spring Valley",
   "Enterprise",
   "Green Valley",
   "Centennial Hills",
-  "Boulder City",
 ];
 
 const CustomMirrors = () => {
   const faqs = [
     {
       question: "Do you make custom mirrors in Las Vegas?",
-      answer: "Yes. Baja Glass & Mirror measures, custom-cuts and installs mirrors across the Las Vegas Valley, including Henderson, Summerlin, North Las Vegas and Boulder City. We have served Las Vegas since 2010."
+      answer: "Yes. Baja Glass & Mirror measures, custom-cuts and installs mirrors across the Las Vegas Valley, including Henderson and Summerlin. We have served Las Vegas since 2010."
     },
     {
       question: "Can you replace an old or damaged mirror?",
@@ -37,7 +35,7 @@ const CustomMirrors = () => {
     },
     {
       question: "Do you serve areas outside Las Vegas?",
-      answer: "Yes. We serve Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Green Valley, Centennial Hills and Boulder City."
+      answer: "Yes. We serve Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley and Centennial Hills."
     },
     {
       question: "Are you licensed and insured?",

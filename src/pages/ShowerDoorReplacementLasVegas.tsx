@@ -13,20 +13,18 @@ const areasServed = [
   "Las Vegas",
   "Henderson",
   "Summerlin",
-  "North Las Vegas",
   "Paradise",
   "Spring Valley",
   "Enterprise",
   "Green Valley",
   "Centennial Hills",
-  "Boulder City",
 ];
 
 const ShowerDoorReplacementLasVegas = () => {
   const faqs = [
     {
       question: "Do you replace shower doors in Las Vegas and Henderson?",
-      answer: "Yes. Baja Glass & Mirror replaces complete shower doors and broken or cracked glass panels throughout Las Vegas, Henderson, Summerlin, North Las Vegas, Paradise, Spring Valley, Enterprise, Green Valley, Centennial Hills and Boulder City. Measurements and quotes are free and done in your home."
+      answer: "Yes. Baja Glass & Mirror replaces complete shower doors and broken or cracked glass panels throughout Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley and Centennial Hills. Measurements and quotes are free and done in your home."
     },
     {
       question: "Can you replace just one broken or cracked glass panel?",
