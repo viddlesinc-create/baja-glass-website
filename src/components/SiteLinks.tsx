@@ -38,8 +38,6 @@ const SiteLinks = () => {
         { name: "Glass Company Las Vegas", href: "/glass-company-las-vegas" },
         { name: "Residential Glass Replacement", href: "/glass-company-las-vegas/residential-glass-replacement" },
         { name: "Office Glass Enclosures", href: "/glass-company-las-vegas/office-enclosures" },
-        { name: "Custom Mirrors", href: "/glass-company-las-vegas/custom-mirrors" },
-        { name: "Custom Glass & Pivot Doors", href: "/glass-company-las-vegas/custom-glass-doors" },
         { name: "Shower Enclosures", href: "/shower-enclosures-las-vegas" },
       ],
     },

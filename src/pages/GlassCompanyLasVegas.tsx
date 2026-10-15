@@ -47,30 +47,6 @@ const GlassCompanyLasVegas = () => {
       href: "/glass-company-las-vegas/residential-glass-replacement",
       id: "residential-glass-replacement",
       image: "/images/custom-bathroom-mirror-polished-edges.webp"
-    },
-    {
-      title: "Custom Mirrors",
-      description: "Mirrors custom-cut to your measured space and installed across the Las Vegas Valley, plus replacement of old or damaged mirrors.",
-      bullets: [
-        "Cut to your measured space",
-        "Mirror replacement",
-        "Free measurements and quotes"
-      ],
-      href: "/glass-company-las-vegas/custom-mirrors",
-      id: "custom-mirrors",
-      image: "/images/custom-bathroom-mirror-polished-edges.webp"
-    },
-    {
-      title: "Custom Glass Doors",
-      description: "Custom glass doors and glass pivot doors for homes, plus commercial and restaurant glass doors for Las Vegas businesses.",
-      bullets: [
-        "Custom, luxury and interior glass doors",
-        "Glass pivot doors",
-        "Restaurant and commercial glass doors"
-      ],
-      href: "/glass-company-las-vegas/custom-glass-doors",
-      id: "custom-glass-doors",
-      image: "/images/glass-company-commercial-residential-services.webp"
     }
   ];
 
