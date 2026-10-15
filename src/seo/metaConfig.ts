@@ -18,8 +18,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/glass-company-las-vegas': {
-    title: 'Mirrors, Windows & Commercial Glass in Las Vegas NV',
-    description: 'Custom mirrors, window glass replacement and commercial office glass in Las Vegas. Measured and installed by licensed glaziers since 2010. Call for a quote.',
+    title: 'Shower Doors & Office Glass Enclosures Las Vegas | Baja Glass',
+    description: 'Custom shower doors, enclosures and commercial office glass partitions in Las Vegas. Measured and installed by licensed glaziers since 2010. Call for a quote.',
     canonical: `${BASE_URL}/glass-company-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -37,7 +37,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/areas-served': {
     title: 'Shower Door & Glass Services Near You | Las Vegas Area',
-    description: 'Baja Glass provides shower doors, glass replacement and custom enclosures near you in Las Vegas, Henderson, Summerlin, Paradise and surrounding areas.',
+    description: 'Baja Glass provides shower doors, shower door replacement and custom enclosures near you in Las Vegas, Henderson, Summerlin, Paradise and surrounding areas.',
     canonical: `${BASE_URL}/areas-served`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -95,12 +95,6 @@ export const seoConfig: Record<string, SEOMeta> = {
     title: 'Custom Glass Shower Enclosures Las Vegas | Baja Glass',
     description: 'Custom frameless glass shower enclosures in Las Vegas, Henderson & Summerlin — walk-in, corner, neo-angle & steam. Free measurement. (702) 383-0779.',
     canonical: `${BASE_URL}/shower-enclosures-las-vegas`,
-    ogImage: DEFAULT_OG_IMAGE,
-  },
-  '/glass-company-las-vegas/residential-glass-replacement': {
-    title: 'Residential Glass Replacement Las Vegas | Free Quote',
-    description: 'Residential glass replacement in Las Vegas: windows, mirrors, table tops and patio doors. Measured and installed by licensed glaziers. Call for a free quote.',
-    canonical: `${BASE_URL}/glass-company-las-vegas/residential-glass-replacement`,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/glass-company-las-vegas/office-enclosures': {

@@ -18,7 +18,7 @@ const galleryImages: GalleryImage[] = [
     caption: "Elegant Chrome Hardware - Summerlin"
   },
   {
-    src: "/images/custom-bathroom-mirror-polished-edges.webp",
+    src: "/images/complete-hinged-shower-enclosure-2.webp",
     alt: "Custom frameless shower installation with clear glass",
     caption: "Custom Clear Glass - Las Vegas"
   },

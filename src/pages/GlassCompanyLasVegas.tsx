@@ -35,18 +35,6 @@ const GlassCompanyLasVegas = () => {
       href: "/glass-company-las-vegas/office-enclosures",
       id: "office-enclosures",
       image: "/images/modern-office-glass-partitions-conference-room.webp"
-    },
-    {
-      title: "Residential Glass Replacement",
-      description: "Emergency glass replacement for homes including windows, mirrors, patio doors, and custom glass solutions with 24/7 service availability.",
-      bullets: [
-        "Window glass replacement and upgrades",
-        "Mirror installation and replacement",
-        "Patio door glass and emergency services"
-      ],
-      href: "/glass-company-las-vegas/residential-glass-replacement",
-      id: "residential-glass-replacement",
-      image: "/images/custom-bathroom-mirror-polished-edges.webp"
     }
   ];
 
@@ -108,10 +96,10 @@ const GlassCompanyLasVegas = () => {
       alt: "Custom frosted glass table with chrome base — Baja Glass Las Vegas office furniture"
     },
     {
-      title: "Custom Mirror", 
-      description: "Custom-cut mirror with polished edges and professional mounting for elegant bathroom and vanity installations.",
-      image: "/images/custom-bathroom-mirror-polished-edges.webp",
-      alt: "Custom bathroom mirror with polished edges — Baja Glass Las Vegas mirror installation"
+      title: "Office Glass Partitions",
+      description: "Clear glass conference room partitions with polished edges and secure mounting for a modern Las Vegas office.",
+      image: "/images/modern-office-glass-partitions-conference-room.webp",
+      alt: "Modern office glass partitions in a conference room — Baja Glass Las Vegas office glass"
     }
   ];
 
@@ -155,8 +143,8 @@ const GlassCompanyLasVegas = () => {
 
   const faqs = [
     {
-      question: "What residential glass services do you offer?",
-      answer: "We specialize in shower doors, enclosures, office glass partitions, and glass replacements. Our services include frameless, sliding, hinged, and steam-ready installations."
+      question: "What glass services do you offer?",
+      answer: "We specialize in shower doors and enclosures and office glass partitions. Our shower services include frameless, sliding, hinged, and steam-ready installations."
     },
     {
       question: "Can you cut glass and office partitions to custom sizes and shapes?",
@@ -172,7 +160,7 @@ const GlassCompanyLasVegas = () => {
     },
     {
       question: "Do you handle replacements and upgrades?",
-      answer: "Yes. We replace broken or cracked shower glass panels and complete shower doors, and we handle residential and office glass replacement. We do not offer repairs."
+      answer: "Yes. We replace broken or cracked shower glass panels and complete shower doors. We do not offer repairs."
     },
     {
       question: "What areas do you serve?",
@@ -211,7 +199,7 @@ const GlassCompanyLasVegas = () => {
         <div className="absolute inset-0">
              <img 
               src="/images/glass-company-commercial-residential-services.webp" 
-              alt="Las Vegas glass company - commercial and residential glass services"
+              alt="Las Vegas glass company - shower doors and office glass enclosures"
               className="w-full h-full object-cover opacity-75"
             />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 via-primary/20 to-charcoal/40"></div>
@@ -222,7 +210,7 @@ const GlassCompanyLasVegas = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Mirrors, Windows &amp; Commercial Glass in{" "}
+                Shower Doors &amp; Office Glass in{" "}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent drop-shadow-2xl">
                   Las Vegas
                 </span>
@@ -232,7 +220,7 @@ const GlassCompanyLasVegas = () => {
             {/* Subheading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16" style={{ animationDelay: '0.2s' }}>
               <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl leading-relaxed drop-shadow-lg">
-                Mirrors, window glass, table tops and commercial office glass — measured precisely, fabricated locally, and installed by licensed glaziers.
+                Custom shower doors and enclosures for homes, and office glass partitions for workspaces — measured precisely, fabricated locally, and installed by licensed glaziers.
               </p>
             </div>
 
@@ -292,15 +280,7 @@ const GlassCompanyLasVegas = () => {
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Mirrors & mirror walls</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Residential window glass replacement</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Commercial storefront glass & office enclosures</span>
+                <span className="text-muted-foreground">Office glass partitions & enclosures</span>
               </div>
             </div>
 
@@ -516,13 +496,13 @@ const GlassCompanyLasVegas = () => {
           </div>
           
           <div className="flex justify-center gap-6">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Yelp">
+            <a href="https://www.yelp.com/biz/baja-glass-and-mirror-las-vegas" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Yelp">
               <Star className="h-8 w-8" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Instagram">
+            <a href="https://www.instagram.com/baja_glass_lv/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Instagram">
               <Instagram className="h-8 w-8" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Facebook">
+            <a href="https://www.facebook.com/people/Baja-Glass-and-Mirror/100033858206711/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Facebook">
               <Facebook className="h-8 w-8" />
             </a>
           </div>

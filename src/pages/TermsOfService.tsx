@@ -29,8 +29,6 @@ const TermsOfService = () => {
               <li>Sliding and hinged shower door installation</li>
               <li>Custom shower enclosure design and installation</li>
               <li>Steam shower enclosure installation</li>
-              <li>Mirror installation and removal</li>
-              <li>Residential glass replacement</li>
               <li>Office and commercial glass enclosures</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">

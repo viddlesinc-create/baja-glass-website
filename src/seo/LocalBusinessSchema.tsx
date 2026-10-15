@@ -139,8 +139,7 @@ const localBusinessData = {
     "Steam Shower Enclosures",
     "Shower Door Replacement",
     "Tempered Safety Glass",
-    "Low-Iron Glass",
-    "Glass Replacement"
+    "Low-Iron Glass"
   ]
 };
 

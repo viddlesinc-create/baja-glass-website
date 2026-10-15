@@ -51,7 +51,6 @@ export const FinalCTA = ({
     "Custom Enclosure",
     "Repair/Replacement",
     "Steam Shower",
-    "Residential Glass Replacement",
     "Office Glass Enclosures",
     "Not Sure - Need Consultation"
   ];
