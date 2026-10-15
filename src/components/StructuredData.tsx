@@ -80,7 +80,7 @@ export const OrganizationSchema = ({ type = 'Organization' }: OrganizationProps)
       "height": 80
     },
     "image": LOGO_URL,
-    "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation in Las Vegas, Henderson, and Summerlin. First Responder Owned. Licensed, bonded, and insured, serving Las Vegas since 2009.",
+    "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation in Las Vegas, Henderson, and Summerlin. First Responder Owned. Licensed, bonded, and insured, serving Las Vegas since 2010.",
     "telephone": PHONE_E164,
     "email": "info@bajaglass.com",
     "foundingDate": "2010",

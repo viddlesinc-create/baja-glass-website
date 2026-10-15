@@ -8,7 +8,7 @@ interface ArticleBylineProps {
   wordCount?: number;
 }
 
-const AUTHOR = { name: "Cliff Robinson", slug: "cliff-robinson", credential: "Owner, Baja Glass & Mirror — glazing in Las Vegas since 2009" };
+const AUTHOR = { name: "Cliff Robinson", slug: "cliff-robinson", credential: "Owner, Baja Glass & Mirror — glazing in Las Vegas since 2010" };
 
 /**
  * Visible byline. The posts previously carried dates and an author only inside JSON-LD,

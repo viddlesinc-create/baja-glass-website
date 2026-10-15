@@ -28,7 +28,7 @@ const ShowerDoorInstallationLasVegas = () => {
     },
     {
       question: "Where can I find frameless shower door installers near me?",
-      answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated, serving Las Vegas since 2009. Call (702) 383-0779 for a free quote."
+      answer: "Baja Glass provides professional frameless shower door installation throughout Las Vegas, Henderson, Summerlin, and the entire valley. We're locally owned and operated, serving Las Vegas since 2010. Call (702) 383-0779 for a free quote."
     },
     {
       question: "Are your shower door installers licensed and insured?",
@@ -187,7 +187,7 @@ const ShowerDoorInstallationLasVegas = () => {
             </div>
             <div className="text-center">
               <Clock className="h-8 w-8 mx-auto mb-2 text-accent" />
-              <p className="font-semibold">Las Vegas Owned Since 2009</p>
+              <p className="font-semibold">Las Vegas Owned Since 2010</p>
             </div>
             <div className="text-center">
               <Wrench className="h-8 w-8 mx-auto mb-2 text-accent" />
@@ -358,7 +358,7 @@ const ShowerDoorInstallationLasVegas = () => {
             <div className="flex items-start gap-4">
               <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold mb-2">Las Vegas Owned Since 2009</h3>
+                <h3 className="font-semibold mb-2">Las Vegas Owned Since 2010</h3>
                 <p className="text-muted-foreground">Thousands of installations completed across the Las Vegas Valley.</p>
               </div>
             </div>

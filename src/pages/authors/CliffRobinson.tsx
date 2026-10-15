@@ -10,7 +10,7 @@ const AUTHOR_URL = "https://bajaglass.com/authors/cliff-robinson";
  * Organization where schema.org expects a Person — so the site had no author entity at all.
  * This gives the byline something real to point at.
  *
- * Biographical detail beyond what the owner has confirmed (founded the company in 2009) is
+ * Biographical detail beyond what the owner has confirmed (founded the company in 2010) is
  * deliberately left as TODO rather than invented.
  */
 const CliffRobinson = () => (
@@ -46,7 +46,7 @@ const CliffRobinson = () => (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 max-w-3xl prose prose-lg">
         <p>
-          Cliff Robinson founded Baja Glass &amp; Mirror in 2009 and has run it in Las Vegas
+          Cliff Robinson founded Baja Glass &amp; Mirror in 2010 and has run it in Las Vegas
           ever since. He and his team measure, fabricate and install custom shower doors and
           glass across the valley — from Summerlin and Henderson to Paradise and Enterprise.
         </p>

@@ -60,7 +60,7 @@ const hardwareFinishes = "/images/hardware-finishes.jpg";
     answer: "Absolutely. Baja Glass & Mirror specializes in full shower door replacements and upgrades throughout Las Vegas, Henderson, and Summerlin. Whether you have an outdated framed door, a foggy or damaged panel, or simply want to upgrade to a modern frameless design, we handle the entire process. Our team carefully removes your old door, inspects the opening for any water damage or structural issues, and installs your new custom-fabricated glass with fresh hardware, seals, and silicone. We can match existing tile lines and work with out-of-plumb walls to ensure a tight, leak-resistant fit. Most replacement projects are completed in a single visit. Contact us for a free in-home assessment and quote."
   }, {
     question: "What areas do you serve?",
-    answer: "Baja Glass & Mirror proudly serves the entire Las Vegas Valley from our shop at 4280 W Reno Ave in Las Vegas. Our service area includes Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, and surrounding communities. As a locally owned and operated company serving Las Vegas since 2009, we know the unique needs of Las Vegas homeowners—from hard water considerations to desert climate factors that affect glass and hardware selection. Whether you're in a new Henderson development or a classic Summerlin home, our team provides the same precise measurements, quality materials, and professional installation. Call (702) 383-0779 for a free estimate anywhere in the valley."
+    answer: "Baja Glass & Mirror proudly serves the entire Las Vegas Valley from our shop at 4280 W Reno Ave in Las Vegas. Our service area includes Las Vegas, Henderson, Summerlin, Paradise, Spring Valley, Enterprise, Green Valley, and surrounding communities. As a locally owned and operated company serving Las Vegas since 2010, we know the unique needs of Las Vegas homeowners—from hard water considerations to desert climate factors that affect glass and hardware selection. Whether you're in a new Henderson development or a classic Summerlin home, our team provides the same precise measurements, quality materials, and professional installation. Call (702) 383-0779 for a free estimate anywhere in the valley."
   }];
 const Index = () => {
   const navigate = useNavigate();
@@ -180,7 +180,7 @@ const Index = () => {
             <div className="animate-fade-in-up flex flex-wrap gap-3 text-left md:justify-center lg:justify-start lg:ml-16" style={{
             animationDelay: '0.9s'
           }}>
-              {['Licensed', 'Bonded', 'Insured', 'Trusted service in Las Vegas since 2009'].map(badge => <Badge key={badge} className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-xs px-3 py-1 hover:bg-white/20 transition-all duration-300 shadow-lg">
+              {['Licensed', 'Bonded', 'Insured', 'Trusted service in Las Vegas since 2010'].map(badge => <Badge key={badge} className="bg-white/10 backdrop-blur-sm text-white border-white/20 text-xs px-3 py-1 hover:bg-white/20 transition-all duration-300 shadow-lg">
                   {badge}
                 </Badge>)}
             </div>
@@ -222,7 +222,7 @@ const Index = () => {
               </div>
             </div>
             <p className="text-muted-foreground">
-              <strong>Licensed, bonded and insured &mdash; serving Las Vegas and Henderson since 2009</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
+              <strong>Licensed, bonded and insured &mdash; serving Las Vegas and Henderson since 2010</strong> – <Link to="/reviews" className="text-primary underline hover:text-primary/80" onClick={() => window.scrollTo(0, 0)}>Read our customer reviews</Link>.
             </p>
           </div>
         </div>
@@ -285,7 +285,7 @@ const Index = () => {
                 Business Profile, and keep this number in sync with GBP going forward. */}
             <p className="text-muted-foreground">
               Custom shower doors and glass, measured and installed across the Las Vegas
-              Valley since 2009 &mdash; licensed, bonded and insured.
+              Valley since 2010 &mdash; licensed, bonded and insured.
             </p>
           </div>
 

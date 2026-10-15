@@ -148,7 +148,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-              <span className="text-white font-medium">Since 2009</span>
+              <span className="text-white font-medium">Since 2010</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Shield className="h-5 w-5 text-white" aria-hidden="true" />
@@ -156,7 +156,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Award className="h-5 w-5 text-white" aria-hidden="true" />
-              <span className="text-white font-medium">Las Vegas Owned Since 2009</span>
+              <span className="text-white font-medium">Las Vegas Owned Since 2010</span>
             </div>
           </div>
 

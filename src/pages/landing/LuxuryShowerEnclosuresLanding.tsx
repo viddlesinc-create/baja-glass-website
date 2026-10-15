@@ -56,7 +56,7 @@ const features = [
   { icon: Shield, label: "C8 Glass & Glazing License", sub: "Nevada State Contractors Board" },
   { icon: Award, label: "Bonded & Insured", sub: "Full coverage on every project" },
   { icon: Star, label: "First Responder Owned", sub: "Serving those who serve Las Vegas" },
-  { icon: Clock, label: "Las Vegas Owned Since 2009", sub: "Licensed, bonded and insured" },
+  { icon: Clock, label: "Las Vegas Owned Since 2010", sub: "Licensed, bonded and insured" },
   { icon: Layers, label: "Low-Iron Ultra-Clear Glass", sub: "No green tint — pure transparency" },
   { icon: Droplets, label: "Hydrophobic Glass Coating", sub: "Water beads off — less mineral buildup" },
   { icon: Ruler, label: "Custom Fabrication Only", sub: "No off-the-shelf doors — ever" },
@@ -82,7 +82,7 @@ const comparisonRows = [
   { feature: "Hardware finish matching", baja: true, bigBox: "Limited", generic: "Limited" },
   { feature: "Free on-site consultation", baja: true, bigBox: false, generic: "Sometimes" },
   { feature: "First Responder owned", baja: true, bigBox: false, generic: false },
-  { feature: "Las Vegas owned since 2009", baja: true, bigBox: "N/A", generic: "Varies" },
+  { feature: "Las Vegas owned since 2010", baja: true, bigBox: "N/A", generic: "Varies" },
 ];
 
 const faqs = [
@@ -321,7 +321,7 @@ const LuxuryShowerEnclosuresLanding = () => {
 
               {/* Sub */}
               <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-4 max-w-xl">
-                Custom glass shower enclosures designed, measured, fabricated, and installed by licensed glazing specialists working in the Las Vegas Valley since 2009.
+                Custom glass shower enclosures designed, measured, fabricated, and installed by licensed glazing specialists working in the Las Vegas Valley since 2010.
               </p>
               <p className="text-base text-white/70 mb-10 max-w-xl">
                 Not labor-only. Not off-the-shelf. Every panel is custom-fabricated to your bathroom's exact specifications.
@@ -359,13 +359,13 @@ const LuxuryShowerEnclosuresLanding = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/80 text-sm">
               <div className="flex items-center gap-2">
                 <Stars />
-                <span className="font-semibold">Since 2009</span>
+                <span className="font-semibold">Since 2010</span>
                 <span className="text-white/50">· 4.7★ on Google</span>
               </div>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>C8 Licensed Glass &amp; Glazing</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
-              <span>In Las Vegas Since 2009</span>
+              <span>In Las Vegas Since 2010</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
               <span>First Responder Owned</span>
               <div className="hidden sm:block w-px h-4 bg-white/20" />
@@ -719,7 +719,7 @@ const LuxuryShowerEnclosuresLanding = () => {
 
                 {/* Trust badges */}
                 <div className="flex flex-wrap gap-3 mb-10">
-                  {["C8 Licensed", "Bonded & Insured", "First Responder Owned", "Since 2009"].map((badge) => (
+                  {["C8 Licensed", "Bonded & Insured", "First Responder Owned", "Since 2010"].map((badge) => (
                     <span key={badge} className="bg-white/10 border border-white/20 text-white/80 text-xs font-medium px-3 py-1.5 rounded-full">
                       {badge}
                     </span>
