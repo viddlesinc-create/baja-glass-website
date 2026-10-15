@@ -78,13 +78,6 @@
   status = 301
   force = true
 
-# Replacement URL consolidation
-[[redirects]]
-  from = "/shower-door-replacement-las-vegas"
-  to = "/shower-door-installation-las-vegas"
-  status = 301
-  force = true
-
 [[redirects]]
   from = "/shower-doors-las-vegas/repair"
   to = "/shower-doors-las-vegas"

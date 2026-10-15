@@ -22,6 +22,7 @@ const Footer = () => {
     { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
     { name: "Shower Enclosures", href: "/shower-enclosures-las-vegas" },
     { name: "Shower Door Installation", href: "/shower-door-installation-las-vegas" },
+    { name: "Shower Door Replacement", href: "/shower-door-replacement-las-vegas" },
   ];
 
   const locationLinks = [
@@ -41,6 +42,8 @@ const Footer = () => {
     { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
     { name: "Frameless vs Semi-Frameless", href: "/blog/frameless-vs-semi-frameless-shower-doors" },
     { name: "Hard Water Solutions", href: "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" },
+    { name: "Cracked Shower Glass Replacement", href: "/blog/cracked-shower-glass-replacement-las-vegas" },
+    { name: "How Long Does Installation Take?", href: "/blog/how-long-does-shower-door-installation-take" },
   ];
 
   const socialLinks = [

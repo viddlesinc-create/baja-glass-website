@@ -44,6 +44,7 @@ export const routes = [
   "/blog/steam-vs-standard-shower-enclosures",
   "/blog/what-to-ask-before-hiring-shower-door-installer",
   "/shower-door-installation-las-vegas",
+  "/shower-door-replacement-las-vegas",
   "/lp/frameless-shower-doors",
   "/lp/frameless-shower-doors-lv",
   "/lp/luxury-shower-enclosures",

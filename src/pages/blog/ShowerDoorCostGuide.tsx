@@ -342,7 +342,11 @@ const ShowerDoorCostGuide = () => {
               <Link to="/shower-doors-summerlin-nv" className="text-primary font-semibold hover:underline">
                 Summerlin
               </Link>
-              , or another Las Vegas Valley location.
+              , or another Las Vegas Valley location. Replacing an existing door or a cracked panel? See{" "}
+              <Link to="/shower-door-replacement-las-vegas" className="text-primary font-semibold hover:underline">
+                shower door replacement
+              </Link>
+              .
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild>

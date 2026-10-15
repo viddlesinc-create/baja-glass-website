@@ -6,11 +6,13 @@ const ShowerDoorsHenderson = () => {
   const hendersonFaqs = [
     {
       question: "How much does shower door installation in Henderson cost?",
-      answer: "Shower door installation in Henderson typically ranges from $800-$2,500 depending on type (frameless, semi-frameless, sliding), glass thickness, and hardware finish. We provide free in-home measurements and detailed quotes with no hidden fees."
+      answer: "Shower door installation in Henderson typically costs $400–$800 for a framed door, $800–$1,400 for semi-frameless, and $1,200–$2,800 for frameless, depending on glass thickness and hardware finish. We provide free in-home measurements and detailed quotes with no hidden fees.",
+      link: { href: "/blog/shower-door-installation-cost-las-vegas", label: "See our shower door cost guide." }
     },
     {
       question: "Do you offer shower door replacement in Henderson?",
-      answer: "Yes! We replace outdated framed and sliding doors with brand-new custom glass — a full upgrade, not a repair. We remove and dispose of your old door, take precise laser measurements, and install a new frameless or semi-frameless system built for your opening. We don't repair or service other brands' hardware."
+      answer: "Yes! We replace broken or cracked glass panels, and we replace outdated framed and sliding doors with brand-new custom glass — a full upgrade, not a repair. For a full door replacement, we remove and dispose of your old door, take precise laser measurements, and install a new frameless or semi-frameless system built for your opening. We don't repair or service other brands' hardware.",
+      link: { href: "/shower-door-replacement-las-vegas", label: "Learn more about shower door replacement." }
     },
     {
       question: "Who installs shower doors in Henderson?",
@@ -82,13 +84,16 @@ const ShowerDoorsHenderson = () => {
               </p>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Shower Door Replacement in Henderson — Full Upgrades, Not Repairs</h2>
+            <h2 className="text-3xl font-bold mb-6 mt-12">Glass Shower Door Replacement in Henderson</h2>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
                 Ready to <strong>replace your shower door in Henderson</strong>? We replace old framed, sliding, and builder-grade doors with brand-new custom frameless or semi-frameless glass. We remove and dispose of your existing door, prepare the opening, and install a completely new system — thick tempered glass, premium hardware, watertight fit.
               </p>
               <p>
                 We design and install new glass only — we don&apos;t repair or service other brands&apos; hardware. If your old door is failing, a full <strong>Henderson shower door replacement</strong> is the lasting fix. Call (702) 383-0779 for a free quote.
+              </p>
+              <p>
+                We also replace broken or cracked shower glass panels in Henderson — see our <Link to="/shower-door-replacement-las-vegas" className="text-primary underline hover:text-primary/80">shower door replacement</Link> page for how panel and full-door replacement work.
               </p>
             </div>
 

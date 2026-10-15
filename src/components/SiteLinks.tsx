@@ -13,6 +13,7 @@ const SiteLinks = () => {
         { name: "Semi-Frameless Doors", href: "/shower-doors-las-vegas/semi-frameless-framed" },
         { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
         { name: "Steam Shower Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
+        { name: "Shower Door Replacement", href: "/shower-door-replacement-las-vegas" },
 
 
       ],
@@ -50,6 +51,8 @@ const SiteLinks = () => {
         { name: "Installation Process", href: "/blog/installation-process" },
         { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
         { name: "Hard Water Solutions", href: "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" },
+        { name: "Cracked Shower Glass Replacement", href: "/blog/cracked-shower-glass-replacement-las-vegas" },
+        { name: "How Long Does Installation Take?", href: "/blog/how-long-does-shower-door-installation-take" },
         { name: "FAQ", href: "/faq" },
         { name: "Site Map", href: "/sitemap" },
       ],

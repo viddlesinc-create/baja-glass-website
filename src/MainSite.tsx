@@ -42,6 +42,7 @@ const CliffRobinson = lazy(() => import("./pages/authors/CliffRobinson"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 
 const ShowerDoorInstallationLasVegas = lazy(() => import("./pages/ShowerDoorInstallationLasVegas"));
+const ShowerDoorReplacementLasVegas = lazy(() => import("./pages/ShowerDoorReplacementLasVegas"));
 
 // Location pages
 const ShowerDoorsHenderson = lazy(() => import("./pages/locations/ShowerDoorsHenderson"));
@@ -110,7 +111,7 @@ const MainSite = () => (
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/authors/cliff-robinson" element={<CliffRobinson />} />
             <Route path="/shower-door-installation-las-vegas" element={<ShowerDoorInstallationLasVegas />} />
-            <Route path="/shower-door-replacement-las-vegas" element={<RedirectComponent to="/shower-door-installation-las-vegas" />} />
+            <Route path="/shower-door-replacement-las-vegas" element={<ShowerDoorReplacementLasVegas />} />
             <Route path="/custom-shower-doors-las-vegas" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
             <Route path="/shower-doors-henderson-nv" element={<ShowerDoorsHenderson />} />
             <Route path="/shower-doors-summerlin-nv" element={<ShowerDoorsSummerlin />} />

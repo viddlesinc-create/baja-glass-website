@@ -30,6 +30,7 @@ const Sitemap = () => {
         { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
         { name: "Steam Shower Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
         { name: "Shower Enclosures Las Vegas", href: "/shower-enclosures-las-vegas" },
+        { name: "Shower Door Replacement", href: "/shower-door-replacement-las-vegas" },
       ]
     },
     {
