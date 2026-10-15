@@ -2,15 +2,15 @@
 
 declare global {
   interface Window {
-    dataLayer?: Record<string, any>[];
-    gtag?: (...args: any[]) => void;
+    dataLayer?: Record<string, unknown>[];
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
 /**
  * Push event to dataLayer for GTM
  */
-const pushToDataLayer = (event: string, data: Record<string, any>) => {
+const pushToDataLayer = (event: string, data: Record<string, unknown>) => {
   if (typeof window === 'undefined') return;
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({

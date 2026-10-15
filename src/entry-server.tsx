@@ -1,7 +1,7 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom/server';
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider, type HelmetServerState } from 'react-helmet-async';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { Toaster } from '@/components/ui/toaster';
@@ -18,7 +18,7 @@ export function render(url: string) {
     },
   });
   
-  const helmetContext: { helmet?: any } = {};
+  const helmetContext: { helmet?: HelmetServerState } = {};
 
   const html = renderToString(
     <QueryClientProvider client={queryClient}>
