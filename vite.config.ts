@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Copyright year frozen at build time so the prerendered HTML never disagrees
+  // with the client (a runtime new Date() would mismatch every page after Jan 1).
+  define: { __BUILD_YEAR__: JSON.stringify(new Date().getFullYear()) },
   server: {
     host: "::",
     port: 8080,
