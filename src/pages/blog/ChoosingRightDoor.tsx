@@ -263,7 +263,7 @@ const ChoosingRightDoor = () => {
               Get Help Choosing Your Shower Door
             </h2>
             <p className="text-xl mb-8 text-primary-foreground/80">
-              Baja Glass &amp; Mirror has installed shower doors in Las Vegas since 2009. We will measure your shower, walk through each decision with you and give you a written quote, free. Call (702) 383-0779.
+              Baja Glass &amp; Mirror has installed shower doors in Las Vegas since 2010. We will measure your shower, walk through each decision with you and give you a written quote, free. Call (702) 383-0779.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="glass" size="lg" asChild>

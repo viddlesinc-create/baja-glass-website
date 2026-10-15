@@ -157,7 +157,7 @@ const ShowerDoorReplacementLasVegas = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-3xl font-bold mb-6">What Shower Door Replacement Includes</h2>
           <p className="text-lg text-muted-foreground mb-6">
-            Shower door replacement means new glass, not a fix to the old door. We take out the existing door, measure the opening as it is today, and install a new door fabricated for that opening. We have served Las Vegas homeowners since 2009, and we are a family-owned, first-responder-owned company.
+            Shower door replacement means new glass, not a fix to the old door. We take out the existing door, measure the opening as it is today, and install a new door fabricated for that opening. We have served Las Vegas homeowners since 2010, and we are a family-owned, first-responder-owned company.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[

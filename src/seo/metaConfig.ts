@@ -111,13 +111,13 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/glass-company-las-vegas/custom-glass-doors': {
     title: 'Custom Glass & Pivot Doors Las Vegas | Baja Glass & Mirror',
-    description: 'Custom glass doors, glass pivot doors and commercial glass doors for Las Vegas homes and businesses. Licensed, bonded & insured since 2009. (702) 383-0779',
+    description: 'Custom glass doors, glass pivot doors and commercial glass doors for Las Vegas homes and businesses. Licensed, bonded & insured since 2010. (702) 383-0779',
     canonical: `${BASE_URL}/glass-company-las-vegas/custom-glass-doors`,
     ogImage: `${BASE_URL}/images/glass-company-commercial-residential-services.webp`,
   },
   '/glass-company-las-vegas/custom-mirrors': {
     title: 'Custom Mirrors Las Vegas | Measured & Installed | Baja Glass',
-    description: 'Custom-cut mirrors measured and installed across the Las Vegas Valley by Baja Glass & Mirror — serving Las Vegas since 2009. Free quote: (702) 383-0779',
+    description: 'Custom-cut mirrors measured and installed across the Las Vegas Valley by Baja Glass & Mirror — serving Las Vegas since 2010. Free quote: (702) 383-0779',
     canonical: `${BASE_URL}/glass-company-las-vegas/custom-mirrors`,
     ogImage: `${BASE_URL}/images/custom-bathroom-mirror-polished-edges.webp`,
   },

@@ -25,7 +25,7 @@ const CustomMirrors = () => {
   const faqs = [
     {
       question: "Do you make custom mirrors in Las Vegas?",
-      answer: "Yes. Baja Glass & Mirror measures, custom-cuts and installs mirrors across the Las Vegas Valley, including Henderson, Summerlin, North Las Vegas and Boulder City. We have served Las Vegas since 2009."
+      answer: "Yes. Baja Glass & Mirror measures, custom-cuts and installs mirrors across the Las Vegas Valley, including Henderson, Summerlin, North Las Vegas and Boulder City. We have served Las Vegas since 2010."
     },
     {
       question: "Can you replace an old or damaged mirror?",
@@ -91,7 +91,7 @@ const CustomMirrors = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
-              <Badge className="bg-white/15 text-white border-white/30 mb-4">Serving Las Vegas Since 2009</Badge>
+              <Badge className="bg-white/15 text-white border-white/30 mb-4">Serving Las Vegas Since 2010</Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Custom Mirrors in Las Vegas</h1>
               <p className="text-xl mb-8 text-primary-foreground/90">
                 Baja Glass &amp; Mirror custom-cuts mirrors to your measurements and installs them across Las Vegas, Henderson and the surrounding valley. We also replace old or damaged mirrors. Call (702) 383-0779 or request a free quote online to schedule a measurement.
@@ -128,7 +128,7 @@ const CustomMirrors = () => {
             A custom mirror starts with the wall, not a catalog. We measure the space where the mirror will hang, cut the mirror to those measurements, and install it. That means the mirror fits the wall, vanity or room it was made for instead of leaving awkward gaps around a stock size.
           </p>
           <p className="text-lg text-muted-foreground mb-8">
-            Baja Glass &amp; Mirror is a family-owned, first-responder-owned glass company that has served Las Vegas since 2009. We are licensed, bonded and insured.
+            Baja Glass &amp; Mirror is a family-owned, first-responder-owned glass company that has served Las Vegas since 2010. We are licensed, bonded and insured.
           </p>
           {/* TODO(Frank): confirm mirror types offered (bathroom/vanity, wall, gym, lighted) before listing them here. */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

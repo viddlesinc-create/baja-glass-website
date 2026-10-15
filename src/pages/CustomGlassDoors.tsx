@@ -41,7 +41,7 @@ const CustomGlassDoors = () => {
     },
     {
       question: "Are you licensed and insured for commercial work?",
-      answer: "Baja Glass & Mirror LLC is licensed, bonded and insured, and has served Las Vegas since 2009."
+      answer: "Baja Glass & Mirror LLC is licensed, bonded and insured, and has served Las Vegas since 2010."
     }
   ];
 
@@ -124,7 +124,7 @@ const CustomGlassDoors = () => {
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl">
             <Badge className="bg-white/15 backdrop-blur-sm text-white border-white/30 mb-4">
-              Licensed, Bonded & Insured Since 2009
+              Licensed, Bonded & Insured Since 2010
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Custom Glass Doors &amp; Pivot Doors in Las Vegas
@@ -152,7 +152,7 @@ const CustomGlassDoors = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">Architectural Glass Doors for Homes and Businesses</h2>
           <p className="text-lg text-muted-foreground mb-4">
-            A glass door changes how a space feels. It lets light through, opens sightlines between rooms, and makes an entry look deliberate. Baja Glass &amp; Mirror is a family-owned, first-responder-owned Las Vegas glass company, and we have worked on homes and businesses across the valley since 2009.
+            A glass door changes how a space feels. It lets light through, opens sightlines between rooms, and makes an entry look deliberate. Baja Glass &amp; Mirror is a family-owned, first-responder-owned Las Vegas glass company, and we have worked on homes and businesses across the valley since 2010.
           </p>
           <p className="text-lg text-muted-foreground">
             We measure every opening on site, so your door is made for the space it goes into rather than adapted from a stock size.
