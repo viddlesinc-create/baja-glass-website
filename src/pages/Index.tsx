@@ -69,7 +69,7 @@ const Index = () => {
       <WebSiteSchema />
       <SpeakableSchema 
         name="Baja Glass & Mirror - Las Vegas Shower Door Installation"
-        description="Custom frameless shower doors, glass enclosures, and mirror installation in Las Vegas, Henderson, and Summerlin. Family owned, first responder owned. Free quotes: (702) 383-0779"
+        description="Custom frameless shower doors, shower enclosures, and office glass installation in Las Vegas, Henderson, and Summerlin. Family owned, first responder owned. Free quotes: (702) 383-0779"
         url="https://bajaglass.com"
         speakableSelectors={['h1', '.intro-content', '.faq-answer']}
       />
@@ -142,7 +142,7 @@ const Index = () => {
             animationDelay: '0.3s'
           }}>
               <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl leading-relaxed font-light drop-shadow-lg">
-                Professional glass installation services including shower doors, mirrors, office glass, and residential glass replacement—delivered with precision and care.
+                Professional glass installation services including custom shower doors, shower enclosures, and office glass—delivered with precision and care.
               </p>
             </div>
 
@@ -214,11 +214,7 @@ const Index = () => {
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Residential glass replacement & window upgrades</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Mirrors, office enclosures and commercial glass</span>
+                <span className="text-muted-foreground">Office glass partitions and enclosures</span>
               </div>
             </div>
             <p className="text-muted-foreground">
@@ -318,7 +314,7 @@ const Index = () => {
               {
                 city: "Henderson",
                 url: "/shower-doors-henderson-nv",
-                description: "Your local experts for Henderson shower door installation, frameless enclosures, and glass replacement."
+                description: "Your local experts for Henderson shower door installation, frameless enclosures, and shower door replacement."
               },
               {
                 city: "Summerlin",
@@ -445,27 +441,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Beyond Shower Doors</h2>
-            <p className="text-lg text-muted-foreground">Professional glass solutions for your home and business</p>
+            <p className="text-lg text-muted-foreground">Commercial office glass for your workspace</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  Residential Glass Replacement
-                  <Badge variant="secondary">24/7 Emergency</Badge>
-                </CardTitle>
-                <CardDescription>
-                  Emergency glass replacement for windows, mirrors, patio doors, and more. Same-day service available for urgent needs.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/residential-glass-replacement" onClick={() => window.scrollTo(0, 0)}>Emergency Glass Replacement</Link>
-                </Button>
-              </CardContent>
-            </Card>
-            
+          <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
             <Card className="group hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
@@ -473,7 +452,7 @@ const Index = () => {
                   <Badge variant="secondary">Commercial</Badge>
                 </CardTitle>
                 <CardDescription>
-                  Transform your workspace with professional glass partitions, conference room enclosures, and storefront systems.
+                  Transform your workspace with professional glass partitions, conference room enclosures, and private office walls.
                 </CardDescription>
               </CardHeader>
               <CardContent>

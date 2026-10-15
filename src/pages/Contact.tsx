@@ -134,7 +134,6 @@ const Contact = () => {
     "Custom Enclosure",
     "Shower Door Replacement",
     "Steam Shower",
-    "Residential Glass Replacement",
     "Office Glass Enclosures",
     "Not Sure - Need Consultation"
   ];

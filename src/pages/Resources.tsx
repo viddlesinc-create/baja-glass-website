@@ -369,30 +369,7 @@ const Resources = () => {
       <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Other Glass Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Wrench className="h-5 w-5" />
-                  Residential Glass Replacement
-                </CardTitle>
-                <CardDescription>
-                  Emergency glass replacement for your home including windows, mirrors, and patio doors.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• 24/7 emergency response</li>
-                  <li>• Window glass replacement</li>
-                  <li>• Custom mirrors & table tops</li>
-                  <li>• Insurance claim assistance</li>
-                </ul>
-                <Button asChild className="w-full">
-                  <Link to="/glass-company-las-vegas/residential-glass-replacement" onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
-                </Button>
-              </CardContent>
-            </Card>
-            
+          <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
             <Card className="h-full">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -408,7 +385,7 @@ const Resources = () => {
                   <li>• Conference room partitions</li>
                   <li>• Private office walls</li>
                   <li>• Reception area glass</li>
-                  <li>• Commercial storefront systems</li>
+                  <li>• Frosted, clear and etched glass options</li>
                 </ul>
                 <Button asChild className="w-full">
                   <Link to="/glass-company-las-vegas/office-enclosures" onClick={() => window.scrollTo(0, 0)}>Learn More</Link>

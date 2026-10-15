@@ -80,7 +80,7 @@ export const OrganizationSchema = ({ type = 'Organization' }: OrganizationProps)
       "height": 80
     },
     "image": LOGO_URL,
-    "description": "Family-owned glass company specializing in custom frameless shower doors, mirrors, and interior glass installation in Las Vegas, Henderson, and Summerlin. First Responder Owned. Licensed, bonded, and insured, serving Las Vegas since 2010.",
+    "description": "Family-owned glass company specializing in custom frameless shower doors, shower enclosures, and office glass installation in Las Vegas, Henderson, and Summerlin. First Responder Owned. Licensed, bonded, and insured, serving Las Vegas since 2010.",
     "telephone": PHONE_E164,
     "email": "info@bajaglass.com",
     "foundingDate": "2010",
@@ -127,8 +127,6 @@ export const OrganizationSchema = ({ type = 'Organization' }: OrganizationProps)
       "Semi-Frameless Shower Doors",
       "Sliding Shower Doors",
       "Hinged Shower Doors",
-      "Mirror Installation",
-      "Glass Replacement",
       "Custom Glass Work",
       "Steam Shower Enclosures",
       "Custom Shower Enclosures",
@@ -166,7 +164,7 @@ export const WebSiteSchema = ({ name = 'Baja Glass & Mirror', url = BASE_URL }: 
     "name": name,
     "alternateName": "Baja Glass",
     "url": url,
-    "description": "Custom frameless shower doors, glass enclosures, and mirror installation services in Las Vegas, Henderson, and Summerlin.",
+    "description": "Custom frameless shower doors, shower enclosures, and office glass installation services in Las Vegas, Henderson, and Summerlin.",
     "inLanguage": "en-US",
     "publisher": {
       "@type": "Organization",

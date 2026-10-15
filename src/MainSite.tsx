@@ -34,7 +34,6 @@ const Resources = lazy(() => import("./pages/Resources"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Sitemap = lazy(() => import("./pages/Sitemap"));
 const Reviews = lazy(() => import("./pages/Reviews"));
-const ResidentialGlassReplacement = lazy(() => import("./pages/ResidentialGlassReplacement"));
 const OfficeEnclosures = lazy(() => import("./pages/OfficeEnclosures"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
@@ -88,7 +87,7 @@ const MainSite = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/glass-company-las-vegas" element={<GlassCompanyLasVegas />} />
-            <Route path="/glass-company-las-vegas/residential-glass-replacement" element={<ResidentialGlassReplacement />} />
+            <Route path="/glass-company-las-vegas/residential-glass-replacement" element={<RedirectComponent to="/glass-company-las-vegas" />} />
             <Route path="/glass-company-las-vegas/office-enclosures" element={<OfficeEnclosures />} />
             <Route path="/shower-doors-las-vegas" element={<ShowerDoorsHub />} />
             <Route path="/shower-doors-las-vegas/frameless" element={<FramelessShowerDoors />} />

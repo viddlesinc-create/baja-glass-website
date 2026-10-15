@@ -277,7 +277,7 @@ const Gallery = () => {
             >
               <img 
                 src="/images/complete-hinged-shower-enclosure-2.webp" 
-                alt="Modern bathroom mirror with brass fixtures"
+                alt="Hinged frameless shower enclosure with brass fixtures"
                 className="w-full aspect-video object-cover"
                 width="800"
                 height="450"

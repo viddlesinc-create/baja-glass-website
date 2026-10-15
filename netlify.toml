@@ -159,10 +159,16 @@
   status = 301
   force = true
 
-# Repair URL retired — no repair services offered (renamed to replacement, Jul 2026)
+# Residential glass pages retired — shower doors and office glass only (Oct 2026)
 [[redirects]]
   from = "/glass-company-las-vegas/residential-glass-repair"
-  to = "/glass-company-las-vegas/residential-glass-replacement"
+  to = "/glass-company-las-vegas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/glass-company-las-vegas/residential-glass-replacement"
+  to = "/glass-company-las-vegas"
   status = 301
   force = true
 
