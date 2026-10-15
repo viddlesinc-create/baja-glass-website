@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface OptimizedImageProps {
   src: string;
@@ -66,7 +66,18 @@ const OptimizedImage = ({
   sizes = '100vw',
   priority = false,
 }: OptimizedImageProps) => {
+  // The first client render must reproduce the prerendered markup exactly, so it
+  // never consults window.location: the server always emits the Netlify CDN
+  // <picture>, and so does the client until an effect runs after hydration.
+  // Reading the hostname during render made every non-Netlify host (vite preview,
+  // localhost) hydrate a bare <img> against the server's <picture>, which React
+  // reports as #418 and recovers from by client-rendering the whole Suspense
+  // boundary (#422), throwing away the prerendered page.
   const [fallbackToOriginal, setFallbackToOriginal] = useState(false);
+
+  useEffect(() => {
+    if (!isNetlify()) setFallbackToOriginal(true);
+  }, []);
 
   // Render IDENTICAL markup on the server and on the Netlify client so React
   // hydration is a no-op (a divergent <picture> here forced a re-render of every
@@ -80,7 +91,7 @@ const OptimizedImage = ({
     .map(w => `${getNetlifyImageUrl(src, w, 'webp')} ${w}w`)
     .join(', ');
 
-  if (isSSR || (isNetlify() && !fallbackToOriginal)) {
+  if (isSSR || !fallbackToOriginal) {
     return (
       <picture>
         <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
