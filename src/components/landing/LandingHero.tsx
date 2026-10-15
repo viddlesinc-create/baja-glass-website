@@ -167,7 +167,7 @@ export const LandingHero = ({ onFormSubmit }: LandingHeroProps) => {
           </h1>
 
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Custom-fit & expertly installed — free in-home measurement and a lifetime warranty on hardware
+            Custom-fit & expertly installed — free in-home measurement, a 1-year parts & labor warranty and lifetime hardware warranty
           </p>
 
           {/* CTA Buttons or Form */}

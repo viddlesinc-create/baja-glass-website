@@ -61,7 +61,7 @@ const included = [
   "Professional installation by our in-house crew",
   "Full site cleanup after installation",
   "Walkthrough and glass care instructions",
-  "Lifetime warranty on all hardware",
+  "1-year parts & labor + lifetime hardware warranty",
 ];
 
 const WhatIsIncluded = () => (
@@ -106,7 +106,7 @@ interface ComparisonRow {
 const comparisonRows: ComparisonRow[] = [
   { feature: "Custom-measured fit", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Licensed & insured installers", baja: "✓", bigBox: "✕", generic: "✕" },
-  { feature: "Lifetime hardware warranty", baja: "✓", bigBox: "✕", generic: "✕" },
+  { feature: "1-year parts & labor + lifetime hardware", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Tempered safety glass (3/8\" or 1/2\")", baja: "✓", bigBox: "✕", generic: "✕" },
   { feature: "Local Las Vegas company", baja: "✓", bigBox: "✕", generic: "✓" },
   { feature: "Las Vegas owned since 2010", baja: "✓", bigBox: "✕", generic: "✕" },
@@ -181,7 +181,7 @@ const faqs = [
   },
   {
     q: "What warranty do you offer?",
-    a: "We provide a lifetime warranty on all hardware. The glass itself carries a manufacturer warranty. If anything isn't right after installation, we come back and fix it — no charge."
+    a: "Every install comes with a 1-year parts and labor warranty plus a lifetime warranty on all hardware. The glass itself carries a manufacturer warranty."
   },
   {
     q: "Do I need to be home for the measurement visit?",
@@ -257,7 +257,7 @@ const FramelessShowerDoorsLVLanding = () => {
         "@type": "Service",
         "@id": "https://bajaglass.com/lp/frameless-shower-doors-lv#service",
         "name": "Frameless Shower Door Installation",
-        "description": "Premium frameless shower door installation services in Las Vegas. Custom-fitted, tempered safety glass with professional installation and lifetime hardware warranty.",
+        "description": "Premium frameless shower door installation services in Las Vegas. Custom-fitted, tempered safety glass with professional installation and 1-year parts & labor + lifetime hardware warranty.",
         "provider": {
           "@type": "LocalBusiness",
           "@id": "https://bajaglass.com/#localbusiness"
@@ -341,7 +341,7 @@ const FramelessShowerDoorsLVLanding = () => {
         <title>Frameless Shower Doors Las Vegas NV | Free Quote | Baja Glass</title>
         <meta
           name="description"
-          content="Transform your bathroom with premium frameless shower doors. Expert installation in Las Vegas. Free in-home measurement. Lifetime hardware warranty. Call (702) 383-0779."
+          content="Transform your bathroom with premium frameless shower doors. Expert installation in Las Vegas. Free in-home measurement. 1-year parts & labor + lifetime hardware warranty. Call (702) 383-0779."
         />
         <meta name="robots" content="noindex" />
         <link rel="canonical" href="https://bajaglass.com/lp/frameless-shower-doors-lv" />

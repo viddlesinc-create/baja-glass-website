@@ -51,9 +51,9 @@ const TermsOfService = () => {
               Baja Glass & Mirror stands behind the quality of our work:
             </p>
             <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-              <li><strong>Workmanship Warranty:</strong> We warranty our installation workmanship. If any issue arises from our installation, we will return to correct it at no additional charge.</li>
+              <li><strong>Parts & Labor Warranty (1 Year):</strong> If any issue arises from our installation within one year, we will return to correct it at no additional charge.</li>
               <li><strong>Glass Warranty:</strong> All tempered glass is manufactured to ANSI Z97.1 and CPSC 16 CFR 1201 safety standards. Glass defects present at the time of installation will be replaced at no cost.</li>
-              <li><strong>Hardware Warranty:</strong> Hardware warranties vary by manufacturer. We use professional-grade hardware and will assist with any warranty claims.</li>
+              <li><strong>Lifetime Hardware Warranty:</strong> All hardware we install is covered for life.</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
               Warranty does not cover damage caused by misuse, improper cleaning products, impact, or normal wear and tear. Warranty claims must be reported promptly by contacting our office.
