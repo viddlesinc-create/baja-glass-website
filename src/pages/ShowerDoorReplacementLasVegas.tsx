@@ -36,7 +36,7 @@ const ShowerDoorReplacementLasVegas = () => {
     },
     {
       question: "How long does shower door replacement take?",
-      answer: "Measure-to-install is typically 3–7 business days. Your glass is fabricated in our Las Vegas shop in 2–5 business days after the quote is approved, and installation is typically completed in a single day."
+      answer: "Measure-to-install is typically about 2 weeks. Your glass is fabricated in our Las Vegas shop after the quote is approved, and installation is typically completed in a single day."
     },
     {
       question: "Can I replace my framed shower door with a frameless one?",
@@ -62,7 +62,7 @@ const ShowerDoorReplacementLasVegas = () => {
   const steps = [
     { step: "1", title: "In-home consultation & laser measurement", detail: "About one hour. We look at the existing door and opening, talk through styles, glass and finishes, and laser-measure the space as it is today." },
     { step: "2", title: "Design & quote", detail: "You get a written quote for the door style, glass thickness, clarity, coating and hardware finish you chose." },
-    { step: "3", title: "Fabrication in our Las Vegas shop", detail: "New tempered safety glass is cut and finished to your measurements, typically in 2–5 business days." },
+    { step: "3", title: "Fabrication in our Las Vegas shop", detail: "New tempered safety glass is cut and finished to your measurements in our shop; fabrication is the bulk of the timeline." },
     { step: "4", title: "Installation", detail: "We remove the old door or broken panel and install the new glass, typically in a single day." },
     { step: "5", title: "Final walkthrough & warranty review", detail: "We walk you through the finished door and review your warranty before we leave." }
   ];
@@ -275,7 +275,7 @@ const ShowerDoorReplacementLasVegas = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-3xl font-bold text-center mb-4">How Shower Door Replacement Works</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Measure-to-install is typically 3–7 business days.
+            Measure-to-install is typically about 2 weeks.
           </p>
           <ol className="space-y-6">
             {steps.map((s) => (

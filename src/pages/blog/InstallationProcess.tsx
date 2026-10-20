@@ -24,7 +24,7 @@ const steps = [
   },
   {
     title: "Fabrication",
-    time: "2–5 business days",
+    time: "Most of the timeline",
     detail: "The tempered safety glass is cut and finished to your measurements, in 3/8\" (standard) or 1/2\" (premium) thickness, with any low-iron glass or hydrophobic coating you selected. Our fabrication happens in our Las Vegas shop."
   },
   {
@@ -42,7 +42,7 @@ const steps = [
 const faqs = [
   {
     question: "How long does shower door installation take?",
-    answer: "From measurement to installation typically takes 3–7 business days. The consultation and measurement takes about an hour, fabrication takes 2–5 business days, and the installation itself is typically completed in a single day."
+    answer: "From measurement to installation typically takes about 2 weeks. The consultation and measurement takes about an hour, fabrication accounts for most of that time, and the installation itself is typically completed in a single day."
   },
   {
     question: "Why does a glass shower door need to be measured in person?",
@@ -119,7 +119,7 @@ const InstallationProcess = () => {
               How Shower Door Installation Works, Step by Step
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
-              Glass shower door installation happens in five steps: an in-home consultation and laser measurement (about an hour), a design and quote, fabrication of the tempered glass (2–5 business days), installation (typically a single day) and a final walkthrough. From measurement to installation typically takes 3–7 business days.
+              Glass shower door installation happens in five steps: an in-home consultation and laser measurement (about an hour), a design and quote, fabrication of the tempered glass (the bulk of the timeline), installation (typically a single day) and a final walkthrough. From measurement to installation typically takes about 2 weeks.
             </p>
             <ArticleByline
               datePublished={DATE_PUBLISHED}
