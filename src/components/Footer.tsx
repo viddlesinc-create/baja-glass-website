@@ -17,8 +17,6 @@ const Footer = () => {
   ];
 
   const serviceLinks = [
-    { name: "Shower Doors Las Vegas", href: "/shower-doors-las-vegas" },
-    { name: "Glass Company Services", href: "/glass-company-las-vegas" },
     { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
     { name: "Shower Enclosures", href: "/shower-enclosures-las-vegas" },
     { name: "Shower Door Installation", href: "/shower-door-installation-las-vegas" },
@@ -32,14 +30,13 @@ const Footer = () => {
     { name: "Spring Valley", href: "/shower-doors-spring-valley-nv" },
     { name: "Enterprise", href: "/shower-doors-enterprise-nv" },
     { name: "Green Valley", href: "/shower-doors-green-valley-nv" },
+    { name: "Centennial Hills", href: "/shower-doors-centennial-hills-nv" },
   ];
 
   const blogLinks = [
-    { name: "View All Blog Posts", href: "/blog" },
     { name: "Glass Care Guide", href: "/blog/glass-care-guide" },
     { name: "Choosing the Right Door", href: "/blog/choosing-right-door" },
     { name: "Installation Process", href: "/blog/installation-process" },
-    { name: "Shower Door Cost Guide", href: "/blog/shower-door-installation-cost-las-vegas" },
     { name: "Frameless vs Semi-Frameless", href: "/blog/frameless-vs-semi-frameless-shower-doors" },
     { name: "Hard Water Solutions", href: "/blog/las-vegas-water-quality-shower-glass-hard-water-solutions" },
     { name: "Cracked Shower Glass Replacement", href: "/blog/cracked-shower-glass-replacement-las-vegas" },
@@ -131,24 +128,6 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Popular Services</h3>
             <div className="space-y-2">
-              <div>
-                <Link
-                  to="/shower-doors-henderson-nv"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  Henderson Shower Doors
-                </Link>
-              </div>
-              <div>
-                <Link
-                  to="/shower-doors-summerlin-nv"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  Summerlin Shower Doors
-                </Link>
-              </div>
               <div>
                 <Link
                   to="/shower-doors-las-vegas/frameless"

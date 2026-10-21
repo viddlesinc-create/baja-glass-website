@@ -148,6 +148,38 @@ const ShowerDoorsCentennialHills = () => {
         </div>
       </section>
 
+      {/* Nearby Service Areas */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">We Also Serve Nearby Areas</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { name: "shower doors Las Vegas", url: "/shower-doors-las-vegas" },
+                { name: "Henderson", url: "/shower-doors-henderson-nv" },
+                { name: "Summerlin", url: "/shower-doors-summerlin-nv" },
+                { name: "Paradise", url: "/shower-doors-paradise-nv" },
+                { name: "Spring Valley", url: "/shower-doors-spring-valley-nv" },
+                { name: "Enterprise", url: "/shower-doors-enterprise-nv" },
+                { name: "Green Valley", url: "/shower-doors-green-valley-nv" }
+              ].map((area) => (
+                <Button
+                  key={area.name}
+                  variant="outline"
+                  asChild
+                  className="justify-start"
+                >
+                  <Link to={area.url} onClick={() => window.scrollTo(0, 0)}>
+                    <MapPin className="h-4 w-4 mr-2" />
+                    {area.name}
+                  </Link>
+                </Button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-charcoal to-primary text-white">
         <div className="container mx-auto px-4 text-center max-w-3xl">
