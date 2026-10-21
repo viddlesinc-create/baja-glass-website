@@ -163,7 +163,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/blog/installation-process': {
     title: 'How Shower Door Installation Works: Measure to Install',
-    description: 'How shower door installation works: in-home laser measurement, design and quote, glass fabrication in 2–5 business days, and a typical single-day install.',
+    description: 'How shower door installation works: in-home laser measurement, design and quote, glass fabrication in our Las Vegas shop, and a typical single-day install.',
     canonical: `${BASE_URL}/blog/installation-process`,
     ogImage: DEFAULT_OG_IMAGE,
   },
