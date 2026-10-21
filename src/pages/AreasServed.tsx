@@ -205,7 +205,7 @@ const areas = [
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-16 max-w-5xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-4 lg:flex-nowrap lg:gap-3 mb-16 max-w-6xl mx-auto">
             {[
               { name: "Henderson", href: "/shower-doors-henderson-nv" },
               { name: "Summerlin", href: "/shower-doors-summerlin-nv" },
@@ -215,7 +215,7 @@ const areas = [
               { name: "Green Valley", href: "/shower-doors-green-valley-nv" },
               { name: "Centennial Hills", href: "/shower-doors-centennial-hills-nv" }
             ].map((location) => (
-              <Button key={location.name} variant="outline" size="lg" asChild className="h-auto py-4">
+              <Button key={location.name} variant="outline" size="lg" asChild className="h-auto py-4 lg:px-3 lg:text-sm xl:px-4 xl:text-base">
                 <Link to={location.href} onClick={() => window.scrollTo(0, 0)}>
                   {location.name} →
                 </Link>
