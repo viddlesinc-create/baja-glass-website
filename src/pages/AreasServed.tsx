@@ -205,7 +205,7 @@ const areas = [
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16 max-w-5xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-4 mb-16 max-w-5xl mx-auto">
             {[
               { name: "Henderson", href: "/shower-doors-henderson-nv" },
               { name: "Summerlin", href: "/shower-doors-summerlin-nv" },

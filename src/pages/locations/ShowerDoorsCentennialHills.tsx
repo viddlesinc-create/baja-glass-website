@@ -155,7 +155,7 @@ const ShowerDoorsCentennialHills = () => {
             <h2 className="text-3xl font-bold text-center mb-12">We Also Serve Nearby Areas</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
-                { name: "shower doors Las Vegas", url: "/shower-doors-las-vegas" },
+                { name: "Shower Doors Las Vegas", url: "/shower-doors-las-vegas" },
                 { name: "Henderson", url: "/shower-doors-henderson-nv" },
                 { name: "Summerlin", url: "/shower-doors-summerlin-nv" },
                 { name: "Paradise", url: "/shower-doors-paradise-nv" },
