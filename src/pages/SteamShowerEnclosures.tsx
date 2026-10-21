@@ -137,9 +137,9 @@ const SteamShowerEnclosures = () => {
           <div className="max-w-5xl mx-auto">
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Lake Las Vegas & Paradise
+                Steam Shower Enclosures{" "}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
-                  Steam Enclosures
+                  in Las Vegas
                 </span>
               </h1>
             </div>

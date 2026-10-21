@@ -212,7 +212,8 @@ const areas = [
               { name: "Paradise", href: "/shower-doors-paradise-nv" },
               { name: "Spring Valley", href: "/shower-doors-spring-valley-nv" },
               { name: "Enterprise", href: "/shower-doors-enterprise-nv" },
-              { name: "Green Valley", href: "/shower-doors-green-valley-nv" }
+              { name: "Green Valley", href: "/shower-doors-green-valley-nv" },
+              { name: "Centennial Hills", href: "/shower-doors-centennial-hills-nv" }
             ].map((location) => (
               <Button key={location.name} variant="outline" size="lg" asChild className="h-auto py-4">
                 <Link to={location.href} onClick={() => window.scrollTo(0, 0)}>

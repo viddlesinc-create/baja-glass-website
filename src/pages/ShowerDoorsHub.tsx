@@ -143,10 +143,10 @@ const ShowerDoorsHub = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Glass Shower Doors in
+                Glass Shower Doors in{" "}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Las Vegas
-                </span>
+                </span>{" "}
                 <span className="block text-2xl md:text-3xl font-normal mt-2 text-white/90">
                   Frameless & Sliding Glass Options
                 </span>

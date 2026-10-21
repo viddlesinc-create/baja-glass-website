@@ -315,7 +315,8 @@ const LocationPageTemplate = ({
                 { name: "Paradise", url: "/shower-doors-paradise-nv" },
                 { name: "Spring Valley", url: "/shower-doors-spring-valley-nv" },
                 { name: "Enterprise", url: "/shower-doors-enterprise-nv" },
-                { name: "Green Valley", url: "/shower-doors-green-valley-nv" }
+                { name: "Green Valley", url: "/shower-doors-green-valley-nv" },
+                { name: "Centennial Hills", url: "/shower-doors-centennial-hills-nv" }
               ]
               .filter(area => area.name !== city)
               .map((area) => (
