@@ -187,6 +187,7 @@ const TubSlidingDoors = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Serving Las Vegas Since 2010</h2>
             <p className="text-lg text-muted-foreground mb-6">We've installed shower glass for Las Vegas homeowners since 2010. We're family-operated, first-responder owned, and licensed, bonded and insured. Every install comes with our 1-Year Parts & Labor + lifetime hardware warranty.</p>
+            <p className="text-lg text-muted-foreground mb-6">Proudly serving Henderson and the entire Las Vegas Valley with expert sliding shower door installation.</p>
             <ul className="space-y-2 text-muted-foreground mb-6">
               <li>• Licensed, bonded, insured</li>
               <li>• Warranty: 1-Year Parts & Labor + lifetime hardware</li>

@@ -75,7 +75,7 @@ export const seoConfig: Record<string, SEOMeta> = {
   },
   '/shower-doors-las-vegas/tub-sliding-doors': {
     title: 'Sliding Glass Shower Doors for Tubs in Las Vegas | Baja Glass',
-    description: 'Sliding glass shower doors installed on your existing tub in Las Vegas. Frameless, semi-frameless and framed. Free in-home measurement. (702) 383-0779.',
+    description: 'Sliding glass shower doors installed on your existing tub in Las Vegas. Semi-frameless and framed. Free in-home measurement. (702) 383-0779.',
     canonical: `${BASE_URL}/shower-doors-las-vegas/tub-sliding-doors`,
     ogImage: `${BASE_URL}/images/bypass-sliding-glass-doors-3.webp`,
   },
