@@ -307,7 +307,7 @@ const Index = () => {
             Serving the Greater Las Vegas Valley
           </h2>
           <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Our full range of <Link to="/shower-doors-las-vegas" onClick={() => window.scrollTo(0, 0)}>shower doors Las Vegas</Link> services reaches Henderson, Summerlin, Paradise, and all surrounding communities.
+            Our full range of <Link to="/shower-doors-las-vegas" onClick={() => window.scrollTo(0, 0)}>custom shower doors in Las Vegas</Link> services reaches Henderson, Summerlin, Paradise, and all surrounding communities.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[

@@ -61,13 +61,13 @@ const ShowerDoorsHenderson = () => {
           longitude: "-114.9817"
         }}
         heroImage="/images/contemporary-frameless-shower-design-2.webp"
-        description="Henderson's trusted expert for custom shower doors. Frameless, sliding, and semi-frameless installations and replacements. Professional service with perfect results."
+        description="Custom shower doors for Henderson homes, from Green Valley to Anthem. Frameless, sliding, and semi-frameless installations and full door replacements."
         additionalContent={
           <>
             <h2 className="text-3xl font-bold mb-6">Shower Door Installation Henderson NV</h2>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                As a leading provider of <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">shower doors Las Vegas</Link> and Henderson homeowners trust, we handle projects of all sizes. Our expertise in fitting <strong>frameless shower doors in Henderson</strong> homes has made us the go-to choice for modern bathroom renovations. We manage the entire process, from precise laser measurement to professional installation, guaranteeing a perfect, leak-free result.
+                Henderson homeowners in Green Valley, Anthem, Seven Hills and Inspirada trust us with projects of all sizes. Outside Henderson, see our <Link to="/shower-doors-las-vegas" className="text-primary underline hover:text-primary/80">custom shower doors in Las Vegas</Link> page. Our expertise in fitting <strong>frameless shower doors in Henderson</strong> homes has made us the go-to choice for modern bathroom renovations. We manage the entire process, from precise laser measurement to professional installation, guaranteeing a perfect, leak-free result.
               </p>
               <p>
                 Looking for <strong>glass shower doors in Henderson</strong>? We offer a complete range including frameless, semi-frameless, sliding, and custom enclosures. Our team specializes in premium installations for Green Valley, Anthem, Seven Hills, and all Henderson neighborhoods.

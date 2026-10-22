@@ -119,7 +119,7 @@ const InstallationProcess = () => {
               How Shower Door Installation Works, Step by Step
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
-              Glass shower door installation happens in five steps: an in-home consultation and laser measurement (about an hour), a design and quote, fabrication of the tempered glass (the bulk of the timeline), installation (typically a single day) and a final walkthrough. From measurement to installation typically takes about 2 weeks.
+              Glass shower door installation happens in five steps: an in-home consultation and laser measurement (about an hour), a design and quote, fabrication of the tempered glass (the bulk of the timeline), installation (typically a single day) and a final walkthrough. From measurement to installation typically takes about 2 weeks. Here's how our <Link to="/shower-door-installation-las-vegas" className="underline">Las Vegas shower door installation</Link> works, step by step.
             </p>
             <ArticleByline
               datePublished={DATE_PUBLISHED}
