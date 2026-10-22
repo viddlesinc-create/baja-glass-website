@@ -132,7 +132,7 @@ const TubSlidingDoors = () => {
             <p className="text-lg text-muted-foreground mb-6">[COPY: Serving Las Vegas Since 2010]</p>
             <ul className="space-y-2 text-muted-foreground mb-6">
               <li>• Licensed, bonded, insured</li>
-              <li>• 1-Year Parts & Labor + lifetime hardware warranty</li>
+              <li>• Warranty: 1-Year Parts & Labor + lifetime hardware</li>
             </ul>
             <div className="bg-background p-6 rounded-lg inline-block">
               <p className="font-semibold">Baja Glass & Mirror LLC</p>
