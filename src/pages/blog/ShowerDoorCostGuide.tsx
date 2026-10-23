@@ -124,7 +124,7 @@ const ShowerDoorCostGuide = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto prose prose-lg">
             <p className="text-lg leading-relaxed text-muted-foreground">
-              If you're planning a shower door installation in Las Vegas, understanding costs upfront helps you budget accurately 
+              If you're planning a shower door installation in Las Vegas (see our <Link to="/shower-doors-las-vegas">custom shower doors in Las Vegas</Link> options), understanding costs upfront helps you budget accurately 
               and avoid surprises. Shower door prices vary significantly based on type, materials, and complexity. This comprehensive 
               guide breaks down what you'll pay for different options in the Las Vegas Valley, including Henderson, Summerlin, and 
               Paradise areas.
@@ -138,7 +138,7 @@ const ShowerDoorCostGuide = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center">Cost to Install Shower Door - Complete Breakdown</h2>
-            <p className="text-center text-muted-foreground mb-8">Average <strong>shower door installation cost</strong> in Las Vegas by type:</p>
+            <p className="text-center text-muted-foreground mb-8">Average <strong>shower door installation cost</strong> in Las Vegas by type (every price includes our <Link to="/shower-door-installation-las-vegas">professional shower door installation</Link>):</p>
             <div className="space-y-4">
               {costBreakdown.map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
