@@ -6,14 +6,14 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
-    title: 'Custom Shower Doors & Installation Las Vegas | Baja Glass',
-    description: 'Custom shower doors & installation in Las Vegas — frameless, sliding & enclosures. Free in-home measure. 4.7★ on Google. Call (702) 383-0779.',
+    title: 'Custom Shower Doors Las Vegas | Baja Glass, Since 2010',
+    description: 'Custom glass shower doors in Las Vegas: frameless, sliding and enclosures, measured and installed by Baja Glass. Serving Las Vegas Since 2010. (702) 383-0779.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-las-vegas': {
-    title: 'Shower Doors Las Vegas | Frameless, Sliding & Custom Glass',
-    description: "Custom glass shower doors in Las Vegas — frameless, semi-frameless & sliding. Free in-home measurement. We build & install, not repair. (702) 383-0779.",
+    title: 'Custom Shower Doors Las Vegas | Frameless & Sliding Glass',
+    description: "Custom glass shower doors in Las Vegas: frameless, semi-frameless and sliding, measured in your home and installed by our team. Serving Las Vegas Since 2010.",
     canonical: `${BASE_URL}/shower-doors-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -118,14 +118,14 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: `${BASE_URL}/images/contemporary-frameless-shower-design-2.webp`,
   },
   '/shower-doors-summerlin-nv': {
-    title: 'Shower Doors Summerlin NV | Frameless & Custom Glass',
-    description: 'Frameless and custom shower doors installed across Summerlin NV, including The Ridges and Red Rock Country Club. Book a free in-home measurement this week.',
+    title: 'Summerlin Shower Doors | Frameless & Custom Glass Installs',
+    description: 'Frameless and custom glass shower doors installed in Summerlin homes, from The Ridges to Red Rock. Serving Las Vegas Since 2010. Free in-home measurement.',
     canonical: `${BASE_URL}/shower-doors-summerlin-nv`,
     ogImage: `${BASE_URL}/images/corner-shower-enclosure-black-hardware.webp`,
   },
   '/shower-doors-paradise-nv': {
-    title: 'Shower Doors Paradise NV | Custom Glass Installation',
-    description: 'Frameless, sliding and custom shower enclosures installed in Paradise NV near the Las Vegas Strip. Measured and fitted by licensed glaziers. Free quotes.',
+    title: 'Paradise NV Shower Doors | Frameless & Sliding Glass',
+    description: 'Frameless, sliding and custom glass shower doors installed in Paradise NV homes near the Strip. Serving Las Vegas Since 2010. Free in-home measurement.',
     canonical: `${BASE_URL}/shower-doors-paradise-nv`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -148,8 +148,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-centennial-hills-nv': {
-    title: 'Shower Doors Centennial Hills NV | Frameless Glass Installation',
-    description: 'Shower doors in Centennial Hills NV — custom frameless installs, sliding doors and full replacements by Baja Glass and Mirror. Call (702) 383-0779.',
+    title: 'Centennial Hills Shower Doors | Frameless Glass Installs',
+    description: 'Custom frameless and sliding shower doors installed in Centennial Hills homes, plus full door replacements. Serving Las Vegas Since 2010. Call (702) 383-0779.',
     canonical: `${BASE_URL}/shower-doors-centennial-hills-nv`,
     ogImage: `${BASE_URL}/images/contemporary-frameless-shower-low-iron-glass.webp`,
   },
