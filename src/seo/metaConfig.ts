@@ -85,12 +85,6 @@ export const seoConfig: Record<string, SEOMeta> = {
     canonical: `${BASE_URL}/shower-doors-las-vegas/hinged`,
     ogImage: `${BASE_URL}/images/corner-hinged-shower-enclosure.webp`,
   },
-  '/shower-doors-las-vegas/custom-enclosures': {
-    title: 'Custom Shower Enclosures Las Vegas | Walk-In & Steam',
-    description: 'Custom glass shower enclosures for Las Vegas & Clark County — walk-in, corner, neo-angle, alcove & steam, built to precise measurements. Free quotes.',
-    canonical: `${BASE_URL}/shower-doors-las-vegas/custom-enclosures`,
-    ogImage: `${BASE_URL}/images/custom-frameless-shower-enclosure-sliding-doors.webp`,
-  },
   '/shower-doors-las-vegas/steam-enclosures': {
     title: 'Steam Shower Enclosures Las Vegas | Custom Sealed Glass',
     description: 'Steam shower enclosures Las Vegas — sealed custom glass by Baja Glass and Mirror. Call (702) 383-0779.',
@@ -98,7 +92,7 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-enclosures-las-vegas': {
-    title: 'Custom Glass Shower Enclosures Las Vegas | Baja Glass',
+    title: 'Custom Glass Walk-In Shower Enclosures Las Vegas | Baja Glass',
     description: 'Custom frameless glass shower enclosures in Las Vegas, Henderson & Summerlin — walk-in, corner, neo-angle & steam. Free measurement. (702) 383-0779.',
     canonical: `${BASE_URL}/shower-enclosures-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,

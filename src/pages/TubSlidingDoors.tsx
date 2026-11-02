@@ -175,7 +175,7 @@ const TubSlidingDoors = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li>• Free in-home measurement</li>
               <li>• About 2 weeks from measure to install</li>
-              <li>• Install usually 4–6 hours</li>
+              <li>• Install usually 2–4 hours</li>
             </ul>
           </div>
         </div>

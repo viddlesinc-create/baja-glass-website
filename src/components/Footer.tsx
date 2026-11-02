@@ -139,7 +139,7 @@ const Footer = () => {
               </div>
               <div>
                 <Link
-                  to="/shower-doors-las-vegas/custom-enclosures"
+                  to="/shower-enclosures-las-vegas"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors block text-sm"
                   onClick={() => window.scrollTo(0, 0)}
                 >

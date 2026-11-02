@@ -4,7 +4,7 @@ import { Shield, Award, Clock, Users, CheckCircle, Star } from "lucide-react";
 
 const IntroSection = () => {
   const stats = [
-    { value: "20+", label: "Years Experience", icon: Clock },
+    { value: "16+", label: "Years Experience", icon: Clock },
     { value: "1,000+", label: "Projects Completed", icon: CheckCircle },
     { value: "98%", label: "Customer Satisfaction", icon: Star },
     { value: "4.7★", label: "Google Rating", icon: Award },

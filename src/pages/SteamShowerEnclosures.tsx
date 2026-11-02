@@ -367,7 +367,7 @@ const SteamShowerEnclosures = () => {
               </CardHeader>
               <CardContent>
                 <Button variant="outline" asChild className="w-full">
-                  <Link to="/shower-doors-las-vegas/custom-enclosures" onClick={() => window.scrollTo(0, 0)}>
+                  <Link to="/shower-enclosures-las-vegas" onClick={() => window.scrollTo(0, 0)}>
                     View Custom
                   </Link>
                 </Button>

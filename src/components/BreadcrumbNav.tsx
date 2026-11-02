@@ -31,7 +31,6 @@ const routeLabels: Record<string, string> = {
   "/shower-doors-las-vegas/semi-frameless-framed": "Semi-Frameless & Framed Doors",
   "/shower-doors-las-vegas/sliding": "Sliding Shower Doors",
   "/shower-doors-las-vegas/hinged": "Hinged & Pivot Doors",
-  "/shower-doors-las-vegas/custom-enclosures": "Custom Enclosures",
   "/shower-doors-las-vegas/steam-enclosures": "Steam Shower Enclosures",
   
   "/shower-enclosures-las-vegas": "Shower Enclosures Las Vegas",

@@ -8,8 +8,43 @@ import PhoneNumber from "@/components/PhoneNumber";
 import ServiceAreasBlock from "@/components/ServiceAreasBlock";
 import FramelessQualification from "@/components/FramelessQualification";
 import StickyMobileCallBar from "@/components/StickyMobileCallBar";
+import ProductGallery from "@/components/ProductGallery";
+import ComparisonTable from "@/components/ComparisonTable";
 
 const ShowerEnclosuresLasVegas = () => {
+  const projectImages = [
+    {
+      src: "/images/custom-frameless-shower-enclosure-sliding-doors.webp",
+      alt: "Custom frameless shower enclosure with sliding doors and stone tile walls",
+      caption: "Frameless sliding enclosure - Spring Valley"
+    },
+    {
+      src: "/images/corner-hinged-shower-enclosure-2.webp",
+      alt: "Under-stair custom shower installation with frameless glass door",
+      caption: "Custom under-stair enclosure - Las Vegas"
+    },
+    {
+      src: "/images/completed-steam-shower-enclosure-5.webp",
+      alt: "Custom corner shower enclosure with clear glass panels",
+      caption: "Corner enclosure modernization - Spring Valley"
+    },
+    {
+      src: "/images/completed-steam-shower-enclosure-3.webp",
+      alt: "Large walk-in shower with custom frameless glass panels",
+      caption: "Walk-in custom enclosure - Enterprise"
+    },
+    {
+      src: "/images/completed-steam-shower-enclosure-2.webp",
+      alt: "Corner shower enclosure with black hardware and built-in seating",
+      caption: "Neo-angle with bench - Henderson"
+    },
+    {
+      src: "/images/bypass-sliding-glass-doors.webp",
+      alt: "Custom shower with pebble accent strip and frameless glass enclosure",
+      caption: "Custom inline enclosure - Summerlin"
+    }
+  ];
+
   const enclosureTypes = [
     {
       title: "Inline Shower Enclosures",
@@ -21,13 +56,13 @@ const ShowerEnclosuresLasVegas = () => {
       title: "Corner Shower Enclosures",
       description: "Space-efficient designs that maximize bathroom layout with two glass walls meeting at a corner.",
       features: ["90-degree and neo-angle options", "Sliding or hinged door choices", "Custom sizing available"],
-      href: "/shower-doors-las-vegas/custom-enclosures"
+      href: "#configurations"
     },
     {
       title: "Neo-Angle Shower Enclosures",
       description: "Diamond-shaped enclosures with angled entry—ideal for corner installations with unique appeal.",
       features: ["Maximizes corner space", "Dramatic visual impact", "Multiple hardware finishes"],
-      href: "/shower-doors-las-vegas/custom-enclosures"
+      href: "#configurations"
     },
     {
       title: "Steam Shower Enclosures",
@@ -39,7 +74,7 @@ const ShowerEnclosuresLasVegas = () => {
       title: "Walk-In Shower Enclosures",
       description: "Open-concept designs with minimal barriers for modern, accessible shower experiences.",
       features: ["Curbless entry options", "ADA-compliant configurations", "Sleek, contemporary aesthetic"],
-      href: "/shower-doors-las-vegas/frameless"
+      href: "#walk-in"
     },
     {
       title: "Alcove Shower Enclosures",
@@ -51,12 +86,16 @@ const ShowerEnclosuresLasVegas = () => {
 
   const faqs = [
     {
+      question: "Do you build custom glass walk-in shower enclosures?",
+      answer: "Yes — walk-in enclosures are one of our most requested builds in Las Vegas and Henderson. We fabricate fixed panels and doors from 3/8\" or 1/2\" tempered glass, sized to your opening, with low-profile or curbless thresholds where your layout allows."
+    },
+    {
       question: "What types of shower enclosures are available in Las Vegas?",
       answer: "We offer inline, corner, neo-angle, steam, walk-in, and alcove shower enclosures in Las Vegas. Each type comes in frameless, semi-frameless, or framed options with various glass thicknesses and hardware finishes."
     },
     {
       question: "How much do glass shower enclosures cost in Las Vegas, NV?",
-      answer: "Glass shower enclosures in Las Vegas range from $800 for basic semi-frameless alcove units to $4,500+ for custom frameless steam enclosures. Pricing depends on size, glass type, hardware finish, and configuration complexity."
+      answer: "Glass shower enclosures in Las Vegas range from $800 for basic semi-frameless alcove units to $6,000+ for custom frameless steam enclosures. Pricing depends on size, glass type, hardware finish, and configuration complexity."
     },
     {
       question: "Can you install custom shower enclosures for unusual bathroom layouts?",
@@ -79,7 +118,7 @@ const ShowerEnclosuresLasVegas = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        {/* Self-referencing canonical. Previously pointed at /shower-doors-las-vegas/custom-enclosures,
+        {/* Self-referencing canonical. Previously pointed at the retired /shower-doors-las-vegas/custom-enclosures (now a 301 to this page),
             but GSC URL Inspection reports googleCanonical as this URL itself and the page as
             "Submitted and indexed" — Google rejected the cross-canonical. The two pages also win
             different queries, so they are not duplicates. */}
@@ -91,14 +130,14 @@ const ShowerEnclosuresLasVegas = () => {
             "@type": "Service",
             "serviceType": "Shower Enclosure Installation",
             "name": "Shower Enclosures Las Vegas",
-            "description": "Professional shower enclosure installation in Las Vegas. Custom glass shower enclosures including inline, corner, neo-angle, and steam designs.",
+            "description": "Professional shower enclosure installation in Las Vegas and Clark County, NV. Custom glass walk-in shower enclosures including inline, corner, neo-angle, and steam designs.",
             "provider": {
               "@type": "LocalBusiness",
               "@id": "https://bajaglass.com/#localbusiness"
             },
             "areaServed": [
-              { "@type": "City", "name": "Las Vegas" },
-              { "@type": "City", "name": "Henderson" },
+              { "@type": "City", "name": "Las Vegas", "containedIn": "Clark County, NV" },
+              { "@type": "City", "name": "Henderson", "containedIn": "Clark County, NV" },
               { "@type": "City", "name": "Summerlin" },
               { "@type": "City", "name": "Paradise" },
               { "@type": "City", "name": "Spring Valley" }
@@ -106,7 +145,7 @@ const ShowerEnclosuresLasVegas = () => {
             "offers": {
               "@type": "AggregateOffer",
               "lowPrice": "800",
-              "highPrice": "4500",
+              "highPrice": "6000",
               "priceCurrency": "USD"
             }
           })}
@@ -141,9 +180,9 @@ const ShowerEnclosuresLasVegas = () => {
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-white/20 text-white">Custom Glass Enclosures</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Shower Enclosures Las Vegas | Custom Glass Shower Enclosures</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Custom Glass Walk-In &amp; Shower Enclosures in Las Vegas</h1>
             <p className="text-xl mb-8 text-white/90">
-              Premium glass shower enclosures for Las Vegas homes. Inline, corner, neo-angle, and steam designs custom-built to your exact specifications.
+              Premium glass shower enclosures for Las Vegas homes. Walk-in, inline, corner, neo-angle, and steam designs custom-built to your exact specifications.
             </p>
             <div className="flex items-center gap-2 mb-8">
               <div className="flex items-center gap-1">
@@ -189,6 +228,51 @@ const ShowerEnclosuresLasVegas = () => {
         </div>
       </section>
 
+      {/* Clark County Geographic Qualifier */}
+      <section className="py-16 bg-secondary/30 border-t">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center leading-relaxed">
+              Serving the entire Las Vegas valley, Baja Glass is the premier specialist for <strong className="text-foreground">custom shower enclosures in Clark County, NV</strong>. We take pride in delivering bespoke solutions that perfectly match your vision and space. Our process is designed to provide homeowners throughout the region with the highest quality <strong className="text-foreground">custom glass shower enclosures in Clark County, NV</strong>, from initial design consultation to professional installation and final walkthrough.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Walk-In Enclosures */}
+      <section id="walk-in" className="py-20 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-8">Custom Glass Walk-In Shower Enclosures</h2>
+            <p className="text-lg text-muted-foreground text-center mb-6">
+              Walk-in showers are the most requested custom build in Las Vegas remodels — open, curbless-friendly layouts with heavy fixed panels instead of a swinging or sliding door. We fabricate <strong className="text-foreground">custom glass walk-in shower enclosures</strong> from 3/8" or 1/2" tempered glass, anchored with polished channel or minimal clips, and sized to your exact opening.
+            </p>
+            <p className="text-lg text-muted-foreground text-center mb-8">
+              Whether it's a single splash panel, a panel-and-return corner, or a full walk-through double-entry layout, every walk-in enclosure is laser-measured in your home and installed by our own team across Las Vegas, Henderson, and all of Clark County.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div className="bg-secondary/30 p-6 rounded-lg">
+                <h3 className="font-semibold mb-2">Single Fixed Panel</h3>
+                <p className="text-sm text-muted-foreground">One heavy glass splash screen — the cleanest, most open look</p>
+              </div>
+              <div className="bg-secondary/30 p-6 rounded-lg">
+                <h3 className="font-semibold mb-2">Panel + Return</h3>
+                <p className="text-sm text-muted-foreground">L-shaped glass for corner walk-ins and kneewall layouts</p>
+              </div>
+              <div className="bg-secondary/30 p-6 rounded-lg">
+                <h3 className="font-semibold mb-2">Walk-Through</h3>
+                <p className="text-sm text-muted-foreground">Double-entry designs with glass on both sides</p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <Button variant="cta" asChild>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Walk-In Shower Quote</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Enclosure Types */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
@@ -213,12 +297,37 @@ const ShowerEnclosuresLasVegas = () => {
                     ))}
                   </ul>
                   <Button variant="outline" asChild className="w-full">
-                    <Link to={type.href} onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
+                    {type.href.startsWith("#") ? (
+                      <a href={type.href}>Learn More</a>
+                    ) : (
+                      <Link to={type.href} onClick={() => window.scrollTo(0, 0)}>Learn More</Link>
+                    )}
                   </Button>
                 </CardContent>
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Project gallery */}
+      <ProductGallery
+        title="Custom Enclosure Projects"
+        description="Browse our portfolio of custom shower enclosures, from walk-in and neo-angle corners to steam-ready designs, installed throughout the Las Vegas Valley."
+        images={projectImages}
+      />
+
+      {/* Configuration + cost table — a real <table> so the options are extractable by
+          screen readers, rich results and AI answer engines, not just visually. */}
+      <section id="configurations" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-serif font-bold mb-6">Enclosure Configurations and What They Cost</h2>
+          <ComparisonTable
+            caption="Custom shower enclosure configurations built by Baja Glass & Mirror in Las Vegas, with typical cost ranges by layout."
+            columns={["Configuration", "Typical cost in Las Vegas", "Layout", "Best for"]}
+            rows={[["Alcove", "$800 - $2,000", "Three walls, one glass front", "The most common bathroom layout"], ["Corner", "$2,000 - $4,500+", "Two glass walls meeting at a corner", "Making use of a corner footprint"], ["Neo-angle", "$2,000 - $4,500+", "Diamond shape with angled entry", "Corner installs wanting a focal point"], ["Walk-in / curbless", "$2,000 - $4,500+", "Open entry, minimal hardware", "Accessible and contemporary bathrooms"], ["Steam", "$3,000 - $6,000+", "Fully sealed with ceiling panel", "Spa-style steam showers"]]}
+            footnote="Las Vegas price ranges from our own installation cost guide. Final pricing depends on opening size, glass thickness and hardware finish — we confirm it at the free in-home measure."
+          />
         </div>
       </section>
 

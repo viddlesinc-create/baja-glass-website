@@ -64,7 +64,7 @@ const LocationPageTemplate = ({
     { name: "Frameless Shower Doors", href: "/shower-doors-las-vegas/frameless" },
     { name: "Sliding Shower Doors", href: "/shower-doors-las-vegas/sliding" },
     { name: "Hinged Shower Doors", href: "/shower-doors-las-vegas/hinged" },
-    { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
+    { name: "Custom Enclosures", href: "/shower-enclosures-las-vegas" },
     { name: "Steam Shower Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
     
   ];

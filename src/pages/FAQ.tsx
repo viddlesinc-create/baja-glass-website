@@ -121,7 +121,7 @@ const FAQ = () => {
     },
     {
       category: "Custom Enclosures",
-      href: "/shower-doors-las-vegas/custom-enclosures",
+      href: "/shower-enclosures-las-vegas",
       faqs: [
         {
           question: "Can you handle neo-angle and steam enclosures?",

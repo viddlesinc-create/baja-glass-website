@@ -9,7 +9,6 @@ export const routes = [
   "/shower-doors-las-vegas/sliding",
   "/shower-doors-las-vegas/tub-sliding-doors",
   "/shower-doors-las-vegas/hinged",
-  "/shower-doors-las-vegas/custom-enclosures",
   "/shower-doors-las-vegas/steam-enclosures",
   "/shower-enclosures-las-vegas",
   "/gallery",
