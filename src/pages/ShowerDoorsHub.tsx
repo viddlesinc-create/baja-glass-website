@@ -36,7 +36,7 @@ const ShowerDoorsHub = () => {
     {
       title: "Custom Shower Enclosures",
       description: "Inline, neo-angle, alcove configurations tailored to your space. We handle out-of-plumb walls, kneewalls, and unique layouts with accuracy.",
-      href: "/shower-doors-las-vegas/custom-enclosures"
+      href: "/shower-enclosures-las-vegas"
     },
     {
       title: "Steam Shower Enclosures",
@@ -366,7 +366,7 @@ const ShowerDoorsHub = () => {
               <Link to="/shower-doors-las-vegas/frameless" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
                 <span className="font-medium">Frameless Doors</span>
               </Link>
-              <Link to="/shower-doors-las-vegas/custom-enclosures" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
+              <Link to="/shower-enclosures-las-vegas" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>
                 <span className="font-medium">Custom Designs</span>
               </Link>
               <Link to="/shower-door-installation-las-vegas" className="bg-secondary/30 p-4 rounded-lg text-center hover:shadow-lg transition-shadow" onClick={() => window.scrollTo(0, 0)}>

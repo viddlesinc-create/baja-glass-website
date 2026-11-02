@@ -60,7 +60,7 @@ const ShowerDoorInstallationLasVegas = () => {
     {
       title: "Custom Door Installation",
       description: "Made-to-measure doors for unique spaces. Angled cuts, notches, and non-standard sizes.",
-      href: "/shower-doors-las-vegas/custom-enclosures"
+      href: "/shower-enclosures-las-vegas"
     },
     {
       title: "Frameless Upgrade & Replacement",

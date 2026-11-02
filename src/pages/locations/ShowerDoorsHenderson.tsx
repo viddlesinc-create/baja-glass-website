@@ -103,7 +103,7 @@ const ShowerDoorsHenderson = () => {
                 Beyond standard doors, we build <strong>custom shower enclosures for Henderson</strong> homes — walk-in, corner, neo-angle, and steam-ready configurations, each fabricated to your exact opening. Every <strong>custom shower door in Henderson</strong> starts with laser measurement, so out-of-square walls, kneewalls, and benches are accounted for before the glass is cut.
               </p>
               <p>
-                Explore our <Link to="/shower-doors-las-vegas/custom-enclosures" className="text-primary underline hover:text-primary/80">custom shower enclosures</Link> and <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80">glass shower enclosures</Link> to see layouts we've built across Green Valley, Seven Hills, and Anthem.
+                Explore our <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80">custom glass shower enclosures</Link> to see layouts we've built across Green Valley, Seven Hills, and Anthem.
               </p>
             </div>
 

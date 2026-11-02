@@ -78,7 +78,7 @@ const SteamVsStandardEnclosures = () => {
 
               <h2 className="text-3xl font-bold pt-4">What a standard frameless enclosure does</h2>
               <p>
-                A standard <Link to="/shower-doors-las-vegas/custom-enclosures" className="text-primary underline hover:text-primary/80">custom frameless enclosure</Link> is
+                A standard <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80">custom frameless enclosure</Link> is
                 built to keep spray in and let air move. The glass typically stops short of the ceiling, gaps around the door are small but
                 intentional, and steam from a hot shower drifts up and out to the exhaust fan. That open-topped design is a feature, not a
                 shortcut: airflow is what dries the enclosure between uses and keeps the bathroom from becoming a humidity box. For most

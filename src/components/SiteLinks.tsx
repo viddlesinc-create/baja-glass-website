@@ -11,7 +11,7 @@ const SiteLinks = () => {
         { name: "Sliding Shower Doors", href: "/shower-doors-las-vegas/sliding" },
         { name: "Hinged & Pivot Doors", href: "/shower-doors-las-vegas/hinged" },
         { name: "Semi-Frameless Doors", href: "/shower-doors-las-vegas/semi-frameless-framed" },
-        { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
+        { name: "Custom Enclosures", href: "/shower-enclosures-las-vegas" },
         { name: "Steam Shower Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
         { name: "Shower Door Replacement", href: "/shower-door-replacement-las-vegas" },
 

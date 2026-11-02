@@ -35,7 +35,7 @@ Weighted position ≤ 11 → CAPTURE lever (title, meta, CRO).
 | `/shower-door-installation-las-vegas` | install_demand | shower door installation near me · shower door installers near me · shower door installers · shower door installation las vegas · shower glass installation · frameless shower door installation near me |
 | `/shower-doors-las-vegas/frameless` | core_frameless + replacement_demand | frameless shower doors las vegas · custom shower doors near me · frameless shower doors near me · custom glass shower doors near me · shower door replacement near me *(as "frameless upgrade")* |
 | `/shower-doors-las-vegas` *(hub)* | shower_generic | glass shower doors near me · shower glass near me · shower doors near me · shower doors las vegas · shower glass las vegas · bath glass shower doors near me |
-| `/shower-enclosures-las-vegas` | enclosure | shower enclosures las vegas · custom shower enclosures clark county nv · custom glass walk in shower enclosures las vegas nv |
+| `/shower-enclosures-las-vegas` | enclosure | custom glass walk in shower enclosures las vegas · shower enclosures las vegas · custom shower enclosures clark county nv · custom shower enclosures las vegas · neo-angle / corner enclosures *(absorbed `/shower-doors-las-vegas/custom-enclosures`, 301 since Nov 2026)* |
 
 ## Shower-door style spokes (under the hub)
 
@@ -44,7 +44,6 @@ Weighted position ≤ 11 → CAPTURE lever (title, meta, CRO).
 | `/shower-doors-las-vegas/semi-frameless-framed` | semi frameless vs frameless shower door · semi-frameless / framed shower doors |
 | `/shower-doors-las-vegas/sliding` | sliding / bypass shower doors |
 | `/shower-doors-las-vegas/hinged` | hinged / pivot shower doors |
-| `/shower-doors-las-vegas/custom-enclosures` | custom shower enclosures · neo-angle / corner enclosures |
 | `/shower-doors-las-vegas/steam-enclosures` | steam shower enclosures |
 
 ## Geo / "near me" pages (mostly install_demand by city)

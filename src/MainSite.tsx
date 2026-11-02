@@ -24,7 +24,6 @@ const SemiFramelessShowerDoors = lazy(() => import("./pages/SemiFramelessShowerD
 const SlidingShowerDoors = lazy(() => import("./pages/SlidingShowerDoors"));
 const TubSlidingDoors = lazy(() => import("./pages/TubSlidingDoors"));
 const HingedShowerDoors = lazy(() => import("./pages/HingedShowerDoors"));
-const CustomEnclosures = lazy(() => import("./pages/CustomEnclosures"));
 const SteamShowerEnclosures = lazy(() => import("./pages/SteamShowerEnclosures"));
 
 const ShowerEnclosuresLasVegas = lazy(() => import("./pages/ShowerEnclosuresLasVegas"));
@@ -96,7 +95,6 @@ const MainSite = () => (
             <Route path="/shower-doors-las-vegas/sliding" element={<SlidingShowerDoors />} />
             <Route path="/shower-doors-las-vegas/tub-sliding-doors" element={<TubSlidingDoors />} />
             <Route path="/shower-doors-las-vegas/hinged" element={<HingedShowerDoors />} />
-            <Route path="/shower-doors-las-vegas/custom-enclosures" element={<CustomEnclosures />} />
             <Route path="/shower-doors-las-vegas/steam-enclosures" element={<SteamShowerEnclosures />} />
             <Route path="/shower-doors-las-vegas/repair" element={<RedirectComponent to="/shower-doors-las-vegas" />} />
             <Route path="/shower-enclosures-las-vegas" element={<ShowerEnclosuresLasVegas />} />

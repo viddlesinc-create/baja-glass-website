@@ -71,6 +71,14 @@
   [redirects.query]
     kref = ":kref"
 
+# Cannibalization fix: custom-enclosures merged into /shower-enclosures-las-vegas (Nov 2026).
+# Single-path rule only; never a catch-all.
+[[redirects]]
+  from = "/shower-doors-las-vegas/custom-enclosures"
+  to = "/shower-enclosures-las-vegas"
+  status = 301
+  force = true
+
 # Cannibalization fix: consolidate into main hub
 [[redirects]]
   from = "/custom-shower-doors-las-vegas"

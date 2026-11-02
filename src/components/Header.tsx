@@ -32,7 +32,7 @@ const Header = () => {
     { name: "Semi-Frameless & Framed", href: "/shower-doors-las-vegas/semi-frameless-framed" },
     { name: "Sliding Doors", href: "/shower-doors-las-vegas/sliding" },
     { name: "Hinged Doors", href: "/shower-doors-las-vegas/hinged" },
-    { name: "Custom Enclosures", href: "/shower-doors-las-vegas/custom-enclosures" },
+    { name: "Custom Enclosures", href: "/shower-enclosures-las-vegas" },
     { name: "Steam Enclosures", href: "/shower-doors-las-vegas/steam-enclosures" },
     { name: "Shower Door Replacement", href: "/shower-door-replacement-las-vegas" },
   ];
