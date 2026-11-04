@@ -89,7 +89,7 @@ const ShowerDoorsHub = () => {
             "@type": "WebPage",
             "name": "Shower Doors Las Vegas",
             "description": "Professional shower door installation and replacement services in Las Vegas. Custom frameless, sliding, hinged doors and enclosures.",
-            "url": "https://bajaglass.com/shower-doors-las-vegas/",
+            "url": "https://bajaglass.com/shower-doors-las-vegas",
             "mainEntity": {
               "@type": "LocalBusiness",
               "@id": "https://bajaglass.com/#localbusiness"
@@ -98,7 +98,7 @@ const ShowerDoorsHub = () => {
               "@type": "BreadcrumbList",
               "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bajaglass.com/" },
-                { "@type": "ListItem", "position": 2, "name": "Shower Doors Las Vegas", "item": "https://bajaglass.com/shower-doors-las-vegas/" }
+                { "@type": "ListItem", "position": 2, "name": "Shower Doors Las Vegas", "item": "https://bajaglass.com/shower-doors-las-vegas" }
               ]
             }
           })}
