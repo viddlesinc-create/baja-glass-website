@@ -93,7 +93,7 @@ const Header = () => {
             <DropdownMenu>
               <div className="flex items-center">
                 <a 
-                  href="https://bajaglass.com/shower-doors-las-vegas/"
+                  href="https://bajaglass.com/shower-doors-las-vegas"
                   className="text-foreground hover:text-accent transition-colors font-medium"
                   onClick={() => window.scrollTo(0, 0)}
                 >
@@ -187,7 +187,7 @@ const Header = () => {
                     {/* Shower Doors Section */}
                     <div>
                       <a
-                        href="https://bajaglass.com/shower-doors-las-vegas/"
+                        href="https://bajaglass.com/shower-doors-las-vegas"
                         className="text-foreground hover:text-accent transition-colors font-medium py-2 block"
                         onClick={() => {
                           setIsOpen(false);
