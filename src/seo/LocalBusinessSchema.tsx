@@ -131,6 +131,84 @@ const localBusinessData = {
     }
   ],
   "knowsAbout": [
+    {
+      "@type": "Thing",
+      "name": "Tempered glass",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Tempered_glass",
+        "https://www.wikidata.org/wiki/Q1142019"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Google Knowledge Graph ID",
+        "value": "/m/0cyr1w"
+      }
+    },
+    {
+      "@type": "Thing",
+      "name": "Safety glass",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Safety_glass",
+        "https://www.wikidata.org/wiki/Q3346867"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Google Knowledge Graph ID",
+        "value": "/m/0j466_5"
+      }
+    },
+    {
+      "@type": "Thing",
+      "name": "Shower",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Shower",
+        "https://www.wikidata.org/wiki/Q7863"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Google Knowledge Graph ID",
+        "value": "/m/02f9f_"
+      }
+    },
+    {
+      "@type": "Thing",
+      "name": "Float glass",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Float_glass",
+        "https://www.wikidata.org/wiki/Q1429077"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Google Knowledge Graph ID",
+        "value": "/m/01s2_9"
+      }
+    },
+    {
+      "@type": "Thing",
+      "name": "Glass",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Glass",
+        "https://www.wikidata.org/wiki/Q11469"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Google Knowledge Graph ID",
+        "value": "/m/039jq"
+      }
+    },
+    {
+      "@type": "Thing",
+      "name": "Bathroom",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Bathroom",
+        "https://www.wikidata.org/wiki/Q190771"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Google Knowledge Graph ID",
+        "value": "/m/01j2bj"
+      }
+    },
     "Frameless Shower Doors",
     "Semi-Frameless Shower Doors",
     "Sliding Shower Doors",
@@ -138,7 +216,6 @@ const localBusinessData = {
     "Custom Shower Enclosures",
     "Steam Shower Enclosures",
     "Shower Door Replacement",
-    "Tempered Safety Glass",
     "Low-Iron Glass"
   ]
 };
