@@ -73,7 +73,7 @@ const ShowerDoorCostGuide = () => {
               "@id": "https://bajaglass.com/#localbusiness"
             },
             "datePublished": "2025-01-15",
-            "dateModified": "2026-07-29",
+            "dateModified": "2026-11-11",
             "image": "https://bajaglass.com/og-image.jpg",
             "mainEntityOfPage": {
               "@type": "WebPage",
@@ -112,9 +112,27 @@ const ShowerDoorCostGuide = () => {
             </p>
             <ArticleByline
               datePublished="2025-01-15"
-              dateModified="2026-07-29"
-              wordCount={765}
+              dateModified="2026-11-11"
+              wordCount={840}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Quick answer (GSC refresh Nov 2026: page was losing rankings) */}
+      <section className="pt-12 bg-background" aria-labelledby="quick-answer">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto rounded-lg border-l-4 border-accent bg-secondary/40 p-6">
+            <h2 id="quick-answer" className="text-2xl font-bold mb-3">How much does shower door installation cost in Las Vegas?</h2>
+            <p className="text-lg text-muted-foreground mb-4">
+              Most Las Vegas homeowners pay <strong>$400&ndash;$800</strong> for a framed door, <strong>$800&ndash;$1,400</strong> for
+              semi-frameless and <strong>$1,200&ndash;$2,800</strong> for frameless glass, installed. A standard frameless door with
+              3/8&quot; glass usually lands around <strong>$1,500&ndash;$1,800</strong>. Custom and steam enclosures run higher.
+            </p>
+            <p className="text-muted-foreground">
+              Your exact price depends on glass thickness, size, hardware finish and wall conditions.{" "}
+              <Link to="/contact" className="text-primary underline hover:text-primary/80">Book a free in-home measure</Link> for a written quote.
+            </p>
           </div>
         </div>
       </section>
