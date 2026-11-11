@@ -87,9 +87,9 @@ const ShowerDoorsHub = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Shower Doors Las Vegas",
+            "name": "Shower Door Styles Las Vegas",
             "description": "Professional shower door installation and replacement services in Las Vegas. Custom frameless, sliding, hinged doors and enclosures.",
-            "url": "https://bajaglass.com/shower-doors-las-vegas/",
+            "url": "https://bajaglass.com/shower-doors-las-vegas",
             "mainEntity": {
               "@type": "LocalBusiness",
               "@id": "https://bajaglass.com/#localbusiness"
@@ -97,8 +97,8 @@ const ShowerDoorsHub = () => {
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bajaglass.com/" },
-                { "@type": "ListItem", "position": 2, "name": "Shower Doors Las Vegas", "item": "https://bajaglass.com/shower-doors-las-vegas/" }
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bajaglass.com" },
+                { "@type": "ListItem", "position": 2, "name": "Shower Door Styles", "item": "https://bajaglass.com/shower-doors-las-vegas" }
               ]
             }
           })}
@@ -143,12 +143,12 @@ const ShowerDoorsHub = () => {
             {/* Main Heading */}
             <div className="animate-fade-in-up text-left md:text-center lg:text-left lg:ml-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                Glass Shower Doors in{" "}
+                Shower Door Styles in{" "}
                 <span className="block bg-gradient-to-r from-white via-chrome-light to-white bg-clip-text text-transparent animate-glow drop-shadow-2xl">
                   Las Vegas
                 </span>{" "}
                 <span className="block text-2xl md:text-3xl font-normal mt-2 text-white/90">
-                  Frameless & Sliding Glass Options
+                  Frameless, Sliding, Hinged & Pivot
                 </span>
               </h1>
             </div>

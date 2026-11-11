@@ -198,6 +198,77 @@ const Index = () => {
       {/* Intro Section - Keyword Rich */}
       <IntroSection />
 
+      {/* GSC quick win (Nov 2026): homepage ranks 4.5–8.8 for these searches — answer them directly here */}
+      <section className="py-16 bg-background" aria-labelledby="glass-shower-doors-las-vegas">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 id="glass-shower-doors-las-vegas" className="text-3xl md:text-4xl font-serif font-bold mb-6 text-center">
+              Glass Shower Doors in Las Vegas
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center">
+              Every Baja Glass shower door is measured in your home and cut to fit your opening. Here is how the main options compare.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Custom Shower Doors</h3>
+                <p className="text-muted-foreground">
+                  Built to your exact opening, including out-of-plumb walls, knee walls and odd angles. Choose the glass,
+                  thickness and hardware finish. See <Link to="/shower-enclosures-las-vegas" className="text-primary underline hover:text-primary/80">custom shower enclosures</Link>.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Frameless Shower Doors</h3>
+                <p className="text-muted-foreground">
+                  Heavy 3/8&quot; or 1/2&quot; tempered glass with minimal hardware for an open, modern look and easier cleaning.
+                  See <Link to="/shower-doors-las-vegas/frameless" className="text-primary underline hover:text-primary/80">frameless shower doors</Link>.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Sliding &amp; Tub Doors</h3>
+                <p className="text-muted-foreground">
+                  Bypass sliders for tight bathrooms and sliding glass doors that mount on your existing tub.
+                  See <Link to="/shower-doors-las-vegas/sliding" className="text-primary underline hover:text-primary/80">sliding shower doors</Link> and <Link to="/shower-doors-las-vegas/tub-sliding-doors" className="text-primary underline hover:text-primary/80">tub doors</Link>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-secondary/30" aria-labelledby="custom-glass-doors-las-vegas">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 id="custom-glass-doors-las-vegas" className="text-3xl md:text-4xl font-serif font-bold mb-6 text-center">
+              Custom Glass Doors in Las Vegas
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center">
+              Beyond the shower, Baja Glass builds custom glass doors for homes and businesses across the valley.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Pivot &amp; Hinged Glass Doors</h3>
+                <p className="text-muted-foreground">
+                  Pivot doors swing on top and bottom pins instead of side hinges, which suits wide or heavy glass panels.
+                  See <Link to="/shower-doors-las-vegas/hinged" className="text-primary underline hover:text-primary/80">hinged and pivot doors</Link>.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Commercial &amp; Restaurant Glass Doors</h3>
+                <p className="text-muted-foreground">
+                  Glass doors and partitions for offices, restaurants and storefront interiors, measured and installed by our team.
+                  See <Link to="/glass-company-las-vegas/office-enclosures" className="text-primary underline hover:text-primary/80">commercial office glass</Link>.
+                </p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <Button variant="outline" asChild>
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Get a Custom Glass Door Quote</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Overview Section */}
       <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-4">

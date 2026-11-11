@@ -6,14 +6,14 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 export const seoConfig: Record<string, SEOMeta> = {
   // ===== Core Pages =====
   '/': {
-    title: 'Custom Shower Doors Las Vegas | Baja Glass, Since 2010',
-    description: 'Custom glass shower doors in Las Vegas: frameless, sliding and enclosures, measured and installed by Baja Glass. Serving Las Vegas Since 2010. (702) 383-0779.',
+    title: 'Custom Glass Shower Doors in Las Vegas | Baja Glass',
+    description: 'Custom glass shower doors in Las Vegas: frameless, sliding and tub doors measured in your home and installed by Baja Glass since 2010. Call (702) 383-0779.',
     canonical: BASE_URL,
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/shower-doors-las-vegas': {
-    title: 'Custom Shower Doors Las Vegas | Frameless & Sliding Glass',
-    description: "Custom glass shower doors in Las Vegas: frameless, semi-frameless and sliding, measured in your home and installed by our team. Serving Las Vegas Since 2010.",
+    title: 'Shower Door Styles Las Vegas | Frameless, Sliding, Hinged',
+    description: "Compare shower door styles for Las Vegas bathrooms: frameless, semi-frameless, sliding, hinged and pivot, plus glass and hardware options. Book a free measure.",
     canonical: `${BASE_URL}/shower-doors-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -30,8 +30,8 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/reviews': {
-    title: 'Shower Door Reviews Las Vegas | Baja Glass and Mirror',
-    description: 'Shower door reviews for Baja Glass and Mirror in Las Vegas. Call (702) 383-0779.',
+    title: 'Baja Glass & Mirror Reviews | Las Vegas Shower Doors',
+    description: 'Read what Las Vegas homeowners say about Baja Glass & Mirror on Google. Custom shower doors installed across the valley since 2010. Free quote: (702) 383-0779.',
     canonical: `${BASE_URL}/reviews`,
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -174,7 +174,7 @@ export const seoConfig: Record<string, SEOMeta> = {
     ogImage: DEFAULT_OG_IMAGE,
   },
   '/blog/shower-door-installation-cost-las-vegas': {
-    title: 'Shower Door Installation Cost Las Vegas: 2026 Prices by Type',
+    title: 'Shower Door Installation Cost in Las Vegas (2026 Prices)',
     description: 'Shower door installation cost in Las Vegas for 2026: framed $400–$800, semi-frameless $800–$1,400, frameless $1,200–$2,800. Free quote (702) 383-0779.',
     canonical: `${BASE_URL}/blog/shower-door-installation-cost-las-vegas`,
     ogImage: DEFAULT_OG_IMAGE,

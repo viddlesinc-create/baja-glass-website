@@ -79,7 +79,7 @@ export const blogPosts: BlogPost[] = [
     category: "Pricing & Cost",
     featuredImage: "/images/custom-neo-angle-shower-enclosure.webp",
     datePublished: "2025-01-15",
-    dateModified: "2026-07-29",
+    dateModified: "2026-11-11",
     author: "Cliff Robinson",
     readTime: "4 min read",
     url: "/blog/shower-door-installation-cost-las-vegas"

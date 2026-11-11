@@ -75,6 +75,15 @@ const Reviews = () => {
                 Profile. In the meantime, you can read what Las Vegas homeowners say about
                 Baja Glass &amp; Mirror directly on Google, or call us at (702) 383-0779.
               </p>
+              <Button variant="outline" size="lg" asChild className="mt-6">
+                <a
+                  href="https://www.google.com/maps/place/?q=place_id:ChIJq6r6eofGyIAR_KDPoQYhGVI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read Our Google Reviews
+                </a>
+              </Button>
             </div>
           )}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
